@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/d76/_accel_byte_signal_handler_8cpp" kind="file" language="C++">
+    <compoundname>AccelByteSignalHandler.cpp</compoundname>
+    <includes refid="df/db4/_accel_byte_signal_handler_8h" local="yes">Core/AccelByteSignalHandler.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteSignalHandler.cpp</label>
+        <link refid="d4/d76/_accel_byte_signal_handler_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/AccelByteSignalHandler.h</label>
+        <link refid="df/db4/_accel_byte_signal_handler_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/db4/_accel_byte_signal_handler_8h" kindref="compound">Core/AccelByteSignalHandler.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>PLATFORM_LINUX<sp/>&amp;&amp;<sp/>!WITH_EDITOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>sig_atomic_t<sp/>GEnteredSignalHandler;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">FOnSigtermReceived<sp/><ref refid="d8/d67/class_f_accel_byte_signal_handler_1aac20cee19205c2ef53211beea2d5c7ba" kindref="member">FAccelByteSignalHandler::OnSigtermReceivedDelegate</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d8/d67/class_f_accel_byte_signal_handler_1a5da66b07546d4514e92d1290b94389d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/d67/class_f_accel_byte_signal_handler_1a5da66b07546d4514e92d1290b94389d6" kindref="member">FAccelByteSignalHandler::Initialize</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>PLATFORM_LINUX<sp/>&amp;&amp;<sp/>!WITH_EDITOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sigaction<sp/>Action;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>FMemory::Memzero(&amp;Action,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sigaction));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Action.sa_sigaction<sp/>=<sp/>FAccelByteSignalHandler::OnSignalReceived;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>sigfillset(&amp;Action.sa_mask);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>Action.sa_flags<sp/>=<sp/>SA_SIGINFO<sp/>|<sp/>SA_RESTART<sp/>|<sp/>SA_ONSTACK;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>sigaction(SIGTERM,<sp/>&amp;Action,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FAccelByteSignalHandler::OnSignalReceived(int32<sp/>Signal,<sp/>siginfo_t*<sp/>Info,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Context)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>GEnteredSignalHandler<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>not<sp/>flush<sp/>logs<sp/>at<sp/>this<sp/>point;<sp/>this<sp/>can<sp/>result<sp/>in<sp/>a<sp/>deadlock<sp/>if<sp/>the<sp/>signal<sp/>was<sp/>received<sp/>while<sp/>we<sp/>were<sp/>holding<sp/>lock<sp/>in<sp/>the<sp/>malloc<sp/>(flushing<sp/>allocates<sp/>memory)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!IsEngineExitRequested())</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d67/class_f_accel_byte_signal_handler_1aac20cee19205c2ef53211beea2d5c7ba" kindref="member">OnSigtermReceivedDelegate</ref>.ExecuteIfBound();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FPlatformMisc::RequestExitWithStatus(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>128<sp/>+<sp/>Signal);<sp/><sp/></highlight><highlight class="comment">//<sp/>Keeping<sp/>the<sp/>established<sp/>shell<sp/>practice<sp/>of<sp/>returning<sp/>128<sp/>+<sp/>signal<sp/>for<sp/>terminations<sp/>by<sp/>signal.<sp/>Allows<sp/>to<sp/>distinguish<sp/>SIGINT/SIGTERM/SIGHUP.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FPlatformMisc::RequestExit(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>GEnteredSignalHandler<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="d8/d67/class_f_accel_byte_signal_handler_1a4edb78813afefe9ef23e4d9e33bf221b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/d67/class_f_accel_byte_signal_handler_1a4edb78813afefe9ef23e4d9e33bf221b" kindref="member">FAccelByteSignalHandler::SetOnSigtermReceived</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnSigtermReceived&amp;<sp/>OnSigtermReceived)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d67/class_f_accel_byte_signal_handler_1aac20cee19205c2ef53211beea2d5c7ba" kindref="member">OnSigtermReceivedDelegate</ref><sp/>=<sp/>OnSigtermReceived;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteSignalHandler.cpp"/>
+  </compounddef>
+</doxygen>

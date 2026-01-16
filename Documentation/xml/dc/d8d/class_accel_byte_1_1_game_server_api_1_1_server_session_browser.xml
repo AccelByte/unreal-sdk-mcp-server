@@ -1,0 +1,1863 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::GameServerApi::ServerSessionBrowser</compoundname>
+    <basecompoundref refid="d8/d4c/class_accel_byte_1_1_f_server_api_base" prot="public" virt="non-virtual">AccelByte::FServerApiBase</basecompoundref>
+    <includes refid="da/d4c/_accel_byte_server_session_browser_api_8h" local="no">AccelByteServerSessionBrowserApi.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1acb790e5df58e08a692690d9b512c9c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</definition>
+        <argsstring>(ServerCredentials const &amp;InCredentialsRef, ServerSettings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; FServerApiClient, ESPMode::ThreadSafe &gt; InServerApiClient=nullptr)</argsstring>
+        <name>ServerSessionBrowser</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</qualifiedname>
+        <param>
+          <type><ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">ServerSettings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/df1/class_accel_byte_1_1_f_server_api_client" kindref="compound">FServerApiClient</ref>, ESPMode::ThreadSafe &gt;</type>
+          <declname>InServerApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="29" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1adee193304f9a9459d1fb977c077de619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSessionBrowser::~ServerSessionBrowser</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerSessionBrowser</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::~ServerSessionBrowser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="33" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="26" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aee61834f07af3e5427e50decdf53d789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</definition>
+        <argsstring>(FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, uint32 BotCount, uint32 MaxPlayer, TSharedPtr&lt; FJsonObject &gt; OtherSettings, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FJsonObject &gt;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Create public P2P game session to Session Browser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>game mode of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMapName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameVersion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version of the played game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BotCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of player can join the session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other setting in json format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="49" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="29" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a1cf693595fde0ce0c6c3d125d450dfc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</definition>
+        <argsstring>(FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, uint32 BotCount, uint32 MaxPlayer, uint32 MaxSpectator, FString const &amp;Password, TSharedPtr&lt; FJsonObject &gt; OtherSettings, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxSpectator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FJsonObject &gt;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Create private P2P game session to Session Browser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>game mode of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMapName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameVersion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version of the played game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BotCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of player can join the session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>password of the game session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxSpectator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum of spectator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other setting in json format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="74" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="50" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a2499fd6d2de7272025a81fc78c7edb98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</definition>
+        <argsstring>(FString const &amp;SessionTypeString, FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, uint32 BotCount, uint32 MaxPlayer, uint32 MaxSpectator, FString const &amp;Password, TSharedPtr&lt; FJsonObject &gt; OtherSettings, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionTypeString</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxSpectator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FJsonObject &gt;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Create custom game session to Session Browser specified by the type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionTypeString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the session: p2p or dedicated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>game mode of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMapName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameVersion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version of the played game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BotCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of player can join the session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>password of the game session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxSpectator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum of spectator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other setting in json format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="102" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="74" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a62176862d25c4d413cf92a096e7724be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</definition>
+        <argsstring>(EAccelByteSessionType SessionType, FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, uint32 BotCount, uint32 MaxPlayer, uint32 MaxSpectator, FString const &amp;Password, TSharedPtr&lt; FJsonObject &gt; OtherSettings, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</qualifiedname>
+        <param>
+          <type><ref refid="db/d61/_accel_byte_session_browser_models_8h_1a0c54b59c20397559a8ad924259447c3b" kindref="member">EAccelByteSessionType</ref></type>
+          <declname>SessionType</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxSpectator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FJsonObject &gt;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Create custom game session to Session Browser specified by the type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of the session: p2p or dedicated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>game mode of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMapName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map of the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameVersion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version of the played game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BotCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of player can join the session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>password of the game session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxSpectator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum of spectator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OtherSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other setting in json format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="131" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="100" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a02e8306c036269162cbf86936b55ec33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</definition>
+        <argsstring>(FAccelByteModelsSessionBrowserCreateRequest const &amp;CreateSessionRequest, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::CreateGameSession</qualifiedname>
+        <param>
+          <type><ref refid="d8/d87/struct_f_accel_byte_models_session_browser_create_request" kindref="compound">FAccelByteModelsSessionBrowserCreateRequest</ref> const &amp;</type>
+          <declname>CreateSessionRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Create custom game session to Session Browser specified by the type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CreateSessionRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>create session parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="152" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="136" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a6fa0328c4b6e445c2386a080e1006784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::UpdateGameSession</definition>
+        <argsstring>(FString const &amp;SessionId, uint32 MaxPlayer, uint32 CurrentPlayerCount, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::UpdateGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>CurrentPlayerCount</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update the session to Session Browser. Current player count can not be updated from update session. CurrentPlayerCount will be updated automatically when register / unregister players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session want to update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CurrentPlayerCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current number of player in the session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of player can join the session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="168" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="170" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aad9d3d22491508338243bf97309a1cd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::UpdateGameSession</definition>
+        <argsstring>(FString const &amp;SessionId, uint32 MaxPlayer, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::UpdateGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update the session to Session Browser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session want to update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MaxPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of player can join the session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="184" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="183" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1ab141430951456c222698e4fd8ff4c0a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::UpdateGameSession</definition>
+        <argsstring>(FString const &amp;SessionId, FAccelByteModelsSessionBrowserUpdateRequest const &amp;UpdateSessionRequest, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::UpdateGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d47/struct_f_accel_byte_models_session_browser_update_request" kindref="compound">FAccelByteModelsSessionBrowserUpdateRequest</ref> const &amp;</type>
+          <declname>UpdateSessionRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update the session to Session Browser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session want to update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UpdateSessionRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>update session parameters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="199" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="194" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a82b9400492bfb053813820492b953002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::RemoveGameSession</definition>
+        <argsstring>(FString const &amp;SessionId, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>RemoveGameSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::RemoveGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Remove the session to Session Browser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session want to update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="213" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="227" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1adbcb362298c451ebd2d4a61935d0ea65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</definition>
+        <argsstring>(FString const &amp;SessionTypeString, FString const &amp;GameMode, THandler&lt; FAccelByteModelsSessionBrowserGetResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, uint32 Offset=0, uint32 Limit=10)</argsstring>
+        <name>GetGameSessions</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionTypeString</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+<para>Query game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionTypeString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the session type, either &quot;dedicated&quot;, opr &quot;p2p&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the game mode of the session to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset of the query </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="229" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="248" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a74f9ba12e85eb7cc57f8800978a42a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</definition>
+        <argsstring>(EAccelByteSessionType SessionType, FString const &amp;GameMode, THandler&lt; FAccelByteModelsSessionBrowserGetResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, uint32 Offset=0, uint32 Limit=10)</argsstring>
+        <name>GetGameSessions</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</qualifiedname>
+        <param>
+          <type><ref refid="db/d61/_accel_byte_session_browser_models_8h_1a0c54b59c20397559a8ad924259447c3b" kindref="member">EAccelByteSessionType</ref></type>
+          <declname>SessionType</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+<para>Query game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the session type, either &quot;dedicated&quot;, opr &quot;p2p&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the game mode of the session to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset of the query </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="248" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="264" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a30a5bbd4b716c0ec4ec3b5090a6b6d71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</definition>
+        <argsstring>(FString const &amp;SessionTypeString, FString const &amp;GameMode, FString const &amp;MatchExist, THandler&lt; FAccelByteModelsSessionBrowserGetResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, uint32 Offset=0, uint32 Limit=10)</argsstring>
+        <name>GetGameSessions</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionTypeString</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchExist</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+<para>Query game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionTypeString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the session type, either &quot;dedicated&quot;, opr &quot;p2p&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the game mode of the session to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MatchExist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value will be true, false or empty </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset of the query </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="268" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="280" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aa2685acf4e8cdf9c30b833b6f122c2de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</definition>
+        <argsstring>(EAccelByteSessionType SessionType, FString const &amp;GameMode, FString const &amp;MatchExist, THandler&lt; FAccelByteModelsSessionBrowserGetResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, uint32 Offset=0, uint32 Limit=10)</argsstring>
+        <name>GetGameSessions</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessions</qualifiedname>
+        <param>
+          <type><ref refid="db/d61/_accel_byte_session_browser_models_8h_1a0c54b59c20397559a8ad924259447c3b" kindref="member">EAccelByteSessionType</ref></type>
+          <declname>SessionType</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchExist</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+<para>Query game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the session type, either &quot;dedicated&quot;, opr &quot;p2p&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GameMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the game mode of the session to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MatchExist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value will be true, false or empty </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset of the query </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="289" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="298" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1af79a7d72b6e70d59047c1fbc0b6c825e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessionBySessionId</definition>
+        <argsstring>(FString const &amp;SessionId, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>GetGameSessionBySessionId</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::GetGameSessionBySessionId</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Query game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session want to get. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d4d/struct_f_accel_byte_models_session_browser_get_result" kindref="compound">FAccelByteModelsSessionBrowserGetResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="306" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="340" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a5d862c2c1cf7925a43711161b4a79fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::RegisterPlayer</definition>
+        <argsstring>(FString const &amp;SessionId, FString const &amp;PlayerToAdd, bool AsSpectator, THandler&lt; FAccelByteModelsSessionBrowserAddPlayerResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>RegisterPlayer</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::RegisterPlayer</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>PlayerToAdd</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>AsSpectator</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d6/d4f/struct_f_accel_byte_models_session_browser_add_player_response" kindref="compound">FAccelByteModelsSessionBrowserAddPlayerResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>RegisterPlayer to game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PlayerToAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>player to add </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AsSpectator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates as spectator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d6/d4f/struct_f_accel_byte_models_session_browser_add_player_response" kindref="compound">FAccelByteModelsSessionBrowserAddPlayerResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="321" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="355" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1acfde4bee9bdad7a3e1c7820cbea7cd77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::UnregisterPlayer</definition>
+        <argsstring>(FString const &amp;SessionId, FString const &amp;PlayerToRemove, THandler&lt; FAccelByteModelsSessionBrowserAddPlayerResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>UnregisterPlayer</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::UnregisterPlayer</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>PlayerToRemove</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d6/d4f/struct_f_accel_byte_models_session_browser_add_player_response" kindref="compound">FAccelByteModelsSessionBrowserAddPlayerResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>RegisterPlayer to game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PlayerToRemove</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>player to remove from game session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d6/d4f/struct_f_accel_byte_models_session_browser_add_player_response" kindref="compound">FAccelByteModelsSessionBrowserAddPlayerResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="337" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="382" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1adfaec1d4a51cbed9801f82f9b775e128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::GetRecentPlayer</definition>
+        <argsstring>(FString const &amp;UserId, THandler&lt; FAccelByteModelsSessionBrowserRecentPlayerGetResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, uint32 Offset=0, uint32 Limit=10)</argsstring>
+        <name>GetRecentPlayer</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::GetRecentPlayer</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="de/d3b/struct_f_accel_byte_models_session_browser_recent_player_get_result" kindref="compound">FAccelByteModelsSessionBrowserRecentPlayerGetResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+<para>GetRecentPlayer to game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the user </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="de/d3b/struct_f_accel_byte_models_session_browser_recent_player_get_result" kindref="compound">FAccelByteModelsSessionBrowserRecentPlayerGetResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset of the query </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of data to return</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="353" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="405" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aae450d2e9afca747b6ce68706a9f760a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSessionBrowser::JoinSession</definition>
+        <argsstring>(FString const &amp;SessionId, FString const &amp;Password, THandler&lt; FAccelByteModelsSessionBrowserData &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>JoinSession</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::JoinSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>JoinSession to game session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>password to join if required </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d7/db3/struct_f_accel_byte_models_session_browser_data" kindref="compound">FAccelByteModelsSessionBrowserData</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="369" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSessionBrowserApi.cpp" bodystart="439" bodyend="465"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a8181ead4e12207bf85868c5db56495ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</definition>
+        <argsstring>()=delete</argsstring>
+        <name>ServerSessionBrowser</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a471e9bf6ddb1e9a68fdb18391aefdcf8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</definition>
+        <argsstring>(ServerSessionBrowser const &amp;)=delete</argsstring>
+        <name>ServerSessionBrowser</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</qualifiedname>
+        <param>
+          <type>ServerSessionBrowser const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="376" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1af9f6b51d9a72178540e0336e44e00665" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</definition>
+        <argsstring>(ServerSessionBrowser &amp;&amp;)=delete</argsstring>
+        <name>ServerSessionBrowser</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSessionBrowser::ServerSessionBrowser</qualifiedname>
+        <param>
+          <type>ServerSessionBrowser &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="377" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>CloudSave API for storing records. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerSessionBrowser</label>
+        <link refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ServerSettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerSessionBrowser</label>
+        <link refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" line="26" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSessionBrowserApi.h" bodystart="27" bodyend="378"/>
+    <listofallmembers>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aee61834f07af3e5427e50decdf53d789" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>CreateGameSession</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a1cf693595fde0ce0c6c3d125d450dfc6" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>CreateGameSession</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a2499fd6d2de7272025a81fc78c7edb98" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>CreateGameSession</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a62176862d25c4d413cf92a096e7724be" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>CreateGameSession</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a02e8306c036269162cbf86936b55ec33" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>CreateGameSession</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9bf60b7a41397c62997b57d33ec11ae4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>FServerApiBase</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1af79a7d72b6e70d59047c1fbc0b6c825e" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>GetGameSessionBySessionId</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1adbcb362298c451ebd2d4a61935d0ea65" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>GetGameSessions</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a74f9ba12e85eb7cc57f8800978a42a7a" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>GetGameSessions</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a30a5bbd4b716c0ec4ec3b5090a6b6d71" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>GetGameSessions</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aa2685acf4e8cdf9c30b833b6f122c2de" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>GetGameSessions</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1adfaec1d4a51cbed9801f82f9b775e128" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>GetRecentPlayer</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9c610b4093406fa713b39c8319b2f7d6" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>HttpClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a0ac58ba7cb9e3b872c5391127beafaab" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>HttpRef</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aae450d2e9afca747b6ce68706a9f760a" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>JoinSession</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a5d862c2c1cf7925a43711161b4a79fa3" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>RegisterPlayer</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a82b9400492bfb053813820492b953002" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>RemoveGameSession</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1aa8ed94ac70b499b1a4227802af7dacc3" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a39c68ed1daaf3b51a1182b9dd457eb07" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ServerCredentialsRef</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1acb790e5df58e08a692690d9b512c9c38" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ServerSessionBrowser</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a8181ead4e12207bf85868c5db56495ab" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ServerSessionBrowser</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a471e9bf6ddb1e9a68fdb18391aefdcf8" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ServerSessionBrowser</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1af9f6b51d9a72178540e0336e44e00665" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ServerSessionBrowser</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a452b7dcace49560836fc87b19d5a599a" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ServerSettingsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1af3924e1aba52efccd68b6b08a1e310aa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>SetServerApiClient</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1acfde4bee9bdad7a3e1c7820cbea7cd77" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>UnregisterPlayer</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1a6fa0328c4b6e445c2386a080e1006784" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>UpdateGameSession</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1aad9d3d22491508338243bf97309a1cd7" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>UpdateGameSession</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1ab141430951456c222698e4fd8ff4c0a6" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>UpdateGameSession</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1abda8b2aaa6e06007a914d43329c1af35" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>ValidateAccelByteId</name></member>
+      <member refid="dc/d8d/class_accel_byte_1_1_game_server_api_1_1_server_session_browser_1adee193304f9a9459d1fb977c077de619" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSessionBrowser</scope><name>~ServerSessionBrowser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

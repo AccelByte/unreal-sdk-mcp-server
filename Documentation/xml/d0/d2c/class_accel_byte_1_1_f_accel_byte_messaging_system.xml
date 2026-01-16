@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::FAccelByteMessagingSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FAccelByteMessagingSystem, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d1/d25/_accel_byte_messaging_system_8h" local="no">AccelByteMessagingSystem.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a67eea6f285916182191148d3652c72b7" prot="private" static="no" mutable="no">
+        <type>TQueue&lt; TSharedPtr&lt; <ref refid="d9/d4f/struct_f_accel_byte_models_messaging_system_message" kindref="compound">FAccelByteModelsMessagingSystemMessage</ref> &gt;, EQueueMode::Mpsc &gt;</type>
+        <definition>TQueue&lt;TSharedPtr&lt;FAccelByteModelsMessagingSystemMessage&gt;, EQueueMode::Mpsc&gt; AccelByte::FAccelByteMessagingSystem::Messages</definition>
+        <argsstring></argsstring>
+        <name>Messages</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::Messages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="102" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a6d3c3965df0d405e81a6ca01dfc4161a" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection AccelByte::FAccelByteMessagingSystem::SubscribersLock</definition>
+        <argsstring></argsstring>
+        <name>SubscribersLock</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::SubscribersLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="104" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1ad9c0046143274165a900ca9f02c0bf71" prot="private" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/d1a/_accel_byte_messaging_system_models_8h_1ae0efad21308f8984638a736d6ceee6e8" kindref="member">EAccelByteMessagingTopic</ref>, FOnMessagingSystemReceivedMessageMulti &gt;</type>
+        <definition>TMap&lt;EAccelByteMessagingTopic, FOnMessagingSystemReceivedMessageMulti&gt; AccelByte::FAccelByteMessagingSystem::SubscribersDelegateMap</definition>
+        <argsstring></argsstring>
+        <name>SubscribersDelegateMap</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::SubscribersDelegateMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="105" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a7b0748affa178b83dab4c783d9824086" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float AccelByte::FAccelByteMessagingSystem::PollingIntervalSecs</definition>
+        <argsstring></argsstring>
+        <name>PollingIntervalSecs</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::PollingIntervalSecs</qualifiedname>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="107" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a46286bdc4efe1a52fbfc03be98c50786" prot="private" static="no" mutable="no">
+        <type>FTickerDelegate</type>
+        <definition>FTickerDelegate AccelByte::FAccelByteMessagingSystem::TickerDelegate</definition>
+        <argsstring></argsstring>
+        <name>TickerDelegate</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::TickerDelegate</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="108" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a1b921edb553108ee0e4eabea6edcf377" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/db6/_accel_byte_defines_8h_1a9147873e40ccb814a396aca451333ab2" kindref="member">FDelegateHandleAlias</ref></type>
+        <definition>FDelegateHandleAlias AccelByte::FAccelByteMessagingSystem::PollHandle</definition>
+        <argsstring></argsstring>
+        <name>PollHandle</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::PollHandle</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="109" column="22" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a3d2b7f51a697c28217833b338bd3b9d5" prot="private" static="no" mutable="no">
+        <type>FThreadSafeCounter</type>
+        <definition>FThreadSafeCounter AccelByte::FAccelByteMessagingSystem::TotalSubscribers</definition>
+        <argsstring></argsstring>
+        <name>TotalSubscribers</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::TotalSubscribers</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="111" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1acd0b6185e0402efc37df8f6731534155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAccelByteMessagingSystem::FAccelByteMessagingSystem</definition>
+        <argsstring>()</argsstring>
+        <name>FAccelByteMessagingSystem</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::FAccelByteMessagingSystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="25" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a4319c6ef5078cc19d6e3e01084e146f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAccelByteMessagingSystem::~FAccelByteMessagingSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~FAccelByteMessagingSystem</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::~FAccelByteMessagingSystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="26" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1ad5bd5f068752ce5559cc581b6a240145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteMessagingSystem::SendMessage</definition>
+        <argsstring>(const EAccelByteMessagingTopic Topic)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::SendMessage</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1a/_accel_byte_messaging_system_models_8h_1ae0efad21308f8984638a736d6ceee6e8" kindref="member">EAccelByteMessagingTopic</ref></type>
+          <declname>Topic</declname>
+        </param>
+        <briefdescription>
+<para>Send message without payload to the messaging system which later will be notified to the subscribers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Topic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic of the message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if message successfully queued </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="34" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="102" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1ac0ee56ef76446b95d2b4954da0eed718" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool AccelByte::FAccelByteMessagingSystem::SendMessage</definition>
+        <argsstring>(const EAccelByteMessagingTopic Topic, const T &amp;Payload)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::SendMessage</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1a/_accel_byte_messaging_system_models_8h_1ae0efad21308f8984638a736d6ceee6e8" kindref="member">EAccelByteMessagingTopic</ref></type>
+          <declname>Topic</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>Payload</declname>
+        </param>
+        <briefdescription>
+<para>Send message with payload to the messaging system which later will be notified to the subscribers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Topic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload of the message. It should be USTRUCT type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if message successfully queued </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="44" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="44" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1adfa098692e62561b8ae56fbe7cacbb4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteMessagingSystem::SendMessage</definition>
+        <argsstring>(const EAccelByteMessagingTopic Topic, const FString &amp;Payload)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::SendMessage</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1a/_accel_byte_messaging_system_models_8h_1ae0efad21308f8984638a736d6ceee6e8" kindref="member">EAccelByteMessagingTopic</ref></type>
+          <declname>Topic</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Payload</declname>
+        </param>
+        <briefdescription>
+<para>Send message with string payload to the messaging system which later will be notified to the subscribers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Topic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload of the message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if message successfully queued </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="67" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="117" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a1d2e25f9ee4b6efaf6a5221e1c62a79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteMessagingSystem::SubscribeToTopic</definition>
+        <argsstring>(const EAccelByteMessagingTopic &amp;Topic, const FOnMessagingSystemReceivedMessage &amp;Delegate)</argsstring>
+        <name>SubscribeToTopic</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::SubscribeToTopic</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1a/_accel_byte_messaging_system_models_8h_1ae0efad21308f8984638a736d6ceee6e8" kindref="member">EAccelByteMessagingTopic</ref> &amp;</type>
+          <declname>Topic</declname>
+        </param>
+        <param>
+          <type>const FOnMessagingSystemReceivedMessage &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to particular topic in messaging system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Topic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic to subscribe, list of available topic is in <ref refid="d2/d1a/_accel_byte_messaging_system_models_8h_1ae0efad21308f8984638a736d6ceee6e8" kindref="member">EAccelByteMessagingTopic</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delegate that will be executed when new message for this topic arrived</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FString representing unique id for the subscriber and can be used to unsubscribe from the topic. Empty string returned if failed to subscribe. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="78" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="29" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1addc530a8b074b0bbf9a48d42185b906a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteMessagingSystem::UnsubscribeFromTopic</definition>
+        <argsstring>(const EAccelByteMessagingTopic &amp;Topic, const FDelegateHandle &amp;DelegateHandle)</argsstring>
+        <name>UnsubscribeFromTopic</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::UnsubscribeFromTopic</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1a/_accel_byte_messaging_system_models_8h_1ae0efad21308f8984638a736d6ceee6e8" kindref="member">EAccelByteMessagingTopic</ref> &amp;</type>
+          <declname>Topic</declname>
+        </param>
+        <param>
+          <type>const FDelegateHandle &amp;</type>
+          <declname>DelegateHandle</declname>
+        </param>
+        <briefdescription>
+<para>Unsubscribe to a topic in messaging system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Topic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topic to unsubscribe </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DelegateHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delegate handle returned by the SubscribeToTopic method </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the SubscriberID found and successfully unsubscribe from topic </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="87" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="58" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a2eef31327d47b09346425c4c82032bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteMessagingSystem::UnsubscribeAll</definition>
+        <argsstring>()</argsstring>
+        <name>UnsubscribeAll</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::UnsubscribeAll</qualifiedname>
+        <briefdescription>
+<para>Unsubscribe all subscribers from messaging system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="92" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a2bbfadec74ad99ab5b7202b44b502bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 FAccelByteMessagingSystem::GetAllSubscribersCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllSubscribersCount</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::GetAllSubscribersCount</qualifiedname>
+        <briefdescription>
+<para>Get the number of all subscribers to all of the topics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of all subscribers to all of the topics. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="99" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a7f385c401c4e2c0faccd35a1f1f513eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteMessagingSystem::PollMessages</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>PollMessages</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::PollMessages</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="113" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessagingSystem.cpp" bodystart="133" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a29921eab4d87f7820fb2e032c820b01b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>FString</type>
+        <definition>static FString AccelByte::FAccelByteMessagingSystem::SerializeObject</definition>
+        <argsstring>(T Object)</argsstring>
+        <name>SerializeObject</name>
+        <qualifiedname>AccelByte::FAccelByteMessagingSystem::SerializeObject</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>Object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="116" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="116" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AccelByte::FAccelByteMessagingSystem</label>
+        <link refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FAccelByteMessagingSystem, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccelByte::FAccelByteMessagingSystem</label>
+        <link refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FAccelByteMessagingSystem, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" line="21" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteMessagingSystem.h" bodystart="23" bodyend="123"/>
+    <listofallmembers>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1acd0b6185e0402efc37df8f6731534155" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>FAccelByteMessagingSystem</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a2bbfadec74ad99ab5b7202b44b502bfc" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>GetAllSubscribersCount</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a67eea6f285916182191148d3652c72b7" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>Messages</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a1b921edb553108ee0e4eabea6edcf377" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>PollHandle</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a7b0748affa178b83dab4c783d9824086" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>PollingIntervalSecs</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a7f385c401c4e2c0faccd35a1f1f513eb" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>PollMessages</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1ad5bd5f068752ce5559cc581b6a240145" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>SendMessage</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1ac0ee56ef76446b95d2b4954da0eed718" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>SendMessage</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1adfa098692e62561b8ae56fbe7cacbb4f" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>SendMessage</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a29921eab4d87f7820fb2e032c820b01b" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>SerializeObject</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1ad9c0046143274165a900ca9f02c0bf71" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>SubscribersDelegateMap</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a6d3c3965df0d405e81a6ca01dfc4161a" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>SubscribersLock</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a1d2e25f9ee4b6efaf6a5221e1c62a79c" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>SubscribeToTopic</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a46286bdc4efe1a52fbfc03be98c50786" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>TickerDelegate</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a3d2b7f51a697c28217833b338bd3b9d5" prot="private" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>TotalSubscribers</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a2eef31327d47b09346425c4c82032bbd" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>UnsubscribeAll</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1addc530a8b074b0bbf9a48d42185b906a" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>UnsubscribeFromTopic</name></member>
+      <member refid="d0/d2c/class_accel_byte_1_1_f_accel_byte_messaging_system_1a4319c6ef5078cc19d6e3e01084e146f8" prot="public" virt="non-virtual"><scope>AccelByte::FAccelByteMessagingSystem</scope><name>~FAccelByteMessagingSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d1/d97/class_u_a_b_achievement" kind="class" language="C++" prot="public">
+    <compoundname>UABAchievement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d7/d71/_a_b_achievement_8h" local="no">ABAchievement.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d97/class_u_a_b_achievement_1a15682c5c1d4ff574fbe3fdc3006f66c7" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABAchievement::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABAchievement::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="138" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1afeb502f00e20a61efaaf7316a6fa07be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABAchievement::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="39" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1a4ad8ce7377622855391a410fe56c2512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::QueryAchievements</definition>
+        <argsstring>(FString const &amp;Language, EAccelByteAchievementListSortBy const &amp;SortBy, FDModelsPaginatedPublicAchievementResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 const &amp;Offset=0, int32 const &amp;Limit=20, FString const &amp;TagQuery=TEXT(&quot;&quot;), bool bGlobal=false)</argsstring>
+        <name>QueryAchievements</name>
+        <qualifiedname>UABAchievement::QueryAchievements</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Language</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1a15f1dd32ee6f9cbb519512c093405075" kindref="member">EAccelByteAchievementListSortBy</ref> const &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedPublicAchievementResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>TagQuery</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bGlobal</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="42" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="14" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1a8782da586b16541bdead8ea29625133b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::GetAchievement</definition>
+        <argsstring>(FString const &amp;AchievementCode, FDModelsMultiLanguageAchievementResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetAchievement</name>
+        <qualifiedname>UABAchievement::GetAchievement</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AchievementCode</declname>
+        </param>
+        <param>
+          <type>FDModelsMultiLanguageAchievementResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="54" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="55" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1a319558f42a8e43abf8ab4aa2dd068fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::QueryUserAchievements</definition>
+        <argsstring>(EAccelByteAchievementListSortBy const &amp;SortBy, FDModelsPaginatedUserAchievementResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 const &amp;Offset=0, int32 const &amp;Limit=20, bool PreferUnlocked=true, FString const &amp;TagQuery=TEXT(&quot;&quot;))</argsstring>
+        <name>QueryUserAchievements</name>
+        <qualifiedname>UABAchievement::QueryUserAchievements</qualifiedname>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1a15f1dd32ee6f9cbb519512c093405075" kindref="member">EAccelByteAchievementListSortBy</ref> const &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedUserAchievementResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>PreferUnlocked</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>TagQuery</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="61" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="86" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1afdcedef71047195fc764db87220b2262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::QueryUserAchievementsV2</definition>
+        <argsstring>(EAccelByteGlobalAchievementListSortBy const &amp;SortBy, FDModelsPaginatedUserAchievementResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 const &amp;Offset=0, int32 const &amp;Limit=20, bool PreferUnlocked=true, FString const &amp;TagQuery=TEXT(&quot;&quot;))</argsstring>
+        <name>QueryUserAchievementsV2</name>
+        <qualifiedname>UABAchievement::QueryUserAchievementsV2</qualifiedname>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1a7a3d871ba41c62acd63e119edc5a2592" kindref="member">EAccelByteGlobalAchievementListSortBy</ref> const &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedUserAchievementResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>PreferUnlocked</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>TagQuery</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="72" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="125" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1a9a61c6ba3523ab688df48bbc5e3f89da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::UnlockAchievement</definition>
+        <argsstring>(FString const &amp;AchievementCode, FDHandler const OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>UnlockAchievement</name>
+        <qualifiedname>UABAchievement::UnlockAchievement</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AchievementCode</declname>
+        </param>
+        <param>
+          <type>FDHandler const</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="83" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="158" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1a942ca80744b0a543deea0a92ea93e802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::QueryGlobalAchievements</definition>
+        <argsstring>(FString const &amp;AchievementCode, EAccelByteGlobalAchievementStatus const &amp;AchievementStatus, EAccelByteGlobalAchievementListSortBy const &amp;SortBy, FDModelsPaginatedUserGlobalAchievementResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 const &amp;Offset=0, int32 const &amp;Limit=20)</argsstring>
+        <name>QueryGlobalAchievements</name>
+        <qualifiedname>UABAchievement::QueryGlobalAchievements</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AchievementCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1a1493514a1f07ea0f8aa403a5dbda446e" kindref="member">EAccelByteGlobalAchievementStatus</ref> const &amp;</type>
+          <declname>AchievementStatus</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1a7a3d871ba41c62acd63e119edc5a2592" kindref="member">EAccelByteGlobalAchievementListSortBy</ref> const &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedUserGlobalAchievementResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="90" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="189" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1ad87af232cd0bdeb0eabb281fe6faaff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::QueryGlobalAchievementContributors</definition>
+        <argsstring>(FString const &amp;AchievementCode, EAccelByteGlobalAchievementContributorsSortBy const &amp;SortBy, FDModelsPaginatedGlobalAchievementContributorsResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 const &amp;Offset=0, int32 const &amp;Limit=20)</argsstring>
+        <name>QueryGlobalAchievementContributors</name>
+        <qualifiedname>UABAchievement::QueryGlobalAchievementContributors</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AchievementCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1ad14170a7b57a15a18b65aa790af170bf" kindref="member">EAccelByteGlobalAchievementContributorsSortBy</ref> const &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedGlobalAchievementContributorsResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="101" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="223" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1a2c5dae197db85b569c2335489c16eb89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::QueryGlobalAchievementUserContributed</definition>
+        <argsstring>(FString const &amp;AchievementCode, EAccelByteGlobalAchievementContributorsSortBy const &amp;SortBy, FDModelsPaginatedGlobalAchievementUserContributedResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 const &amp;Offset=0, int32 const &amp;Limit=20)</argsstring>
+        <name>QueryGlobalAchievementUserContributed</name>
+        <qualifiedname>UABAchievement::QueryGlobalAchievementUserContributed</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AchievementCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1ad14170a7b57a15a18b65aa790af170bf" kindref="member">EAccelByteGlobalAchievementContributorsSortBy</ref> const &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedGlobalAchievementUserContributedResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="111" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="255" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1ad57732300724a84dbdd55c83bab0134b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::ClaimGlobalAchievements</definition>
+        <argsstring>(FString const &amp;AchievementCode, FDHandler const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>ClaimGlobalAchievements</name>
+        <qualifiedname>UABAchievement::ClaimGlobalAchievements</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AchievementCode</declname>
+        </param>
+        <param>
+          <type>FDHandler const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="121" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="287" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d97/class_u_a_b_achievement_1a38ccc65228ec2a6ea7553a329c497218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABAchievement::GetTags</definition>
+        <argsstring>(FString const &amp;Name, EAccelByteAchievementListSortBy const &amp;SortBy, FDModelsPaginatedPublicTagResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 const &amp;Offset=0, int32 const &amp;Limit=20)</argsstring>
+        <name>GetTags</name>
+        <qualifiedname>UABAchievement::GetTags</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d34/_accel_byte_achievement_models_8h_1a15f1dd32ee6f9cbb519512c093405075" kindref="member">EAccelByteAchievementListSortBy</ref> const &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedPublicTagResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="128" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp" bodystart="314" bodyend="343"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABAchievement</label>
+        <link refid="d1/d97/class_u_a_b_achievement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABAchievement</label>
+        <link refid="d1/d97/class_u_a_b_achievement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" line="34" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h" bodystart="35" bodyend="139"/>
+    <listofallmembers>
+      <member refid="d1/d97/class_u_a_b_achievement_1a15682c5c1d4ff574fbe3fdc3006f66c7" prot="private" virt="non-virtual"><scope>UABAchievement</scope><name>ApiClientPtr</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1ad57732300724a84dbdd55c83bab0134b" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>ClaimGlobalAchievements</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1a8782da586b16541bdead8ea29625133b" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>GetAchievement</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1a38ccc65228ec2a6ea7553a329c497218" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>GetTags</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1a4ad8ce7377622855391a410fe56c2512" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>QueryAchievements</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1ad87af232cd0bdeb0eabb281fe6faaff2" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>QueryGlobalAchievementContributors</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1a942ca80744b0a543deea0a92ea93e802" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>QueryGlobalAchievements</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1a2c5dae197db85b569c2335489c16eb89" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>QueryGlobalAchievementUserContributed</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1a319558f42a8e43abf8ab4aa2dd068fad" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>QueryUserAchievements</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1afdcedef71047195fc764db87220b2262" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>QueryUserAchievementsV2</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1afeb502f00e20a61efaaf7316a6fa07be" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>SetApiClient</name></member>
+      <member refid="d1/d97/class_u_a_b_achievement_1a9a61c6ba3523ab688df48bbc5e3f89da" prot="public" virt="non-virtual"><scope>UABAchievement</scope><name>UnlockAchievement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

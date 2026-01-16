@@ -1,0 +1,814 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AccelByte::FHttpRetrySchedulerBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <derivedcompoundref refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler" prot="public" virt="non-virtual">AccelByte::FHttpRetryScheduler</derivedcompoundref>
+    <includes refid="dd/d9b/_accel_byte_http_retry_scheduler_base_8h" local="no">AccelByteHttpRetrySchedulerBase.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a22656de008fec7798880add1cecf68c3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AccelByte::FHttpRetrySchedulerBase::InitialDelay</definition>
+        <argsstring></argsstring>
+        <name>InitialDelay</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::InitialDelay</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="42" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a01b3b06bad68c185072bcc54faaf9ecc" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AccelByte::FHttpRetrySchedulerBase::MaximumDelay</definition>
+        <argsstring></argsstring>
+        <name>MaximumDelay</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::MaximumDelay</qualifiedname>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="43" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad911ba0430edae2bfcc2833adb33ea37" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AccelByte::FHttpRetrySchedulerBase::TotalTimeout</definition>
+        <argsstring></argsstring>
+        <name>TotalTimeout</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::TotalTimeout</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="44" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad7dbd16cf205416d2d5c56920c062ed7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AccelByte::FHttpRetrySchedulerBase::TotalTimeoutIncludingRetries</definition>
+        <argsstring></argsstring>
+        <name>TotalTimeoutIncludingRetries</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::TotalTimeoutIncludingRetries</qualifiedname>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="45" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ac7943f6dbe4b7d5ebdbf713710016bbe" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int AccelByte::FHttpRetrySchedulerBase::PauseTimeout</definition>
+        <argsstring></argsstring>
+        <name>PauseTimeout</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::PauseTimeout</qualifiedname>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="46" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad82059dc45e495fc742d1c9cf06d531b" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::FHttpRetrySchedulerBase::DefaultRateLimit</definition>
+        <argsstring></argsstring>
+        <name>DefaultRateLimit</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::DefaultRateLimit</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="47" column="25" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a8315b979f7059779b1a1ac675320df80" prot="protected" static="yes" mutable="no">
+        <type>TMap&lt; EHttpResponseCodes::Type, FHttpResponseCodeHandler &gt;</type>
+        <definition>TMap&lt; EHttpResponseCodes::Type, FHttpRetrySchedulerBase::FHttpResponseCodeHandler &gt; AccelByte::FHttpRetrySchedulerBase::ResponseCodeDelegates</definition>
+        <argsstring></argsstring>
+        <name>ResponseCodeDelegates</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::ResponseCodeDelegates</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="84" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a0bf16ec31682c8b3d3f05e23092c14ba" prot="protected" static="yes" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::FHttpRetrySchedulerBase::HeaderNamespace</definition>
+        <argsstring></argsstring>
+        <name>HeaderNamespace</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::HeaderNamespace</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="87" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a3117390ec1abe6f4247afdeec4fb5ad6" prot="protected" static="yes" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::FHttpRetrySchedulerBase::HeaderSDKVersion</definition>
+        <argsstring></argsstring>
+        <name>HeaderSDKVersion</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::HeaderSDKVersion</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="88" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aeb5445612aa8358449891d34c0d76ea0" prot="protected" static="yes" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::FHttpRetrySchedulerBase::HeaderOSSVersion</definition>
+        <argsstring></argsstring>
+        <name>HeaderOSSVersion</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::HeaderOSSVersion</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="89" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa35bfd84023656002e15bdb7615cd98d" prot="protected" static="yes" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::FHttpRetrySchedulerBase::HeaderGameClientVersion</definition>
+        <argsstring></argsstring>
+        <name>HeaderGameClientVersion</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::HeaderGameClientVersion</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="90" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa962888d69e14914a2da563a67e80a76" prot="protected" static="yes" mutable="no">
+        <type>int32</type>
+        <definition>int AccelByte::FHttpRetrySchedulerBase::RateLimit</definition>
+        <argsstring></argsstring>
+        <name>RateLimit</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::RateLimit</qualifiedname>
+        <initializer>= <ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad82059dc45e495fc742d1c9cf06d531b" kindref="member">FHttpRetrySchedulerBase::DefaultRateLimit</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="91" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a03a9bd6977ceade7ae23219336c90ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::FHttpRetrySchedulerBase::DECLARE_DELEGATE</definition>
+        <argsstring>(FBearerAuthRejected)</argsstring>
+        <name>DECLARE_DELEGATE</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::DECLARE_DELEGATE</qualifiedname>
+        <param>
+          <type>FBearerAuthRejected</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a5ceae77fbcad326ebec831ec97f8ac4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::FHttpRetrySchedulerBase::DECLARE_MULTICAST_DELEGATE</definition>
+        <argsstring>(FBearerAuthRejectedMulticast)</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::DECLARE_MULTICAST_DELEGATE</qualifiedname>
+        <param>
+          <type>FBearerAuthRejectedMulticast</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ac787140be308e448346919e7d46fa813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::FHttpRetrySchedulerBase::DECLARE_DELEGATE_OneParam</definition>
+        <argsstring>(FBearerAuthRefreshed, FString const &amp;)</argsstring>
+        <name>DECLARE_DELEGATE_OneParam</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::DECLARE_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type>FBearerAuthRefreshed</type>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a87c4000be3be35ad095c361665571ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::FHttpRetrySchedulerBase::DECLARE_MULTICAST_DELEGATE_OneParam</definition>
+        <argsstring>(FBearerAuthRefreshedMulticast, FString const &amp;)</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE_OneParam</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::DECLARE_MULTICAST_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type>FBearerAuthRefreshedMulticast</type>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a4f948a11cef78fa7a57cd0016f26d2ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::FHttpRetrySchedulerBase::DECLARE_DELEGATE_RetVal_OneParam</definition>
+        <argsstring>(EAccelByteTaskState, FHttpResponseCodeHandler, int32)</argsstring>
+        <name>DECLARE_DELEGATE_RetVal_OneParam</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::DECLARE_DELEGATE_RetVal_OneParam</qualifiedname>
+        <param>
+          <type><ref refid="de/dc6/_accel_byte_general_models_8h_1a9228233e26b038d12b3e136ebe9758af" kindref="member">EAccelByteTaskState</ref></type>
+        </param>
+        <param>
+          <type>FHttpResponseCodeHandler</type>
+        </param>
+        <param>
+          <type>int32</type>
+        </param>
+        <briefdescription>
+<para>A delegate to handle specified HTTP status code when the HTTP request succeeded and then will return a task state as the next command for the scheduler to do various things on the task that track the HTTP request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Completed, CancelledUAccelByteBlueprintsCredentials and Failed state will finish the task</para>
+</listitem><listitem><para>Running, Pending and Retrying state will retry the task</para>
+</listitem><listitem><para>Paused state will pause the task</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StatusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP status code that will be handled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dc6/_accel_byte_general_models_8h_1a9228233e26b038d12b3e136ebe9758af" kindref="member">EAccelByteTaskState</ref> The next state </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a6f684d09a7ee65a438a0f0c040ccabe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AccelByte::FHttpRetrySchedulerBase::~FHttpRetrySchedulerBase</definition>
+        <argsstring>()</argsstring>
+        <name>~FHttpRetrySchedulerBase</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::~FHttpRetrySchedulerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="49" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteHttpRetrySchedulerBase.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af8206cf6f1a059a6f0e937c964849b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::FHttpRetrySchedulerBase::InitializeRateLimit</definition>
+        <argsstring>()=0</argsstring>
+        <name>InitializeRateLimit</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::InitializeRateLimit</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a16a523f5193a219f64e50b8d7270b64d">InitializeRateLimit</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="51" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a8e1f1fc1f74da7be8efedc11c11c0375" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a1aad2534870d667dfd8d5bb22e607cc3" kindref="member">FAccelByteTaskPtr</ref></type>
+        <definition>virtual FAccelByteTaskPtr AccelByte::FHttpRetrySchedulerBase::ProcessRequest</definition>
+        <argsstring>(FHttpRequestPtr Request, const FHttpRequestCompleteDelegate &amp;CompleteDelegate, double RequestTime)=0</argsstring>
+        <name>ProcessRequest</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::ProcessRequest</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a13696f8443a5fbc33bf8d93e5ee0bb1f">ProcessRequest</reimplementedby>
+        <param>
+          <type>FHttpRequestPtr</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>const FHttpRequestCompleteDelegate &amp;</type>
+          <declname>CompleteDelegate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>RequestTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="53" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1abd7b4007d3bdf521b825442baf9b43b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a1aad2534870d667dfd8d5bb22e607cc3" kindref="member">FAccelByteTaskPtr</ref></type>
+        <definition>virtual FAccelByteTaskPtr AccelByte::FHttpRetrySchedulerBase::ProcessRequest</definition>
+        <argsstring>(FHttpRequestPtr Request, TSharedPtr&lt; FJsonObject &gt; Content, const FHttpRequestCompleteDelegate &amp;CompleteDelegate, double RequestTime, bool bOmitBlankValues=false)=0</argsstring>
+        <name>ProcessRequest</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::ProcessRequest</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a3b87d516060379409c530711bf532791">ProcessRequest</reimplementedby>
+        <param>
+          <type>FHttpRequestPtr</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FJsonObject &gt;</type>
+          <declname>Content</declname>
+        </param>
+        <param>
+          <type>const FHttpRequestCompleteDelegate &amp;</type>
+          <declname>CompleteDelegate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>RequestTime</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOmitBlankValues</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="55" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af0c01095dc28162a6c33ac53b3c076aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::FHttpRetrySchedulerBase::SetBearerAuthRejectedDelegate</definition>
+        <argsstring>(FBearerAuthRejected const &amp;BearerAuthRejected)=0</argsstring>
+        <name>SetBearerAuthRejectedDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::SetBearerAuthRejectedDelegate</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a6944d0bd4fec7b2ceed7706164d14486">SetBearerAuthRejectedDelegate</reimplementedby>
+        <param>
+          <type>FBearerAuthRejected const &amp;</type>
+          <declname>BearerAuthRejected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="57" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1add6f264fb0cb976294c8a44fdad8906c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>FDelegateHandle</type>
+        <definition>virtual FDelegateHandle AccelByte::FHttpRetrySchedulerBase::AddBearerAuthRejectedDelegate</definition>
+        <argsstring>(FBearerAuthRejected const &amp;BearerAuthRejected)=0</argsstring>
+        <name>AddBearerAuthRejectedDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::AddBearerAuthRejectedDelegate</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a744b81d2acc5c4c1065f5ceebcb9201f">AddBearerAuthRejectedDelegate</reimplementedby>
+        <param>
+          <type>FBearerAuthRejected const &amp;</type>
+          <declname>BearerAuthRejected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="58" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a0a9c56f6267ccb879cbbd22cc4bfdb74" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AccelByte::FHttpRetrySchedulerBase::RemoveBearerAuthRejectedDelegate</definition>
+        <argsstring>(FDelegateHandle const &amp;BearerAuthRejectedHandle)=0</argsstring>
+        <name>RemoveBearerAuthRejectedDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::RemoveBearerAuthRejectedDelegate</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a39a6815510a25368663be0d896b84fb6">RemoveBearerAuthRejectedDelegate</reimplementedby>
+        <param>
+          <type>FDelegateHandle const &amp;</type>
+          <declname>BearerAuthRejectedHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="59" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af58b853a0b2959ff5ab138e445d431c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::FHttpRetrySchedulerBase::BearerAuthRejected</definition>
+        <argsstring>()=0</argsstring>
+        <name>BearerAuthRejected</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::BearerAuthRejected</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a2b6112f234bde9dad3a3daa9459598f8">BearerAuthRejected</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="60" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1acc659f4cecd7d59cbd2e90c7eb5cfbfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::FHttpRetrySchedulerBase::PauseBearerAuthRequest</definition>
+        <argsstring>()=0</argsstring>
+        <name>PauseBearerAuthRequest</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::PauseBearerAuthRequest</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1ab2c771c437c8259c21780e5fd1683dbf">PauseBearerAuthRequest</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="61" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa1a2fdbc2d90fb2b7b894fe45dff72a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::FHttpRetrySchedulerBase::ResumeBearerAuthRequest</definition>
+        <argsstring>(const FString &amp;AccessToken)=0</argsstring>
+        <name>ResumeBearerAuthRequest</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::ResumeBearerAuthRequest</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a506b6596a874697b2d53c4fdcba41284">ResumeBearerAuthRequest</reimplementedby>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>AccessToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ac29fabe04514aa01a4389f37e3b5f370" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>FDelegateHandle</type>
+        <definition>virtual FDelegateHandle AccelByte::FHttpRetrySchedulerBase::AddBearerAuthRefreshedDelegate</definition>
+        <argsstring>(FBearerAuthRefreshed const &amp;BearerAuthRefreshed)=0</argsstring>
+        <name>AddBearerAuthRefreshedDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::AddBearerAuthRefreshedDelegate</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1adea5e6d81c88f7b22c9bbaad379ee500">AddBearerAuthRefreshedDelegate</reimplementedby>
+        <param>
+          <type>FBearerAuthRefreshed const &amp;</type>
+          <declname>BearerAuthRefreshed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="64" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a326f2dc33bfcfaf78463cbea8e0499db" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AccelByte::FHttpRetrySchedulerBase::RemoveBearerAuthRefreshedDelegate</definition>
+        <argsstring>(FDelegateHandle const &amp;BearerAuthRefreshedHandle)=0</argsstring>
+        <name>RemoveBearerAuthRefreshedDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::RemoveBearerAuthRefreshedDelegate</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a6f431091f8a4ee1633ae542dc2edd478">RemoveBearerAuthRefreshedDelegate</reimplementedby>
+        <param>
+          <type>FDelegateHandle const &amp;</type>
+          <declname>BearerAuthRefreshedHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="65" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aca583896313ebadb0944ac6d27569c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::FHttpRetrySchedulerBase::Startup</definition>
+        <argsstring>()=0</argsstring>
+        <name>Startup</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::Startup</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1ad2df3daf46425b62e6416d7feeb4a7fc">Startup</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="67" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a856b7fc912d9ad980e5d536dc8c0b419" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::FHttpRetrySchedulerBase::Shutdown</definition>
+        <argsstring>()=0</argsstring>
+        <name>Shutdown</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::Shutdown</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1ad7d486240bb4255196d187b7289c0ca1">Shutdown</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="68" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa887b0fda4efa4bb158dd1ffd7d49b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AccelByte::FHttpRetrySchedulerBase::PollRetry</definition>
+        <argsstring>(double Time)=0</argsstring>
+        <name>PollRetry</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::PollRetry</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a72df1f308a14fc8f36b581c0f44e688c">PollRetry</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>Time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="69" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af211e935cc4c060d0f7820302a038854" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d2/dfd/class_accel_byte_1_1_core_1_1_f_accel_byte_http_cache" kindref="compound">Core::FAccelByteHttpCache</ref> &amp;</type>
+        <definition>virtual Core::FAccelByteHttpCache &amp; AccelByte::FHttpRetrySchedulerBase::GetHttpCache</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetHttpCache</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::GetHttpCache</qualifiedname>
+        <reimplementedby refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler_1a628148763719f0a773c5bc35f91340be">GetHttpCache</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="81" column="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aed65ca9f466353d6ddc4f7bf51cca150" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FHttpRetrySchedulerBase::SetHttpResponseCodeHandlerDelegate</definition>
+        <argsstring>(EHttpResponseCodes::Type StatusCode, const FHttpResponseCodeHandler &amp;Handler)</argsstring>
+        <name>SetHttpResponseCodeHandlerDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::SetHttpResponseCodeHandlerDelegate</qualifiedname>
+        <param>
+          <type>EHttpResponseCodes::Type</type>
+          <declname>StatusCode</declname>
+        </param>
+        <param>
+          <type>const FHttpResponseCodeHandler &amp;</type>
+          <declname>Handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="71" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteHttpRetrySchedulerBase.cpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a4144875b0133728befd7f49b39b8445f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::FHttpRetrySchedulerBase::RemoveHttpResponseCodeHandlerDelegate</definition>
+        <argsstring>(EHttpResponseCodes::Type StatusCode)</argsstring>
+        <name>RemoveHttpResponseCodeHandlerDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::RemoveHttpResponseCodeHandlerDelegate</qualifiedname>
+        <param>
+          <type>EHttpResponseCodes::Type</type>
+          <declname>StatusCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="72" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteHttpRetrySchedulerBase.cpp" bodystart="40" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a6491fb5d1bfaedff7420152d1c3c431c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TMap&lt; EHttpResponseCodes::Type, FHttpResponseCodeHandler &gt;</type>
+        <definition>TMap&lt; EHttpResponseCodes::Type, FHttpRetrySchedulerBase::FHttpResponseCodeHandler &gt; AccelByte::FHttpRetrySchedulerBase::GetHttpResponseCodeHandlerDelegate</definition>
+        <argsstring>()</argsstring>
+        <name>GetHttpResponseCodeHandlerDelegate</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::GetHttpResponseCodeHandlerDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="73" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteHttpRetrySchedulerBase.cpp" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a36ec1cbe7f24916a6eeb0b2eaa538207" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AccelByte::FHttpRetrySchedulerBase::SetHeaderNamespace</definition>
+        <argsstring>(const FString &amp;Value)</argsstring>
+        <name>SetHeaderNamespace</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::SetHeaderNamespace</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="76" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad8cf6ec6431eb996a892dd448477eb14" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AccelByte::FHttpRetrySchedulerBase::SetHeaderSDKVersion</definition>
+        <argsstring>(const FString &amp;Value)</argsstring>
+        <name>SetHeaderSDKVersion</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::SetHeaderSDKVersion</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="77" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a52bc9cf6110f615097322a300663a4d4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AccelByte::FHttpRetrySchedulerBase::SetHeaderOSSVersion</definition>
+        <argsstring>(const FString &amp;Value)</argsstring>
+        <name>SetHeaderOSSVersion</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::SetHeaderOSSVersion</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="78" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a7c9076149ae91cd10b4776b9e634d4c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void AccelByte::FHttpRetrySchedulerBase::SetHeaderGameClientVersion</definition>
+        <argsstring>(const FString &amp;Value)</argsstring>
+        <name>SetHeaderGameClientVersion</name>
+        <qualifiedname>AccelByte::FHttpRetrySchedulerBase::SetHeaderGameClientVersion</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="79" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>AccelByte::FHttpRetryScheduler</label>
+        <link refid="db/d07/class_accel_byte_1_1_f_http_retry_scheduler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" line="21" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteHttpRetrySchedulerBase.h" bodystart="22" bodyend="92"/>
+    <listofallmembers>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ac29fabe04514aa01a4389f37e3b5f370" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>AddBearerAuthRefreshedDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1add6f264fb0cb976294c8a44fdad8906c" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>AddBearerAuthRejectedDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af58b853a0b2959ff5ab138e445d431c0" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>BearerAuthRejected</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a03a9bd6977ceade7ae23219336c90ba6" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>DECLARE_DELEGATE</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ac787140be308e448346919e7d46fa813" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>DECLARE_DELEGATE_OneParam</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a4f948a11cef78fa7a57cd0016f26d2ca" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>DECLARE_DELEGATE_RetVal_OneParam</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a5ceae77fbcad326ebec831ec97f8ac4f" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>DECLARE_MULTICAST_DELEGATE</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a87c4000be3be35ad095c361665571ec9" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>DECLARE_MULTICAST_DELEGATE_OneParam</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad82059dc45e495fc742d1c9cf06d531b" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>DefaultRateLimit</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af211e935cc4c060d0f7820302a038854" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>GetHttpCache</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a6491fb5d1bfaedff7420152d1c3c431c" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>GetHttpResponseCodeHandlerDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa35bfd84023656002e15bdb7615cd98d" prot="protected" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>HeaderGameClientVersion</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a0bf16ec31682c8b3d3f05e23092c14ba" prot="protected" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>HeaderNamespace</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aeb5445612aa8358449891d34c0d76ea0" prot="protected" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>HeaderOSSVersion</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a3117390ec1abe6f4247afdeec4fb5ad6" prot="protected" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>HeaderSDKVersion</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a22656de008fec7798880add1cecf68c3" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>InitialDelay</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af8206cf6f1a059a6f0e937c964849b0b" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>InitializeRateLimit</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a01b3b06bad68c185072bcc54faaf9ecc" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>MaximumDelay</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1acc659f4cecd7d59cbd2e90c7eb5cfbfd" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>PauseBearerAuthRequest</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ac7943f6dbe4b7d5ebdbf713710016bbe" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>PauseTimeout</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa887b0fda4efa4bb158dd1ffd7d49b47" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>PollRetry</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a8e1f1fc1f74da7be8efedc11c11c0375" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>ProcessRequest</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1abd7b4007d3bdf521b825442baf9b43b5" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>ProcessRequest</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa962888d69e14914a2da563a67e80a76" prot="protected" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>RateLimit</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a326f2dc33bfcfaf78463cbea8e0499db" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>RemoveBearerAuthRefreshedDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a0a9c56f6267ccb879cbbd22cc4bfdb74" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>RemoveBearerAuthRejectedDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a4144875b0133728befd7f49b39b8445f" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>RemoveHttpResponseCodeHandlerDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a8315b979f7059779b1a1ac675320df80" prot="protected" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>ResponseCodeDelegates</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aa1a2fdbc2d90fb2b7b894fe45dff72a6" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>ResumeBearerAuthRequest</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1af0c01095dc28162a6c33ac53b3c076aa" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>SetBearerAuthRejectedDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a7c9076149ae91cd10b4776b9e634d4c1" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>SetHeaderGameClientVersion</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a36ec1cbe7f24916a6eeb0b2eaa538207" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>SetHeaderNamespace</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a52bc9cf6110f615097322a300663a4d4" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>SetHeaderOSSVersion</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad8cf6ec6431eb996a892dd448477eb14" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>SetHeaderSDKVersion</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aed65ca9f466353d6ddc4f7bf51cca150" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>SetHttpResponseCodeHandlerDelegate</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a856b7fc912d9ad980e5d536dc8c0b419" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>Shutdown</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1aca583896313ebadb0944ac6d27569c81" prot="public" virt="pure-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>Startup</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad911ba0430edae2bfcc2833adb33ea37" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>TotalTimeout</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1ad7dbd16cf205416d2d5c56920c062ed7" prot="public" virt="non-virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>TotalTimeoutIncludingRetries</name></member>
+      <member refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base_1a6f684d09a7ee65a438a0f0c040ccabe8" prot="public" virt="virtual"><scope>AccelByte::FHttpRetrySchedulerBase</scope><name>~FHttpRetrySchedulerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

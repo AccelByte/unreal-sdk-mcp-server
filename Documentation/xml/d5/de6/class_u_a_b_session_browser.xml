@@ -1,0 +1,837 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d5/de6/class_u_a_b_session_browser" kind="class" language="C++" prot="public">
+    <compoundname>UABSessionBrowser</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d5/d6d/_a_b_session_browser_8h" local="no">ABSessionBrowser.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/de6/class_u_a_b_session_browser_1a8e44c9f1af388e1e1b38d41679d645e5" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABSessionBrowser::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABSessionBrowser::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="230" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a71e49e602b9ee0d67e938e9ff3bf1bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABSessionBrowser::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="34" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a5b1b9c5144069e915c2af64940ce43da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::CreateGameSessionPublic</definition>
+        <argsstring>(FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, int32 BotCount, int32 MaxPlayer, FJsonObjectWrapper const &amp;OtherSettings, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSessionPublic</name>
+        <qualifiedname>UABSessionBrowser::CreateGameSessionPublic</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>FJsonObjectWrapper const &amp;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="37" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="18" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1ae022bc6880f07a431ce3526d7416e04c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::CreateGameSessionPrivate</definition>
+        <argsstring>(FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, int32 BotCount, int32 MaxPlayer, int32 MaxSpectator, FString const &amp;Password, FJsonObjectWrapper const &amp;OtherSettings, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSessionPrivate</name>
+        <qualifiedname>UABSessionBrowser::CreateGameSessionPrivate</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxSpectator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type>FJsonObjectWrapper const &amp;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="49" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="62" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a159ef74093f6ca90781bc02f6d20bcbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::CreateGameSessionTypeSpecifiedByString</definition>
+        <argsstring>(FString const &amp;SessionTypeString, FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, int32 BotCount, int32 MaxPlayer, int32 MaxSpectator, FString const &amp;Password, FJsonObjectWrapper const &amp;OtherSettings, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSessionTypeSpecifiedByString</name>
+        <qualifiedname>UABSessionBrowser::CreateGameSessionTypeSpecifiedByString</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionTypeString</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxSpectator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type>FJsonObjectWrapper const &amp;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="63" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="110" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a54274314a384b8b7e15fe78334d931c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::CreateGameSessionTypeSpecifiedByEnum</definition>
+        <argsstring>(EAccelByteSessionType SessionType, FString const &amp;GameMode, FString const &amp;GameMapName, FString const &amp;GameVersion, int32 BotCount, int32 MaxPlayer, int32 MaxSpectator, FString const &amp;Password, FJsonObjectWrapper const &amp;OtherSettings, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSessionTypeSpecifiedByEnum</name>
+        <qualifiedname>UABSessionBrowser::CreateGameSessionTypeSpecifiedByEnum</qualifiedname>
+        <param>
+          <type><ref refid="db/d61/_accel_byte_session_browser_models_8h_1a0c54b59c20397559a8ad924259447c3b" kindref="member">EAccelByteSessionType</ref></type>
+          <declname>SessionType</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMapName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameVersion</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>BotCount</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxSpectator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type>FJsonObjectWrapper const &amp;</type>
+          <declname>OtherSettings</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="78" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="160" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a3cf802ab04bff53776c834f149be18ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::CreateGameSessionTypeSpecificByStruct</definition>
+        <argsstring>(FAccelByteModelsSessionBrowserCreateRequest const &amp;CreateSessionRequest, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateGameSessionTypeSpecificByStruct</name>
+        <qualifiedname>UABSessionBrowser::CreateGameSessionTypeSpecificByStruct</qualifiedname>
+        <param>
+          <type><ref refid="d8/d87/struct_f_accel_byte_models_session_browser_create_request" kindref="compound">FAccelByteModelsSessionBrowserCreateRequest</ref> const &amp;</type>
+          <declname>CreateSessionRequest</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="93" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="210" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1aec53480794da4bae3832d53e4c3d717e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::UpdateGameSession</definition>
+        <argsstring>(FString const &amp;SessionId, int32 MaxPlayer, int32 CurrentPlayerCount, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameSession</name>
+        <qualifiedname>UABSessionBrowser::UpdateGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>MaxPlayer</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>CurrentPlayerCount</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="100" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="245" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a9a31ddcd5a503247dce75c6bfec1b42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::UpdateGameSessionByStruct</definition>
+        <argsstring>(FString const &amp;SessionId, FAccelByteModelsSessionBrowserUpdateRequest const &amp;UpdateSessionRequest, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameSessionByStruct</name>
+        <qualifiedname>UABSessionBrowser::UpdateGameSessionByStruct</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d47/struct_f_accel_byte_models_session_browser_update_request" kindref="compound">FAccelByteModelsSessionBrowserUpdateRequest</ref> const &amp;</type>
+          <declname>UpdateSessionRequest</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="109" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="281" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a754cad7fccd72e4f68127bc7d4fcd704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::UpdateGameSettings</definition>
+        <argsstring>(FString const &amp;SessionId, TMap&lt; FString, FString &gt; const &amp;Settings, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameSettings</name>
+        <qualifiedname>UABSessionBrowser::UpdateGameSettings</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>TMap&lt; FString, FString &gt; const &amp;</type>
+          <declname>Settings</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="117" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="315" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1ac816ad47e055d0d20e7921f49ce4d3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::UpdateGameSettingsByJsonObject</definition>
+        <argsstring>(FString const &amp;SessionId, FJsonObjectWrapper const &amp;Settings, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameSettingsByJsonObject</name>
+        <qualifiedname>UABSessionBrowser::UpdateGameSettingsByJsonObject</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FJsonObjectWrapper const &amp;</type>
+          <declname>Settings</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="125" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="349" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a852fd0a94b4549a867bb7d2e11c54559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::RemoveGameSession</definition>
+        <argsstring>(FString const &amp;SessionId, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>RemoveGameSession</name>
+        <qualifiedname>UABSessionBrowser::RemoveGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="133" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="385" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a3911fdb62fc5ccc173d9b40ed614316d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::GetGameSessionsByTypeString</definition>
+        <argsstring>(FString const &amp;SessionTypeString, FString const &amp;GameMode, FDModelsSessionBrowserGetResultResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Offset=0, int32 Limit=10)</argsstring>
+        <name>GetGameSessionsByTypeString</name>
+        <qualifiedname>UABSessionBrowser::GetGameSessionsByTypeString</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionTypeString</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserGetResultResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="140" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="417" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1adba3434124c37871520e5a2f0a0cbec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::GetGameSessionsByTypeEnum</definition>
+        <argsstring>(EAccelByteSessionType SessionType, FString const &amp;GameMode, FDModelsSessionBrowserGetResultResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Offset=0, int32 Limit=10)</argsstring>
+        <name>GetGameSessionsByTypeEnum</name>
+        <qualifiedname>UABSessionBrowser::GetGameSessionsByTypeEnum</qualifiedname>
+        <param>
+          <type><ref refid="db/d61/_accel_byte_session_browser_models_8h_1a0c54b59c20397559a8ad924259447c3b" kindref="member">EAccelByteSessionType</ref></type>
+          <declname>SessionType</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserGetResultResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="150" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="455" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1aac121722795be3d8b54cdc78962773cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::GetGameSessionsByTypeStringAndMatchExist</definition>
+        <argsstring>(FString const &amp;SessionTypeString, FString const &amp;GameMode, FString const &amp;MatchExist, FDModelsSessionBrowserGetResultResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Offset=0, int32 Limit=10)</argsstring>
+        <name>GetGameSessionsByTypeStringAndMatchExist</name>
+        <qualifiedname>UABSessionBrowser::GetGameSessionsByTypeStringAndMatchExist</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionTypeString</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchExist</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserGetResultResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="160" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="493" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1ae993720fe4cc914c9243562ceab214bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::GetGameSessionsByTypeEnumAndMatchExist</definition>
+        <argsstring>(EAccelByteSessionType SessionType, FString const &amp;GameMode, FString const &amp;MatchExist, FDModelsSessionBrowserGetResultResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Offset=0, int32 Limit=10)</argsstring>
+        <name>GetGameSessionsByTypeEnumAndMatchExist</name>
+        <qualifiedname>UABSessionBrowser::GetGameSessionsByTypeEnumAndMatchExist</qualifiedname>
+        <param>
+          <type><ref refid="db/d61/_accel_byte_session_browser_models_8h_1a0c54b59c20397559a8ad924259447c3b" kindref="member">EAccelByteSessionType</ref></type>
+          <declname>SessionType</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GameMode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchExist</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserGetResultResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="171" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="533" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1ab31140ea0d58dd1dae336a304563a924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::GetGameSessionsByUserIds</definition>
+        <argsstring>(TArray&lt; FString &gt; const &amp;UserIds, FDModelsSessionBrowserGetResultByUserIdsResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetGameSessionsByUserIds</name>
+        <qualifiedname>UABSessionBrowser::GetGameSessionsByUserIds</qualifiedname>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>UserIds</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserGetResultByUserIdsResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="182" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="573" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a71ac63d5d69dde828fae74f02b475467" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::RegisterPlayer</definition>
+        <argsstring>(FString const &amp;SessionId, FString const &amp;PlayerToAdd, bool AsSpectator, FDModelsSessionBrowserAddPlayerResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>RegisterPlayer</name>
+        <qualifiedname>UABSessionBrowser::RegisterPlayer</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>PlayerToAdd</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>AsSpectator</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserAddPlayerResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="189" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="603" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1af5d8b38f60f1eb32e7ee61b7a43d7e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::UnregisterPlayer</definition>
+        <argsstring>(FString const &amp;SessionId, FString const &amp;PlayerToRemove, FDModelsSessionBrowserAddPlayerResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>UnregisterPlayer</name>
+        <qualifiedname>UABSessionBrowser::UnregisterPlayer</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>PlayerToRemove</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserAddPlayerResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="198" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="639" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1aa8e6fd55c289e0dae8d555fbcecd90d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::GetRecentPlayer</definition>
+        <argsstring>(FString const &amp;UserId, FDModelsSessionBrowserRecentPlayerGetResultResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Offset=0, int32 Limit=10)</argsstring>
+        <name>GetRecentPlayer</name>
+        <qualifiedname>UABSessionBrowser::GetRecentPlayer</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserRecentPlayerGetResultResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="206" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="673" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a2720bd5510e65bfbc7d3f590d59d260e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::JoinSession</definition>
+        <argsstring>(FString const &amp;SessionId, FString const &amp;Password, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>JoinSession</name>
+        <qualifiedname>UABSessionBrowser::JoinSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Password</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="215" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="709" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/de6/class_u_a_b_session_browser_1a448d508f684f3b977e132c1c2ec9b3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABSessionBrowser::GetGameSession</definition>
+        <argsstring>(FString const &amp;SessionId, FDModelsSessionBrowserDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetGameSession</name>
+        <qualifiedname>UABSessionBrowser::GetGameSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <param>
+          <type>FDModelsSessionBrowserDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="223" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp" bodystart="743" bodyend="773"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABSessionBrowser</label>
+        <link refid="d5/de6/class_u_a_b_session_browser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABSessionBrowser</label>
+        <link refid="d5/de6/class_u_a_b_session_browser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" line="29" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h" bodystart="30" bodyend="231"/>
+    <listofallmembers>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a8e44c9f1af388e1e1b38d41679d645e5" prot="private" virt="non-virtual"><scope>UABSessionBrowser</scope><name>ApiClientPtr</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1ae022bc6880f07a431ce3526d7416e04c" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>CreateGameSessionPrivate</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a5b1b9c5144069e915c2af64940ce43da" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>CreateGameSessionPublic</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a3cf802ab04bff53776c834f149be18ea" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>CreateGameSessionTypeSpecificByStruct</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a54274314a384b8b7e15fe78334d931c6" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>CreateGameSessionTypeSpecifiedByEnum</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a159ef74093f6ca90781bc02f6d20bcbc" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>CreateGameSessionTypeSpecifiedByString</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a448d508f684f3b977e132c1c2ec9b3bf" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>GetGameSession</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1adba3434124c37871520e5a2f0a0cbec3" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>GetGameSessionsByTypeEnum</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1ae993720fe4cc914c9243562ceab214bf" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>GetGameSessionsByTypeEnumAndMatchExist</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a3911fdb62fc5ccc173d9b40ed614316d" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>GetGameSessionsByTypeString</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1aac121722795be3d8b54cdc78962773cc" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>GetGameSessionsByTypeStringAndMatchExist</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1ab31140ea0d58dd1dae336a304563a924" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>GetGameSessionsByUserIds</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1aa8e6fd55c289e0dae8d555fbcecd90d7" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>GetRecentPlayer</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a2720bd5510e65bfbc7d3f590d59d260e" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>JoinSession</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a71ac63d5d69dde828fae74f02b475467" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>RegisterPlayer</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a852fd0a94b4549a867bb7d2e11c54559" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>RemoveGameSession</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a71e49e602b9ee0d67e938e9ff3bf1bf4" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>SetApiClient</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1af5d8b38f60f1eb32e7ee61b7a43d7e98" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>UnregisterPlayer</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1aec53480794da4bae3832d53e4c3d717e" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>UpdateGameSession</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a9a31ddcd5a503247dce75c6bfec1b42a" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>UpdateGameSessionByStruct</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1a754cad7fccd72e4f68127bc7d4fcd704" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>UpdateGameSettings</name></member>
+      <member refid="d5/de6/class_u_a_b_session_browser_1ac816ad47e055d0d20e7921f49ce4d3e7" prot="public" virt="non-virtual"><scope>UABSessionBrowser</scope><name>UpdateGameSettingsByJsonObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d6/d66/class_u_a_b_server_lobby" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UABServerLobby</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d0/d3a/_a_b_server_lobby_8h" local="no">ABServerLobby.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d66/class_u_a_b_server_lobby_1a14e57e759ef0dbe0bd34673bb85a5da2" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref></type>
+        <definition>AccelByte::FServerApiClientPtr UABServerLobby::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABServerLobby::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="57" column="32" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1a8e392e4e508050b0f4a11eb30d7f8f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::SetServerApiClient</definition>
+        <argsstring>(AccelByte::FServerApiClientPtr const &amp;NewServerApiClientPtr)</argsstring>
+        <name>SetServerApiClient</name>
+        <qualifiedname>UABServerLobby::SetServerApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref> const &amp;</type>
+          <declname>NewServerApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="26" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1aee64bb26e2c7109b4c350ac3783b26c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::GetPartyDataByUserId</definition>
+        <argsstring>(FString const &amp;UserId, FDDataPartyResponseDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetPartyDataByUserId</name>
+        <qualifiedname>UABServerLobby::GetPartyDataByUserId</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDDataPartyResponseDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="30" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="14" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1af991c085235abbb4e93f5de513c7c11f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::WritePartyStorage</definition>
+        <argsstring>(FString const &amp;PartyId, FDPayloadModifier PayloadModifier, int const &amp;RetryAttempt, FDPartyDataNotifDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>WritePartyStorage</name>
+        <qualifiedname>UABServerLobby::WritePartyStorage</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>PartyId</declname>
+        </param>
+        <param>
+          <type>FDPayloadModifier</type>
+          <declname>PayloadModifier</declname>
+        </param>
+        <param>
+          <type>int const &amp;</type>
+          <declname>RetryAttempt</declname>
+        </param>
+        <param>
+          <type>FDPartyDataNotifDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="33" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="33" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1a397cdad470d27f1ef6de1219c130ca7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::GetPartyStorage</definition>
+        <argsstring>(FString const &amp;PartyId, FDPartyDataNotifDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetPartyStorage</name>
+        <qualifiedname>UABServerLobby::GetPartyStorage</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>PartyId</declname>
+        </param>
+        <param>
+          <type>FDPartyDataNotifDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="36" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="64" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1a2c462a9fb5798e5a00a6a5f1a75e3fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::GetSessionAttributeAll</definition>
+        <argsstring>(FString const &amp;UserId, FDSessionAttributeAllResponseDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetSessionAttributeAll</name>
+        <qualifiedname>UABServerLobby::GetSessionAttributeAll</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDSessionAttributeAllResponseDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="39" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="83" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1ab77823f5bbae47c18572556cb98fd0e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::GetSessionAttribute</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;Key, FDSessionAttributeResponseDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetSessionAttribute</name>
+        <qualifiedname>UABServerLobby::GetSessionAttribute</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>FDSessionAttributeResponseDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="42" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="102" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1a982cee9707754547dc41de6e8242a1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::SetSessionAttribute</definition>
+        <argsstring>(FString const &amp;UserId, TMap&lt; FString, FString &gt; const &amp;Attributes, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>SetSessionAttribute</name>
+        <qualifiedname>UABServerLobby::SetSessionAttribute</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TMap&lt; FString, FString &gt; const &amp;</type>
+          <declname>Attributes</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="45" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="123" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1a2c91bf252d31fb4ce5feff26e9df4000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::SetSessionAttributeString</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;Key, FString const &amp;Value, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>SetSessionAttributeString</name>
+        <qualifiedname>UABServerLobby::SetSessionAttributeString</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="48" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="145" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1a5ac255a8a4e7a24db5b936e3e7547dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::GetListOfBlockers</definition>
+        <argsstring>(FString const &amp;UserId, FDListBlockerResponseDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetListOfBlockers</name>
+        <qualifiedname>UABServerLobby::GetListOfBlockers</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDListBlockerResponseDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="51" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="168" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d66/class_u_a_b_server_lobby_1a5f1ec7847f423a0c88af3b7d38ba0df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerLobby::GetListOfBlockedUsers</definition>
+        <argsstring>(FString const &amp;UserId, FDListBlockedUserResponseDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetListOfBlockedUsers</name>
+        <qualifiedname>UABServerLobby::GetListOfBlockedUsers</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDListBlockedUserResponseDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="54" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerLobby.cpp" bodystart="187" bodyend="204"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABServerLobby</label>
+        <link refid="d6/d66/class_u_a_b_server_lobby"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABServerLobby</label>
+        <link refid="d6/d66/class_u_a_b_server_lobby"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" line="22" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerLobby.h" bodystart="23" bodyend="58"/>
+    <listofallmembers>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a14e57e759ef0dbe0bd34673bb85a5da2" prot="private" virt="non-virtual"><scope>UABServerLobby</scope><name>ApiClientPtr</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a5f1ec7847f423a0c88af3b7d38ba0df3" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>GetListOfBlockedUsers</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a5ac255a8a4e7a24db5b936e3e7547dd4" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>GetListOfBlockers</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1aee64bb26e2c7109b4c350ac3783b26c9" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>GetPartyDataByUserId</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a397cdad470d27f1ef6de1219c130ca7a" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>GetPartyStorage</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1ab77823f5bbae47c18572556cb98fd0e2" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>GetSessionAttribute</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a2c462a9fb5798e5a00a6a5f1a75e3fc4" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>GetSessionAttributeAll</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a8e392e4e508050b0f4a11eb30d7f8f13" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>SetServerApiClient</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a982cee9707754547dc41de6e8242a1c2" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>SetSessionAttribute</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1a2c91bf252d31fb4ce5feff26e9df4000" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>SetSessionAttributeString</name></member>
+      <member refid="d6/d66/class_u_a_b_server_lobby_1af991c085235abbb4e93f5de513c7c11f" prot="public" virt="non-virtual"><scope>UABServerLobby</scope><name>WritePartyStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

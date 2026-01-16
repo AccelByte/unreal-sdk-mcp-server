@@ -1,0 +1,1456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::AccelByteWebSocket</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; AccelByteWebSocket, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="de/de6/_accel_byte_web_socket_8h" local="no">AccelByteWebSocket.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a2aae6b6d5fbcf27d0a21ab12dd1f22bd" prot="public" static="no" mutable="no">
+        <type>const FString const <ref refid="d4/d6f/struct_accel_byte_1_1_f_reconnect_attempt_info" kindref="compound">FReconnectAttemptInfo</ref> <ref refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy" kindref="compound">IWebsocketConfigurableReconnectStrategy</ref> &amp;</type>
+        <definition>const FString const FReconnectAttemptInfo IWebsocketConfigurableReconnectStrategy&amp; AccelByte::AccelByteWebSocket::ParentReconnectionStrategyRef</definition>
+        <argsstring></argsstring>
+        <name>ParentReconnectionStrategyRef</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::ParentReconnectionStrategyRef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="76" column="41" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a3793f596b23d7ea64bab9ab20f96c0d9" prot="public" static="no" mutable="no">
+        <type>const FString const <ref refid="d4/d6f/struct_accel_byte_1_1_f_reconnect_attempt_info" kindref="compound">FReconnectAttemptInfo</ref> <ref refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy" kindref="compound">IWebsocketConfigurableReconnectStrategy</ref> float</type>
+        <definition>const FString const FReconnectAttemptInfo IWebsocketConfigurableReconnectStrategy float AccelByte::AccelByteWebSocket::PingDelay</definition>
+        <argsstring></argsstring>
+        <name>PingDelay</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::PingDelay</qualifiedname>
+        <initializer>= 30.f
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="77" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a527e03817172f55955c9dce2b8917737" prot="public" static="no" mutable="no">
+        <type>FTickerDelegate</type>
+        <definition>FTickerDelegate AccelByte::AccelByteWebSocket::TickerDelegate</definition>
+        <argsstring></argsstring>
+        <name>TickerDelegate</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TickerDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="97" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ac44977d64654828e1c27b8a1be27a4e2" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/db6/_accel_byte_defines_8h_1a9147873e40ccb814a396aca451333ab2" kindref="member">FDelegateHandleAlias</ref></type>
+        <definition>FDelegateHandleAlias AccelByte::AccelByteWebSocket::TickerDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>TickerDelegateHandle</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TickerDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="98" column="22" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a340656ff9332c91670e6242cf009bc4e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::bConnectTriggered</definition>
+        <argsstring></argsstring>
+        <name>bConnectTriggered</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::bConnectTriggered</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="135" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ab7c580b578325059866b76f4a5ec0c51" prot="private" static="no" mutable="no">
+        <type>TQueue&lt; FString &gt;</type>
+        <definition>TQueue&lt;FString&gt; AccelByte::AccelByteWebSocket::OnMessageQueue</definition>
+        <argsstring></argsstring>
+        <name>OnMessageQueue</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnMessageQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="136" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a035f0009404cb0b088c793360dbe5f3e" prot="private" static="no" mutable="no">
+        <type>TQueue&lt; <ref refid="da/d18/struct_accel_byte_1_1_f_connection_closed_params" kindref="compound">FConnectionClosedParams</ref> &gt;</type>
+        <definition>TQueue&lt;FConnectionClosedParams&gt; AccelByte::AccelByteWebSocket::OnConnectionClosedQueue</definition>
+        <argsstring></argsstring>
+        <name>OnConnectionClosedQueue</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnConnectionClosedQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="137" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae7926e230b7b0e2245f9b8798d648e14" prot="private" static="no" mutable="no">
+        <type>TQueue&lt; FString &gt;</type>
+        <definition>TQueue&lt;FString&gt; AccelByte::AccelByteWebSocket::OnConnectionErrorQueue</definition>
+        <argsstring></argsstring>
+        <name>OnConnectionErrorQueue</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnConnectionErrorQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="138" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89b8d6c53478e3e6ef4d7899024e1ca7" prot="private" static="no" mutable="no">
+        <type>TQueue&lt; <ref refid="d4/d6f/struct_accel_byte_1_1_f_reconnect_attempt_info" kindref="compound">FReconnectAttemptInfo</ref> &gt;</type>
+        <definition>TQueue&lt;FReconnectAttemptInfo&gt; AccelByte::AccelByteWebSocket::OnReconnectingAttemptQueue</definition>
+        <argsstring></argsstring>
+        <name>OnReconnectingAttemptQueue</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnReconnectingAttemptQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="139" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1acbb048408eb86183356b1849b0491e6c" prot="private" static="no" mutable="no">
+        <type>TQueue&lt; <ref refid="d9/df5/struct_accel_byte_1_1_f_massive_outage_info" kindref="compound">FMassiveOutageInfo</ref> &gt;</type>
+        <definition>TQueue&lt;FMassiveOutageInfo&gt; AccelByte::AccelByteWebSocket::OnMassiveOutageQueue</definition>
+        <argsstring></argsstring>
+        <name>OnMassiveOutageQueue</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnMassiveOutageQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="140" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae3d8bf5cd04ac3fc16189802d83fa2a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::bConnectedBroadcasted</definition>
+        <argsstring></argsstring>
+        <name>bConnectedBroadcasted</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::bConnectedBroadcasted</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="141" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89d41a369b6c91ebf5efa077ea7d2f7f" prot="private" static="no" mutable="no">
+        <type>FConnectDelegate</type>
+        <definition>FConnectDelegate AccelByte::AccelByteWebSocket::ConnectDelegate</definition>
+        <argsstring></argsstring>
+        <name>ConnectDelegate</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::ConnectDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="143" column="18" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aace72308de441c7762b27ec847b113be" prot="private" static="no" mutable="no">
+        <type>FMessageReceiveDelegate</type>
+        <definition>FMessageReceiveDelegate AccelByte::AccelByteWebSocket::MessageReceiveDelegate</definition>
+        <argsstring></argsstring>
+        <name>MessageReceiveDelegate</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::MessageReceiveDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="144" column="25" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1cf5fdf90cd41bb6c4f6aea6c250b56b" prot="private" static="no" mutable="no">
+        <type>FConnectionErrorDelegate</type>
+        <definition>FConnectionErrorDelegate AccelByte::AccelByteWebSocket::ConnectionErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>ConnectionErrorDelegate</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::ConnectionErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="145" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a012235675ecc066611dd4f5d4d88b6e9" prot="private" static="no" mutable="no">
+        <type>FConnectionCloseMulticastDelegate</type>
+        <definition>FConnectionCloseMulticastDelegate AccelByte::AccelByteWebSocket::ConnectionCloseDelegate</definition>
+        <argsstring></argsstring>
+        <name>ConnectionCloseDelegate</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::ConnectionCloseDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="146" column="35" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a929f61bbf2ec437987de5340e894c81b" prot="private" static="no" mutable="no">
+        <type>FReconnectAttemptMulticastDelegate</type>
+        <definition>FReconnectAttemptMulticastDelegate AccelByte::AccelByteWebSocket::ReconnectAttemptDelegate</definition>
+        <argsstring></argsstring>
+        <name>ReconnectAttemptDelegate</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::ReconnectAttemptDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="147" column="36" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a6904b60b3ea0f43c6dcfd89b3d0fa25a" prot="private" static="no" mutable="no">
+        <type>FMassiveOutageMulticastDelegate</type>
+        <definition>FMassiveOutageMulticastDelegate AccelByte::AccelByteWebSocket::MassiveOutageDelegate</definition>
+        <argsstring></argsstring>
+        <name>MassiveOutageDelegate</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::MassiveOutageDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="148" column="33" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a93d2117b5fbfcd1a2b28db90603820a6" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::AccelByteWebSocket::ReconnectingAttemptCount</definition>
+        <argsstring></argsstring>
+        <name>ReconnectingAttemptCount</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::ReconnectingAttemptCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="151" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1eb800e991ec26b150342fcf77fae81d" prot="private" static="no" mutable="no">
+        <type>int32</type>
+        <definition>int32 AccelByte::AccelByteWebSocket::LatestWebsocketDisonnectionCode</definition>
+        <argsstring></argsstring>
+        <name>LatestWebsocketDisonnectionCode</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::LatestWebsocketDisonnectionCode</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="152" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ada6f43f8d8b0e22d8e2a4de227f44dc7" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::AccelByteWebSocket::MassiveOutageReminderCounter</definition>
+        <argsstring></argsstring>
+        <name>MassiveOutageReminderCounter</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::MassiveOutageReminderCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="154" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a412e2efd87ca075b91cb81c0693f0267" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy" kindref="compound">IWebsocketConfigurableReconnectStrategy</ref> &amp;</type>
+        <definition>IWebsocketConfigurableReconnectStrategy&amp; AccelByte::AccelByteWebSocket::ParentReconnectionStrategyRef</definition>
+        <argsstring></argsstring>
+        <name>ParentReconnectionStrategyRef</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::ParentReconnectionStrategyRef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="155" column="41" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a84b8011798f7b6b82ab92f93d4424523" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float AccelByte::AccelByteWebSocket::TickPeriod</definition>
+        <argsstring></argsstring>
+        <name>TickPeriod</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TickPeriod</qualifiedname>
+        <initializer>{0.5f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="158" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1af4ccf3c2bcbd5935b425ce14f0c9a2b6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AccelByte::AccelByteWebSocket::TimeSinceLastPing</definition>
+        <argsstring></argsstring>
+        <name>TimeSinceLastPing</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TimeSinceLastPing</qualifiedname>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="159" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae6742ee6187d99019b64a2e687be0f56" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelByte::AccelByteWebSocket::TimeSinceLastReconnect</definition>
+        <argsstring></argsstring>
+        <name>TimeSinceLastReconnect</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TimeSinceLastReconnect</qualifiedname>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="160" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a0869de0f22ae088f50db23509ed337c8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelByte::AccelByteWebSocket::TimeSinceConnectionLost</definition>
+        <argsstring></argsstring>
+        <name>TimeSinceConnectionLost</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TimeSinceConnectionLost</qualifiedname>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="161" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aa4806854702f675bea02d7656d73ee32" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AccelByte::AccelByteWebSocket::BackoffDelay</definition>
+        <argsstring></argsstring>
+        <name>BackoffDelay</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::BackoffDelay</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="162" column="5" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1acc2b4bb3e85a87f41ae8573b38704596" prot="private" static="no" mutable="no">
+        <type>int32</type>
+        <definition>int32 AccelByte::AccelByteWebSocket::RandomizedBackoffDelay</definition>
+        <argsstring></argsstring>
+        <name>RandomizedBackoffDelay</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::RandomizedBackoffDelay</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="163" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a36433b7f69fac5cb5809decde4714cd5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelByte::AccelByteWebSocket::PingDelay</definition>
+        <argsstring></argsstring>
+        <name>PingDelay</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::PingDelay</qualifiedname>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="164" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a54feb48d681dd91fece1f630c90c0392" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::bWasWsConnectionError</definition>
+        <argsstring></argsstring>
+        <name>bWasWsConnectionError</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::bWasWsConnectionError</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="165" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aea34042aad89be9f84ef9888d17ef5f4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::bDisconnectOnNextTick</definition>
+        <argsstring></argsstring>
+        <name>bDisconnectOnNextTick</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::bDisconnectOnNextTick</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="166" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89164868a224f6bfe5213ea52ef9c478" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; <ref refid="d1/d1e/class_i_web_socket_factory" kindref="compound">IWebSocketFactory</ref> &gt;</type>
+        <definition>TSharedPtr&lt;IWebSocketFactory&gt; AccelByte::AccelByteWebSocket::WebSocketFactory</definition>
+        <argsstring></argsstring>
+        <name>WebSocketFactory</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::WebSocketFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="167" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a3c0087dd7891284769cd10c3abc798da" prot="private" static="no" mutable="no">
+        <type>TWeakPtr&lt; const <ref refid="d1/db4/class_accel_byte_1_1_base_credentials" kindref="compound">BaseCredentials</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TWeakPtr&lt;const BaseCredentials, ESPMode::ThreadSafe&gt; AccelByte::AccelByteWebSocket::CredentialsWPtr</definition>
+        <argsstring></argsstring>
+        <name>CredentialsWPtr</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::CredentialsWPtr</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Pointer to a client or server credentials instance for authenticating this websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE: Do not delete this pointer! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="174" column="10" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1abdc44507e44a0f5db197c217c05ef571" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::AccelByteWebSocket::Url</definition>
+        <argsstring></argsstring>
+        <name>Url</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Url</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="176" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1470202048a26ae77df4dbc7cf313388" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::AccelByteWebSocket::Protocol</definition>
+        <argsstring></argsstring>
+        <name>Protocol</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Protocol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="177" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a3f022b40e057cb1d1636b9f21d7d5317" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, FString &gt;</type>
+        <definition>TMap&lt;FString, FString&gt; AccelByte::AccelByteWebSocket::UpgradeHeaders</definition>
+        <argsstring></argsstring>
+        <name>UpgradeHeaders</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::UpgradeHeaders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="178" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ab4d35dcb94632e8fc097712e8ddc068f" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a29b08104ac85b2ca976e19059a3b4eac" kindref="member">EWebSocketState</ref></type>
+        <definition>EWebSocketState AccelByte::AccelByteWebSocket::WsState</definition>
+        <argsstring></argsstring>
+        <name>WsState</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::WsState</qualifiedname>
+        <initializer>= <ref refid="d3/ddc/namespace_accel_byte_1a29b08104ac85b2ca976e19059a3b4eaca03f4a47830f97377a35321051685071e" kindref="member">EWebSocketState::Closed</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="180" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a58931bf6e528eb793b61adbfb390ec91" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a0e52e8ca66b33e5e34ba958f734d4274" kindref="member">EWebSocketEvent</ref></type>
+        <definition>EWebSocketEvent AccelByte::AccelByteWebSocket::WsEvents</definition>
+        <argsstring></argsstring>
+        <name>WsEvents</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::WsEvents</qualifiedname>
+        <initializer>= <ref refid="d3/ddc/namespace_accel_byte_1a0e52e8ca66b33e5e34ba958f734d4274a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">EWebSocketEvent::None</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="181" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a386c70cf21de0b04bf7f58262d624c25" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; IWebSocket &gt;</type>
+        <definition>TSharedPtr&lt;IWebSocket&gt; AccelByte::AccelByteWebSocket::WebSocket</definition>
+        <argsstring></argsstring>
+        <name>WebSocket</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::WebSocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="190" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae4ccd23f3443ecb1c5e36c7e7c498d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::AccelByteWebSocket::DECLARE_DELEGATE_ThreeParams</definition>
+        <argsstring>(FConnectionCloseDelegate, int32, FString const &amp;, bool)</argsstring>
+        <name>DECLARE_DELEGATE_ThreeParams</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::DECLARE_DELEGATE_ThreeParams</qualifiedname>
+        <param>
+          <type>FConnectionCloseDelegate</type>
+        </param>
+        <param>
+          <type>int32</type>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae9f2ff1a07a50eb68b86fbdd9ae084ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::AccelByteWebSocket::DECLARE_MULTICAST_DELEGATE_OneParam</definition>
+        <argsstring>(FMessageReceiveDelegate, const FString &amp;) DECLARE_MULTICAST_DELEGATE_OneParam(FConnectionErrorDelegate</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE_OneParam</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::DECLARE_MULTICAST_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type>FMessageReceiveDelegate</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a4c2bbd285d37a6d71c7bc09342d06043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const FString &amp;</type>
+        <definition>const FString &amp; AccelByte::AccelByteWebSocket::DECLARE_MULTICAST_DELEGATE_ThreeParams</definition>
+        <argsstring>(FConnectionCloseMulticastDelegate, const int32, const FString &amp;, const bool) DECLARE_MULTICAST_DELEGATE_OneParam(FReconnectAttemptMulticastDelegate</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE_ThreeParams</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::DECLARE_MULTICAST_DELEGATE_ThreeParams</qualifiedname>
+        <param>
+          <type>FConnectionCloseMulticastDelegate</type>
+        </param>
+        <param>
+          <type>const int32</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <param>
+          <type>const bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a5a862460edd7cb54d7e33debd64d614e" prot="public" static="no" const="yes" explicit="no" inline="no" refqual="lvalue" virt="non-virtual">
+        <type>const FString const <ref refid="d4/d6f/struct_accel_byte_1_1_f_reconnect_attempt_info" kindref="compound">FReconnectAttemptInfo</ref> &amp;</type>
+        <definition>const FString const FReconnectAttemptInfo &amp; AccelByte::AccelByteWebSocket::DECLARE_MULTICAST_DELEGATE_OneParam</definition>
+        <argsstring>(FMassiveOutageMulticastDelegate, const FMassiveOutageInfo &amp;) AccelByteWebSocket(const Credentials &amp;Credentials</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE_OneParam</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::DECLARE_MULTICAST_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type>FMassiveOutageMulticastDelegate</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/df5/struct_accel_byte_1_1_f_massive_outage_info" kindref="compound">FMassiveOutageInfo</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::AccelByteWebSocket::AccelByteWebSocket</definition>
+        <argsstring>(const ServerCredentials &amp;Credentials, IWebsocketConfigurableReconnectStrategy &amp;ParentReconnectionStrategyRef, float PingDelay=30.f)</argsstring>
+        <name>AccelByteWebSocket</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::AccelByteWebSocket</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> &amp;</type>
+          <declname>Credentials</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy" kindref="compound">IWebsocketConfigurableReconnectStrategy</ref> &amp;</type>
+          <declname>ParentReconnectionStrategyRef</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PingDelay</declname>
+          <defval>30.f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="80" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="33" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a25d59a2bf82e29b88ee91fc8e78a9325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::AccelByteWebSocket::~AccelByteWebSocket</definition>
+        <argsstring>()</argsstring>
+        <name>~AccelByteWebSocket</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::~AccelByteWebSocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="86" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="45" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aa586743ff72a11b48523ac95f2425046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FConnectDelegate &amp;</type>
+        <definition>AccelByteWebSocket::FConnectDelegate &amp; AccelByte::AccelByteWebSocket::OnConnected</definition>
+        <argsstring>()</argsstring>
+        <name>OnConnected</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="88" column="18" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1b1a42acfc482794cc7a5983eb7343d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FMessageReceiveDelegate &amp;</type>
+        <definition>AccelByteWebSocket::FMessageReceiveDelegate &amp; AccelByte::AccelByteWebSocket::OnMessageReceived</definition>
+        <argsstring>()</argsstring>
+        <name>OnMessageReceived</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnMessageReceived</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="89" column="25" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89df9d113076d92e429a2f18f66fa8d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FConnectionErrorDelegate &amp;</type>
+        <definition>AccelByteWebSocket::FConnectionErrorDelegate &amp; AccelByte::AccelByteWebSocket::OnConnectionError</definition>
+        <argsstring>()</argsstring>
+        <name>OnConnectionError</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnConnectionError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="90" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a09766571ba6783c0e957550d119c63a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FConnectionCloseMulticastDelegate &amp;</type>
+        <definition>AccelByteWebSocket::FConnectionCloseMulticastDelegate &amp; AccelByte::AccelByteWebSocket::OnConnectionClosed</definition>
+        <argsstring>()</argsstring>
+        <name>OnConnectionClosed</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnConnectionClosed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="91" column="35" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a83f2ab9a5ec1b46f7afcbf15caaaf99a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FReconnectAttemptMulticastDelegate &amp;</type>
+        <definition>AccelByteWebSocket::FReconnectAttemptMulticastDelegate &amp; AccelByte::AccelByteWebSocket::OnReconnectAttempt</definition>
+        <argsstring>()</argsstring>
+        <name>OnReconnectAttempt</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnReconnectAttempt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="92" column="36" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aa74d165ea3c0c6bad6182911b01a9c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FMassiveOutageMulticastDelegate &amp;</type>
+        <definition>AccelByteWebSocket::FMassiveOutageMulticastDelegate &amp; AccelByte::AccelByteWebSocket::OnMassiveOutage</definition>
+        <argsstring>()</argsstring>
+        <name>OnMassiveOutage</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnMassiveOutage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="93" column="33" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1acec355b8c5cfc16c426f7a8cfa1a33a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::Reconnect</definition>
+        <argsstring>()</argsstring>
+        <name>Reconnect</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Reconnect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="95" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="331" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ac4a625fb3f175b22300f373d9d66531a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::UpdateUpgradeHeaders</definition>
+        <argsstring>(const FString &amp;Key, const FString &amp;Value)</argsstring>
+        <name>UpdateUpgradeHeaders</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::UpdateUpgradeHeaders</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="123" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ad507a43b0dbdb91708bcebdb5e50d7ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::Connect</definition>
+        <argsstring>(bool ForceConnect=false)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Connect</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>ForceConnect</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="125" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="178" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aefe7b21351940d659508f9d59f469f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::Disconnect</definition>
+        <argsstring>(bool ForceCleanup=false)</argsstring>
+        <name>Disconnect</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Disconnect</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>ForceCleanup</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="126" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="226" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a317f7a482208bc3643e0374917bc0a59" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::IsConnected</definition>
+        <argsstring>() const</argsstring>
+        <name>IsConnected</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::IsConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="127" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ab742dce6ac564fbc556b7550b3cc0239" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::IsReconnecting</definition>
+        <argsstring>() const</argsstring>
+        <name>IsReconnecting</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::IsReconnecting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="128" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aeb3d8a9fc86cc03e936ce901bbe3897b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::SendPing</definition>
+        <argsstring>() const</argsstring>
+        <name>SendPing</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::SendPing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="129" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="266" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a34f6820dd30fe74d28694d7327f17db3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::Send</definition>
+        <argsstring>(const FString &amp;Message) const</argsstring>
+        <name>Send</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Send</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="130" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="274" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ad6435ac8cf72429bdff57de50597944f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a29b08104ac85b2ca976e19059a3b4eac" kindref="member">EWebSocketState</ref></type>
+        <definition>EWebSocketState AccelByte::AccelByteWebSocket::GetState</definition>
+        <argsstring>() const</argsstring>
+        <name>GetState</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::GetState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="132" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="280" bodyend="283"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a10e56d7127984b261f23f6c03457fb9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TSharedPtr&lt; <ref refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" kindref="member">AccelByteWebSocket</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TSharedPtr&lt; AccelByteWebSocket, ESPMode::ThreadSafe &gt; AccelByte::AccelByteWebSocket::Create</definition>
+        <argsstring>(const FString &amp;Url, const FString &amp;Protocol, const Credentials &amp;Credentials, const TMap&lt; FString, FString &gt; &amp;UpgradeHeaders, const TSharedRef&lt; IWebSocketFactory &gt; WebSocketFactory, IWebsocketConfigurableReconnectStrategy &amp;InParentReconnectionStrategyRef, float PingDelay=30.f)</argsstring>
+        <name>Create</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Create</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Protocol</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> &amp;</type>
+          <declname>Credentials</declname>
+        </param>
+        <param>
+          <type>const TMap&lt; FString, FString &gt; &amp;</type>
+          <declname>UpgradeHeaders</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; <ref refid="d1/d1e/class_i_web_socket_factory" kindref="compound">IWebSocketFactory</ref> &gt;</type>
+          <declname>WebSocketFactory</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy" kindref="compound">IWebsocketConfigurableReconnectStrategy</ref> &amp;</type>
+          <declname>InParentReconnectionStrategyRef</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PingDelay</declname>
+          <defval>30.f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="100" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="132" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a68a957db1229b47ad2c6101bbf941685" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TSharedPtr&lt; <ref refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" kindref="member">AccelByteWebSocket</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TSharedPtr&lt; AccelByteWebSocket, ESPMode::ThreadSafe &gt; AccelByte::AccelByteWebSocket::Create</definition>
+        <argsstring>(const FString &amp;Url, const FString &amp;Protocol, const ServerCredentials &amp;Credentials, const TMap&lt; FString, FString &gt; &amp;UpgradeHeaders, const TSharedRef&lt; IWebSocketFactory &gt; WebSocketFactory, IWebsocketConfigurableReconnectStrategy &amp;InParentReconnectionStrategyRef, float PingDelay=30.f)</argsstring>
+        <name>Create</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Create</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Protocol</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> &amp;</type>
+          <declname>Credentials</declname>
+        </param>
+        <param>
+          <type>const TMap&lt; FString, FString &gt; &amp;</type>
+          <declname>UpgradeHeaders</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; <ref refid="d1/d1e/class_i_web_socket_factory" kindref="compound">IWebSocketFactory</ref> &gt;</type>
+          <declname>WebSocketFactory</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy" kindref="compound">IWebsocketConfigurableReconnectStrategy</ref> &amp;</type>
+          <declname>InParentReconnectionStrategyRef</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>PingDelay</declname>
+          <defval>30.f</defval>
+        </param>
+        <briefdescription>
+<para>Create a websocket using server credentials. Used to create a socket for DSHub. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="113" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="155" bodyend="176"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a8473e237408eb7df9dd70903834e7915" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/d24/class_accel_byte_1_1_f_reconnection_strategy" kindref="compound">FReconnectionStrategy</ref> &amp;</type>
+        <definition>FReconnectionStrategy &amp; AccelByte::AccelByteWebSocket::GetCurrentReconnectionStrategy</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentReconnectionStrategy</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::GetCurrentReconnectionStrategy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="153" column="23" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="581" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a2386f8621bd9d37996fa1e10c4618501" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::SetupWebSocket</definition>
+        <argsstring>()</argsstring>
+        <name>SetupWebSocket</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::SetupWebSocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="183" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="61" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a277d846533b6415a4fd0f3e658832193" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::Tick</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>Tick</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::Tick</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="184" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="336" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a12f68b70fbdadd7eebc6f99383aa9d97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::OnConnectionConnected</definition>
+        <argsstring>()</argsstring>
+        <name>OnConnectionConnected</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnConnectionConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="185" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="285" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a033e3437080f0de70ca6b7933721c300" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::OnConnectionError</definition>
+        <argsstring>(const FString &amp;Error)</argsstring>
+        <name>OnConnectionError</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnConnectionError</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="186" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="294" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aff42226b4b83981267bc1140d5d99239" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::OnClosed</definition>
+        <argsstring>(int32 StatusCode, const FString &amp;Reason, bool WasClean)</argsstring>
+        <name>OnClosed</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnClosed</qualifiedname>
+        <param>
+          <type>int32</type>
+          <declname>StatusCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Reason</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>WasClean</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="187" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="304" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aaef507106f8ac434d5eb224d6d3c3fea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::OnMessageReceived</definition>
+        <argsstring>(const FString &amp;Message)</argsstring>
+        <name>OnMessageReceived</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::OnMessageReceived</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="188" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="324" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a00a93cbd31dd5d43155f92922927984d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::StateTick</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>StateTick</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::StateTick</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="192" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="350" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a125a33a463cc2216432d32ed54075019" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::AccelByteWebSocket::MessageTick</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>MessageTick</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::MessageTick</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="193" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="501" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae81e534ce3205931267a85ef500a1be6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::TeardownTicker</definition>
+        <argsstring>()</argsstring>
+        <name>TeardownTicker</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TeardownTicker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="195" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="559" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae3733c2b5dad84ef4b5b9321fd6cc750" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::AccelByteWebSocket::TeardownWebsocket</definition>
+        <argsstring>()</argsstring>
+        <name>TeardownWebsocket</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::TeardownWebsocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="196" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteWebSocket.cpp" bodystart="568" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a7beb505f8898602566402d812215bf80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::AccelByteWebSocket::AccelByteWebSocket</definition>
+        <argsstring>(AccelByteWebSocket const &amp;)=delete</argsstring>
+        <name>AccelByteWebSocket</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::AccelByteWebSocket</qualifiedname>
+        <param>
+          <type>AccelByteWebSocket const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a856009be1a3e0e9676e7e4d905b2d4d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::AccelByteWebSocket::AccelByteWebSocket</definition>
+        <argsstring>(AccelByteWebSocket &amp;&amp;)=delete</argsstring>
+        <name>AccelByteWebSocket</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::AccelByteWebSocket</qualifiedname>
+        <param>
+          <type>AccelByteWebSocket &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ad1558fb5f782370429f2c3038354129b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" kindref="member">AccelByteWebSocket</ref> &amp;</type>
+        <definition>AccelByteWebSocket &amp; AccelByte::AccelByteWebSocket::operator=</definition>
+        <argsstring>(AccelByteWebSocket const &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::operator=</qualifiedname>
+        <param>
+          <type><ref refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" kindref="member">AccelByteWebSocket</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="200" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1165a7f90bc5337201475bd814a85b97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" kindref="member">AccelByteWebSocket</ref> &amp;</type>
+        <definition>AccelByteWebSocket &amp; AccelByte::AccelByteWebSocket::operator=</definition>
+        <argsstring>(AccelByteWebSocket &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>AccelByte::AccelByteWebSocket::operator=</qualifiedname>
+        <param>
+          <type><ref refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" kindref="member">AccelByteWebSocket</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="201" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AccelByte::AccelByteWebSocket</label>
+        <link refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; AccelByteWebSocket, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccelByte::AccelByteWebSocket</label>
+        <link refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ParentReconnectionStrategyRef</edgelabel>
+          <edgelabel>PingDelay</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ParentReconnectionStrategyRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::FReconnectAttemptInfo</label>
+        <link refid="d4/d6f/struct_accel_byte_1_1_f_reconnect_attempt_info"/>
+      </node>
+      <node id="5">
+        <label>AccelByte::FReconnectionStrategy</label>
+        <link refid="df/d24/class_accel_byte_1_1_f_reconnection_strategy"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>TotalTimeout</edgelabel>
+          <edgelabel>_TotalTimeout</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>InitialBackoffDelay</edgelabel>
+          <edgelabel>_InitialBackoffDelay</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>AggressiveRetryInterval</edgelabel>
+          <edgelabel>_AggressiveRetryInterval</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>BalancedMaxRetryInterval</edgelabel>
+          <edgelabel>_BalancedMaxRetryInterval</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Advanced_MassiveOutageDuration</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AccelByte::FReconnectionStrategy::FAggressiveRetryInterval</label>
+        <link refid="db/d35/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_aggressive_retry_interval"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AccelByte::FReconnectionStrategy::FBalancedMaxRetryInterval</label>
+        <link refid="d6/d3c/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_balanced_max_retry_interval"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FReconnectionStrategy::FInitialBackoffDelay</label>
+        <link refid="d1/d14/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_initial_backoff_delay"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AccelByte::FReconnectionStrategy::FMassiveOutageDuration</label>
+        <link refid="d0/d38/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_massive_outage_duration"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FReconnectionStrategy::FTotalTimeoutDuration</label>
+        <link refid="dd/d14/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_total_timeout_duration"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::IWebsocketConfigurableReconnectStrategy</label>
+        <link refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>DefaultReconnectionStrategy</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FTimespan</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; AccelByteWebSocket, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" line="60" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteWebSocket.h" bodystart="61" bodyend="202"/>
+    <listofallmembers>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a01e029a8bc64753f3bde97dc9d1a10c6" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>AccelByteWebSocket</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a7beb505f8898602566402d812215bf80" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>AccelByteWebSocket</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a856009be1a3e0e9676e7e4d905b2d4d5" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>AccelByteWebSocket</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aa4806854702f675bea02d7656d73ee32" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>BackoffDelay</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae3d8bf5cd04ac3fc16189802d83fa2a5" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>bConnectedBroadcasted</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a340656ff9332c91670e6242cf009bc4e" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>bConnectTriggered</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aea34042aad89be9f84ef9888d17ef5f4" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>bDisconnectOnNextTick</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a54feb48d681dd91fece1f630c90c0392" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>bWasWsConnectionError</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ad507a43b0dbdb91708bcebdb5e50d7ff" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Connect</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89d41a369b6c91ebf5efa077ea7d2f7f" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>ConnectDelegate</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a012235675ecc066611dd4f5d4d88b6e9" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>ConnectionCloseDelegate</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1cf5fdf90cd41bb6c4f6aea6c250b56b" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>ConnectionErrorDelegate</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a10e56d7127984b261f23f6c03457fb9b" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Create</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a68a957db1229b47ad2c6101bbf941685" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Create</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a3c0087dd7891284769cd10c3abc798da" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>CredentialsWPtr</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae4ccd23f3443ecb1c5e36c7e7c498d76" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>DECLARE_DELEGATE_ThreeParams</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae9f2ff1a07a50eb68b86fbdd9ae084ab" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>DECLARE_MULTICAST_DELEGATE_OneParam</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a5a862460edd7cb54d7e33debd64d614e" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>DECLARE_MULTICAST_DELEGATE_OneParam</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a4c2bbd285d37a6d71c7bc09342d06043" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>DECLARE_MULTICAST_DELEGATE_ThreeParams</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aefe7b21351940d659508f9d59f469f32" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Disconnect</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a8473e237408eb7df9dd70903834e7915" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>GetCurrentReconnectionStrategy</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ad6435ac8cf72429bdff57de50597944f" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>GetState</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a317f7a482208bc3643e0374917bc0a59" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>IsConnected</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ab742dce6ac564fbc556b7550b3cc0239" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>IsReconnecting</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1eb800e991ec26b150342fcf77fae81d" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>LatestWebsocketDisonnectionCode</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a6904b60b3ea0f43c6dcfd89b3d0fa25a" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>MassiveOutageDelegate</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ada6f43f8d8b0e22d8e2a4de227f44dc7" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>MassiveOutageReminderCounter</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aace72308de441c7762b27ec847b113be" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>MessageReceiveDelegate</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a125a33a463cc2216432d32ed54075019" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>MessageTick</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aff42226b4b83981267bc1140d5d99239" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnClosed</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aa586743ff72a11b48523ac95f2425046" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnConnected</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a09766571ba6783c0e957550d119c63a5" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnConnectionClosed</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a035f0009404cb0b088c793360dbe5f3e" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnConnectionClosedQueue</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a12f68b70fbdadd7eebc6f99383aa9d97" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnConnectionConnected</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89df9d113076d92e429a2f18f66fa8d0" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnConnectionError</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a033e3437080f0de70ca6b7933721c300" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnConnectionError</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae7926e230b7b0e2245f9b8798d648e14" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnConnectionErrorQueue</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aa74d165ea3c0c6bad6182911b01a9c66" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnMassiveOutage</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1acbb048408eb86183356b1849b0491e6c" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnMassiveOutageQueue</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ab7c580b578325059866b76f4a5ec0c51" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnMessageQueue</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1b1a42acfc482794cc7a5983eb7343d7" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnMessageReceived</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aaef507106f8ac434d5eb224d6d3c3fea" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnMessageReceived</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a83f2ab9a5ec1b46f7afcbf15caaaf99a" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnReconnectAttempt</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89b8d6c53478e3e6ef4d7899024e1ca7" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>OnReconnectingAttemptQueue</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ad1558fb5f782370429f2c3038354129b" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>operator=</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1165a7f90bc5337201475bd814a85b97" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>operator=</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a2aae6b6d5fbcf27d0a21ab12dd1f22bd" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>ParentReconnectionStrategyRef</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a412e2efd87ca075b91cb81c0693f0267" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>ParentReconnectionStrategyRef</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a3793f596b23d7ea64bab9ab20f96c0d9" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>PingDelay</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a36433b7f69fac5cb5809decde4714cd5" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>PingDelay</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a1470202048a26ae77df4dbc7cf313388" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Protocol</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1acc2b4bb3e85a87f41ae8573b38704596" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>RandomizedBackoffDelay</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1acec355b8c5cfc16c426f7a8cfa1a33a9" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Reconnect</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a929f61bbf2ec437987de5340e894c81b" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>ReconnectAttemptDelegate</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a93d2117b5fbfcd1a2b28db90603820a6" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>ReconnectingAttemptCount</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a34f6820dd30fe74d28694d7327f17db3" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Send</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1aeb3d8a9fc86cc03e936ce901bbe3897b" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>SendPing</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a2386f8621bd9d37996fa1e10c4618501" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>SetupWebSocket</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a00a93cbd31dd5d43155f92922927984d" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>StateTick</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae81e534ce3205931267a85ef500a1be6" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TeardownTicker</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae3733c2b5dad84ef4b5b9321fd6cc750" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TeardownWebsocket</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a277d846533b6415a4fd0f3e658832193" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Tick</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a527e03817172f55955c9dce2b8917737" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TickerDelegate</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ac44977d64654828e1c27b8a1be27a4e2" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TickerDelegateHandle</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a84b8011798f7b6b82ab92f93d4424523" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TickPeriod</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a0869de0f22ae088f50db23509ed337c8" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TimeSinceConnectionLost</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1af4ccf3c2bcbd5935b425ce14f0c9a2b6" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TimeSinceLastPing</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ae6742ee6187d99019b64a2e687be0f56" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>TimeSinceLastReconnect</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ac4a625fb3f175b22300f373d9d66531a" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>UpdateUpgradeHeaders</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a3f022b40e057cb1d1636b9f21d7d5317" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>UpgradeHeaders</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1abdc44507e44a0f5db197c217c05ef571" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>Url</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a386c70cf21de0b04bf7f58262d624c25" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>WebSocket</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a89164868a224f6bfe5213ea52ef9c478" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>WebSocketFactory</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a58931bf6e528eb793b61adbfb390ec91" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>WsEvents</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1ab4d35dcb94632e8fc097712e8ddc068f" prot="private" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>WsState</name></member>
+      <member refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket_1a25d59a2bf82e29b88ee91fc8e78a9325" prot="public" virt="non-virtual"><scope>AccelByte::AccelByteWebSocket</scope><name>~AccelByteWebSocket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

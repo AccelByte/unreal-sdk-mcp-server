@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d5/d49/_accel_byte_ecommerce_models_8cpp" kind="file" language="C++">
+    <compoundname>AccelByteEcommerceModels.cpp</compoundname>
+    <includes refid="df/d4c/_accel_byte_ecommerce_models_8h" local="yes">AccelByteEcommerceModels.h</includes>
+    <includes local="yes">JsonObjectConverter.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>AccelByteEcommerceModels.generated.h</label>
+      </node>
+      <node id="9">
+        <label>AccelByteGeneralModels.generated.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteEcommerceModels.cpp</label>
+        <link refid="d5/d49/_accel_byte_ecommerce_models_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByteEcommerceModels.h</label>
+        <link refid="df/d4c/_accel_byte_ecommerce_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Models/AccelByteGeneralModels.h</label>
+        <link refid="de/dc6/_accel_byte_general_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Interfaces/IHttpRequest.h</label>
+      </node>
+      <node id="6">
+        <label>Interfaces/IHttpResponse.h</label>
+      </node>
+      <node id="11">
+        <label>JsonObjectConverter.h</label>
+      </node>
+      <node id="4">
+        <label>JsonObjectWrapper.h</label>
+      </node>
+      <node id="8">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2025<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d4c/_accel_byte_ecommerce_models_8h" kindref="compound">AccelByteEcommerceModels.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;JsonObjectConverter.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d6/d86/struct_f_accel_byte_models_fulfill_rewards_1a7ad490c461a8b24d247adc50a1870be3" refkind="member"><highlight class="normal">TSharedPtr&lt;FJsonObject&gt;<sp/><ref refid="d6/d86/struct_f_accel_byte_models_fulfill_rewards_1a7ad490c461a8b24d247adc50a1870be3" kindref="member">FAccelByteModelsFulfillRewards::GenerateFilteredJsonObject</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="9"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>JsonObject<sp/>=<sp/>FJsonObjectConverter::UStructToJsonObject(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(JsonObject<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/d86/struct_f_accel_byte_models_fulfill_rewards_1a43d5b3e555f0c1ff585c6411ba6129b6" kindref="member">Origin</ref><sp/>==<sp/><ref refid="df/d4c/_accel_byte_ecommerce_models_8h_1ae52d2d9366774f4f610b3279b861f64dab50339a10e1de285ac99d4c3990b8693" kindref="member">EAccelBytePlatformRewardOrigin::NONE</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JsonObject-&gt;HasField(TEXT(</highlight><highlight class="stringliteral">&quot;Origin&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JsonObject-&gt;RemoveField(TEXT(</highlight><highlight class="stringliteral">&quot;Origin&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/d86/struct_f_accel_byte_models_fulfill_rewards_1aa774f770f58071a8963084c2a9cf01e1" kindref="member">Source</ref><sp/>==<sp/><ref refid="df/d4c/_accel_byte_ecommerce_models_8h_1af6f4eaebd6cf23a24add05c8aabfdfa4ab50339a10e1de285ac99d4c3990b8693" kindref="member">EAccelBytePlatformRewardSource::NONE</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JsonObject-&gt;HasField(TEXT(</highlight><highlight class="stringliteral">&quot;Source&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JsonObject-&gt;RemoveField(TEXT(</highlight><highlight class="stringliteral">&quot;Source&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JsonObject;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteEcommerceModels.cpp"/>
+  </compounddef>
+</doxygen>

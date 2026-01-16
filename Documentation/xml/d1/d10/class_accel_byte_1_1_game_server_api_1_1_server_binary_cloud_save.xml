@@ -1,0 +1,814 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::GameServerApi::ServerBinaryCloudSave</compoundname>
+    <basecompoundref refid="d8/d4c/class_accel_byte_1_1_f_server_api_base" prot="public" virt="non-virtual">AccelByte::FServerApiBase</basecompoundref>
+    <includes refid="dc/d14/_accel_byte_server_binary_cloud_save_api_8h" local="no">AccelByteServerBinaryCloudSaveApi.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a5d058a09bed4c8ae2705eefd1463c9f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</definition>
+        <argsstring>(ServerCredentials const &amp;InCredentialsRef, ServerSettings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; FServerApiClient, ESPMode::ThreadSafe &gt; InServerApiClient=nullptr)</argsstring>
+        <name>ServerBinaryCloudSave</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</qualifiedname>
+        <param>
+          <type><ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">ServerSettings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/df1/class_accel_byte_1_1_f_server_api_client" kindref="compound">FServerApiClient</ref>, ESPMode::ThreadSafe &gt;</type>
+          <declname>InServerApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="27" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a0311783767c08e10735607212d858f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerBinaryCloudSave::~ServerBinaryCloudSave</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerBinaryCloudSave</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::~ServerBinaryCloudSave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="31" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a0bbee18cfc960884d4cf792409678fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::QueryGameBinaryRecords</definition>
+        <argsstring>(FString const &amp;Query, THandler&lt; FAccelByteModelsPaginatedGameBinaryRecords &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Offset=0, int32 Limit=20)</argsstring>
+        <name>QueryGameBinaryRecords</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::QueryGameBinaryRecords</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Query</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d5/d39/struct_f_accel_byte_models_paginated_game_binary_records" kindref="compound">FAccelByteModelsPaginatedGameBinaryRecords</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para>Bulk query game binary records. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String that will be used to query the game&apos;s binary record keys. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is const <ref refid="d5/d39/struct_f_accel_byte_models_paginated_game_binary_records" kindref="compound">FAccelByteModelsPaginatedGameBinaryRecords</ref>&amp;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset of the result. Default value is 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The limit of the result. Default value is 20.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="44" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="27" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a0cf5b5b6dd246ef3d35e3bb06b8c2df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::CreateGameBinaryRecord</definition>
+        <argsstring>(FString const &amp;Key, EAccelByteFileType FileType, ESetByMetadataRecord SetBy, THandler&lt; FAccelByteModelsBinaryInfo &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, FTTLConfig const &amp;TTLConfig=FTTLConfig{})</argsstring>
+        <name>CreateGameBinaryRecord</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::CreateGameBinaryRecord</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dc6/_accel_byte_general_models_8h_1aaae5ce4372108ffea4981a787990f60f" kindref="member">EAccelByteFileType</ref></type>
+          <declname>FileType</declname>
+        </param>
+        <param>
+          <type><ref refid="db/dcf/_accel_byte_cloud_save_common_models_8h_1a2e79db4b62d5bb9afb749a9102a53cc3" kindref="member">ESetByMetadataRecord</ref></type>
+          <declname>SetBy</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d0/dfe/struct_f_accel_byte_models_binary_info" kindref="compound">FAccelByteModelsBinaryInfo</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d89/struct_f_t_t_l_config" kindref="compound">FTTLConfig</ref> const &amp;</type>
+          <declname>TTLConfig</declname>
+          <defval><ref refid="d8/d89/struct_f_t_t_l_config" kindref="compound">FTTLConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create game binary records. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the binary record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FileType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File type of the binary (supported file types are jpeg, jpg, png, bmp, gif, mp3, webp, and bin). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SetBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Metadata value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TTLConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration to control the action taken if the record has expired. If the action set to NONE, then it will not send the TTL (Time to live) meta data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="63" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="54" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a5b293bd760dd6dd264788625720fc982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::GetGameBinaryRecord</definition>
+        <argsstring>(FString const &amp;Key, THandler&lt; FAccelByteModelsGameBinaryRecord &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>GetGameBinaryRecord</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::GetGameBinaryRecord</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d9/d62/struct_f_accel_byte_models_game_binary_record" kindref="compound">FAccelByteModelsGameBinaryRecord</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get a game binary record by its key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the binary record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is const <ref refid="d9/d62/struct_f_accel_byte_models_game_binary_record" kindref="compound">FAccelByteModelsGameBinaryRecord</ref>&amp;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="79" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="105" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1aacc0b59e6022f2637436bad54884a996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::UpdateGameBinaryRecord</definition>
+        <argsstring>(FString const &amp;Key, EAccelByteFileType ContentType, FString const &amp;FileLocation, THandler&lt; FAccelByteModelsGameBinaryRecord &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateGameBinaryRecord</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::UpdateGameBinaryRecord</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dc6/_accel_byte_general_models_8h_1aaae5ce4372108ffea4981a787990f60f" kindref="member">EAccelByteFileType</ref></type>
+          <declname>ContentType</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>FileLocation</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d9/d62/struct_f_accel_byte_models_game_binary_record" kindref="compound">FAccelByteModelsGameBinaryRecord</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update a game binary record file by its key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the binary record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ContentType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The specific type of the binary record created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FileLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location of the uploaded binary file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is const <ref refid="d6/d8e/struct_f_accel_byte_models_user_binary_record" kindref="compound">FAccelByteModelsUserBinaryRecord</ref>&amp;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="94" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="132" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a68fc680239b0e4428b60368ba366b16f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::DeleteGameBinaryRecord</definition>
+        <argsstring>(FString const &amp;Key, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>DeleteGameBinaryRecord</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::DeleteGameBinaryRecord</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete a game binary record. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the binary record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="109" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="178" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a6411bc73e9060288da9e3ceb4a9f7def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::DeleteGameBinaryRecordTTLConfig</definition>
+        <argsstring>(FString const &amp;Key, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>DeleteGameBinaryRecordTTLConfig</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::DeleteGameBinaryRecordTTLConfig</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete the ttl config of the game binary record. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the binary record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="122" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="198" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a34416995793f2d92645fda06e78bdc6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::UpdateGameBinaryRecordMetadata</definition>
+        <argsstring>(FString const &amp;Key, ESetByMetadataRecord SetBy, THandler&lt; FAccelByteModelsGameBinaryRecord &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, FTTLConfig const &amp;TTLConfig=FTTLConfig{})</argsstring>
+        <name>UpdateGameBinaryRecordMetadata</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::UpdateGameBinaryRecordMetadata</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="db/dcf/_accel_byte_cloud_save_common_models_8h_1a2e79db4b62d5bb9afb749a9102a53cc3" kindref="member">ESetByMetadataRecord</ref></type>
+          <declname>SetBy</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d9/d62/struct_f_accel_byte_models_game_binary_record" kindref="compound">FAccelByteModelsGameBinaryRecord</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d89/struct_f_t_t_l_config" kindref="compound">FTTLConfig</ref> const &amp;</type>
+          <declname>TTLConfig</declname>
+          <defval><ref refid="d8/d89/struct_f_t_t_l_config" kindref="compound">FTTLConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Update a game binary record metadata by its key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the binary record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SetBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Metadata value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is const <ref refid="d6/d8e/struct_f_accel_byte_models_user_binary_record" kindref="compound">FAccelByteModelsUserBinaryRecord</ref>&amp;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TTLConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration to control the action taken if the record has expired. If the action set to NONE, then it will not send the TTL (Time to live) meta data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="138" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="217" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1abbcb2ca0bb2780f44823fb34d50af505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerBinaryCloudSave::RequestGameBinaryRecordPresignedUrl</definition>
+        <argsstring>(FString const &amp;Key, EAccelByteFileType FileType, THandler&lt; FAccelByteModelsBinaryInfo &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>RequestGameBinaryRecordPresignedUrl</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::RequestGameBinaryRecordPresignedUrl</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dc6/_accel_byte_general_models_8h_1aaae5ce4372108ffea4981a787990f60f" kindref="member">EAccelByteFileType</ref></type>
+          <declname>FileType</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d0/dfe/struct_f_accel_byte_models_binary_info" kindref="compound">FAccelByteModelsBinaryInfo</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Request presigned URL to upload the binary record to s3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of the binary record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FileType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File type of the binary (supported file types are jpeg, jpg, png, bmp, gif, mp3, webp, and bin). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="154" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="264" bodyend="296"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a6601392bc288bbf9f2ce907ee48f3c27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</definition>
+        <argsstring>()=delete</argsstring>
+        <name>ServerBinaryCloudSave</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a8f047314b88986fb919ecd8d3c30f00c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</definition>
+        <argsstring>(ServerBinaryCloudSave const &amp;)=delete</argsstring>
+        <name>ServerBinaryCloudSave</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</qualifiedname>
+        <param>
+          <type>ServerBinaryCloudSave const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a19c0a3aa3353a26318c85ba3e60413ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</definition>
+        <argsstring>(ServerBinaryCloudSave &amp;&amp;)=delete</argsstring>
+        <name>ServerBinaryCloudSave</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::ServerBinaryCloudSave</qualifiedname>
+        <param>
+          <type>ServerBinaryCloudSave &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="164" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a9ae1fc32acf5b4115fa229bc59f927d6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d62/struct_f_accel_byte_models_game_binary_record" kindref="compound">FAccelByteModelsGameBinaryRecord</ref></type>
+        <definition>FAccelByteModelsGameBinaryRecord AccelByte::GameServerApi::ServerBinaryCloudSave::ConvertJsonToGameBinaryRecord</definition>
+        <argsstring>(FJsonObject const &amp;JsonObject)</argsstring>
+        <name>ConvertJsonToGameBinaryRecord</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerBinaryCloudSave::ConvertJsonToGameBinaryRecord</qualifiedname>
+        <param>
+          <type>FJsonObject const &amp;</type>
+          <declname>JsonObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="166" column="41" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerBinaryCloudSaveApi.cpp" bodystart="298" bodyend="341"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Binary CloudSave API for storing records. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerBinaryCloudSave</label>
+        <link refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ServerSettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerBinaryCloudSave</label>
+        <link refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" line="24" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerBinaryCloudSaveApi.h" bodystart="25" bodyend="167"/>
+    <listofallmembers>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a9ae1fc32acf5b4115fa229bc59f927d6" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ConvertJsonToGameBinaryRecord</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a0cf5b5b6dd246ef3d35e3bb06b8c2df7" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>CreateGameBinaryRecord</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a68fc680239b0e4428b60368ba366b16f" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>DeleteGameBinaryRecord</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a6411bc73e9060288da9e3ceb4a9f7def" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>DeleteGameBinaryRecordTTLConfig</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9bf60b7a41397c62997b57d33ec11ae4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>FServerApiBase</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a5b293bd760dd6dd264788625720fc982" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>GetGameBinaryRecord</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9c610b4093406fa713b39c8319b2f7d6" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>HttpClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a0ac58ba7cb9e3b872c5391127beafaab" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>HttpRef</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a0bbee18cfc960884d4cf792409678fd7" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>QueryGameBinaryRecords</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1abbcb2ca0bb2780f44823fb34d50af505" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>RequestGameBinaryRecordPresignedUrl</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1aa8ed94ac70b499b1a4227802af7dacc3" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ServerApiClient</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a5d058a09bed4c8ae2705eefd1463c9f8" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ServerBinaryCloudSave</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a6601392bc288bbf9f2ce907ee48f3c27" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ServerBinaryCloudSave</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a8f047314b88986fb919ecd8d3c30f00c" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ServerBinaryCloudSave</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a19c0a3aa3353a26318c85ba3e60413ec" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ServerBinaryCloudSave</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a39c68ed1daaf3b51a1182b9dd457eb07" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ServerCredentialsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a452b7dcace49560836fc87b19d5a599a" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ServerSettingsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1af3924e1aba52efccd68b6b08a1e310aa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>SetServerApiClient</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1aacc0b59e6022f2637436bad54884a996" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>UpdateGameBinaryRecord</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a34416995793f2d92645fda06e78bdc6c" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>UpdateGameBinaryRecordMetadata</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1abda8b2aaa6e06007a914d43329c1af35" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>ValidateAccelByteId</name></member>
+      <member refid="d1/d10/class_accel_byte_1_1_game_server_api_1_1_server_binary_cloud_save_1a0311783767c08e10735607212d858f42" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerBinaryCloudSave</scope><name>~ServerBinaryCloudSave</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

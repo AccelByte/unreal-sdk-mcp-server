@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d6/dd9/class_u_a_b_message" kind="class" language="C++" prot="public">
+    <compoundname>UABMessage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d2/d12/_a_b_message_8h" local="no">ABMessage.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/dd9/class_u_a_b_message_1aa421eafba638597c828c6b255641e25a" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABMessage::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABMessage::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="114" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1af9dd41a49f22735096b4c0c00d29a04b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABMessage::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABMessage::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="69" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1aac4a1d1ad030bf9714fe2b5c66a6babf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABMessage::SendPing</definition>
+        <argsstring>()</argsstring>
+        <name>SendPing</name>
+        <qualifiedname>UABMessage::SendPing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="74" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1a1a2a2b81fefa595046d22259f7304055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString UABMessage::SendPrivateMessage</definition>
+        <argsstring>(FSendPrivateMessageRequest const &amp;Request, FDPersonalChatResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>SendPrivateMessage</name>
+        <qualifiedname>UABMessage::SendPrivateMessage</qualifiedname>
+        <param>
+          <type><ref refid="dd/d3e/struct_f_send_private_message_request" kindref="compound">FSendPrivateMessageRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPersonalChatResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="77" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="23" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1a8b3c7dea7cb2c451a71242759f20929e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString UABMessage::SendPartyMessage</definition>
+        <argsstring>(FSendPartyMessageRequest const &amp;Request, FDPartyChatResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>SendPartyMessage</name>
+        <qualifiedname>UABMessage::SendPartyMessage</qualifiedname>
+        <param>
+          <type><ref refid="d6/d39/struct_f_send_party_message_request" kindref="compound">FSendPartyMessageRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyChatResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="83" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="48" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1a0ceaec68cf817ec1d41e8f544a6d5eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString UABMessage::SendJoinDefaultChannelChatRequest</definition>
+        <argsstring>(FDJoinDefaultChannelChatResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>SendJoinDefaultChannelChatRequest</name>
+        <qualifiedname>UABMessage::SendJoinDefaultChannelChatRequest</qualifiedname>
+        <param>
+          <type>FDJoinDefaultChannelChatResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="89" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="73" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1a68ad2487147a6fadb45595c208e62871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString UABMessage::SendChannelMessage</definition>
+        <argsstring>(FSendChannelMessageRequest const &amp;Request, FDChannelChatResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>SendChannelMessage</name>
+        <qualifiedname>UABMessage::SendChannelMessage</qualifiedname>
+        <param>
+          <type><ref refid="d2/db2/struct_f_send_channel_message_request" kindref="compound">FSendChannelMessageRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDChannelChatResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="94" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="97" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1ab1150a38e611344ac3a9e622c0c2b5b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABMessage::SetPrivateMessageNotifDelegate</definition>
+        <argsstring>(FDPersonalChatNotif OnNotif)</argsstring>
+        <name>SetPrivateMessageNotifDelegate</name>
+        <qualifiedname>UABMessage::SetPrivateMessageNotifDelegate</qualifiedname>
+        <param>
+          <type>FDPersonalChatNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="102" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="122" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1a98d2c1374433db033fcfa0da8b6358d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABMessage::SetMessageNotifDelegate</definition>
+        <argsstring>(FDMessageNotif OnNotif)</argsstring>
+        <name>SetMessageNotifDelegate</name>
+        <qualifiedname>UABMessage::SetMessageNotifDelegate</qualifiedname>
+        <param>
+          <type>FDMessageNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="105" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="136" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1a8fd425eabb18cee357e4c03d0a731b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABMessage::SetChannelMessageNotifDelegate</definition>
+        <argsstring>(FDChannelChatNotif OnNotif)</argsstring>
+        <name>SetChannelMessageNotifDelegate</name>
+        <qualifiedname>UABMessage::SetChannelMessageNotifDelegate</qualifiedname>
+        <param>
+          <type>FDChannelChatNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="108" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="150" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd9/class_u_a_b_message_1a0b8ba79b84adce5ce59a81b2fe089ac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABMessage::SetOnPartyChatNotification</definition>
+        <argsstring>(FDPartyChatNotif OnPartyChatNotif)</argsstring>
+        <name>SetOnPartyChatNotification</name>
+        <qualifiedname>UABMessage::SetOnPartyChatNotification</qualifiedname>
+        <param>
+          <type>FDPartyChatNotif</type>
+          <declname>OnPartyChatNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="111" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp" bodystart="164" bodyend="175"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABMessage</label>
+        <link refid="d6/dd9/class_u_a_b_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABMessage</label>
+        <link refid="d6/dd9/class_u_a_b_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" line="65" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h" bodystart="66" bodyend="115"/>
+    <listofallmembers>
+      <member refid="d6/dd9/class_u_a_b_message_1aa421eafba638597c828c6b255641e25a" prot="private" virt="non-virtual"><scope>UABMessage</scope><name>ApiClientPtr</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1a68ad2487147a6fadb45595c208e62871" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SendChannelMessage</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1a0ceaec68cf817ec1d41e8f544a6d5eb6" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SendJoinDefaultChannelChatRequest</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1a8b3c7dea7cb2c451a71242759f20929e" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SendPartyMessage</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1aac4a1d1ad030bf9714fe2b5c66a6babf" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SendPing</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1a1a2a2b81fefa595046d22259f7304055" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SendPrivateMessage</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1af9dd41a49f22735096b4c0c00d29a04b" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SetApiClient</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1a8fd425eabb18cee357e4c03d0a731b67" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SetChannelMessageNotifDelegate</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1a98d2c1374433db033fcfa0da8b6358d5" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SetMessageNotifDelegate</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1a0b8ba79b84adce5ce59a81b2fe089ac7" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SetOnPartyChatNotification</name></member>
+      <member refid="d6/dd9/class_u_a_b_message_1ab1150a38e611344ac3a9e622c0c2b5b9" prot="public" virt="non-virtual"><scope>UABMessage</scope><name>SetPrivateMessageNotifDelegate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d1/d28/_a_b_utilities_8cpp" kind="file" language="C++">
+    <compoundname>ABUtilities.cpp</compoundname>
+    <includes refid="d0/d8d/_a_b_utilities_8h" local="yes">Blueprints/ABUtilities.h</includes>
+    <includes local="yes">Dom/JsonObject.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>ABUtilities.generated.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABUtilities.cpp</label>
+        <link refid="d1/d28/_a_b_utilities_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Blueprints/ABUtilities.h</label>
+        <link refid="d0/d8d/_a_b_utilities_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="5">
+        <label>JsonObjectWrapper.h</label>
+      </node>
+      <node id="4">
+        <label>UObject/NoExportTypes.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d8d/_a_b_utilities_8h" kindref="compound">Blueprints/ABUtilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Dom/JsonObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="da/ddf/class_u_a_b_utilities_1a2baa59e4bc4e0a0a17ded95f471eb583" refkind="member"><highlight class="normal">FString<sp/><ref refid="da/ddf/class_u_a_b_utilities_1a2baa59e4bc4e0a0a17ded95f471eb583" kindref="member">UABUtilities::DateTimeToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FDateTime&amp;<sp/>DateTime)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DateTime.ToIso8601();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="da/ddf/class_u_a_b_utilities_1a054f80e77a14ef041a012106ed1be5e1" refkind="member"><highlight class="normal">FString<sp/><ref refid="da/ddf/class_u_a_b_utilities_1a054f80e77a14ef041a012106ed1be5e1" kindref="member">UABUtilities::GetJsonObjectAsJsonString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FJsonObjectWrapper&amp;<sp/>ObjectWrapper)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ObjectWrapper.JsonString.IsEmpty())</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ObjectWrapper.JsonString;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FString<sp/>JsonString<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ObjectWrapper.JsonObject.IsValid())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObjectToString(JsonString);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JsonString;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="da/ddf/class_u_a_b_utilities_1a866912c9755abdede03dc65c2df3fe04" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1a866912c9755abdede03dc65c2df3fe04" kindref="member">UABUtilities::GetJsonValueAsString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/>FString&amp;<sp/>OutString)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ObjectWrapper.JsonObject-&gt;TryGetStringField(Key,<sp/>OutString);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="da/ddf/class_u_a_b_utilities_1a454c21bfcd63d83e7349b0a5fd436679" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1a454c21bfcd63d83e7349b0a5fd436679" kindref="member">UABUtilities::GetJsonValueAsNumber</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>OutNumber)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>OutDouble;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsSuccess<sp/>=<sp/>ObjectWrapper.JsonObject-&gt;TryGetNumberField(Key,<sp/>OutDouble);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bIsSuccess)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutNumber<sp/>=<sp/>OutDouble;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bIsSuccess;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="da/ddf/class_u_a_b_utilities_1a45cadb1835aea99465a8abc867a6f060" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1a45cadb1835aea99465a8abc867a6f060" kindref="member">UABUtilities::GetJsonValueAsBool</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>OutBool)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ObjectWrapper.JsonObject-&gt;TryGetBoolField(Key,<sp/>OutBool);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="da/ddf/class_u_a_b_utilities_1a21dcc1dee00defeda374e8685f785da0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1a21dcc1dee00defeda374e8685f785da0" kindref="member">UABUtilities::GetJsonValueAsArray</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/>TArray&lt;FString&gt;&amp;<sp/>OutArray)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ObjectWrapper.JsonObject-&gt;TryGetStringArrayField(Key,<sp/>OutArray);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="da/ddf/class_u_a_b_utilities_1abe6710b9b963b33ba37c5b0578421631" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1abe6710b9b963b33ba37c5b0578421631" kindref="member">UABUtilities::AddOrReplaceJsonStringValue</ref>(FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Value)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ObjectWrapper.JsonObject.IsValid())</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject<sp/>=<sp/>MakeShared&lt;FJsonObject&gt;();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject-&gt;SetStringField(Key,<sp/>Value);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="da/ddf/class_u_a_b_utilities_1a8041e0522a9ebeea4cff4cfe21769137" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1a8041e0522a9ebeea4cff4cfe21769137" kindref="member">UABUtilities::AddOrReplaceJsonNumberValue</ref>(FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Value)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ObjectWrapper.JsonObject.IsValid())</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject<sp/>=<sp/>MakeShared&lt;FJsonObject&gt;();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject-&gt;SetNumberField(Key,<sp/>Value);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="da/ddf/class_u_a_b_utilities_1aebff5f868f567fcb4a848fbbcf260baf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1aebff5f868f567fcb4a848fbbcf260baf" kindref="member">UABUtilities::AddOrReplaceJsonBoolValue</ref>(FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Value)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ObjectWrapper.JsonObject.IsValid())</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject<sp/>=<sp/>MakeShared&lt;FJsonObject&gt;();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject-&gt;SetBoolField(Key,<sp/>Value);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="da/ddf/class_u_a_b_utilities_1ad7efb9e1dff19d6f6111493680fef1ab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/ddf/class_u_a_b_utilities_1ad7efb9e1dff19d6f6111493680fef1ab" kindref="member">UABUtilities::AddOrReplaceJsonArrayValue</ref>(FJsonObjectWrapper&amp;<sp/>ObjectWrapper,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>Value)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ObjectWrapper.JsonObject.IsValid())</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject<sp/>=<sp/>MakeShared&lt;FJsonObject&gt;();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;TSharedPtr&lt;FJsonValue&gt;&gt;<sp/>Items;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Item<sp/>:<sp/>Value)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Items.Add(MakeShareable(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>FJsonValueString(Item)));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>ObjectWrapper.JsonObject-&gt;SetArrayField(Key,<sp/>Items);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABUtilities.cpp"/>
+  </compounddef>
+</doxygen>

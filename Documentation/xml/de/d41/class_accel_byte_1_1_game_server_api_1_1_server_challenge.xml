@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::GameServerApi::ServerChallenge</compoundname>
+    <basecompoundref refid="d8/d4c/class_accel_byte_1_1_f_server_api_base" prot="public" virt="non-virtual">AccelByte::FServerApiBase</basecompoundref>
+    <includes refid="d3/d46/_accel_byte_server_challenge_api_8h" local="no">AccelByteServerChallengeApi.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1afe9dd8d87e95d5ee8d16fcfeb29b107e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</definition>
+        <argsstring>(ServerCredentials const &amp;InCredentialsRef, ServerSettings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; FServerApiClient, ESPMode::ThreadSafe &gt; InServerApiClient=nullptr)</argsstring>
+        <name>ServerChallenge</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</qualifiedname>
+        <param>
+          <type><ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">ServerSettings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/df1/class_accel_byte_1_1_f_server_api_client" kindref="compound">FServerApiClient</ref>, ESPMode::ThreadSafe &gt;</type>
+          <declname>InServerApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="28" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a26008dbaba61001fa4e0de860a461365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerChallenge::~ServerChallenge</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerChallenge</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::~ServerChallenge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="32" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1ab74b35841d73d9688a85d3e92abc0bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerChallenge::GetUserChallengeProgress</definition>
+        <argsstring>(const FString &amp;UserId, FString const &amp;ChallengeCode, THandler&lt; FAccelByteModelsChallengeProgressResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, uint64 Offset=0, uint64 Limit=20, FString const &amp;GoalCode=TEXT(&quot;&quot;), TArray&lt; FString &gt; const &amp;Tags={}, TOptional&lt; FDateTime &gt; DateTime={})</argsstring>
+        <name>GetUserChallengeProgress</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::GetUserChallengeProgress</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChallengeCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d1/d4d/struct_f_accel_byte_models_challenge_progress_response" kindref="compound">FAccelByteModelsChallengeProgressResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>uint64</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint64</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GoalCode</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>Tags</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>TOptional&lt; FDateTime &gt;</type>
+          <declname>DateTime</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Send a request to get current progress for a specific challenge from a specific user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ChallengeCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String code for the challenge to check progress for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request succeeds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request fails </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of goals to skip when returning goal progress list, defaults to 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of goals to include when returning goal progress list, defaults to 20 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GoalCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String code for the specific challenge goal to get progress for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of tag strings used to filter resulting challenge progress list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DateTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter the result of query to progression before the specified date time, by default no specified dateTime. WARNING: cannot use DateTime from future, only past.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="48" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="31" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a75b89a73a65d55afa06a46a849072cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerChallenge::EvaluateChallengeProgress</definition>
+        <argsstring>(FAccelByteModelsChallengeServerEvaluateProgressRequest const &amp;Request, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>EvaluateChallengeProgress</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::EvaluateChallengeProgress</qualifiedname>
+        <param>
+          <type><ref refid="d6/d57/struct_f_accel_byte_models_challenge_server_evaluate_progress_request" kindref="compound">FAccelByteModelsChallengeServerEvaluateProgressRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to attempt to evaluate many user&apos;s challenge progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing the IDs of the users to evaluate challenge progress for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request succeeds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request fails</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="67" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1aa0625116f044e905ebb81deae86b265a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerChallenge::EvaluateChallengeProgress</definition>
+        <argsstring>(FAccelByteModelsChallengeServerEvaluateProgressRequest const &amp;Request, FAccelByteModelsChallengeEvaluateProgressOptionalParameter const &amp;OptionalParameter, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>EvaluateChallengeProgress</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::EvaluateChallengeProgress</qualifiedname>
+        <param>
+          <type><ref refid="d6/d57/struct_f_accel_byte_models_challenge_server_evaluate_progress_request" kindref="compound">FAccelByteModelsChallengeServerEvaluateProgressRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/da2/struct_f_accel_byte_models_challenge_evaluate_progress_optional_parameter" kindref="compound">FAccelByteModelsChallengeEvaluateProgressOptionalParameter</ref> const &amp;</type>
+          <declname>OptionalParameter</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to attempt to evaluate many user&apos;s challenge progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing the IDs of the users to evaluate challenge progress for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OptionalParameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct containing optional parameters to specify the evaluation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request succeeds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request fails</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="81" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="93" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a87780da893420f7c8e75327048d6319b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerChallenge::GetUserRewards</definition>
+        <argsstring>(const FString &amp;UserId, THandler&lt; FAccelByteModelsChallengeGetRewardStatusResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, EAccelByteModelsChallengeRewardStatus Status=EAccelByteModelsChallengeRewardStatus::NONE, EAccelByteModelsChallengeSortBy SortBy=EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC, uint64 Offset=0, uint64 Limit=20)</argsstring>
+        <name>GetUserRewards</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::GetUserRewards</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d0/d84/struct_f_accel_byte_models_challenge_get_reward_status_response" kindref="compound">FAccelByteModelsChallengeGetRewardStatusResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a031144da9402afcf375deb838ae0b616" kindref="member">EAccelByteModelsChallengeRewardStatus</ref></type>
+          <declname>Status</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a031144da9402afcf375deb838ae0b616ab50339a10e1de285ac99d4c3990b8693" kindref="member">EAccelByteModelsChallengeRewardStatus::NONE</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7" kindref="member">EAccelByteModelsChallengeSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7a84e5072e93fb7c605c09da449359c119" kindref="member">EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC</ref></defval>
+        </param>
+        <param>
+          <type>uint64</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint64</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para>Send a request to get status of all challenge rewards. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UserId to lookup the reward </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request succeeds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request fails </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines what specific rewards should be included in the response, defaults to <ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a031144da9402afcf375deb838ae0b616ab50339a10e1de285ac99d4c3990b8693" kindref="member">EAccelByteModelsChallengeRewardStatus::NONE</ref> to show all </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SortBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines the order in which the rewards in the response are returned </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rewards to skip when returning reward list, defaults to 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rewards to include when returning reward list, defaults to 20</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="98" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="118" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1abeee71a8924f5a8561916e905a64aa6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerChallenge::ClaimReward</definition>
+        <argsstring>(FAccelByteModelsChallengeRewardClaimUserRequest const &amp;Request, THandler&lt; TArray&lt; FAccelByteModelsChallengeReward &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>ClaimReward</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::ClaimReward</qualifiedname>
+        <param>
+          <type><ref refid="d0/d8f/struct_f_accel_byte_models_challenge_reward_claim_user_request" kindref="compound">FAccelByteModelsChallengeRewardClaimUserRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d7/db5/struct_f_accel_byte_models_challenge_reward" kindref="compound">FAccelByteModelsChallengeReward</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to claim rewards for a user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing UserID and IDs of rewards to claim </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request succeeds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request fails</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="115" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="159" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a045de7d8e97078b2136792d539752d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerChallenge::ClaimReward</definition>
+        <argsstring>(TArray&lt; FAccelByteModelsChallengeRewardClaimUserRequest &gt; const &amp;Request, THandler&lt; TArray&lt; FAccelByteModelsChallengeRewardClaimUserResponse &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>ClaimReward</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::ClaimReward</qualifiedname>
+        <param>
+          <type>TArray&lt; <ref refid="d0/d8f/struct_f_accel_byte_models_challenge_reward_claim_user_request" kindref="compound">FAccelByteModelsChallengeRewardClaimUserRequest</ref> &gt; const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="dd/d95/struct_f_accel_byte_models_challenge_reward_claim_user_response" kindref="compound">FAccelByteModelsChallengeRewardClaimUserResponse</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to claim rewards for multiple users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of rewards to claim for each user </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request succeeds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate executed when request fails</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="128" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerChallengeApi.cpp" bodystart="188" bodyend="221"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a18d38e8719f0225d771300510dc75035" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</definition>
+        <argsstring>()=delete</argsstring>
+        <name>ServerChallenge</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a41cfe47adfbb8ad35f26196b90b4f8bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</definition>
+        <argsstring>(const ServerChallenge &amp;)=delete</argsstring>
+        <name>ServerChallenge</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</qualifiedname>
+        <param>
+          <type>const ServerChallenge &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a16f6f1323d356771ae507dcc41940052" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</definition>
+        <argsstring>(ServerChallenge &amp;&amp;)=delete</argsstring>
+        <name>ServerChallenge</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerChallenge::ServerChallenge</qualifiedname>
+        <param>
+          <type>ServerChallenge &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="135" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Server Challenge APIs to manage user challenge progress. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerChallenge</label>
+        <link refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ServerSettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerChallenge</label>
+        <link refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" line="25" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerChallengeApi.h" bodystart="26" bodyend="136"/>
+    <listofallmembers>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1abeee71a8924f5a8561916e905a64aa6d" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ClaimReward</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a045de7d8e97078b2136792d539752d06" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ClaimReward</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a75b89a73a65d55afa06a46a849072cb6" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>EvaluateChallengeProgress</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1aa0625116f044e905ebb81deae86b265a" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>EvaluateChallengeProgress</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9bf60b7a41397c62997b57d33ec11ae4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>FServerApiBase</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1ab74b35841d73d9688a85d3e92abc0bbe" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>GetUserChallengeProgress</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a87780da893420f7c8e75327048d6319b" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>GetUserRewards</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9c610b4093406fa713b39c8319b2f7d6" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>HttpClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a0ac58ba7cb9e3b872c5391127beafaab" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>HttpRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1aa8ed94ac70b499b1a4227802af7dacc3" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ServerApiClient</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1afe9dd8d87e95d5ee8d16fcfeb29b107e" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ServerChallenge</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a18d38e8719f0225d771300510dc75035" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ServerChallenge</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a41cfe47adfbb8ad35f26196b90b4f8bd" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ServerChallenge</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a16f6f1323d356771ae507dcc41940052" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ServerChallenge</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a39c68ed1daaf3b51a1182b9dd457eb07" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ServerCredentialsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a452b7dcace49560836fc87b19d5a599a" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ServerSettingsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1af3924e1aba52efccd68b6b08a1e310aa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>SetServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1abda8b2aaa6e06007a914d43329c1af35" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>ValidateAccelByteId</name></member>
+      <member refid="de/d41/class_accel_byte_1_1_game_server_api_1_1_server_challenge_1a26008dbaba61001fa4e0de860a461365" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerChallenge</scope><name>~ServerChallenge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

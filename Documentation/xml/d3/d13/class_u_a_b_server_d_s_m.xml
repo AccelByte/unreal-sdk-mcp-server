@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d3/d13/class_u_a_b_server_d_s_m" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UABServerDSM</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d7/dfc/_a_b_server_d_s_m_8h" local="no">ABServerDSM.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d13/class_u_a_b_server_d_s_m_1a2245ddb62a88ded40b4f28b8b4f9ce7c" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref></type>
+        <definition>AccelByte::FServerApiClientPtr UABServerDSM::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABServerDSM::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="70" column="32" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1a9d839ad570b4fae3ea23cfd668c66c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::SetServerApiClient</definition>
+        <argsstring>(AccelByte::FServerApiClientPtr const &amp;NewServerApiClientPtr)</argsstring>
+        <name>SetServerApiClient</name>
+        <qualifiedname>UABServerDSM::SetServerApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref> const &amp;</type>
+          <declname>NewServerApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="30" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1a0398508cb1b2f6c2915754043ec0c005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::RegisterServerToDSM</definition>
+        <argsstring>(int32 const &amp;Port, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>RegisterServerToDSM</name>
+        <qualifiedname>UABServerDSM::RegisterServerToDSM</qualifiedname>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="34" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="14" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1ad6cd69df2b7f0a60cc93a518f1240d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::RegisterLocalServerToDSM</definition>
+        <argsstring>(FString const &amp;IPAddress, int32 const &amp;Port, FString const &amp;ServerName, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>RegisterLocalServerToDSM</name>
+        <qualifiedname>UABServerDSM::RegisterLocalServerToDSM</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>IPAddress</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ServerName</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="37" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="33" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1a79b0bb7734ea40dce902dd30085cea2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::SendShutdownToDSM</definition>
+        <argsstring>(bool const &amp;KillMe, FString const &amp;MatchId, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>SendShutdownToDSM</name>
+        <qualifiedname>UABServerDSM::SendShutdownToDSM</qualifiedname>
+        <param>
+          <type>bool const &amp;</type>
+          <declname>KillMe</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchId</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="40" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="56" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1acdd17591bcca1b7dce45f2762450fa59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::DeregisterLocalServerFromDSM</definition>
+        <argsstring>(FString const &amp;ServerName, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>DeregisterLocalServerFromDSM</name>
+        <qualifiedname>UABServerDSM::DeregisterLocalServerFromDSM</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ServerName</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="43" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="77" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1acd6ae58c0da21ae9482ca13218e36239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::GetSessionId</definition>
+        <argsstring>(FDServerSessionResponseDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetSessionId</name>
+        <qualifiedname>UABServerDSM::GetSessionId</qualifiedname>
+        <param>
+          <type>FDServerSessionResponseDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="46" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="96" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1a7cf408ce7adc0f409ae0a00f25bd2a53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::GetServerInfo</definition>
+        <argsstring>(FDServerInfoDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetServerInfo</name>
+        <qualifiedname>UABServerDSM::GetServerInfo</qualifiedname>
+        <param>
+          <type>FDServerInfoDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="49" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="113" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1a6cbcf1acfdb9b25fa278bfe86e80e2f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::ConfigureAutoShutdown</definition>
+        <argsstring>(int32 TickSeconds=5, int CountdownStart=30)</argsstring>
+        <name>ConfigureAutoShutdown</name>
+        <qualifiedname>UABServerDSM::ConfigureAutoShutdown</qualifiedname>
+        <param>
+          <type>int32</type>
+          <declname>TickSeconds</declname>
+          <defval>5</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>CountdownStart</declname>
+          <defval>30</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="52" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="130" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1ae64233e477b4486203e41eac484f6db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::SetOnAutoShutdownResponse</definition>
+        <argsstring>(FDHandler OnAutoShutdown)</argsstring>
+        <name>SetOnAutoShutdownResponse</name>
+        <qualifiedname>UABServerDSM::SetOnAutoShutdownResponse</qualifiedname>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnAutoShutdown</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="55" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1a5c147c29be8b5e18052421754d1818e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::SetOnAutoShutdownErrorDelegate</definition>
+        <argsstring>(FDErrorHandler OnShutdownError)</argsstring>
+        <name>SetOnAutoShutdownErrorDelegate</name>
+        <qualifiedname>UABServerDSM::SetOnAutoShutdownErrorDelegate</qualifiedname>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnShutdownError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="58" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="150" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1af7104eaaf648ff77f832f9768b2f91b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::SetServerName</definition>
+        <argsstring>(const FString &amp;Name)</argsstring>
+        <name>SetServerName</name>
+        <qualifiedname>UABServerDSM::SetServerName</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="61" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1aa3bf29e9177f987f5f4044451198d3ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerDSM::SetServerType</definition>
+        <argsstring>(UEnumServerType Type)</argsstring>
+        <name>SetServerType</name>
+        <qualifiedname>UABServerDSM::SetServerType</qualifiedname>
+        <param>
+          <type><ref refid="d7/dfc/_a_b_server_d_s_m_8h_1a5617863af57701cc618256e3a0661534" kindref="member">UEnumServerType</ref></type>
+          <declname>Type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="64" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d13/class_u_a_b_server_d_s_m_1a15fb0bc96d3fdde8734eec4657c6b879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 UABServerDSM::GetPlayerNum</definition>
+        <argsstring>()</argsstring>
+        <name>GetPlayerNum</name>
+        <qualifiedname>UABServerDSM::GetPlayerNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="67" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerDSM.cpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABServerDSM</label>
+        <link refid="d3/d13/class_u_a_b_server_d_s_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABServerDSM</label>
+        <link refid="d3/d13/class_u_a_b_server_d_s_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" line="26" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerDSM.h" bodystart="27" bodyend="71"/>
+    <listofallmembers>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a2245ddb62a88ded40b4f28b8b4f9ce7c" prot="private" virt="non-virtual"><scope>UABServerDSM</scope><name>ApiClientPtr</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a6cbcf1acfdb9b25fa278bfe86e80e2f9" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>ConfigureAutoShutdown</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1acdd17591bcca1b7dce45f2762450fa59" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>DeregisterLocalServerFromDSM</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a15fb0bc96d3fdde8734eec4657c6b879" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>GetPlayerNum</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a7cf408ce7adc0f409ae0a00f25bd2a53" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>GetServerInfo</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1acd6ae58c0da21ae9482ca13218e36239" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>GetSessionId</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1ad6cd69df2b7f0a60cc93a518f1240d85" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>RegisterLocalServerToDSM</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a0398508cb1b2f6c2915754043ec0c005" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>RegisterServerToDSM</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a79b0bb7734ea40dce902dd30085cea2a" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>SendShutdownToDSM</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a5c147c29be8b5e18052421754d1818e6" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>SetOnAutoShutdownErrorDelegate</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1ae64233e477b4486203e41eac484f6db9" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>SetOnAutoShutdownResponse</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1a9d839ad570b4fae3ea23cfd668c66c74" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>SetServerApiClient</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1af7104eaaf648ff77f832f9768b2f91b7" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>SetServerName</name></member>
+      <member refid="d3/d13/class_u_a_b_server_d_s_m_1aa3bf29e9177f987f5f4044451198d3ce" prot="public" virt="non-virtual"><scope>UABServerDSM</scope><name>SetServerType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d0/d56/class_f_accel_byte_udp_ping_thread" kind="class" language="C++" prot="public">
+    <compoundname>FAccelByteUdpPingThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FRunnable</basecompoundref>
+    <includes refid="d0/dfa/_accel_byte_ping_async_8h" local="no">AccelBytePingAsync.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a2e2691485e1e3eb4a0c048a77af8f016" prot="protected" static="no" mutable="no">
+        <type>FPingResultStatusDelegate</type>
+        <definition>FPingResultStatusDelegate FAccelByteUdpPingThread::OnComplete</definition>
+        <argsstring></argsstring>
+        <name>OnComplete</name>
+        <qualifiedname>FAccelByteUdpPingThread::OnComplete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="68" column="27" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1af6d424d55036c984368a9e78239b4640" prot="protected" static="no" mutable="no">
+        <type>FGotResponseDelegate</type>
+        <definition>FGotResponseDelegate FAccelByteUdpPingThread::OnGotResponse</definition>
+        <argsstring></argsstring>
+        <name>OnGotResponse</name>
+        <qualifiedname>FAccelByteUdpPingThread::OnGotResponse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="69" column="22" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a24833054981cd834bd17686e75e307c0" prot="protected" static="no" mutable="no">
+        <type><ref refid="dd/dc9/struct_f_ping_config" kindref="compound">FPingConfig</ref></type>
+        <definition>FPingConfig FAccelByteUdpPingThread::Config</definition>
+        <argsstring></argsstring>
+        <name>Config</name>
+        <qualifiedname>FAccelByteUdpPingThread::Config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="70" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a7cd97fc6b4aca1b73bb7681ebdb1d81b" prot="private" static="no" mutable="no">
+        <type>ISocketSubsystem *</type>
+        <definition>ISocketSubsystem* FAccelByteUdpPingThread::SocketSubsystem</definition>
+        <argsstring></argsstring>
+        <name>SocketSubsystem</name>
+        <qualifiedname>FAccelByteUdpPingThread::SocketSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="74" column="18" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a0a1aa49c978b3e7d9c3467e845413c85" prot="private" static="no" mutable="no">
+        <type>FSocket *</type>
+        <definition>FSocket* FAccelByteUdpPingThread::Socket</definition>
+        <argsstring></argsstring>
+        <name>Socket</name>
+        <qualifiedname>FAccelByteUdpPingThread::Socket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="75" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1acbe769da8be3e1249b4870707385d8f3" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; FInternetAddr &gt;</type>
+        <definition>TSharedPtr&lt;FInternetAddr&gt; FAccelByteUdpPingThread::IpAddress</definition>
+        <argsstring></argsstring>
+        <name>IpAddress</name>
+        <qualifiedname>FAccelByteUdpPingThread::IpAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="76" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a91ac1ec61c2dc346bc579d52a4f05e85" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::bIsComplete</definition>
+        <argsstring></argsstring>
+        <name>bIsComplete</name>
+        <qualifiedname>FAccelByteUdpPingThread::bIsComplete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="78" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d56/class_f_accel_byte_udp_ping_thread_1aad861df5f0b3f0e90b1a73951f09eb43" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::bIsCanceled</definition>
+        <argsstring></argsstring>
+        <name>bIsCanceled</name>
+        <qualifiedname>FAccelByteUdpPingThread::bIsCanceled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="79" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1ae2f1ab58c33cc54990c601d7baf8ae3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAccelByteUdpPingThread::FAccelByteUdpPingThread</definition>
+        <argsstring>(ISocketSubsystem *const InSocketSub, FPingConfig const &amp;InConfig, FGotResponseDelegate OnGotResponseDelegate, FPingResultStatusDelegate OnPingCompleteDelegate)</argsstring>
+        <name>FAccelByteUdpPingThread</name>
+        <qualifiedname>FAccelByteUdpPingThread::FAccelByteUdpPingThread</qualifiedname>
+        <param>
+          <type>ISocketSubsystem *const</type>
+          <declname>InSocketSub</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/dc9/struct_f_ping_config" kindref="compound">FPingConfig</ref> const &amp;</type>
+          <declname>InConfig</declname>
+        </param>
+        <param>
+          <type>FGotResponseDelegate</type>
+          <declname>OnGotResponseDelegate</declname>
+        </param>
+        <param>
+          <type>FPingResultStatusDelegate</type>
+          <declname>OnPingCompleteDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="43" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="8" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a093da0ce527ec2e5593282b21b546554" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FAccelByteUdpPingThread::~FAccelByteUdpPingThread</definition>
+        <argsstring>() override</argsstring>
+        <name>~FAccelByteUdpPingThread</name>
+        <qualifiedname>FAccelByteUdpPingThread::~FAccelByteUdpPingThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="48" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a49b32b16d185f5f126d136c17993c484" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint32</type>
+        <definition>uint32 FAccelByteUdpPingThread::Run</definition>
+        <argsstring>() override</argsstring>
+        <name>Run</name>
+        <qualifiedname>FAccelByteUdpPingThread::Run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="50" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="25" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1ac42da9d4b777673aaf61e34857c9b53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteUdpPingThread::Stop</definition>
+        <argsstring>() override</argsstring>
+        <name>Stop</name>
+        <qualifiedname>FAccelByteUdpPingThread::Stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="52" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a32864fad4f64c734a298edeca300f3e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteUdpPingThread::Exit</definition>
+        <argsstring>() override</argsstring>
+        <name>Exit</name>
+        <qualifiedname>FAccelByteUdpPingThread::Exit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="54" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1ae61b7546e4a0c3258c75135e778178c9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::CreateSocket</definition>
+        <argsstring>()</argsstring>
+        <name>CreateSocket</name>
+        <qualifiedname>FAccelByteUdpPingThread::CreateSocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="57" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="51" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a929f4c1299aa2c4d626f9315c964c856" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteUdpPingThread::DestroySocket</definition>
+        <argsstring>()</argsstring>
+        <name>DestroySocket</name>
+        <qualifiedname>FAccelByteUdpPingThread::DestroySocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="58" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="78" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1aa804ee5f49f068df6f5d46a876d23ee4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint64</type>
+        <definition>uint64 FAccelByteUdpPingThread::GetCurrentTime</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentTime</name>
+        <qualifiedname>FAccelByteUdpPingThread::GetCurrentTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="59" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1afc1b4a48c2d801b7eb87cf8d85d78d90" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::CreateAddress</definition>
+        <argsstring>()</argsstring>
+        <name>CreateAddress</name>
+        <qualifiedname>FAccelByteUdpPingThread::CreateAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="60" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="92" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1ac0a199f108469eec4fba8560708ceb40" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::SocketReceiveData</definition>
+        <argsstring>(uint8 *Data, int32 BufferSize, int32 &amp;BytesRead)</argsstring>
+        <name>SocketReceiveData</name>
+        <qualifiedname>FAccelByteUdpPingThread::SocketReceiveData</qualifiedname>
+        <param>
+          <type>uint8 *</type>
+          <declname>Data</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>BufferSize</declname>
+        </param>
+        <param>
+          <type>int32 &amp;</type>
+          <declname>BytesRead</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="61" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="117" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a8545a42a8d98819e36822428f7c6607b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::SocketSendData</definition>
+        <argsstring>(const FString &amp;StringToSend, int32 &amp;BytesSent)</argsstring>
+        <name>SocketSendData</name>
+        <qualifiedname>FAccelByteUdpPingThread::SocketSendData</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>StringToSend</declname>
+        </param>
+        <param>
+          <type>int32 &amp;</type>
+          <declname>BytesSent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="62" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="128" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1ab754bfe454c04fd204db7a3cf5fd8b1f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::SocketWaitData</definition>
+        <argsstring>()</argsstring>
+        <name>SocketWaitData</name>
+        <qualifiedname>FAccelByteUdpPingThread::SocketWaitData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="63" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="138" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a1be68f6d4f6e29aa8788eecb1a80c663" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUdpPingThread::SocketIsValid</definition>
+        <argsstring>()</argsstring>
+        <name>SocketIsValid</name>
+        <qualifiedname>FAccelByteUdpPingThread::SocketIsValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="64" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1a69e8bc2b65f01b0f609de7a2046f383e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/dfa/_accel_byte_ping_async_8h_1a697011b8c80bcecc69960f8ad77ced22" kindref="member">FPingResultStatus</ref></type>
+        <definition>FPingResultStatus FAccelByteUdpPingThread::SendPing</definition>
+        <argsstring>(const FString &amp;PingString)</argsstring>
+        <name>SendPing</name>
+        <qualifiedname>FAccelByteUdpPingThread::SendPing</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PingString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="66" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="153" bodyend="205"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/d56/class_f_accel_byte_udp_ping_thread_1abc047cf56fbf32e8055211cc9a6f8824" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/dee/struct_f_ping_response" kindref="compound">FPingResponse</ref></type>
+        <definition>FPingResponse FAccelByteUdpPingThread::CreateResponse</definition>
+        <argsstring>(uint8 *Data, int32 BytesRead, uint64 SentTime, uint64 CurrentTime)</argsstring>
+        <name>CreateResponse</name>
+        <qualifiedname>FAccelByteUdpPingThread::CreateResponse</qualifiedname>
+        <param>
+          <type>uint8 *</type>
+          <declname>Data</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>BytesRead</declname>
+        </param>
+        <param>
+          <type>uint64</type>
+          <declname>SentTime</declname>
+        </param>
+        <param>
+          <type>uint64</type>
+          <declname>CurrentTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="73" column="15" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.cpp" bodystart="207" bodyend="222"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FAccelByteUdpPingThread</label>
+        <link refid="d0/d56/class_f_accel_byte_udp_ping_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FRunnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FAccelByteUdpPingThread</label>
+        <link refid="d0/d56/class_f_accel_byte_udp_ping_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Config</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FPingConfig</label>
+        <link refid="dd/dc9/struct_f_ping_config"/>
+      </node>
+      <node id="2">
+        <label>FRunnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" line="40" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Ping/AccelBytePingAsync.h" bodystart="41" bodyend="80"/>
+    <listofallmembers>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1aad861df5f0b3f0e90b1a73951f09eb43" prot="private" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>bIsCanceled</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a91ac1ec61c2dc346bc579d52a4f05e85" prot="private" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>bIsComplete</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a24833054981cd834bd17686e75e307c0" prot="protected" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>Config</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1afc1b4a48c2d801b7eb87cf8d85d78d90" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>CreateAddress</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1abc047cf56fbf32e8055211cc9a6f8824" prot="private" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>CreateResponse</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1ae61b7546e4a0c3258c75135e778178c9" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>CreateSocket</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a929f4c1299aa2c4d626f9315c964c856" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>DestroySocket</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a32864fad4f64c734a298edeca300f3e8" prot="public" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>Exit</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1ae2f1ab58c33cc54990c601d7baf8ae3c" prot="public" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>FAccelByteUdpPingThread</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1aa804ee5f49f068df6f5d46a876d23ee4" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>GetCurrentTime</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1acbe769da8be3e1249b4870707385d8f3" prot="private" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>IpAddress</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a2e2691485e1e3eb4a0c048a77af8f016" prot="protected" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>OnComplete</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1af6d424d55036c984368a9e78239b4640" prot="protected" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>OnGotResponse</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a49b32b16d185f5f126d136c17993c484" prot="public" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>Run</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a69e8bc2b65f01b0f609de7a2046f383e" prot="protected" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>SendPing</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a0a1aa49c978b3e7d9c3467e845413c85" prot="private" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>Socket</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a1be68f6d4f6e29aa8788eecb1a80c663" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>SocketIsValid</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1ac0a199f108469eec4fba8560708ceb40" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>SocketReceiveData</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a8545a42a8d98819e36822428f7c6607b" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>SocketSendData</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a7cd97fc6b4aca1b73bb7681ebdb1d81b" prot="private" virt="non-virtual"><scope>FAccelByteUdpPingThread</scope><name>SocketSubsystem</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1ab754bfe454c04fd204db7a3cf5fd8b1f" prot="protected" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>SocketWaitData</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1ac42da9d4b777673aaf61e34857c9b53d" prot="public" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>Stop</name></member>
+      <member refid="d0/d56/class_f_accel_byte_udp_ping_thread_1a093da0ce527ec2e5593282b21b546554" prot="public" virt="virtual"><scope>FAccelByteUdpPingThread</scope><name>~FAccelByteUdpPingThread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dc/da2/_accel_byte_notification_buffer_8h" kind="file" language="C++">
+    <compoundname>AccelByteNotificationBuffer.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes refid="d3/d43/_accel_byte_lobby_models_8h" local="yes">Models/AccelByteLobbyModels.h</includes>
+    <includedby refid="d0/dbd/_accel_byte_notification_buffer_8cpp" local="yes">D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteNotificationBuffer.cpp</includedby>
+    <includedby refid="d5/d34/_accel_byte_lobby_api_8h" local="yes">D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLobbyApi.h</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>AccelByteDSMModels.generated.h</label>
+      </node>
+      <node id="9">
+        <label>AccelByteGeneralModels.generated.h</label>
+      </node>
+      <node id="14">
+        <label>AccelByteLobbyModels.generated.h</label>
+      </node>
+      <node id="11">
+        <label>AccelByteUserModels.generated.h</label>
+      </node>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteNotificationBuffer.h</label>
+        <link refid="dc/da2/_accel_byte_notification_buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Models/AccelByteDSMModels.h</label>
+        <link refid="de/de5/_accel_byte_d_s_m_models_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Models/AccelByteGeneralModels.h</label>
+        <link refid="de/dc6/_accel_byte_general_models_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Models/AccelByteLobbyModels.h</label>
+        <link refid="d3/d43/_accel_byte_lobby_models_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Models/AccelByteUserModels.h</label>
+        <link refid="d2/dca/_accel_byte_user_models_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Interfaces/IHttpRequest.h</label>
+      </node>
+      <node id="6">
+        <label>Interfaces/IHttpResponse.h</label>
+      </node>
+      <node id="4">
+        <label>JsonObjectWrapper.h</label>
+      </node>
+      <node id="8">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="56">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp</label>
+        <link refid="d3/dd2/_accel_byte_ue4_sdk_module_8cpp"/>
+      </node>
+      <node id="10">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteAMSApi.cpp</label>
+        <link refid="de/d79/_accel_byte_a_m_s_api_8cpp"/>
+      </node>
+      <node id="11">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteAchievementApi.cpp</label>
+        <link refid="d4/d27/_accel_byte_achievement_api_8cpp"/>
+      </node>
+      <node id="12">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteAgreementApi.cpp</label>
+        <link refid="d7/d6f/_accel_byte_agreement_api_8cpp"/>
+      </node>
+      <node id="13">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteBaseAnalyticsApi.cpp</label>
+        <link refid="d9/da1/_accel_byte_base_analytics_api_8cpp"/>
+      </node>
+      <node id="14">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteBinaryCloudSaveApi.cpp</label>
+        <link refid="d1/d48/_accel_byte_binary_cloud_save_api_8cpp"/>
+      </node>
+      <node id="15">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteCategoryApi.cpp</label>
+        <link refid="d0/d2b/_accel_byte_category_api_8cpp"/>
+      </node>
+      <node id="16">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteChallengeApi.cpp</label>
+        <link refid="d7/df1/_accel_byte_challenge_api_8cpp"/>
+      </node>
+      <node id="17">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteChatApi.cpp</label>
+        <link refid="d2/d13/_accel_byte_chat_api_8cpp"/>
+      </node>
+      <node id="18">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteCloudSaveApi.cpp</label>
+        <link refid="d5/ded/_accel_byte_cloud_save_api_8cpp"/>
+      </node>
+      <node id="19">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteCloudStorageApi.cpp</label>
+        <link refid="d8/db1/_accel_byte_cloud_storage_api_8cpp"/>
+      </node>
+      <node id="20">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteConfigurationsApi.cpp</label>
+        <link refid="d8/dc4/_accel_byte_configurations_api_8cpp"/>
+      </node>
+      <node id="21">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteCurrencyApi.cpp</label>
+        <link refid="d7/d23/_accel_byte_currency_api_8cpp"/>
+      </node>
+      <node id="22">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteEntitlementApi.cpp</label>
+        <link refid="dd/dc3/_accel_byte_entitlement_api_8cpp"/>
+      </node>
+      <node id="23">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteFulfillmentApi.cpp</label>
+        <link refid="d9/d59/_accel_byte_fulfillment_api_8cpp"/>
+      </node>
+      <node id="24">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGDPRApi.cpp</label>
+        <link refid="de/d27/_accel_byte_g_d_p_r_api_8cpp"/>
+      </node>
+      <node id="25">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameProfileApi.cpp</label>
+        <link refid="d4/d1f/_accel_byte_game_profile_api_8cpp"/>
+      </node>
+      <node id="26">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp</label>
+        <link refid="d4/d73/_accel_byte_game_standard_event_api_8cpp"/>
+      </node>
+      <node id="27">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameTelemetryApi.cpp</label>
+        <link refid="d2/df0/_accel_byte_game_telemetry_api_8cpp"/>
+      </node>
+      <node id="28">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGroupApi.cpp</label>
+        <link refid="d3/da5/_accel_byte_group_api_8cpp"/>
+      </node>
+      <node id="29">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp</label>
+        <link refid="db/df7/_accel_byte_heart_beat_api_8cpp"/>
+      </node>
+      <node id="30">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteInventoryApi.cpp</label>
+        <link refid="df/dd4/_accel_byte_inventory_api_8cpp"/>
+      </node>
+      <node id="31">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteItemApi.cpp</label>
+        <link refid="df/ddf/_accel_byte_item_api_8cpp"/>
+      </node>
+      <node id="32">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLeaderboardApi.cpp</label>
+        <link refid="d0/d16/_accel_byte_leaderboard_api_8cpp"/>
+      </node>
+      <node id="4">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLobbyApi.cpp</label>
+        <link refid="d2/d05/_accel_byte_lobby_api_8cpp"/>
+      </node>
+      <node id="33">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLoginQueueApi.cpp</label>
+        <link refid="d3/df8/_accel_byte_login_queue_api_8cpp"/>
+      </node>
+      <node id="34">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteMatchmakingV2Api.cpp</label>
+        <link refid="db/d32/_accel_byte_matchmaking_v2_api_8cpp"/>
+      </node>
+      <node id="35">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteMiscellaneousApi.cpp</label>
+        <link refid="dc/d59/_accel_byte_miscellaneous_api_8cpp"/>
+      </node>
+      <node id="36">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteOrderApi.cpp</label>
+        <link refid="d3/de5/_accel_byte_order_api_8cpp"/>
+      </node>
+      <node id="37">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePredefinedEventApi.cpp</label>
+        <link refid="d9/d95/_accel_byte_predefined_event_api_8cpp"/>
+      </node>
+      <node id="38">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp</label>
+        <link refid="d9/d17/_accel_byte_presence_broadcast_event_api_8cpp"/>
+      </node>
+      <node id="39">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteQos.cpp</label>
+        <link refid="d8/d8f/_accel_byte_qos_8cpp"/>
+      </node>
+      <node id="40">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteQosManagerApi.cpp</label>
+        <link refid="de/db4/_accel_byte_qos_manager_api_8cpp"/>
+      </node>
+      <node id="41">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteReportingApi.cpp</label>
+        <link refid="dd/dbb/_accel_byte_reporting_api_8cpp"/>
+      </node>
+      <node id="42">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteRewardApi.cpp</label>
+        <link refid="dd/da5/_accel_byte_reward_api_8cpp"/>
+      </node>
+      <node id="43">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteSeasonPassApi.cpp</label>
+        <link refid="d1/d84/_accel_byte_season_pass_api_8cpp"/>
+      </node>
+      <node id="44">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteSessionApi.cpp</label>
+        <link refid="d6/d3f/_accel_byte_session_api_8cpp"/>
+      </node>
+      <node id="45">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteSessionBrowserApi.cpp</label>
+        <link refid="db/df2/_accel_byte_session_browser_api_8cpp"/>
+      </node>
+      <node id="46">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteStatisticApi.cpp</label>
+        <link refid="d7/d8f/_accel_byte_statistic_api_8cpp"/>
+      </node>
+      <node id="47">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteStoreDisplayApi.cpp</label>
+        <link refid="d0/d5d/_accel_byte_store_display_api_8cpp"/>
+      </node>
+      <node id="48">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteTurnManagerApi.cpp</label>
+        <link refid="d6/d31/_accel_byte_turn_manager_api_8cpp"/>
+      </node>
+      <node id="49">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteUGCApi.cpp</label>
+        <link refid="d0/d01/_accel_byte_u_g_c_api_8cpp"/>
+      </node>
+      <node id="50">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteUserApi.cpp</label>
+        <link refid="d6/d99/_accel_byte_user_api_8cpp"/>
+      </node>
+      <node id="51">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteUserProfileApi.cpp</label>
+        <link refid="d1/d6a/_accel_byte_user_profile_api_8cpp"/>
+      </node>
+      <node id="52">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteWalletApi.cpp</label>
+        <link refid="d1/d18/_accel_byte_wallet_api_8cpp"/>
+      </node>
+      <node id="67">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAchievement.cpp</label>
+        <link refid="d2/d88/_a_b_achievement_8cpp"/>
+      </node>
+      <node id="71">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABAgreement.cpp</label>
+        <link refid="d0/d4e/_a_b_agreement_8cpp"/>
+      </node>
+      <node id="73">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABBinaryCloudSave.cpp</label>
+        <link refid="da/d14/_a_b_binary_cloud_save_8cpp"/>
+      </node>
+      <node id="75">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABBlock.cpp</label>
+        <link refid="dd/d2b/_a_b_block_8cpp"/>
+      </node>
+      <node id="77">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABCatalog.cpp</label>
+        <link refid="d4/d98/_a_b_catalog_8cpp"/>
+      </node>
+      <node id="79">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp</label>
+        <link refid="d6/d2d/_a_b_challenge_8cpp"/>
+      </node>
+      <node id="81">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABCloudSave.cpp</label>
+        <link refid="db/d4d/_a_b_cloud_save_8cpp"/>
+      </node>
+      <node id="85">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABCurrency.cpp</label>
+        <link refid="d0/d5e/_a_b_currency_8cpp"/>
+      </node>
+      <node id="87">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABEntitlement.cpp</label>
+        <link refid="d9/d5e/_a_b_entitlement_8cpp"/>
+      </node>
+      <node id="5">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABFriends.cpp</label>
+        <link refid="d5/d39/_a_b_friends_8cpp"/>
+      </node>
+      <node id="90">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABFulfillment.cpp</label>
+        <link refid="db/d04/_a_b_fulfillment_8cpp"/>
+      </node>
+      <node id="92">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp</label>
+        <link refid="d3/d65/_a_b_group_8cpp"/>
+      </node>
+      <node id="94">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABInventory.cpp</label>
+        <link refid="d6/d8e/_a_b_inventory_8cpp"/>
+      </node>
+      <node id="98">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp</label>
+        <link refid="de/d51/_a_b_leaderboard_8cpp"/>
+      </node>
+      <node id="6">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMatchmaking.cpp</label>
+        <link refid="dd/dfa/_a_b_matchmaking_8cpp"/>
+      </node>
+      <node id="101">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABMessage.cpp</label>
+        <link refid="d7/d8d/_a_b_message_8cpp"/>
+      </node>
+      <node id="103">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp</label>
+        <link refid="d3/d1d/_a_b_order_8cpp"/>
+      </node>
+      <node id="7">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp</label>
+        <link refid="d5/d78/_a_b_party_8cpp"/>
+      </node>
+      <node id="106">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABPresence.cpp</label>
+        <link refid="d8/d02/_a_b_presence_8cpp"/>
+      </node>
+      <node id="108">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABReward.cpp</label>
+        <link refid="d8/d5f/_a_b_reward_8cpp"/>
+      </node>
+      <node id="110">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSeasonPass.cpp</label>
+        <link refid="d3/d2e/_a_b_season_pass_8cpp"/>
+      </node>
+      <node id="83">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerCloudsave.cpp</label>
+        <link refid="d7/d82/_a_b_server_cloudsave_8cpp"/>
+      </node>
+      <node id="96">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerInventory.cpp</label>
+        <link refid="d9/d4d/_a_b_server_inventory_8cpp"/>
+      </node>
+      <node id="112">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionAttribute.cpp</label>
+        <link refid="dc/dd6/_a_b_session_attribute_8cpp"/>
+      </node>
+      <node id="114">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSessionBrowser.cpp</label>
+        <link refid="dc/d3e/_a_b_session_browser_8cpp"/>
+      </node>
+      <node id="116">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABSignaling.cpp</label>
+        <link refid="da/d38/_a_b_signaling_8cpp"/>
+      </node>
+      <node id="118">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABStatistic.cpp</label>
+        <link refid="d1/dd7/_a_b_statistic_8cpp"/>
+      </node>
+      <node id="120">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABUGC.cpp</label>
+        <link refid="d5/d5f/_a_b_u_g_c_8cpp"/>
+      </node>
+      <node id="122">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABUser.cpp</label>
+        <link refid="d2/dba/_a_b_user_8cpp"/>
+      </node>
+      <node id="124">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABWallet.cpp</label>
+        <link refid="d4/da0/_a_b_wallet_8cpp"/>
+      </node>
+      <node id="69">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/AccelByteBPApiClient.cpp</label>
+        <link refid="dc/d9f/_accel_byte_b_p_api_client_8cpp"/>
+      </node>
+      <node id="126">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/AccelByteBPLobby.cpp</label>
+        <link refid="d1/d09/_accel_byte_b_p_lobby_8cpp"/>
+      </node>
+      <node id="57">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/AccelByteInstanceBlueprints.cpp</label>
+        <link refid="d2/d7e/_accel_byte_instance_blueprints_8cpp"/>
+      </node>
+      <node id="58">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AGS/AccelBytePlatform.cpp</label>
+        <link refid="da/d32/_accel_byte_platform_8cpp"/>
+      </node>
+      <node id="53">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteApiBase.cpp</label>
+        <link refid="d5/daa/_accel_byte_api_base_8cpp"/>
+      </node>
+      <node id="54">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteApiClient.cpp</label>
+        <link refid="d6/da7/_accel_byte_api_client_8cpp"/>
+      </node>
+      <node id="59">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteCredentials.cpp</label>
+        <link refid="d7/dfc/_accel_byte_credentials_8cpp"/>
+      </node>
+      <node id="128">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteEntitlementTokenGenerator.cpp</label>
+        <link refid="df/d3e/_accel_byte_entitlement_token_generator_8cpp"/>
+      </node>
+      <node id="60">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteInstance.cpp</label>
+        <link refid="de/d83/_accel_byte_instance_8cpp"/>
+      </node>
+      <node id="2">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteNotificationBuffer.cpp</label>
+        <link refid="d0/dbd/_accel_byte_notification_buffer_8cpp"/>
+      </node>
+      <node id="64">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteServerApiClient.cpp</label>
+        <link refid="d4/d76/_accel_byte_server_api_client_8cpp"/>
+      </node>
+      <node id="61">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteServerCredentials.cpp</label>
+        <link refid="de/d04/_accel_byte_server_credentials_8cpp"/>
+      </node>
+      <node id="62">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteUtilities.cpp</label>
+        <link refid="d8/d05/_accel_byte_utilities_8cpp"/>
+      </node>
+      <node id="8">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Logging/AccelByteServiceLogger.cpp</label>
+        <link refid="d6/d81/_accel_byte_service_logger_8cpp"/>
+      </node>
+      <node id="55">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/AccelByteUe4SdkModule.h</label>
+        <link refid="d0/d8f/_accel_byte_ue4_sdk_module_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLobbyApi.h</label>
+        <link refid="d5/d34/_accel_byte_lobby_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAchievement.h</label>
+        <link refid="d7/d71/_a_b_achievement_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABAgreement.h</label>
+        <link refid="d4/d80/_a_b_agreement_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABBinaryCloudSave.h</label>
+        <link refid="dd/d95/_a_b_binary_cloud_save_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABBlock.h</label>
+        <link refid="df/d5b/_a_b_block_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABCatalog.h</label>
+        <link refid="d4/d33/_a_b_catalog_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h</label>
+        <link refid="d1/d4f/_a_b_challenge_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABCloudSave.h</label>
+        <link refid="d6/d1d/_a_b_cloud_save_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABCurrency.h</label>
+        <link refid="d5/d22/_a_b_currency_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABEntitlement.h</label>
+        <link refid="dd/dc9/_a_b_entitlement_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABFriends.h</label>
+        <link refid="d5/d88/_a_b_friends_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABFulfillment.h</label>
+        <link refid="d1/d12/_a_b_fulfillment_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h</label>
+        <link refid="d6/d97/_a_b_group_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABInventory.h</label>
+        <link refid="d1/dde/_a_b_inventory_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h</label>
+        <link refid="da/d06/_a_b_leaderboard_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMatchmaking.h</label>
+        <link refid="de/df4/_a_b_matchmaking_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABMessage.h</label>
+        <link refid="d2/d12/_a_b_message_8h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h</label>
+        <link refid="d0/df5/_a_b_order_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h</label>
+        <link refid="d1/de9/_a_b_party_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABPresence.h</label>
+        <link refid="da/dc6/_a_b_presence_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABReward.h</label>
+        <link refid="d5/dbe/_a_b_reward_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSeasonPass.h</label>
+        <link refid="db/dde/_a_b_season_pass_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerCloudsave.h</label>
+        <link refid="d0/dfe/_a_b_server_cloudsave_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerInventory.h</label>
+        <link refid="dc/d15/_a_b_server_inventory_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionAttribute.h</label>
+        <link refid="d2/db9/_a_b_session_attribute_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSessionBrowser.h</label>
+        <link refid="d5/d6d/_a_b_session_browser_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABSignaling.h</label>
+        <link refid="dd/dd9/_a_b_signaling_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABStatistic.h</label>
+        <link refid="d5/d52/_a_b_statistic_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABUGC.h</label>
+        <link refid="dd/d9c/_a_b_u_g_c_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABUser.h</label>
+        <link refid="d3/df6/_a_b_user_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABWallet.h</label>
+        <link refid="d8/dc0/_a_b_wallet_8h"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/AccelByteBPApiClient.h</label>
+        <link refid="d3/dee/_accel_byte_b_p_api_client_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/AccelByteBPLobby.h</label>
+        <link refid="d1/d3c/_accel_byte_b_p_lobby_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/AccelByteInstanceBlueprints.h</label>
+        <link refid="d2/d8b/_accel_byte_instance_blueprints_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteApiClient.h</label>
+        <link refid="d8/d22/_accel_byte_api_client_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteEntitlementTokenGenerator.h</label>
+        <link refid="d4/d2c/_accel_byte_entitlement_token_generator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteInstance.h</label>
+        <link refid="d5/ddb/_accel_byte_instance_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteNotificationBuffer.h</label>
+        <link refid="dc/da2/_accel_byte_notification_buffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer" prot="public">AccelByte::FAccelByteNotificationBuffer</innerclass>
+    <innernamespace refid="d3/ddc/namespace_accel_byte">AccelByte</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="dc/da2/_accel_byte_notification_buffer_8h_1a86172971174ac42fa757441225bd5650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DECLARE_LOG_CATEGORY_EXTERN</definition>
+        <argsstring>(LogAccelByteNotificationBuffer, Log, All)</argsstring>
+        <name>DECLARE_LOG_CATEGORY_EXTERN</name>
+        <param>
+          <type>LogAccelByteNotificationBuffer</type>
+        </param>
+        <param>
+          <type>Log</type>
+        </param>
+        <param>
+          <type>All</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteNotificationBuffer.h" line="10" column="1" declfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteNotificationBuffer.h" declline="10" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2024<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d43/_accel_byte_lobby_models_8h" kindref="compound">Models/AccelByteLobbyModels.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="dc/da2/_accel_byte_notification_buffer_8h_1a86172971174ac42fa757441225bd5650" refkind="member"><highlight class="normal"><ref refid="dc/da2/_accel_byte_notification_buffer_8h_1a86172971174ac42fa757441225bd5650" kindref="member">DECLARE_LOG_CATEGORY_EXTERN</ref>(LogAccelByteNotificationBuffer,<sp/>Log,<sp/>All);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ACCELBYTEUE4SDK_API<sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer" kindref="compound">FAccelByteNotificationBuffer</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a6c8e6ef807c2b877cbc51c0cba93dc6c" kindref="member">TryAddBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/dce/struct_f_accel_byte_models_user_notification" kindref="compound">FAccelByteModelsUserNotification</ref>&amp;<sp/>InNotification);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a339293ce5584592183f1d45d2feab6fd" kindref="member">AddMissingNotifications</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FAccelByteModelsUserNotification&gt;&amp;<sp/>Notifications);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FDateTime<sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a689eaeca174348c58077b7cbdad81d76" kindref="member">GetLastNotificationReceivedTime</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d56/struct_f_lobby_sequence_i_d" kindref="compound">FLobbySequenceID</ref><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a33b2d898b438d684528c4d15079cfdea" kindref="member">GetLastNotificationSequenceID</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/dff/struct_f_lobby_sequence_number" kindref="compound">FLobbySequenceNumber</ref><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1aee037cbae55235d1f631675db4213e32" kindref="member">GetLastNotificationSequenceNumber</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a2403d5e87ae7109dce79d633001c5dc7" kindref="member">Clear</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TArray&lt;FAccelByteModelsUserNotification&gt;<sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a386ae1ecf78708756eea65be42e21263" kindref="member">GetSortedBuffer</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a6603120cbd5c1513afe315c6a9f35b90" kindref="member">IsBuffering</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a730008a59b277e171cf8b0b076f9a61d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a730008a59b277e171cf8b0b076f9a61d" kindref="member">bBuffering</ref>{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1ab559ab8842490150c7fbb0df001d88ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d56/struct_f_lobby_sequence_i_d" kindref="compound">FLobbySequenceID</ref><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1ab559ab8842490150c7fbb0df001d88ee" kindref="member">LastSequenceID</ref>{0};</highlight></codeline>
+<codeline lineno="78" refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a2eb0114c6054cb89c5ffefd3a93a7484" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/dff/struct_f_lobby_sequence_number" kindref="compound">FLobbySequenceNumber</ref><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a2eb0114c6054cb89c5ffefd3a93a7484" kindref="member">LastSequenceNumber</ref>{0};</highlight></codeline>
+<codeline lineno="79" refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a53542116ba171d52ed6103b2d19eb145" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FDateTime<sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a53542116ba171d52ed6103b2d19eb145" kindref="member">LastSentAt</ref>{0};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1aa2d19b100c41872b07f1289b36d8fbd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>FCriticalSection<sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1aa2d19b100c41872b07f1289b36d8fbd9" kindref="member">BufferLock</ref>;</highlight></codeline>
+<codeline lineno="82" refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1ae5728474069517b4eb5642942000ec76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TArray&lt;FAccelByteModelsUserNotification&gt;<sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1ae5728474069517b4eb5642942000ec76" kindref="member">Buffer</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1aab9bda062fdbad8833a14cadd26dd887" kindref="member">UpdateLastSequence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/dce/struct_f_accel_byte_models_user_notification" kindref="compound">FAccelByteModelsUserNotification</ref>&amp;<sp/>InNotification);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a0d70b8e7ea75f4bd549fe7c0b0e1a105" kindref="member">HasValidSequence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/dce/struct_f_accel_byte_models_user_notification" kindref="compound">FAccelByteModelsUserNotification</ref>&amp;<sp/>InNotification)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1ac038f024607e6c615e1c67611ddc4b35" kindref="member">IsNotificationMissing</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/dce/struct_f_accel_byte_models_user_notification" kindref="compound">FAccelByteModelsUserNotification</ref>&amp;<sp/>InNotification)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1a6fa4d61e089977fd956c9e02b60bfadc" kindref="member">IsDuplicateNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/dce/struct_f_accel_byte_models_user_notification" kindref="compound">FAccelByteModelsUserNotification</ref>&amp;<sp/>InNotification)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1af77f8422a2d5dd57b805ace406906316" kindref="member">IsExistInBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d56/struct_f_lobby_sequence_i_d" kindref="compound">FLobbySequenceID</ref>&amp;<sp/>InSequenceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/dff/struct_f_lobby_sequence_number" kindref="compound">FLobbySequenceNumber</ref>&amp;<sp/>InSequenceNumber)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1ab4c0d247a93ab2ccdfa780f849b1283e" kindref="member">AddToBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/dce/struct_f_accel_byte_models_user_notification" kindref="compound">FAccelByteModelsUserNotification</ref>&amp;<sp/>InNotification);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d72/class_accel_byte_1_1_f_accel_byte_notification_buffer_1af68d256aed4d9c49d37df66f111af890" kindref="member">SortBuffer</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteNotificationBuffer.h"/>
+  </compounddef>
+</doxygen>

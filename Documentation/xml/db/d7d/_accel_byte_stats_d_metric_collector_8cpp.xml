@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="db/d7d/_accel_byte_stats_d_metric_collector_8cpp" kind="file" language="C++">
+    <compoundname>AccelByteStatsDMetricCollector.cpp</compoundname>
+    <includes refid="da/d96/_accel_byte_stats_d_metric_collector_8h" local="yes">Core/StatsD/AccelByteStatsDMetricCollector.h</includes>
+    <includes local="yes">Engine/GameEngine.h</includes>
+    <includes local="yes">Misc/ConfigCacheIni.h</includes>
+    <includes local="yes">Misc/App.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>AccelByteMetricModels.generated.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/StatsD/AccelByteStatsDMetricCollector.cpp</label>
+        <link refid="db/d7d/_accel_byte_stats_d_metric_collector_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/StatsD/AccelByteStatsDMetricCollector.h</label>
+        <link refid="da/d96/_accel_byte_stats_d_metric_collector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Core/StatsD/IAccelByteStatsDMetricCollector.h</label>
+        <link refid="d5/d97/_i_accel_byte_stats_d_metric_collector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Models/AccelByteMetricModels.h</label>
+        <link refid="d4/d22/_accel_byte_metric_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Engine/GameEngine.h</label>
+      </node>
+      <node id="4">
+        <label>GameFramework/GameState.h</label>
+      </node>
+      <node id="10">
+        <label>Misc/App.h</label>
+      </node>
+      <node id="9">
+        <label>Misc/ConfigCacheIni.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d3/ddc/namespace_accel_byte">AccelByte</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="db/d7d/_accel_byte_stats_d_metric_collector_8cpp_1ac9f7914094728014c7d53626c8a747fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DECLARE_LOG_CATEGORY_EXTERN</definition>
+        <argsstring>(LogAccelByteStatsDMetricCollector, Log, All)</argsstring>
+        <name>DECLARE_LOG_CATEGORY_EXTERN</name>
+        <param>
+          <type>LogAccelByteStatsDMetricCollector</type>
+        </param>
+        <param>
+          <type>Log</type>
+        </param>
+        <param>
+          <type>All</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/StatsD/AccelByteStatsDMetricCollector.cpp" line="10" column="1" declfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/StatsD/AccelByteStatsDMetricCollector.cpp" declline="10" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d7d/_accel_byte_stats_d_metric_collector_8cpp_1a75da8b064b8810c8c68dcafae56dee39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DEFINE_LOG_CATEGORY</definition>
+        <argsstring>(LogAccelByteStatsDMetricCollector)</argsstring>
+        <name>DEFINE_LOG_CATEGORY</name>
+        <param>
+          <type>LogAccelByteStatsDMetricCollector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/StatsD/AccelByteStatsDMetricCollector.cpp" line="11" column="1" declfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/StatsD/AccelByteStatsDMetricCollector.cpp" declline="11" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="da/d96/_accel_byte_stats_d_metric_collector_8h" kindref="compound">Core/StatsD/AccelByteStatsDMetricCollector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine/GameEngine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/ConfigCacheIni.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/App.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="db/d7d/_accel_byte_stats_d_metric_collector_8cpp_1ac9f7914094728014c7d53626c8a747fb" refkind="member"><highlight class="normal"><ref refid="db/d7d/_accel_byte_stats_d_metric_collector_8cpp_1ac9f7914094728014c7d53626c8a747fb" kindref="member">DECLARE_LOG_CATEGORY_EXTERN</ref>(LogAccelByteStatsDMetricCollector,<sp/>Log,<sp/>All);</highlight></codeline>
+<codeline lineno="11" refid="db/d7d/_accel_byte_stats_d_metric_collector_8cpp_1a75da8b064b8810c8c68dcafae56dee39" refkind="member"><highlight class="normal"><ref refid="db/d7d/_accel_byte_stats_d_metric_collector_8cpp_1a75da8b064b8810c8c68dcafae56dee39" kindref="member">DEFINE_LOG_CATEGORY</ref>(LogAccelByteStatsDMetricCollector);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a9647fd05af788f3d826ccfef79dd1aeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a9647fd05af788f3d826ccfef79dd1aeb" kindref="member">FAccelByteStatsDMetricCollector::~FAccelByteStatsDMetricCollector</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a014d582e07704afba64cadfe08e36109" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a014d582e07704afba64cadfe08e36109" kindref="member">FAccelByteStatsDMetricCollector::GetPlayerCapacity</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32<sp/>PlayerCapacity<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!GConfig-&gt;GetInt(TEXT(</highlight><highlight class="stringliteral">&quot;/Script/Engine.GameSession&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;MaxPlayers&quot;</highlight><highlight class="normal">),<sp/>PlayerCapacity,<sp/>GGameIni))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByteStatsDMetricCollector,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Missing<sp/>PlayerCapacity<sp/>key<sp/>in<sp/>[/Script/Engine.GameSession]<sp/>of<sp/>BaseGame.ini&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PlayerCapacity;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a2ff402e7e590c99b81dcc5e76d63c744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a2ff402e7e590c99b81dcc5e76d63c744" kindref="member">FAccelByteStatsDMetricCollector::GetPlayerCount</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32<sp/>Result<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!WITH_EDITOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UGameEngine*<sp/>GameEngine<sp/>=<sp/>CastChecked&lt;UGameEngine&gt;(GEngine))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UWorld*<sp/>World<sp/>=<sp/>GameEngine-&gt;GetGameWorld();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(World<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result<sp/>=<sp/>World-&gt;GetAuthGameMode()-&gt;GetNumPlayers();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByteStatsDMetricCollector,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;GetPlayerCount<sp/>is<sp/>not<sp/>implemented&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Result;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a7b1102ac877098bf0c152054671e715a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a7b1102ac877098bf0c152054671e715a" kindref="member">FAccelByteStatsDMetricCollector::GetClientCount</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32<sp/>Result<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!WITH_EDITOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UGameEngine*<sp/>GameEngine<sp/>=<sp/>CastChecked&lt;UGameEngine&gt;(GEngine))</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UWorld*<sp/>World<sp/>=<sp/>GameEngine-&gt;GetGameWorld();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(World<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result<sp/>=<sp/>World-&gt;GetAuthGameMode()-&gt;GetNumPlayers()<sp/>+<sp/>World-&gt;GetAuthGameMode()-&gt;GetNumSpectators();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByteStatsDMetricCollector,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;GetClientCount<sp/>is<sp/>not<sp/>implemented&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Result;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1ac26d9b0559bb0b6a3b835e621aa63a36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1ac26d9b0559bb0b6a3b835e621aa63a36" kindref="member">FAccelByteStatsDMetricCollector::GetAiCount</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByteStatsDMetricCollector,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;GetAiCount<sp/>is<sp/>not<sp/>implemented&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a7b6d7b73f5feb69b40ed39738ae2a755" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a7b6d7b73f5feb69b40ed39738ae2a755" kindref="member">FAccelByteStatsDMetricCollector::GetFrameTimeAverage</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FApp::GetDeltaTime();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a60792a6271f644b92de770161a0a8a92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a60792a6271f644b92de770161a0a8a92" kindref="member">FAccelByteStatsDMetricCollector::GetFrameTimeMax</ref>()</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Result<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!WITH_EDITOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UGameEngine*<sp/>GameEngine<sp/>=<sp/>CastChecked&lt;UGameEngine&gt;(GEngine))</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Result<sp/>=<sp/>GameEngine-&gt;MaxDeltaTime;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByteStatsDMetricCollector,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;GetFrameTimeMax<sp/>is<sp/>not<sp/>implemented&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Result;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a2ee0f951b4d943314ebdf6241c6f8bad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1a2ee0f951b4d943314ebdf6241c6f8bad" kindref="member">FAccelByteStatsDMetricCollector::GetFrameStartDelayAverage</ref>()</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByteStatsDMetricCollector,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;GetFrameStartDelayAverageNot<sp/>is<sp/>not<sp/>implemented&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1ad33ab89928b6b9946c3d966ccedb9492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/df2/class_accel_byte_1_1_f_accel_byte_stats_d_metric_collector_1ad33ab89928b6b9946c3d966ccedb9492" kindref="member">FAccelByteStatsDMetricCollector::GetFrameStartDelayMax</ref>()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByteStatsDMetricCollector,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;GetFrameStartDelayMax<sp/>is<sp/>not<sp/>implemented&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/StatsD/AccelByteStatsDMetricCollector.cpp"/>
+  </compounddef>
+</doxygen>

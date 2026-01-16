@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="da/d94/_accel_byte_message_parser_8h" kind="file" language="C++">
+    <compoundname>AccelByteMessageParser.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includedby refid="d2/d13/_accel_byte_chat_api_8cpp" local="yes">D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteChatApi.cpp</includedby>
+    <includedby refid="d2/d05/_accel_byte_lobby_api_8cpp" local="yes">D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLobbyApi.cpp</includedby>
+    <includedby refid="d1/db9/_accel_byte_message_parser_8cpp" local="yes">D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessageParser.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessageParser.h</label>
+        <link refid="da/d94/_accel_byte_message_parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteChatApi.cpp</label>
+        <link refid="d2/d13/_accel_byte_chat_api_8cpp"/>
+      </node>
+      <node id="3">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLobbyApi.cpp</label>
+        <link refid="d2/d05/_accel_byte_lobby_api_8cpp"/>
+      </node>
+      <node id="4">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessageParser.cpp</label>
+        <link refid="d1/db9/_accel_byte_message_parser_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessageParser.h</label>
+        <link refid="da/d94/_accel_byte_message_parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/dd9/class_accel_byte_1_1_message_parser" prot="public">AccelByte::MessageParser</innerclass>
+    <innernamespace refid="d3/ddc/namespace_accel_byte">AccelByte</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="d9/dd9/class_accel_byte_1_1_message_parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ACCELBYTEUE4SDK_API<sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser" kindref="compound">MessageParser</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1a8e1e099113dd037c357d442f5031094d" kindref="member">MoveToEndQuote</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR*&amp;<sp/>Cursor);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1ab72ca1ccf09619a0edda15a70984417e" kindref="member">MoveToEndObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR*&amp;<sp/>Cursor);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>escape<sp/>quote<sp/>on<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1aed551cc4435f35f5d12b01a34ec8f1f9" kindref="member">EscapeString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InString,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsEnclosedWithQuote<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parse<sp/>and<sp/>append<sp/>string<sp/>into<sp/>OutJsonString,<sp/>unescaped<sp/>quote<sp/>will<sp/>be<sp/>escaped</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1a4f5994c819c8eb55f0bb8f2e7502f298" kindref="member">ParseString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR*&amp;<sp/>Cursor,<sp/>FString&amp;<sp/>OutJsonString);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parse<sp/>and<sp/>append<sp/>object<sp/>into<sp/>OutJsonString</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1a8bd6c5c73282d83e0c9d473560af5f25" kindref="member">ParseObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR*&amp;<sp/>Cursor,<sp/>FString&amp;<sp/>OutJsonString);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parse<sp/>and<sp/>append<sp/>array<sp/>into<sp/>OutJsonString</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1a3908eb31ec69baf7bd314f126bdaa500" kindref="member">ParseArrayOfObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR*&amp;<sp/>Cursor,<sp/>FString&amp;<sp/>OutJsonString);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parse<sp/>and<sp/>append<sp/>array<sp/>into<sp/>OutJsonString</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1a0edfb60aef46a34486e6014bc3085ed2" kindref="member">ParseArrayOfString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR*&amp;<sp/>Cursor,<sp/>FString&amp;<sp/>OutJsonString);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dd9/class_accel_byte_1_1_message_parser_1ace0b6a21db7485bff1de85bdc86890d6" kindref="member">ProcessFragmentedMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InMessage</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InEnvelopeStart</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InEnvelopeEnd</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>FString&amp;<sp/>InOutEnvelopeBuffer</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>FString&amp;<sp/>OutMessage</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>OutIsMessageEnd);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteMessageParser.h"/>
+  </compounddef>
+</doxygen>

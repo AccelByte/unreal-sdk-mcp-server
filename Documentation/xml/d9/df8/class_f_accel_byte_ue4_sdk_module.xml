@@ -1,0 +1,804 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/df8/class_f_accel_byte_ue4_sdk_module" kind="class" language="C++" prot="public">
+    <compoundname>FAccelByteUe4SdkModule</compoundname>
+    <basecompoundref refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface" prot="public" virt="non-virtual">IAccelByteUe4SdkModuleInterface</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1aca2b9aacaf327b15a5e0983574f921c1" prot="private" static="no" mutable="no">
+        <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">AccelByte::Settings</ref></type>
+        <definition>AccelByte::Settings FAccelByteUe4SdkModule::GlobalClientSettings</definition>
+        <argsstring></argsstring>
+        <name>GlobalClientSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GlobalClientSettings</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="47" column="21" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a015ce0bf7b40bcda503e6ac89c63c657" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">AccelByte::ServerSettings</ref></type>
+        <definition>AccelByte::ServerSettings FAccelByteUe4SdkModule::GlobalServerSettings</definition>
+        <argsstring></argsstring>
+        <name>GlobalServerSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GlobalServerSettings</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="48" column="27" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1abfe3c53f4679968d78260b3d0e6194c0" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/d2f/_accel_byte_environment_8h_1a1b0e11f3d4db854b90eab2e32efe0641" kindref="member">ESettingsEnvironment</ref></type>
+        <definition>ESettingsEnvironment FAccelByteUe4SdkModule::SettingsEnvironment</definition>
+        <argsstring></argsstring>
+        <name>SettingsEnvironment</name>
+        <qualifiedname>FAccelByteUe4SdkModule::SettingsEnvironment</qualifiedname>
+        <initializer>{ESettingsEnvironment::Default}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="49" column="22" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9de3e76fec910d400e72a165b8cbb485" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/dd5/class_f_environment_changed_delegate" kindref="compound">FEnvironmentChangedDelegate</ref></type>
+        <definition>FEnvironmentChangedDelegate FAccelByteUe4SdkModule::EnvironmentChangedDelegate</definition>
+        <argsstring></argsstring>
+        <name>EnvironmentChangedDelegate</name>
+        <qualifiedname>FAccelByteUe4SdkModule::EnvironmentChangedDelegate</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="50" column="29" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a782033a5fe1323472b91eaae80cf359a" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, <ref refid="d3/ddc/namespace_accel_byte_1affd45a8972d6b6709fb4ea5c179f3dfa" kindref="member">AccelByte::FAccelBytePlatformPtr</ref> &gt;</type>
+        <definition>TMap&lt;FString, AccelByte::FAccelBytePlatformPtr&gt; FAccelByteUe4SdkModule::AccelBytePlatforms</definition>
+        <argsstring></argsstring>
+        <name>AccelBytePlatforms</name>
+        <qualifiedname>FAccelByteUe4SdkModule::AccelBytePlatforms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="51" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ac6c745a5ee4f26720837315a036a8e3c" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; <ref refid="d9/d46/class_accel_byte_1_1_i_accel_byte_data_storage" kindref="compound">AccelByte::IAccelByteDataStorage</ref> &gt;</type>
+        <definition>TSharedPtr&lt;AccelByte::IAccelByteDataStorage&gt; FAccelByteUe4SdkModule::LocalDataStorage</definition>
+        <argsstring></argsstring>
+        <name>LocalDataStorage</name>
+        <qualifiedname>FAccelByteUe4SdkModule::LocalDataStorage</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="52" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ac0c92c75018a98f01ff81c7e3ec7d576" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/da1/class_accel_byte_1_1_f_accel_byte_platform_handler" kindref="compound">AccelByte::FAccelBytePlatformHandler</ref></type>
+        <definition>AccelByte::FAccelBytePlatformHandler FAccelByteUe4SdkModule::PlatformHandler</definition>
+        <argsstring></argsstring>
+        <name>PlatformHandler</name>
+        <qualifiedname>FAccelByteUe4SdkModule::PlatformHandler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="53" column="38" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1abb48caf1b666ad7b38159f2cb5b38481" prot="private" static="no" mutable="no">
+        <type>FThreadSafeCounter</type>
+        <definition>FThreadSafeCounter FAccelByteUe4SdkModule::GameInstanceCount</definition>
+        <argsstring></argsstring>
+        <name>GameInstanceCount</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GameInstanceCount</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="54" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa9f908e7523e8c6af1fe0425835c1418" prot="private" static="no" mutable="no">
+        <type>TArray&lt; uint32 &gt;</type>
+        <definition>TArray&lt;uint32&gt; FAccelByteUe4SdkModule::InactiveIndexes</definition>
+        <argsstring></argsstring>
+        <name>InactiveIndexes</name>
+        <qualifiedname>FAccelByteUe4SdkModule::InactiveIndexes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="55" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1abd730527d7d1f667bf7d74b629204581" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 FAccelByteUe4SdkModule::HighestIndex</definition>
+        <argsstring></argsstring>
+        <name>HighestIndex</name>
+        <qualifiedname>FAccelByteUe4SdkModule::HighestIndex</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="56" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ab7876c872ae3be67c4a2631d01ebf43b" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FAccelByteUe4SdkModule::CreateAccelByteInstanceLock</definition>
+        <argsstring></argsstring>
+        <name>CreateAccelByteInstanceLock</name>
+        <qualifiedname>FAccelByteUe4SdkModule::CreateAccelByteInstanceLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="57" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a3dba202194d922b56e903f6ddb9cd089" prot="private" static="no" mutable="yes">
+        <type>FRWLock</type>
+        <definition>FRWLock FAccelByteUe4SdkModule::AccelBytePlatformLock</definition>
+        <argsstring></argsstring>
+        <name>AccelBytePlatformLock</name>
+        <qualifiedname>FAccelByteUe4SdkModule::AccelBytePlatformLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="58" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa3c6ef8243061d29781b97fc345ad9d0" prot="private" static="no" mutable="no">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteUe4SdkModule::PostStartupDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>PostStartupDelegateHandle</name>
+        <qualifiedname>FAccelByteUe4SdkModule::PostStartupDelegateHandle</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="65" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1af68ed919cff19388c0005b39aeff0e5c" prot="private" static="no" mutable="no">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteUe4SdkModule::GameInstanceStartHandle</definition>
+        <argsstring></argsstring>
+        <name>GameInstanceStartHandle</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GameInstanceStartHandle</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="67" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1add0f9e52e7cace7fe5c112c27a315898" prot="private" static="no" mutable="no">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteUe4SdkModule::OnPreExitHandle</definition>
+        <argsstring></argsstring>
+        <name>OnPreExitHandle</name>
+        <qualifiedname>FAccelByteUe4SdkModule::OnPreExitHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="69" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9358ad2c220fce8cd86f06f80b57cfdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::StartupModule</definition>
+        <argsstring>() override</argsstring>
+        <name>StartupModule</name>
+        <qualifiedname>FAccelByteUe4SdkModule::StartupModule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="34" column="18" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="91" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a204656c605632881e40af4e5a96dcda5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::ShutdownModule</definition>
+        <argsstring>() override</argsstring>
+        <name>ShutdownModule</name>
+        <qualifiedname>FAccelByteUe4SdkModule::ShutdownModule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="35" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="151" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1acddaa405d7524825f3d24b3c364def72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::SetEnvironment</definition>
+        <argsstring>(ESettingsEnvironment const Environment) override</argsstring>
+        <name>SetEnvironment</name>
+        <qualifiedname>FAccelByteUe4SdkModule::SetEnvironment</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1ad955662bdac192fae0fca48659264e84">SetEnvironment</reimplements>
+        <param>
+          <type><ref refid="d1/d2f/_accel_byte_environment_8h_1a1b0e11f3d4db854b90eab2e32efe0641" kindref="member">ESettingsEnvironment</ref> const</type>
+          <declname>Environment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="37" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="164" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a1111c8af1edfb3e8a2de901c07ac025a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">AccelByte::Settings</ref> const &amp;</type>
+        <definition>AccelByte::Settings const  &amp; FAccelByteUe4SdkModule::GetClientSettings</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetClientSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GetClientSettings</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1a9a6189178533f1e7de0441bce29bc54a">GetClientSettings</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="38" column="35" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ab6d0f3b520d6797ab3d1a2ef11833beb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">AccelByte::ServerSettings</ref> const &amp;</type>
+        <definition>AccelByte::ServerSettings const  &amp; FAccelByteUe4SdkModule::GetServerSettings</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetServerSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GetServerSettings</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1ae4de48aa1341927ef905cee828e2ba7e">GetServerSettings</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="39" column="41" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a78daaee5cb46fa655cf45e5d45686bcf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d1/d2f/_accel_byte_environment_8h_1a1b0e11f3d4db854b90eab2e32efe0641" kindref="member">ESettingsEnvironment</ref> const &amp;</type>
+        <definition>ESettingsEnvironment const  &amp; FAccelByteUe4SdkModule::GetSettingsEnvironment</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetSettingsEnvironment</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GetSettingsEnvironment</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1aa4df0193ba1293034c6ed0d8a5110cc2">GetSettingsEnvironment</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="40" column="36" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa4de3d4202cbc6dd86412277360cdbe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d4/dd5/class_f_environment_changed_delegate" kindref="compound">FEnvironmentChangedDelegate</ref> &amp;</type>
+        <definition>FEnvironmentChangedDelegate &amp; FAccelByteUe4SdkModule::OnEnvironmentChanged</definition>
+        <argsstring>() override</argsstring>
+        <name>OnEnvironmentChanged</name>
+        <qualifiedname>FAccelByteUe4SdkModule::OnEnvironmentChanged</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1a0f63496f42edda53849fa3620644e45a">OnEnvironmentChanged</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="41" column="37" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="376" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9957cbff7b7cb0c2b2afad2040130d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d9/d46/class_accel_byte_1_1_i_accel_byte_data_storage" kindref="compound">AccelByte::IAccelByteDataStorage</ref> *</type>
+        <definition>AccelByte::IAccelByteDataStorage * FAccelByteUe4SdkModule::GetLocalDataStorage</definition>
+        <argsstring>() override</argsstring>
+        <name>GetLocalDataStorage</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GetLocalDataStorage</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1a34ef996836fc24fc85bddd3bf2239927">GetLocalDataStorage</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="42" column="43" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="381" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1aca42e44b0c269ec71d969eebc443cce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="dd/da1/class_accel_byte_1_1_f_accel_byte_platform_handler" kindref="compound">AccelByte::FAccelBytePlatformHandler</ref> &amp;</type>
+        <definition>AccelByte::FAccelBytePlatformHandler &amp; FAccelByteUe4SdkModule::GetPlatformHandler</definition>
+        <argsstring>() override</argsstring>
+        <name>GetPlatformHandler</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GetPlatformHandler</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1a0195d58f4a64843a6b563d2785315e4a">GetPlatformHandler</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="43" column="46" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="393" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a5ed84aeffc68e852a282be8f70819cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1affd45a8972d6b6709fb4ea5c179f3dfa" kindref="member">AccelByte::FAccelBytePlatformPtr</ref></type>
+        <definition>AccelByte::FAccelBytePlatformPtr FAccelByteUe4SdkModule::GetAccelBytePlatform</definition>
+        <argsstring>(AccelByte::BaseSettingsPtr const &amp;InSettings) override</argsstring>
+        <name>GetAccelBytePlatform</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GetAccelBytePlatform</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1a6040bd3ad918ae2045790366e890d491">GetAccelBytePlatform</reimplements>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1afb554f0c3c5ef442f9c250b331d05fc1" kindref="member">AccelByte::BaseSettingsPtr</ref> const &amp;</type>
+          <declname>InSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="44" column="42" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="398" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a53a0e9db072b660a3e66c4020ba1101a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d5/ddb/_accel_byte_instance_8h_1ada0698f39f562ca60acab9fb100f38f5" kindref="member">FAccelByteInstancePtr</ref></type>
+        <definition>FAccelByteInstancePtr FAccelByteUe4SdkModule::CreateAccelByteInstance</definition>
+        <argsstring>() override</argsstring>
+        <name>CreateAccelByteInstance</name>
+        <qualifiedname>FAccelByteUe4SdkModule::CreateAccelByteInstance</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1ad3281bc28de97ae981f8300fc7ab350f">CreateAccelByteInstance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="86" column="31" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="463" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ab52709856277b239a1ca27c2d80224bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d5/ddb/_accel_byte_instance_8h_1ada0698f39f562ca60acab9fb100f38f5" kindref="member">FAccelByteInstancePtr</ref></type>
+        <definition>FAccelByteInstancePtr FAccelByteUe4SdkModule::CreateAccelByteInstance</definition>
+        <argsstring>(AccelByte::Settings &amp;InSettings, AccelByte::ServerSettings &amp;InServerSettings) override</argsstring>
+        <name>CreateAccelByteInstance</name>
+        <qualifiedname>FAccelByteUe4SdkModule::CreateAccelByteInstance</qualifiedname>
+        <reimplements refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1a626ee2cbbbbd748800c7f1f9b988b3dc">CreateAccelByteInstance</reimplements>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">AccelByte::Settings</ref> &amp;</type>
+          <declname>InSettings</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">AccelByte::ServerSettings</ref> &amp;</type>
+          <declname>InServerSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="87" column="31" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="496" bodyend="528"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ac5e05416e7ddfe3cec3250edf975d4d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::RegisterSettings</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::RegisterSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="61" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="190" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a38f6181d27028f9bdf4d05b82ba3445b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::UnregisterSettings</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::UnregisterSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="62" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="222" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a0c20645098adf7ca10b384e1fd7c7356" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::PostStartup</definition>
+        <argsstring>()</argsstring>
+        <name>PostStartup</name>
+        <qualifiedname>FAccelByteUe4SdkModule::PostStartup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="64" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="132" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ae91092bac378c5846de86836e9979dc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUe4SdkModule::LoadClientSettings</definition>
+        <argsstring>(ESettingsEnvironment const Environment)</argsstring>
+        <name>LoadClientSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::LoadClientSettings</qualifiedname>
+        <param>
+          <type><ref refid="d1/d2f/_accel_byte_environment_8h_1a1b0e11f3d4db854b90eab2e32efe0641" kindref="member">ESettingsEnvironment</ref> const</type>
+          <declname>Environment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="71" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="232" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9190b63625e10361f17664fc73f8d86f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUe4SdkModule::LoadServerSettings</definition>
+        <argsstring>(ESettingsEnvironment const Environment)</argsstring>
+        <name>LoadServerSettings</name>
+        <qualifiedname>FAccelByteUe4SdkModule::LoadServerSettings</qualifiedname>
+        <param>
+          <type><ref refid="d1/d2f/_accel_byte_environment_8h_1a1b0e11f3d4db854b90eab2e32efe0641" kindref="member">ESettingsEnvironment</ref> const</type>
+          <declname>Environment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="72" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="251" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa64e638796d9060b30fcba10e822683a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUe4SdkModule::LoadSettingsFromConfigUObject</definition>
+        <argsstring>()</argsstring>
+        <name>LoadSettingsFromConfigUObject</name>
+        <qualifiedname>FAccelByteUe4SdkModule::LoadSettingsFromConfigUObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="73" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1ad719279b8f52f8a0a552d769725b16fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUe4SdkModule::LoadServerSettingsFromConfigUObject</definition>
+        <argsstring>()</argsstring>
+        <name>LoadServerSettingsFromConfigUObject</name>
+        <qualifiedname>FAccelByteUe4SdkModule::LoadServerSettingsFromConfigUObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="74" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="276" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a4485c88099aee491b03053b2d6fcea94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FAccelByteUe4SdkModule::NullCheckConfig</definition>
+        <argsstring>(FString const &amp;Value, FString const &amp;ConfigField)</argsstring>
+        <name>NullCheckConfig</name>
+        <qualifiedname>FAccelByteUe4SdkModule::NullCheckConfig</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ConfigField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="75" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="297" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a764f9f9f592d0e284e81fa76042a5b81" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::GetVersionInfo</definition>
+        <argsstring>(FString const &amp;Url, TFunction&lt; void(FVersionInfo)&gt; Callback) const</argsstring>
+        <name>GetVersionInfo</name>
+        <qualifiedname>FAccelByteUe4SdkModule::GetVersionInfo</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type>TFunction&lt; void(<ref refid="d6/dfc/struct_f_version_info" kindref="compound">FVersionInfo</ref>)&gt;</type>
+          <declname>Callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="76" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="308" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1af9044c76f40f226b1fbc7cc42c7ed167" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::CheckServicesCompatibility</definition>
+        <argsstring>() const</argsstring>
+        <name>CheckServicesCompatibility</name>
+        <qualifiedname>FAccelByteUe4SdkModule::CheckServicesCompatibility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="77" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="343" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a0669117f9ee1e3f0019ace0c3b4a13b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::SetDefaultHttpCustomHeader</definition>
+        <argsstring>(FString const &amp;Namespace)</argsstring>
+        <name>SetDefaultHttpCustomHeader</name>
+        <qualifiedname>FAccelByteUe4SdkModule::SetDefaultHttpCustomHeader</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Namespace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="78" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="424" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a365a5d4e9352fa3e7cd5a063f04761b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::OnAccelByteInstanceIndexListed</definition>
+        <argsstring>(uint32 Index)</argsstring>
+        <name>OnAccelByteInstanceIndexListed</name>
+        <qualifiedname>FAccelByteUe4SdkModule::OnAccelByteInstanceIndexListed</qualifiedname>
+        <param>
+          <type>uint32</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="80" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="433" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1af63234c752df15ed53849e70eb422958" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::OnGameInstanceCreated</definition>
+        <argsstring>(UGameInstance *GameInstance)</argsstring>
+        <name>OnGameInstanceCreated</name>
+        <qualifiedname>FAccelByteUe4SdkModule::OnGameInstanceCreated</qualifiedname>
+        <param>
+          <type>UGameInstance *</type>
+          <declname>GameInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="81" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="441" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a551b5410d8b7a4df93198b22726ce251" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteUe4SdkModule::OnPreExit</definition>
+        <argsstring>()</argsstring>
+        <name>OnPreExit</name>
+        <qualifiedname>FAccelByteUe4SdkModule::OnPreExit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="82" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="451" bodyend="453"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="d9/df8/class_f_accel_byte_ue4_sdk_module_1a7350d1e73930fbc6281a5452e72ce0c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OnAccelByteModuleInstanceDestroyed</definition>
+        <argsstring>(uint32 Index)</argsstring>
+        <name>OnAccelByteModuleInstanceDestroyed</name>
+        <qualifiedname>FAccelByteUe4SdkModule::OnAccelByteModuleInstanceDestroyed</qualifiedname>
+        <param>
+          <type>uint32</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="83" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="455" bodyend="461"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FAccelByteUe4SdkModule</label>
+        <link refid="d9/df8/class_f_accel_byte_ue4_sdk_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAccelByteUe4SdkModuleInterface</label>
+        <link refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IModuleInterface</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AccelByte::FAccelBytePlatformHandler</label>
+        <link refid="dd/da1/class_accel_byte_1_1_f_accel_byte_platform_handler"/>
+      </node>
+      <node id="7">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::Settings</label>
+        <link refid="df/db1/class_accel_byte_1_1_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FAccelByteUe4SdkModule</label>
+        <link refid="d9/df8/class_f_accel_byte_ue4_sdk_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>GlobalClientSettings</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>GlobalServerSettings</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>EnvironmentChangedDelegate</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>PlatformHandler</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FEnvironmentChangedDelegate</label>
+        <link refid="d4/dd5/class_f_environment_changed_delegate"/>
+      </node>
+      <node id="2">
+        <label>IAccelByteUe4SdkModuleInterface</label>
+        <link refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IModuleInterface</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" line="29" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/AccelByteUe4SdkModule.cpp" bodystart="31" bodyend="89"/>
+    <listofallmembers>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a3dba202194d922b56e903f6ddb9cd089" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>AccelBytePlatformLock</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a782033a5fe1323472b91eaae80cf359a" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>AccelBytePlatforms</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1af9044c76f40f226b1fbc7cc42c7ed167" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>CheckServicesCompatibility</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a53a0e9db072b660a3e66c4020ba1101a" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>CreateAccelByteInstance</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ab52709856277b239a1ca27c2d80224bd" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>CreateAccelByteInstance</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ab7876c872ae3be67c4a2631d01ebf43b" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>CreateAccelByteInstanceLock</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9de3e76fec910d400e72a165b8cbb485" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>EnvironmentChangedDelegate</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1abb48caf1b666ad7b38159f2cb5b38481" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>GameInstanceCount</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1af68ed919cff19388c0005b39aeff0e5c" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>GameInstanceStartHandle</name></member>
+      <member refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1a50484c4b33da423e50ff7a97d92ed921" prot="public" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>Get</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a5ed84aeffc68e852a282be8f70819cac" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>GetAccelBytePlatform</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a1111c8af1edfb3e8a2de901c07ac025a" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>GetClientSettings</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9957cbff7b7cb0c2b2afad2040130d03" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>GetLocalDataStorage</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1aca42e44b0c269ec71d969eebc443cce3" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>GetPlatformHandler</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ab6d0f3b520d6797ab3d1a2ef11833beb" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>GetServerSettings</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a78daaee5cb46fa655cf45e5d45686bcf" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>GetSettingsEnvironment</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a764f9f9f592d0e284e81fa76042a5b81" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>GetVersionInfo</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1aca2b9aacaf327b15a5e0983574f921c1" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>GlobalClientSettings</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a015ce0bf7b40bcda503e6ac89c63c657" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>GlobalServerSettings</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1abd730527d7d1f667bf7d74b629204581" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>HighestIndex</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa9f908e7523e8c6af1fe0425835c1418" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>InactiveIndexes</name></member>
+      <member refid="de/dfc/class_i_accel_byte_ue4_sdk_module_interface_1ade440904f959cdcb1c0ae2ea17d1c992" prot="public" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>IsAvailable</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ae91092bac378c5846de86836e9979dc1" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>LoadClientSettings</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9190b63625e10361f17664fc73f8d86f" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>LoadServerSettings</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ad719279b8f52f8a0a552d769725b16fd" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>LoadServerSettingsFromConfigUObject</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa64e638796d9060b30fcba10e822683a" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>LoadSettingsFromConfigUObject</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ac6c745a5ee4f26720837315a036a8e3c" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>LocalDataStorage</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a4485c88099aee491b03053b2d6fcea94" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>NullCheckConfig</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a365a5d4e9352fa3e7cd5a063f04761b1" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>OnAccelByteInstanceIndexListed</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a7350d1e73930fbc6281a5452e72ce0c2" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>OnAccelByteModuleInstanceDestroyed</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa4de3d4202cbc6dd86412277360cdbe6" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>OnEnvironmentChanged</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1af63234c752df15ed53849e70eb422958" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>OnGameInstanceCreated</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a551b5410d8b7a4df93198b22726ce251" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>OnPreExit</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1add0f9e52e7cace7fe5c112c27a315898" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>OnPreExitHandle</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ac0c92c75018a98f01ff81c7e3ec7d576" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>PlatformHandler</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a0c20645098adf7ca10b384e1fd7c7356" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>PostStartup</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1aa3c6ef8243061d29781b97fc345ad9d0" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>PostStartupDelegateHandle</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1ac5e05416e7ddfe3cec3250edf975d4d2" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>RegisterSettings</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a0669117f9ee1e3f0019ace0c3b4a13b1" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>SetDefaultHttpCustomHeader</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1acddaa405d7524825f3d24b3c364def72" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>SetEnvironment</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1abfe3c53f4679968d78260b3d0e6194c0" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>SettingsEnvironment</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a204656c605632881e40af4e5a96dcda5" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>ShutdownModule</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a9358ad2c220fce8cd86f06f80b57cfdc" prot="public" virt="virtual"><scope>FAccelByteUe4SdkModule</scope><name>StartupModule</name></member>
+      <member refid="d9/df8/class_f_accel_byte_ue4_sdk_module_1a38f6181d27028f9bdf4d05b82ba3445b" prot="private" virt="non-virtual"><scope>FAccelByteUe4SdkModule</scope><name>UnregisterSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

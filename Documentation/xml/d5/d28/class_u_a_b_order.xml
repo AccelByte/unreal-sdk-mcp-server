@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d5/d28/class_u_a_b_order" kind="class" language="C++" prot="public">
+    <compoundname>UABOrder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d0/df5/_a_b_order_8h" local="no">ABOrder.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d28/class_u_a_b_order_1a060992cc4dc708aa3ab852a73e03f2ce" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABOrder::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABOrder::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="61" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d28/class_u_a_b_order_1abfb555f4a9472ac1b027bb99a941566c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABOrder::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABOrder::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="39" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d28/class_u_a_b_order_1acdadfb374cc3b0259a0a240d7e0b5c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABOrder::CreateNewOrder</definition>
+        <argsstring>(FAccelByteModelsOrderCreate const &amp;OrderCreateRequest, FDAccelByteModelsOrderInfoResponse OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>CreateNewOrder</name>
+        <qualifiedname>UABOrder::CreateNewOrder</qualifiedname>
+        <param>
+          <type><ref refid="de/d43/struct_f_accel_byte_models_order_create" kindref="compound">FAccelByteModelsOrderCreate</ref> const &amp;</type>
+          <declname>OrderCreateRequest</declname>
+        </param>
+        <param>
+          <type>FDAccelByteModelsOrderInfoResponse</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="43" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp" bodystart="16" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d28/class_u_a_b_order_1aa328bd9f2757500c60edfacdfe99b98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABOrder::CancelOrder</definition>
+        <argsstring>(FString const &amp;OrderNo, FDAccelByteModelsOrderInfoResponse OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>CancelOrder</name>
+        <qualifiedname>UABOrder::CancelOrder</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>OrderNo</declname>
+        </param>
+        <param>
+          <type>FDAccelByteModelsOrderInfoResponse</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="46" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp" bodystart="43" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d28/class_u_a_b_order_1a615935f0f5a5a053d4cf2c6dba0f2484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABOrder::GetUserOrder</definition>
+        <argsstring>(FString const &amp;OrderNo, FDAccelByteModelsOrderInfoResponse OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetUserOrder</name>
+        <qualifiedname>UABOrder::GetUserOrder</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>OrderNo</declname>
+        </param>
+        <param>
+          <type>FDAccelByteModelsOrderInfoResponse</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="49" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp" bodystart="70" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d28/class_u_a_b_order_1aa26ca80cbeaf3e17e08bc83d71c11342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABOrder::GetUserOrders</definition>
+        <argsstring>(int32 const &amp;Page, int32 const &amp;Size, FDAccelByteModelsPagedOrderInfoResponse OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetUserOrders</name>
+        <qualifiedname>UABOrder::GetUserOrders</qualifiedname>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Page</declname>
+        </param>
+        <param>
+          <type>int32 const &amp;</type>
+          <declname>Size</declname>
+        </param>
+        <param>
+          <type>FDAccelByteModelsPagedOrderInfoResponse</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="52" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp" bodystart="97" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d28/class_u_a_b_order_1aa75495976d43ebd7df1e8981c2eb13d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABOrder::GetUserOrderHistory</definition>
+        <argsstring>(FString const &amp;OrderNo, FDArrayModelsOrderHistoryInfoResponse OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>GetUserOrderHistory</name>
+        <qualifiedname>UABOrder::GetUserOrderHistory</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>OrderNo</declname>
+        </param>
+        <param>
+          <type>FDArrayModelsOrderHistoryInfoResponse</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="55" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp" bodystart="126" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d28/class_u_a_b_order_1aa28b1acc2a5bd508eaed21cfe59b6a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABOrder::PreviewUserOrder</definition>
+        <argsstring>(const FAccelByteModelsUserPreviewOrderRequest &amp;OrderPreviewRequest, const FDAccelByteModelsPreviewOrderResponse &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>PreviewUserOrder</name>
+        <qualifiedname>UABOrder::PreviewUserOrder</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/d08/struct_f_accel_byte_models_user_preview_order_request" kindref="compound">FAccelByteModelsUserPreviewOrderRequest</ref> &amp;</type>
+          <declname>OrderPreviewRequest</declname>
+        </param>
+        <param>
+          <type>const FDAccelByteModelsPreviewOrderResponse &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="58" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABOrder.cpp" bodystart="155" bodyend="175"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABOrder</label>
+        <link refid="d5/d28/class_u_a_b_order"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABOrder</label>
+        <link refid="d5/d28/class_u_a_b_order"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" line="35" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABOrder.h" bodystart="36" bodyend="62"/>
+    <listofallmembers>
+      <member refid="d5/d28/class_u_a_b_order_1a060992cc4dc708aa3ab852a73e03f2ce" prot="private" virt="non-virtual"><scope>UABOrder</scope><name>ApiClientPtr</name></member>
+      <member refid="d5/d28/class_u_a_b_order_1aa328bd9f2757500c60edfacdfe99b98c" prot="public" virt="non-virtual"><scope>UABOrder</scope><name>CancelOrder</name></member>
+      <member refid="d5/d28/class_u_a_b_order_1acdadfb374cc3b0259a0a240d7e0b5c66" prot="public" virt="non-virtual"><scope>UABOrder</scope><name>CreateNewOrder</name></member>
+      <member refid="d5/d28/class_u_a_b_order_1a615935f0f5a5a053d4cf2c6dba0f2484" prot="public" virt="non-virtual"><scope>UABOrder</scope><name>GetUserOrder</name></member>
+      <member refid="d5/d28/class_u_a_b_order_1aa75495976d43ebd7df1e8981c2eb13d8" prot="public" virt="non-virtual"><scope>UABOrder</scope><name>GetUserOrderHistory</name></member>
+      <member refid="d5/d28/class_u_a_b_order_1aa26ca80cbeaf3e17e08bc83d71c11342" prot="public" virt="non-virtual"><scope>UABOrder</scope><name>GetUserOrders</name></member>
+      <member refid="d5/d28/class_u_a_b_order_1aa28b1acc2a5bd508eaed21cfe59b6a0f" prot="public" virt="non-virtual"><scope>UABOrder</scope><name>PreviewUserOrder</name></member>
+      <member refid="d5/d28/class_u_a_b_order_1abfb555f4a9472ac1b027bb99a941566c" prot="public" virt="non-virtual"><scope>UABOrder</scope><name>SetApiClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

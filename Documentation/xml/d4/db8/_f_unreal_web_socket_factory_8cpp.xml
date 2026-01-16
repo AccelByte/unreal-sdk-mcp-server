@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/db8/_f_unreal_web_socket_factory_8cpp" kind="file" language="C++">
+    <compoundname>FUnrealWebSocketFactory.cpp</compoundname>
+    <includes refid="d1/dcf/_f_unreal_web_socket_factory_8h" local="yes">Core/FUnrealWebSocketFactory.h</includes>
+    <includes local="yes">WebSocketsModule.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/FUnrealWebSocketFactory.cpp</label>
+        <link refid="d4/db8/_f_unreal_web_socket_factory_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/FUnrealWebSocketFactory.h</label>
+        <link refid="d1/dcf/_f_unreal_web_socket_factory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IWebSocketFactory.h</label>
+        <link refid="db/d64/_i_web_socket_factory_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IWebSocket.h</label>
+      </node>
+      <node id="5">
+        <label>WebSocketsModule.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2021<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/dcf/_f_unreal_web_socket_factory_8h" kindref="compound">Core/FUnrealWebSocketFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;WebSocketsModule.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d7/d5f/class_f_unreal_web_socket_factory_1a1ab821dd6273f1d49acc7e2044cead07" refkind="member"><highlight class="normal">TSharedRef&lt;IWebSocket&gt;<sp/><ref refid="d7/d5f/class_f_unreal_web_socket_factory_1a1ab821dd6273f1d49acc7e2044cead07" kindref="member">FUnrealWebSocketFactory::CreateWebSocket</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Url,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Protocol,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;FString,<sp/>FString&gt;&amp;<sp/>UpgradeHeaders)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FWebSocketsModule::Get().CreateWebSocket(Url,<sp/>Protocol,<sp/>UpgradeHeaders);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/FUnrealWebSocketFactory.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::Api::HeartBeat</compoundname>
+    <basecompoundref refid="d3/dd3/class_accel_byte_1_1_f_api_base" prot="public" virt="non-virtual">AccelByte::FApiBase</basecompoundref>
+    <includes refid="d6/d92/_accel_byte_heart_beat_api_8h" local="no">AccelByteHeartBeatApi.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a08d9022c8e18a791b0bd38e75c5cfdd2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::HeartBeat::bEnableHeartBeat</definition>
+        <argsstring></argsstring>
+        <name>bEnableHeartBeat</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::bEnableHeartBeat</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="70" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2e138093910f350529b99d5f34157ed9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::HeartBeat::bShuttingDown</definition>
+        <argsstring></argsstring>
+        <name>bShuttingDown</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::bShuttingDown</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="71" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad5bbe9494ae0e19487cf2224212a0ad6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::HeartBeat::bHeartBeatJobStarted</definition>
+        <argsstring></argsstring>
+        <name>bHeartBeatJobStarted</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::bHeartBeatJobStarted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="72" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9871a839390d5d71886be523e4daa57c" prot="private" static="no" mutable="no">
+        <type>FTimespan const</type>
+        <definition>FTimespan const AccelByte::Api::HeartBeat::HeartBeatInterval</definition>
+        <argsstring></argsstring>
+        <name>HeartBeatInterval</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeatInterval</qualifiedname>
+        <initializer>= FTimespan(0, 0, 60)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="74" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2c735379cb5906e12ad0ab56c4026ec3" prot="private" static="no" mutable="no">
+        <type>FTickerDelegate</type>
+        <definition>FTickerDelegate AccelByte::Api::HeartBeat::HeartBeatTickDelegate</definition>
+        <argsstring></argsstring>
+        <name>HeartBeatTickDelegate</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeatTickDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="76" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adce2f74eece5de2d541dcbb4df1f33a7" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/db6/_accel_byte_defines_8h_1a9147873e40ccb814a396aca451333ab2" kindref="member">FDelegateHandleAlias</ref></type>
+        <definition>FDelegateHandleAlias AccelByte::Api::HeartBeat::HeartBeatTickDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>HeartBeatTickDelegateHandle</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeatTickDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="77" column="22" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a0801c4f49f4dd446f7f6d8078639f4c4" prot="private" static="no" mutable="no">
+        <type>FHeartBeatResponse</type>
+        <definition>FHeartBeatResponse AccelByte::Api::HeartBeat::HeartBeatResponseDelegate</definition>
+        <argsstring></argsstring>
+        <name>HeartBeatResponseDelegate</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeatResponseDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="78" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a7b1ba201cb85b684dff857a3029e5ef7" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref></type>
+        <definition>FErrorHandler AccelByte::Api::HeartBeat::OnHeartBeatError</definition>
+        <argsstring></argsstring>
+        <name>OnHeartBeatError</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::OnHeartBeatError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="79" column="15" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a5090ab744d7110fbdb7a8c457b05b62a" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::Api::HeartBeat::HeartBeatData</definition>
+        <argsstring></argsstring>
+        <name>HeartBeatData</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeatData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="81" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a8db8340cb134770c1690c9a6df163389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::HeartBeat::DECLARE_DELEGATE</definition>
+        <argsstring>(FHeartBeatResponse)</argsstring>
+        <name>DECLARE_DELEGATE</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::DECLARE_DELEGATE</qualifiedname>
+        <param>
+          <type>FHeartBeatResponse</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a8dae7b020283430726d0fd222f3997a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::HeartBeat::HeartBeat</definition>
+        <argsstring>(Credentials const &amp;InCredentialsRef, Settings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; AccelByte::FApiClient, ESPMode::ThreadSafe &gt; const &amp;InApiClient=nullptr)</argsstring>
+        <name>HeartBeat</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeat</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/d63/class_accel_byte_1_1_f_api_client" kindref="compound">AccelByte::FApiClient</ref>, ESPMode::ThreadSafe &gt; const &amp;</type>
+          <declname>InApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="24" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9d1dcc6de6e91ac0c95facea326bb4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::HeartBeat::HeartBeat</definition>
+        <argsstring>(Credentials const &amp;InCredentialsRef, Settings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, FAccelBytePlatformPtr const &amp;InAccelBytePlatform)</argsstring>
+        <name>HeartBeat</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeat</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1affd45a8972d6b6709fb4ea5c179f3dfa" kindref="member">FAccelBytePlatformPtr</ref> const &amp;</type>
+          <declname>InAccelBytePlatform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="29" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a49e8931a95561846ce1dd78346b71f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AccelByte::Api::HeartBeat::~HeartBeat</definition>
+        <argsstring>()</argsstring>
+        <name>~HeartBeat</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::~HeartBeat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="34" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad600f91dfe2681ca1bccb4389bad1bd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::HeartBeat::Startup</definition>
+        <argsstring>()</argsstring>
+        <name>Startup</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::Startup</qualifiedname>
+        <briefdescription>
+<para>Startup heart beat module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="39" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="40" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adb8b52c99cfde099b5b8e06f56c630c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::HeartBeat::Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::Shutdown</qualifiedname>
+        <briefdescription>
+<para>Shutdown heart beat module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="44" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1afb24606008fbf3cc43a5c7b085b2854d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::HeartBeat::SetHeartBeatResponseDelegate</definition>
+        <argsstring>(FHeartBeatResponse OnHeartBeatResponse, FErrorHandler OnError={})</argsstring>
+        <name>SetHeartBeatResponseDelegate</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::SetHeartBeatResponseDelegate</qualifiedname>
+        <param>
+          <type>FHeartBeatResponse</type>
+          <declname>OnHeartBeatResponse</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref></type>
+          <declname>OnError</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>set heart beat response </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnHeartBeatResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set delegate . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Delegate that will be called when operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="52" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="61" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1abc8b1cce2cb41f398b42320468a81cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::HeartBeat::SetHeartBeatEnabled</definition>
+        <argsstring>(bool bEnable)</argsstring>
+        <name>SetHeartBeatEnabled</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::SetHeartBeatEnabled</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bEnable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables or disables heart beat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="56" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a6185f75795e6eb65821609b1f8b8b01d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::HeartBeat::IsHeartBeatEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>IsHeartBeatEnabled</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::IsHeartBeatEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="59" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ae161bb66f1f2262930671aa50e458cc4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::HeartBeat::SendHeartBeatEvent</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>SendHeartBeatEvent</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::SendHeartBeatEvent</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="62" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="109" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a40db5812029153b8bbfc903ff37d1004" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::HeartBeat::StartHeartBeatScheduler</definition>
+        <argsstring>()</argsstring>
+        <name>StartHeartBeatScheduler</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::StartHeartBeatScheduler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="63" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="89" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9f3b0afa8c66597575ac29548471a101" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::HeartBeat::StopHeartBeatScheduler</definition>
+        <argsstring>()</argsstring>
+        <name>StopHeartBeatScheduler</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::StopHeartBeatScheduler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="64" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ab76ae72361b99b3531fd4b4a7f7e877a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::HeartBeat::HeartBeat</definition>
+        <argsstring>()=delete</argsstring>
+        <name>HeartBeat</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a476d800d5660e8e5780eb59b71886393" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::HeartBeat::HeartBeat</definition>
+        <argsstring>(HeartBeat const &amp;)=delete</argsstring>
+        <name>HeartBeat</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeat</qualifiedname>
+        <param>
+          <type>HeartBeat const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a056d70a2e7c815aa7c492a443a550479" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::HeartBeat::HeartBeat</definition>
+        <argsstring>(HeartBeat &amp;&amp;)=delete</argsstring>
+        <name>HeartBeat</name>
+        <qualifiedname>AccelByte::Api::HeartBeat::HeartBeat</qualifiedname>
+        <param>
+          <type>HeartBeat &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="68" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AccelByte::Api::HeartBeat</label>
+        <link refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccelByte::Api::HeartBeat</label>
+        <link refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::Settings</label>
+        <link refid="df/db1/class_accel_byte_1_1_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" line="18" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteHeartBeatApi.h" bodystart="20" bodyend="82"/>
+    <listofallmembers>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1af48fc7e07daa90601940b0bbaeaca4a9" prot="protected" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>AccelBytePlatformPtr</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a08d9022c8e18a791b0bd38e75c5cfdd2" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>bEnableHeartBeat</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad5bbe9494ae0e19487cf2224212a0ad6" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>bHeartBeatJobStarted</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2e138093910f350529b99d5f34157ed9" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>bShuttingDown</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a4ded3338c43197d995d2ce88e3ac85af" prot="protected" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>CredentialsRef</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a8db8340cb134770c1690c9a6df163389" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>DECLARE_DELEGATE</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a5b4bfcf158b368358fc0860adece134c" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>FApiBase</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a7532e689716d93aaa2f96568ab14c233" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>FApiBase</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a8dae7b020283430726d0fd222f3997a8" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeat</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9d1dcc6de6e91ac0c95facea326bb4d0" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeat</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ab76ae72361b99b3531fd4b4a7f7e877a" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeat</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a476d800d5660e8e5780eb59b71886393" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeat</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a056d70a2e7c815aa7c492a443a550479" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeat</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a5090ab744d7110fbdb7a8c457b05b62a" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeatData</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9871a839390d5d71886be523e4daa57c" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeatInterval</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a0801c4f49f4dd446f7f6d8078639f4c4" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeatResponseDelegate</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2c735379cb5906e12ad0ab56c4026ec3" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeatTickDelegate</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adce2f74eece5de2d541dcbb4df1f33a7" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HeartBeatTickDelegateHandle</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1afd2ef10eecc71f4d34515276ab6a8fcb" prot="protected" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HttpClient</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a3262dbbbb6404aec16bef79a36480bbf" prot="protected" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>HttpRef</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a6185f75795e6eb65821609b1f8b8b01d" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>IsHeartBeatEnabled</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a7b1ba201cb85b684dff857a3029e5ef7" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>OnHeartBeatError</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ae161bb66f1f2262930671aa50e458cc4" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>SendHeartBeatEvent</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ab08541fe9d704af8a9b5bae1b87deb44" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>SetApiClient</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1abc8b1cce2cb41f398b42320468a81cfc" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>SetHeartBeatEnabled</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1afb24606008fbf3cc43a5c7b085b2854d" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>SetHeartBeatResponseDelegate</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ae8ffc36382a4204edb20a6d3430c13ad" prot="protected" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>SettingsRef</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adb8b52c99cfde099b5b8e06f56c630c3" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>Shutdown</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a40db5812029153b8bbfc903ff37d1004" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>StartHeartBeatScheduler</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad600f91dfe2681ca1bccb4389bad1bd4" prot="public" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>Startup</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9f3b0afa8c66597575ac29548471a101" prot="private" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>StopHeartBeatScheduler</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1abf73c69f11a74c5d79ed767d7e9de861" prot="protected" virt="non-virtual"><scope>AccelByte::Api::HeartBeat</scope><name>ValidateAccelByteId</name></member>
+      <member refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a49e8931a95561846ce1dd78346b71f04" prot="public" virt="virtual"><scope>AccelByte::Api::HeartBeat</scope><name>~HeartBeat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

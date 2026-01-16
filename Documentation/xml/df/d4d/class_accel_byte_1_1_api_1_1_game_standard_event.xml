@@ -1,0 +1,768 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::Api::GameStandardEvent</compoundname>
+    <basecompoundref refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics" prot="public" virt="non-virtual">AccelByte::Api::BaseAnalytics</basecompoundref>
+    <includes refid="d2/dba/_accel_byte_game_standard_event_api_8h" local="no">AccelByteGameStandardEventApi.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a6d735e813fb610e936ad0fac1a9e3a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::GameStandardEvent::GameStandardEvent</definition>
+        <argsstring>(Credentials &amp;InCredentialsRef, Settings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; AccelByte::FApiClient, ESPMode::ThreadSafe &gt; const &amp;InApiClient=nullptr)</argsstring>
+        <name>GameStandardEvent</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::GameStandardEvent</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/d63/class_accel_byte_1_1_f_api_client" kindref="compound">AccelByte::FApiClient</ref>, ESPMode::ThreadSafe &gt; const &amp;</type>
+          <declname>InApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="25" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1aa0a1ec813e65319edac7da8006d95e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::GameStandardEvent::GameStandardEvent</definition>
+        <argsstring>(Credentials &amp;InCredentialsRef, Settings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, FAccelBytePlatformPtr const &amp;InAccelBytePlatform)</argsstring>
+        <name>GameStandardEvent</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::GameStandardEvent</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1affd45a8972d6b6709fb4ea5c179f3dfa" kindref="member">FAccelBytePlatformPtr</ref> const &amp;</type>
+          <declname>InAccelBytePlatform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="30" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a1a6ed75ed5642f9c0de1ca28763402c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendMissionStartedEventData</definition>
+        <argsstring>(FAccelByteId const &amp;UserId, FMissionId const &amp;MissionId, FMissionInstanceId const &amp;MissionInstanceId, FAccelByteModelsMissionStartedOptPayload const &amp;Optional=FAccelByteModelsMissionStartedOptPayload{})</argsstring>
+        <name>SendMissionStartedEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendMissionStartedEventData</qualifiedname>
+        <param>
+          <type><ref refid="d2/d45/struct_f_accel_byte_id" kindref="compound">FAccelByteId</ref> const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1f/struct_f_mission_id" kindref="compound">FMissionId</ref> const &amp;</type>
+          <declname>MissionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d8a/struct_f_mission_instance_id" kindref="compound">FMissionInstanceId</ref> const &amp;</type>
+          <declname>MissionInstanceId</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/dc6/struct_f_accel_byte_models_mission_started_opt_payload" kindref="compound">FAccelByteModelsMissionStartedOptPayload</ref> const &amp;</type>
+          <declname>Optional</declname>
+          <defval><ref refid="d8/dc6/struct_f_accel_byte_models_mission_started_opt_payload" kindref="compound">FAccelByteModelsMissionStartedOptPayload</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="35" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="46" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ac1a8b74bb0e4194437a297e72d0a8ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendMissionStepEndedEventData</definition>
+        <argsstring>(FAccelByteUserId const &amp;UserId, FMissionId const &amp;MissionId, FMissionInstanceId const &amp;MissionInstanceId, FMissionStep const &amp;MissionStep, FMissionStepName const &amp;MissionStepName=FMissionStepName{})</argsstring>
+        <name>SendMissionStepEndedEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendMissionStepEndedEventData</qualifiedname>
+        <param>
+          <type><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref> const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1f/struct_f_mission_id" kindref="compound">FMissionId</ref> const &amp;</type>
+          <declname>MissionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d8a/struct_f_mission_instance_id" kindref="compound">FMissionInstanceId</ref> const &amp;</type>
+          <declname>MissionInstanceId</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d50/struct_f_mission_step" kindref="compound">FMissionStep</ref> const &amp;</type>
+          <declname>MissionStep</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d1e/struct_f_mission_step_name" kindref="compound">FMissionStepName</ref> const &amp;</type>
+          <declname>MissionStepName</declname>
+          <defval><ref refid="d1/d1e/struct_f_mission_step_name" kindref="compound">FMissionStepName</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="40" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="65" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a3e8246c15e71b95092471aad5f113e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendMissionEndedEventData</definition>
+        <argsstring>(FAccelByteUserId const &amp;UserId, FMissionId const &amp;MissionId, FMissionInstanceId const &amp;MissionInstanceId, FMissionSuccess const &amp;MissionSuccess, FMissionOutcome const &amp;MissionOutcome=FMissionOutcome{})</argsstring>
+        <name>SendMissionEndedEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendMissionEndedEventData</qualifiedname>
+        <param>
+          <type><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref> const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1f/struct_f_mission_id" kindref="compound">FMissionId</ref> const &amp;</type>
+          <declname>MissionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d8a/struct_f_mission_instance_id" kindref="compound">FMissionInstanceId</ref> const &amp;</type>
+          <declname>MissionInstanceId</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d23/struct_f_mission_success" kindref="compound">FMissionSuccess</ref> const &amp;</type>
+          <declname>MissionSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d8a/struct_f_mission_outcome" kindref="compound">FMissionOutcome</ref> const &amp;</type>
+          <declname>MissionOutcome</declname>
+          <defval><ref refid="d1/d8a/struct_f_mission_outcome" kindref="compound">FMissionOutcome</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="46" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="87" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ac5a47aafa7c2c532bff8fe4f7ffddeac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendMatchInfoEventData</definition>
+        <argsstring>(FMatchInfoId const &amp;MatchInfoId, FAccelByteModelsMatchInfoOptPayload const &amp;Optional=FAccelByteModelsMatchInfoOptPayload{})</argsstring>
+        <name>SendMatchInfoEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendMatchInfoEventData</qualifiedname>
+        <param>
+          <type><ref refid="d0/dff/struct_f_match_info_id" kindref="compound">FMatchInfoId</ref> const &amp;</type>
+          <declname>MatchInfoId</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d20/struct_f_accel_byte_models_match_info_opt_payload" kindref="compound">FAccelByteModelsMatchInfoOptPayload</ref> const &amp;</type>
+          <declname>Optional</declname>
+          <defval><ref refid="de/d20/struct_f_accel_byte_models_match_info_opt_payload" kindref="compound">FAccelByteModelsMatchInfoOptPayload</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="52" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="109" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a6af2d90d4b521447a5c43551043259de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendMatchInfoPlayerEventData</definition>
+        <argsstring>(FAccelByteUserId const &amp;UserId, FMatchInfoId const &amp;MatchInfoId, FAccelByteModelsMatchInfoPlayerOptPayload const &amp;Optional=FAccelByteModelsMatchInfoPlayerOptPayload{})</argsstring>
+        <name>SendMatchInfoPlayerEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendMatchInfoPlayerEventData</qualifiedname>
+        <param>
+          <type><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref> const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/dff/struct_f_match_info_id" kindref="compound">FMatchInfoId</ref> const &amp;</type>
+          <declname>MatchInfoId</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d6b/struct_f_accel_byte_models_match_info_player_opt_payload" kindref="compound">FAccelByteModelsMatchInfoPlayerOptPayload</ref> const &amp;</type>
+          <declname>Optional</declname>
+          <defval><ref refid="da/d6b/struct_f_accel_byte_models_match_info_player_opt_payload" kindref="compound">FAccelByteModelsMatchInfoPlayerOptPayload</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="55" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="122" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a85b43a97dcfd34b3d5df99678de8cd81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendMatchInfoEndedEventData</definition>
+        <argsstring>(FMatchInfoId const &amp;MatchInfoId, FMatchEndReason const &amp;EndReason, FAccelByteModelsMatchInfoEndedOptPayload const &amp;Optional=FAccelByteModelsMatchInfoEndedOptPayload{})</argsstring>
+        <name>SendMatchInfoEndedEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendMatchInfoEndedEventData</qualifiedname>
+        <param>
+          <type><ref refid="d0/dff/struct_f_match_info_id" kindref="compound">FMatchInfoId</ref> const &amp;</type>
+          <declname>MatchInfoId</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d31/struct_f_match_end_reason" kindref="compound">FMatchEndReason</ref> const &amp;</type>
+          <declname>EndReason</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d4f/struct_f_accel_byte_models_match_info_ended_opt_payload" kindref="compound">FAccelByteModelsMatchInfoEndedOptPayload</ref> const &amp;</type>
+          <declname>Optional</declname>
+          <defval><ref refid="de/d4f/struct_f_accel_byte_models_match_info_ended_opt_payload" kindref="compound">FAccelByteModelsMatchInfoEndedOptPayload</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="59" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="138" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1adac158b47d0b2eec905bb24186c5cc45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendPopupAppearEventData</definition>
+        <argsstring>(FAccelByteUserId const &amp;UserId, FPopupEventId const &amp;PopupId, FAccelByteModelsPopupAppearOptPayload const &amp;Optional=FAccelByteModelsPopupAppearOptPayload{})</argsstring>
+        <name>SendPopupAppearEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendPopupAppearEventData</qualifiedname>
+        <param>
+          <type><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref> const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d0e/struct_f_popup_event_id" kindref="compound">FPopupEventId</ref> const &amp;</type>
+          <declname>PopupId</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d6b/struct_f_accel_byte_models_popup_appear_opt_payload" kindref="compound">FAccelByteModelsPopupAppearOptPayload</ref> const &amp;</type>
+          <declname>Optional</declname>
+          <defval><ref refid="de/d6b/struct_f_accel_byte_models_popup_appear_opt_payload" kindref="compound">FAccelByteModelsPopupAppearOptPayload</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="63" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="154" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a237da9ed25b4a70207071bb5ec1080dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendEntityLeveledEventData</definition>
+        <argsstring>(FEntityType const &amp;EntityType, FEntityId const &amp;EntityId=FEntityId{}, FAccelByteUserId const &amp;UserId=FAccelByteUserId{}, FAccelByteModelsEntityLeveledOptPayload const &amp;Optional=FAccelByteModelsEntityLeveledOptPayload{})</argsstring>
+        <name>SendEntityLeveledEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendEntityLeveledEventData</qualifiedname>
+        <param>
+          <type><ref refid="d2/db0/struct_f_entity_type" kindref="compound">FEntityType</ref> const &amp;</type>
+          <declname>EntityType</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/dd5/struct_f_entity_id" kindref="compound">FEntityId</ref> const &amp;</type>
+          <declname>EntityId</declname>
+          <defval><ref refid="d9/dd5/struct_f_entity_id" kindref="compound">FEntityId</ref>{}</defval>
+        </param>
+        <param>
+          <type><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref> const &amp;</type>
+          <declname>UserId</declname>
+          <defval><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref>{}</defval>
+        </param>
+        <param>
+          <type><ref refid="d7/da1/struct_f_accel_byte_models_entity_leveled_opt_payload" kindref="compound">FAccelByteModelsEntityLeveledOptPayload</ref> const &amp;</type>
+          <declname>Optional</declname>
+          <defval><ref refid="d7/da1/struct_f_accel_byte_models_entity_leveled_opt_payload" kindref="compound">FAccelByteModelsEntityLeveledOptPayload</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="67" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="170" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a3d031b49aa7b3f14eb4447b5c6a6a489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendEntityDeadEventData</definition>
+        <argsstring>(FEntityType const &amp;EntityType, FEntityId const &amp;EntityId=FEntityId{}, FAccelByteUserId const &amp;UserId=FAccelByteUserId{}, FAccelByteModelsEntityDeadOptPayload const &amp;Optional=FAccelByteModelsEntityDeadOptPayload{})</argsstring>
+        <name>SendEntityDeadEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendEntityDeadEventData</qualifiedname>
+        <param>
+          <type><ref refid="d2/db0/struct_f_entity_type" kindref="compound">FEntityType</ref> const &amp;</type>
+          <declname>EntityType</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/dd5/struct_f_entity_id" kindref="compound">FEntityId</ref> const &amp;</type>
+          <declname>EntityId</declname>
+          <defval><ref refid="d9/dd5/struct_f_entity_id" kindref="compound">FEntityId</ref>{}</defval>
+        </param>
+        <param>
+          <type><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref> const &amp;</type>
+          <declname>UserId</declname>
+          <defval><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref>{}</defval>
+        </param>
+        <param>
+          <type><ref refid="d1/de5/struct_f_accel_byte_models_entity_dead_opt_payload" kindref="compound">FAccelByteModelsEntityDeadOptPayload</ref> const &amp;</type>
+          <declname>Optional</declname>
+          <defval><ref refid="d1/de5/struct_f_accel_byte_models_entity_dead_opt_payload" kindref="compound">FAccelByteModelsEntityDeadOptPayload</ref>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="72" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="190" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a037dc2ee5e7a7b1c3fbd87f4a876178e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::GameStandardEvent::SendResourceFlowEventData</definition>
+        <argsstring>(FAccelByteUserId const &amp;UserId, EAccelByteFlowType const &amp;FlowType, FAccelByteTransactionId const &amp;TransactionId, FTransactionType const &amp;TransactionType, FResourceName const &amp;ResourceName, FResourceAmount const &amp;Amount, FResourceEndBalance const &amp;EndBalance)</argsstring>
+        <name>SendResourceFlowEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendResourceFlowEventData</qualifiedname>
+        <param>
+          <type><ref refid="de/da7/struct_f_accel_byte_user_id" kindref="compound">FAccelByteUserId</ref> const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/d72/_accel_byte_game_standard_event_models_8h_1acf483b6f59e2a2b8d69b0e5a1ff3851d" kindref="member">EAccelByteFlowType</ref> const &amp;</type>
+          <declname>FlowType</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/da7/struct_f_accel_byte_transaction_id" kindref="compound">FAccelByteTransactionId</ref> const &amp;</type>
+          <declname>TransactionId</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d1f/struct_f_transaction_type" kindref="compound">FTransactionType</ref> const &amp;</type>
+          <declname>TransactionType</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d28/struct_f_resource_name" kindref="compound">FResourceName</ref> const &amp;</type>
+          <declname>ResourceName</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/dad/struct_f_resource_amount" kindref="compound">FResourceAmount</ref> const &amp;</type>
+          <declname>Amount</declname>
+        </param>
+        <param>
+          <type><ref refid="de/dfa/struct_f_resource_end_balance" kindref="compound">FResourceEndBalance</ref> const &amp;</type>
+          <declname>EndBalance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="77" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="210" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a752194e7149475710a5fff44ee86f150" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void AccelByte::Api::GameStandardEvent::SendGameStandardEventData</definition>
+        <argsstring>(TSharedRef&lt; T &gt; const &amp;Payload, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError, FDateTime const &amp;ClientTimestamp=FDateTime::UtcNow())</argsstring>
+        <name>SendGameStandardEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendGameStandardEventData</qualifiedname>
+        <param>
+          <type>TSharedRef&lt; T &gt; const &amp;</type>
+          <declname>Payload</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>FDateTime const &amp;</type>
+          <declname>ClientTimestamp</declname>
+          <defval>FDateTime::UtcNow()</defval>
+        </param>
+        <briefdescription>
+<para>Send/enqueue a single authorized telemetry data of a game standard event. <ref refid="dc/d3f/class_accel_byte_1_1_api_1_1_user" kindref="compound">User</ref> should be logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to be send, each event expected to have different payload body, see <ref refid="d7/d72/_accel_byte_game_standard_event_models_8h" kindref="compound">Models/AccelByteGameStandardEventModels.h</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ClientTimestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timestamp when the event is triggered, the default will be FDateTime::UtcNow() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="95" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" bodystart="95" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ab484cbdaa6882503a23479698983f50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::GameStandardEvent::SendGameStandardEventData</definition>
+        <argsstring>(TSharedRef&lt; FAccelByteModelsCachedGameStandardEventPayload &gt; const &amp;Payload, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError, FDateTime const &amp;ClientTimestamp=FDateTime::UtcNow())</argsstring>
+        <name>SendGameStandardEventData</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::SendGameStandardEventData</qualifiedname>
+        <param>
+          <type>TSharedRef&lt; <ref refid="d6/d25/struct_f_accel_byte_models_cached_game_standard_event_payload" kindref="compound">FAccelByteModelsCachedGameStandardEventPayload</ref> &gt; const &amp;</type>
+          <declname>Payload</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>FDateTime const &amp;</type>
+          <declname>ClientTimestamp</declname>
+          <defval>FDateTime::UtcNow()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="112" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="239" bodyend="265"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1af11ffe23b79b3f3857233d1d1b4934b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::GameStandardEvent::GameStandardEvent</definition>
+        <argsstring>()=delete</argsstring>
+        <name>GameStandardEvent</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::GameStandardEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a3e7020db002e1b9632402f0825d6ef1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::GameStandardEvent::GameStandardEvent</definition>
+        <argsstring>(GameStandardEvent const &amp;)=delete</argsstring>
+        <name>GameStandardEvent</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::GameStandardEvent</qualifiedname>
+        <param>
+          <type>GameStandardEvent const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ad0a0a39e1142237ef3d027b93a7300c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::GameStandardEvent::GameStandardEvent</definition>
+        <argsstring>(GameStandardEvent &amp;&amp;)=delete</argsstring>
+        <name>GameStandardEvent</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::GameStandardEvent</qualifiedname>
+        <param>
+          <type>GameStandardEvent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a0120afd5bb04274b45fb78af32207c37" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString AccelByte::Api::GameStandardEvent::GetTelemetryKey</definition>
+        <argsstring>() override</argsstring>
+        <name>GetTelemetryKey</name>
+        <qualifiedname>AccelByte::Api::GameStandardEvent::GetTelemetryKey</qualifiedname>
+        <reimplements refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a2dca77055cbb3c38eb0bb77fd987a989">GetTelemetryKey</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="122" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteGameStandardEventApi.cpp" bodystart="34" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Send game standard telemetry data securely and the user should be logged in first. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::Api::BaseAnalytics</label>
+        <link refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::Api::GameStandardEvent</label>
+        <link refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::Api::GameTelemetry</label>
+        <link refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; GameTelemetry, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AccelByte::Api::BaseAnalytics</label>
+        <link refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::Api::GameStandardEvent</label>
+        <link refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::Api::GameTelemetry</label>
+        <link refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AccelByte::Settings</label>
+        <link refid="df/db1/class_accel_byte_1_1_settings"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="14">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="9">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="15">
+        <label>TSharedFromThis&lt; GameTelemetry, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" line="21" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteGameStandardEventApi.h" bodystart="23" bodyend="124"/>
+    <listofallmembers>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1af48fc7e07daa90601940b0bbaeaca4a9" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>AccelBytePlatformPtr</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ae57d418f6753ce4db994000d1a764688" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>AppendEventToCache</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1aac32cf547c02f8c9c62eee27e35b7eec" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>BaseAnalytics</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1aa665068284b4dddcec50adbf1bdc1c77" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>BaseAnalytics</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a55c36ecdc76a35379f77d0b6e6bf7977" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>BaseAnalytics</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a927ab2a39999c6b96b4fc0ff05af149c" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>BaseAnalytics</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a39abe704d1cbca079760b203db98e0c7" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>BaseAnalytics</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ac3b19f71a6ffc2a430a308756ca819cf" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>bCacheEvent</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ab282066287bedc431a1074ecebbf19bf" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>bCacheUpdated</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a4f2588ea11b35d26566c55897e1462f8" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>bRetryOnFailed</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ae6c6ecbd470067a8406184217180edc7" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>bTelemetryJobStarted</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a4ded3338c43197d995d2ce88e3ac85af" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>CredentialsRef</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a93dba66d5d3aee6a3edeb9b6b7a8f8c7" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>CriticalEvents</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1add03dfcdb1d5fea8f8b95884c53201de" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>EventName</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a9bb82d0f6641a49c63e595ad4ff10ebe" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>EventNamespace</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a3ef506d76c86699544e8ba853d14093c" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>EventPtrArray</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a5e8ca0cf9f8166078e9b7aa877acb030" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>EventPtrArrayAccumulation</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a5a69c0a004f236e803c98e15d759924f" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>EventPtrArrayLock</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a2001e01d662dae8ee937c9dfa7a28449" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>EventsJsonToArray</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a5b4bfcf158b368358fc0860adece134c" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>FApiBase</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a7532e689716d93aaa2f96568ab14c233" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>FApiBase</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a73fefb235f59add005e8752efa769607" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>Flush</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a6d735e813fb610e936ad0fac1a9e3a70" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameStandardEvent</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1aa0a1ec813e65319edac7da8006d95e5a" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameStandardEvent</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1af11ffe23b79b3f3857233d1d1b4934b2" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameStandardEvent</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a3e7020db002e1b9632402f0825d6ef1c" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameStandardEvent</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ad0a0a39e1142237ef3d027b93a7300c4" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameStandardEvent</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a6df4c9fdf1281f981e36314611049887" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetry</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a0f7d81b8e9165f9a4521007d1fa79ff9" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetry</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a207f1a82923ef4590468869edd0e8e7b" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetry</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1adf75bfb56fb4f6e8e016311f9d1e4db0" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetry</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a3233821f881a87e1991585805c314133" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetry</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a0615e4eaae0ec5e84697b84e67c0ce56" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetryLoginSuccess</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a644fb227cd614463ba6be9fb6ab1445a" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetryLogoutSuccess</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1aa1b06a8d08eef1e809988d7e1ce47a0a" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetryTickDelegate</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1aa8d7ded0966b1a7ecaa7ecb1f197b058" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GameTelemetryTickDelegateHandle</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a8668b41ba9ffdeb8461c276ff3d729bc" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GetEventNamespace</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a0120afd5bb04274b45fb78af32207c37" prot="private" virt="virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>GetTelemetryKey</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1afd2ef10eecc71f4d34515276ab6a8fcb" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>HttpClient</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a3262dbbbb6404aec16bef79a36480bbf" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>HttpRef</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ac7c4c402f86d48d65954d7f4ba3135ee" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>ImmediateEvents</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1aa06c763415ceace7e770576be0fa2b33" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>IsCacheEnabled</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1aa25372a566e6063d4f4433ae503abe35" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>IsCacheUpdated</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1aa9f4879b39d2d59511b67ac327a873f4" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>JobArrayQueueAsJsonString</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ae60aa48ad66db09bd819275d41a18154" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>JobQueue</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a0d52ae06ce578c1fa63f33ca61442467" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>LoadCachedEvents</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a222a388252cf299f73ecb10e54f116c1" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>MINIMUM_INTERVAL_TELEMETRY</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a913c8ccaf098eec7a616d7864452bd7d" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>OnLoginSuccess</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ad4b26a17996da00df23379634da347c2" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>OnLogoutSuccess</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a8b2bffd7bdd0425d79df3166a09d762d" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>PeriodicTelemetry</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a3669c5a6b594d5a33d48a8d1eb578c30" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>RemoveEventsFromCache</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a363532d887ffd16afe2aaab1fab30f3a" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>Send</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a3d031b49aa7b3f14eb4447b5c6a6a489" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendEntityDeadEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a237da9ed25b4a70207071bb5ec1080dd" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendEntityLeveledEventData</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a274b0192a3f7811400af4399681ece99" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendEventData</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1a3c73be205aae217bbbd5d7452945d138" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendEventData</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1aeb30fa475ce7b5418453ca07f062b16d" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a752194e7149475710a5fff44ee86f150" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendGameStandardEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ab484cbdaa6882503a23479698983f50d" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendGameStandardEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a85b43a97dcfd34b3d5df99678de8cd81" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendMatchInfoEndedEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ac5a47aafa7c2c532bff8fe4f7ffddeac" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendMatchInfoEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a6af2d90d4b521447a5c43551043259de" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendMatchInfoPlayerEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a3e8246c15e71b95092471aad5f113e21" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendMissionEndedEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a1a6ed75ed5642f9c0de1ca28763402c3" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendMissionStartedEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1ac1a8b74bb0e4194437a297e72d0a8ee5" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendMissionStepEndedEventData</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1adac158b47d0b2eec905bb24186c5cc45" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendPopupAppearEventData</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a8966c758f7a1de997812c6ef062ca20f" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendProtectedEvents</name></member>
+      <member refid="df/d4d/class_accel_byte_1_1_api_1_1_game_standard_event_1a037dc2ee5e7a7b1c3fbd87f4a876178e" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SendResourceFlowEventData</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ab08541fe9d704af8a9b5bae1b87deb44" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SetApiClient</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a9552eeae760aeb7f25ace3287ad52688" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SetBatchFrequency</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1acb5bf442a15c5d58bf6b9dcc01f46e81" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SetCriticalEventList</name></member>
+      <member refid="de/d71/class_accel_byte_1_1_api_1_1_base_analytics_1af8bcd0699b9bb9a681abe033fd9daeb5" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SetImmediateEventList</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ae8ffc36382a4204edb20a6d3430c13ad" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>SettingsRef</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a195db4f945bc4c5698730b0d8612d0a8" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>ShouldCacheEnabled</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a913a66d5e554b858c12fc5490b2340a0" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>Shutdown</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a621fd25add740f7888e94cf974526b12" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>ShuttingDown</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1ae66a8c6aa8e07d8101e1ae6e6b698e92" prot="public" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>Startup</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a9027e70ca0ad061dc76e80b90310abf2" prot="private" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>TelemetryInterval</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1abf73c69f11a74c5d79ed767d7e9de861" prot="protected" virt="non-virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>ValidateAccelByteId</name></member>
+      <member refid="de/dd2/class_accel_byte_1_1_api_1_1_game_telemetry_1a51f375b5030dbbcd2e3d86ed3c00aa13" prot="public" virt="virtual"><scope>AccelByte::Api::GameStandardEvent</scope><name>~GameTelemetry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

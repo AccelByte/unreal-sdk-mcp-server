@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="de/dcf/class_u_a_b_challenge" kind="class" language="C++" prot="public">
+    <compoundname>UABChallenge</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d1/d4f/_a_b_challenge_8h" local="no">ABChallenge.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/dcf/class_u_a_b_challenge_1a139ba9a36f33461cb083c75e785d446e" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABChallenge::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABChallenge::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="107" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1a332eac8a8fff14f6563409aa35f561f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABChallenge::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="32" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1a0fb35b514cc93df2eeb939647f8c1091" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::GetChallenges</definition>
+        <argsstring>(FDModelsGetChallengesResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, EAccelByteModelsChallengeSortBy SortBy=EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC, EAccelByteModelsChallengeStatus Status=EAccelByteModelsChallengeStatus::NONE, int64 Offset=0, int64 Limit=20)</argsstring>
+        <name>GetChallenges</name>
+        <qualifiedname>UABChallenge::GetChallenges</qualifiedname>
+        <param>
+          <type>FDModelsGetChallengesResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7" kindref="member">EAccelByteModelsChallengeSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7a84e5072e93fb7c605c09da449359c119" kindref="member">EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1ac32765b98c73335cc75dd0a21b22ad5a" kindref="member">EAccelByteModelsChallengeStatus</ref></type>
+          <declname>Status</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1ac32765b98c73335cc75dd0a21b22ad5aab50339a10e1de285ac99d4c3990b8693" kindref="member">EAccelByteModelsChallengeStatus::NONE</ref></defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="37" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="17" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1a426aed242f0d1e8a8ce98e0380268a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::GetChallengeList</definition>
+        <argsstring>(FDModelsGetChallengesResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, TArray&lt; FString &gt; const &amp;OptionalTags, EAccelByteModelsChallengeSortBy SortBy=EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC, EAccelByteModelsChallengeStatus Status=EAccelByteModelsChallengeStatus::NONE, int64 Offset=0, int64 Limit=20, FString Keyword=TEXT(&quot;&quot;))</argsstring>
+        <name>GetChallengeList</name>
+        <qualifiedname>UABChallenge::GetChallengeList</qualifiedname>
+        <param>
+          <type>FDModelsGetChallengesResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>OptionalTags</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7" kindref="member">EAccelByteModelsChallengeSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7a84e5072e93fb7c605c09da449359c119" kindref="member">EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1ac32765b98c73335cc75dd0a21b22ad5a" kindref="member">EAccelByteModelsChallengeStatus</ref></type>
+          <declname>Status</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1ac32765b98c73335cc75dd0a21b22ad5aab50339a10e1de285ac99d4c3990b8693" kindref="member">EAccelByteModelsChallengeStatus::NONE</ref></defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>FString</type>
+          <declname>Keyword</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="47" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="54" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1a03db6ac1bb2d107575ac51896132c49d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::GetPreviousChallengeProgresses</definition>
+        <argsstring>(FString const &amp;ChallengeCode, int32 Index, FDModelsChallengeProgressResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, TArray&lt; FString &gt; const &amp;OptionalTags, FString const &amp;GoalCode=TEXT(&quot;&quot;), int64 Offset=0, int64 Limit=20)</argsstring>
+        <name>GetPreviousChallengeProgresses</name>
+        <qualifiedname>UABChallenge::GetPreviousChallengeProgresses</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChallengeCode</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Index</declname>
+        </param>
+        <param>
+          <type>FDModelsChallengeProgressResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>OptionalTags</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GoalCode</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="59" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="96" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1a5f48cb213f77d5fded84f898d48fff79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::GetChallengeProgress</definition>
+        <argsstring>(FString const &amp;ChallengeCode, FString const &amp;GoalCode, FDModelsChallengeProgressResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, TArray&lt; FString &gt; const &amp;OptionalTags, int64 Offset=0, int64 Limit=20)</argsstring>
+        <name>GetChallengeProgress</name>
+        <qualifiedname>UABChallenge::GetChallengeProgress</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChallengeCode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>GoalCode</declname>
+        </param>
+        <param>
+          <type>FDModelsChallengeProgressResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>OptionalTags</declname>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="71" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="137" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1afbe8ae32ba12b7af016b99aee77f67e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::GetRewards</definition>
+        <argsstring>(FDModelsChallengeGetRewardStatusResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, EAccelByteModelsChallengeRewardStatus Status=EAccelByteModelsChallengeRewardStatus::NONE, EAccelByteModelsChallengeSortBy SortBy=EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC, int64 Offset=0, int64 Limit=20)</argsstring>
+        <name>GetRewards</name>
+        <qualifiedname>UABChallenge::GetRewards</qualifiedname>
+        <param>
+          <type>FDModelsChallengeGetRewardStatusResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a031144da9402afcf375deb838ae0b616" kindref="member">EAccelByteModelsChallengeRewardStatus</ref></type>
+          <declname>Status</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a031144da9402afcf375deb838ae0b616ab50339a10e1de285ac99d4c3990b8693" kindref="member">EAccelByteModelsChallengeRewardStatus::NONE</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7" kindref="member">EAccelByteModelsChallengeSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d6/d8e/_accel_byte_challenge_models_8h_1a8b43ed056a6a6f20f1b10840b1501bd7a84e5072e93fb7c605c09da449359c119" kindref="member">EAccelByteModelsChallengeSortBy::UPDATED_AT_DESC</ref></defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int64</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="82" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="176" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1aadd1196012efa2ab3b98705fd71215d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::ClaimReward</definition>
+        <argsstring>(FAccelByteModelsChallengeRewardClaimRequest const &amp;Request, FDModelsChallengeRewardsResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>ClaimReward</name>
+        <qualifiedname>UABChallenge::ClaimReward</qualifiedname>
+        <param>
+          <type><ref refid="d3/dac/struct_f_accel_byte_models_challenge_reward_claim_request" kindref="compound">FAccelByteModelsChallengeRewardClaimRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDModelsChallengeRewardsResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="92" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="213" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dcf/class_u_a_b_challenge_1ac61f5cfebd8c78046343870c117ebb43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABChallenge::EvaluateChallengeProgress</definition>
+        <argsstring>(FDHandler const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>EvaluateChallengeProgress</name>
+        <qualifiedname>UABChallenge::EvaluateChallengeProgress</qualifiedname>
+        <param>
+          <type>FDHandler const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="99" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABChallenge.cpp" bodystart="244" bodyend="271"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABChallenge</label>
+        <link refid="de/dcf/class_u_a_b_challenge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABChallenge</label>
+        <link refid="de/dcf/class_u_a_b_challenge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" line="27" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABChallenge.h" bodystart="28" bodyend="108"/>
+    <listofallmembers>
+      <member refid="de/dcf/class_u_a_b_challenge_1a139ba9a36f33461cb083c75e785d446e" prot="private" virt="non-virtual"><scope>UABChallenge</scope><name>ApiClientPtr</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1aadd1196012efa2ab3b98705fd71215d7" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>ClaimReward</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1ac61f5cfebd8c78046343870c117ebb43" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>EvaluateChallengeProgress</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1a426aed242f0d1e8a8ce98e0380268a08" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>GetChallengeList</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1a5f48cb213f77d5fded84f898d48fff79" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>GetChallengeProgress</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1a0fb35b514cc93df2eeb939647f8c1091" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>GetChallenges</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1a03db6ac1bb2d107575ac51896132c49d" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>GetPreviousChallengeProgresses</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1afbe8ae32ba12b7af016b99aee77f67e2" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>GetRewards</name></member>
+      <member refid="de/dcf/class_u_a_b_challenge_1a332eac8a8fff14f6563409aa35f561f7" prot="public" virt="non-virtual"><scope>UABChallenge</scope><name>SetApiClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
