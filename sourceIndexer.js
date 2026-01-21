@@ -596,7 +596,7 @@ function loadSnippetIndex(baseDir) {
 function isCacheValid(baseDir) {
   try {
     const cacheFile = getSnippetCacheFile(baseDir);
-    const snippetsDir = path.join(baseDir, "source", "bytewars-snippets");
+    const snippetsDir = path.join(baseDir, "data", "bytewars-snippets");
     
     if (!fs.existsSync(cacheFile) || !fs.existsSync(snippetsDir)) {
       return false;
@@ -639,7 +639,7 @@ function isCacheValid(baseDir) {
  */
 export function generateSnippetCache(baseDir) {
   console.error(`Generating snippet cache...`);
-  const snippetsDir = path.join(baseDir, "source", "bytewars-snippets");
+  const snippetsDir = path.join(baseDir, "data", "bytewars-snippets");
   
   if (!fs.existsSync(snippetsDir)) {
     console.error(`Snippets directory not found: ${snippetsDir}`);
@@ -703,7 +703,7 @@ function buildSnippetIndex(snippetsDir, baseDir) {
 export function indexSnippets(baseDir, useCache = true, loadOnly = false) {
   console.error(`indexSnippets called with baseDir: ${baseDir}, useCache: ${useCache}, loadOnly: ${loadOnly}`);
   
-  const snippetsDir = path.join(baseDir, "source", "bytewars-snippets");
+  const snippetsDir = path.join(baseDir, "data", "bytewars-snippets");
   
   if (!fs.existsSync(snippetsDir)) {
     console.error(`Snippets directory not found: ${snippetsDir}`);

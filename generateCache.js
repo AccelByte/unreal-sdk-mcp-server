@@ -7,7 +7,7 @@ import { generateSourceIndexCache, generateSnippetCache } from "./sourceIndexer.
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const sourcesDir = join(__dirname, "source");
+const sourcesDir = join(__dirname, "data");
 const unrealSDKXmlDir = join(sourcesDir, "unreal-sdk");
 const ossSDKDir = join(sourcesDir, "oss-sdk");
 

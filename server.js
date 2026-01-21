@@ -15,7 +15,7 @@ import { indexSnippets, searchSnippets } from "./sourceIndexer.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const sourcesDir = join(__dirname, "source");
+const sourcesDir = join(__dirname, "data");
 
 // Resolve Documentation/xml relative to this script's location
 const unrealSDKXmlDir = join(sourcesDir, "unreal-sdk");

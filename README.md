@@ -17,8 +17,8 @@ The server uses a cache-based approach for fast startup times. Cache files must 
 - **npm** or **yarn**
 - **Git** (for cloning the SDK repository during cache generation)
 - **XML Documentation Files**: Doxygen XML files for both Unreal SDK and OSS SDK should be placed in:
-  - `source/unreal-sdk/` - Unreal SDK XML files
-  - `source/oss-sdk/` - OSS SDK XML files
+  - `data/unreal-sdk/` - Unreal SDK XML files
+  - `data/oss-sdk/` - OSS SDK XML files
 
 ## Installation
 
@@ -66,7 +66,7 @@ The following cache files are created in the `.cache/` directory:
 - Cache generation may take several minutes depending on the size of your XML files and repository
 - The source repository is cloned to `.cache/accelbyte-unreal-sdk-plugin/` if it doesn't exist
 - If cache generation fails, check that:
-  - XML files are present in `source/unreal-sdk/` and `source/oss-sdk/`
+  - XML files are present in `data/unreal-sdk/` and `data/oss-sdk/`
   - You have network access to clone the GitHub repository
   - You have sufficient disk space
 
@@ -288,7 +288,7 @@ Returns the snippet with full code content and metadata.
 ### Cache Files Missing
 
 If you see warnings about missing cache files:
-1. Ensure XML files are in `source/unreal-sdk/` and `source/oss-sdk/`
+1. Ensure XML files are in `data/unreal-sdk/` and `data/oss-sdk/`
 2. Run `npm run generate-cache` to regenerate all caches
 
 ### Empty Search Results
@@ -318,7 +318,7 @@ If you see warnings about missing cache files:
 ├── sourceIndexer.js       # Source code and snippet indexing
 ├── generateCache.js       # Cache generation script
 ├── package.json           # Node.js dependencies and scripts
-├── source/                # XML documentation files
+├── data/                  # XML documentation files
 │   ├── unreal-sdk/        # Unreal SDK XML files
 │   └── oss-sdk/           # OSS SDK XML files
 └── .cache/                # Generated cache files (gitignored)
