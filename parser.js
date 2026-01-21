@@ -121,6 +121,83 @@ function parseSymbolsFromXml(xmlDir) {
 
   const symbols = {};
 
+  // Helper function to extract text from description nodes (briefdescription, detaileddescription)
+  function extractDescriptionText(descObj) {
+    if (!descObj) return "";
+    if (typeof descObj === "string") return descObj.trim();
+    
+    let text = "";
+    
+    // Handle para tags
+    if (descObj.para) {
+      const paras = Array.isArray(descObj.para) ? descObj.para : [descObj.para];
+      for (const para of paras) {
+        if (typeof para === "string") {
+          text += para + " ";
+        } else if (para["#text"]) {
+          text += para["#text"] + " ";
+        } else if (Array.isArray(para)) {
+          // Handle nested structures
+          for (const item of para) {
+            if (typeof item === "string") {
+              text += item + " ";
+            } else if (item["#text"]) {
+              text += item["#text"] + " ";
+            }
+          }
+        }
+      }
+    }
+    
+    // Handle direct text content
+    if (descObj["#text"]) {
+      text += descObj["#text"] + " ";
+    }
+    
+    // Handle parameterlist (extract parameter descriptions)
+    if (descObj.parameterlist) {
+      const paramLists = Array.isArray(descObj.parameterlist) ? descObj.parameterlist : [descObj.parameterlist];
+      for (const paramList of paramLists) {
+        if (paramList.parameteritem) {
+          const items = Array.isArray(paramList.parameteritem) ? paramList.parameteritem : [paramList.parameteritem];
+          for (const item of items) {
+            if (item.parameterdescription?.para) {
+              const paras = Array.isArray(item.parameterdescription.para) 
+                ? item.parameterdescription.para 
+                : [item.parameterdescription.para];
+              for (const para of paras) {
+                if (typeof para === "string") {
+                  text += para + " ";
+                } else if (para["#text"]) {
+                  text += para["#text"] + " ";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    // Handle simplesect (like return values)
+    if (descObj.simplesect) {
+      const simplesects = Array.isArray(descObj.simplesect) ? descObj.simplesect : [descObj.simplesect];
+      for (const sect of simplesects) {
+        if (sect.para) {
+          const paras = Array.isArray(sect.para) ? sect.para : [sect.para];
+          for (const para of paras) {
+            if (typeof para === "string") {
+              text += para + " ";
+            } else if (para["#text"]) {
+              text += para["#text"] + " ";
+            }
+          }
+        }
+      }
+    }
+    
+    return text.trim();
+  }
+
   // Helper function to extract type string from type object
   function extractType(typeObj) {
     if (!typeObj) return "";
@@ -167,10 +244,15 @@ function parseSymbolsFromXml(xmlDir) {
 
         const id = `${name}@cpp`;
 
+        // Extract descriptions from compounddef - prefer brief, fallback to detailed
+        const briefDescription = extractDescriptionText(c.briefdescription);
+        const detailedDescription = extractDescriptionText(c.detaileddescription);
+        
         const symbol = {
           id,
           name,
           type: kind,
+          description: briefDescription || detailedDescription || "",
           fields: {},
           methods: {}
         };
@@ -190,9 +272,13 @@ function parseSymbolsFromXml(xmlDir) {
             if (!m || !m["@_kind"]) continue;
 
             if (m["@_kind"] === "variable") {
+              const fieldBriefDesc = extractDescriptionText(m.briefdescription);
+              const fieldDetailedDesc = extractDescriptionText(m.detaileddescription);
+              
               symbol.fields[m.name] = {
                 type: extractType(m.type),
-                required: true
+                required: true,
+                description: fieldBriefDesc || fieldDetailedDesc || "",
               };
             }
 
@@ -204,13 +290,17 @@ function parseSymbolsFromXml(xmlDir) {
               const paramTypes = paramList.map(p => extractType(p?.type)).filter(t => t);
               const sig = m.name + "(" + paramTypes.join(",") + ")";
 
+              const methodBriefDesc = extractDescriptionText(m.briefdescription);
+              const methodDetailedDesc = extractDescriptionText(m.detaileddescription);
+
               symbol.methods[sig] = {
                 returnType: extractType(m.type),
                 params: paramList.map(p => ({
                   name: p?.declname || p?.defname || "",
                   type: extractType(p?.type)
                 })),
-                const: m["@_const"] === "yes"
+                const: m["@_const"] === "yes",
+                description: methodBriefDesc || methodDetailedDesc || "",
               };
             }
           }

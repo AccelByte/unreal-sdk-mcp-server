@@ -9,7 +9,7 @@ import {
 import { fileURLToPath } from "url";
 import { dirname, join, basename } from "path";
 import { loadSymbols } from "./parser.js";
-import { indexSourceFiles, searchSourceFiles, getMethodImplementation, indexSnippets, searchSnippets } from "./sourceIndexer.js";
+import { indexSnippets, searchSnippets } from "./sourceIndexer.js";
 
 // Get the directory of this script file (not cwd)
 const __filename = fileURLToPath(import.meta.url);
@@ -320,9 +320,14 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
               type: "string",
               description: "Search query (searches in symbol name, type, and description)",
             },
+            source: {
+              type: "string",
+              description: "Filter by SDK source (oss-sdk or unreal-sdk)",
+              enum: ["oss-sdk", "unreal-sdk"],
+            },
             type: {
               type: "string",
-              description: "Filter by symbol type (class, struct, function, enum, etc.)",
+              description: "Filter by symbol type (class, struct, function, enum, namespace, variable)",
               enum: ["class", "struct", "function", "enum", "namespace", "variable"],
             },
             limit: {
@@ -332,44 +337,6 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             },
           },
           required: ["query"],
-        },
-      },
-      {
-        name: "search_source_code",
-        description: "Search for classes, methods, or files in the source code repository",
-        inputSchema: {
-          type: "object",
-          properties: {
-            query: {
-              type: "string",
-              description: "Search query (class name, method name, or file path pattern)",
-            },
-            searchType: {
-              type: "string",
-              description: "Type of search to perform",
-              enum: ["class", "method", "file", "all"],
-              default: "all",
-            },
-          },
-          required: ["query"],
-        },
-      },
-      {
-        name: "get_method_implementation",
-        description: "Get the full implementation code for a specific method",
-        inputSchema: {
-          type: "object",
-          properties: {
-            className: {
-              type: "string",
-              description: "Name of the class containing the method",
-            },
-            methodName: {
-              type: "string",
-              description: "Name of the method to get implementation for",
-            },
-          },
-          required: ["methodName"],
         },
       },
       {
@@ -403,17 +370,30 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         },
       },
       {
-        name: "find_class",
-        description: "Find all files related to a specific class (headers and implementations)",
+        name: "describe_symbols",
+        description: "Get full descriptions of symbols by their IDs, including fields, methods, and links to relevant code snippets that use them.",
         inputSchema: {
           type: "object",
           properties: {
-            className: {
-              type: "string",
-              description: "Name of the class to find",
+            symbolIds: {
+              type: "array",
+              items: {
+                type: "string",
+              },
+              description: "List of symbol IDs to describe (e.g., ['AccelByte::FAccelByteMessagingSystem@cpp', 'AccelByte::FOnlineIdentityAccelByte@cpp'])",
+            },
+            includeSnippets: {
+              type: "boolean",
+              description: "Whether to include relevant snippet links (default: true)",
+              default: true,
+            },
+            snippetLimit: {
+              type: "number",
+              description: "Maximum number of relevant snippets to return per symbol (default: 5)",
+              default: 5,
             },
           },
-          required: ["className"],
+          required: ["symbolIds"],
         },
       },
     ],
@@ -427,12 +407,23 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   try {
     switch (name) {
       case "search_symbols": {
-        const { query, type, limit = 20 } = args || {};
-        const results = [];
+        const { query, source, type, limit = 20 } = args || {};
+        const scoredResults = [];
 
         const searchLower = query?.toLowerCase() || "";
         
-        for (const [id, symbol] of Object.entries(symbols)) {
+        // Select which symbol sets to search based on source filter
+        let symbolsToSearch = {};
+        if (source === "unreal-sdk") {
+          symbolsToSearch = unrealsdk_symbols;
+        } else if (source === "oss-sdk") {
+          symbolsToSearch = osssdk_symbols;
+        } else {
+          // No source filter - combine both
+          symbolsToSearch = { ...unrealsdk_symbols, ...osssdk_symbols };
+        }
+        
+        for (const [id, symbol] of Object.entries(symbolsToSearch)) {
           // Filter by type if specified
           if (type && symbol.type?.toLowerCase() !== type.toLowerCase()) {
             continue;
@@ -444,193 +435,64 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           const descMatch = symbol.description?.toLowerCase().includes(searchLower);
 
           if (nameMatch || typeMatch || descMatch) {
-            results.push({
+            // Determine which SDK this symbol belongs to
+            const isOssSdk = !unrealsdk_symbols[id];
+            const uri = isOssSdk 
+              ? `oss-sdk/cpp://${id}` 
+              : `unreal-sdk/cpp://${id}`;
+            
+            // Determine source for result
+            const symbolSource = isOssSdk ? "oss-sdk" : "unreal-sdk";
+            
+            // Calculate score - prioritize OSS SDK results
+            let score = 0;
+            
+            // Base score boost for OSS SDK (higher priority)
+            if (isOssSdk) {
+              score += 100;
+            }
+            
+            // Match quality scoring
+            if (nameMatch) {
+              // Exact name match gets highest score
+              if (symbol.name?.toLowerCase() === searchLower) {
+                score += 50;
+              } else {
+                score += 30;
+              }
+            }
+            if (typeMatch) {
+              score += 10;
+            }
+            if (descMatch) {
+              score += 5;
+            }
+            
+            scoredResults.push({
               id,
-              name: symbol.name,
               type: symbol.type,
               description: symbol.description || "",
-              uri: `cpp://${id}`,
+              score: score,
             });
-
-            if (results.length >= limit) break;
           }
         }
 
-        return {
-          content: [
-            {
-              type: "text",
-              text: JSON.stringify({ results, count: results.length }, null, 2),
-            },
-          ],
-        };
-      }
-
-      case "search_source_code": {
-        if (!sourceIndex) {
-          throw new Error("Source code indexing is not available");
-        }
-
-        const { query, searchType = "all" } = args || {};
-        const results = [];
-
-        if (searchType === "all" || searchType === "class") {
-          const classMatches = Object.keys(sourceIndex.classes).filter((className) =>
-            className.toLowerCase().includes(query.toLowerCase())
-          );
-          classMatches.forEach((className) => {
-            sourceIndex.classes[className].forEach((filePath) => {
-              results.push({
-                type: "class",
-                name: className,
-                file: filePath,
-                uri: `source://${filePath}`,
-              });
-            });
-          });
-        }
-
-        if (searchType === "all" || searchType === "method") {
-          const methodMatches = Object.keys(sourceIndex.methods).filter((methodName) =>
-            methodName.toLowerCase().includes(query.toLowerCase())
-          );
-          methodMatches.forEach((methodName) => {
-            sourceIndex.methods[methodName].forEach((filePath) => {
-              results.push({
-                type: "method",
-                name: methodName,
-                file: filePath,
-                uri: `source://${filePath}`,
-              });
-            });
-          });
-        }
-
-        if (searchType === "all" || searchType === "file") {
-          const fileMatches = Object.keys(sourceIndex.files).filter((filePath) =>
-            filePath.toLowerCase().includes(query.toLowerCase())
-          );
-          fileMatches.forEach((filePath) => {
-            const file = sourceIndex.files[filePath];
-            results.push({
-              type: "file",
-              name: basename(filePath),
-              path: filePath,
-              fileType: file.type,
-              lines: file.lines,
-              uri: `source://${filePath}`,
-            });
-          });
-        }
-
-        // Remove duplicates
-        const uniqueResults = Array.from(
-          new Map(results.map((r) => [`${r.type}:${r.name || r.path}`, r])).values()
-        );
+        // Sort by score (descending) and apply limit
+        scoredResults.sort((a, b) => b.score - a.score);
+        const results = scoredResults.slice(0, limit).map(({ score, ...result }) => result);
 
         return {
           content: [
             {
               type: "text",
-              text: JSON.stringify({ results: uniqueResults, count: uniqueResults.length }, null, 2),
-            },
-          ],
-        };
-      }
-
-      case "get_method_implementation": {
-        if (!sourceIndex) {
-          throw new Error("Source code indexing is not available");
-        }
-
-        const { className, methodName } = args || {};
-
-        if (className) {
-          // Use the helper function if we have a class name
-          const implementation = getMethodImplementation(sourceIndex, className, methodName);
-          if (implementation) {
-            return {
-              content: [
-                {
-                  type: "text",
-                  text: JSON.stringify(implementation, null, 2),
+              text: JSON.stringify({ 
+                results, 
+                count: results.length,
+                filters: {
+                  source: source || null,
+                  type: type || null,
                 },
-              ],
-            };
-          }
-        }
-
-        // Fallback: search in all files
-        const methodFiles = sourceIndex.methods[methodName] || [];
-        const implementations = [];
-
-        for (const filePath of methodFiles) {
-          const file = sourceIndex.files[filePath];
-          if (!file) continue;
-
-          // Try to extract the method implementation
-          const methodRegex = new RegExp(
-            `(${methodName}\\s*[^{]*\\{[^{}]*(?:\\{[^{}]*\\}[^{}]*)*\\})`,
-            "gs"
-          );
-          const match = file.content.match(methodRegex);
-
-          if (match) {
-            implementations.push({
-              file: filePath,
-              methodName: methodName,
-              implementation: match[0],
-              className: className || "unknown",
-            });
-          }
-        }
-
-        if (implementations.length === 0) {
-          throw new Error(`Method "${methodName}" not found${className ? ` in class "${className}"` : ""}`);
-        }
-
-        return {
-          content: [
-            {
-              type: "text",
-              text: JSON.stringify(
-                implementations.length === 1 ? implementations[0] : { implementations },
-                null,
-                2
-              ),
-            },
-          ],
-        };
-      }
-
-      case "find_class": {
-        if (!sourceIndex) {
-          throw new Error("Source code indexing is not available");
-        }
-
-        const { className } = args || {};
-        const files = sourceIndex.classes[className] || [];
-
-        if (files.length === 0) {
-          throw new Error(`Class "${className}" not found`);
-        }
-
-        const classFiles = files.map((filePath) => {
-          const file = sourceIndex.files[filePath];
-          return {
-            path: filePath,
-            type: file.type,
-            lines: file.lines,
-            uri: `source://${filePath}`,
-            className: className,
-          };
-        });
-
-        return {
-          content: [
-            {
-              type: "text",
-              text: JSON.stringify({ className, files: classFiles }, null, 2),
+              }, null, 2),
             },
           ],
         };
@@ -662,6 +524,119 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                   area: area || null,
                   tags: tags.length > 0 ? tags : null,
                 },
+              }, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "describe_symbols": {
+        const { symbolIds, includeSnippets = true, snippetLimit = 5 } = args || {};
+        
+        if (!Array.isArray(symbolIds) || symbolIds.length === 0) {
+          throw new Error("symbolIds must be a non-empty array");
+        }
+
+        const results = [];
+
+        for (const symbolId of symbolIds) {
+          // Find symbol in either SDK
+          let symbol = unrealsdk_symbols[symbolId] || osssdk_symbols[symbolId];
+          
+          if (!symbol) {
+            results.push({
+              id: symbolId,
+              error: "Symbol not found",
+            });
+            continue;
+          }
+
+          // Determine which SDK this symbol belongs to
+          const source = unrealsdk_symbols[symbolId] ? "unreal-sdk" : "oss-sdk";
+          const uri = `${source}/cpp://${symbolId}`;
+
+          // Extract symbol name without @cpp suffix for matching
+          const symbolName = symbol.name;
+          const symbolNameParts = symbolName.split("::");
+          const baseName = symbolNameParts[symbolNameParts.length - 1];
+          const namespace = symbolNameParts.length > 1 ? symbolNameParts.slice(0, -1).join("::") : "";
+
+          // Find relevant snippets
+          let relevantSnippets = [];
+          if (includeSnippets && snippetIndex) {
+            for (const [snippetId, snippet] of Object.entries(snippetIndex.snippets)) {
+              let matches = false;
+              
+              // Check if symbol name appears in snippet content
+              if (snippet.content && snippet.content.includes(symbolName)) {
+                matches = true;
+              } else if (snippet.content && snippet.content.includes(baseName)) {
+                matches = true;
+              }
+              
+              // Check if symbol is in snippet's symbols metadata
+              if (snippet.symbols) {
+                const allSymbols = [
+                  ...(snippet.symbols.classes || []),
+                  ...(snippet.symbols.methods || []),
+                  ...(snippet.symbols.functions || []),
+                ];
+                
+                if (allSymbols.some(s => 
+                  s === symbolName || 
+                  s === baseName || 
+                  s.includes(symbolName) ||
+                  symbolName.includes(s)
+                )) {
+                  matches = true;
+                }
+              }
+
+              if (matches) {
+                relevantSnippets.push({
+                  id: snippet.id,
+                  uri: snippet.uri,
+                  name: snippet.name,
+                  area: snippet.area,
+                  function: snippet.function,
+                  file: snippet.file,
+                  description: `${snippet.area}/${snippet.function} - ${snippet.name}`,
+                });
+              }
+            }
+
+            // Limit snippets and sort by relevance (exact name matches first)
+            relevantSnippets = relevantSnippets
+              .sort((a, b) => {
+                const aExact = a.name.includes(symbolName) || a.name.includes(baseName);
+                const bExact = b.name.includes(symbolName) || b.name.includes(baseName);
+                if (aExact && !bExact) return -1;
+                if (!aExact && bExact) return 1;
+                return 0;
+              })
+              .slice(0, snippetLimit);
+          }
+
+          results.push({
+            id: symbolId,
+            name: symbol.name,
+            type: symbol.type,
+            source: source,
+            uri: uri,
+            fields: symbol.fields || {},
+            methods: symbol.methods || {},
+            snippets: relevantSnippets,
+            snippetCount: relevantSnippets.length,
+          });
+        }
+
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify({ 
+                symbols: results,
+                count: results.length,
               }, null, 2),
             },
           ],
