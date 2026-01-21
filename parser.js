@@ -102,17 +102,22 @@ function isSymbolsCacheValid(baseDir, sdkName, xmlDir) {
   }
 }
 
-export function loadSymbols(xmlDir, sdkName, baseDir) {
-  // Try to load from cache first
-  if (baseDir && sdkName && isSymbolsCacheValid(baseDir, sdkName, xmlDir)) {
-    const cachedSymbols = loadSymbolsCache(baseDir, sdkName);
-    if (cachedSymbols) {
-      console.error(`Using cached symbols for ${sdkName}`);
-      return cachedSymbols;
-    }
-  } else if (baseDir && sdkName) {
-    console.error(`Cache is invalid or missing for ${sdkName}, parsing XML files...`);
+/**
+ * Generate symbols cache (force regeneration, ignores existing cache)
+ */
+export function generateSymbolsCache(xmlDir, sdkName, baseDir) {
+  console.error(`Generating symbols cache for ${sdkName}...`);
+  const symbols = parseSymbolsFromXml(xmlDir);
+  if (baseDir && sdkName) {
+    saveSymbolsCache(baseDir, sdkName, symbols);
   }
+  return symbols;
+}
+
+/**
+ * Parse symbols from XML files (internal function)
+ */
+function parseSymbolsFromXml(xmlDir) {
 
   const symbols = {};
 
@@ -218,6 +223,33 @@ export function loadSymbols(xmlDir, sdkName, baseDir) {
 
   // Start recursive scan from the root directory
   scanDirectory(xmlDir);
+
+  return symbols;
+}
+
+export function loadSymbols(xmlDir, sdkName, baseDir, useCache = true, loadOnly = false) {
+  // Try to load from cache first
+  if (useCache && baseDir && sdkName && isSymbolsCacheValid(baseDir, sdkName, xmlDir)) {
+    const cachedSymbols = loadSymbolsCache(baseDir, sdkName);
+    if (cachedSymbols) {
+      console.error(`Using cached symbols for ${sdkName}`);
+      return cachedSymbols;
+    }
+  }
+  
+  // If loadOnly is true, don't generate cache - just return empty object
+  if (loadOnly) {
+    console.error(`Cache not found for ${sdkName} and loadOnly=true, returning empty symbols`);
+    return {};
+  }
+  
+  // Otherwise, parse from XML and generate cache
+  if (useCache && baseDir && sdkName) {
+    console.error(`Cache is invalid or missing for ${sdkName}, parsing XML files...`);
+  }
+
+  // Parse from XML
+  const symbols = parseSymbolsFromXml(xmlDir);
 
   // Save to cache if baseDir and sdkName are provided
   if (baseDir && sdkName) {

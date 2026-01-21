@@ -26,36 +26,61 @@ const ossSDKDir = join(sourcesDir, "oss-sdk");
 const cacheDir = join(__dirname, "..", ".cache");
 const repoRoot = cacheDir; // indexSourceFiles will handle cloning into .cache/accelbyte-unreal-sdk-plugin
 
-// Load symbols using the existing parser - keep parsing code intact
-const unrealsdk_symbols = loadSymbols(unrealSDKXmlDir, "unreal-sdk", __dirname);
-const osssdk_symbols = loadSymbols(ossSDKDir, "oss-sdk", __dirname);
+// Load symbols from cache only (do not generate)
+let unrealsdk_symbols = {};
+let osssdk_symbols = {};
 
-// Index source code files from the repository
+try {
+  console.error("Loading symbols from cache...");
+  unrealsdk_symbols = loadSymbols(unrealSDKXmlDir, "unreal-sdk", __dirname, true, true) || {};
+  osssdk_symbols = loadSymbols(ossSDKDir, "oss-sdk", __dirname, true, true) || {};
+  
+  const unrealCount = Object.keys(unrealsdk_symbols).length;
+  const ossCount = Object.keys(osssdk_symbols).length;
+  console.error(`Loaded ${unrealCount} unreal-sdk symbols, ${ossCount} oss-sdk symbols from cache`);
+  
+  if (unrealCount === 0 && ossCount === 0) {
+    console.error("WARNING: No symbols loaded from cache. Run 'node generateCache.js' to generate cache files.");
+  }
+} catch (error) {
+  console.error(`ERROR: Failed to load symbols from cache: ${error.message}`);
+  console.error(`Run 'node generateCache.js' to generate cache files.`);
+  // Continue with empty symbols - server will still run but symbol features won't work
+}
+
+// Load source index from cache only (do not generate)
 let sourceIndex = null;
 try {
-  console.error(`Starting source code indexing from ${repoRoot}...`);
-  sourceIndex = indexSourceFiles(repoRoot);
+  console.error(`Loading source index from cache...`);
+  sourceIndex = indexSourceFiles(cacheDir, true, true);
   const fileCount = Object.keys(sourceIndex.files).length;
   const classCount = Object.keys(sourceIndex.classes).length;
   const methodCount = Object.keys(sourceIndex.methods).length;
-  console.error(`Source indexing complete: ${fileCount} files, ${classCount} classes, ${methodCount} methods indexed`);
+  console.error(`Source index loaded: ${fileCount} files, ${classCount} classes, ${methodCount} methods`);
+  
+  if (fileCount === 0) {
+    console.error("WARNING: Source index is empty. Run 'node generateCache.js' to generate cache files.");
+  }
 } catch (error) {
-  console.error(`ERROR: Source code indexing failed: ${error.message}`);
-  console.error(`Stack trace: ${error.stack}`);
-  // Don't set sourceIndex to null - let it fail explicitly so we know indexing didn't work
-  // The server will still run, but source code features won't be available
+  console.error(`ERROR: Failed to load source index from cache: ${error.message}`);
+  console.error(`Run 'node generateCache.js' to generate cache files.`);
+  // Continue without source index - server will still run but source code features won't be available
 }
 
-// Index code snippets from bytewars-snippets
+// Load snippet index from cache only (do not generate)
 let snippetIndex = null;
 try {
-  console.error(`Starting snippet indexing from ${__dirname}...`);
-  snippetIndex = indexSnippets(__dirname);
+  console.error(`Loading snippet index from cache...`);
+  snippetIndex = indexSnippets(__dirname, true, true);
   const snippetCount = Object.keys(snippetIndex.snippets).length;
-  console.error(`Snippet indexing complete: ${snippetCount} snippets indexed`);
+  console.error(`Snippet index loaded: ${snippetCount} snippets`);
+  
+  if (snippetCount === 0) {
+    console.error("WARNING: Snippet index is empty. Run 'node generateCache.js' to generate cache files.");
+  }
 } catch (error) {
-  console.error(`ERROR: Snippet indexing failed: ${error.message}`);
-  console.error(`Stack trace: ${error.stack}`);
+  console.error(`ERROR: Failed to load snippet index from cache: ${error.message}`);
+  console.error(`Run 'node generateCache.js' to generate cache files.`);
   // Continue without snippets
 }
 

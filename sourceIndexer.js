@@ -72,11 +72,116 @@ function ensureRepositoryCloned(baseDir, repoUrl = GITHUB_REPO_URL) {
 }
 
 /**
- * Indexes C++ source files from the SDK repository
- * Clones from GitHub if not present, or updates existing clone
+ * Get the cache file path for source index
  */
-export function indexSourceFiles(baseDir) {
-  console.error(`indexSourceFiles called with baseDir: ${baseDir}`);
+function getSourceIndexCacheFile(baseDir) {
+  const cacheDir = path.join(baseDir, ".cache");
+  return path.join(cacheDir, "source-index.json");
+}
+
+/**
+ * Save source index to disk cache
+ */
+function saveSourceIndexCache(baseDir, sourceIndex) {
+  try {
+    const cacheFile = getSourceIndexCacheFile(baseDir);
+    const cacheDir = path.dirname(cacheFile);
+    
+    // Ensure cache directory exists
+    if (!fs.existsSync(cacheDir)) {
+      fs.mkdirSync(cacheDir, { recursive: true });
+    }
+    
+    const cacheData = {
+      version: "1.0",
+      indexedAt: new Date().toISOString(),
+      fileCount: Object.keys(sourceIndex.files).length,
+      classCount: Object.keys(sourceIndex.classes).length,
+      methodCount: Object.keys(sourceIndex.methods).length,
+      index: sourceIndex,
+    };
+    
+    fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2), "utf8");
+    console.error(`Source index cache saved to: ${cacheFile}`);
+  } catch (error) {
+    console.error(`Failed to save source index cache: ${error.message}`);
+  }
+}
+
+/**
+ * Load source index from disk cache
+ */
+function loadSourceIndexCache(baseDir) {
+  try {
+    const cacheFile = getSourceIndexCacheFile(baseDir);
+    
+    if (!fs.existsSync(cacheFile)) {
+      return null;
+    }
+    
+    const cacheData = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+    console.error(`Source index cache loaded from: ${cacheFile} (${cacheData.fileCount} files, ${cacheData.classCount} classes, ${cacheData.methodCount} methods)`);
+    return cacheData.index;
+  } catch (error) {
+    console.error(`Failed to load source index cache: ${error.message}`);
+    return null;
+  }
+}
+
+/**
+ * Check if source index cache is still valid
+ */
+function isSourceIndexCacheValid(baseDir) {
+  try {
+    const cacheFile = getSourceIndexCacheFile(baseDir);
+    const repoPath = path.join(baseDir, "..", ".cache", REPO_NAME);
+    const tutorialModulesDir = path.join(repoPath, "Source", "AccelByteWars", "TutorialModules");
+    
+    if (!fs.existsSync(cacheFile) || !fs.existsSync(tutorialModulesDir)) {
+      return false;
+    }
+    
+    const cacheStats = fs.statSync(cacheFile);
+    const cacheTime = cacheStats.mtime.getTime();
+    
+    // Check if any source file has been modified since cache was created
+    function checkDirectory(dir) {
+      if (!fs.existsSync(dir)) {
+        return false;
+      }
+      
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      
+      for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        
+        if (entry.isDirectory()) {
+          if (!checkDirectory(fullPath)) {
+            return false;
+          }
+        } else if (entry.isFile() && (entry.name.endsWith(".h") || entry.name.endsWith(".cpp"))) {
+          const fileStats = fs.statSync(fullPath);
+          if (fileStats.mtime.getTime() > cacheTime) {
+            return false; // Source file is newer than cache
+          }
+        }
+      }
+      
+      return true;
+    }
+    
+    return checkDirectory(tutorialModulesDir);
+  } catch (error) {
+    console.error(`Error checking source index cache validity: ${error.message}`);
+    return false;
+  }
+}
+
+/**
+ * Generate source index cache (force regeneration, ignores existing cache)
+ */
+export function generateSourceIndexCache(baseDir) {
+  console.error(`Generating source index cache...`);
   
   // Ensure repository is cloned/updated from GitHub
   let repoRoot;
@@ -91,6 +196,13 @@ export function indexSourceFiles(baseDir) {
     throw new Error(`Repository root does not exist: ${repoRoot}`);
   }
 
+  return buildSourceIndex(repoRoot, baseDir, false);
+}
+
+/**
+ * Build source index from repository (internal function)
+ */
+function buildSourceIndex(repoRoot, baseDir) {
   const sourceIndex = {
     files: {},
     methods: {},  // Method name -> [file paths where it's implemented]
@@ -186,7 +298,54 @@ export function indexSourceFiles(baseDir) {
     throw new Error(`No source files were indexed. Check that the repository structure is correct.`);
   }
 
+  // Save to cache
+  saveSourceIndexCache(baseDir, sourceIndex);
+
   return sourceIndex;
+}
+
+/**
+ * Indexes C++ source files from the SDK repository
+ * Clones from GitHub if not present, or updates existing clone
+ * Uses cache if available and valid
+ */
+export function indexSourceFiles(baseDir, useCache = true, loadOnly = false) {
+  console.error(`indexSourceFiles called with baseDir: ${baseDir}, useCache: ${useCache}, loadOnly: ${loadOnly}`);
+  
+  // Try to load from cache first
+  if (useCache && isSourceIndexCacheValid(baseDir)) {
+    const cachedIndex = loadSourceIndexCache(baseDir);
+    if (cachedIndex) {
+      console.error(`Using cached source index`);
+      return cachedIndex;
+    }
+  }
+  
+  // If loadOnly is true, don't generate cache - throw error
+  if (loadOnly) {
+    throw new Error(`Source index cache not found. Run 'node generateCache.js' to generate cache files.`);
+  }
+  
+  // Otherwise, generate cache
+  if (useCache) {
+    console.error(`Cache is invalid or missing, re-indexing source files...`);
+  }
+  
+  // Ensure repository is cloned/updated from GitHub
+  let repoRoot;
+  try {
+    repoRoot = ensureRepositoryCloned(baseDir, GITHUB_REPO_URL);
+    console.error(`Repository root resolved to: ${repoRoot}`);
+  } catch (error) {
+    throw new Error(`Failed to ensure repository is cloned: ${error.message}`);
+  }
+
+  if (!fs.existsSync(repoRoot)) {
+    throw new Error(`Repository root does not exist: ${repoRoot}`);
+  }
+
+  // Build index from repository
+  return buildSourceIndex(repoRoot, baseDir);
 }
 
 /**
@@ -378,17 +537,10 @@ function getMethodContext(content, methodName) {
 }
 
 /**
- * Get the cache directory path for snippets
- */
-function getSnippetCacheDir(baseDir) {
-  return path.join(baseDir, ".cache", "bytewars-snippets");
-}
-
-/**
- * Get the cache file path
+ * Get the cache file path for snippets
  */
 function getSnippetCacheFile(baseDir) {
-  return path.join(getSnippetCacheDir(baseDir), "index.json");
+  return path.join(baseDir, ".cache", "bytewars-snippets.json");
 }
 
 /**
@@ -396,8 +548,8 @@ function getSnippetCacheFile(baseDir) {
  */
 function saveSnippetIndex(baseDir, snippetIndex) {
   try {
-    const cacheDir = getSnippetCacheDir(baseDir);
     const cacheFile = getSnippetCacheFile(baseDir);
+    const cacheDir = path.dirname(cacheFile);
     
     // Ensure cache directory exists
     if (!fs.existsSync(cacheDir)) {
@@ -483,13 +635,10 @@ function isCacheValid(baseDir) {
 }
 
 /**
- * Index code snippets from bytewars-snippets directory
- * Extracts all @@@SNIPSTART to @@@SNIPEND blocks
- * Uses disk cache if available and valid
+ * Generate snippet cache (force regeneration, ignores existing cache)
  */
-export function indexSnippets(baseDir) {
-  console.error(`indexSnippets called with baseDir: ${baseDir}`);
-  
+export function generateSnippetCache(baseDir) {
+  console.error(`Generating snippet cache...`);
   const snippetsDir = path.join(baseDir, "source", "bytewars-snippets");
   
   if (!fs.existsSync(snippetsDir)) {
@@ -497,18 +646,15 @@ export function indexSnippets(baseDir) {
     return { snippets: {}, byTag: {}, byArea: {} };
   }
 
-  // Try to load from cache first
-  if (isCacheValid(baseDir)) {
-    const cachedIndex = loadSnippetIndex(baseDir);
-    if (cachedIndex) {
-      console.error(`Using cached snippet index`);
-      return cachedIndex;
-    }
-  } else {
-    console.error(`Cache is invalid or missing, re-indexing snippets...`);
-  }
+  // Build index from source files (skip cache check)
+  return buildSnippetIndex(snippetsDir, baseDir);
+}
 
-  // Build index from source files
+/**
+ * Build snippet index from source files (internal function)
+ */
+function buildSnippetIndex(snippetsDir, baseDir) {
+
   const snippetIndex = {
     snippets: {},  // snippetId -> snippet data
     byTag: {},     // tag -> [snippetIds]
@@ -547,6 +693,45 @@ export function indexSnippets(baseDir) {
   saveSnippetIndex(baseDir, snippetIndex);
 
   return snippetIndex;
+}
+
+/**
+ * Index code snippets from bytewars-snippets directory
+ * Extracts all @@@SNIPSTART to @@@SNIPEND blocks
+ * Uses disk cache if available and valid
+ */
+export function indexSnippets(baseDir, useCache = true, loadOnly = false) {
+  console.error(`indexSnippets called with baseDir: ${baseDir}, useCache: ${useCache}, loadOnly: ${loadOnly}`);
+  
+  const snippetsDir = path.join(baseDir, "source", "bytewars-snippets");
+  
+  if (!fs.existsSync(snippetsDir)) {
+    console.error(`Snippets directory not found: ${snippetsDir}`);
+    return { snippets: {}, byTag: {}, byArea: {} };
+  }
+
+  // Try to load from cache first
+  if (useCache && isCacheValid(baseDir)) {
+    const cachedIndex = loadSnippetIndex(baseDir);
+    if (cachedIndex) {
+      console.error(`Using cached snippet index`);
+      return cachedIndex;
+    }
+  }
+  
+  // If loadOnly is true, don't generate cache - return empty index
+  if (loadOnly) {
+    console.error(`Snippet cache not found and loadOnly=true, returning empty index`);
+    return { snippets: {}, byTag: {}, byArea: {} };
+  }
+  
+  // Otherwise, generate cache
+  if (useCache) {
+    console.error(`Cache is invalid or missing, re-indexing snippets...`);
+  }
+
+  // Build index from source files
+  return buildSnippetIndex(snippetsDir, baseDir);
 }
 
 /**
