@@ -2,8 +2,9 @@ import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
 
-const GITHUB_REPO_URL = "https://github.com/AccelByte/accelbyte-unreal-sdk-plugin.git";
-const REPO_NAME = "accelbyte-unreal-sdk-plugin";
+const GITHUB_REPO_URL = "https://github.com/AccelByte/accelbyte-unreal-bytewars-game.git";
+const REPO_NAME = "accelbyte-unreal-bytewars-game";
+const REPO_BRANCH = "tutorialmodules";
 
 /**
  * Ensures the GitHub repository is cloned and up-to-date
@@ -30,7 +31,7 @@ function ensureRepositoryCloned(baseDir, repoUrl = GITHUB_REPO_URL) {
         throw new Error("Git is not available. Please install Git to enable source code indexing.");
       }
       
-      execSync(`git clone --depth 1 ${repoUrl} "${repoPath}"`, {
+      execSync(`git clone --depth 1 --branch ${REPO_BRANCH} ${repoUrl} "${repoPath}"`, {
         stdio: 'inherit',
         cwd: baseDir,
         timeout: 60000 // 60 second timeout
@@ -49,8 +50,8 @@ function ensureRepositoryCloned(baseDir, repoUrl = GITHUB_REPO_URL) {
     if (fs.existsSync(gitPath)) {
       try {
         console.error(`Updating repository at ${repoPath}...`);
-        execSync("git fetch origin main", { cwd: repoPath, stdio: 'pipe', timeout: 30000 });
-        execSync("git reset --hard origin/main", { cwd: repoPath, stdio: 'pipe' });
+        execSync(`git fetch origin ${REPO_BRANCH}`, { cwd: repoPath, stdio: 'pipe', timeout: 30000 });
+        execSync(`git reset --hard origin/${REPO_BRANCH}`, { cwd: repoPath, stdio: 'pipe' });
         console.error("Repository updated successfully");
       } catch (error) {
         console.error(`Warning: Could not update repository: ${error.message}. Using existing files.`);
@@ -62,9 +63,9 @@ function ensureRepositoryCloned(baseDir, repoUrl = GITHUB_REPO_URL) {
   }
   
   // Verify the repository has the expected structure
-  const sourceDir = path.join(repoPath, "Source", "AccelByteUe4Sdk");
+  const sourceDir = path.join(repoPath, "Source", "AccelByteWars", "TutorialModules");
   if (!fs.existsSync(sourceDir)) {
-    throw new Error(`Repository structure is incorrect. Expected Source/AccelByteUe4Sdk directory not found at: ${sourceDir}`);
+    throw new Error(`Repository structure is incorrect. Expected Source/AccelByteWars/TutorialModules directory not found at: ${sourceDir}`);
   }
   
   return repoPath;
@@ -96,13 +97,11 @@ export function indexSourceFiles(baseDir) {
     classes: {},  // Class name -> file paths
   };
 
-  // Directories to scan for source files
-  const publicDir = path.join(repoRoot, "Source", "AccelByteUe4Sdk", "Public");
-  const privateDir = path.join(repoRoot, "Source", "AccelByteUe4Sdk", "Private");
+  // Directory to scan for source files
+  const tutorialModulesDir = path.join(repoRoot, "Source", "AccelByteWars", "TutorialModules");
   
-  console.error(`Looking for source directories:`);
-  console.error(`  Public: ${publicDir} (exists: ${fs.existsSync(publicDir)})`);
-  console.error(`  Private: ${privateDir} (exists: ${fs.existsSync(privateDir)})`);
+  console.error(`Looking for source directory:`);
+  console.error(`  TutorialModules: ${tutorialModulesDir} (exists: ${fs.existsSync(tutorialModulesDir)})`);
 
   function scanDirectory(dir, relativePath = "") {
     if (!fs.existsSync(dir)) {
@@ -114,7 +113,7 @@ export function indexSourceFiles(baseDir) {
 
     for (const entry of entries) {
       const fullPath = path.join(dir, entry.name);
-      // Build relative path from Source/AccelByteUe4Sdk
+      // Build relative path from Source/AccelByteWars/TutorialModules
       const relPath = relativePath 
         ? path.join(relativePath, entry.name)
         : entry.name;
@@ -173,22 +172,12 @@ export function indexSourceFiles(baseDir) {
     }
   }
 
-  // Scan Public directory (headers)
-  if (fs.existsSync(publicDir)) {
-    console.error(`Scanning Public directory: ${publicDir}`);
-    scanDirectory(publicDir, "Public");
+  // Scan TutorialModules directory
+  if (fs.existsSync(tutorialModulesDir)) {
+    console.error(`Scanning TutorialModules directory: ${tutorialModulesDir}`);
+    scanDirectory(tutorialModulesDir, "");
   } else {
-    const errorMsg = `Public directory not found: ${publicDir}. Repository may not be cloned correctly.`;
-    console.error(`ERROR: ${errorMsg}`);
-    throw new Error(errorMsg);
-  }
-
-  // Scan Private directory (implementations)
-  if (fs.existsSync(privateDir)) {
-    console.error(`Scanning Private directory: ${privateDir}`);
-    scanDirectory(privateDir, "Private");
-  } else {
-    const errorMsg = `Private directory not found: ${privateDir}. Repository may not be cloned correctly.`;
+    const errorMsg = `TutorialModules directory not found: ${tutorialModulesDir}. Repository may not be cloned correctly.`;
     console.error(`ERROR: ${errorMsg}`);
     throw new Error(errorMsg);
   }
@@ -386,4 +375,690 @@ function getMethodContext(content, methodName) {
   const end = Math.min(lines.length, methodLineIndex + 50);
   
   return lines.slice(start, end).join("\n");
+}
+
+/**
+ * Get the cache directory path for snippets
+ */
+function getSnippetCacheDir(baseDir) {
+  return path.join(baseDir, ".cache", "bytewars-snippets");
+}
+
+/**
+ * Get the cache file path
+ */
+function getSnippetCacheFile(baseDir) {
+  return path.join(getSnippetCacheDir(baseDir), "index.json");
+}
+
+/**
+ * Save snippet index to disk
+ */
+function saveSnippetIndex(baseDir, snippetIndex) {
+  try {
+    const cacheDir = getSnippetCacheDir(baseDir);
+    const cacheFile = getSnippetCacheFile(baseDir);
+    
+    // Ensure cache directory exists
+    if (!fs.existsSync(cacheDir)) {
+      fs.mkdirSync(cacheDir, { recursive: true });
+    }
+    
+    const cacheData = {
+      version: "1.0",
+      indexedAt: new Date().toISOString(),
+      snippetCount: Object.keys(snippetIndex.snippets).length,
+      index: snippetIndex,
+    };
+    
+    fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2), "utf8");
+    console.error(`Snippet index saved to: ${cacheFile}`);
+  } catch (error) {
+    console.error(`Failed to save snippet index: ${error.message}`);
+  }
+}
+
+/**
+ * Load snippet index from disk cache
+ */
+function loadSnippetIndex(baseDir) {
+  try {
+    const cacheFile = getSnippetCacheFile(baseDir);
+    
+    if (!fs.existsSync(cacheFile)) {
+      return null;
+    }
+    
+    const cacheData = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+    console.error(`Snippet index loaded from cache: ${cacheData.snippetCount} snippets`);
+    return cacheData.index;
+  } catch (error) {
+    console.error(`Failed to load snippet index from cache: ${error.message}`);
+    return null;
+  }
+}
+
+/**
+ * Check if cache is still valid by comparing file modification times
+ */
+function isCacheValid(baseDir) {
+  try {
+    const cacheFile = getSnippetCacheFile(baseDir);
+    const snippetsDir = path.join(baseDir, "source", "bytewars-snippets");
+    
+    if (!fs.existsSync(cacheFile) || !fs.existsSync(snippetsDir)) {
+      return false;
+    }
+    
+    const cacheStats = fs.statSync(cacheFile);
+    const cacheTime = cacheStats.mtime.getTime();
+    
+    // Check if any source file has been modified since cache was created
+    function checkDirectory(dir) {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      
+      for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        
+        if (entry.isDirectory()) {
+          if (!checkDirectory(fullPath)) {
+            return false;
+          }
+        } else if (entry.isFile() && (entry.name.endsWith(".h") || entry.name.endsWith(".cpp"))) {
+          const fileStats = fs.statSync(fullPath);
+          if (fileStats.mtime.getTime() > cacheTime) {
+            return false; // Source file is newer than cache
+          }
+        }
+      }
+      
+      return true;
+    }
+    
+    return checkDirectory(snippetsDir);
+  } catch (error) {
+    console.error(`Error checking cache validity: ${error.message}`);
+    return false;
+  }
+}
+
+/**
+ * Index code snippets from bytewars-snippets directory
+ * Extracts all @@@SNIPSTART to @@@SNIPEND blocks
+ * Uses disk cache if available and valid
+ */
+export function indexSnippets(baseDir) {
+  console.error(`indexSnippets called with baseDir: ${baseDir}`);
+  
+  const snippetsDir = path.join(baseDir, "source", "bytewars-snippets");
+  
+  if (!fs.existsSync(snippetsDir)) {
+    console.error(`Snippets directory not found: ${snippetsDir}`);
+    return { snippets: {}, byTag: {}, byArea: {} };
+  }
+
+  // Try to load from cache first
+  if (isCacheValid(baseDir)) {
+    const cachedIndex = loadSnippetIndex(baseDir);
+    if (cachedIndex) {
+      console.error(`Using cached snippet index`);
+      return cachedIndex;
+    }
+  } else {
+    console.error(`Cache is invalid or missing, re-indexing snippets...`);
+  }
+
+  // Build index from source files
+  const snippetIndex = {
+    snippets: {},  // snippetId -> snippet data
+    byTag: {},     // tag -> [snippetIds]
+    byArea: {},    // area -> [snippetIds]
+  };
+
+  function scanDirectory(dir, relativePath = "") {
+    if (!fs.existsSync(dir)) {
+      console.error(`Directory does not exist: ${dir}`);
+      return;
+    }
+
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      const relPath = relativePath 
+        ? path.join(relativePath, entry.name)
+        : entry.name;
+
+      if (entry.isDirectory()) {
+        scanDirectory(fullPath, relPath);
+      } else if (entry.isFile() && (entry.name.endsWith(".h") || entry.name.endsWith(".cpp"))) {
+        extractSnippetsFromFile(fullPath, relPath, snippetIndex);
+      }
+    }
+  }
+
+  console.error(`Scanning snippets directory: ${snippetsDir}`);
+  scanDirectory(snippetsDir, "");
+
+  const snippetCount = Object.keys(snippetIndex.snippets).length;
+  console.error(`Snippet indexing complete: ${snippetCount} snippets indexed`);
+
+  // Save to cache
+  saveSnippetIndex(baseDir, snippetIndex);
+
+  return snippetIndex;
+}
+
+/**
+ * Extract all snippets from a single file
+ */
+function extractSnippetsFromFile(filePath, relativePath, snippetIndex) {
+  const fileContent = fs.readFileSync(filePath, "utf8");
+  const lines = fileContent.split("\n");
+  
+  let currentSnippet = null;
+  let snippetLines = [];
+  let inSnippet = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    
+    // Check for SNIPSTART
+    const snipStartMatch = line.match(/@@@SNIPSTART\s+(.+)/);
+    if (snipStartMatch) {
+      if (currentSnippet) {
+        // Save previous snippet if any
+        saveSnippet(currentSnippet, snippetLines.join("\n"), filePath, relativePath, snippetIndex);
+      }
+      
+      const snippetName = snipStartMatch[1].trim();
+      currentSnippet = {
+        name: snippetName,
+        startLine: i + 1,
+      };
+      snippetLines = [];
+      inSnippet = true;
+      continue;
+    }
+    
+    // Check for SNIPEND
+    if (line.includes("@@@SNIPEND")) {
+      if (currentSnippet && inSnippet) {
+        currentSnippet.endLine = i + 1;
+        saveSnippet(currentSnippet, snippetLines.join("\n"), filePath, relativePath, snippetIndex);
+        currentSnippet = null;
+        snippetLines = [];
+        inSnippet = false;
+      }
+      continue;
+    }
+    
+    // Collect snippet content
+    if (inSnippet && currentSnippet) {
+      snippetLines.push(line);
+    }
+  }
+  
+  // Handle case where file ends without SNIPEND
+  if (currentSnippet && inSnippet) {
+    saveSnippet(currentSnippet, snippetLines.join("\n"), filePath, relativePath, snippetIndex);
+  }
+}
+
+/**
+ * Save a snippet to the index with metadata
+ */
+function saveSnippet(snippetInfo, content, filePath, relativePath, snippetIndex) {
+  if (!content.trim()) {
+    return; // Skip empty snippets
+  }
+
+  // Parse snippet name to extract area and function name
+  // Format: "AuthEssentialsSubsystem.cpp-Login" or "AuthEssentialsSubsystem.h-public"
+  const nameParts = snippetInfo.name.split("-");
+  const filePart = nameParts[0]; // e.g., "AuthEssentialsSubsystem.cpp"
+  const functionPart = nameParts.slice(1).join("-"); // e.g., "Login" or "public"
+  
+  // Extract area from directory structure and file name
+  // e.g., "Access/AuthEssentials/AuthEssentialsSubsystem.cpp" -> area: "auth"
+  const area = extractAreaFromPath(relativePath, filePart);
+  
+  // Generate snippet ID and URI (ensure uniqueness)
+  let snippetId = generateSnippetId(area, functionPart, filePart);
+  let counter = 1;
+  const baseId = snippetId;
+  
+  // Ensure unique ID by appending counter if needed
+  while (snippetIndex.snippets[snippetId]) {
+    snippetId = `${baseId}-${counter}`;
+    counter++;
+  }
+  
+  const uri = `snippet://${snippetId}`;
+  
+  // Extract metadata
+  const metadata = extractSnippetMetadata(content, relativePath, area, functionPart);
+  
+  const snippet = {
+    id: snippetId,
+    uri: uri,
+    name: snippetInfo.name,
+    area: area,
+    function: functionPart,
+    file: relativePath,
+    filePath: filePath,
+    content: content,
+    startLine: snippetInfo.startLine,
+    endLine: snippetInfo.endLine,
+    language: "cpp",
+    metadata: metadata,
+    tags: metadata.tags,
+    uses: metadata.uses,
+    symbols: metadata.symbols,
+  };
+  
+  snippetIndex.snippets[snippetId] = snippet;
+  
+  // Index by tags
+  metadata.tags.forEach(tag => {
+    if (!snippetIndex.byTag[tag]) {
+      snippetIndex.byTag[tag] = [];
+    }
+    if (!snippetIndex.byTag[tag].includes(snippetId)) {
+      snippetIndex.byTag[tag].push(snippetId);
+    }
+  });
+  
+  // Index by area
+  if (!snippetIndex.byArea[area]) {
+    snippetIndex.byArea[area] = [];
+  }
+  if (!snippetIndex.byArea[area].includes(snippetId)) {
+    snippetIndex.byArea[area].push(snippetId);
+  }
+}
+
+/**
+ * Extract area/category from file path
+ * e.g., "Access/AuthEssentials/AuthEssentialsSubsystem.cpp" -> "auth"
+ */
+function extractAreaFromPath(relativePath, fileName) {
+  // Normalize path separators
+  const normalizedPath = relativePath.replace(/\\/g, "/");
+  const pathParts = normalizedPath.split("/");
+  
+  // Map common directory names to areas
+  const areaMap = {
+    "Access": "access",
+    "AuthEssentials": "auth",
+    "Social": "social",
+    "Play": "play",
+    "PartyEssentials": "party",
+    "SessionEssentials": "session",
+    "MatchmakingEssentials": "matchmaking",
+    "MatchmakingDS": "matchmaking",
+    "MatchmakingP2P": "matchmaking",
+    "MatchSessionDS": "matchmaking",
+    "MatchSessionEssentials": "matchmaking",
+    "MatchSessionP2P": "matchmaking",
+    "FriendsEssentials": "friends",
+    "ChatEssentials": "chat",
+    "SessionChat": "chat",
+    "PrivateChat": "chat",
+    "PresenceEssentials": "presence",
+    "RecentPlayers": "recent-players",
+    "Storage": "storage",
+    "CloudSaveEssentials": "cloudsave",
+    "StatisticsEssentials": "statistics",
+    "Monetization": "monetization",
+    "EntitlementsEssentials": "entitlements",
+    "InGameStoreEssentials": "store",
+    "InGameStoreDisplays": "store",
+    "StoreItemPurchase": "store",
+    "WalletEssentials": "wallet",
+    "Engagement": "engagement",
+    "ChallengeEssentials": "challenge",
+    "LeaderboardEssentials": "leaderboard",
+    "PeriodicLeaderboard": "leaderboard",
+    "GameTelemetry": "telemetry",
+    "TutorialModuleUtilities": "utilities",
+    "GameSessionEssentials": "session",
+    "CustomMatch": "matchmaking",
+    "MultiplayerDSEssentials": "multiplayer",
+    "PlayingWithFriends": "social",
+    "PlayingWithParty": "party",
+    "OnlineSettings": "settings",
+    "CrossplayPreference": "settings",
+    "RegionPreferences": "settings",
+    "RegionPreferencesEssentials": "settings",
+    "NativePlatformPurchase": "monetization",
+  };
+  
+  // Check each path part
+  for (const part of pathParts) {
+    if (areaMap[part]) {
+      return areaMap[part];
+    }
+  }
+  
+  // Fallback: extract from file name
+  const fileNameLower = fileName.toLowerCase();
+  if (fileNameLower.includes("auth")) return "auth";
+  if (fileNameLower.includes("login")) return "auth";
+  if (fileNameLower.includes("party")) return "party";
+  if (fileNameLower.includes("session")) return "session";
+  if (fileNameLower.includes("chat")) return "chat";
+  if (fileNameLower.includes("friend")) return "friends";
+  if (fileNameLower.includes("cloudsave")) return "cloudsave";
+  if (fileNameLower.includes("stat")) return "statistics";
+  if (fileNameLower.includes("store")) return "store";
+  if (fileNameLower.includes("wallet")) return "wallet";
+  if (fileNameLower.includes("leaderboard")) return "leaderboard";
+  if (fileNameLower.includes("matchmaking")) return "matchmaking";
+  if (fileNameLower.includes("presence")) return "presence";
+  
+  return "general";
+}
+
+/**
+ * Generate snippet ID for URI
+ * Format: oss/{area}/{function-name}
+ */
+function generateSnippetId(area, functionName, fileName) {
+  // Normalize function name
+  const normalized = functionName
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+  
+  // If function name is empty or generic, use file name
+  if (!normalized || normalized === "public" || normalized === "private" || normalized === "protected") {
+    const fileBase = fileName.replace(/\.(cpp|h)$/, "").toLowerCase();
+    return `oss/${area}/${fileBase}`;
+  }
+  
+  return `oss/${area}/${normalized}`;
+}
+
+/**
+ * Extract metadata from snippet content
+ */
+function extractSnippetMetadata(content, filePath, area, functionName) {
+  const metadata = {
+    tags: [],
+    uses: [],
+    symbols: {
+      classes: [],
+      methods: [],
+      functions: [],
+      includes: [],
+    },
+  };
+  
+  // Add area-based tags
+  metadata.tags.push(area);
+  
+  // Add function-based tags
+  const functionLower = functionName.toLowerCase();
+  const contentLower = content.toLowerCase();
+  
+  if (functionLower.includes("login") || contentLower.includes("login")) {
+    metadata.tags.push("login", "authentication");
+  }
+  if (functionLower.includes("logout") || contentLower.includes("logout")) {
+    metadata.tags.push("logout", "authentication");
+  }
+  if (functionLower.includes("auth") || contentLower.includes("identity")) {
+    metadata.tags.push("authentication");
+  }
+  if (functionLower.includes("party") || contentLower.includes("party")) {
+    metadata.tags.push("party", "multiplayer");
+  }
+  if (functionLower.includes("session") || contentLower.includes("gamesession")) {
+    metadata.tags.push("session", "multiplayer");
+  }
+  if (functionLower.includes("chat") || contentLower.includes("chat")) {
+    metadata.tags.push("chat", "messaging");
+  }
+  if (functionLower.includes("friend") || contentLower.includes("friend")) {
+    metadata.tags.push("friends", "social");
+  }
+  if (functionLower.includes("presence") || contentLower.includes("presence")) {
+    metadata.tags.push("presence", "social");
+  }
+  if (functionLower.includes("cloudsave") || contentLower.includes("cloudsave") || contentLower.includes("playerrecord")) {
+    metadata.tags.push("cloudsave", "storage");
+  }
+  if (functionLower.includes("stat") || contentLower.includes("statistic")) {
+    metadata.tags.push("statistics", "storage");
+  }
+  if (functionLower.includes("store") || contentLower.includes("store") || contentLower.includes("item")) {
+    metadata.tags.push("store", "monetization");
+  }
+  if (functionLower.includes("wallet") || contentLower.includes("wallet")) {
+    metadata.tags.push("wallet", "monetization");
+  }
+  if (functionLower.includes("leaderboard") || contentLower.includes("leaderboard")) {
+    metadata.tags.push("leaderboard", "engagement");
+  }
+  if (functionLower.includes("matchmaking") || contentLower.includes("matchmaking")) {
+    metadata.tags.push("matchmaking", "multiplayer");
+  }
+  if (functionLower.includes("initialize") || functionLower.includes("init")) {
+    metadata.tags.push("initialization");
+  }
+  if (functionLower.includes("deinitialize") || functionLower.includes("deinit")) {
+    metadata.tags.push("cleanup");
+  }
+  if (functionLower.includes("query") || contentLower.includes("query")) {
+    metadata.tags.push("query");
+  }
+  if (functionLower.includes("update") || contentLower.includes("update")) {
+    metadata.tags.push("update");
+  }
+  if (functionLower.includes("get") || functionLower.includes("retrieve")) {
+    metadata.tags.push("getter");
+  }
+  if (functionLower.includes("set") || functionLower.includes("save")) {
+    metadata.tags.push("setter");
+  }
+  if (functionLower.includes("send") || contentLower.includes("send")) {
+    metadata.tags.push("send");
+  }
+  if (functionLower.includes("receive") || contentLower.includes("receive") || contentLower.includes("on")) {
+    metadata.tags.push("receive", "callback");
+  }
+  
+  // Extract code symbols
+  const codeMetadata = extractCodeMetadata(content, path.basename(filePath));
+  metadata.symbols.classes = codeMetadata.classes;
+  metadata.symbols.methods = codeMetadata.methods;
+  metadata.symbols.includes = codeMetadata.includes;
+  metadata.symbols.namespaces = codeMetadata.namespaces;
+  
+  // Extract function calls (methods being called)
+  const functionCallRegex = /([A-Za-z_][A-Za-z0-9_]*)\s*\(/g;
+  const seenCalls = new Set();
+  let match;
+  while ((match = functionCallRegex.exec(content)) !== null) {
+    const funcName = match[1];
+    if (funcName && 
+        !["if", "for", "while", "switch", "return", "ensure", "Cast", "StaticCast"].includes(funcName) &&
+        !seenCalls.has(funcName)) {
+      metadata.symbols.functions.push(funcName);
+      seenCalls.add(funcName);
+    }
+  }
+  
+  // Determine uses based on symbols and content
+  if (metadata.symbols.includes.some(inc => inc.includes("Identity"))) {
+    metadata.uses.push("authentication");
+  }
+  if (metadata.symbols.includes.some(inc => inc.includes("Session"))) {
+    metadata.uses.push("session-management");
+  }
+  if (metadata.symbols.includes.some(inc => inc.includes("Chat"))) {
+    metadata.uses.push("chat");
+  }
+  if (metadata.symbols.includes.some(inc => inc.includes("Party"))) {
+    metadata.uses.push("party");
+  }
+  if (metadata.symbols.includes.some(inc => inc.includes("CloudSave"))) {
+    metadata.uses.push("cloud-save");
+  }
+  if (metadata.symbols.includes.some(inc => inc.includes("Statistic"))) {
+    metadata.uses.push("statistics");
+  }
+  
+  // Remove duplicates
+  metadata.tags = [...new Set(metadata.tags)];
+  metadata.uses = [...new Set(metadata.uses)];
+  
+  return metadata;
+}
+
+/**
+ * Search snippets by various criteria
+ */
+export function searchSnippets(snippetIndex, options = {}) {
+  const {
+    query = "",
+    area = null,
+    tags = [],
+    limit = 20,
+  } = options;
+
+  if (!snippetIndex || !snippetIndex.snippets) {
+    return [];
+  }
+
+  const queryLower = query.toLowerCase();
+  const results = [];
+  const scoredResults = [];
+
+  // Score each snippet based on relevance
+  for (const [snippetId, snippet] of Object.entries(snippetIndex.snippets)) {
+    let score = 0;
+    let matches = false;
+
+    // Filter by area
+    if (area && snippet.area !== area) {
+      continue;
+    }
+
+    // Filter by tags (all specified tags must match)
+    if (tags.length > 0) {
+      const snippetTags = snippet.tags || [];
+      const allTagsMatch = tags.every(tag => 
+        snippetTags.some(st => st.toLowerCase() === tag.toLowerCase())
+      );
+      if (!allTagsMatch) {
+        continue;
+      }
+    }
+
+    // Search in query text
+    if (queryLower) {
+      // Exact name match (highest score)
+      if (snippet.name && snippet.name.toLowerCase().includes(queryLower)) {
+        score += 100;
+        matches = true;
+      }
+
+      // Function name match
+      if (snippet.function && snippet.function.toLowerCase().includes(queryLower)) {
+        score += 80;
+        matches = true;
+      }
+
+      // Tag match
+      if (snippet.tags) {
+        const tagMatches = snippet.tags.filter(tag => 
+          tag.toLowerCase().includes(queryLower)
+        ).length;
+        score += tagMatches * 60;
+        if (tagMatches > 0) matches = true;
+      }
+
+      // Area match
+      if (snippet.area && snippet.area.toLowerCase().includes(queryLower)) {
+        score += 50;
+        matches = true;
+      }
+
+      // Content match (lower score, but still relevant)
+      if (snippet.content) {
+        const contentLower = snippet.content.toLowerCase();
+        if (contentLower.includes(queryLower)) {
+          // Count occurrences for better scoring
+          const occurrences = (contentLower.match(new RegExp(queryLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+          score += Math.min(occurrences * 10, 40);
+          matches = true;
+        }
+      }
+
+      // Symbol match (classes, methods, functions)
+      if (snippet.symbols) {
+        const symbolMatches = [
+          ...(snippet.symbols.classes || []),
+          ...(snippet.symbols.methods || []),
+          ...(snippet.symbols.functions || []),
+        ].filter(symbol => 
+          symbol.toLowerCase().includes(queryLower)
+        ).length;
+        score += symbolMatches * 30;
+        if (symbolMatches > 0) matches = true;
+      }
+
+      // File path match
+      if (snippet.file && snippet.file.toLowerCase().includes(queryLower)) {
+        score += 20;
+        matches = true;
+      }
+
+      // Uses match
+      if (snippet.uses) {
+        const usesMatches = snippet.uses.filter(use => 
+          use.toLowerCase().includes(queryLower)
+        ).length;
+        score += usesMatches * 25;
+        if (usesMatches > 0) matches = true;
+      }
+
+      // Only include if it matches the query
+      if (!matches) {
+        continue;
+      }
+    } else {
+      // No query - include all (filtered by area/tags if specified)
+      matches = true;
+    }
+
+    if (matches) {
+      scoredResults.push({
+        snippet,
+        score,
+      });
+    }
+  }
+
+  // Sort by score (descending) and limit results
+  scoredResults.sort((a, b) => b.score - a.score);
+  
+  return scoredResults
+    .slice(0, limit)
+    .map(({ snippet }) => ({
+      id: snippet.id,
+      uri: snippet.uri,
+      name: snippet.name,
+      area: snippet.area,
+      function: snippet.function,
+      file: snippet.file,
+      tags: snippet.tags,
+      uses: snippet.uses,
+      description: `${snippet.area}/${snippet.function} - ${snippet.name}`,
+      startLine: snippet.startLine,
+      endLine: snippet.endLine,
+    }));
 }

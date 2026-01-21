@@ -9,14 +9,17 @@ import {
 import { fileURLToPath } from "url";
 import { dirname, join, basename } from "path";
 import { loadSymbols } from "./parser.js";
-import { indexSourceFiles, searchSourceFiles, getMethodImplementation } from "./sourceIndexer.js";
+import { indexSourceFiles, searchSourceFiles, getMethodImplementation, indexSnippets, searchSnippets } from "./sourceIndexer.js";
 
 // Get the directory of this script file (not cwd)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+const sourcesDir = join(__dirname, "source");
+
 // Resolve Documentation/xml relative to this script's location
-const xmlDir = join(__dirname, "Documentation", "xml");
+const unrealSDKXmlDir = join(sourcesDir, "unreal-sdk");
+const ossSDKDir = join(sourcesDir, "oss-sdk");
 
 // Resolve SDK repository root - will clone from GitHub if needed
 // Store in a cache directory relative to this script
@@ -24,7 +27,8 @@ const cacheDir = join(__dirname, "..", ".cache");
 const repoRoot = cacheDir; // indexSourceFiles will handle cloning into .cache/accelbyte-unreal-sdk-plugin
 
 // Load symbols using the existing parser - keep parsing code intact
-const symbols = loadSymbols(xmlDir);
+const unrealsdk_symbols = loadSymbols(unrealSDKXmlDir, "unreal-sdk", __dirname);
+const osssdk_symbols = loadSymbols(ossSDKDir, "oss-sdk", __dirname);
 
 // Index source code files from the repository
 let sourceIndex = null;
@@ -40,6 +44,19 @@ try {
   console.error(`Stack trace: ${error.stack}`);
   // Don't set sourceIndex to null - let it fail explicitly so we know indexing didn't work
   // The server will still run, but source code features won't be available
+}
+
+// Index code snippets from bytewars-snippets
+let snippetIndex = null;
+try {
+  console.error(`Starting snippet indexing from ${__dirname}...`);
+  snippetIndex = indexSnippets(__dirname);
+  const snippetCount = Object.keys(snippetIndex.snippets).length;
+  console.error(`Snippet indexing complete: ${snippetCount} snippets indexed`);
+} catch (error) {
+  console.error(`ERROR: Snippet indexing failed: ${error.message}`);
+  console.error(`Stack trace: ${error.stack}`);
+  // Continue without snippets
 }
 
 // Create the MCP server instance
@@ -60,15 +77,25 @@ const server = new Server(
 server.setRequestHandler(ListResourcesRequestSchema, async () => {
   const resources = [];
 
-  // Add symbol resources (from XML documentation)
-  Object.keys(symbols).forEach((id) => {
+  Object.keys(osssdk_symbols).forEach((id) => {
     resources.push({
-      uri: `cpp://${id}`,
-      name: symbols[id].name,
-      description: `${symbols[id].type}: ${symbols[id].name}`,
+      uri: `oss-sdk/cpp://${id}`,
+      name: osssdk_symbols[id].name,
+      description: `${osssdk_symbols[id].type}: ${osssdk_symbols[id].name}`,
       mimeType: "application/json",
     });
   });
+  // Add symbol resources (from XML documentation)
+  Object.keys(unrealsdk_symbols).forEach((id) => {
+    resources.push({
+      uri: `unreal-sdk/cpp://${id}`,
+      name: unrealsdk_symbols[id].name,
+      description: `${unrealsdk_symbols[id].type}: ${unrealsdk_symbols[id].name}`,
+      mimeType: "application/json",
+    });
+  });
+
+
 
   // Add source file resources
   if (sourceIndex) {
@@ -95,6 +122,21 @@ server.setRequestHandler(ListResourcesRequestSchema, async () => {
     });
   }
 
+  // Add snippet resources
+  if (snippetIndex) {
+    Object.keys(snippetIndex.snippets).forEach((snippetId) => {
+      const snippet = snippetIndex.snippets[snippetId];
+      const tagsStr = snippet.tags.join(", ");
+      const usesStr = snippet.uses.length > 0 ? ` | Uses: ${snippet.uses.join(", ")}` : "";
+      resources.push({
+        uri: snippet.uri,
+        name: snippet.name,
+        description: `Snippet: ${snippet.area}/${snippet.function} | Tags: ${tagsStr}${usesStr} | ${snippet.file}`,
+        mimeType: "application/json",
+      });
+    });
+  }
+
   return { resources };
 });
 
@@ -102,10 +144,10 @@ server.setRequestHandler(ListResourcesRequestSchema, async () => {
 server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
   const { uri } = request.params;
 
-  // Handle symbol resources (cpp://)
-  if (uri.startsWith("cpp://")) {
-    const id = uri.replace("cpp://", "");
-    const symbol = symbols[id];
+  // Handle symbol resources (unreal-sdk/cpp:// or oss-sdk/cpp://)
+  if (uri.startsWith("unreal-sdk/cpp://")) {
+    const id = uri.replace("unreal-sdk/cpp://", "");
+    const symbol = unrealsdk_symbols[id];
 
     if (!symbol) {
       throw new Error(`Resource not found: ${uri}`);
@@ -117,6 +159,67 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
           uri,
           mimeType: "application/json",
           text: JSON.stringify(symbol, null, 2),
+        },
+      ],
+    };
+  }
+
+  if (uri.startsWith("oss-sdk/cpp://")) {
+    const id = uri.replace("oss-sdk/cpp://", "");
+    const symbol = osssdk_symbols[id];
+
+    if (!symbol) {
+      throw new Error(`Resource not found: ${uri}`);
+    }
+
+    return {
+      contents: [
+        {
+          uri,
+          mimeType: "application/json",
+          text: JSON.stringify(symbol, null, 2),
+        },
+      ],
+    };
+  }
+
+  // Handle snippet resources (snippet://)
+  if (uri.startsWith("snippet://")) {
+    if (!snippetIndex) {
+      throw new Error("Snippet indexing is not available");
+    }
+
+    const snippetId = uri.replace("snippet://", "");
+    const snippet = snippetIndex.snippets[snippetId];
+
+    if (!snippet) {
+      throw new Error(`Snippet not found: ${uri}`);
+    }
+
+    // Return snippet with metadata
+    const snippetData = {
+      id: snippet.id,
+      uri: snippet.uri,
+      name: snippet.name,
+      area: snippet.area,
+      function: snippet.function,
+      file: snippet.file,
+      filePath: snippet.filePath,
+      startLine: snippet.startLine,
+      endLine: snippet.endLine,
+      language: snippet.language,
+      tags: snippet.tags,
+      uses: snippet.uses,
+      symbols: snippet.symbols,
+      content: snippet.content,
+    };
+
+    return {
+      contents: [
+        {
+          uri,
+          mimeType: "application/json",
+          text: JSON.stringify(snippetData, null, 2),
         },
       ],
     };
@@ -242,6 +345,36 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             },
           },
           required: ["methodName"],
+        },
+      },
+      {
+        name: "search_snippets",
+        description: "Search for code snippets by query, area, tags, or content. Helps find relevant code examples from the tutorial modules.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            query: {
+              type: "string",
+              description: "Search query - searches in snippet name, function name, tags, area, content, and symbols. Leave empty to search by filters only.",
+            },
+            area: {
+              type: "string",
+              description: "Filter by area (e.g., 'auth', 'party', 'chat', 'session', 'store', 'cloudsave', 'statistics', 'friends', 'presence', 'matchmaking', etc.)",
+            },
+            tags: {
+              type: "array",
+              items: {
+                type: "string",
+              },
+              description: "Filter by tags (all specified tags must match). Examples: 'authentication', 'login', 'multiplayer', 'messaging', 'storage', 'monetization', etc.",
+            },
+            limit: {
+              type: "number",
+              description: "Maximum number of results to return (default: 20)",
+              default: 20,
+            },
+          },
+          required: [],
         },
       },
       {
@@ -473,6 +606,38 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             {
               type: "text",
               text: JSON.stringify({ className, files: classFiles }, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "search_snippets": {
+        if (!snippetIndex) {
+          throw new Error("Snippet indexing is not available");
+        }
+
+        const { query = "", area = null, tags = [], limit = 20 } = args || {};
+        
+        const results = searchSnippets(snippetIndex, {
+          query,
+          area,
+          tags: Array.isArray(tags) ? tags : [],
+          limit,
+        });
+
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify({ 
+                results, 
+                count: results.length,
+                query: query || null,
+                filters: {
+                  area: area || null,
+                  tags: tags.length > 0 ? tags : null,
+                },
+              }, null, 2),
             },
           ],
         };
