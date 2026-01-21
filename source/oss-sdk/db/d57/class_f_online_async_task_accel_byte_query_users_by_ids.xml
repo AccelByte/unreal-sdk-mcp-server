@@ -1,0 +1,662 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteQueryUsersByIds</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryUsersByIds, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="db/d1a/_online_async_task_accel_byte_query_users_by_ids_8h" local="no">OnlineAsyncTaskAccelByteQueryUsersByIds.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a89287aa7e72d85e1268e877e2f14c92b" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteQueryUsersByIds::PlatformType</definition>
+        <argsstring></argsstring>
+        <name>PlatformType</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::PlatformType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of platform that we are querying these users from. Will be set to ACCELBYTE if these are all <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> IDs, or the specific platform name otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="58" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a54a926385f2fcb12e11fd96e094dd98a" prot="private" static="no" mutable="no">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt;FString&gt; FOnlineAsyncTaskAccelByteQueryUsersByIds::UserIds</definition>
+        <argsstring></argsstring>
+        <name>UserIds</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::UserIds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of IDs that we will query </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="63" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a4828e0cc7539997fc8cf06999244b969" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteQueryUsersByIds::bIsImportant</definition>
+        <argsstring></argsstring>
+        <name>bIsImportant</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::bIsImportant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether all of these users that we are querying will be marked as important. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="68" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a4ebf24ab35a15f4152bf22f16ca66e43" prot="private" static="no" mutable="no">
+        <type>FOnQueryUsersComplete</type>
+        <definition>FOnQueryUsersComplete FOnlineAsyncTaskAccelByteQueryUsersByIds::Delegate</definition>
+        <argsstring></argsstring>
+        <name>Delegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::Delegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate that will be fired once the queries complete </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="73" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a9ef3176832e5136241ae6f7e38de70af" prot="private" static="no" mutable="no">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt;FString&gt; FOnlineAsyncTaskAccelByteQueryUsersByIds::UsersToQuery</definition>
+        <argsstring></argsstring>
+        <name>UsersToQuery</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::UsersToQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual array of user IDs that will be queried on the backend </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="78" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1acb77713581d42bc6dc3b173665d30e45" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TSharedRef&lt; <ref refid="da/dd5/struct_f_accel_byte_user_info" kindref="compound">FAccelByteUserInfo</ref> &gt; &gt;</type>
+        <definition>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt; &gt; FOnlineAsyncTaskAccelByteQueryUsersByIds::UsersQueried</definition>
+        <argsstring></argsstring>
+        <name>UsersQueried</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::UsersQueried</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of users that we were able to query from the backend </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="83" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1abc86a91550308c59fcbf8379b2d3d8dd" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TSharedRef&lt; <ref refid="da/dd5/struct_f_accel_byte_user_info" kindref="compound">FAccelByteUserInfo</ref> &gt; &gt;</type>
+        <definition>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt; &gt; FOnlineAsyncTaskAccelByteQueryUsersByIds::UsersCached</definition>
+        <argsstring></argsstring>
+        <name>UsersCached</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::UsersCached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of users that we already had cached in our user store </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="88" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1aff944e38329992499a18a3942a381268" prot="private" static="no" mutable="no">
+        <type>FThreadSafeBool</type>
+        <definition>FThreadSafeBool FOnlineAsyncTaskAccelByteQueryUsersByIds::bHasQueriedBasicUserInfo</definition>
+        <argsstring></argsstring>
+        <name>bHasQueriedBasicUserInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::bHasQueriedBasicUserInfo</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag representing whether we have finished querying basic user info </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="93" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1ae7ed73dbb75598f5fccaf24a3af1d223" prot="private" static="no" mutable="no">
+        <type>FThreadSafeBool</type>
+        <definition>FThreadSafeBool FOnlineAsyncTaskAccelByteQueryUsersByIds::bHasQueriedUserPlatformInfo</definition>
+        <argsstring></argsstring>
+        <name>bHasQueriedUserPlatformInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::bHasQueriedUserPlatformInfo</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag representing whether we have finished querying platform user information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="98" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a16ef0bbfd50eb19fb71ce96ab80769f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, int32 InLocalUserNum, const TArray&lt; FString &gt; &amp;AccelByteIds, bool InBIsImportant, const FOnQueryUsersComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>AccelByteIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>InBIsImportant</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUsersComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queries a bulk of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> IDs using a local user index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="23" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="18" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1aff537a7a37661756e6c638b12654163c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, int32 InLocalUserNum, const FString InPlatformType, const TArray&lt; FString &gt; &amp;PlatformIds, bool InBIsImportant, const FOnQueryUsersComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString</type>
+          <declname>InPlatformType</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>PlatformIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>InBIsImportant</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUsersComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queries a bulk of platform IDs to attempt to get <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> accounts using a local user index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="28" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="33" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a2d031a97055f61da2ce62d8fa4abae83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, const FUniqueNetId &amp;InUserId, const TArray&lt; FString &gt; &amp;AccelByteIds, bool InBIsImportant, const FOnQueryUsersComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InUserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>AccelByteIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>InBIsImportant</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUsersComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queries a bulk of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> IDs using a user ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="33" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="49" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a44a1c2db113bbbe7cf194309a91c79ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, const FUniqueNetId &amp;InUserId, const FString InPlatformType, const TArray&lt; FString &gt; &amp;PlatformIds, bool InBIsImportant, const FOnQueryUsersComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::FOnlineAsyncTaskAccelByteQueryUsersByIds</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InUserId</declname>
+        </param>
+        <param>
+          <type>const FString</type>
+          <declname>InPlatformType</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>PlatformIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>InBIsImportant</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUsersComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Queries a bulk of platform IDs to attempt to get <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> accounts using a user ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="38" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="64" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a5eabf174dffc6e864a4eeb03e017e0f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="40" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="79" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a2abace854b2e5a94ad41887256a6df35" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::Tick</definition>
+        <argsstring>() override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::Tick</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2">Tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple tick override to check if we are using timeouts, and if so check the task timeout and complete the task unsuccessfully if it&apos;s over its timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="41" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="111" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a691dcb0257a6e680b6ae8065fe944bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="42" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="121" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a1fdd026b836ce416e146f4dc84c0d7f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="43" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="137" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a343a8aabae84fd978b399679d7f2fed3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteQueryUsersByIds::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="47" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a2a6720438dc4da7e41b32a575dcc4e3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::OnBulkQueryPlatformIdMappingsSuccess</definition>
+        <argsstring>(const FBulkPlatformUserIdResponse &amp;Result)</argsstring>
+        <name>OnBulkQueryPlatformIdMappingsSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::OnBulkQueryPlatformIdMappingsSuccess</qualifiedname>
+        <param>
+          <type>const FBulkPlatformUserIdResponse &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when querying platform ID mappings in bulk succeeds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="103" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="157" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a58e621e879dd9d214e47ed907844b4ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::OnBulkQueryPlatformIdMappingsError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnBulkQueryPlatformIdMappingsError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::OnBulkQueryPlatformIdMappingsError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when querying platform ID mappings in bulk fails </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="108" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a69db0d5b01f9bbbb0384d25681756224" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::GetBasicUserInfo</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;AccelByteIds)</argsstring>
+        <name>GetBasicUserInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::GetBasicUserInfo</qualifiedname>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>AccelByteIds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calls method to get basic user information by an array of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> IDs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="113" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="185" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a5bfdfb0004c7c3cf69ecfa20730b6376" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::OnGetBasicUserInfoSuccess</definition>
+        <argsstring>(const FListBulkUserInfo &amp;Result)</argsstring>
+        <name>OnGetBasicUserInfoSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::OnGetBasicUserInfoSuccess</qualifiedname>
+        <param>
+          <type>const FListBulkUserInfo &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when querying basic user information by <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> IDs succeeds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="118" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="221" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1ae76a8a19cebeac2841cb0fb2ba23b5cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::OnGetBasicUserInfoError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnGetBasicUserInfoError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::OnGetBasicUserInfoError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when querying basic user information by platform IDs fails </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="123" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="271" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a018cdf853417b18d2f10eca77237c557" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::QueryUsersOnNativePlatform</definition>
+        <argsstring>(const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;PlatformUniqueIds)</argsstring>
+        <name>QueryUsersOnNativePlatform</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::QueryUsersOnNativePlatform</qualifiedname>
+        <param>
+          <type>const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;</type>
+          <declname>PlatformUniqueIds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make a call to query the user manually on the platform that corresponds to the one we are currently on </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="128" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="277" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a476c498bcd87f7419486fa10ad0ff374" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUsersByIds::ExtractPlatformDataFromBasicUserInfo</definition>
+        <argsstring>(const FBaseUserInfo &amp;BasicInfo, FAccelByteUniqueIdComposite &amp;CompositeId)</argsstring>
+        <name>ExtractPlatformDataFromBasicUserInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUsersByIds::ExtractPlatformDataFromBasicUserInfo</qualifiedname>
+        <param>
+          <type>const FBaseUserInfo &amp;</type>
+          <declname>BasicInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite" kindref="compound">FAccelByteUniqueIdComposite</ref> &amp;</type>
+          <declname>CompositeId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to attempt to extract platform type and ID that matches current platform OSS from basic info structure into a composite ID structure that we are creating. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="134" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.cpp" bodystart="301" bodyend="323"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Task to query a bulk of users by <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> or platform IDs, will add these users to the user cache. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryUsersByIds, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteQueryUsersByIds</label>
+        <link refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryUsersByIds, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteQueryUsersByIds</label>
+        <link refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" line="15" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h" bodystart="18" bodyend="136"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>ApiClient</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1aff944e38329992499a18a3942a381268" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>bHasQueriedBasicUserInfo</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1ae7ed73dbb75598f5fccaf24a3af1d223" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>bHasQueriedUserPlatformInfo</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>bHasReference</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a4828e0cc7539997fc8cf06999244b969" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>bIsImportant</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>CurrentState</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a4ebf24ab35a15f4152bf22f16ca66e43" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Delegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Epic</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a476c498bcd87f7419486fa10ad0ff374" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>ExtractPlatformDataFromBasicUserInfo</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a691dcb0257a6e680b6ae8065fe944bb2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a16ef0bbfd50eb19fb71ce96ab80769f5" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1aff537a7a37661756e6c638b12654163c" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a2d031a97055f61da2ce62d8fa4abae83" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a44a1c2db113bbbe7cf194309a91c79ae" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>FOnlineAsyncTaskAccelByteQueryUsersByIds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetApiClient</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a69db0d5b01f9bbbb0384d25681756224" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetBasicUserInfo</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetParentTask</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a343a8aabae84fd978b399679d7f2fed3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>HasTaskTimedOut</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a5eabf174dffc6e864a4eeb03e017e0f9" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Initialize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>LocalUserNum</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a58e621e879dd9d214e47ed907844b4ae" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>OnBulkQueryPlatformIdMappingsError</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a2a6720438dc4da7e41b32a575dcc4e3e" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>OnBulkQueryPlatformIdMappingsSuccess</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1ae76a8a19cebeac2841cb0fb2ba23b5cc" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>OnGetBasicUserInfoError</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a5bfdfb0004c7c3cf69ecfa20730b6376" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>OnGetBasicUserInfoSuccess</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>ParentTask</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a89287aa7e72d85e1268e877e2f14c92b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>PlatformType</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a018cdf853417b18d2f10eca77237c557" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>QueryUsersOnNativePlatform</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>ThisPtr</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a2abace854b2e5a94ad41887256a6df35" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual" ambiguityscope="FOnlineAsyncTaskAccelByte::"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>ToString</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a1fdd026b836ce416e146f4dc84c0d7f3" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>UserId</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a54a926385f2fcb12e11fd96e094dd98a" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>UserIds</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1abc86a91550308c59fcbf8379b2d3d8dd" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>UsersCached</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1acb77713581d42bc6dc3b173665d30e45" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>UsersQueried</name></member>
+      <member refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids_1a9ef3176832e5136241ae6f7e38de70af" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>UsersToQuery</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUsersByIds</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

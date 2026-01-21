@@ -1,0 +1,912 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/dd9/_online_session_interface_v1_accel_byte_8h" kind="file" language="C++">
+    <compoundname>OnlineSessionInterfaceV1AccelByte.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes local="yes">Runtime/Launch/Resources/Version.h</includes>
+    <includes local="yes">UObject/CoreOnline.h</includes>
+    <includes local="yes">Misc/ScopeLock.h</includes>
+    <includes local="yes">OnlineSessionSettings.h</includes>
+    <includes local="yes">Interfaces/OnlineSessionInterface.h</includes>
+    <includes refid="db/dc4/_online_subsystem_accel_byte_package_8h" local="yes">OnlineSubsystemAccelBytePackage.h</includes>
+    <includes local="yes">Core/AccelByteError.h</includes>
+    <includes local="yes">Models/AccelByteSessionBrowserModels.h</includes>
+    <includes local="yes">Models/AccelByteLobbyModels.h</includes>
+    <includes local="yes">LANBeacon.h</includes>
+    <includes refid="dc/d9d/_f_nbo_serialize_to_buffer_accel_byte_8h" local="yes">FNboSerializeToBufferAccelByte.h</includes>
+    <includes local="yes">OnlineDelegateMacros.h</includes>
+    <includes local="yes">AccelByteNetworkingStatus.h</includes>
+    <includedby refid="d6/d02/_online_async_task_accel_byte_ban_user_8cpp" local="yes">OnlineAsyncTaskAccelByteBanUser.cpp</includedby>
+    <includedby refid="da/d4f/_online_async_task_accel_byte_connect_lobby_8cpp" local="yes">OnlineAsyncTaskAccelByteConnectLobby.cpp</includedby>
+    <includedby refid="d8/dc1/_online_async_task_accel_byte_dequeue_joinable_v1_session_8h" local="yes">OnlineAsyncTaskAccelByteDequeueJoinableV1Session.h</includedby>
+    <includedby refid="df/dc3/_online_async_task_accel_byte_enqueue_joinable_v1_session_8h" local="yes">OnlineAsyncTaskAccelByteEnqueueJoinableV1Session.h</includedby>
+    <includedby refid="d1/d9f/_online_async_task_accel_byte_find_v1_game_session_by_id_8cpp" local="yes">OnlineAsyncTaskAccelByteFindV1GameSessionById.cpp</includedby>
+    <includedby refid="d7/d86/_online_async_task_accel_byte_find_v1_sessions_8h" local="yes">OnlineAsyncTaskAccelByteFindV1Sessions.h</includedby>
+    <includedby refid="df/d88/_online_async_task_accel_byte_kick_v1_party_member_8cpp" local="yes">OnlineAsyncTaskAccelByteKickV1PartyMember.cpp</includedby>
+    <includedby refid="d5/d32/_online_async_task_accel_byte_leave_v1_party_8cpp" local="yes">OnlineAsyncTaskAccelByteLeaveV1Party.cpp</includedby>
+    <includedby refid="d2/d2e/_online_async_task_accel_byte_login_8cpp" local="yes">OnlineAsyncTaskAccelByteLogin.cpp</includedby>
+    <includedby refid="d7/dcd/_online_async_task_accel_byte_register_dedicated_v1_session_8h" local="yes">OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.h</includedby>
+    <includedby refid="d5/de7/_online_async_task_accel_byte_register_player_v1_8h" local="yes">OnlineAsyncTaskAccelByteRegisterPlayerV1.h</includedby>
+    <includedby refid="d7/d3c/_online_async_task_accel_byte_remove_user_from_v1_session_8h" local="yes">OnlineAsyncTaskAccelByteRemoveUserFromV1Session.h</includedby>
+    <includedby refid="dd/d22/_online_async_task_accel_byte_retrieve_dedicated_v1_session_info_8h" local="yes">OnlineAsyncTaskAccelByteRetrieveDedicatedV1SessionInfo.h</includedby>
+    <includedby refid="d1/db9/_online_async_task_accel_byte_send_ready_to_a_m_s_8cpp" local="yes">OnlineAsyncTaskAccelByteSendReadyToAMS.cpp</includedby>
+    <includedby refid="d0/d4f/_online_async_task_accel_byte_start_v1_matchmaking_8h" local="yes">OnlineAsyncTaskAccelByteStartV1Matchmaking.h</includedby>
+    <includedby refid="d8/d9b/_online_async_task_accel_byte_unregister_player_v1_8h" local="yes">OnlineAsyncTaskAccelByteUnregisterPlayerV1.h</includedby>
+    <includedby refid="d9/d43/_online_async_task_accel_byte_update_v1_game_session_8h" local="yes">OnlineAsyncTaskAccelByteUpdateV1GameSession.h</includedby>
+    <includedby refid="d4/d10/_online_async_task_accel_byte_update_v1_game_settings_8h" local="yes">OnlineAsyncTaskAccelByteUpdateV1GameSettings.h</includedby>
+    <includedby refid="da/d02/_online_auth_interface_accel_byte_8cpp" local="yes">OnlineAuthInterfaceAccelByte.cpp</includedby>
+    <includedby refid="d0/d8c/_online_party_interface_accel_byte_8cpp" local="yes">OnlinePartyInterfaceAccelByte.cpp</includedby>
+    <includedby refid="df/d58/_online_session_interface_v1_accel_byte_8cpp" local="yes">OnlineSessionInterfaceV1AccelByte.cpp</includedby>
+    <includedby refid="d3/dbc/_online_session_interface_v2_accel_byte_8cpp" local="yes">OnlineSessionInterfaceV2AccelByte.cpp</includedby>
+    <includedby refid="d8/dc8/_online_subsystem_accel_byte_8cpp" local="yes">OnlineSubsystemAccelByte.cpp</includedby>
+    <incdepgraph>
+      <node id="25">
+        <label>AccelByteNetworkingStatus.h</label>
+      </node>
+      <node id="9">
+        <label>Core/AccelByteError.h</label>
+      </node>
+      <node id="15">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="13">
+        <label>FNboSerializeToBufferAccelByte.h</label>
+        <link refid="dc/d9d/_f_nbo_serialize_to_buffer_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlineSessionInterfaceV1AccelByte.h</label>
+        <link refid="d4/dd9/_online_session_interface_v1_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="14">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="7">
+        <label>Interfaces/OnlineSessionInterface.h</label>
+      </node>
+      <node id="12">
+        <label>LANBeacon.h</label>
+      </node>
+      <node id="5">
+        <label>Misc/ScopeLock.h</label>
+      </node>
+      <node id="11">
+        <label>Models/AccelByteLobbyModels.h</label>
+      </node>
+      <node id="19">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="10">
+        <label>Models/AccelByteSessionBrowserModels.h</label>
+      </node>
+      <node id="23">
+        <label>NboSerializer.h</label>
+      </node>
+      <node id="20">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="24">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="6">
+        <label>OnlineSessionSettings.h</label>
+      </node>
+      <node id="21">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="22">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="3">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="4">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>OnlineAsyncTaskAccelByteConnectLobby.cpp</label>
+        <link refid="da/d4f/_online_async_task_accel_byte_connect_lobby_8cpp"/>
+      </node>
+      <node id="14">
+        <label>OnlineAsyncTaskAccelByteLogin.cpp</label>
+        <link refid="d2/d2e/_online_async_task_accel_byte_login_8cpp"/>
+      </node>
+      <node id="12">
+        <label>OnlineAsyncTaskAccelByteKickV1PartyMember.cpp</label>
+        <link refid="df/d88/_online_async_task_accel_byte_kick_v1_party_member_8cpp"/>
+      </node>
+      <node id="13">
+        <label>OnlineAsyncTaskAccelByteLeaveV1Party.cpp</label>
+        <link refid="d5/d32/_online_async_task_accel_byte_leave_v1_party_8cpp"/>
+      </node>
+      <node id="2">
+        <label>OnlineAsyncTaskAccelByteBanUser.cpp</label>
+        <link refid="d6/d02/_online_async_task_accel_byte_ban_user_8cpp"/>
+      </node>
+      <node id="23">
+        <label>OnlineAsyncTaskAccelByteSendReadyToAMS.cpp</label>
+        <link refid="d1/db9/_online_async_task_accel_byte_send_ready_to_a_m_s_8cpp"/>
+      </node>
+      <node id="9">
+        <label>OnlineAsyncTaskAccelByteFindV1GameSessionById.cpp</label>
+        <link refid="d1/d9f/_online_async_task_accel_byte_find_v1_game_session_by_id_8cpp"/>
+      </node>
+      <node id="11">
+        <label>OnlineAsyncTaskAccelByteFindV1Sessions.cpp</label>
+        <link refid="dc/d61/_online_async_task_accel_byte_find_v1_sessions_8cpp"/>
+      </node>
+      <node id="10">
+        <label>OnlineAsyncTaskAccelByteFindV1Sessions.h</label>
+        <link refid="d7/d86/_online_async_task_accel_byte_find_v1_sessions_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>OnlineAsyncTaskAccelByteRegisterPlayerV1.cpp</label>
+        <link refid="d7/de1/_online_async_task_accel_byte_register_player_v1_8cpp"/>
+      </node>
+      <node id="17">
+        <label>OnlineAsyncTaskAccelByteRegisterPlayerV1.h</label>
+        <link refid="d5/de7/_online_async_task_accel_byte_register_player_v1_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp</label>
+        <link refid="dd/d6b/_online_async_task_accel_byte_start_v1_matchmaking_8cpp"/>
+      </node>
+      <node id="24">
+        <label>OnlineAsyncTaskAccelByteStartV1Matchmaking.h</label>
+        <link refid="d0/d4f/_online_async_task_accel_byte_start_v1_matchmaking_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>OnlineAsyncTaskAccelByteUnregisterPlayerV1.cpp</label>
+        <link refid="d8/d04/_online_async_task_accel_byte_unregister_player_v1_8cpp"/>
+      </node>
+      <node id="26">
+        <label>OnlineAsyncTaskAccelByteUnregisterPlayerV1.h</label>
+        <link refid="d8/d9b/_online_async_task_accel_byte_unregister_player_v1_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlineAsyncTaskAccelByteUpdateV1GameSession.cpp</label>
+        <link refid="d7/d23/_online_async_task_accel_byte_update_v1_game_session_8cpp"/>
+      </node>
+      <node id="28">
+        <label>OnlineAsyncTaskAccelByteUpdateV1GameSession.h</label>
+        <link refid="d9/d43/_online_async_task_accel_byte_update_v1_game_session_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>OnlineAsyncTaskAccelByteUpdateV1GameSettings.cpp</label>
+        <link refid="da/db7/_online_async_task_accel_byte_update_v1_game_settings_8cpp"/>
+      </node>
+      <node id="30">
+        <label>OnlineAsyncTaskAccelByteUpdateV1GameSettings.h</label>
+        <link refid="d4/d10/_online_async_task_accel_byte_update_v1_game_settings_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>OnlineAsyncTaskAccelByteDequeueJoinableV1Session.cpp</label>
+        <link refid="d3/db9/_online_async_task_accel_byte_dequeue_joinable_v1_session_8cpp"/>
+      </node>
+      <node id="4">
+        <label>OnlineAsyncTaskAccelByteDequeueJoinableV1Session.h</label>
+        <link refid="d8/dc1/_online_async_task_accel_byte_dequeue_joinable_v1_session_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>OnlineAsyncTaskAccelByteEnqueueJoinableV1Session.cpp</label>
+        <link refid="db/ded/_online_async_task_accel_byte_enqueue_joinable_v1_session_8cpp"/>
+      </node>
+      <node id="7">
+        <label>OnlineAsyncTaskAccelByteEnqueueJoinableV1Session.h</label>
+        <link refid="df/dc3/_online_async_task_accel_byte_enqueue_joinable_v1_session_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.cpp</label>
+        <link refid="d0/dd1/_online_async_task_accel_byte_register_dedicated_v1_session_8cpp"/>
+      </node>
+      <node id="15">
+        <label>OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.h</label>
+        <link refid="d7/dcd/_online_async_task_accel_byte_register_dedicated_v1_session_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>OnlineAsyncTaskAccelByteRemoveUserFromV1Session.cpp</label>
+        <link refid="dd/d41/_online_async_task_accel_byte_remove_user_from_v1_session_8cpp"/>
+      </node>
+      <node id="19">
+        <label>OnlineAsyncTaskAccelByteRemoveUserFromV1Session.h</label>
+        <link refid="d7/d3c/_online_async_task_accel_byte_remove_user_from_v1_session_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>OnlineAsyncTaskAccelByteRetrieveDedicatedV1SessionInfo.cpp</label>
+        <link refid="d7/da3/_online_async_task_accel_byte_retrieve_dedicated_v1_session_info_8cpp"/>
+      </node>
+      <node id="21">
+        <label>OnlineAsyncTaskAccelByteRetrieveDedicatedV1SessionInfo.h</label>
+        <link refid="dd/d22/_online_async_task_accel_byte_retrieve_dedicated_v1_session_info_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>OnlineAuthInterfaceAccelByte.cpp</label>
+        <link refid="da/d02/_online_auth_interface_accel_byte_8cpp"/>
+      </node>
+      <node id="33">
+        <label>OnlinePartyInterfaceAccelByte.cpp</label>
+        <link refid="d0/d8c/_online_party_interface_accel_byte_8cpp"/>
+      </node>
+      <node id="6">
+        <label>OnlineSessionInterfaceV1AccelByte.cpp</label>
+        <link refid="df/d58/_online_session_interface_v1_accel_byte_8cpp"/>
+      </node>
+      <node id="34">
+        <label>OnlineSessionInterfaceV2AccelByte.cpp</label>
+        <link refid="d3/dbc/_online_session_interface_v2_accel_byte_8cpp"/>
+      </node>
+      <node id="35">
+        <label>OnlineSubsystemAccelByte.cpp</label>
+        <link refid="d8/dc8/_online_subsystem_accel_byte_8cpp"/>
+      </node>
+      <node id="1">
+        <label>OnlineSessionInterfaceV1AccelByte.h</label>
+        <link refid="d4/dd9/_online_session_interface_v1_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="db/d2f/struct_f_accel_byte_pending_match_info" prot="public">FAccelBytePendingMatchInfo</innerclass>
+    <innerclass refid="d0/d38/class_f_online_session_v1_accel_byte" prot="public">FOnlineSessionV1AccelByte</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1ac1148356c72b3a89ee060b04166a379c" prot="public" static="no">
+        <name>SETTING_CHANNELNAME</name>
+        <initializer>FName(TEXT(&quot;ABCHANNEL&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Session setting describing the matchmaking channel that is used for a matchmaking ticket. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="42" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1adbcdc0b734de598b18a5b8b93ac5acdc" prot="public" static="no">
+        <name>SETTING_IS_REMOTE_MATCHMAKING</name>
+        <initializer>FName(TEXT(&quot;ABREMOTEMATCHMAKING&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Matchmaking query setting describing whether the matchmaking call was made directly by the user or if it was made by a remote player (ex. party leader). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="48" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1ad24379bd14ec02b424b30f5eb2490588" prot="public" static="no">
+        <name>SETTING_SUBGAMEMODE</name>
+        <initializer>FName(TEXT(&quot;ABSUBGAMEMODE&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1autotoc_md0">
+<title>Matchmaking query setting representing the sub game mode that we want to match with.</title></sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="53" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a6f7903ee465613432312e130bcc56954" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> <ref refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1aa6d9b370f6f50a50725de29c0a5c3ec4" kindref="member">DECLARE_MULTICAST_DELEGATE_OneParam</ref>(FOnReadyConsentRequested, FString) typedef FOnReadyConsentRequested typedef FOnMatchmakingStarted::FDelegate</type>
+        <definition>bool bool bool bool DECLARE_MULTICAST_DELEGATE_OneParam (FOnReadyConsentRequested, FString ) typedef FOnReadyConsentRequested typedef FOnMatchmakingStarted::FDelegate FOnMatchmakingStartedDelegate</definition>
+        <argsstring></argsstring>
+        <name>FOnMatchmakingStartedDelegate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when we need to send a ready consent message to the matchmaker to join a match.</para>
+<para>Normally, you&apos;ll either want to just call SessionInt-&gt;SendReady(MatchId) if you don&apos;t care if players ready up, or have UI to send an explicit ready. Delegate fired when matchmaking has started. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="136" column="42" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a950305bc2e03ca9be1a08edd0e3edb1f" prot="public" static="no">
+        <type>FOnMatchmakingFailed::FDelegate</type>
+        <definition>typedef FOnMatchmakingFailed::FDelegate FOnMatchmakingFailedDelegate</definition>
+        <argsstring></argsstring>
+        <name>FOnMatchmakingFailedDelegate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="145" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a589f8821f3c8faa86953f5a98a55d387" prot="public" static="no">
+        <type>TSharedPtr&lt; <ref refid="d0/d38/class_f_online_session_v1_accel_byte" kindref="compound">FOnlineSessionV1AccelByte</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>typedef TSharedPtr&lt;FOnlineSessionV1AccelByte, ESPMode::ThreadSafe&gt; FOnlineSessionV1AccelBytePtr</definition>
+        <argsstring></argsstring>
+        <name>FOnlineSessionV1AccelBytePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="506" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a3352d83be86514ad2814b54d86dc373b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DECLARE_DELEGATE_OneParam</definition>
+        <argsstring>(FOnDeregisterSessionComplete, bool) DECLARE_DELEGATE_OneParam(FOnSendReadyConsentComplete</argsstring>
+        <name>DECLARE_DELEGATE_OneParam</name>
+        <param>
+          <type>FOnDeregisterSessionComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when deregistering a server from Armada finishes Delegate fired when a request to send a ready consent to the matchmaker finishes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a9f5aeaa4ae37c8eb60151b5a635d37d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool DECLARE_DELEGATE_OneParam</definition>
+        <argsstring>(FOnEnqueueJoinableSessionComplete, bool) DECLARE_DELEGATE_OneParam(FOnDequeueJoinableSessionComplete</argsstring>
+        <name>DECLARE_DELEGATE_OneParam</name>
+        <param>
+          <type>FOnEnqueueJoinableSessionComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a request to enqueue a joinable session completes Delegate fired when a request to dequeue a joinable session completes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a0bbed15a7870c059c1f8e6b6ab08550c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool bool DECLARE_DELEGATE_ThreeParams</definition>
+        <argsstring>(FOnQueryDedicatedSessionInfoComplete, bool, FName, TSharedPtr&lt; FOnlineSessionInfoAccelByteV1 &gt;) DECLARE_DELEGATE_OneParam(FOnRemoveUserFromSessionComplete</argsstring>
+        <name>DECLARE_DELEGATE_ThreeParams</name>
+        <param>
+          <type>FOnQueryDedicatedSessionInfoComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>FName</type>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="df/d90/class_f_online_session_info_accel_byte_v1" kindref="compound">FOnlineSessionInfoAccelByteV1</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a request to query information on a dedicated matchmaking session completes Delegate fired when request to remove user from session completes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a2273480d9c10cb4967c5872809519348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool bool bool DECLARE_DELEGATE_OneParam</definition>
+        <argsstring>(FOnSendStartMatchEventComplete, bool) DECLARE_DELEGATE_OneParam(FOnDropPlayerComplete</argsstring>
+        <name>DECLARE_DELEGATE_OneParam</name>
+        <param>
+          <type>FOnSendStartMatchEventComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a request to post event to session browser that a match has started completes #SG Delegate fired when a request to drop a player from a session completes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dd9/_online_session_interface_v1_accel_byte_8h_1aa6d9b370f6f50a50725de29c0a5c3ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d55/_online_session_interface_v2_accel_byte_8h_1afeb9cf67fc49eccf810df0dff3d19351" kindref="member">DECLARE_MULTICAST_DELEGATE_TwoParams</ref>(FOnDedicatedServerNotification, FString, <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>) typedef FOnDedicatedServerNotification</type>
+        <definition>DECLARE_MULTICAST_DELEGATE_TwoParams(FOnDedicatedServerNotification, FString, int32) typedef FOnDedicatedServerNotification DECLARE_MULTICAST_DELEGATE_OneParam</definition>
+        <argsstring>(FOnMatchmakingFailed, const FErrorInfo &amp;)</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE_OneParam</name>
+        <param>
+          <type>FOnMatchmakingFailed</type>
+        </param>
+        <param>
+          <type>const FErrorInfo &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a DS notification has been received from the Lobby websocket. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" line="144" column="1" declfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h" declline="144" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Runtime/Launch/Resources/Version.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ENGINE_MAJOR_VERSION<sp/>&gt;=<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Online/CoreOnline.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;UObject/CoreOnline.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/ScopeLock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OnlineSessionSettings.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Interfaces/OnlineSessionInterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/dc4/_online_subsystem_accel_byte_package_8h" kindref="compound">OnlineSubsystemAccelBytePackage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Core/AccelByteError.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Models/AccelByteSessionBrowserModels.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Models/AccelByteLobbyModels.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(ENGINE_MAJOR_VERSION<sp/>==<sp/>5<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&gt;=<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;LANBeacon.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Online/LANBeacon.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d9d/_f_nbo_serialize_to_buffer_accel_byte_8h" kindref="compound">FNboSerializeToBufferAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OnlineDelegateMacros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Runtime/Launch/Resources/Version.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AccelByteNetworkingStatus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d38/class_f_online_session_v1_accel_byte" kindref="compound">FOnlineSessionV1AccelByte</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">FMatchSummaryInfo;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FOnlineSessionSearchResult;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">FErrorInfo;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IOnlineSubsystem;</highlight></codeline>
+<codeline lineno="42" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1ac1148356c72b3a89ee060b04166a379c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTING_CHANNELNAME<sp/>FName(TEXT(&quot;ABCHANNEL&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1adbcdc0b734de598b18a5b8b93ac5acdc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTING_IS_REMOTE_MATCHMAKING<sp/>FName(TEXT(&quot;ABREMOTEMATCHMAKING&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1ad24379bd14ec02b424b30f5eb2490588" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTING_SUBGAMEMODE<sp/>FName(TEXT(&quot;ABSUBGAMEMODE&quot;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="db/d2f/struct_f_accel_byte_pending_match_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="db/d2f/struct_f_accel_byte_pending_match_info" kindref="compound">FAccelBytePendingMatchInfo</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="db/d2f/struct_f_accel_byte_pending_match_info_1ad8b85865cf1562f20d1cf55501ddc02a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1ad8b85865cf1562f20d1cf55501ddc02a" kindref="member">MatchId</ref>;</highlight></codeline>
+<codeline lineno="61" refid="db/d2f/struct_f_accel_byte_pending_match_info_1a844b2d7dd89a71b8d961e3528e06de24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a844b2d7dd89a71b8d961e3528e06de24" kindref="member">ServerName</ref>;</highlight></codeline>
+<codeline lineno="62" refid="db/d2f/struct_f_accel_byte_pending_match_info_1a05a08497bd1cb779a7a43ae9c60592db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a05a08497bd1cb779a7a43ae9c60592db" kindref="member">Ip</ref>;</highlight></codeline>
+<codeline lineno="63" refid="db/d2f/struct_f_accel_byte_pending_match_info_1aefaf69a2b0c87267a150d79a131b1212" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1aefaf69a2b0c87267a150d79a131b1212" kindref="member">GameMode</ref>;</highlight></codeline>
+<codeline lineno="64" refid="db/d2f/struct_f_accel_byte_pending_match_info_1a6154d60ff3f8fa798e882fcf0fe7317a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a6154d60ff3f8fa798e882fcf0fe7317a" kindref="member">Port</ref>;</highlight></codeline>
+<codeline lineno="65" refid="db/d2f/struct_f_accel_byte_pending_match_info_1a86ef7c7aac9e59ca81355ded5e15d2e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FString&gt;<sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a86ef7c7aac9e59ca81355ded5e15d2e1" kindref="member">MatchedPlayers</ref>;</highlight></codeline>
+<codeline lineno="66" refid="db/d2f/struct_f_accel_byte_pending_match_info_1a1825791fd17023ab014aef6117758f57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a1825791fd17023ab014aef6117758f57" kindref="member">ReceivedTimeSeconds</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="67" refid="db/d2f/struct_f_accel_byte_pending_match_info_1ae037f2b1175ea834081cc1777bc03140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1ae037f2b1175ea834081cc1777bc03140" kindref="member">bIsLocalServer</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68" refid="db/d2f/struct_f_accel_byte_pending_match_info_1a1acaac4d157854b79001d9f445987cec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a1acaac4d157854b79001d9f445987cec" kindref="member">bIsJoinable</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69" refid="db/d2f/struct_f_accel_byte_pending_match_info_1a400cb1eeefa4cad817086a9a99204100" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a400cb1eeefa4cad817086a9a99204100" kindref="member">bIsWaitingArea</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="db/d2f/struct_f_accel_byte_pending_match_info_1af392af17137da38d73984f995bae8247" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1af392af17137da38d73984f995bae8247" kindref="member">NotificationMessage</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="db/d2f/struct_f_accel_byte_pending_match_info_1add7961b98034387634359504913a9a79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1add7961b98034387634359504913a9a79" kindref="member">IsValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="77"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE(Damar):<sp/>removing<sp/>GameMode<sp/>and<sp/>MatchedPlayers<sp/>checking.<sp/>Joinable<sp/>session<sp/>cannot<sp/>have<sp/>that<sp/>data,<sp/>unless<sp/>gather<sp/>it<sp/>from<sp/>SessionBrowser.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1ad8b85865cf1562f20d1cf55501ddc02a" kindref="member">MatchId</ref>.IsEmpty()<sp/>&amp;&amp;<sp/>!<ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a844b2d7dd89a71b8d961e3528e06de24" kindref="member">ServerName</ref>.IsEmpty()<sp/>&amp;&amp;<sp/>!<ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a05a08497bd1cb779a7a43ae9c60592db" kindref="member">Ip</ref>.IsEmpty()<sp/>&amp;&amp;<sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info_1a6154d60ff3f8fa798e882fcf0fe7317a" kindref="member">Port</ref><sp/>&gt;<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a3352d83be86514ad2814b54d86dc373b" refkind="member"><highlight class="normal"><ref refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a3352d83be86514ad2814b54d86dc373b" kindref="member">DECLARE_DELEGATE_OneParam</ref>(FOnDeregisterSessionComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><ref refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a3352d83be86514ad2814b54d86dc373b" kindref="member">DECLARE_DELEGATE_OneParam</ref>(FOnSendReadyConsentComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a9f5aeaa4ae37c8eb60151b5a635d37d0" refkind="member"><highlight class="normal"><ref refid="d0/df3/_online_async_task_accel_byte_jwks_8h_1abeaff217b6a4374f52e8bfd2d76b0b48" kindref="member">DECLARE_DELEGATE_OneParam</ref>(FOnEnqueueJoinableSessionComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="d0/df3/_online_async_task_accel_byte_jwks_8h_1abeaff217b6a4374f52e8bfd2d76b0b48" kindref="member">DECLARE_DELEGATE_OneParam</ref>(FOnDequeueJoinableSessionComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a0bbed15a7870c059c1f8e6b6ab08550c" refkind="member"><highlight class="normal"><ref refid="db/dad/_online_async_task_accel_byte_chat_query_room_8h_1a45a46d0c9b57b8d4a33459339c25b19c" kindref="member">DECLARE_DELEGATE_ThreeParams</ref>(FOnQueryDedicatedSessionInfoComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">,<sp/>FName<sp/></highlight><highlight class="comment">/*SessionName*/</highlight><highlight class="normal">,<sp/>TSharedPtr&lt;<ref refid="df/d90/class_f_online_session_info_accel_byte_v1" kindref="compound">FOnlineSessionInfoAccelByteV1</ref>&gt;<sp/></highlight><highlight class="comment">/*SessionInfo*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><ref refid="d0/df3/_online_async_task_accel_byte_jwks_8h_1abeaff217b6a4374f52e8bfd2d76b0b48" kindref="member">DECLARE_DELEGATE_OneParam</ref>(FOnRemoveUserFromSessionComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a2273480d9c10cb4967c5872809519348" refkind="member"><highlight class="normal"><ref refid="d0/df3/_online_async_task_accel_byte_jwks_8h_1abeaff217b6a4374f52e8bfd2d76b0b48" kindref="member">DECLARE_DELEGATE_OneParam</ref>(FOnSendStartMatchEventComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="d0/df3/_online_async_task_accel_byte_jwks_8h_1abeaff217b6a4374f52e8bfd2d76b0b48" kindref="member">DECLARE_DELEGATE_OneParam</ref>(FOnDropPlayerComplete,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*bWasSuccessful*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="d6/d55/_online_session_interface_v2_accel_byte_8h_1a1c6b61174c4435f95c77775c3268d2d3" kindref="member">DECLARE_MULTICAST_DELEGATE_OneParam</ref>(FOnReadyConsentRequested,<sp/>FString<sp/></highlight><highlight class="comment">/*MatchId*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">typedef<sp/>FOnReadyConsentRequested::FDelegate<sp/>FOnReadyConsentRequestedDelegate;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><ref refid="d3/d4d/_online_agreement_interface_accel_byte_8h_1a74a5c90ac8d118db3355664a843b6209" kindref="member">DECLARE_MULTICAST_DELEGATE</ref>(FOnMatchmakingStarted)</highlight></codeline>
+<codeline lineno="136" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a6f7903ee465613432312e130bcc56954" refkind="member"><highlight class="normal">typedef<sp/>FOnMatchmakingStarted::FDelegate<sp/><ref refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a6f7903ee465613432312e130bcc56954" kindref="member">FOnMatchmakingStartedDelegate</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><ref refid="d6/d55/_online_session_interface_v2_accel_byte_8h_1afeb9cf67fc49eccf810df0dff3d19351" kindref="member">DECLARE_MULTICAST_DELEGATE_TwoParams</ref>(FOnDedicatedServerNotification,<sp/>FString<sp/></highlight><highlight class="comment">/*Ip*/</highlight><highlight class="normal">,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/></highlight><highlight class="comment">/*Port*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">typedef<sp/>FOnDedicatedServerNotification::FDelegate<sp/>FOnDedicatedServerNotificationDelegate;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1aa6d9b370f6f50a50725de29c0a5c3ec4" refkind="member"><highlight class="normal"><ref refid="d6/d55/_online_session_interface_v2_accel_byte_8h_1a1c6b61174c4435f95c77775c3268d2d3" kindref="member">DECLARE_MULTICAST_DELEGATE_OneParam</ref>(FOnMatchmakingFailed,<sp/>const<sp/>FErrorInfo&amp;<sp/></highlight><highlight class="comment">/*Error*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a950305bc2e03ca9be1a08edd0e3edb1f" refkind="member"><highlight class="normal">typedef<sp/>FOnMatchmakingFailed::FDelegate<sp/><ref refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a950305bc2e03ca9be1a08edd0e3edb1f" kindref="member">FOnMatchmakingFailedDelegate</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="d0/d38/class_f_online_session_v1_accel_byte" refkind="compound"><highlight class="normal">class<sp/>ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a4d3fe9cbe0f9f7addf6bf2b054cf3652" kindref="member">FOnlineSessionV1AccelByte</ref><sp/>:<sp/>public<sp/>IOnlineSession,<sp/>public<sp/>TSharedFromThis&lt;<ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a4d3fe9cbe0f9f7addf6bf2b054cf3652" kindref="member">FOnlineSessionV1AccelByte</ref>,<sp/>ESPMode::ThreadSafe&gt;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="d0/d38/class_f_online_session_v1_accel_byte_1a55e1916b07e1f0ba72d6e3ec99424fa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a55e1916b07e1f0ba72d6e3ec99424fa6" kindref="member">AccelByteSubsystem</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="d0/d38/class_f_online_session_v1_accel_byte_1a6eb9cc0f0a50f18abefe6fc212957d9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a6eb9cc0f0a50f18abefe6fc212957d9a" kindref="member">LANPingStartSeconds</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="157" refid="d0/d38/class_f_online_session_v1_accel_byte_1ac1ca859c027eebe5d830cf336cf71575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FAccelByteModelsSessionBrowserData<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ac1ca859c027eebe5d830cf336cf71575" kindref="member">SessionBrowserData</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="d0/d38/class_f_online_session_v1_accel_byte_1a172bddde4bc982ae01e13d61d60ada5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FLANSession<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a172bddde4bc982ae01e13d61d60ada5f" kindref="member">LANSessionManager</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="d0/d38/class_f_online_session_v1_accel_byte_1a025df3c06b42139cde917e87f6d2919a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlineSessionSearch&gt;<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a025df3c06b42139cde917e87f6d2919a" kindref="member">SessionSearchHandle</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="d0/d38/class_f_online_session_v1_accel_byte_1aefa525c12aa4dff520273b295ea094ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FOnlineSessionSettings<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1aefa525c12aa4dff520273b295ea094ec" kindref="member">DefaultSessionSettings</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="d0/d38/class_f_online_session_v1_accel_byte_1a2640a25c956c8adf59eb9037c2958924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlineSessionSettings&gt;<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a2640a25c956c8adf59eb9037c2958924" kindref="member">ExplicitSessionSettings</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="d0/d38/class_f_online_session_v1_accel_byte_1aac97abcd026e04005d3dbd9099ef363f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FString,<sp/>FAccelBytePendingMatchInfo&gt;<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1aac97abcd026e04005d3dbd9099ef363f" kindref="member">PendingMatchesUnderConstruction</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="d0/d38/class_f_online_session_v1_accel_byte_1a0486e0b5a15ff20e634511801a4ba223" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FAccelBytePendingMatchInfo&gt;<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a0486e0b5a15ff20e634511801a4ba223" kindref="member">PendingMatchesToFilter</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="d0/d38/class_f_online_session_v1_accel_byte_1a11fe53d6da3ead24c12e4960ccd0b016" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a11fe53d6da3ead24c12e4960ccd0b016" kindref="member">PendingMatchWaitTimeIncreaseSeconds</ref><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="d0/d38/class_f_online_session_v1_accel_byte_1a34fa60d85829732199999f02d3ef1c56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a34fa60d85829732199999f02d3ef1c56" kindref="member">PendingMatchWaitTimeSeconds</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="d0/d38/class_f_online_session_v1_accel_byte_1a182fd76ca1fdb8c8e6bfa63d7c03c997" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a182fd76ca1fdb8c8e6bfa63d7c03c997" kindref="member">PendingMatchFilterTimerSeconds</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="d0/d38/class_f_online_session_v1_accel_byte_1abd7d5f02a619e38615a8f3077a376ea3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1abd7d5f02a619e38615a8f3077a376ea3" kindref="member">bIsFilteringPendingMatches</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="d0/d38/class_f_online_session_v1_accel_byte_1a5b1c30da64f8dc00e9459b17230ad9b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a5b1c30da64f8dc00e9459b17230ad9b1" kindref="member">MatchmakingTicketId</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="d0/d38/class_f_online_session_v1_accel_byte_1a4d3fe9cbe0f9f7addf6bf2b054cf3652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a4d3fe9cbe0f9f7addf6bf2b054cf3652" kindref="member">FOnlineSessionV1AccelByte</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a55e1916b07e1f0ba72d6e3ec99424fa6" kindref="member">AccelByteSubsystem</ref>(nullptr),</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a025df3c06b42139cde917e87f6d2919a" kindref="member">SessionSearchHandle</ref>(nullptr)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnMatchmakingNotificationReceived(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsMatchmakingNotice&amp;<sp/>Notification);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234" refid="d0/d38/class_f_online_session_v1_accel_byte_1a78ca4e3a76bcc9eb8d6d4eaecc5a2f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a78ca4e3a76bcc9eb8d6d4eaecc5a2f50" kindref="member">IsDSNotifForWaitingArea</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CustomAttribute);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a267cd50e0b11620237b15037226c67cc" kindref="member">CreatePendingMatchFromDSNotif</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsDsNotice&amp;<sp/>Notification);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a667a7f82797bfa87bec34eefce873d0b" kindref="member">OnDedicatedServerNotificationReceived</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsDsNotice&amp;<sp/>Notification);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a1ff9d3aeb08d72a3f9f23a7f01f1326b" kindref="member">GetSessionInformation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>SessionId);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256" refid="d0/d38/class_f_online_session_v1_accel_byte_1a0e16bc4dc857a17b8240c775d35afcf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a0e16bc4dc857a17b8240c775d35afcf0" kindref="member">OnGetMatchSessionError</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="261" refid="d0/d38/class_f_online_session_v1_accel_byte_1a8ac12304e46e5c19c370e07cab406b18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a8ac12304e46e5c19c370e07cab406b18" kindref="member">OnRejectMatchError</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>#TICKETID<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>FOnlineSessionSearchResult<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1aca12bba720c587eb8ed8293f7667340e" kindref="member">ConstructSessionResultForMatch</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d2f/struct_f_accel_byte_pending_match_info" kindref="compound">FAccelBytePendingMatchInfo</ref>&amp;<sp/>PendingMatch);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a6e9b92e2383d6a0492f9a0a90527f454" kindref="member">CreateP2PSession</ref>(FNamedOnlineSession*<sp/>Session);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1af0625771e2ae02f85b82876c5c9c10bc" kindref="member">OnRTCConnected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>NetId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AccelByte::NetworkUtilities::EAccelByteP2PConnectionStatus&amp;<sp/>Status,<sp/>FName<sp/>SessionName);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a34d896589b0a0b1c5352e4dc7a0cebe8" kindref="member">OnRTCClosed</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>&amp;<sp/>NetId,<sp/>FName<sp/>SessionName);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a76d81d31034f5a41f622f74b3b808cac" kindref="member">OnSessionCreateSuccess</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsSessionBrowserData&amp;<sp/>Data,<sp/>FName<sp/>SessionName);</highlight></codeline>
+<codeline lineno="275" refid="d0/d38/class_f_online_session_v1_accel_byte_1a1442ed3b471f594560c81f79a52b976a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a1442ed3b471f594560c81f79a52b976a" kindref="member">UpdateSessionSettings</ref>(FName<sp/>SessionName,<sp/>FSessionSettings<sp/>Settings);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="277" refid="d0/d38/class_f_online_session_v1_accel_byte_1a8e4b82c71fa248be8fdc0af830a8c4ee" refkind="member"><highlight class="normal"><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref>:</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>FOnDedicatedServerNotification<sp/>OnDedicatedServerNotificationDelegate;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="d0/d38/class_f_online_session_v1_accel_byte_1a7939d1c4eeaf221769440f042ae36451" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a7939d1c4eeaf221769440f042ae36451" kindref="member">bSkipSessionWorkOnDSNotif</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="d0/d38/class_f_online_session_v1_accel_byte_1ac37bef2328585b09933635b98af43292" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FNamedOnlineSession&gt;<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ac37bef2328585b09933635b98af43292" kindref="member">Sessions</ref>;</highlight></codeline>
+<codeline lineno="294" refid="d0/d38/class_f_online_session_v1_accel_byte_1a9eb6450d79515532daa51f6b3576e2fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>FCriticalSection<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a9eb6450d79515532daa51f6b3576e2fe" kindref="member">SessionLock</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a4d3fe9cbe0f9f7addf6bf2b054cf3652" kindref="member">FOnlineSessionV1AccelByte</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>InSubsystem);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IOnlineSession</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="d0/d38/class_f_online_session_v1_accel_byte_1ab15409a7a1468f1c7e7e47a54ef2c847" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FNamedOnlineSession*<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ab15409a7a1468f1c7e7e47a54ef2c847" kindref="member">AddNamedSession</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSettings&amp;<sp/>SessionSettings)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="300"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a9eb6450d79515532daa51f6b3576e2fe" kindref="member">SessionLock</ref>);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>(<ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ac37bef2328585b09933635b98af43292" kindref="member">Sessions</ref>)<sp/>FNamedOnlineSession(SessionName,<sp/>SessionSettings);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="d0/d38/class_f_online_session_v1_accel_byte_1aa9a5df34cba2a74a368e65bc91a0abe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FNamedOnlineSession*<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1aa9a5df34cba2a74a368e65bc91a0abe6" kindref="member">AddNamedSession</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSession&amp;<sp/>Session)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="306"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a9eb6450d79515532daa51f6b3576e2fe" kindref="member">SessionLock</ref>);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>(<ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ac37bef2328585b09933635b98af43292" kindref="member">Sessions</ref>)<sp/>FNamedOnlineSession(SessionName,<sp/>Session);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RegisterRealTimeLobbyDelegates(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSessionResultCreateSuccess(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSearchResult&amp;<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Tick(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>NeedsAdvertising();</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>NeedsAdvertising(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FNamedOnlineSession&amp;<sp/>Session<sp/>);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsSessionJoinable(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FNamedOnlineSession&amp;<sp/>Session)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>UpdateLANStatus();</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>JoinLANSession(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>PlayerNum,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>FNamedOnlineSession*<sp/>Session,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>FOnlineSession*<sp/>SearchSession);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>FindLANSession();</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>FinalizeLANSearch();<sp/></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AppendSessionToPacket(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="d9/d2b/class_f_nbo_serialize_to_buffer_accel_byte" kindref="compound">FNboSerializeToBufferAccelByte</ref>&amp;<sp/>Packet,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>FOnlineSession*<sp/>Session);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AppendSessionSettingsToPacket(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="d9/d2b/class_f_nbo_serialize_to_buffer_accel_byte" kindref="compound">FNboSerializeToBufferAccelByte</ref>&amp;<sp/>Packet,<sp/>FOnlineSessionSettings*<sp/>SessionSettings);<sp/><sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReadSessionFromPacket(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/class_f_nbo_serialize_from_buffer_accel_byte" kindref="compound">FNboSerializeFromBufferAccelByte</ref>&amp;<sp/>Packet,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>FOnlineSession*<sp/>Session);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReadSettingsFromPacket(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/class_f_nbo_serialize_from_buffer_accel_byte" kindref="compound">FNboSerializeFromBufferAccelByte</ref>&amp;<sp/>Packet,<sp/>FOnlineSessionSettings&amp;<sp/>SessionSettings);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnValidQueryPacketReceived(uint8*<sp/>PacketData,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>PacketLength,<sp/>uint64<sp/>ClientNonce);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnValidResponsePacketReceived(uint8*<sp/>PacketData,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>PacketLength);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnLANSearchTimeout();</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsHost(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FNamedOnlineSession&amp;<sp/>Session)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPortFromNetDriver(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>&amp;<sp/>Subsystem,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FOnlineSessionInfo&gt;&amp;<sp/>SessionInfo);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351" refid="d0/d38/class_f_online_session_v1_accel_byte_1a95cc2d4f7d33d5512becb71c84a1ae4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a95cc2d4f7d33d5512becb71c84a1ae4c" kindref="member">DEFINE_ONLINE_DELEGATE_ONE_PARAM</ref>(OnReadyConsentRequested,<sp/>FString);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356" refid="d0/d38/class_f_online_session_v1_accel_byte_1a24f602e19924091dafc41f307192a5e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a24f602e19924091dafc41f307192a5e3" kindref="member">DEFINE_ONLINE_DELEGATE</ref>(OnMatchmakingStarted);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="d0/d38/class_f_online_session_v1_accel_byte_1a7350f8b7e4b7ca7f4e61a0f8abecc74e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a7350f8b7e4b7ca7f4e61a0f8abecc74e" kindref="member">~FOnlineSessionV1AccelByte</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetFromSubsystem(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem,<sp/>TSharedPtr&lt;FOnlineSessionV1AccelByte,<sp/>ESPMode::ThreadSafe&gt;&amp;<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetFromWorld(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UWorld*<sp/>World,<sp/>TSharedPtr&lt;FOnlineSessionV1AccelByte,<sp/>ESPMode::ThreadSafe&gt;&amp;<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>IOnlineSession<sp/>Interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>TSharedPtr&lt;const<sp/>FUniqueNetId&gt;<sp/>CreateSessionIdFromString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>SessionIdStr)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FNamedOnlineSession*<sp/>GetNamedSession(FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RemoveNamedSession(FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>EOnlineSessionState::Type<sp/>GetSessionState(FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasPresenceSession()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CreateSession(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>HostingPlayerNum,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSettings&amp;<sp/>NewSessionSettings)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CreateSession(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>HostingPlayerId,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSettings&amp;<sp/>NewSessionSettings)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>StartSession(FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UpdateSession(FName<sp/>SessionName,<sp/>FOnlineSessionSettings&amp;<sp/>UpdatedSessionSettings,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bShouldRefreshOnlineData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EndSession(FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DestroySession(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnDestroySessionCompleteDelegate&amp;<sp/>CompletionDelegate<sp/>=<sp/>FOnDestroySessionCompleteDelegate())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsPlayerInSession(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UniqueId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>StartMatchmaking(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;<sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/>&gt;&amp;<sp/>LocalPlayers,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSettings&amp;<sp/>NewSessionSettings,<sp/>TSharedRef&lt;FOnlineSessionSearch&gt;&amp;<sp/>SearchSettings)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CancelMatchmaking(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>SearchingPlayerNum,<sp/>FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CancelMatchmaking(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>SearchingPlayerId,<sp/>FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>FindSessions(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>SearchingPlayerNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlineSessionSearch&gt;&amp;<sp/>SearchSettings)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>FindSessions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>SearchingPlayerId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlineSessionSearch&gt;&amp;<sp/>SearchSettings)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>FindSessionById(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>SearchingUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>SessionId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>FriendId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnSingleSessionResultCompleteDelegate&amp;<sp/>CompletionDelegate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CancelFindSessions()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>PingSearchResults(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSearchResult&amp;<sp/>SearchResult)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>JoinSession(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>PlayerNum,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSearchResult&amp;<sp/>DesiredSession)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>JoinSession(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PlayerId,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSearchResult&amp;<sp/>DesiredSession)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>FindFriendSession(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>Friend)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>FindFriendSession(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>Friend)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>FindFriendSession(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;TSharedRef&lt;const<sp/>FUniqueNetId&gt;&gt;&amp;<sp/>FriendList)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SendSessionInviteToFriend(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>Friend)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SendSessionInviteToFriend(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>Friend)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SendSessionInviteToFriends(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;<sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/>&gt;&amp;<sp/>Friends)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SendSessionInviteToFriends(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;<sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/>&gt;&amp;<sp/>Friends)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetResolvedConnectString(FName<sp/>SessionName,<sp/>FString&amp;<sp/>ConnectInfo,<sp/>FName<sp/>PortType)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetResolvedConnectString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSearchResult&amp;<sp/>SearchResult,<sp/>FName<sp/>PortType,<sp/>FString&amp;<sp/>ConnectInfo)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlineSessionSettings*<sp/>GetSessionSettings(FName<sp/>SessionName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RegisterPlayer(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PlayerId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bWasInvited)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RegisterPlayers(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;<sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/>&gt;&amp;<sp/>Players,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bWasInvited<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UnregisterPlayer(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PlayerId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UnregisterPlayers(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;<sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/>&gt;&amp;<sp/>Players)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RegisterLocalPlayer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PlayerId,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnRegisterLocalPlayerCompleteDelegate&amp;<sp/>Delegate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UnregisterLocalPlayer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PlayerId,<sp/>FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnUnregisterLocalPlayerCompleteDelegate&amp;<sp/>Delegate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>GetNumSessions()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DumpSessionState()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>IOnlineSession<sp/>Interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CancelMatchmakingNotification();</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="d0/d38/class_f_online_session_v1_accel_byte_1a99e312f18f5f4829aabd63129bc899f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a99e312f18f5f4829aabd63129bc899f4" kindref="member">DEFINE_ONLINE_DELEGATE_ONE_PARAM</ref>(OnMatchmakingFailed,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FErrorInfo&amp;<sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1aa1e416d0efeea4bad1d9bb84952b7ec6" kindref="member">DeregisterSession</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnDeregisterSessionComplete&amp;<sp/>Delegate);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a810c39009ceddae93567f36b73a43ae8" kindref="member">SendReady</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>MatchId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnSendReadyConsentComplete&amp;<sp/>Delegate=FOnSendReadyConsentComplete());</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ad8d0560cea661c52cf1e601b7ad7fba9" kindref="member">SetDefaultSessionSettings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSettings&amp;<sp/>DefaultSettings);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlineSessionSearch&gt;<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a21137e8b110dd035cf1ecaf6de94c8da" kindref="member">GetSessionSearch</ref>();</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a47c1f941e47dd6bf582dc02f6cedc07a" kindref="member">EnqueueJoinableSession</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnEnqueueJoinableSessionComplete&amp;<sp/>Delegate=FOnEnqueueJoinableSessionComplete());</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ab4f89757f4c68d48483b0a9f8e94ef23" kindref="member">DequeueJoinableSession</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnDequeueJoinableSessionComplete&amp;<sp/>Delegate=FOnDequeueJoinableSessionComplete());</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a4be72332d52e43c50840e33d10550aa5" kindref="member">QueryDedicatedSessionInfo</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryDedicatedSessionInfoComplete&amp;<sp/>Delegate=FOnQueryDedicatedSessionInfoComplete());</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a16d7d7efdc166f6cecfb1da363c0bf8d" kindref="member">RemoveUserFromSession</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ChannelName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>MatchId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnRemoveUserFromSessionComplete&amp;<sp/>Delegate=FOnRemoveUserFromSessionComplete());</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473" refid="d0/d38/class_f_online_session_v1_accel_byte_1a558c66f4c3c2261a6fd0e936ab936e16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a558c66f4c3c2261a6fd0e936ab936e16" kindref="member">SendMatchStartEvent</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Playlist,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnSendStartMatchEventComplete&amp;<sp/>Delegate=FOnSendStartMatchEventComplete());</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>#TICKETID<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="479" refid="d0/d38/class_f_online_session_v1_accel_byte_1ad6d5ade325c1c7a55ca8e40f888924d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ad6d5ade325c1c7a55ca8e40f888924d8" kindref="member">GetMatchmakingTicketId</ref>();</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484" refid="d0/d38/class_f_online_session_v1_accel_byte_1ab7012257c4e01032caf3de811c54af83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ab7012257c4e01032caf3de811c54af83" kindref="member">SetMatchmakingTicketId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>TicketId);</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489" refid="d0/d38/class_f_online_session_v1_accel_byte_1a0b2f9152ad51a9c161a998e4e9ef9f43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a0b2f9152ad51a9c161a998e4e9ef9f43" kindref="member">ClearMatchmakingTicketId</ref>();</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a4c2cafa738bf6d582a1d278f6c2ba6a2" kindref="member">ContinueCreatePendingMatchFromDSNotif</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>MatchId);</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1ac635359ce0fc3a2b9eab85cd01564dcf" kindref="member">SendBanUser</ref>(FName<sp/>SessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PlayerId,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>InActionID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InMessage);</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a5696b19a6d9acb4b72f99f9c24632fda" kindref="member">TriggerOnDedicatedServerNotificationReceived</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsDsNotice&amp;<sp/>Notification);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/d38/class_f_online_session_v1_accel_byte_1a596dea3b0cd7deb7714265b96d1b918f" kindref="member">ConstructGameSessionFromBackendSessionModel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsSessionBrowserData&amp;<sp/>BackendSession,<sp/>FOnlineSession&amp;<sp/>OutResult);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506" refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a589f8821f3c8faa86953f5a98a55d387" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FOnlineSessionV1AccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/><ref refid="d4/dd9/_online_session_interface_v1_accel_byte_8h_1a589f8821f3c8faa86953f5a98a55d387" kindref="member">FOnlineSessionV1AccelBytePtr</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSessionInterfaceV1AccelByte.h"/>
+  </compounddef>
+</doxygen>

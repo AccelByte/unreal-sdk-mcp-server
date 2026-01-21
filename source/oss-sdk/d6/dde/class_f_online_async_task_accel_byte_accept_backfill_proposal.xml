@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteAcceptBackfillProposal, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="da/d35/_online_async_task_accel_byte_accept_backfill_proposal_8h" local="no">OnlineAsyncTaskAccelByteAcceptBackfillProposal.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a3d2d726f607daea7437759792c19ca16" prot="private" static="no" mutable="no">
+        <type>FName</type>
+        <definition>FName FOnlineAsyncTaskAccelByteAcceptBackfillProposal::SessionName</definition>
+        <argsstring></argsstring>
+        <name>SessionName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::SessionName</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the session that we are accepting the backfill proposal for </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="38" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1ace8cf63ff5db3a6f569824c027a5918b" prot="private" static="no" mutable="no">
+        <type>FAccelByteModelsV2MatchmakingBackfillProposalNotif</type>
+        <definition>FAccelByteModelsV2MatchmakingBackfillProposalNotif FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Proposal</definition>
+        <argsstring></argsstring>
+        <name>Proposal</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Proposal</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Proposal that we received from matchmaking </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="43" column="52" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a98571ffbc317d40c48bb59cd28e1b94f" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteAcceptBackfillProposal::bStopBackfilling</definition>
+        <argsstring></argsstring>
+        <name>bStopBackfilling</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::bStopBackfilling</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether or not we also want matchmaking to stop trying to backfill for our session </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="48" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a2151639974dfbe838d6b81d31899e689" prot="private" static="no" mutable="no">
+        <type>FOnAcceptBackfillProposalComplete</type>
+        <definition>FOnAcceptBackfillProposalComplete FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Delegate</definition>
+        <argsstring></argsstring>
+        <name>Delegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Delegate</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when we finish the task to accept the backfill proposal </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="53" column="35" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a332d7af1eacb6668ed9c8cd7e0a2e240" prot="private" static="no" mutable="no">
+        <type>FAccelByteModelsV2GameSession</type>
+        <definition>FAccelByteModelsV2GameSession FOnlineAsyncTaskAccelByteAcceptBackfillProposal::GameSessionInfo</definition>
+        <argsstring></argsstring>
+        <name>GameSessionInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::GameSessionInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store game session info from accept backfill response for updating internal game session. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="58" column="31" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1aeb9d231094bc6b17124f11adf5ef9f32" prot="private" static="no" mutable="no">
+        <type>THandler&lt; FAccelByteModelsV2GameSession &gt;</type>
+        <definition>THandler&lt;FAccelByteModelsV2GameSession&gt; FOnlineAsyncTaskAccelByteAcceptBackfillProposal::OnAcceptBackfillProposalSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnAcceptBackfillProposalSuccessDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::OnAcceptBackfillProposalSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="60" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1af564c23e817ad52e64d79ee6fdf85770" prot="private" static="no" mutable="no">
+        <type>FErrorHandler</type>
+        <definition>FErrorHandler FOnlineAsyncTaskAccelByteAcceptBackfillProposal::OnAcceptBackfillProposalErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnAcceptBackfillProposalErrorDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::OnAcceptBackfillProposalErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="61" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a8d71ca0a95817e599e4d49d4a6721992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::FOnlineAsyncTaskAccelByteAcceptBackfillProposal</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const FName &amp;InSessionName, const FAccelByteModelsV2MatchmakingBackfillProposalNotif &amp;InProposal, bool bInStopBackfilling, const FOnAcceptBackfillProposalComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::FOnlineAsyncTaskAccelByteAcceptBackfillProposal</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>InSessionName</declname>
+        </param>
+        <param>
+          <type>const FAccelByteModelsV2MatchmakingBackfillProposalNotif &amp;</type>
+          <declname>InProposal</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bInStopBackfilling</declname>
+        </param>
+        <param>
+          <type>const FOnAcceptBackfillProposalComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="21" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.cpp" bodystart="9" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a333eefedbd0bcdbbf702a497a7019713" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="23" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.cpp" bodystart="19" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1ab52b1a77cc27b351b6dba53464469f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="24" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.cpp" bodystart="35" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1adb807e4ff58f01bf8a988670ebef724a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteAcceptBackfillProposal::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="25" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.cpp" bodystart="86" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a5ae5179b294326cc1decc4b5a3bb0abd" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteAcceptBackfillProposal::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="29" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a487edbe0255b544d1632a61d775d9bea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::AB_ASYNC_TASK_DECLARE_SDK_DELEGATES_WITH_RESULT</definition>
+        <argsstring>(AcceptBackfillProposal, FAccelByteModelsV2GameSession)</argsstring>
+        <name>AB_ASYNC_TASK_DECLARE_SDK_DELEGATES_WITH_RESULT</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteAcceptBackfillProposal::AB_ASYNC_TASK_DECLARE_SDK_DELEGATES_WITH_RESULT</qualifiedname>
+        <param>
+          <type>AcceptBackfillProposal</type>
+        </param>
+        <param>
+          <type>FAccelByteModelsV2GameSession</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="62" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Task to accept a backfill proposal received from matchmaking </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteAcceptBackfillProposal, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</label>
+        <link refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteAcceptBackfillProposal, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</label>
+        <link refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" line="15" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Server/OnlineAsyncTaskAccelByteAcceptBackfillProposal.h" bodystart="18" bodyend="63"/>
+    <listofallmembers>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a487edbe0255b544d1632a61d775d9bea" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>AB_ASYNC_TASK_DECLARE_SDK_DELEGATES_WITH_RESULT</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>ApiClient</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>bHasReference</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a98571ffbc317d40c48bb59cd28e1b94f" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>bStopBackfilling</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>CurrentState</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a2151639974dfbe838d6b81d31899e689" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Delegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Epic</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1ab52b1a77cc27b351b6dba53464469f96" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a8d71ca0a95817e599e4d49d4a6721992" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a332d7af1eacb6668ed9c8cd7e0a2e240" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GameSessionInfo</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetParentTask</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a5ae5179b294326cc1decc4b5a3bb0abd" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>HasTaskTimedOut</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a333eefedbd0bcdbbf702a497a7019713" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Initialize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>LocalUserNum</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1af564c23e817ad52e64d79ee6fdf85770" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>OnAcceptBackfillProposalErrorDelegate</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1aeb9d231094bc6b17124f11adf5ef9f32" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>OnAcceptBackfillProposalSuccessDelegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>ParentTask</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1ace8cf63ff5db3a6f569824c027a5918b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Proposal</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1a3d2d726f607daea7437759792c19ca16" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>SessionName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>ThisPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>ToString</name></member>
+      <member refid="d6/dde/class_f_online_async_task_accel_byte_accept_backfill_proposal_1adb807e4ff58f01bf8a988670ebef724a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteAcceptBackfillProposal</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AccelByte::Core::FAccelByteLRUCache</compoundname>
+    <derivedcompoundref refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file" prot="public" virt="non-virtual">AccelByte::Core::FAccelByteLRUCacheFile&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory" prot="public" virt="non-virtual">AccelByte::Core::FAccelByteLRUCacheMemory&lt; T &gt;</derivedcompoundref>
+    <includes refid="d3/d3f/_accel_byte_l_r_u_cache_8h" local="no">AccelByteLRUCache.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a4a4244236427b8787acdb25466e5c5d2" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::MAX_HTTP_LRU_CACHE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MAX_HTTP_LRU_CACHE_SIZE</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::MAX_HTTP_LRU_CACHE_SIZE</qualifiedname>
+        <initializer>= 20 * 1024 * 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="29" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a4dbd616f9b1200973b4eed4a4b8a4665" prot="protected" static="no" mutable="no">
+        <type>int32</type>
+        <definition>int32 AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::MAX_HTTP_LRU_CACHE_COUNT</definition>
+        <argsstring></argsstring>
+        <name>MAX_HTTP_LRU_CACHE_COUNT</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::MAX_HTTP_LRU_CACHE_COUNT</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="30" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1c7ea002dc515367646b2ec2da6a344b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::bIsInitialized</definition>
+        <argsstring></argsstring>
+        <name>bIsInitialized</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::bIsInitialized</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="32" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1efe1e02eb0b9ad46098ae445cf060a4" prot="protected" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &gt;</type>
+        <definition>TArray&lt;FAccelByteCacheWrapper&lt;T&gt; &gt; AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ChunkArray</definition>
+        <argsstring></argsstring>
+        <name>ChunkArray</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ChunkArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="34" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a709340c4ada08c16558a5bf1153e9cb2" prot="protected" static="no" mutable="no">
+        <type>TDoubleLinkedList&lt; <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &gt;</type>
+        <definition>TDoubleLinkedList&lt;FAccelByteCacheWrapper&lt;T&gt; &gt; AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ChunkDll</definition>
+        <argsstring></argsstring>
+        <name>ChunkDll</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ChunkDll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="35" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a5c0bd8d0fb635ce5a72ffc2fff790162" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TDoubleLinkedList&lt; <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &gt;::TDoubleLinkedListNode *</type>
+        <definition>TDoubleLinkedList&lt; FAccelByteCacheWrapper&lt; T &gt; &gt;::TDoubleLinkedListNode * AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLGetTail</definition>
+        <argsstring>()</argsstring>
+        <name>DLLGetTail</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLGetTail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="39" column="52" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a8b42c4bcb11bc1235c84eb858923c7f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TDoubleLinkedList&lt; <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &gt;::TDoubleLinkedListNode *</type>
+        <definition>TDoubleLinkedList&lt; FAccelByteCacheWrapper&lt; T &gt; &gt;::TDoubleLinkedListNode * AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLGetHead</definition>
+        <argsstring>()</argsstring>
+        <name>DLLGetHead</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLGetHead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="40" column="52" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1e6d001a2722a36e921a99169074a8c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::~FAccelByteLRUCache</definition>
+        <argsstring>()</argsstring>
+        <name>~FAccelByteLRUCache</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::~FAccelByteLRUCache</qualifiedname>
+        <briefdescription>
+<para>Public function and accessed by HttpCache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="109" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1dd06d1d373624df2124126cbec9e5fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::Contains</definition>
+        <argsstring>(const FName &amp;Key)</argsstring>
+        <name>Contains</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::Contains</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Check if the LRU class stores an item with specified key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the key is found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="117" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1abb861ef5da4bebe87d0f9ae69b2d6986" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::Empty</definition>
+        <argsstring>()</argsstring>
+        <name>Empty</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::Empty</qualifiedname>
+        <briefdescription>
+<para>Cleanup the LRU storage and the Memory class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="125" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1fd13d6465f21a4afe1aac3d53a92a52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::Remove</definition>
+        <argsstring>(const FName &amp;Key)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::Remove</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Remove a data from the LRU class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the deleted data exist </para>
+</simplesect>
+<simplesect kind="return"><para>True if the removal success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="140" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="140" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac1397c223c99132ad5c01aadf33abcfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::Emplace</definition>
+        <argsstring>(const FName &amp;Key, T &amp;Item)</argsstring>
+        <name>Emplace</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::Emplace</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>Item</declname>
+        </param>
+        <briefdescription>
+<para>Write/replace an item with specified key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the key is found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="161" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="161" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a24b142294ad1d3e680f64713b14169b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TSharedPtr&lt; T &gt;</type>
+        <definition>TSharedPtr&lt; T &gt; AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::Find</definition>
+        <argsstring>(const FName &amp;Key, bool bPeekOnly=false)</argsstring>
+        <name>Find</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::Find</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bPeekOnly</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Obtain and access the data from LRU class This function will move the data to the &apos;head&apos; as the latest/recently used data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bPeekOnly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, does not affect the order. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the data. Nullptr if the data is not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="190" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="190" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a487edeebb119b667a127d95324cd7cc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TSharedPtr&lt; T &gt;</type>
+        <definition>TSharedPtr&lt; T &gt; AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::operator[]</definition>
+        <argsstring>(const FName &amp;Key)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::operator[]</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="208" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a60067711c94a591e5f6351d188bca923" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>TSharedPtr&lt; T &gt;</type>
+        <definition>virtual TSharedPtr&lt; T &gt; AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::GetTheValueFromChunkArray</definition>
+        <argsstring>(int Index)=0</argsstring>
+        <name>GetTheValueFromChunkArray</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::GetTheValueFromChunkArray</qualifiedname>
+        <reimplementedby refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file_1a681d4305e6da29cd0d19f46628d5b5f5">GetTheValueFromChunkArray</reimplementedby>
+        <reimplementedby refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory_1a33596b4fa62530c8afd5391f8543b7b7">GetTheValueFromChunkArray</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="213" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aef63197033b0830149b92b5343ca2df2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TSharedPtr&lt; T &gt;</type>
+        <definition>TSharedPtr&lt; T &gt; AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::Peek</definition>
+        <argsstring>(const FName &amp;Key)</argsstring>
+        <name>Peek</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::Peek</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Check the value only, does not affect the order of the linked list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the data. Nullptr if the data is not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="221" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a2f8bf253101525af4b4463589a9b11b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::RetrieveAndLoadCacheFileInfo</definition>
+        <argsstring>()</argsstring>
+        <name>RetrieveAndLoadCacheFileInfo</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::RetrieveAndLoadCacheFileInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="226" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a263e8e6b6b905c1349e32f48f73d09ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const size_t</type>
+        <definition>const size_t AccelByte::Core::FAccelByteLRUCache&lt; FHttpRequestPtr &gt;::GetRequiredSize</definition>
+        <argsstring>(FHttpRequestPtr &amp;Data)</argsstring>
+        <name>GetRequiredSize</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::GetRequiredSize</qualifiedname>
+        <param>
+          <type>FHttpRequestPtr &amp;</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="279" column="40" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="279" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a8277e5712be11a6e851475ac84ab083b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const size_t</type>
+        <definition>const size_t AccelByte::Core::FAccelByteLRUCache&lt; FString &gt;::GetRequiredSize</definition>
+        <argsstring>(FString &amp;Data)</argsstring>
+        <name>GetRequiredSize</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::GetRequiredSize</qualifiedname>
+        <param>
+          <type>FString &amp;</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="293" column="40" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="293" bodyend="297"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1080acb16d38884a3689de6045807dff" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLSetEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>DLLSetEmpty</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLSetEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="42" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a6d4383cb1febe965a5e546a3ba9e330a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLGetSize</definition>
+        <argsstring>()</argsstring>
+        <name>DLLGetSize</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLGetSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="43" column="5" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aa4f94a23e9a6a4c0ced9f6eb134992be" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLAddHead</definition>
+        <argsstring>(FAccelByteCacheWrapper&lt; T &gt; NewHead)</argsstring>
+        <name>DLLAddHead</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLAddHead</qualifiedname>
+        <param>
+          <type><ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt;</type>
+          <declname>NewHead</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="44" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a85877426c3bad3aa13bebe782083a362" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLRemoveNode</definition>
+        <argsstring>(typename TDoubleLinkedList&lt; FAccelByteCacheWrapper&lt; T &gt; &gt;::TDoubleLinkedListNode *Removed)</argsstring>
+        <name>DLLRemoveNode</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLRemoveNode</qualifiedname>
+        <param>
+          <type>typename TDoubleLinkedList&lt; <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &gt;::TDoubleLinkedListNode *</type>
+          <declname>Removed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="45" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aaf490fb414b1b23cd17409d613aca77d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLRemoveNode</definition>
+        <argsstring>(typename TDoubleLinkedList&lt; FAccelByteCacheWrapper&lt; T &gt; &gt;::TDoubleLinkedListNode *Removed, bool bDeleteNode)</argsstring>
+        <name>DLLRemoveNode</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLRemoveNode</qualifiedname>
+        <param>
+          <type>typename TDoubleLinkedList&lt; <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &gt;::TDoubleLinkedListNode *</type>
+          <declname>Removed</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bDeleteNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="46" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1af33a0b79312da7d7b5b08d0e5c33737d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ArrayGetNum</definition>
+        <argsstring>()</argsstring>
+        <name>ArrayGetNum</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ArrayGetNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="51" column="5" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aa94abf4229a813d32c83b0ff27bef828" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &amp;</type>
+        <definition>FAccelByteCacheWrapper&lt; T &gt; &amp; AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ArrayGetIndex</definition>
+        <argsstring>(int Index)</argsstring>
+        <name>ArrayGetIndex</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ArrayGetIndex</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="52" column="24" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a3aa6a97ab09a7beeb00519216f1fba59" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ArraySetEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>ArraySetEmpty</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ArraySetEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="53" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a4a1d0a9f347e3ac399bb3b0fbb98b54a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ArrayRemoveAt</definition>
+        <argsstring>(int Index)</argsstring>
+        <name>ArrayRemoveAt</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ArrayRemoveAt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="54" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a3c9a8c7153e446f466976e2926a10907" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ArrayAdd</definition>
+        <argsstring>(const FAccelByteCacheWrapper&lt; T &gt; *Entry)</argsstring>
+        <name>ArrayAdd</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ArrayAdd</qualifiedname>
+        <param>
+          <type>const <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; *</type>
+          <declname>Entry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="55" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a0d926e32bc61d5910bb37dba66c9a026" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::FreeCache</definition>
+        <argsstring>()=0</argsstring>
+        <name>FreeCache</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::FreeCache</qualifiedname>
+        <reimplementedby refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file_1a9b778ccacf63ce9c5406b96bd357c3cd">FreeCache</reimplementedby>
+        <reimplementedby refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory_1a4065e555283c5003abd8202ca5297973">FreeCache</reimplementedby>
+        <briefdescription>
+<para>Private function needs to be overriden. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LRUMemory: Clean the Memory class</para>
+<para>LRUFileCache: Cleanup the stored files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="74" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac41cb095d8f4d7128c60f24863354d57" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::RemoveCache</definition>
+        <argsstring>(const FName &amp;Key)=0</argsstring>
+        <name>RemoveCache</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::RemoveCache</qualifiedname>
+        <reimplementedby refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file_1a9c4ed942dd5d916a51d39ae189b36b86">RemoveCache</reimplementedby>
+        <reimplementedby refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory_1a95590fdb2b3b5d576e833b2f7d55fa8f">RemoveCache</reimplementedby>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>LRUMemory: Clean memory specific key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LRUFileCache: Cleanup specific file for this key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a978a1afe119f7bf171645cc6efc31547" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::FreeCacheBeforeInsertion</definition>
+        <argsstring>(T &amp;Item)=0</argsstring>
+        <name>FreeCacheBeforeInsertion</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::FreeCacheBeforeInsertion</qualifiedname>
+        <reimplementedby refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file_1a573b69009552ddc79b67596fd7659097">FreeCacheBeforeInsertion</reimplementedby>
+        <reimplementedby refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory_1a22b3730c713771831ec175b06271eb2f">FreeCacheBeforeInsertion</reimplementedby>
+        <param>
+          <type>T &amp;</type>
+          <declname>Item</declname>
+        </param>
+        <briefdescription>
+<para>Ensure that we can free up the space before we insert to cache. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Possible to do insert operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="86" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ab7f93ccaf6e82f7685c586b974be8dde" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>const <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; *</type>
+        <definition>virtual const FAccelByteCacheWrapper&lt; T &gt; * AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::InsertToCache</definition>
+        <argsstring>(T &amp;Item, const FName &amp;Key)=0</argsstring>
+        <name>InsertToCache</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::InsertToCache</qualifiedname>
+        <reimplementedby refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file_1a10619364463e3004ffdb6467ecadc88b">InsertToCache</reimplementedby>
+        <reimplementedby refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory_1a1c0cb16d6d60d10c6597ced6eef4b2b0">InsertToCache</reimplementedby>
+        <param>
+          <type>T &amp;</type>
+          <declname>Item</declname>
+        </param>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>LRUMemory: Insert/replace to MemoryPool directly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LRUFileCache: Insert/rewrite to the file directly</para>
+<para><simplesect kind="return"><para>Pointer to the <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref> (LRU Memory) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="94" column="45"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac59cc626681008278169e7e13104ffa9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::ForcefullyPopulateChunkArrayFromStorage</definition>
+        <argsstring>()=0</argsstring>
+        <name>ForcefullyPopulateChunkArrayFromStorage</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::ForcefullyPopulateChunkArrayFromStorage</qualifiedname>
+        <reimplementedby refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file_1aeb94e915e0acc2ea21ee8245e6e4fb3a">ForcefullyPopulateChunkArrayFromStorage</reimplementedby>
+        <reimplementedby refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory_1a1901cebd6d52d71a28c50a15e21678af">ForcefullyPopulateChunkArrayFromStorage</reimplementedby>
+        <briefdescription>
+<para>LRUMemory: Not applicable since memory has nothing to do with persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LRUFileCache: Retrieve the file (persistent storage) &amp; set it to ChunkArray</para>
+<para><simplesect kind="return"><para>Operation success or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="102" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac472d32ae245cfba013a9f8759459486" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::FindIndex</definition>
+        <argsstring>(const FName &amp;Key)</argsstring>
+        <name>FindIndex</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::FindIndex</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Find the index of the ChunkArray based on the storage Key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index number if it exists, otherwise return -1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="235" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="235" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1abb498a534fc0559d457e474f85bfa4c8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>TDoubleLinkedList&lt; <ref refid="d8/dc0/struct_accel_byte_1_1_core_1_1_f_accel_byte_cache_wrapper" kindref="compound">FAccelByteCacheWrapper</ref>&lt; T &gt; &gt;::TDoubleLinkedListNode *</type>
+        <definition>virtual TDoubleLinkedList&lt; FAccelByteCacheWrapper&lt; T &gt; &gt;::TDoubleLinkedListNode * AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::DLLFindNode</definition>
+        <argsstring>(const FName &amp;Key)</argsstring>
+        <name>DLLFindNode</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::DLLFindNode</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Find the pointer of the ChunkDLL&apos;s node based on the storage Key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to node if it exists, otherwise return nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="254" column="67" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="254" bodyend="269"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1abe92df13fb5c9b6bf33b271f4a03baca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const size_t</type>
+        <definition>static const size_t AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::GetRequiredSize</definition>
+        <argsstring>(T &amp;Data)</argsstring>
+        <name>GetRequiredSize</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::GetRequiredSize</qualifiedname>
+        <param>
+          <type>T &amp;</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="273" column="28" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="273" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a84c91a810b6e49114f865e2715142a74" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const size_t</type>
+        <definition>static const size_t AccelByte::Core::FAccelByteLRUCache&lt; T &gt;::GetRequiredSize</definition>
+        <argsstring>(T *Data)</argsstring>
+        <name>GetRequiredSize</name>
+        <qualifiedname>AccelByte::Core::FAccelByteLRUCache::GetRequiredSize</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>Data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="274" column="28" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AccelByte::Core::FAccelByteLRUCache&lt; T &gt;</label>
+        <link refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache"/>
+      </node>
+      <node id="2">
+        <label>AccelByte::Core::FAccelByteLRUCacheFile&lt; T &gt;</label>
+        <link refid="d1/dda/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_file"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::Core::FAccelByteLRUCacheMemory&lt; T &gt;</label>
+        <link refid="d4/de1/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_memory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" line="26" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteLRUCache.h" bodystart="27" bodyend="275"/>
+    <listofallmembers>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a3c9a8c7153e446f466976e2926a10907" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ArrayAdd</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aa94abf4229a813d32c83b0ff27bef828" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ArrayGetIndex</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1af33a0b79312da7d7b5b08d0e5c33737d" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ArrayGetNum</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a4a1d0a9f347e3ac399bb3b0fbb98b54a" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ArrayRemoveAt</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a3aa6a97ab09a7beeb00519216f1fba59" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ArraySetEmpty</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1c7ea002dc515367646b2ec2da6a344b" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>bIsInitialized</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1efe1e02eb0b9ad46098ae445cf060a4" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ChunkArray</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a709340c4ada08c16558a5bf1153e9cb2" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ChunkDll</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1dd06d1d373624df2124126cbec9e5fe" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>Contains</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aa4f94a23e9a6a4c0ced9f6eb134992be" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLAddHead</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1abb498a534fc0559d457e474f85bfa4c8" prot="protected" virt="virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLFindNode</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a8b42c4bcb11bc1235c84eb858923c7f5" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLGetHead</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a6d4383cb1febe965a5e546a3ba9e330a" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLGetSize</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a5c0bd8d0fb635ce5a72ffc2fff790162" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLGetTail</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a85877426c3bad3aa13bebe782083a362" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLRemoveNode</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aaf490fb414b1b23cd17409d613aca77d" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLRemoveNode</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1080acb16d38884a3689de6045807dff" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>DLLSetEmpty</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac1397c223c99132ad5c01aadf33abcfa" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>Emplace</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1abb861ef5da4bebe87d0f9ae69b2d6986" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>Empty</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a24b142294ad1d3e680f64713b14169b4" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>Find</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac472d32ae245cfba013a9f8759459486" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>FindIndex</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac59cc626681008278169e7e13104ffa9" prot="protected" virt="pure-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>ForcefullyPopulateChunkArrayFromStorage</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a0d926e32bc61d5910bb37dba66c9a026" prot="protected" virt="pure-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>FreeCache</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a978a1afe119f7bf171645cc6efc31547" prot="protected" virt="pure-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>FreeCacheBeforeInsertion</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1abe92df13fb5c9b6bf33b271f4a03baca" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>GetRequiredSize</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a84c91a810b6e49114f865e2715142a74" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>GetRequiredSize</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a263e8e6b6b905c1349e32f48f73d09ae" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>GetRequiredSize</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a8277e5712be11a6e851475ac84ab083b" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>GetRequiredSize</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a60067711c94a591e5f6351d188bca923" prot="public" virt="pure-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>GetTheValueFromChunkArray</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ab7f93ccaf6e82f7685c586b974be8dde" prot="protected" virt="pure-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>InsertToCache</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a4dbd616f9b1200973b4eed4a4b8a4665" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>MAX_HTTP_LRU_CACHE_COUNT</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a4a4244236427b8787acdb25466e5c5d2" prot="protected" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>MAX_HTTP_LRU_CACHE_SIZE</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a487edeebb119b667a127d95324cd7cc9" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>operator[]</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1aef63197033b0830149b92b5343ca2df2" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>Peek</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1fd13d6465f21a4afe1aac3d53a92a52" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>Remove</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1ac41cb095d8f4d7128c60f24863354d57" prot="protected" virt="pure-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>RemoveCache</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a2f8bf253101525af4b4463589a9b11b7" prot="public" virt="non-virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>RetrieveAndLoadCacheFileInfo</name></member>
+      <member refid="d1/da8/class_accel_byte_1_1_core_1_1_f_accel_byte_l_r_u_cache_1a1e6d001a2722a36e921a99169074a8c0" prot="public" virt="virtual"><scope>AccelByte::Core::FAccelByteLRUCache</scope><name>~FAccelByteLRUCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

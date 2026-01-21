@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::Api::LoginQueue</compoundname>
+    <basecompoundref refid="d3/dd3/class_accel_byte_1_1_f_api_base" prot="public" virt="non-virtual">AccelByte::FApiBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; LoginQueue, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d9/d78/_accel_byte_login_queue_api_8h" local="no">AccelByteLoginQueueApi.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a66c8709bf69240c91e0af44714c4595c" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; <ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TSharedRef&lt;Credentials, ESPMode::ThreadSafe&gt; AccelByte::Api::LoginQueue::UserCredentialsRef</definition>
+        <argsstring></argsstring>
+        <name>UserCredentialsRef</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::UserCredentialsRef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="40" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1afeb434710b46bc81ae6f734328b3a9d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::LoginQueue::LoginQueue</definition>
+        <argsstring>(Credentials &amp;Credentials, Settings &amp;Settings, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; AccelByte::FApiClient, ESPMode::ThreadSafe &gt; const &amp;InApiClient=nullptr)</argsstring>
+        <name>LoginQueue</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::LoginQueue</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> &amp;</type>
+          <declname>Credentials</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> &amp;</type>
+          <declname>Settings</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/d63/class_accel_byte_1_1_f_api_client" kindref="compound">AccelByte::FApiClient</ref>, ESPMode::ThreadSafe &gt; const &amp;</type>
+          <declname>InApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="28" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLoginQueueApi.cpp" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a4c86a36370b0b623a4deb909a522ac07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::LoginQueue::LoginQueue</definition>
+        <argsstring>(Credentials &amp;Credentials, Settings &amp;Settings, FHttpRetrySchedulerBase &amp;InHttpRef, FAccelBytePlatformPtr const &amp;InAccelBytePlatform)</argsstring>
+        <name>LoginQueue</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::LoginQueue</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> &amp;</type>
+          <declname>Credentials</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> &amp;</type>
+          <declname>Settings</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1affd45a8972d6b6709fb4ea5c179f3dfa" kindref="member">FAccelBytePlatformPtr</ref> const &amp;</type>
+          <declname>InAccelBytePlatform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="33" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLoginQueueApi.cpp" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a1639d2fcbc2624c12736ef9c21222478" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AccelByte::Api::LoginQueue::~LoginQueue</definition>
+        <argsstring>()</argsstring>
+        <name>~LoginQueue</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::~LoginQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="38" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLoginQueueApi.cpp" bodystart="44" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a9b19e94c44b6109919de33312c09c1e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::Api::LoginQueue::RefreshTicket</definition>
+        <argsstring>(FString const &amp;Ticket, THandler&lt; FAccelByteModelsLoginQueueTicketInfo &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, FString const &amp;Namespace=TEXT(&quot;&quot;))</argsstring>
+        <name>RefreshTicket</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::RefreshTicket</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Ticket</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="dd/da4/struct_f_accel_byte_models_login_queue_ticket_info" kindref="compound">FAccelByteModelsLoginQueueTicketInfo</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Namespace</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+<para>Refresh Login Ticket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ticket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login Ticket to refresh. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Namespace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Namespace of the game</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="53" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLoginQueueApi.cpp" bodystart="47" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1aa71c511c6f8a5af6a98a4147257f83f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::Api::LoginQueue::CancelTicket</definition>
+        <argsstring>(FString const &amp;Ticket, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError, FString const &amp;Namespace=TEXT(&quot;&quot;))</argsstring>
+        <name>CancelTicket</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::CancelTicket</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Ticket</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Namespace</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+<para>Cancel Login Ticket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ticket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login Ticket to cancel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Namespace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Namespace of the game</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="68" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteLoginQueueApi.cpp" bodystart="72" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1aadbb8e959bd665fe3cf4c6d000800526" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::LoginQueue::LoginQueue</definition>
+        <argsstring>()=delete</argsstring>
+        <name>LoginQueue</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::LoginQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a520115d4e4a6d3c9accc469d0afb46c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::LoginQueue::LoginQueue</definition>
+        <argsstring>(LoginQueue const &amp;)=delete</argsstring>
+        <name>LoginQueue</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::LoginQueue</qualifiedname>
+        <param>
+          <type>LoginQueue const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a7e1d789738ab67fd56ab7c4ebd3f114c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::LoginQueue::LoginQueue</definition>
+        <argsstring>(LoginQueue &amp;&amp;)=delete</argsstring>
+        <name>LoginQueue</name>
+        <qualifiedname>AccelByte::Api::LoginQueue::LoginQueue</qualifiedname>
+        <param>
+          <type>LoginQueue &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="76" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Login Queue API for Login Ticket Management. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AccelByte::Api::LoginQueue</label>
+        <link refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; LoginQueue, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccelByte::Api::LoginQueue</label>
+        <link refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::Settings</label>
+        <link refid="df/db1/class_accel_byte_1_1_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="13">
+        <label>TSharedFromThis&lt; LoginQueue, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" line="23" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelByteLoginQueueApi.h" bodystart="26" bodyend="78"/>
+    <listofallmembers>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1af48fc7e07daa90601940b0bbaeaca4a9" prot="protected" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>AccelBytePlatformPtr</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1aa71c511c6f8a5af6a98a4147257f83f0" prot="public" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>CancelTicket</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a4ded3338c43197d995d2ce88e3ac85af" prot="protected" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>CredentialsRef</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a5b4bfcf158b368358fc0860adece134c" prot="public" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>FApiBase</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a7532e689716d93aaa2f96568ab14c233" prot="public" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>FApiBase</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1afd2ef10eecc71f4d34515276ab6a8fcb" prot="protected" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>HttpClient</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a3262dbbbb6404aec16bef79a36480bbf" prot="protected" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>HttpRef</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1afeb434710b46bc81ae6f734328b3a9d4" prot="public" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>LoginQueue</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a4c86a36370b0b623a4deb909a522ac07" prot="public" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>LoginQueue</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1aadbb8e959bd665fe3cf4c6d000800526" prot="private" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>LoginQueue</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a520115d4e4a6d3c9accc469d0afb46c3" prot="private" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>LoginQueue</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a7e1d789738ab67fd56ab7c4ebd3f114c" prot="private" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>LoginQueue</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a9b19e94c44b6109919de33312c09c1e0" prot="public" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>RefreshTicket</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ab08541fe9d704af8a9b5bae1b87deb44" prot="public" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>SetApiClient</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ae8ffc36382a4204edb20a6d3430c13ad" prot="protected" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>SettingsRef</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a66c8709bf69240c91e0af44714c4595c" prot="private" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>UserCredentialsRef</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1abf73c69f11a74c5d79ed767d7e9de861" prot="protected" virt="non-virtual"><scope>AccelByte::Api::LoginQueue</scope><name>ValidateAccelByteId</name></member>
+      <member refid="d9/dcb/class_accel_byte_1_1_api_1_1_login_queue_1a1639d2fcbc2624c12736ef9c21222478" prot="public" virt="virtual"><scope>AccelByte::Api::LoginQueue</scope><name>~LoginQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

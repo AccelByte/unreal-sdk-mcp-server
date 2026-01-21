@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d7/d18/_online_async_task_accel_byte_query_user_info_8cpp" kind="file" language="C++">
+    <compoundname>OnlineAsyncTaskAccelByteQueryUserInfo.cpp</compoundname>
+    <includes refid="df/d20/_online_async_task_accel_byte_query_user_info_8h" local="yes">OnlineAsyncTaskAccelByteQueryUserInfo.h</includes>
+    <includes refid="d1/d3f/_online_subsystem_accel_byte_8h" local="yes">OnlineSubsystemAccelByte.h</includes>
+    <includes refid="d9/d76/_online_subsystem_accel_byte_defines_8h" local="yes">OnlineSubsystemAccelByteDefines.h</includes>
+    <includes local="yes">Core/AccelByteError.h</includes>
+    <incdepgraph>
+      <node id="25">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="55">
+        <label>Core/AccelByteError.h</label>
+      </node>
+      <node id="51">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="11">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="6">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>OnlineAsyncTaskAccelByteQueryUserInfo.cpp</label>
+        <link refid="d7/d18/_online_async_task_accel_byte_query_user_info_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineAsyncTaskAccelByteQueryUserInfo.h</label>
+        <link refid="df/d20/_online_async_task_accel_byte_query_user_info_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="9">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="5">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="10">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>OnlineUserInterfaceAccelByte.h</label>
+        <link refid="d5/d55/_online_user_interface_accel_byte_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="43">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="20">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="13">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="26">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="45">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="33">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="49">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="50">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="38">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="40">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="54">
+        <label>Interfaces/OnlineUserInterface.h</label>
+      </node>
+      <node id="44">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="34">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="48">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="17">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="32">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="7">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="4">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="47">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="37">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="18">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="19">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="27">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="12">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="15">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="22">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d20/_online_async_task_accel_byte_query_user_info_8h" kindref="compound">OnlineAsyncTaskAccelByteQueryUserInfo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3f/_online_subsystem_accel_byte_8h" kindref="compound">OnlineSubsystemAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d76/_online_subsystem_accel_byte_defines_8h" kindref="compound">OnlineSubsystemAccelByteDefines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Core/AccelByteError.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1afee1e16105a2bb9584c630fb3a4d54c6" refkind="member"><highlight class="normal"><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1afee1e16105a2bb9584c630fb3a4d54c6" kindref="member">FOnlineAsyncTaskAccelByteQueryUserInfo::FOnlineAsyncTaskAccelByteQueryUserInfo</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>(<sp/><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>InABSubsystem</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>InLocalUserNum</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;TSharedRef&lt;const<sp/>FUniqueNetId&gt;&gt;&amp;<sp/>InUserIds</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryUserInfoComplete&amp;<sp/>InDelegate<sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" kindref="member">FOnlineAsyncTaskAccelByte</ref>(InABSubsystem,<sp/>true)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ad59936463cb80cafa8fc34339bd62a90" kindref="member">InitialUserIds</ref>(InUserIds)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ab7de699e57c89b8666532f0628da504f" kindref="member">Delegate</ref>(InDelegate)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref><sp/>=<sp/>InLocalUserNum;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1abdee4f494f8af7c9a449b73a1ed1c78a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1abdee4f494f8af7c9a449b73a1ed1c78a" kindref="member">FOnlineAsyncTaskAccelByteQueryUserInfo::Initialize</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30" kindref="member">Super::Initialize</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Initiating<sp/>User<sp/>Index:<sp/>%d;<sp/>Initial<sp/>UserId<sp/>Amount:<sp/>%d&quot;</highlight><highlight class="normal">),<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ad59936463cb80cafa8fc34339bd62a90" kindref="member">InitialUserIds</ref>.Num());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First,<sp/>remove<sp/>any<sp/>invalid<sp/>IDs<sp/>from<sp/>the<sp/>initial<sp/>user<sp/>ID<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ad59936463cb80cafa8fc34339bd62a90" kindref="member">InitialUserIds</ref>.RemoveAll([](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;&amp;<sp/>FoundUserId)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!FoundUserId-&gt;IsValid();<sp/>});</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Then,<sp/>check<sp/>if<sp/>we<sp/>have<sp/>an<sp/>empty<sp/>array<sp/>for<sp/>user<sp/>IDs,<sp/>and<sp/>bail<sp/>out<sp/>if<sp/>we<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ad59936463cb80cafa8fc34339bd62a90" kindref="member">InitialUserIds</ref>.Num()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;No<sp/>user<sp/>IDs<sp/>passed<sp/>to<sp/>query<sp/>user<sp/>info!<sp/>Unable<sp/>to<sp/>complete!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>up<sp/>arrays<sp/>and<sp/>counters<sp/>to<sp/>be<sp/>the<sp/>same<sp/>length<sp/>as<sp/>the<sp/>amount<sp/>of<sp/>user<sp/>IDs<sp/>we<sp/>want<sp/>to<sp/>query.<sp/>These<sp/>expected<sp/>counters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>will<sp/>be<sp/>used<sp/>for<sp/>synchronization<sp/>later,<sp/>the<sp/>task<sp/>knows<sp/>that<sp/>it<sp/>is<sp/>finished<sp/>when<sp/>these<sp/>expected<sp/>values<sp/>match<sp/>their</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>corresponding<sp/>maps.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a52932482199d12a1226cf1055c4899f2" kindref="member">UserIdsToQuery</ref>.Empty(<ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ad59936463cb80cafa8fc34339bd62a90" kindref="member">InitialUserIds</ref>.Num());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>through<sp/>each<sp/>user<sp/>ID<sp/>that<sp/>we<sp/>have<sp/>been<sp/>requested<sp/>to<sp/>query<sp/>for,<sp/>convert<sp/>them<sp/>to<sp/>string<sp/>IDs,<sp/>and<sp/>then<sp/>fire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>off<sp/>a<sp/>request<sp/>to<sp/>get<sp/>account<sp/>data<sp/>(to<sp/>get<sp/>display<sp/>name)<sp/>as<sp/>well<sp/>as<sp/>public<sp/>profile<sp/>attributes<sp/>for<sp/>each<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(FUniqueNetIdRef<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>NetId<sp/>:<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ad59936463cb80cafa8fc34339bd62a90" kindref="member">InitialUserIds</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NetId-&gt;GetType()<sp/>!=<sp/><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a44834296acd28217e5a667169a7f7c6b" kindref="member">ACCELBYTE_USER_ID_TYPE</ref>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;NetId<sp/>passed<sp/>to<sp/>FOnlineUserAccelByte::QueryUserInfo<sp/>(%s)<sp/>was<sp/>an<sp/>invalid<sp/>type<sp/>(%s).<sp/>Query<sp/>the<sp/>external<sp/>mapping<sp/>first<sp/>to<sp/>convert<sp/>to<sp/>an<sp/>AccelByte<sp/>ID.<sp/>Skipping<sp/>this<sp/>ID!&quot;</highlight><highlight class="normal">),<sp/>*(Subsystem-&gt;GetInstanceName().ToString()),<sp/>*(NetId-&gt;GetType().ToString()));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>AccelByteId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(NetId);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a52932482199d12a1226cf1055c4899f2" kindref="member">UserIdsToQuery</ref>.Add(AccelByteId-&gt;GetAccelByteId());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Try<sp/>and<sp/>query<sp/>all<sp/>of<sp/>the<sp/>users<sp/>and<sp/>cache<sp/>them<sp/>in<sp/>the<sp/>user<sp/>store</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1ade5529f060753297bbe25e169046fbb4" kindref="member">FOnlineUserCacheAccelBytePtr</ref><sp/>UserCache<sp/>=<sp/>Subsystem-&gt;GetUserCache();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!UserCache.IsValid())</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>query<sp/>information<sp/>on<sp/>users<sp/>as<sp/>our<sp/>user<sp/>store<sp/>instance<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" kindref="member">ExecuteCriticalSectionAction</ref>(FVoidHandler::CreateLambda([</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>UserCache]()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryUsersComplete<sp/>OnQueryUsersCompleteDelegate<sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;FOnQueryUsersComplete&gt;::CreateThreadSafeSelfPtr</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ac7bf95105d4bb9a0acf334fcbfb4268c" kindref="member">FOnlineAsyncTaskAccelByteQueryUserInfo::OnQueryUsersComplete</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserCache-&gt;QueryUsersByAccelByteIds(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a52932482199d12a1226cf1055c4899f2" kindref="member">UserIdsToQuery</ref>,<sp/>OnQueryUsersCompleteDelegate);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a9787e750d55aaea7cd7d0d5469abca3b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a9787e750d55aaea7cd7d0d5469abca3b" kindref="member">FOnlineAsyncTaskAccelByteQueryUserInfo::Finalize</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>through<sp/>each<sp/>account<sp/>that<sp/>we<sp/>have<sp/>received<sp/>from<sp/>the<sp/>backend<sp/>and<sp/>add<sp/>to<sp/>our<sp/>user<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;&amp;<sp/>QueriedUser<sp/>:<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a7213a378acbefc711c215af41ef6cbf8" kindref="member">UsersQueried</ref>)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construct<sp/>the<sp/>user<sp/>information<sp/>instance<sp/>and<sp/>add<sp/>the<sp/>ID<sp/>of<sp/>the<sp/>user<sp/>to<sp/>our<sp/>QueriedUserIds<sp/>array<sp/>that<sp/>will<sp/>be<sp/>passed<sp/>to<sp/>the<sp/>completion<sp/>delegate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;FUserOnlineAccountAccelByte&gt;<sp/>User<sp/>=<sp/>MakeShared&lt;FUserOnlineAccountAccelByte&gt;(QueriedUser-&gt;Id.ToSharedRef(),<sp/>QueriedUser-&gt;DisplayName);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;SetPublicCode(QueriedUser-&gt;PublicCode);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;SetUserAttribute(<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a59caaab0bb77adb040f03a0bf6327d53" kindref="member">ACCELBYTE_ACCOUNT_GAME_AVATAR_URL</ref>,<sp/>QueriedUser-&gt;GameAvatarUrl);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;SetUserAttribute(<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a7ea88e39f93cb1cc0375215360473d4c" kindref="member">ACCELBYTE_ACCOUNT_PUBLISHER_AVATAR_URL</ref>,<sp/>QueriedUser-&gt;PublisherAvatarUrl);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>ID<sp/>of<sp/>this<sp/>user<sp/>to<sp/>the<sp/>list<sp/>of<sp/>IDs<sp/>that<sp/>we<sp/>have<sp/>queried.<sp/>This<sp/>will<sp/>be<sp/>passed<sp/>to<sp/>the<sp/>delegate<sp/>to<sp/>inform</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>consumer<sp/>of<sp/>which<sp/>users<sp/>we<sp/>successfully<sp/>have<sp/>cached<sp/>info<sp/>for.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/>FoundUserId<sp/>=<sp/>User-&gt;GetUserId();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ab8f11d621b0fc866e92d1096d4db8c5a" kindref="member">QueriedUserIds</ref>.Add(FoundUserId);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>new<sp/>user<sp/>information<sp/>instance<sp/>to<sp/>the<sp/>user<sp/>interface&apos;s<sp/>cache<sp/>so<sp/>the<sp/>developer<sp/>can<sp/>retrieve<sp/>it<sp/>in<sp/>the<sp/>delegate<sp/>handler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlineUserAccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/>UserInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineUserAccelByte&gt;(Subsystem-&gt;GetUserInterface());</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserInterface<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserInterface-&gt;AddUserInfo(FoundUserId,<sp/>User);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Additionally,<sp/>get<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>identity<sp/>interface<sp/>and<sp/>check<sp/>if<sp/>this<sp/>queried<sp/>user<sp/>has<sp/>an<sp/>account<sp/>in<sp/>it.<sp/>If<sp/>so</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>update<sp/>their<sp/>information<sp/>accordingly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a79c7a75b959f926eaef2a64023a33fcf" kindref="member">FOnlineIdentityAccelBytePtr</ref><sp/>IdentityInterface<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="d3/d47/class_f_online_identity_accel_byte_1acee9ed9f3e9a82b140ce4756bf0573c6" kindref="member">FOnlineIdentityAccelByte::GetFromSubsystem</ref>(Subsystem,<sp/>IdentityInterface))</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FUserOnlineAccountAccelByte&gt;<sp/>IdentityAccount<sp/>=<sp/>StaticCastSharedPtr&lt;FUserOnlineAccountAccelByte&gt;(IdentityInterface-&gt;GetUserAccount(QueriedUser-&gt;Id.ToSharedRef().Get()));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityAccount.IsValid())</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IdentityAccount-&gt;SetDisplayName(QueriedUser-&gt;DisplayName);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IdentityAccount-&gt;SetUserAttribute(<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a59caaab0bb77adb040f03a0bf6327d53" kindref="member">ACCELBYTE_ACCOUNT_GAME_AVATAR_URL</ref>,<sp/>QueriedUser-&gt;GameAvatarUrl);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IdentityAccount-&gt;SetUserAttribute(<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a7ea88e39f93cb1cc0375215360473d4c" kindref="member">ACCELBYTE_ACCOUNT_PUBLISHER_AVATAR_URL</ref>,<sp/>QueriedUser-&gt;PublisherAvatarUrl);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IdentityAccount-&gt;SetPublicCode(QueriedUser-&gt;PublicCode);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1afcfd137b7ee725d1555fe136c330db35" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1afcfd137b7ee725d1555fe136c330db35" kindref="member">FOnlineAsyncTaskAccelByteQueryUserInfo::TriggerDelegates</ref>()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ab7de699e57c89b8666532f0628da504f" kindref="member">Delegate</ref>.Broadcast(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/>bWasSuccessful,<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ab8f11d621b0fc866e92d1096d4db8c5a" kindref="member">QueriedUserIds</ref>,<sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a34bb5075828a5e89b55dc327c7744ef8" kindref="member">ErrorStr</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ac7bf95105d4bb9a0acf334fcbfb4268c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1ac7bf95105d4bb9a0acf334fcbfb4268c" kindref="member">FOnlineAsyncTaskAccelByteQueryUserInfo::OnQueryUsersComplete</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsSuccessful,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;<sp/>InUsersQueried)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bIsSuccessful)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a7213a378acbefc711c215af41ef6cbf8" kindref="member">UsersQueried</ref><sp/>=<sp/>InUsersQueried;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea505a83f220c02df2f85c3810cd9ceb38" kindref="member">EAccelByteAsyncTaskCompleteState::Success</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d67/class_f_online_async_task_accel_byte_query_user_info_1a34bb5075828a5e89b55dc327c7744ef8" kindref="member">ErrorStr</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;query-users-error-response&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>query<sp/>users<sp/>from<sp/>the<sp/>backend!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserInfo.cpp"/>
+  </compounddef>
+</doxygen>

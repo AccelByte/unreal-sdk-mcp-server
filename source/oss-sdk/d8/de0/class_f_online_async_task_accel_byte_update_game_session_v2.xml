@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteUpdateGameSessionV2, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d7/d12/_online_async_task_accel_byte_update_game_session_v2_8h" local="no">OnlineAsyncTaskAccelByteUpdateGameSessionV2.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" prot="private" static="no" mutable="no">
+        <type>FName</type>
+        <definition>FName FOnlineAsyncTaskAccelByteUpdateGameSessionV2::SessionName</definition>
+        <argsstring></argsstring>
+        <name>SessionName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::SessionName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Local name of the session that we are submitting new settings for </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="37" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" prot="private" static="no" mutable="no">
+        <type>FOnlineSessionSettings</type>
+        <definition>FOnlineSessionSettings FOnlineAsyncTaskAccelByteUpdateGameSessionV2::NewSessionSettings</definition>
+        <argsstring></argsstring>
+        <name>NewSessionSettings</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::NewSessionSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Settings for this session that we are updating </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="42" column="24" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7b05d90ae5d8032c704747f7e2307b37" prot="private" static="no" mutable="no">
+        <type>FAccelByteModelsV2GameSession</type>
+        <definition>FAccelByteModelsV2GameSession FOnlineAsyncTaskAccelByteUpdateGameSessionV2::NewSessionData</definition>
+        <argsstring></argsstring>
+        <name>NewSessionData</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::NewSessionData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updated game session data from backend, used to update session info to have a cache of session data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="47" column="31" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1ae1e86abcd0886c51de2712645fca5b4e" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteUpdateGameSessionV2::bWasConflictError</definition>
+        <argsstring></argsstring>
+        <name>bWasConflictError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::bWasConflictError</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag indicating whether the request failed due to a version number mismatch </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="52" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a58f5d450ccad1cfa705605999ccaddf7" prot="private" static="no" mutable="no">
+        <type>THandler&lt; FAccelByteModelsV2GameSession &gt;</type>
+        <definition>THandler&lt;FAccelByteModelsV2GameSession&gt; FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnUpdateGameSessionSuccessDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="54" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a959e37c8d9c21c8ce49be8612b0960a8" prot="private" static="no" mutable="no">
+        <type>FErrorHandler</type>
+        <definition>FErrorHandler FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnUpdateGameSessionErrorDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="57" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a371a1be68a6404061d3ee3af7725f34b" prot="private" static="no" mutable="no">
+        <type>THandler&lt; FAccelByteModelsV2GameSession &gt;</type>
+        <definition>THandler&lt;FAccelByteModelsV2GameSession&gt; FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnRefreshGameSessionSuccessDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="62" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa9a4e458b98fd6e3be89500b93e9370d" prot="private" static="no" mutable="no">
+        <type>FErrorHandler</type>
+        <definition>FErrorHandler FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnRefreshGameSessionErrorDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="65" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7234d877b9b142ceae6f4d7fb758286a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::FOnlineAsyncTaskAccelByteUpdateGameSessionV2</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const FName &amp;InSessionName, const FOnlineSessionSettings &amp;InNewSessionSettings)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::FOnlineAsyncTaskAccelByteUpdateGameSessionV2</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>InSessionName</declname>
+        </param>
+        <param>
+          <type>const FOnlineSessionSettings &amp;</type>
+          <declname>InNewSessionSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="20" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="15" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a76aeee6204a06136ab404e6fd321f165" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="22" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="36" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa34d7b639257263e306278c5b2021626" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="23" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="184" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a95e23b18e24e6bea775c1fc91a7370e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="24" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="205" bodyend="225"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a6b90e2fa140719a98f35a86d95a76a4d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteUpdateGameSessionV2::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="28" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aee4d2387c9c20b771d90a24ce1a0636c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionSuccess</definition>
+        <argsstring>(const FAccelByteModelsV2GameSession &amp;BackendSessionData)</argsstring>
+        <name>OnUpdateGameSessionSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsV2GameSession &amp;</type>
+          <declname>BackendSessionData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="55" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="227" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a23afacb7911b19f2fdb400e19f6beb56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnUpdateGameSessionError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="58" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="237" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a4d53f067946cbc8da25b332858b319d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::RefreshSession</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshSession</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::RefreshSession</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="60" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="252" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a65cf4c8cf52adaea7cbc3c5c9632cac6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionSuccess</definition>
+        <argsstring>(const FAccelByteModelsV2GameSession &amp;Result)</argsstring>
+        <name>OnRefreshGameSessionSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsV2GameSession &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="63" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="280" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1af26443ecfd2900118a14d3216acb9d50" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnRefreshGameSessionError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="66" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp" bodystart="298" bodyend="302"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Update a V2 game session instance with new settings </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteUpdateGameSessionV2, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</label>
+        <link refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteUpdateGameSessionV2, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</label>
+        <link refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" line="14" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.h" bodystart="17" bodyend="67"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>ApiClient</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>bHasReference</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1ae1e86abcd0886c51de2712645fca5b4e" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>bWasConflictError</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>CurrentState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>Epic</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa34d7b639257263e306278c5b2021626" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7234d877b9b142ceae6f4d7fb758286a" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetParentTask</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a6b90e2fa140719a98f35a86d95a76a4d" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>HasTaskTimedOut</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a76aeee6204a06136ab404e6fd321f165" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>Initialize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>LocalUserNum</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7b05d90ae5d8032c704747f7e2307b37" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>NewSessionData</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>NewSessionSettings</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1af26443ecfd2900118a14d3216acb9d50" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnRefreshGameSessionError</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa9a4e458b98fd6e3be89500b93e9370d" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnRefreshGameSessionErrorDelegate</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a65cf4c8cf52adaea7cbc3c5c9632cac6" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnRefreshGameSessionSuccess</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a371a1be68a6404061d3ee3af7725f34b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnRefreshGameSessionSuccessDelegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a23afacb7911b19f2fdb400e19f6beb56" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnUpdateGameSessionError</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a959e37c8d9c21c8ce49be8612b0960a8" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnUpdateGameSessionErrorDelegate</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aee4d2387c9c20b771d90a24ce1a0636c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnUpdateGameSessionSuccess</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a58f5d450ccad1cfa705605999ccaddf7" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>OnUpdateGameSessionSuccessDelegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>ParentTask</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a4d53f067946cbc8da25b332858b319d4" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>RefreshSession</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>SessionName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>ThisPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>ToString</name></member>
+      <member refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a95e23b18e24e6bea775c1fc91a7370e2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteUpdateGameSessionV2</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,677 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="df/d90/class_f_online_session_info_accel_byte_v1" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineSessionInfoAccelByteV1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FOnlineSessionInfo</basecompoundref>
+    <includes refid="d2/daa/_online_subsystem_accel_byte_types_8h" local="no">OnlineSubsystemAccelByteTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1a747720e0b153fa04b345714cfb593e1d" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineSessionInfoAccelByteV1::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::__pad0__</qualifiedname>
+        <bitfield> void SetupP2PRelaySessionInfo(const FOnlineSubsystemAccelByte&amp; Subsystem)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="683" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1a78313786ee2c522b13d2f4b06a64bb02" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; FInternetAddr &gt;</type>
+        <definition>TSharedPtr&lt;FInternetAddr&gt; FOnlineSessionInfoAccelByteV1::HostAddr</definition>
+        <argsstring></argsstring>
+        <name>HostAddr</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::HostAddr</qualifiedname>
+        <briefdescription>
+<para>The IP and port of the host address of the session. This will be a loopback on P2P relay sessions, or will be an actual ip:port for dedicated/LAN sessions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="698" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1aa7e263bf5c7414a28e3ad37a08769859" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineSessionInfoAccelByteV1::RemoteId</definition>
+        <argsstring></argsstring>
+        <name>RemoteId</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::RemoteId</qualifiedname>
+        <briefdescription>
+<para>Remote ID of the P2P connection peer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="701" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1a6de86569d2b154285b2c880299c16dea" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineSessionInfoAccelByteV1::P2PChannel</definition>
+        <argsstring></argsstring>
+        <name>P2PChannel</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::P2PChannel</qualifiedname>
+        <briefdescription>
+<para>Channel of the P2P connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="704" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1a8454b2d7cb344d75fe7be155bc3e4bc2" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a49b2dd11cc794f788519f3bbff2a93ff" kindref="member">FUniqueNetIdAccelByteResourceRef</ref></type>
+        <definition>FUniqueNetIdAccelByteResourceRef FOnlineSessionInfoAccelByteV1::SessionId</definition>
+        <argsstring></argsstring>
+        <name>SessionId</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SessionId</qualifiedname>
+        <initializer>= <ref refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a5d58e60cd2e098ff4c484f99056cc497" kindref="member">FUniqueNetIdAccelByteResource::Invalid</ref>()</initializer>
+        <briefdescription>
+<para>Unique Id for this session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="707" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1a2f657f390a9917109bff5b4cfa82eba3" prot="private" static="no" mutable="no">
+        <type>TUniqueNetIdMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref> &gt;</type>
+        <definition>TUniqueNetIdMap&lt;int32&gt; FOnlineSessionInfoAccelByteV1::Teams</definition>
+        <argsstring></argsstring>
+        <name>Teams</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::Teams</qualifiedname>
+        <briefdescription>
+<para>Mapping of user IDs to the index representing the team they are on, usually will be zero or one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="710" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1a2a9d540279ded11d17ef16ca572b5d7c" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a174753b9f947428323a27add78fb99f1" kindref="member">TSessionPartyArray</ref></type>
+        <definition>TSessionPartyArray FOnlineSessionInfoAccelByteV1::Parties</definition>
+        <argsstring></argsstring>
+        <name>Parties</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::Parties</qualifiedname>
+        <briefdescription>
+<para>Array of multiple players to represent a party. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="715" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1aaf935b3ce4cbd135ca5868faff8eddd1" prot="private" static="no" mutable="no">
+        <type>FOnTeamInformationReceived</type>
+        <definition>FOnTeamInformationReceived FOnlineSessionInfoAccelByteV1::OnTeamInformationReceivedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnTeamInformationReceivedDelegate</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::OnTeamInformationReceivedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate for when we get team information for a session, should be subscribed to on the game server side </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="718" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1a95f97ed4bb9fc05ca83386488cc15d5b" prot="private" static="no" mutable="no">
+        <type>FOnPartyInformationReceived</type>
+        <definition>FOnPartyInformationReceived FOnlineSessionInfoAccelByteV1::OnPartyInformationReceivedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnPartyInformationReceivedDelegate</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::OnPartyInformationReceivedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate for when we get party information for a session, should be subscribed to on the game server side </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="721" column="29" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d90/class_f_online_session_info_accel_byte_v1_1afd133222aa2591308b48027660ca5084" prot="private" static="no" mutable="no">
+        <type>FAccelByteModelsMatchmakingResult</type>
+        <definition>FAccelByteModelsMatchmakingResult FOnlineSessionInfoAccelByteV1::SessionResult</definition>
+        <argsstring></argsstring>
+        <name>SessionResult</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SessionResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="723" column="35" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aee7dfb672d96a35648124c17fc669f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineSessionInfoAccelByteV1::FOnlineSessionInfoAccelByteV1</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineSessionInfoAccelByteV1</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::FOnlineSessionInfoAccelByteV1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="597" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="471" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1ae488480fc705e12ccff28743b097438b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineSessionInfoAccelByteV1::FOnlineSessionInfoAccelByteV1</definition>
+        <argsstring>(const FOnlineSessionInfoAccelByteV1 &amp;Other)</argsstring>
+        <name>FOnlineSessionInfoAccelByteV1</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::FOnlineSessionInfoAccelByteV1</qualifiedname>
+        <param>
+          <type>const <ref refid="df/d90/class_f_online_session_info_accel_byte_v1" kindref="compound">FOnlineSessionInfoAccelByteV1</ref> &amp;</type>
+          <declname>Other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="599" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="479" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a938d55a99b234c59ab703bfab98d8c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineSessionInfoAccelByteV1::~FOnlineSessionInfoAccelByteV1</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~FOnlineSessionInfoAccelByteV1</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::~FOnlineSessionInfoAccelByteV1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="601" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aea0b64956486f7a34d40b6c72f9efcd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineSessionInfoAccelByteV1::operator==</definition>
+        <argsstring>(const FOnlineSessionInfoAccelByteV1 &amp;Other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="df/d90/class_f_online_session_info_accel_byte_v1" kindref="compound">FOnlineSessionInfoAccelByteV1</ref> &amp;</type>
+          <declname>Other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="603" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="489" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1ab6c2f2b97effeac955cf5a52a8fc34b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/d90/class_f_online_session_info_accel_byte_v1" kindref="compound">FOnlineSessionInfoAccelByteV1</ref> &amp;</type>
+        <definition>FOnlineSessionInfoAccelByteV1 &amp; FOnlineSessionInfoAccelByteV1::operator=</definition>
+        <argsstring>(const FOnlineSessionInfoAccelByteV1 &amp;Src)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="df/d90/class_f_online_session_info_accel_byte_v1" kindref="compound">FOnlineSessionInfoAccelByteV1</ref> &amp;</type>
+          <declname>Src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="605" column="31" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="494" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a9c47bf7a70c39b7dd3f7c8583b116b7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const uint8 *</type>
+        <definition>const uint8 * FOnlineSessionInfoAccelByteV1::GetBytes</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetBytes</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="607" column="21" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="499" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a40243bec7c4302eaf2b72ef25619cf40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineSessionInfoAccelByteV1::GetSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetSize</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="609" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="504" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1ac7fb2c4ef14b745ef65191156f3f3693" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineSessionInfoAccelByteV1::IsValid</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsValid</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::IsValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="611" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="509" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1ab3f0b147a2eb24076b9d2b4081510acd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineSessionInfoAccelByteV1::ToString</definition>
+        <argsstring>() const override</argsstring>
+        <name>ToString</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="613" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="516" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a467d6620e1287871aa5cda55508eb7f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineSessionInfoAccelByteV1::ToDebugString</definition>
+        <argsstring>() const override</argsstring>
+        <name>ToDebugString</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::ToDebugString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="615" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="553" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a9ef2d553a4a75a4f2fc12a2c0603cd1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const FString &amp;</type>
+        <definition>const FString &amp; FOnlineSessionInfoAccelByteV1::GetRemoteId</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRemoteId</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetRemoteId</qualifiedname>
+        <briefdescription>
+<para>Get the Remote ID of the P2P connection peer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="620" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="566" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a68df5d5432c15b221bad3271aec8cb05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineSessionInfoAccelByteV1::SetRemoteId</definition>
+        <argsstring>(const FString &amp;InRemoteId)</argsstring>
+        <name>SetRemoteId</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SetRemoteId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InRemoteId</declname>
+        </param>
+        <briefdescription>
+<para>Set the Remote ID of the P2P connection peer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="625" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="571" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a79542a5057434248a4de1b5d536f3a74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a49b2dd11cc794f788519f3bbff2a93ff" kindref="member">FUniqueNetIdAccelByteResourceRef</ref></type>
+        <definition>FUniqueNetIdAccelByteResourceRef FOnlineSessionInfoAccelByteV1::GetSessionIdRef</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSessionIdRef</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetSessionIdRef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="627" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="576" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1acdfdab09b1cf8a67eaa8fd02db846cc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const FUniqueNetId &amp;</type>
+        <definition>const FUniqueNetId &amp; FOnlineSessionInfoAccelByteV1::GetSessionId</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetSessionId</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetSessionId</qualifiedname>
+        <briefdescription>
+<para>Get the Session ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="632" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="581" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a9728b94991394c276e77bfb3af3c65d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineSessionInfoAccelByteV1::SetSessionId</definition>
+        <argsstring>(const FString &amp;InSessionId)</argsstring>
+        <name>SetSessionId</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SetSessionId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InSessionId</declname>
+        </param>
+        <briefdescription>
+<para>Set the Session ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="637" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="586" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a45eae6d663f65c81e5bffd02c55c6392" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; FInternetAddr &gt;</type>
+        <definition>TSharedPtr&lt; FInternetAddr &gt; FOnlineSessionInfoAccelByteV1::GetHostAddr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHostAddr</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetHostAddr</qualifiedname>
+        <briefdescription>
+<para>Get the Host IP Address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="642" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="592" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1ae9dcaa091f1e7d2f284f11f1484de3da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineSessionInfoAccelByteV1::SetHostAddr</definition>
+        <argsstring>(const TSharedRef&lt; FInternetAddr &gt; &amp;InHostAddr)</argsstring>
+        <name>SetHostAddr</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SetHostAddr</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; FInternetAddr &gt; &amp;</type>
+          <declname>InHostAddr</declname>
+        </param>
+        <briefdescription>
+<para>Set the Host IP Address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="647" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="597" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aaee5b57960eb4d0d7ea022a351d6fd94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineSessionInfoAccelByteV1::HasTeamInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>HasTeamInfo</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::HasTeamInfo</qualifiedname>
+        <briefdescription>
+<para>Whether or not we have information regarding teams for this session&apos;s information, will only be true if this is a matchmaking session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="652" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="602" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a4c6417070c01b9b5b246b15fba00339d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineSessionInfoAccelByteV1::GetTeamIndex</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) const</argsstring>
+        <name>GetTeamIndex</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetTeamIndex</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to get a team index for a user, returns INDEX_NONE if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that team indices are just mapped from 0 to how ever many teams are matched. If you have special team numbers you&apos;ll want to map these values on the client side. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="660" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="607" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aac4d6cf3aeb59e9f87dfb1dcadc8d134" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const TUniqueNetIdMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref> &gt; &amp;</type>
+        <definition>const TUniqueNetIdMap&lt; int32 &gt; &amp; FOnlineSessionInfoAccelByteV1::GetTeams</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTeams</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetTeams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="662" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="618" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aba90f83120edffb4c801db3c3bf78202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineSessionInfoAccelByteV1::SetTeams</definition>
+        <argsstring>(const TUniqueNetIdMap&lt; int32 &gt; &amp;InTeams)</argsstring>
+        <name>SetTeams</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SetTeams</qualifiedname>
+        <param>
+          <type>const TUniqueNetIdMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref> &gt; &amp;</type>
+          <declname>InTeams</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="664" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="623" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aa46349a131a8e5b3d2720b576e0e031c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineSessionInfoAccelByteV1::HasPartyInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>HasPartyInfo</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::HasPartyInfo</qualifiedname>
+        <briefdescription>
+<para>Whether or not we have information regarding parties for this session, will only be true if this is a matchmaking session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="669" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="629" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aa16958afe1b91819d0f4b4370e425bf2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a174753b9f947428323a27add78fb99f1" kindref="member">TSessionPartyArray</ref> &amp;</type>
+        <definition>const TSessionPartyArray &amp; FOnlineSessionInfoAccelByteV1::GetParties</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParties</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetParties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="671" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="634" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1ad43b0393daea79cab0b7e94864e077b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineSessionInfoAccelByteV1::SetParties</definition>
+        <argsstring>(const TSessionPartyArray &amp;InParties)</argsstring>
+        <name>SetParties</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SetParties</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a174753b9f947428323a27add78fb99f1" kindref="member">TSessionPartyArray</ref> &amp;</type>
+          <declname>InParties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="673" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="640" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1aca831c63dea44efbe4c3e9fcbe8c8757" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const FAccelByteModelsMatchmakingResult &amp;</type>
+        <definition>const FAccelByteModelsMatchmakingResult &amp; FOnlineSessionInfoAccelByteV1::GetSessionResult</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSessionResult</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetSessionResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="675" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="646" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1a31e786bf4ffe5012e0f918d561282eeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineSessionInfoAccelByteV1::SetSessionResult</definition>
+        <argsstring>(const FAccelByteModelsMatchmakingResult &amp;InSessionResult)</argsstring>
+        <name>SetSessionResult</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SetSessionResult</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsMatchmakingResult &amp;</type>
+          <declname>InSessionResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="677" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="651" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1af80d6a0ead70a87daf44820873a18c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineSessionInfoAccelByteV1::SetP2PChannel</definition>
+        <argsstring>(int32 InChannel)</argsstring>
+        <name>SetP2PChannel</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::SetP2PChannel</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InChannel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="679" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="548" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d90/class_f_online_session_info_accel_byte_v1_1ab12cd35cebf3644a8f65e1a025d9801b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineSessionInfoAccelByteV1::GetP2PChannel</definition>
+        <argsstring>()</argsstring>
+        <name>GetP2PChannel</name>
+        <qualifiedname>FOnlineSessionInfoAccelByteV1::GetP2PChannel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="681" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="656" bodyend="659"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FOnlineSessionInfo</label>
+      </node>
+      <node id="1">
+        <label>FOnlineSessionInfoAccelByteV1</label>
+        <link refid="df/d90/class_f_online_session_info_accel_byte_v1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FOnlineSessionInfo</label>
+      </node>
+      <node id="1">
+        <label>FOnlineSessionInfoAccelByteV1</label>
+        <link refid="df/d90/class_f_online_session_info_accel_byte_v1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="593" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="595" bodyend="724"/>
+    <listofallmembers>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a747720e0b153fa04b345714cfb593e1d" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>__pad0__</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aee7dfb672d96a35648124c17fc669f58" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>FOnlineSessionInfoAccelByteV1</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1ae488480fc705e12ccff28743b097438b" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>FOnlineSessionInfoAccelByteV1</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a9c47bf7a70c39b7dd3f7c8583b116b7b" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetBytes</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a45eae6d663f65c81e5bffd02c55c6392" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetHostAddr</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1ab12cd35cebf3644a8f65e1a025d9801b" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetP2PChannel</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aa16958afe1b91819d0f4b4370e425bf2" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetParties</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a9ef2d553a4a75a4f2fc12a2c0603cd1e" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetRemoteId</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1acdfdab09b1cf8a67eaa8fd02db846cc2" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetSessionId</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a79542a5057434248a4de1b5d536f3a74" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetSessionIdRef</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aca831c63dea44efbe4c3e9fcbe8c8757" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetSessionResult</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a40243bec7c4302eaf2b72ef25619cf40" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetSize</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a4c6417070c01b9b5b246b15fba00339d" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetTeamIndex</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aac4d6cf3aeb59e9f87dfb1dcadc8d134" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>GetTeams</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aa46349a131a8e5b3d2720b576e0e031c" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>HasPartyInfo</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aaee5b57960eb4d0d7ea022a351d6fd94" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>HasTeamInfo</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a78313786ee2c522b13d2f4b06a64bb02" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>HostAddr</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1ac7fb2c4ef14b745ef65191156f3f3693" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>IsValid</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a95f97ed4bb9fc05ca83386488cc15d5b" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>OnPartyInformationReceivedDelegate</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aaf935b3ce4cbd135ca5868faff8eddd1" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>OnTeamInformationReceivedDelegate</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1ab6c2f2b97effeac955cf5a52a8fc34b4" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>operator=</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aea0b64956486f7a34d40b6c72f9efcd0" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>operator==</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a6de86569d2b154285b2c880299c16dea" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>P2PChannel</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a2a9d540279ded11d17ef16ca572b5d7c" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>Parties</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aa7e263bf5c7414a28e3ad37a08769859" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>RemoteId</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a8454b2d7cb344d75fe7be155bc3e4bc2" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SessionId</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1afd133222aa2591308b48027660ca5084" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SessionResult</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1ae9dcaa091f1e7d2f284f11f1484de3da" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SetHostAddr</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1af80d6a0ead70a87daf44820873a18c7d" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SetP2PChannel</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1ad43b0393daea79cab0b7e94864e077b7" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SetParties</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a68df5d5432c15b221bad3271aec8cb05" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SetRemoteId</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a9728b94991394c276e77bfb3af3c65d6" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SetSessionId</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a31e786bf4ffe5012e0f918d561282eeb" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SetSessionResult</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1aba90f83120edffb4c801db3c3bf78202" prot="public" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>SetTeams</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a2f657f390a9917109bff5b4cfa82eba3" prot="private" virt="non-virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>Teams</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a467d6620e1287871aa5cda55508eb7f5" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>ToDebugString</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1ab3f0b147a2eb24076b9d2b4081510acd" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>ToString</name></member>
+      <member refid="df/d90/class_f_online_session_info_accel_byte_v1_1a938d55a99b234c59ab703bfab98d8c47" prot="public" virt="virtual"><scope>FOnlineSessionInfoAccelByteV1</scope><name>~FOnlineSessionInfoAccelByteV1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

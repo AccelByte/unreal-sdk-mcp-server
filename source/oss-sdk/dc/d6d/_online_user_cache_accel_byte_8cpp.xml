@@ -1,0 +1,828 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dc/d6d/_online_user_cache_accel_byte_8cpp" kind="file" language="C++">
+    <compoundname>OnlineUserCacheAccelByte.cpp</compoundname>
+    <includes refid="d7/d3c/_online_user_cache_accel_byte_8h" local="yes">OnlineUserCacheAccelByte.h</includes>
+    <includes refid="d1/d3f/_online_subsystem_accel_byte_8h" local="yes">OnlineSubsystemAccelByte.h</includes>
+    <includes local="yes">Containers/UnrealString.h</includes>
+    <includes refid="d2/daa/_online_subsystem_accel_byte_types_8h" local="yes">OnlineSubsystemAccelByteTypes.h</includes>
+    <includes refid="db/d1a/_online_async_task_accel_byte_query_users_by_ids_8h" local="yes">AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h</includes>
+    <includes refid="d9/d6e/_online_async_task_accel_byte_query_user_profile_8h" local="yes">AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h</includes>
+    <includes refid="d5/d55/_online_user_interface_accel_byte_8h" local="yes">OnlineUserInterfaceAccelByte.h</includes>
+    <includes local="yes">OnlineSubsystemUtils.h</includes>
+    <incdepgraph>
+      <node id="42">
+        <label>Containers/UnrealString.h</label>
+      </node>
+      <node id="18">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="52">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="5">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="4">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="54">
+        <label>AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h</label>
+        <link refid="d9/d6e/_online_async_task_accel_byte_query_user_profile_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h</label>
+        <link refid="db/d1a/_online_async_task_accel_byte_query_users_by_ids_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlineUserCacheAccelByte.cpp</label>
+        <link refid="dc/d6d/_online_user_cache_accel_byte_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="48">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="45">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="3">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>OnlineUserInterfaceAccelByte.h</label>
+        <link refid="d5/d55/_online_user_interface_accel_byte_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="15">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="49">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="7">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="19">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="37">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="27">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="41">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="51">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="32">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="34">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="56">
+        <label>Interfaces/OnlineUserInterface.h</label>
+      </node>
+      <node id="36">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="28">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="40">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="11">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="26">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="46">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="12">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="39">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="31">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="13">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="47">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="14">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="20">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="6">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="57">
+        <label>OnlineSubsystemUtils.h</label>
+      </node>
+      <node id="9">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="24">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="dc/d6d/_online_user_cache_accel_byte_8cpp_1afa8b256a7467687e5db46b5d79b941e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool IsInvalidAccelByteId</definition>
+        <argsstring>(const FString &amp;Id)</argsstring>
+        <name>IsInvalidAccelByteId</name>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCacheAccelByte.cpp" line="13" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCacheAccelByte.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d3c/_online_user_cache_accel_byte_8h" kindref="compound">OnlineUserCacheAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3f/_online_subsystem_accel_byte_8h" kindref="compound">OnlineSubsystemAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/UnrealString.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h" kindref="compound">OnlineSubsystemAccelByteTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d1a/_online_async_task_accel_byte_query_users_by_ids_8h" kindref="compound">AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUsersByIds.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d6e/_online_async_task_accel_byte_query_user_profile_8h" kindref="compound">AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d55/_online_user_interface_accel_byte_8h" kindref="compound">OnlineUserInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OnlineSubsystemUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="dc/d6d/_online_user_cache_accel_byte_8cpp_1afa8b256a7467687e5db46b5d79b941e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d6d/_online_user_cache_accel_byte_8cpp_1afa8b256a7467687e5db46b5d79b941e4" kindref="member">IsInvalidAccelByteId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Id)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="dd/d2f/_online_subsystem_accel_byte_types_8cpp_1a8b6288a1ade95a74e70d578551d5c6d7" kindref="member">IsAccelByteIDValid</ref>(Id);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d8/dfc/class_f_online_user_cache_accel_byte_1affcc62f1d355fe2ecba90ece9111cdda" refkind="member"><highlight class="normal"><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1affcc62f1d355fe2ecba90ece9111cdda" kindref="member">FOnlineUserCacheAccelByte::FOnlineUserCacheAccelByte</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>InSubsystem)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>(InSubsystem)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a5e0af2f8ad9b0a5a8a005da4e8df6936" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a5e0af2f8ad9b0a5a8a005da4e8df6936" kindref="member">FOnlineUserCacheAccelByte::GetFromSubsystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1ade5529f060753297bbe25e169046fbb4" kindref="member">FOnlineUserCacheAccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>ABSubsystem<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ABSubsystem<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/>ABSubsystem-&gt;<ref refid="d5/d5d/class_f_online_subsystem_accel_byte_1a82da02a2101b4980eb68293f2296fc01" kindref="member">GetUserCache</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>OutInterfaceInstance.IsValid();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a18ae27b7bc217f688d08fe4ee1839564" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a18ae27b7bc217f688d08fe4ee1839564" kindref="member">FOnlineUserCacheAccelByte::GetFromWorld</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UWorld*<sp/>World,<sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1ade5529f060753297bbe25e169046fbb4" kindref="member">FOnlineUserCacheAccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref><sp/>=<sp/>::Online::GetSubsystem(World);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref><sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a5e0af2f8ad9b0a5a8a005da4e8df6936" kindref="member">GetFromSubsystem</ref>(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d8/dfc/class_f_online_user_cache_accel_byte_1aeee022bd598d74e93eacf3bc42144633" refkind="member"><highlight class="normal"><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1aeee022bd598d74e93eacf3bc42144633" kindref="member">FOnlineUserCacheAccelByte::Purge</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lock<sp/>while<sp/>we<sp/>attempt<sp/>to<sp/>purge<sp/>from<sp/>the<sp/>caches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a41f5413cfcd135af352739c3ea98cdee" kindref="member">CacheLock</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Filter<sp/>all<sp/>of<sp/>the<sp/>users<sp/>in<sp/>the<sp/>map<sp/>that<sp/>have<sp/>gone<sp/>past<sp/>their<sp/>elapsed<sp/>time<sp/>and<sp/>aren&apos;t<sp/>marked<sp/>as<sp/>important<sp/>so<sp/>we<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>purge<sp/>them<sp/>from<sp/>the<sp/>user<sp/>cache<sp/>maps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>CurrentTimeInSeconds<sp/>=<sp/>FPlatformTime::Seconds();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FString,<sp/>TSharedRef&lt;FAccelByteUserInfo&gt;&gt;<sp/>FilteredUserMap;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>FilteredUserMap.Reserve(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>.Num());</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TPair&lt;FString,<sp/>TSharedRef&lt;FAccelByteUserInfo&gt;&gt;&amp;<sp/>UserIdToUserInfo<sp/>:<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ElapsedTimeInSeconds<sp/>=<sp/>CurrentTimeInSeconds<sp/>-<sp/>UserIdToUserInfo.Value-&gt;LastAccessedTimeInSeconds;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ElapsedTimeInSeconds<sp/>&gt;=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a3bf90912dec9633f57d31b01dfcca8d1" kindref="member">UserCachePurgeTimeoutSeconds</ref><sp/>&amp;&amp;<sp/>!UserIdToUserInfo.Value-&gt;bIsImportant)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FilteredUserMap.Add(UserIdToUserInfo);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ItemsPurged<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>iterate<sp/>through<sp/>the<sp/>users<sp/>that<sp/>we<sp/>got<sp/>back<sp/>from<sp/>the<sp/>filter<sp/>and<sp/>remove<sp/>them<sp/>from<sp/>the<sp/>real<sp/>maps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TPair&lt;FString,<sp/>TSharedRef&lt;FAccelByteUserInfo&gt;&gt;&amp;<sp/>UserIdToUserInfo<sp/>:<sp/>FilteredUserMap)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>the<sp/>user<sp/>from<sp/>the<sp/>AccelByte<sp/>ID<sp/>cache<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;const<sp/>FAccelByteUserInfo&gt;<sp/>UserInfo<sp/>=<sp/>UserIdToUserInfo.Value;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>.Remove(UserIdToUserInfo.Key);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>user<sp/>has<sp/>a<sp/>platform<sp/>ID,<sp/>if<sp/>so<sp/>format<sp/>it<sp/>and<sp/>remove<sp/>them<sp/>from<sp/>the<sp/>platform<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserInfo-&gt;Id.IsValid()<sp/>&amp;&amp;<sp/>UserInfo-&gt;Id-&gt;HasPlatformInformation())</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">ConvertPlatformTypeAndIdToCacheKey</ref>(UserInfo-&gt;Id-&gt;GetPlatformType(),<sp/>UserInfo-&gt;Id-&gt;GetPlatformId());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1af75c72b5cdcbf6572576bbddff4de67b" kindref="member">PlatformIdToUserInfoMap</ref>.Remove(PlatformId);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ItemsPurged++;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ItemsPurged;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a3a955336561270b29e20de0268a2cbbd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a3a955336561270b29e20de0268a2cbbd" kindref="member">FOnlineUserCacheAccelByte::IsUserCached</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite" kindref="compound">FAccelByteUniqueIdComposite</ref>&amp;<sp/>Id)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lock<sp/>while<sp/>we<sp/>access<sp/>the<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a41f5413cfcd135af352739c3ea98cdee" kindref="member">CacheLock</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>by<sp/>checking<sp/>the<sp/>cache<sp/>for<sp/>the<sp/>user<sp/>associated<sp/>with<sp/>the<sp/>AccelByte<sp/>ID,<sp/>if<sp/>we<sp/>have<sp/>one<sp/>to<sp/>query</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!Id.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a0a006d56b824b44c160f46a415cd6da1" kindref="member">Id</ref>.IsEmpty())</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>.Contains(Id.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a0a006d56b824b44c160f46a415cd6da1" kindref="member">Id</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Next,<sp/>if<sp/>we<sp/>didn&apos;t<sp/>already<sp/>find<sp/>the<sp/>user<sp/>using<sp/>the<sp/>AccelByte<sp/>ID,<sp/>and<sp/>we<sp/>have<sp/>platform<sp/>type<sp/>and<sp/>ID<sp/>try<sp/>and<sp/>query<sp/>by<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!Id.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a89b80da82b9c394b2df3673231a40d2f" kindref="member">PlatformType</ref>.IsEmpty()<sp/>&amp;&amp;<sp/>!Id.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a2a21871a7c7b1c3d52d188165f60cb8f" kindref="member">PlatformId</ref>.IsEmpty())</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">ConvertPlatformTypeAndIdToCacheKey</ref>(Id.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a89b80da82b9c394b2df3673231a40d2f" kindref="member">PlatformType</ref>,<sp/>Id.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a2a21871a7c7b1c3d52d188165f60cb8f" kindref="member">PlatformId</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1af75c72b5cdcbf6572576bbddff4de67b" kindref="member">PlatformIdToUserInfoMap</ref>.Contains(PlatformId);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="d8/dfc/class_f_online_user_cache_accel_byte_1adfa9d68272369cabc339849bf6359244" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1adfa9d68272369cabc339849bf6359244" kindref="member">FOnlineUserCacheAccelByte::GetQueryAndCacheArrays</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>AccelByteIds,<sp/>TArray&lt;FString&gt;&amp;<sp/>UsersToQuery,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;&amp;<sp/>UsersInCache)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AccelByteId<sp/>:<sp/>AccelByteIds)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;*<sp/>FoundCachedUser<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>.Find(AccelByteId);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundCachedUser<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UsersInCache.Add(*FoundCachedUser);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UsersToQuery.Add(AccelByteId);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a5593b4e8f8bb3c624798baea96917c43" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a5593b4e8f8bb3c624798baea96917c43" kindref="member">FOnlineUserCacheAccelByte::QueryUsersByAccelByteIds</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>AccelByteIds,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryUsersComplete&amp;<sp/>Delegate,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsImportant</highlight><highlight class="comment">/*=false*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>all<sp/>IDs<sp/>that<sp/>are<sp/>not<sp/>valid<sp/>AccelByte<sp/>IDs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FString&gt;<sp/>FilteredIds<sp/>=<sp/>AccelByteIds;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>FilteredIds.RemoveAll(<ref refid="dc/d6d/_online_user_cache_accel_byte_8cpp_1afa8b256a7467687e5db46b5d79b941e4" kindref="member">IsInvalidAccelByteId</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FilteredIds.Num()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;FOnlineUserStoreAccelByte::QueryUsersByAccelByteIds<sp/>called<sp/>with<sp/>an<sp/>empty<sp/>array<sp/>of<sp/>IDs,<sp/>skipping<sp/>this<sp/>call!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delegate.ExecuteIfBound(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;());</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a62a9768a1dddbd50aabc40374b267d61" kindref="member">FOnlineUserAccelBytePtr</ref><sp/>UserInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineUserAccelByte&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;GetUserInterface());</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Run<sp/>QueryUserProfile<sp/>after<sp/>QueryUsersByIds<sp/>to<sp/>get<sp/>Info<sp/>like<sp/>FriendId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;CreateAndDispatchAsyncTaskSerial&lt;<ref refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids" kindref="compound">FOnlineAsyncTaskAccelByteQueryUsersByIds</ref>&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/>LocalUserNum,<sp/>FilteredIds,<sp/>bIsImportant,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;CreateAndDispatchAsyncTaskSerial&lt;<ref refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile" kindref="compound">FOnlineAsyncTaskAccelByteQueryUserProfile</ref>&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/>LocalUserNum,<sp/>FilteredIds,<sp/>UserInterface-&gt;OnQueryUserProfileCompleteDelegates[LocalUserNum]);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a3bd71113b3721a68d844ce804ff75c2d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a3bd71113b3721a68d844ce804ff75c2d" kindref="member">FOnlineUserCacheAccelByte::QueryUsersByPlatformIds</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>PlatformType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>PlatformIds,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryUsersComplete&amp;<sp/>Delegate,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsImportant<sp/></highlight><highlight class="comment">/*=<sp/>false*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PlatformType.IsEmpty())</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;FOnlineUserStoreAccelByte::QueryUsersByPlatformIds<sp/>called<sp/>with<sp/>a<sp/>blank<sp/>platform<sp/>type,<sp/>skipping<sp/>this<sp/>call!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delegate.ExecuteIfBound(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;());</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PlatformIds.Num()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;FOnlineUserStoreAccelByte::QueryUsersByPlatformIds<sp/>called<sp/>with<sp/>an<sp/>empty<sp/>array<sp/>of<sp/>IDs,<sp/>skipping<sp/>this<sp/>call!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delegate.ExecuteIfBound(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;());</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids" kindref="compound">FOnlineAsyncTaskAccelByteQueryUsersByIds</ref>&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/>LocalUserNum,<sp/>PlatformType,<sp/>PlatformIds,<sp/>bIsImportant,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2e29cec3606130813f5fa2a0b4d4d8a8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a5593b4e8f8bb3c624798baea96917c43" kindref="member">FOnlineUserCacheAccelByte::QueryUsersByAccelByteIds</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>AccelByteIds,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryUsersComplete&amp;<sp/>Delegate,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsImportant<sp/></highlight><highlight class="comment">/*=<sp/>false*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>all<sp/>IDs<sp/>that<sp/>are<sp/>not<sp/>valid<sp/>AccelByte<sp/>IDs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FString&gt;<sp/>FilteredIds<sp/>=<sp/>AccelByteIds;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>FilteredIds.RemoveAll(<ref refid="dc/d6d/_online_user_cache_accel_byte_8cpp_1afa8b256a7467687e5db46b5d79b941e4" kindref="member">IsInvalidAccelByteId</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FilteredIds.Num()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;FOnlineUserStoreAccelByte::QueryUsersByAccelByteIds<sp/>called<sp/>with<sp/>an<sp/>empty<sp/>array<sp/>of<sp/>IDs,<sp/>skipping<sp/>this<sp/>call!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delegate.ExecuteIfBound(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;());</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a79c7a75b959f926eaef2a64023a33fcf" kindref="member">FOnlineIdentityAccelBytePtr</ref><sp/>IdentityInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineIdentityAccelByte&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;GetIdentityInterface());</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a62a9768a1dddbd50aabc40374b267d61" kindref="member">FOnlineUserAccelBytePtr</ref><sp/>UserInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineUserAccelByte&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;GetUserInterface());</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>IdentityInterface-&gt;GetLocalUserNum(UserId,<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Run<sp/>QueryUserProfile<sp/>after<sp/>QueryUsersByIds<sp/>to<sp/>get<sp/>Info<sp/>like<sp/>FriendId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;CreateAndDispatchAsyncTaskSerial&lt;<ref refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids" kindref="compound">FOnlineAsyncTaskAccelByteQueryUsersByIds</ref>&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/>UserId,<sp/>FilteredIds,<sp/>bIsImportant,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;CreateAndDispatchAsyncTaskSerial&lt;<ref refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile" kindref="compound">FOnlineAsyncTaskAccelByteQueryUserProfile</ref>&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/>UserId,<sp/>FilteredIds,<sp/>UserInterface-&gt;OnQueryUserProfileCompleteDelegates[LocalUserNum]);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a915c35c637d81aa08ac598ee742e1f2f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a3bd71113b3721a68d844ce804ff75c2d" kindref="member">FOnlineUserCacheAccelByte::QueryUsersByPlatformIds</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>PlatformType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>PlatformIds,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryUsersComplete&amp;<sp/>Delegate,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsImportant<sp/></highlight><highlight class="comment">/*=<sp/>false*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PlatformType.IsEmpty())</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;FOnlineUserStoreAccelByte::QueryUsersByPlatformIds<sp/>called<sp/>with<sp/>a<sp/>blank<sp/>platform<sp/>type,<sp/>skipping<sp/>this<sp/>call!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delegate.ExecuteIfBound(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;());</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PlatformIds.Num()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;FOnlineUserStoreAccelByte::QueryUsersByPlatformIds<sp/>called<sp/>with<sp/>an<sp/>empty<sp/>array<sp/>of<sp/>IDs,<sp/>skipping<sp/>this<sp/>call!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Delegate.ExecuteIfBound(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;());</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="db/d57/class_f_online_async_task_accel_byte_query_users_by_ids" kindref="compound">FOnlineAsyncTaskAccelByteQueryUsersByIds</ref>&gt;(<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ac8438933f0dd47558c48892965eb7a72" kindref="member">Subsystem</ref>,<sp/>UserId,<sp/>PlatformType,<sp/>PlatformIds,<sp/>bIsImportant,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2405dd4fcfe853ebcf82771e8a96168e" refkind="member"><highlight class="normal">TSharedPtr&lt;const<sp/>FAccelByteUserInfo&gt;<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2405dd4fcfe853ebcf82771e8a96168e" kindref="member">FOnlineUserCacheAccelByte::GetUser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lock<sp/>while<sp/>we<sp/>access<sp/>the<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a41f5413cfcd135af352739c3ea98cdee" kindref="member">CacheLock</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>this<sp/>unique<sp/>ID<sp/>is<sp/>an<sp/>AccelByte<sp/>composite<sp/>ID<sp/>already,<sp/>then<sp/>forward<sp/>to<sp/>the<sp/>GetUser<sp/>using<sp/>the<sp/>composite<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserId.GetType()<sp/>==<sp/><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a44834296acd28217e5a667169a7f7c6b" kindref="member">ACCELBYTE_USER_ID_TYPE</ref>)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1ae8cb93e2a9e38b9012e1f7f9bdf4ebca" kindref="member">FUniqueNetIdAccelByteUserRef</ref><sp/>AccelByteId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(UserId);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2405dd4fcfe853ebcf82771e8a96168e" kindref="member">GetUser</ref>(AccelByteId-&gt;GetCompositeStructure());</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Otherwise,<sp/>query<sp/>as<sp/>if<sp/>it<sp/>is<sp/>a<sp/>platform<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">ConvertPlatformTypeAndIdToCacheKey</ref>(UserId.GetType().ToString(),<sp/>UserId.ToString());</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;*<sp/>FoundUserInfo<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1af75c72b5cdcbf6572576bbddff4de67b" kindref="member">PlatformIdToUserInfoMap</ref>.Find(PlatformId);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundUserInfo<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*FoundUserInfo)-&gt;LastAccessedTimeInSeconds<sp/>=<sp/>FPlatformTime::Seconds();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*FoundUserInfo;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a31f58ba07f8eac04a16372027cd225c2" refkind="member"><highlight class="normal">TSharedPtr&lt;const<sp/>FAccelByteUserInfo&gt;<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2405dd4fcfe853ebcf82771e8a96168e" kindref="member">FOnlineUserCacheAccelByte::GetUser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite" kindref="compound">FAccelByteUniqueIdComposite</ref>&amp;<sp/>UserId)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lock<sp/>while<sp/>we<sp/>access<sp/>the<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a41f5413cfcd135af352739c3ea98cdee" kindref="member">CacheLock</ref>);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>by<sp/>checking<sp/>the<sp/>cache<sp/>for<sp/>the<sp/>user<sp/>associated<sp/>with<sp/>the<sp/>AccelByte<sp/>ID,<sp/>if<sp/>we<sp/>have<sp/>one<sp/>to<sp/>query</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;*<sp/>FoundUserInfo<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a0a006d56b824b44c160f46a415cd6da1" kindref="member">Id</ref>.IsEmpty())</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FoundUserInfo<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>.Find(UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a0a006d56b824b44c160f46a415cd6da1" kindref="member">Id</ref>);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Next,<sp/>if<sp/>we<sp/>didn&apos;t<sp/>already<sp/>find<sp/>the<sp/>user<sp/>using<sp/>the<sp/>AccelByte<sp/>ID,<sp/>and<sp/>we<sp/>have<sp/>platform<sp/>type<sp/>and<sp/>ID<sp/>try<sp/>and<sp/>query<sp/>by<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundUserInfo<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>(!UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a89b80da82b9c394b2df3673231a40d2f" kindref="member">PlatformType</ref>.IsEmpty()<sp/>&amp;&amp;<sp/>!UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a2a21871a7c7b1c3d52d188165f60cb8f" kindref="member">PlatformId</ref>.IsEmpty()))</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">ConvertPlatformTypeAndIdToCacheKey</ref>(UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a89b80da82b9c394b2df3673231a40d2f" kindref="member">PlatformType</ref>,<sp/>UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a2a21871a7c7b1c3d52d188165f60cb8f" kindref="member">PlatformId</ref>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FoundUserInfo<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1af75c72b5cdcbf6572576bbddff4de67b" kindref="member">PlatformIdToUserInfoMap</ref>.Find(PlatformId);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundUserInfo<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*FoundUserInfo)-&gt;LastAccessedTimeInSeconds<sp/>=<sp/>FPlatformTime::Seconds();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*FoundUserInfo;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="d8/dfc/class_f_online_user_cache_accel_byte_1ad063290c194ca3a632920f853f1da08a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ad063290c194ca3a632920f853f1da08a" kindref="member">FOnlineUserCacheAccelByte::AddUsersToCache</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;&amp;<sp/>UsersQueried)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;&amp;<sp/>User<sp/>:<sp/>UsersQueried)</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(User-&gt;PublicCode.IsEmpty())</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>CachedUserInfo<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2405dd4fcfe853ebcf82771e8a96168e" kindref="member">GetUser</ref>(*User-&gt;Id.ToSharedRef());</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CachedUserInfo.IsValid())</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!CachedUserInfo-&gt;PublicCode.IsEmpty())</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;PublicCode<sp/>=<sp/>CachedUserInfo-&gt;PublicCode;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>user<sp/>to<sp/>the<sp/>AccelByte<sp/>ID<sp/>mapping<sp/>cache<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>.Add(User-&gt;Id-&gt;GetAccelByteId(),<sp/>User);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Try<sp/>and<sp/>add<sp/>the<sp/>user<sp/>to<sp/>the<sp/>platform<sp/>mapping<sp/>cache<sp/>if<sp/>they<sp/>have<sp/>platform<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(User-&gt;Id-&gt;HasPlatformInformation())</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">ConvertPlatformTypeAndIdToCacheKey</ref>(User-&gt;Id-&gt;GetPlatformType(),<sp/>User-&gt;Id-&gt;GetPlatformId());</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1af75c72b5cdcbf6572576bbddff4de67b" kindref="member">PlatformIdToUserInfoMap</ref>.Add(PlatformId,<sp/>User);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a1052a31b19d3b3dce0449465e6961373" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a1052a31b19d3b3dce0449465e6961373" kindref="member">FOnlineUserCacheAccelByte::AddPublicCodeToCache</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>PublicCode)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lock<sp/>while<sp/>we<sp/>access<sp/>the<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a41f5413cfcd135af352739c3ea98cdee" kindref="member">CacheLock</ref>);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>this<sp/>unique<sp/>ID<sp/>is<sp/>an<sp/>AccelByte<sp/>composite<sp/>ID<sp/>already,<sp/>then<sp/>forward<sp/>to<sp/>the<sp/>GetUser<sp/>using<sp/>the<sp/>composite<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserId.GetType()<sp/>==<sp/><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a44834296acd28217e5a667169a7f7c6b" kindref="member">ACCELBYTE_USER_ID_TYPE</ref>)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1ae8cb93e2a9e38b9012e1f7f9bdf4ebca" kindref="member">FUniqueNetIdAccelByteUserRef</ref><sp/>AccelByteId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(UserId);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a1052a31b19d3b3dce0449465e6961373" kindref="member">AddPublicCodeToCache</ref>(AccelByteId-&gt;GetCompositeStructure(),<sp/>PublicCode);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Otherwise,<sp/>query<sp/>as<sp/>if<sp/>it<sp/>is<sp/>a<sp/>platform<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">ConvertPlatformTypeAndIdToCacheKey</ref>(UserId.GetType().ToString(),<sp/>UserId.ToString());</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;*<sp/>FoundUserInfo<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1af75c72b5cdcbf6572576bbddff4de67b" kindref="member">PlatformIdToUserInfoMap</ref>.Find(PlatformId);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundUserInfo<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*FoundUserInfo)-&gt;LastAccessedTimeInSeconds<sp/>=<sp/>FPlatformTime::Seconds();</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FoundUserInfo-&gt;Get().PublicCode<sp/>=<sp/>PublicCode;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>user<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite" kindref="compound">FAccelByteUniqueIdComposite</ref><sp/>CompositeId{UserId.ToString(),<sp/>UserId.GetType().ToString(),<sp/>PlatformId};</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;<sp/>User<sp/>=<sp/>MakeShared&lt;FAccelByteUserInfo&gt;();</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;Id<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1abff02fe798677e069f37b821994d713e" kindref="member">FUniqueNetIdAccelByteUser::Create</ref>(CompositeId);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;PublicCode<sp/>=<sp/>PublicCode;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ad063290c194ca3a632920f853f1da08a" kindref="member">AddUsersToCache</ref>({<sp/>User<sp/>});</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="d8/dfc/class_f_online_user_cache_accel_byte_1ade0e38983edeb236c378c7bfd75b9f34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a1052a31b19d3b3dce0449465e6961373" kindref="member">FOnlineUserCacheAccelByte::AddPublicCodeToCache</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite" kindref="compound">FAccelByteUniqueIdComposite</ref>&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>PublicCode)</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lock<sp/>while<sp/>we<sp/>access<sp/>the<sp/>cache</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a41f5413cfcd135af352739c3ea98cdee" kindref="member">CacheLock</ref>);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>by<sp/>checking<sp/>the<sp/>cache<sp/>for<sp/>the<sp/>user<sp/>associated<sp/>with<sp/>the<sp/>AccelByte<sp/>ID,<sp/>if<sp/>we<sp/>have<sp/>one<sp/>to<sp/>query</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;*<sp/>FoundUserInfo<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a0a006d56b824b44c160f46a415cd6da1" kindref="member">Id</ref>.IsEmpty())</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FoundUserInfo<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a2b345e75a1df0e0610f312fa8e4515d8" kindref="member">AccelByteIdToUserInfoMap</ref>.Find(UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a0a006d56b824b44c160f46a415cd6da1" kindref="member">Id</ref>);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Next,<sp/>if<sp/>we<sp/>didn&apos;t<sp/>already<sp/>find<sp/>the<sp/>user<sp/>using<sp/>the<sp/>AccelByte<sp/>ID,<sp/>and<sp/>we<sp/>have<sp/>platform<sp/>type<sp/>and<sp/>ID<sp/>try<sp/>and<sp/>query<sp/>by<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundUserInfo<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>(!UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a89b80da82b9c394b2df3673231a40d2f" kindref="member">PlatformType</ref>.IsEmpty()<sp/>&amp;&amp;<sp/>!UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a2a21871a7c7b1c3d52d188165f60cb8f" kindref="member">PlatformId</ref>.IsEmpty()))</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">ConvertPlatformTypeAndIdToCacheKey</ref>(UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a89b80da82b9c394b2df3673231a40d2f" kindref="member">PlatformType</ref>,<sp/>UserId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a2a21871a7c7b1c3d52d188165f60cb8f" kindref="member">PlatformId</ref>);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FoundUserInfo<sp/>=<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1af75c72b5cdcbf6572576bbddff4de67b" kindref="member">PlatformIdToUserInfoMap</ref>.Find(PlatformId);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundUserInfo<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*FoundUserInfo)-&gt;LastAccessedTimeInSeconds<sp/>=<sp/>FPlatformTime::Seconds();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FoundUserInfo-&gt;Get().PublicCode<sp/>=<sp/>PublicCode;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>user<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;<sp/>User<sp/>=<sp/>MakeShared&lt;FAccelByteUserInfo&gt;();</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;Id<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1abff02fe798677e069f37b821994d713e" kindref="member">FUniqueNetIdAccelByteUser::Create</ref>(UserId);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User-&gt;PublicCode<sp/>=<sp/>PublicCode;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1ad063290c194ca3a632920f853f1da08a" kindref="member">AddUsersToCache</ref>({<sp/>User<sp/>});</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" refkind="member"><highlight class="normal">FString<sp/><ref refid="d8/dfc/class_f_online_user_cache_accel_byte_1a8dd5ea5a1ca5081494b6a243de6c9224" kindref="member">FOnlineUserCacheAccelByte::ConvertPlatformTypeAndIdToCacheKey</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Id)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="359"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PlatformId<sp/>=<sp/>FString::Printf(TEXT(</highlight><highlight class="stringliteral">&quot;%s;%s&quot;</highlight><highlight class="normal">),<sp/>*Type,<sp/>*Id);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PlatformId;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCacheAccelByte.cpp"/>
+  </compounddef>
+</doxygen>

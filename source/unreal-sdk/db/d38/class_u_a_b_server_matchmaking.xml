@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="db/d38/class_u_a_b_server_matchmaking" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UABServerMatchmaking</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="df/d95/_a_b_server_matchmaking_8h" local="no">ABServerMatchmaking.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d38/class_u_a_b_server_matchmaking_1a97b8c3bf733e00b86a47f108be326ddb" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref></type>
+        <definition>AccelByte::FServerApiClientPtr UABServerMatchmaking::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABServerMatchmaking::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="48" column="32" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1adca992ea81a9c17203658c6ac7597a10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::SetServerApiClient</definition>
+        <argsstring>(AccelByte::FServerApiClientPtr const &amp;NewServerApiClientPtr)</argsstring>
+        <name>SetServerApiClient</name>
+        <qualifiedname>UABServerMatchmaking::SetServerApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref> const &amp;</type>
+          <declname>NewServerApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="20" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1a3b45580b79df83fe2a08180301baa528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::EnqueueJoinableSession</definition>
+        <argsstring>(FAccelByteModelsMatchmakingResult const &amp;MatchmakingResult, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>EnqueueJoinableSession</name>
+        <qualifiedname>UABServerMatchmaking::EnqueueJoinableSession</qualifiedname>
+        <param>
+          <type><ref refid="d0/de2/struct_f_accel_byte_models_matchmaking_result" kindref="compound">FAccelByteModelsMatchmakingResult</ref> const &amp;</type>
+          <declname>MatchmakingResult</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="24" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="14" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1a47f418707234077cf5e8b7210a6326ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::DequeueJoinableSession</definition>
+        <argsstring>(const FString &amp;MatchId, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>DequeueJoinableSession</name>
+        <qualifiedname>UABServerMatchmaking::DequeueJoinableSession</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MatchId</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="27" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="33" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1a4dba179fa79e4c4c85684a4920784829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::AddUserToSession</definition>
+        <argsstring>(FString const &amp;ChannelName, FString const &amp;MatchId, FString const &amp;UserId, FString const &amp;OptionalPartyId, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>AddUserToSession</name>
+        <qualifiedname>UABServerMatchmaking::AddUserToSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>OptionalPartyId</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="30" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="52" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1a93e2244eeabdadc45e41ef364f5093a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::RemoveUserFromSession</definition>
+        <argsstring>(FString const &amp;ChannelName, FString const &amp;MatchId, FString const &amp;UserId, FAccelByteModelsMatchmakingResult const &amp;OptionalBody, FDHandler OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>RemoveUserFromSession</name>
+        <qualifiedname>UABServerMatchmaking::RemoveUserFromSession</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/de2/struct_f_accel_byte_models_matchmaking_result" kindref="compound">FAccelByteModelsMatchmakingResult</ref> const &amp;</type>
+          <declname>OptionalBody</declname>
+        </param>
+        <param>
+          <type>FDHandler</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="33" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="74" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1a61ce43dd1412b629c1f4a286e10605eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::QuerySessionStatus</definition>
+        <argsstring>(FString const &amp;MatchId, FDMatchmakingResultDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>QuerySessionStatus</name>
+        <qualifiedname>UABServerMatchmaking::QuerySessionStatus</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchId</declname>
+        </param>
+        <param>
+          <type>FDMatchmakingResultDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="36" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="99" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1ab3179809387213a65b8e49f4a5d4aed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::RebalanceMatchmakingBasedOnMMR</definition>
+        <argsstring>(FString const &amp;MatchId, FDMatchmakingResultDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>RebalanceMatchmakingBasedOnMMR</name>
+        <qualifiedname>UABServerMatchmaking::RebalanceMatchmakingBasedOnMMR</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchId</declname>
+        </param>
+        <param>
+          <type>FDMatchmakingResultDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="39" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="118" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1a867023fcbccc2ccdfbe57729c737b55d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::ActivateSessionStatusPolling</definition>
+        <argsstring>(FString const &amp;MatchId, int IntervalSec, FDMatchmakingResultDelegate OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>ActivateSessionStatusPolling</name>
+        <qualifiedname>UABServerMatchmaking::ActivateSessionStatusPolling</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>MatchId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>IntervalSec</declname>
+        </param>
+        <param>
+          <type>FDMatchmakingResultDelegate</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="42" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="137" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d38/class_u_a_b_server_matchmaking_1af921bded194fa8e29009e30c69204ed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerMatchmaking::DeactivateStatusPolling</definition>
+        <argsstring>()</argsstring>
+        <name>DeactivateStatusPolling</name>
+        <qualifiedname>UABServerMatchmaking::DeactivateStatusPolling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="45" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerMatchmaking.cpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABServerMatchmaking</label>
+        <link refid="db/d38/class_u_a_b_server_matchmaking"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABServerMatchmaking</label>
+        <link refid="db/d38/class_u_a_b_server_matchmaking"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" line="16" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerMatchmaking.h" bodystart="17" bodyend="49"/>
+    <listofallmembers>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1a867023fcbccc2ccdfbe57729c737b55d" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>ActivateSessionStatusPolling</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1a4dba179fa79e4c4c85684a4920784829" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>AddUserToSession</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1a97b8c3bf733e00b86a47f108be326ddb" prot="private" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>ApiClientPtr</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1af921bded194fa8e29009e30c69204ed8" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>DeactivateStatusPolling</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1a47f418707234077cf5e8b7210a6326ac" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>DequeueJoinableSession</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1a3b45580b79df83fe2a08180301baa528" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>EnqueueJoinableSession</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1a61ce43dd1412b629c1f4a286e10605eb" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>QuerySessionStatus</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1ab3179809387213a65b8e49f4a5d4aed5" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>RebalanceMatchmakingBasedOnMMR</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1a93e2244eeabdadc45e41ef364f5093a2" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>RemoveUserFromSession</name></member>
+      <member refid="db/d38/class_u_a_b_server_matchmaking_1adca992ea81a9c17203658c6ac7597a10" prot="public" virt="non-virtual"><scope>UABServerMatchmaking</scope><name>SetServerApiClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

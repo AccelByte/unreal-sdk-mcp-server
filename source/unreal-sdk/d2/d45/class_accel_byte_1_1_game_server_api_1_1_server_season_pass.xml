@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::GameServerApi::ServerSeasonPass</compoundname>
+    <basecompoundref refid="d8/d4c/class_accel_byte_1_1_f_server_api_base" prot="public" virt="non-virtual">AccelByte::FServerApiBase</basecompoundref>
+    <includes refid="d1/dca/_accel_byte_server_season_pass_api_8h" local="no">AccelByteServerSeasonPassApi.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1af5edd9578c3ba7c9db60db5840b893ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</definition>
+        <argsstring>(ServerCredentials const &amp;InCredentialsRef, ServerSettings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; FServerApiClient, ESPMode::ThreadSafe &gt; InServerApiClient=nullptr)</argsstring>
+        <name>ServerSeasonPass</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</qualifiedname>
+        <param>
+          <type><ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">ServerSettings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/df1/class_accel_byte_1_1_f_server_api_client" kindref="compound">FServerApiClient</ref>, ESPMode::ThreadSafe &gt;</type>
+          <declname>InServerApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="28" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a05a93c31af6895fa6830fbeec89161ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSeasonPass::~ServerSeasonPass</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerSeasonPass</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::~ServerSeasonPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="32" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a9f0f5a4b0f2e0a55665dec39e971ecbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSeasonPass::GrantExpToUser</definition>
+        <argsstring>(FString const &amp;UserId, int32 Exp, THandler&lt; FAccelByteModelsUserSeasonInfoWithoutReward &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, EAccelByteSeasonPassSource Source=EAccelByteSeasonPassSource::SWEAT, TArray&lt; FString &gt; const &amp;Tags={})</argsstring>
+        <name>GrantExpToUser</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::GrantExpToUser</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Exp</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d8/d6b/struct_f_accel_byte_models_user_season_info_without_reward" kindref="compound">FAccelByteModelsUserSeasonInfoWithoutReward</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dfd/_accel_byte_season_pass_models_8h_1a4a7d0097aaf58b29bcabb03fd5533122" kindref="member">EAccelByteSeasonPassSource</ref></type>
+          <declname>Source</declname>
+          <defval><ref refid="dc/dfd/_accel_byte_season_pass_models_8h_1a4a7d0097aaf58b29bcabb03fd5533122a9786de5c1c01e0649ad3be40d8ff39bf" kindref="member">EAccelByteSeasonPassSource::SWEAT</ref></defval>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>Tags</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Grant exp to user by UserId. After reaching to the next level, currentExp will be reset to 0, remainder will be added. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User ID will be granted the exp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total of the exp will be granted to user. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d00/struct_f_accel_byte_models_user_season_info" kindref="compound">FAccelByteModelsUserSeasonInfo</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Granted exp source, default value SWEAT </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Grant reason, default value Empty</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="46" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="34" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1abe70d5361fa13843c47604c9d3183eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSeasonPass::GrantTierToUser</definition>
+        <argsstring>(FString const &amp;UserId, int32 Count, THandler&lt; FAccelByteModelsUserSeasonInfoWithoutReward &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, EAccelByteSeasonPassSource Source=EAccelByteSeasonPassSource::SWEAT, TArray&lt; FString &gt; const &amp;Tags={})</argsstring>
+        <name>GrantTierToUser</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::GrantTierToUser</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Count</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d8/d6b/struct_f_accel_byte_models_user_season_info_without_reward" kindref="compound">FAccelByteModelsUserSeasonInfoWithoutReward</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dfd/_accel_byte_season_pass_models_8h_1a4a7d0097aaf58b29bcabb03fd5533122" kindref="member">EAccelByteSeasonPassSource</ref></type>
+          <declname>Source</declname>
+          <defval><ref refid="dc/dfd/_accel_byte_season_pass_models_8h_1a4a7d0097aaf58b29bcabb03fd5533122a9786de5c1c01e0649ad3be40d8ff39bf" kindref="member">EAccelByteSeasonPassSource::SWEAT</ref></defval>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>Tags</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Grant tier to user by UserId. It will auto enroll if there&apos;s no user season but active published season exist, season only located in non-publisher namespace, otherwise ignore. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User ID will be granted the exp </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total of the exp will be granted to user. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d00/struct_f_accel_byte_models_user_season_info" kindref="compound">FAccelByteModelsUserSeasonInfo</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Granted tier source, default value SWEAT </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Grant reason, default value Empty</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="66" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="72" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a2ed788d8bcab7ac1302980c8dbc900c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSeasonPass::GetCurrentUserSeasonProgression</definition>
+        <argsstring>(FString const &amp;UserId, THandler&lt; FAccelByteModelsUserSeasonInfoWithoutReward &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>GetCurrentUserSeasonProgression</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::GetCurrentUserSeasonProgression</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d8/d6b/struct_f_accel_byte_models_user_season_info_without_reward" kindref="compound">FAccelByteModelsUserSeasonInfoWithoutReward</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get current user season progression, season only located in non-publisher namespace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User ID to check user season progression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d8/d6b/struct_f_accel_byte_models_user_season_info_without_reward" kindref="compound">FAccelByteModelsUserSeasonInfoWithoutReward</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="82" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="110" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1ab4c65e122988f68ef6ea9edd150fe49e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSeasonPass::GetUserSeasonData</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;SeasonId, THandler&lt; FAccelByteModelsUserSeasonInfo &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>GetUserSeasonData</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::GetUserSeasonData</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>SeasonId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d00/struct_f_accel_byte_models_user_season_info" kindref="compound">FAccelByteModelsUserSeasonInfo</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get user season data by SeasonId, season only located in non-publisher namespace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Id of the User. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SeasonId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Id of the Season. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d00/struct_f_accel_byte_models_user_season_info" kindref="compound">FAccelByteModelsUserSeasonInfo</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="96" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="131" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1aeb01886f52f304dc1f5b650c9e4b6036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSeasonPass::GetCurrentUserSeasonHistory</definition>
+        <argsstring>(FString const &amp;UserId, THandler&lt; FAccelByteModelsUserSeasonExpHistory &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>GetCurrentUserSeasonHistory</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::GetCurrentUserSeasonHistory</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d3/d3d/struct_f_accel_byte_models_user_season_exp_history" kindref="compound">FAccelByteModelsUserSeasonExpHistory</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get current user season history. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User ID to check user season progression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d3/d3d/struct_f_accel_byte_models_user_season_exp_history" kindref="compound">FAccelByteModelsUserSeasonExpHistory</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="110" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="154" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a723e89e63a43e746d2137b483ceb69e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSeasonPass::QueryUserSeasonExp</definition>
+        <argsstring>(FString const &amp;UserId, THandler&lt; FAccelByteModelsQueryUserSeasonExp &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>QueryUserSeasonExp</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::QueryUserSeasonExp</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d0d/struct_f_accel_byte_models_query_user_season_exp" kindref="compound">FAccelByteModelsQueryUserSeasonExp</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get user exp acquisition history&apos;s tag list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User ID to check user season progression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d3/d3d/struct_f_accel_byte_models_user_season_exp_history" kindref="compound">FAccelByteModelsUserSeasonExpHistory</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="123" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="213" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1ac31034908dc3295d34746df91d1999b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerSeasonPass::BulkGetUserSessionProgression</definition>
+        <argsstring>(TArray&lt; FString &gt; const &amp;UserIds, THandler&lt; TArray&lt; FAccelByteModelsUserSeasonInfo &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>BulkGetUserSessionProgression</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::BulkGetUserSessionProgression</qualifiedname>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>UserIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="df/d00/struct_f_accel_byte_models_user_season_info" kindref="compound">FAccelByteModelsUserSeasonInfo</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk get current user session progression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User IDs to check user season progression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is TArray&lt;FAccelByteModelsUserSeasonInfo&gt;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="136" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerSeasonPassApi.cpp" bodystart="234" bodyend="257"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a9176762694f872acafcb0e7875f25196" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</definition>
+        <argsstring>()=delete</argsstring>
+        <name>ServerSeasonPass</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a7078f53fddea0355d7915d08b4b23196" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</definition>
+        <argsstring>(const ServerSeasonPass &amp;)=delete</argsstring>
+        <name>ServerSeasonPass</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</qualifiedname>
+        <param>
+          <type>const ServerSeasonPass &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1af5e6bb5ea445f99c0145b88117f99e2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</definition>
+        <argsstring>(ServerSeasonPass &amp;&amp;)=delete</argsstring>
+        <name>ServerSeasonPass</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerSeasonPass::ServerSeasonPass</qualifiedname>
+        <param>
+          <type>ServerSeasonPass &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="143" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Server Season Pass APIs to manage user season pass related like granting exp progression. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerSeasonPass</label>
+        <link refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ServerSettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerSeasonPass</label>
+        <link refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" line="25" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerSeasonPassApi.h" bodystart="26" bodyend="144"/>
+    <listofallmembers>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1ac31034908dc3295d34746df91d1999b8" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>BulkGetUserSessionProgression</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9bf60b7a41397c62997b57d33ec11ae4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>FServerApiBase</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1aeb01886f52f304dc1f5b650c9e4b6036" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>GetCurrentUserSeasonHistory</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a2ed788d8bcab7ac1302980c8dbc900c3" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>GetCurrentUserSeasonProgression</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1ab4c65e122988f68ef6ea9edd150fe49e" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>GetUserSeasonData</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a9f0f5a4b0f2e0a55665dec39e971ecbb" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>GrantExpToUser</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1abe70d5361fa13843c47604c9d3183eef" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>GrantTierToUser</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9c610b4093406fa713b39c8319b2f7d6" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>HttpClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a0ac58ba7cb9e3b872c5391127beafaab" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>HttpRef</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a723e89e63a43e746d2137b483ceb69e8" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>QueryUserSeasonExp</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1aa8ed94ac70b499b1a4227802af7dacc3" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a39c68ed1daaf3b51a1182b9dd457eb07" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ServerCredentialsRef</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1af5edd9578c3ba7c9db60db5840b893ce" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ServerSeasonPass</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a9176762694f872acafcb0e7875f25196" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ServerSeasonPass</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a7078f53fddea0355d7915d08b4b23196" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ServerSeasonPass</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1af5e6bb5ea445f99c0145b88117f99e2f" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ServerSeasonPass</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a452b7dcace49560836fc87b19d5a599a" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ServerSettingsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1af3924e1aba52efccd68b6b08a1e310aa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>SetServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1abda8b2aaa6e06007a914d43329c1af35" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>ValidateAccelByteId</name></member>
+      <member refid="d2/d45/class_accel_byte_1_1_game_server_api_1_1_server_season_pass_1a05a93c31af6895fa6830fbeec89161ff" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerSeasonPass</scope><name>~ServerSeasonPass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,736 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="df/da1/_online_store_interface_v2_accel_byte_8cpp" kind="file" language="C++">
+    <compoundname>OnlineStoreInterfaceV2AccelByte.cpp</compoundname>
+    <includes refid="df/d7e/_online_store_interface_v2_accel_byte_8h" local="yes">OnlineStoreInterfaceV2AccelByte.h</includes>
+    <includes refid="db/d3d/_online_async_task_accel_byte_query_categories_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryCategories.h</includes>
+    <includes refid="d5/d29/_online_async_task_accel_byte_query_child_categories_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryChildCategories.h</includes>
+    <includes refid="d7/d0d/_online_async_task_accel_byte_query_offer_by_filter_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferByFilter.h</includes>
+    <includes refid="df/d42/_online_async_task_accel_byte_query_offer_by_id_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferById.h</includes>
+    <includes refid="dc/d62/_online_async_task_accel_byte_query_offer_by_sku_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferBySku.h</includes>
+    <includes refid="dd/d0c/_online_async_task_accel_byte_query_offer_dynamic_data_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferDynamicData.h</includes>
+    <includes refid="d8/d5d/_online_async_task_accel_byte_get_estimated_price_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteGetEstimatedPrice.h</includes>
+    <includes refid="d6/db9/_online_async_task_accel_byte_get_item_by_criteria_8h" local="yes">AsyncTasks/Store/OnlineAsyncTaskAccelByteGetItemByCriteria.h</includes>
+    <includes local="yes">OnlineSubsystemUtils.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="51">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="7">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="4">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="58">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteGetEstimatedPrice.h</label>
+        <link refid="d8/d5d/_online_async_task_accel_byte_get_estimated_price_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteGetItemByCriteria.h</label>
+        <link refid="d6/db9/_online_async_task_accel_byte_get_item_by_criteria_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryCategories.h</label>
+        <link refid="db/d3d/_online_async_task_accel_byte_query_categories_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryChildCategories.h</label>
+        <link refid="d5/d29/_online_async_task_accel_byte_query_child_categories_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferByFilter.h</label>
+        <link refid="d7/d0d/_online_async_task_accel_byte_query_offer_by_filter_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferById.h</label>
+        <link refid="df/d42/_online_async_task_accel_byte_query_offer_by_id_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferBySku.h</label>
+        <link refid="dc/d62/_online_async_task_accel_byte_query_offer_by_sku_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferDynamicData.h</label>
+        <link refid="dd/d0c/_online_async_task_accel_byte_query_offer_dynamic_data_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlineStoreInterfaceV2AccelByte.cpp</label>
+        <link refid="df/da1/_online_store_interface_v2_accel_byte_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="47">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="44">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="6">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="34">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="48">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="9">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="18">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="36">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="26">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="40">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="50">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="31">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="41">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="35">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="27">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="39">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="13">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="25">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="45">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="14">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="38">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="30">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="15">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="46">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="19">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="60">
+        <label>OnlineSubsystemUtils.h</label>
+      </node>
+      <node id="11">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="23">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d7e/_online_store_interface_v2_accel_byte_8h" kindref="compound">OnlineStoreInterfaceV2AccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d3d/_online_async_task_accel_byte_query_categories_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryCategories.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d29/_online_async_task_accel_byte_query_child_categories_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryChildCategories.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d0d/_online_async_task_accel_byte_query_offer_by_filter_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferByFilter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d42/_online_async_task_accel_byte_query_offer_by_id_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferById.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d62/_online_async_task_accel_byte_query_offer_by_sku_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferBySku.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/d0c/_online_async_task_accel_byte_query_offer_dynamic_data_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteQueryOfferDynamicData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d5d/_online_async_task_accel_byte_get_estimated_price_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteGetEstimatedPrice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/db9/_online_async_task_accel_byte_get_item_by_criteria_8h" kindref="compound">AsyncTasks/Store/OnlineAsyncTaskAccelByteGetItemByCriteria.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OnlineSubsystemUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">FOnlineStoreV2AccelByte::FOnlineStoreV2AccelByte(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>InSubsystem)<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>AccelByteSubsystem(InSubsystem)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>ServiceLabel(1)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d4/de9/class_f_online_store_v2_accel_byte_1a093c68c0c843926d6b551f7d2778c1e5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a093c68c0c843926d6b551f7d2778c1e5" kindref="member">FOnlineStoreV2AccelByte::ReplaceCategories</ref>(TArray&lt;FOnlineStoreCategory&gt;<sp/>InCategories)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a7ddcd47f5fbc2a168b4be63e83b4f2f5" kindref="member">CategoriesLock</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a0cb16009e9063fd22673defe8d8a2bd7" kindref="member">StoreCategories</ref>.Reset();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Category<sp/>:<sp/>InCategories)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a0cb16009e9063fd22673defe8d8a2bd7" kindref="member">StoreCategories</ref>.Add(Category.Id,<sp/>Category);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d4/de9/class_f_online_store_v2_accel_byte_1a933ef6c285f196d0461b5b858c178d0e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a933ef6c285f196d0461b5b858c178d0e" kindref="member">FOnlineStoreV2AccelByte::EmplaceCategories</ref>(TArray&lt;FOnlineStoreCategory&gt;<sp/>InCategories)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a7ddcd47f5fbc2a168b4be63e83b4f2f5" kindref="member">CategoriesLock</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Category<sp/>:<sp/>InCategories)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a0cb16009e9063fd22673defe8d8a2bd7" kindref="member">StoreCategories</ref>.Emplace(Category.Id,<sp/>Category);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d4/de9/class_f_online_store_v2_accel_byte_1ad33be5ee77ca5a9eca1873344c35a110" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ad33be5ee77ca5a9eca1873344c35a110" kindref="member">FOnlineStoreV2AccelByte::ReplaceOffers</ref>(TMap&lt;FUniqueOfferId,<sp/>FOnlineStoreOfferRef&gt;<sp/>InOffer)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref><sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Offer<sp/>:<sp/>InOffer)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcf/class_f_online_store_offer_accel_byte" kindref="compound">FOnlineStoreOfferAccelByte</ref><sp/>StoreOfferAccelByte(Offer.Value.Get());</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.Add(Offer.Key,<sp/>MakeShared&lt;FOnlineStoreOfferAccelByte&gt;(StoreOfferAccelByte));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d4/de9/class_f_online_store_v2_accel_byte_1ae7b3527eb16e4954a0f50ab24c3e7994" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ad33be5ee77ca5a9eca1873344c35a110" kindref="member">FOnlineStoreV2AccelByte::ReplaceOffers</ref>(TMap&lt;FUniqueOfferId,<sp/>FOnlineStoreOfferAccelByteRef&gt;<sp/>InOffer)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref><sp/>=<sp/>InOffer;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="d4/de9/class_f_online_store_v2_accel_byte_1ae97588c4531a242b9e89c9652ba7ba4d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ae97588c4531a242b9e89c9652ba7ba4d" kindref="member">FOnlineStoreV2AccelByte::EmplaceOffers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;FUniqueOfferId,<sp/>FOnlineStoreOfferRef&gt;&amp;<sp/>InOffer)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FUniqueOfferId,<sp/>FOnlineStoreOfferAccelByteRef&gt;<sp/>StoreOffersTemp<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Offer<sp/>:<sp/>InOffer)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dcf/class_f_online_store_offer_accel_byte" kindref="compound">FOnlineStoreOfferAccelByte</ref><sp/>StoreOfferAccelByte(Offer.Value.Get());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StoreOffersTemp.Add(Offer.Key,<sp/>MakeShared&lt;FOnlineStoreOfferAccelByte&gt;(StoreOfferAccelByte));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Offer<sp/>:<sp/>StoreOffersTemp)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.Emplace(Offer.Key,<sp/>Offer.Value);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="d4/de9/class_f_online_store_v2_accel_byte_1a311af4ecbd0eddf4fd4ab62129a5e0f3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ae97588c4531a242b9e89c9652ba7ba4d" kindref="member">FOnlineStoreV2AccelByte::EmplaceOffers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;FUniqueOfferId,<sp/>FOnlineStoreOfferAccelByteRef&gt;&amp;<sp/>InOffer)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Offer<sp/>:<sp/>InOffer)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.Emplace(Offer.Key,<sp/>Offer.Value);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="d4/de9/class_f_online_store_v2_accel_byte_1a737f3290bac8134c37e66720eb713acf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a737f3290bac8134c37e66720eb713acf" kindref="member">FOnlineStoreV2AccelByte::ResetOffers</ref>()</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.Reset();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="d4/de9/class_f_online_store_v2_accel_byte_1a07d0e063a9562f3557d4c8734d1d30a8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a07d0e063a9562f3557d4c8734d1d30a8" kindref="member">FOnlineStoreV2AccelByte::EmplaceOfferDynamicData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>InUserId,<sp/>TSharedRef&lt;FAccelByteModelsItemDynamicData&gt;<sp/>InDynamicData)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a45a81a4eaef5b9e8673f1214a2f96a02" kindref="member">DynamicDataLock</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>SharedUserId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(InUserId);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d7e/_online_store_interface_v2_accel_byte_8h_1a9ad27cc40ae205cf5e9b4b1601127851" kindref="member">FOfferToDynamicDataMap</ref>&amp;<sp/>FoundDynamicDataMap<sp/>=<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a730ac5e722743b3c61b55266938a8a5e" kindref="member">OffersDynamicData</ref>.FindOrAdd(SharedUserId);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>FoundDynamicDataMap.Emplace(InDynamicData-&gt;ItemId,<sp/>InDynamicData);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d4/de9/class_f_online_store_v2_accel_byte_1acb96732faa6efd535146ff4f1f5bac29" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1acb96732faa6efd535146ff4f1f5bac29" kindref="member">FOnlineStoreV2AccelByte::GetFromSubsystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem,<sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1abd7dcc780741d0c43f478b6e9eadd36a" kindref="member">FOnlineStoreV2AccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineStoreV2AccelByte&gt;(Subsystem-&gt;GetStoreV2Interface());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>OutInterfaceInstance.IsValid();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="d4/de9/class_f_online_store_v2_accel_byte_1a4eb754d4f3f2ae82ac88813bf929eb56" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a4eb754d4f3f2ae82ac88813bf929eb56" kindref="member">FOnlineStoreV2AccelByte::GetFromWorld</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UWorld*<sp/>World,<sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1abd7dcc780741d0c43f478b6e9eadd36a" kindref="member">FOnlineStoreV2AccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem<sp/>=<sp/>::Online::GetSubsystem(World);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Subsystem<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1acb96732faa6efd535146ff4f1f5bac29" kindref="member">GetFromSubsystem</ref>(Subsystem,<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="d4/de9/class_f_online_store_v2_accel_byte_1a2977102df1f40db0ea0e59d6dac4314e" refkind="member"><highlight class="normal"><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2977102df1f40db0ea0e59d6dac4314e" kindref="member">FOnlineStoreV2AccelByte::GetServiceLabel</ref>()</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a4aad3f726e05d00c0d79589eaa89febf" kindref="member">ServiceLabel</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="d4/de9/class_f_online_store_v2_accel_byte_1ac1e8b078894f4d297ff9bf5072a1bf03" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ac1e8b078894f4d297ff9bf5072a1bf03" kindref="member">FOnlineStoreV2AccelByte::SetServiceLabel</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>InServiceLabel)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a4aad3f726e05d00c0d79589eaa89febf" kindref="member">ServiceLabel</ref><sp/>=<sp/>InServiceLabel;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="d4/de9/class_f_online_store_v2_accel_byte_1a079c973ee85669b34f0ea14b0b40a7b7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a079c973ee85669b34f0ea14b0b40a7b7" kindref="member">FOnlineStoreV2AccelByte::QueryCategories</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryOnlineStoreCategoriesComplete&amp;<sp/>Delegate)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d8/d56/class_f_online_async_task_accel_byte_query_categories" kindref="compound">FOnlineAsyncTaskAccelByteQueryCategories</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="d4/de9/class_f_online_store_v2_accel_byte_1a9fca7e31298b8018219cad3b491eb90b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9fca7e31298b8018219cad3b491eb90b" kindref="member">FOnlineStoreV2AccelByte::QueryChildCategories</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CategoryPath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryOnlineStoreCategoriesComplete&amp;<sp/>Delegate)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d1/df6/class_f_online_async_task_accel_byte_query_child_categories" kindref="compound">FOnlineAsyncTaskAccelByteQueryChildCategories</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>CategoryPath,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="d4/de9/class_f_online_store_v2_accel_byte_1a8352df1109066c1aa78c7e704fd428c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a8352df1109066c1aa78c7e704fd428c1" kindref="member">FOnlineStoreV2AccelByte::GetCategories</ref>(TArray&lt;FOnlineStoreCategory&gt;&amp;<sp/>OutCategories)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="136"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a7ddcd47f5fbc2a168b4be63e83b4f2f5" kindref="member">CategoriesLock</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a0cb16009e9063fd22673defe8d8a2bd7" kindref="member">StoreCategories</ref>.GenerateValueArray(OutCategories);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="d4/de9/class_f_online_store_v2_accel_byte_1a0911d2035183fbc97603c315a2a1cd0e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a0911d2035183fbc97603c315a2a1cd0e" kindref="member">FOnlineStoreV2AccelByte::GetCategory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CategoryPath,<sp/>FOnlineStoreCategory&amp;<sp/>OutCategory)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="142"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a7ddcd47f5fbc2a168b4be63e83b4f2f5" kindref="member">CategoriesLock</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>OutCategory<sp/>=<sp/>*<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a0cb16009e9063fd22673defe8d8a2bd7" kindref="member">StoreCategories</ref>.Find(CategoryPath);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="d4/de9/class_f_online_store_v2_accel_byte_1ad66a8bdf70832bc2cdd0f14e53d7a2c0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ad66a8bdf70832bc2cdd0f14e53d7a2c0" kindref="member">FOnlineStoreV2AccelByte::QueryOffersByFilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineStoreFilter&amp;<sp/>Filter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryOnlineStoreOffersComplete&amp;<sp/>Delegate)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d4/d5a/class_f_online_async_task_accel_byte_query_offer_by_filter" kindref="compound">FOnlineAsyncTaskAccelByteQueryOfferByFilter</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>Filter,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="d4/de9/class_f_online_store_v2_accel_byte_1a4a49828774f858d83b67b46cb58f7da9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a4a49828774f858d83b67b46cb58f7da9" kindref="member">FOnlineStoreV2AccelByte::QueryOffersById</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FUniqueOfferId&gt;&amp;<sp/>OfferIds,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryOnlineStoreOffersComplete&amp;<sp/>Delegate)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d8/d01/class_f_online_async_task_accel_byte_query_offer_by_id" kindref="compound">FOnlineAsyncTaskAccelByteQueryOfferById</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>OfferIds,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="d4/de9/class_f_online_store_v2_accel_byte_1a422de6f1b78d5f69da822bac2f96b64c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a422de6f1b78d5f69da822bac2f96b64c" kindref="member">FOnlineStoreV2AccelByte::QueryOfferBySku</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Sku,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryOnlineStoreOffersComplete&amp;<sp/>Delegate)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d4/d15/class_f_online_async_task_accel_byte_query_offer_by_sku" kindref="compound">FOnlineAsyncTaskAccelByteQueryOfferBySku</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>Sku,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="d4/de9/class_f_online_store_v2_accel_byte_1a7e3f779b1a861dca0e19299c0fc4e21e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a7e3f779b1a861dca0e19299c0fc4e21e" kindref="member">FOnlineStoreV2AccelByte::QueryOfferDynamicData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueOfferId&amp;<sp/>OfferId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryOnlineStoreOffersComplete&amp;<sp/>Delegate)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d6/de0/class_f_online_async_task_accel_byte_query_offer_dynamic_data" kindref="compound">FOnlineAsyncTaskAccelByteQueryOfferDynamicData</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>OfferId,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="d4/de9/class_f_online_store_v2_accel_byte_1a249fb7084436b2818ce03b5ceb590605" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1aeed19c47e4e5954fca7589cd2f63ddd7" kindref="member">FOnlineStoreV2AccelByte::GetOffers</ref>(TArray&lt;FOnlineStoreOfferAccelByteRef&gt;&amp;<sp/>OutOffers)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="169"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.GenerateValueArray(OutOffers);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="d4/de9/class_f_online_store_v2_accel_byte_1aeed19c47e4e5954fca7589cd2f63ddd7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1aeed19c47e4e5954fca7589cd2f63ddd7" kindref="member">FOnlineStoreV2AccelByte::GetOffers</ref>(TArray&lt;FOnlineStoreOfferRef&gt;&amp;<sp/>OutOffers)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="175"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FOnlineStoreOfferAccelByteRef&gt;<sp/>OnlineStoreOfferAccelByte;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.GenerateValueArray(OnlineStoreOfferAccelByte);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FOnlineStoreOfferRef&gt;<sp/>OutOffersTemp;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Offer<sp/>:<sp/>OnlineStoreOfferAccelByte)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutOffersTemp.Add(Offer);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>OutOffers<sp/>=<sp/>OutOffersTemp;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="d4/de9/class_f_online_store_v2_accel_byte_1af0514f0b317e4b134019165a4e6fb1b3" refkind="member"><highlight class="normal">TSharedPtr&lt;FOnlineStoreOffer&gt;<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1af0514f0b317e4b134019165a4e6fb1b3" kindref="member">FOnlineStoreV2AccelByte::GetOffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueOfferId&amp;<sp/>OfferId)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="189"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlineStoreOfferAccelByte&gt;*<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref><sp/>=<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.Find(OfferId);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="d4/de9/class_f_online_store_v2_accel_byte_1ae5bc53dbb0ac0807f0a294df22b91df1" refkind="member"><highlight class="normal">TSharedPtr&lt;FOnlineStoreOfferAccelByte&gt;<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ae5bc53dbb0ac0807f0a294df22b91df1" kindref="member">FOnlineStoreV2AccelByte::GetOfferAccelByte</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueOfferId&amp;<sp/>OfferId)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="200"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlineStoreOfferAccelByte&gt;*<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref><sp/>=<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>.Find(OfferId);<sp/></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="d4/de9/class_f_online_store_v2_accel_byte_1ab5100ffe54caca97dba37b56264ea3da" refkind="member"><highlight class="normal">TSharedPtr&lt;FOnlineStoreOffer&gt;<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ab5100ffe54caca97dba37b56264ea3da" kindref="member">FOnlineStoreV2AccelByte::GetOfferBySku</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Sku)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="211"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Offer<sp/>:<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Offer.Value-&gt;DynamicFields.Find(TEXT(</highlight><highlight class="stringliteral">&quot;Sku&quot;</highlight><highlight class="normal">))-&gt;Equals(Sku))</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Offer.Value;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="d4/de9/class_f_online_store_v2_accel_byte_1ab6a0928e7e6ee426039967ff95e0a76f" refkind="member"><highlight class="normal">TSharedPtr&lt;FOnlineStoreOfferAccelByte&gt;<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1ab6a0928e7e6ee426039967ff95e0a76f" kindref="member">FOnlineStoreV2AccelByte::GetOfferBySkuAccelByte</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Sku)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="224"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9eac9226b96d55696ab808ada4b7a1dc" kindref="member">OffersLock</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Offer<sp/>:<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a2cab2920efc11b3cdb8448a7f0e17c34" kindref="member">StoreOffers</ref>)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Offer.Value-&gt;DynamicFields.Find(TEXT(</highlight><highlight class="stringliteral">&quot;Sku&quot;</highlight><highlight class="normal">))-&gt;Equals(Sku))</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Offer.Value;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="d4/de9/class_f_online_store_v2_accel_byte_1a9d1c47c9c4709ec8e56d118174922411" refkind="member"><highlight class="normal">TSharedPtr&lt;FAccelByteModelsItemDynamicData&gt;<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a9d1c47c9c4709ec8e56d118174922411" kindref="member">FOnlineStoreV2AccelByte::GetOfferDynamicData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueOfferId&amp;<sp/>OfferId)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="237"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a45a81a4eaef5b9e8673f1214a2f96a02" kindref="member">DynamicDataLock</ref>);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>SharedUserId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(UserId);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="df/d7e/_online_store_interface_v2_accel_byte_8h_1a9ad27cc40ae205cf5e9b4b1601127851" kindref="member">FOfferToDynamicDataMap</ref>*<sp/>FoundDynamicDataMap<sp/>=<sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a730ac5e722743b3c61b55266938a8a5e" kindref="member">OffersDynamicData</ref>.Find(SharedUserId);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundDynamicDataMap<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteModelsItemDynamicData&gt;*<sp/>FoundDynamicData<sp/>=<sp/>FoundDynamicDataMap-&gt;Find(OfferId);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundDynamicData<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*FoundDynamicData;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="d4/de9/class_f_online_store_v2_accel_byte_1a5a6e74c89eb035e9d2c8f929120b9e0b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a5a6e74c89eb035e9d2c8f929120b9e0b" kindref="member">FOnlineStoreV2AccelByte::GetEstimatedPrice</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>ItemIds,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Region)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d2/d0f/class_f_online_async_task_accel_byte_get_estimated_price" kindref="compound">FOnlineAsyncTaskAccelByteGetEstimatedPrice</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>ItemIds,<sp/>Region);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="d4/de9/class_f_online_store_v2_accel_byte_1a1ddbbb7136d5f2b5b2af5aaf765db8f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a1ddbbb7136d5f2b5b2af5aaf765db8f2" kindref="member">FOnlineStoreV2AccelByte::GetItemsByCriteria</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/>FAccelByteModelsItemCriteria<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>ItemCriteria,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>Offset,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>Limit,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TArray&lt;EAccelByteItemListSortBy&gt;<sp/>SortBy)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d5/dde/class_f_online_async_task_accel_byte_get_item_by_criteria" kindref="compound">FOnlineAsyncTaskAccelByteGetItemByCriteria</ref>&gt;(<ref refid="d4/de9/class_f_online_store_v2_accel_byte_1a347a813ba5bcb519e50a7b9789d3fcd9" kindref="member">AccelByteSubsystem</ref>,<sp/>UserId,<sp/>ItemCriteria,<sp/>Offset,<sp/>Limit,<sp/>SortBy);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStoreInterfaceV2AccelByte.cpp"/>
+  </compounddef>
+</doxygen>

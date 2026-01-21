@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/d92/class_f_service_compatibility_map" kind="class" language="C++" prot="public">
+    <compoundname>FServiceCompatibilityMap</compoundname>
+    <includes refid="d0/dd7/_version_8h" local="no">Version.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d92/class_f_service_compatibility_map_1a8a6d1aee4778ab7a961e9822c9496aa0" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, <ref refid="da/d77/struct_f_version_range" kindref="compound">FVersionRange</ref> &gt; const</type>
+        <definition>TMap&lt;FString, FVersionRange&gt; const FServiceCompatibilityMap::Map</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <qualifiedname>FServiceCompatibilityMap::Map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" line="69" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/d92/class_f_service_compatibility_map_1a597d5d77a952a0408078a086c42f031f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d92/class_f_service_compatibility_map" kindref="compound">FServiceCompatibilityMap</ref></type>
+        <definition>FServiceCompatibilityMap FServiceCompatibilityMap::FromJson</definition>
+        <argsstring>(FString JsonString)</argsstring>
+        <name>FromJson</name>
+        <qualifiedname>FServiceCompatibilityMap::FromJson</qualifiedname>
+        <param>
+          <type>FString</type>
+          <declname>JsonString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" line="61" column="33" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.cpp" bodystart="281" bodyend="319"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d92/class_f_service_compatibility_map_1a21858fb425e617bae5893a492fa3d49b" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FServiceCompatibilityMap::FServiceCompatibilityMap</definition>
+        <argsstring>(TMap&lt; FString, FVersionRange &gt; Map)</argsstring>
+        <name>FServiceCompatibilityMap</name>
+        <qualifiedname>FServiceCompatibilityMap::FServiceCompatibilityMap</qualifiedname>
+        <param>
+          <type>TMap&lt; FString, <ref refid="da/d77/struct_f_version_range" kindref="compound">FVersionRange</ref> &gt;</type>
+          <declname>Map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" line="63" column="10" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.cpp" bodystart="321" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d92/class_f_service_compatibility_map_1afa3ca5897146ba98a50560f3abca67d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d1a/struct_f_result" kindref="compound">FResult</ref></type>
+        <definition>FResult FServiceCompatibilityMap::Check</definition>
+        <argsstring>(FString const &amp;ServiceName, FString const &amp;VersionStr, bool bPatchIgnored=false) const</argsstring>
+        <name>Check</name>
+        <qualifiedname>FServiceCompatibilityMap::Check</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ServiceName</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>VersionStr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bPatchIgnored</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" line="64" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.cpp" bodystart="325" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d92/class_f_service_compatibility_map_1ac2cfacf9527d238b42b1296817f8a7fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt; FString &gt; FServiceCompatibilityMap::GetServices</definition>
+        <argsstring>() const</argsstring>
+        <name>GetServices</name>
+        <qualifiedname>FServiceCompatibilityMap::GetServices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" line="65" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.cpp" bodystart="362" bodyend="368"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d9/d92/class_f_service_compatibility_map_1a96b353170fdd36e0d22ab7131a8ff691" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FServiceCompatibilityMap::IsCompatible</definition>
+        <argsstring>(FVersionRange const &amp;Range, FVersion const &amp;Version, bool bPatchIgnored=false)</argsstring>
+        <name>IsCompatible</name>
+        <qualifiedname>FServiceCompatibilityMap::IsCompatible</qualifiedname>
+        <param>
+          <type><ref refid="da/d77/struct_f_version_range" kindref="compound">FVersionRange</ref> const &amp;</type>
+          <declname>Range</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/d5f/struct_f_version" kindref="compound">FVersion</ref> const &amp;</type>
+          <declname>Version</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bPatchIgnored</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" line="68" column="13" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.cpp" bodystart="370" bodyend="380"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" line="58" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/Version.h" bodystart="59" bodyend="70"/>
+    <listofallmembers>
+      <member refid="d9/d92/class_f_service_compatibility_map_1afa3ca5897146ba98a50560f3abca67d8" prot="public" virt="non-virtual"><scope>FServiceCompatibilityMap</scope><name>Check</name></member>
+      <member refid="d9/d92/class_f_service_compatibility_map_1a597d5d77a952a0408078a086c42f031f" prot="public" virt="non-virtual"><scope>FServiceCompatibilityMap</scope><name>FromJson</name></member>
+      <member refid="d9/d92/class_f_service_compatibility_map_1a21858fb425e617bae5893a492fa3d49b" prot="public" virt="non-virtual"><scope>FServiceCompatibilityMap</scope><name>FServiceCompatibilityMap</name></member>
+      <member refid="d9/d92/class_f_service_compatibility_map_1ac2cfacf9527d238b42b1296817f8a7fa" prot="public" virt="non-virtual"><scope>FServiceCompatibilityMap</scope><name>GetServices</name></member>
+      <member refid="d9/d92/class_f_service_compatibility_map_1a96b353170fdd36e0d22ab7131a8ff691" prot="private" virt="non-virtual"><scope>FServiceCompatibilityMap</scope><name>IsCompatible</name></member>
+      <member refid="d9/d92/class_f_service_compatibility_map_1a8a6d1aee4778ab7a961e9822c9496aa0" prot="private" virt="non-virtual"><scope>FServiceCompatibilityMap</scope><name>Map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

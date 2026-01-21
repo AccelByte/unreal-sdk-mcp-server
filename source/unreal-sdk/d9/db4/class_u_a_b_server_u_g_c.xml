@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/db4/class_u_a_b_server_u_g_c" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UABServerUGC</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d1/db0/_a_b_server_u_g_c_8h" local="no">ABServerUGC.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/db4/class_u_a_b_server_u_g_c_1a5609945ac0dd68febe240ada4e99fe49" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref></type>
+        <definition>AccelByte::FServerApiClientPtr UABServerUGC::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABServerUGC::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="143" column="32" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a279f08f2d2f7ed52abf7c7c0a9bbbccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::SetServerApiClient</definition>
+        <argsstring>(AccelByte::FServerApiClientPtr const &amp;NewServerApiClientPtr)</argsstring>
+        <name>SetServerApiClient</name>
+        <qualifiedname>UABServerUGC::SetServerApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a9b2f99505af818a526c58c4e6f3e313a" kindref="member">AccelByte::FServerApiClientPtr</ref> const &amp;</type>
+          <declname>NewServerApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="19" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1ae3e8722efef4a587abf12d7a9f3bf154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::SearchContents</definition>
+        <argsstring>(FAccelByteModelsUGCSearchContentsRequest const &amp;Request, FDModelsUGCSearchContentsResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>SearchContents</name>
+        <qualifiedname>UABServerUGC::SearchContents</qualifiedname>
+        <param>
+          <type><ref refid="df/de7/struct_f_accel_byte_models_u_g_c_search_contents_request" kindref="compound">FAccelByteModelsUGCSearchContentsRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCSearchContentsResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="23" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="14" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a2918fd6c867e0827549e3490da0b08d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::SearchContentsSpecificToChannel</definition>
+        <argsstring>(FString const &amp;ChannelId, FAccelByteModelsUGCSearchContentsRequest const &amp;Request, FDModelsUGCSearchContentsResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>SearchContentsSpecificToChannel</name>
+        <qualifiedname>UABServerUGC::SearchContentsSpecificToChannel</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type><ref refid="df/de7/struct_f_accel_byte_models_u_g_c_search_contents_request" kindref="compound">FAccelByteModelsUGCSearchContentsRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCSearchContentsResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="30" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="34" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1ad5c4059b8610dc88bfaf1ec635d7f19d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::ModifyContentByShareCode</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;ChannelId, FString const &amp;ShareCode, FAccelByteModelsUGCUpdateRequest const &amp;ModifyRequest, FDModelsUGCServerResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>ModifyContentByShareCode</name>
+        <qualifiedname>UABServerUGC::ModifyContentByShareCode</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/d26/struct_f_accel_byte_models_u_g_c_update_request" kindref="compound">FAccelByteModelsUGCUpdateRequest</ref> const &amp;</type>
+          <declname>ModifyRequest</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCServerResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="38" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="55" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a43b076001ec35ed27850e01a6a801684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::DeleteContentByShareCode</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;ChannelId, FString const &amp;ShareCode, FDHandler const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>DeleteContentByShareCode</name>
+        <qualifiedname>UABServerUGC::DeleteContentByShareCode</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type>FDHandler const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="46" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="75" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1ae1d3fa78bb3b5a6ab3424b57f563dcdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetContentByContentId</definition>
+        <argsstring>(FString const &amp;ContentId, FDModelsUGCContentResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByContentId</name>
+        <qualifiedname>UABServerUGC::PublicGetContentByContentId</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ContentId</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCContentResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="53" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="94" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1ad3b3df251e5fc7af6e98a020b5abd7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetContentByShareCode</definition>
+        <argsstring>(FString const &amp;ShareCode, FDModelsUGCContentResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByShareCode</name>
+        <qualifiedname>UABServerUGC::PublicGetContentByShareCode</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCContentResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="60" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="113" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1ada11c3d386eeef487cbf74ff158651b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetContentBulk</definition>
+        <argsstring>(TArray&lt; FString &gt; const &amp;ContentIds, FDModelsUGCBulkContentResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentBulk</name>
+        <qualifiedname>UABServerUGC::PublicGetContentBulk</qualifiedname>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>ContentIds</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCBulkContentResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="67" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="132" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a4af1233d4ea706a292aa605658f5961a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetUserContent</definition>
+        <argsstring>(FString const &amp;UserId, FDModelsUGCContentPagingResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=1000, int32 Offset=0)</argsstring>
+        <name>PublicGetUserContent</name>
+        <qualifiedname>UABServerUGC::PublicGetUserContent</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCContentPagingResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="74" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="151" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1acb42abe95d1058ed87317e4d215eb99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicSearchContents</definition>
+        <argsstring>(const FString &amp;Name, const FString &amp;Creator, const FString &amp;Type, const FString &amp;Subtype, const TArray&lt; FString &gt; &amp;Tags, bool IsOfficial, const FString &amp;UserId, FDModelsUGCSearchContentsPagingResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, EAccelByteUgcSortBy SortBy=EAccelByteUgcSortBy::DATE, EAccelByteUgcOrderBy OrderBy=EAccelByteUgcOrderBy::DESC, int32 Limit=1000, int32 Offset=0)</argsstring>
+        <name>PublicSearchContents</name>
+        <qualifiedname>UABServerUGC::PublicSearchContents</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Creator</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Type</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Subtype</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>Tags</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>IsOfficial</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCSearchContentsPagingResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1a890b50bdeb112385ec0455417a22e75e" kindref="member">EAccelByteUgcSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1a890b50bdeb112385ec0455417a22e75ea633a6c7a6b9958f8174250094daf1e6a" kindref="member">EAccelByteUgcSortBy::DATE</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221" kindref="member">EAccelByteUgcOrderBy</ref></type>
+          <declname>OrderBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221a65a6d757dbb571ccc3af9706e9a5f607" kindref="member">EAccelByteUgcOrderBy::DESC</ref></defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="83" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="170" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a2d8e676fbcece8b78a8cf9821aeca074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicSearchAllContents</definition>
+        <argsstring>(FAccelByteModelsUGCSearchContentsRequest const &amp;Request, FDModelsUGCSearchContentsPagingResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>PublicSearchAllContents</name>
+        <qualifiedname>UABServerUGC::PublicSearchAllContents</qualifiedname>
+        <param>
+          <type><ref refid="df/de7/struct_f_accel_byte_models_u_g_c_search_contents_request" kindref="compound">FAccelByteModelsUGCSearchContentsRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCSearchContentsPagingResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="98" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="186" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1acb139f2f67fce801a1a513378bd16dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicSearchContentsSpecificToChannelV2</definition>
+        <argsstring>(const FString &amp;ChannelId, FDModelsUGCSearchContentsPagingResponseV2 const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=1000, int32 Offset=0, EAccelByteUGCContentSortByV2 SortBy=EAccelByteUGCContentSortByV2::CREATED_TIME_ASC)</argsstring>
+        <name>PublicSearchContentsSpecificToChannelV2</name>
+        <qualifiedname>UABServerUGC::PublicSearchContentsSpecificToChannelV2</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCSearchContentsPagingResponseV2 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae47266533f670d85d571267d6044e236" kindref="member">EAccelByteUGCContentSortByV2</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae47266533f670d85d571267d6044e236a5f43ee8548c74bb89c070aa043ae526c" kindref="member">EAccelByteUGCContentSortByV2::CREATED_TIME_ASC</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="105" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="202" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1affb51633c01e93ff43e21f2882ab89d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicSearchContentsV2</definition>
+        <argsstring>(const FAccelByteModelsUGCFilterRequestV2 &amp;Filter, FDModelsUGCSearchContentsPagingResponseV2 const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=1000, int32 Offset=0, EAccelByteUGCContentSortByV2 SortBy=EAccelByteUGCContentSortByV2::CREATED_TIME_ASC)</argsstring>
+        <name>PublicSearchContentsV2</name>
+        <qualifiedname>UABServerUGC::PublicSearchContentsV2</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/de2/struct_f_accel_byte_models_u_g_c_filter_request_v2" kindref="compound">FAccelByteModelsUGCFilterRequestV2</ref> &amp;</type>
+          <declname>Filter</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCSearchContentsPagingResponseV2 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae47266533f670d85d571267d6044e236" kindref="member">EAccelByteUGCContentSortByV2</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae47266533f670d85d571267d6044e236a5f43ee8548c74bb89c070aa043ae526c" kindref="member">EAccelByteUGCContentSortByV2::CREATED_TIME_ASC</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="113" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="218" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a6fdb0be2eb6f935f397e5669ca51d5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetContentBulkByIdsV2</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;ContentIds, FDModelsUGCBulkContentResponseV2 const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentBulkByIdsV2</name>
+        <qualifiedname>UABServerUGC::PublicGetContentBulkByIdsV2</qualifiedname>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>ContentIds</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCBulkContentResponseV2 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="121" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="234" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a3332af58217c80f242cd31676a04a18e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetContentByShareCodeV2</definition>
+        <argsstring>(FString const &amp;ShareCode, FDModelsUGCContentResponseV2 const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByShareCodeV2</name>
+        <qualifiedname>UABServerUGC::PublicGetContentByShareCodeV2</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCContentResponseV2 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="126" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="249" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a1ce27f84808d15201213dbe0dc9c6e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetContentByContentIdV2</definition>
+        <argsstring>(FString const &amp;ContentId, FDModelsUGCContentResponseV2 const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByContentIdV2</name>
+        <qualifiedname>UABServerUGC::PublicGetContentByContentIdV2</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ContentId</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCContentResponseV2 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="131" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="264" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db4/class_u_a_b_server_u_g_c_1a98b36185a6ab93ad34bc481c43ecf156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABServerUGC::PublicGetUserContentsV2</definition>
+        <argsstring>(const FString &amp;UserId, FDModelsUGCContentPageResponseV2 const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=1000, int32 Offset=0)</argsstring>
+        <name>PublicGetUserContentsV2</name>
+        <qualifiedname>UABServerUGC::PublicGetUserContentsV2</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FDModelsUGCContentPageResponseV2 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="136" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABServerUGC.cpp" bodystart="279" bodyend="293"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABServerUGC</label>
+        <link refid="d9/db4/class_u_a_b_server_u_g_c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABServerUGC</label>
+        <link refid="d9/db4/class_u_a_b_server_u_g_c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" line="15" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABServerUGC.h" bodystart="16" bodyend="144"/>
+    <listofallmembers>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a5609945ac0dd68febe240ada4e99fe49" prot="private" virt="non-virtual"><scope>UABServerUGC</scope><name>ApiClientPtr</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a43b076001ec35ed27850e01a6a801684" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>DeleteContentByShareCode</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1ad5c4059b8610dc88bfaf1ec635d7f19d" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>ModifyContentByShareCode</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1ada11c3d386eeef487cbf74ff158651b4" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetContentBulk</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a6fdb0be2eb6f935f397e5669ca51d5d5" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetContentBulkByIdsV2</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1ae1d3fa78bb3b5a6ab3424b57f563dcdd" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetContentByContentId</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a1ce27f84808d15201213dbe0dc9c6e62" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetContentByContentIdV2</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1ad3b3df251e5fc7af6e98a020b5abd7c0" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetContentByShareCode</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a3332af58217c80f242cd31676a04a18e" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetContentByShareCodeV2</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a4af1233d4ea706a292aa605658f5961a" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetUserContent</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a98b36185a6ab93ad34bc481c43ecf156" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicGetUserContentsV2</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a2d8e676fbcece8b78a8cf9821aeca074" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicSearchAllContents</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1acb42abe95d1058ed87317e4d215eb99b" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicSearchContents</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1acb139f2f67fce801a1a513378bd16dd3" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicSearchContentsSpecificToChannelV2</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1affb51633c01e93ff43e21f2882ab89d5" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>PublicSearchContentsV2</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1ae3e8722efef4a587abf12d7a9f3bf154" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>SearchContents</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a2918fd6c867e0827549e3490da0b08d9" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>SearchContentsSpecificToChannel</name></member>
+      <member refid="d9/db4/class_u_a_b_server_u_g_c_1a279f08f2d2f7ed52abf7c7c0a9bbbccf" prot="public" virt="non-virtual"><scope>UABServerUGC</scope><name>SetServerApiClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

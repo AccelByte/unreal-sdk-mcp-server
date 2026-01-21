@@ -1,0 +1,1663 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::GameServerApi::ServerUGC</compoundname>
+    <basecompoundref refid="d8/d4c/class_accel_byte_1_1_f_server_api_base" prot="public" virt="non-virtual">AccelByte::FServerApiBase</basecompoundref>
+    <includes refid="d0/d18/_accel_byte_server_u_g_c_api_8h" local="no">AccelByteServerUGCApi.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1ad706359a15b216d8a5dc8ac01622720b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerUGC::ServerUGC</definition>
+        <argsstring>(ServerCredentials const &amp;InCredentialsRef, ServerSettings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; FServerApiClient, ESPMode::ThreadSafe &gt; InServerApiClient=nullptr)</argsstring>
+        <name>ServerUGC</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::ServerUGC</qualifiedname>
+        <param>
+          <type><ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">ServerSettings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/df1/class_accel_byte_1_1_f_server_api_client" kindref="compound">FServerApiClient</ref>, ESPMode::ThreadSafe &gt;</type>
+          <declname>InServerApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="32" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a4360078ac89424ff5fce20a720667817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerUGC::~ServerUGC</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerUGC</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::~ServerUGC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="36" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a91578b3827c32eb48f2a7b7b405daa9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::SearchContents</definition>
+        <argsstring>(FAccelByteModelsUGCSearchContentsRequest const &amp;Request, THandler&lt; FAccelByteModelsUGCSearchContentsPagingResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>SearchContents</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::SearchContents</qualifiedname>
+        <param>
+          <type><ref refid="df/de7/struct_f_accel_byte_models_u_g_c_search_contents_request" kindref="compound">FAccelByteModelsUGCSearchContentsRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d3/d71/struct_f_accel_byte_models_u_g_c_search_contents_paging_response" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Search all available contents based on the given filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter request to specify the search result. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 20 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="49" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="27" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1ae3b404d2bab418b00a2e734f7259ffe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::SearchContentsSpecificToChannel</definition>
+        <argsstring>(FString const &amp;ChannelId, FAccelByteModelsUGCSearchContentsRequest const &amp;Request, THandler&lt; FAccelByteModelsUGCSearchContentsPagingResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>SearchContentsSpecificToChannel</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::SearchContentsSpecificToChannel</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type><ref refid="df/de7/struct_f_accel_byte_models_u_g_c_search_contents_request" kindref="compound">FAccelByteModelsUGCSearchContentsRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d3/d71/struct_f_accel_byte_models_u_g_c_search_contents_paging_response" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Search contents specific to a channel by channel id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ChannelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel Id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter request to specify the search result. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 20 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="67" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="61" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a3405fff0e1c5fcbf071c1c25b83c6e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::ModifyContentByShareCode</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;ChannelId, FString const &amp;ShareCode, FAccelByteModelsUGCUpdateRequest const &amp;ModifyRequest, THandler&lt; FAccelByteModelsUGCResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>ModifyContentByShareCode</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::ModifyContentByShareCode</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/d26/struct_f_accel_byte_models_u_g_c_update_request" kindref="compound">FAccelByteModelsUGCUpdateRequest</ref> const &amp;</type>
+          <declname>ModifyRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d0/d35/struct_f_accel_byte_models_u_g_c_response" kindref="compound">FAccelByteModelsUGCResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Modify existing content to update some information by share code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user id who modify the Content. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChannelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the content&apos;s channel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ShareCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The share code of the content that will be fetched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ModifyRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Detail information for the content request that will be modified. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d0/d35/struct_f_accel_byte_models_u_g_c_response" kindref="compound">FAccelByteModelsUGCResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="86" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="109" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a886f4b66d77c993240fe2e6f09851cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::DeleteContentByShareCode</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;ChannelId, FString const &amp;ShareCode, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>DeleteContentByShareCode</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::DeleteContentByShareCode</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete a content based on the its channel id and share code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user id who delete the Content. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChannelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the content&apos;s channel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ShareCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The share code of the content that will be fetched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="104" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="153" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a57a5ce7e6f2d5363ae22edd3bf904236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetContentByContentId</definition>
+        <argsstring>(FString const &amp;ContentId, THandler&lt; FAccelByteModelsUGCContentResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByContentId</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetContentByContentId</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ContentId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d7d/struct_f_accel_byte_models_u_g_c_content_response" kindref="compound">FAccelByteModelsUGCContentResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get a content information by its content id. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ContentId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the content that will be fetched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d7d/struct_f_accel_byte_models_u_g_c_content_response" kindref="compound">FAccelByteModelsUGCContentResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="119" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="190" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a7ab2a5042250bda7145de434717dd76d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetContentByShareCode</definition>
+        <argsstring>(FString const &amp;ShareCode, THandler&lt; FAccelByteModelsUGCContentResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByShareCode</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetContentByShareCode</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="df/d7d/struct_f_accel_byte_models_u_g_c_content_response" kindref="compound">FAccelByteModelsUGCContentResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get a content information by its share code. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ShareCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The share code of the content that will be fetched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="df/d7d/struct_f_accel_byte_models_u_g_c_content_response" kindref="compound">FAccelByteModelsUGCContentResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="132" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="218" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a2366951a0b4c678faef6b9584f692a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicSearchContents</definition>
+        <argsstring>(FString const &amp;Name, FString const &amp;Creator, FString const &amp;Type, FString const &amp;Subtype, TArray&lt; FString &gt; const &amp;Tags, bool IsOfficial, FString const &amp;UserId, THandler&lt; FAccelByteModelsUGCSearchContentsPagingResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, EAccelByteUgcSortBy SortBy=EAccelByteUgcSortBy::DATE, EAccelByteUgcOrderBy OrderBy=EAccelByteUgcOrderBy::DESC, int32 Limit=1000, int32 Offset=0)</argsstring>
+        <name>PublicSearchContents</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicSearchContents</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Creator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Type</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Subtype</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>Tags</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>IsOfficial</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d3/d71/struct_f_accel_byte_models_u_g_c_search_contents_paging_response" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1a890b50bdeb112385ec0455417a22e75e" kindref="member">EAccelByteUgcSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1a890b50bdeb112385ec0455417a22e75ea633a6c7a6b9958f8174250094daf1e6a" kindref="member">EAccelByteUgcSortBy::DATE</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221" kindref="member">EAccelByteUgcOrderBy</ref></type>
+          <declname>OrderBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221a65a6d757dbb571ccc3af9706e9a5f607" kindref="member">EAccelByteUgcOrderBy::DESC</ref></defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Search specific contents based on the given filter. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Content Name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Creator Name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Content Type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Subtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Content Subtype. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Content Tags. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IsOfficial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter only official contents </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SortBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorting criteria, name,download,like,date. default=date. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OrderBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorting order: asc, desc. default=desc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 1000 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="155" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="269" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a3b11961452c7755994aead2004eb9eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicSearchContents</definition>
+        <argsstring>(FAccelByteModelsUGCSearchContentsRequest const &amp;Request, THandler&lt; FAccelByteModelsUGCSearchContentsPagingResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>PublicSearchContents</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicSearchContents</qualifiedname>
+        <param>
+          <type><ref refid="df/de7/struct_f_accel_byte_models_u_g_c_search_contents_request" kindref="compound">FAccelByteModelsUGCSearchContentsRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d3/d71/struct_f_accel_byte_models_u_g_c_search_contents_paging_response" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Search specific contents based on the given filter. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter request to specify the search result. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 20 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="180" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="292" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a14105f281d63b46a6d28e6c1000f6624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetContentBulk</definition>
+        <argsstring>(TArray&lt; FString &gt; const &amp;ContentIds, THandler&lt; TArray&lt; FAccelByteModelsUGCContentResponse &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentBulk</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetContentBulk</qualifiedname>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>ContentIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="df/d7d/struct_f_accel_byte_models_u_g_c_content_response" kindref="compound">FAccelByteModelsUGCContentResponse</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get contents by content Ids. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ContentIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Content Ids Array <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="195" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="307" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1aeaf7efdad1375fce7c7879fefa7d6a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetUserContent</definition>
+        <argsstring>(FString const &amp;UserId, THandler&lt; FAccelByteModelsUGCContentPageResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=1000, int32 Offset=0)</argsstring>
+        <name>PublicGetUserContent</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetUserContent</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d6/dd3/struct_f_accel_byte_models_u_g_c_content_page_response" kindref="compound">FAccelByteModelsUGCContentPageResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get user&apos;s generated contents. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 1000 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="210" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="326" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1af9cac4417667492d8c95c78444dc4d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicSearchContentsSpecificToChannelV2</definition>
+        <argsstring>(FString const &amp;ChannelId, THandler&lt; FAccelByteModelsUGCSearchContentsPagingResponseV2 &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0, EAccelByteUGCContentUtilitiesSortByV2 SortBy=EAccelByteUGCContentUtilitiesSortByV2::CREATED_TIME_DESC)</argsstring>
+        <name>PublicSearchContentsSpecificToChannelV2</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicSearchContentsSpecificToChannelV2</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ChannelId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="de/dba/struct_f_accel_byte_models_u_g_c_search_contents_paging_response_v2" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponseV2</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ac4cef2c51b23841667f8a92e8d8fe59c" kindref="member">EAccelByteUGCContentUtilitiesSortByV2</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ac4cef2c51b23841667f8a92e8d8fe59ca553f133a7daed89c13e3d08a05ef3168" kindref="member">EAccelByteUGCContentUtilitiesSortByV2::CREATED_TIME_DESC</ref></defval>
+        </param>
+        <briefdescription>
+<para>Search contents specific to a channel. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ChannelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel Id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="de/dba/struct_f_accel_byte_models_u_g_c_search_contents_paging_response_v2" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponseV2</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 20 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SortBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorting criteria: created time with asc or desc. default = created time and desc.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="228" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="359" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a294009e09578be884d8d2baa3c2b91f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicSearchContentsV2</definition>
+        <argsstring>(FAccelByteModelsUGCFilterRequestV2 const &amp;Filter, THandler&lt; FAccelByteModelsUGCSearchContentsPagingResponseV2 &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0, EAccelByteUGCContentSortByV2 SortBy=EAccelByteUGCContentSortByV2::CREATED_TIME_DESC)</argsstring>
+        <name>PublicSearchContentsV2</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicSearchContentsV2</qualifiedname>
+        <param>
+          <type><ref refid="d9/de2/struct_f_accel_byte_models_u_g_c_filter_request_v2" kindref="compound">FAccelByteModelsUGCFilterRequestV2</ref> const &amp;</type>
+          <declname>Filter</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="de/dba/struct_f_accel_byte_models_u_g_c_search_contents_paging_response_v2" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponseV2</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae47266533f670d85d571267d6044e236" kindref="member">EAccelByteUGCContentSortByV2</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae47266533f670d85d571267d6044e236a553f133a7daed89c13e3d08a05ef3168" kindref="member">EAccelByteUGCContentSortByV2::CREATED_TIME_DESC</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get all contents in current namespace. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>To filter the returned UGC contets. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="de/dba/struct_f_accel_byte_models_u_g_c_search_contents_paging_response_v2" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponseV2</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 20 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SortBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorting criteria: name, download, like, created time with asc or desc. default = created time and desc.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="247" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="435" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1aa113092cc62aec4cafdfc3380e8a26ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetContentBulkByIdsV2</definition>
+        <argsstring>(TArray&lt; FString &gt; const &amp;ContentIds, THandler&lt; TArray&lt; FAccelByteModelsUGCContentResponseV2 &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentBulkByIdsV2</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetContentBulkByIdsV2</qualifiedname>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>ContentIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d3/d5b/struct_f_accel_byte_models_u_g_c_content_response_v2" kindref="compound">FAccelByteModelsUGCContentResponseV2</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get contents by content Ids. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ContentIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Content Ids Array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is TArray&lt;FAccelByteModelsUGCContentResponseV2&gt;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="263" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="451" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a4338e2fae30150c0bda50d8419dc60b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetContentByShareCodeV2</definition>
+        <argsstring>(FString const &amp;ShareCode, THandler&lt; FAccelByteModelsUGCContentResponseV2 &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByShareCodeV2</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetContentByShareCodeV2</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ShareCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d3/d5b/struct_f_accel_byte_models_u_g_c_content_response_v2" kindref="compound">FAccelByteModelsUGCContentResponseV2</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get a content information by its share code. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ShareCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The share code of the content that will be fetched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d3/d5b/struct_f_accel_byte_models_u_g_c_content_response_v2" kindref="compound">FAccelByteModelsUGCContentResponseV2</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="276" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="481" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a446601f85370fc73f230f0c9bd640bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetContentByContentIdV2</definition>
+        <argsstring>(FString const &amp;ContentId, THandler&lt; FAccelByteModelsUGCContentResponseV2 &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>PublicGetContentByContentIdV2</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetContentByContentIdV2</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>ContentId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d3/d5b/struct_f_accel_byte_models_u_g_c_content_response_v2" kindref="compound">FAccelByteModelsUGCContentResponseV2</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get a content information by its content id. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ContentId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the content that will be fetched. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d3/d5b/struct_f_accel_byte_models_u_g_c_content_response_v2" kindref="compound">FAccelByteModelsUGCContentResponseV2</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="289" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="501" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1ada03fc92b1f43ef2a60417d81b024fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerUGC::PublicGetUserContentsV2</definition>
+        <argsstring>(FString const &amp;UserId, THandler&lt; FAccelByteModelsUGCSearchContentsPagingResponseV2 &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0, EAccelByteUGCContentUtilitiesSortByV2 SortBy=EAccelByteUGCContentUtilitiesSortByV2::CREATED_TIME_DESC)</argsstring>
+        <name>PublicGetUserContentsV2</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::PublicGetUserContentsV2</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="de/dba/struct_f_accel_byte_models_u_g_c_search_contents_paging_response_v2" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponseV2</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ac4cef2c51b23841667f8a92e8d8fe59c" kindref="member">EAccelByteUGCContentUtilitiesSortByV2</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ac4cef2c51b23841667f8a92e8d8fe59ca553f133a7daed89c13e3d08a05ef3168" kindref="member">EAccelByteUGCContentUtilitiesSortByV2::CREATED_TIME_DESC</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get user&apos;s generated contents. Can be used without logged in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="de/dba/struct_f_accel_byte_models_u_g_c_search_contents_paging_response_v2" kindref="compound">FAccelByteModelsUGCSearchContentsPagingResponseV2</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of content per page. Default value : 20 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset number to retrieve. Default value : 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="304" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="527" bodyend="560"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1aa670edb22dc9670bfc3e9ac1e335decb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerUGC::ServerUGC</definition>
+        <argsstring>()=delete</argsstring>
+        <name>ServerUGC</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::ServerUGC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a11c1847bffac6393b5403dbf8fe6c11e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerUGC::ServerUGC</definition>
+        <argsstring>(ServerUGC const &amp;)=delete</argsstring>
+        <name>ServerUGC</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::ServerUGC</qualifiedname>
+        <param>
+          <type>ServerUGC const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1acef93fdc9d8f067a77bb2624cb6ddaf3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerUGC::ServerUGC</definition>
+        <argsstring>(ServerUGC &amp;&amp;)=delete</argsstring>
+        <name>ServerUGC</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::ServerUGC</qualifiedname>
+        <param>
+          <type>ServerUGC &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a26ee6cf911f5c24880769b05d4cd7571" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerUGC::InternalSearchContents</definition>
+        <argsstring>(FString const &amp;Name, FString const &amp;Creator, FString const &amp;Type, FString const &amp;Subtype, TArray&lt; FString &gt; const &amp;Tags, bool IsOfficial, FString const &amp;UserId, EAccelByteUgcSortBy SortBy, EAccelByteUgcOrderBy OrderBy, int32 Limit, int32 Offset, FString &amp;OutUrl, TMultiMap&lt; FString, FString &gt; &amp;OutQueryParams)</argsstring>
+        <name>InternalSearchContents</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::InternalSearchContents</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Creator</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Type</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Subtype</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>Tags</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>IsOfficial</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1a890b50bdeb112385ec0455417a22e75e" kindref="member">EAccelByteUgcSortBy</ref></type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221" kindref="member">EAccelByteUgcOrderBy</ref></type>
+          <declname>OrderBy</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+        </param>
+        <param>
+          <type>FString &amp;</type>
+          <declname>OutUrl</declname>
+        </param>
+        <param>
+          <type>TMultiMap&lt; FString, FString &gt; &amp;</type>
+          <declname>OutQueryParams</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="316" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="232" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a05ab43f653fe97636cb924e41a9b4f34" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerUGC::InternalSearchContentsV2</definition>
+        <argsstring>(FAccelByteModelsUGCFilterRequestV2 const &amp;Filter, int32 Limit, int32 Offset, EAccelByteUGCContentSortByV2 SortBy, FString &amp;OutUrl, TMap&lt; FString, FString &gt; &amp;OutQueryParams)</argsstring>
+        <name>InternalSearchContentsV2</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::InternalSearchContentsV2</qualifiedname>
+        <param>
+          <type><ref refid="d9/de2/struct_f_accel_byte_models_u_g_c_filter_request_v2" kindref="compound">FAccelByteModelsUGCFilterRequestV2</ref> const &amp;</type>
+          <declname>Filter</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae47266533f670d85d571267d6044e236" kindref="member">EAccelByteUGCContentSortByV2</ref></type>
+          <declname>SortBy</declname>
+        </param>
+        <param>
+          <type>FString &amp;</type>
+          <declname>OutUrl</declname>
+        </param>
+        <param>
+          <type>TMap&lt; FString, FString &gt; &amp;</type>
+          <declname>OutQueryParams</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="330" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="394" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a81509c54ccecc20a2719fc410efbb2ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const FString</type>
+        <definition>const FString AccelByte::GameServerApi::ServerUGC::GetNamespace</definition>
+        <argsstring>()</argsstring>
+        <name>GetNamespace</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::GetNamespace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="337" column="15" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="418" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1abc4488a9932093e1c26668c2084fb803" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const TMap&lt; FString, FString &gt;</type>
+        <definition>const TMap&lt; FString, FString &gt; AccelByte::GameServerApi::ServerUGC::GetDefaultHeaders</definition>
+        <argsstring>()</argsstring>
+        <name>GetDefaultHeaders</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerUGC::GetDefaultHeaders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="338" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerUGCApi.cpp" bodystart="427" bodyend="433"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Provide APIs to access UGC service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerUGC</label>
+        <link refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ServerSettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerUGC</label>
+        <link refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" line="29" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerUGCApi.h" bodystart="30" bodyend="339"/>
+    <listofallmembers>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a886f4b66d77c993240fe2e6f09851cd2" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>DeleteContentByShareCode</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9bf60b7a41397c62997b57d33ec11ae4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>FServerApiBase</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1abc4488a9932093e1c26668c2084fb803" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>GetDefaultHeaders</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a81509c54ccecc20a2719fc410efbb2ee" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>GetNamespace</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9c610b4093406fa713b39c8319b2f7d6" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>HttpClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a0ac58ba7cb9e3b872c5391127beafaab" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>HttpRef</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a26ee6cf911f5c24880769b05d4cd7571" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>InternalSearchContents</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a05ab43f653fe97636cb924e41a9b4f34" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>InternalSearchContentsV2</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a3405fff0e1c5fcbf071c1c25b83c6e10" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ModifyContentByShareCode</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a14105f281d63b46a6d28e6c1000f6624" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetContentBulk</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1aa113092cc62aec4cafdfc3380e8a26ab" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetContentBulkByIdsV2</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a57a5ce7e6f2d5363ae22edd3bf904236" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetContentByContentId</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a446601f85370fc73f230f0c9bd640bd6" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetContentByContentIdV2</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a7ab2a5042250bda7145de434717dd76d" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetContentByShareCode</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a4338e2fae30150c0bda50d8419dc60b8" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetContentByShareCodeV2</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1aeaf7efdad1375fce7c7879fefa7d6a23" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetUserContent</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1ada03fc92b1f43ef2a60417d81b024fe3" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicGetUserContentsV2</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a2366951a0b4c678faef6b9584f692a40" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicSearchContents</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a3b11961452c7755994aead2004eb9eda" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicSearchContents</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1af9cac4417667492d8c95c78444dc4d1e" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicSearchContentsSpecificToChannelV2</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a294009e09578be884d8d2baa3c2b91f3" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>PublicSearchContentsV2</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a91578b3827c32eb48f2a7b7b405daa9f" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>SearchContents</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1ae3b404d2bab418b00a2e734f7259ffe6" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>SearchContentsSpecificToChannel</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1aa8ed94ac70b499b1a4227802af7dacc3" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a39c68ed1daaf3b51a1182b9dd457eb07" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ServerCredentialsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a452b7dcace49560836fc87b19d5a599a" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ServerSettingsRef</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1ad706359a15b216d8a5dc8ac01622720b" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ServerUGC</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1aa670edb22dc9670bfc3e9ac1e335decb" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ServerUGC</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a11c1847bffac6393b5403dbf8fe6c11e" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ServerUGC</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1acef93fdc9d8f067a77bb2624cb6ddaf3" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ServerUGC</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1af3924e1aba52efccd68b6b08a1e310aa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>SetServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1abda8b2aaa6e06007a914d43329c1af35" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>ValidateAccelByteId</name></member>
+      <member refid="d6/d2d/class_accel_byte_1_1_game_server_api_1_1_server_u_g_c_1a4360078ac89424ff5fce20a720667817" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerUGC</scope><name>~ServerUGC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

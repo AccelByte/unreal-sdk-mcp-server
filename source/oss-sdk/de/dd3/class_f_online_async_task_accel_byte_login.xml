@@ -1,0 +1,700 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="de/dd3/class_f_online_async_task_accel_byte_login" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteLogin</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteLogin, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d8/d4f/_online_async_task_accel_byte_login_8h" local="no">OnlineAsyncTaskAccelByteLogin.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1aff8c42576bce09f97bdb0523f391e681" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineAsyncTaskAccelByteLogin::LoginUserNum</definition>
+        <argsstring></argsstring>
+        <name>LoginUserNum</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::LoginUserNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User number or the controller index of the player </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="55" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1af84ec1967ef3f5fbbaf95a14c6ba527b" prot="private" static="no" mutable="no">
+        <type>FOnlineAccountCredentials</type>
+        <definition>FOnlineAccountCredentials FOnlineAsyncTaskAccelByteLogin::AccountCredentials</definition>
+        <argsstring></argsstring>
+        <name>AccountCredentials</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::AccountCredentials</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Credentials of the account that we wish to login with </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="60" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1ad17079685db361399f6cdd3c20816a4c" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteLogin::ErrorStr</definition>
+        <argsstring></argsstring>
+        <name>ErrorStr</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::ErrorStr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String representing the error code that occurred </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="65" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1a88c376e5dc1b3a36798f6908618c65dd" prot="private" static="no" mutable="no">
+        <type>FErrorOAuthInfo</type>
+        <definition>FErrorOAuthInfo FOnlineAsyncTaskAccelByteLogin::ErrorOAuthObject</definition>
+        <argsstring></argsstring>
+        <name>ErrorOAuthObject</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::ErrorOAuthObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Object representing the error code that occurred </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="70" column="18" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1af6583df0885c9c4c3f448404be6f5fb1" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineAsyncTaskAccelByteLogin::ErrorCode</definition>
+        <argsstring></argsstring>
+        <name>ErrorCode</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::ErrorCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Digit code representing the error that occurred </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="75" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1adf59579507837360ad57e701de4985ad" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a9c23453927e1c29fe8d6a7c738a4c3f4" kindref="member">EAccelByteLoginType</ref></type>
+        <definition>EAccelByteLoginType FOnlineAsyncTaskAccelByteLogin::LoginType</definition>
+        <argsstring></argsstring>
+        <name>LoginType</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::LoginType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of login that we wish to do on the backend </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="80" column="21" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1affb39b5edcd83d1c24685749a772e8b0" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; <ref refid="d8/d09/class_f_user_online_account_accel_byte" kindref="compound">FUserOnlineAccountAccelByte</ref> &gt;</type>
+        <definition>TSharedPtr&lt;FUserOnlineAccountAccelByte&gt; FOnlineAsyncTaskAccelByteLogin::Account</definition>
+        <argsstring></argsstring>
+        <name>Account</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::Account</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Online user account for the user that we were able to login as </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="85" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1aa713a52d08b058cba91e4fdc18960c5c" prot="private" static="no" mutable="no">
+        <type>ELoginStatus::Type</type>
+        <definition>ELoginStatus::Type FOnlineAsyncTaskAccelByteLogin::LoginStatus</definition>
+        <argsstring></argsstring>
+        <name>LoginStatus</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::LoginStatus</qualifiedname>
+        <initializer>= ELoginStatus::NotLoggedIn</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Login status for the user, should be NotLoggedIn, unless login succeeds fully </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="90" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1aaf53093e8f266bbb0db15421249c0b2b" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/d94/class_f_accel_byte_timer_object" kindref="compound">FAccelByteTimerObject</ref></type>
+        <definition>FAccelByteTimerObject FOnlineAsyncTaskAccelByteLogin::TimerObject</definition>
+        <argsstring></argsstring>
+        <name>TimerObject</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::TimerObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="92" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1a97fdecf9fe9ee043a299562321a0a84e" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteLogin::bRetryLoginSkipExternalUI</definition>
+        <argsstring></argsstring>
+        <name>bRetryLoginSkipExternalUI</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::bRetryLoginSkipExternalUI</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag if login by External UI is failed. It will retry the Native login and skip the login UI </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="97" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1aebe2ac81241fb8841c565a75fd0ebc01" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+        <definition>TSharedPtr&lt;const FUniqueNetId&gt; FOnlineAsyncTaskAccelByteLogin::NativePlatformPlayerId</definition>
+        <argsstring></argsstring>
+        <name>NativePlatformPlayerId</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::NativePlatformPlayerId</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="102" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1af1804a9d4e748290546f1200de046e7b" prot="private" static="no" mutable="no">
+        <type>FOnlineAccountCredentials</type>
+        <definition>FOnlineAccountCredentials FOnlineAsyncTaskAccelByteLogin::NativePlatformCredentials</definition>
+        <argsstring></argsstring>
+        <name>NativePlatformCredentials</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::NativePlatformCredentials</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="107" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1ad837c3bf0c6dfd5c1b06882342d09085" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteLogin::bLoginPerformed</definition>
+        <argsstring></argsstring>
+        <name>bLoginPerformed</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::bLoginPerformed</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="112" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1a438e12e650b70ba69cdbb649e96bb571" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteLogin::PlatformId</definition>
+        <argsstring></argsstring>
+        <name>PlatformId</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::PlatformId</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="117" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd3/class_f_online_async_task_accel_byte_login_1ae7d3ffea338832bd893a6e0887165a9a" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteLogin::bCreateHeadlessAccount</definition>
+        <argsstring></argsstring>
+        <name>bCreateHeadlessAccount</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::bCreateHeadlessAccount</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="122" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a2255007d9a9bc2020883a740204ca2f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteLogin::FOnlineAsyncTaskAccelByteLogin</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, int32 InLocalUserNum, const FOnlineAccountCredentials &amp;InAccountCredentials, bool bInCreateHeadlessAccount=true)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteLogin</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::FOnlineAsyncTaskAccelByteLogin</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FOnlineAccountCredentials &amp;</type>
+          <declname>InAccountCredentials</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bInCreateHeadlessAccount</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="33" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="32" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a010ff7f2ed358d90933c2846e8330e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="38" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="47" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1aa0e062a248a1822fc7d269969c9473e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="39" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="105" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a1cb7de6e9a789da91facebb6c99422cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="40" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="132" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a8edb925a9ecb0a0046bb59cfe8f94bcb" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteLogin::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="44" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a64352eef0bdece4a2e8f6bf0076863f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::LoginWithNativeSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>LoginWithNativeSubsystem</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::LoginWithNativeSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attempts to fire off a login request with a native subsystem, if one is set up and usable.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the user that we want to try and auth with native subsystem pass through </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool that is true if a native subsystem login was fired off, or false if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="130" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="173" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a47c0778c8de6d4aa7fdd213d26df464a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::OnNativeLoginComplete</definition>
+        <argsstring>(int32 NativeLocalUserNum, bool bWasNativeLoginSuccessful, const FUniqueNetId &amp;NativeUserId, const FString &amp;NativeError)</argsstring>
+        <name>OnNativeLoginComplete</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::OnNativeLoginComplete</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>NativeLocalUserNum</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bWasNativeLoginSuccessful</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>NativeUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>NativeError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback for delegate fired when the native subsystem has finished its authentication. Authenticates with the <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> back end upon firing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="135" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="308" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1aeaad4bf2401c79e781f1bca1843144c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::OnNativeLoginUIClosed</definition>
+        <argsstring>(TSharedPtr&lt; const FUniqueNetId &gt; UniqueId, const int ControllerIndex, const FOnlineError &amp;NativeError)</argsstring>
+        <name>OnNativeLoginUIClosed</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::OnNativeLoginUIClosed</qualifiedname>
+        <param>
+          <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+          <declname>UniqueId</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ControllerIndex</declname>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+          <declname>NativeError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback for when the login UI for a native platform subsystem is closed. Used to allow sign in with local user accounts on a native subsystem and then subsequently login with the <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> back end. Passing in an extra LocalUserNum, as ControllerIndex is -1 if the call fails and we need to be able to inform that the login failed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="142" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="244" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a6e4cccfdbf1cc87ef644cbc1f2fb8c9b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::PerformLogin</definition>
+        <argsstring>(const FOnlineAccountCredentials &amp;Credentials)</argsstring>
+        <name>PerformLogin</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::PerformLogin</qualifiedname>
+        <param>
+          <type>const FOnlineAccountCredentials &amp;</type>
+          <declname>Credentials</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform login on the <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> backend using defined login type and OAuth error type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="147" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="394" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1a5967534aa151ece342b57516b3863db3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::OnLoginSuccess</definition>
+        <argsstring>()</argsstring>
+        <name>OnLoginSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::OnLoginSuccess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when any <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> login call succeeds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="152" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="479" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1aae5b3f8ec3c606a2010dfba1753b8ba8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::OnLoginError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnLoginError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::OnLoginError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when any <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> login call fails.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Code returned from the backend representing the error that was encountered with the request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ErrorMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message returned from the backend describing the error that was encountered with the request </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="160" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd3/class_f_online_async_task_accel_byte_login_1abe71522fd8288d6d58a0dc73b379aac3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteLogin::OnLoginErrorOAuth</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage, const FErrorOAuthInfo &amp;ErrorObject)</argsstring>
+        <name>OnLoginErrorOAuth</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteLogin::OnLoginErrorOAuth</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <param>
+          <type>const FErrorOAuthInfo &amp;</type>
+          <declname>ErrorObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when any <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> login call fails.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Code returned from the backend representing the error that was encountered with the request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ErrorMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message returned from the backend describing the error that was encountered with the request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ErrorObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object representing the error code that occurred </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="169" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.cpp" bodystart="543" bodyend="557"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Async task to authenticate a user with the <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> backend, either using a native platform account, or a user specified account </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteLogin, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteLogin</label>
+        <link refid="de/dd3/class_f_online_async_task_accel_byte_login"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteLogin, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="7">
+        <label>FAccelByteTimerObject</label>
+        <link refid="d4/d94/class_f_accel_byte_timer_object"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteLogin</label>
+        <link refid="de/dd3/class_f_online_async_task_accel_byte_login"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>TimerObject</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="8">
+        <label>FTickableGameObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" line="23" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/OnlineAsyncTaskAccelByteLogin.h" bodystart="26" bodyend="170"/>
+    <listofallmembers>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1affb39b5edcd83d1c24685749a772e8b0" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Account</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1af84ec1967ef3f5fbbaf95a14c6ba527b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>AccountCredentials</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ApiClient</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1ae7d3ffea338832bd893a6e0887165a9a" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>bCreateHeadlessAccount</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>bHasReference</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1ad837c3bf0c6dfd5c1b06882342d09085" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>bLoginPerformed</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a97fdecf9fe9ee043a299562321a0a84e" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>bRetryLoginSkipExternalUI</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>CurrentState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Epic</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1af6583df0885c9c4c3f448404be6f5fb1" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ErrorCode</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a88c376e5dc1b3a36798f6908618c65dd" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ErrorOAuthObject</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1ad17079685db361399f6cdd3c20816a4c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ErrorStr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1aa0e062a248a1822fc7d269969c9473e8" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a2255007d9a9bc2020883a740204ca2f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>FOnlineAsyncTaskAccelByteLogin</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetParentTask</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a8edb925a9ecb0a0046bb59cfe8f94bcb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>HasTaskTimedOut</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a010ff7f2ed358d90933c2846e8330e97" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Initialize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>LocalUserNum</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1aa713a52d08b058cba91e4fdc18960c5c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>LoginStatus</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1adf59579507837360ad57e701de4985ad" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>LoginType</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1aff8c42576bce09f97bdb0523f391e681" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>LoginUserNum</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a64352eef0bdece4a2e8f6bf0076863f1" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>LoginWithNativeSubsystem</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1af1804a9d4e748290546f1200de046e7b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>NativePlatformCredentials</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1aebe2ac81241fb8841c565a75fd0ebc01" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>NativePlatformPlayerId</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1aae5b3f8ec3c606a2010dfba1753b8ba8" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>OnLoginError</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1abe71522fd8288d6d58a0dc73b379aac3" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>OnLoginErrorOAuth</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a5967534aa151ece342b57516b3863db3" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>OnLoginSuccess</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a47c0778c8de6d4aa7fdd213d26df464a" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>OnNativeLoginComplete</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1aeaad4bf2401c79e781f1bca1843144c4" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>OnNativeLoginUIClosed</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ParentTask</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a6e4cccfdbf1cc87ef644cbc1f2fb8c9b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>PerformLogin</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a438e12e650b70ba69cdbb649e96bb571" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>PlatformId</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ThisPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>TimeoutLock</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1aaf53093e8f266bbb0db15421249c0b2b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>TimerObject</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>ToString</name></member>
+      <member refid="de/dd3/class_f_online_async_task_accel_byte_login_1a1cb7de6e9a789da91facebb6c99422cd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteLogin</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

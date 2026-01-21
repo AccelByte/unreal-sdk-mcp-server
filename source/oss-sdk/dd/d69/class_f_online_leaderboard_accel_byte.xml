@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dd/d69/class_f_online_leaderboard_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineLeaderboardAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineLeaderboards</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineLeaderboardAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d1/db7/_online_leaderboard_interface_accel_byte_8h" local="no">OnlineLeaderboardInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d69/class_f_online_leaderboard_accel_byte_1acf08c8b5d77b356eb3dad67176a77328" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineLeaderboardAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineLeaderboardAccelByte(FOnlineSubsystemAccelByte* InSubsystem) : AccelByteSubsystem(InSubsystem) {}public: virtual ~FOnlineLeaderboardAccelByte() override = default</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="33" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d69/class_f_online_leaderboard_accel_byte_1abe0ea809e0d102bc958295f0546b3045" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineLeaderboardAccelByte::LeaderboardMetadataLock</definition>
+        <argsstring></argsstring>
+        <name>LeaderboardMetadataLock</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::LeaderboardMetadataLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical section for thread safe operation of the leaderboard metadata </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="232" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="dd/d69/class_f_online_leaderboard_accel_byte_1a2f64ff0a86c66fae8c05cbc659573c43" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineLeaderboardAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="228" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1afb64d427c56315504f2216796c99ecda" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineLeaderboardAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="dd/d69/class_f_online_leaderboard_accel_byte" kindref="compound">FOnlineLeaderboardAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="49" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a003c50d1411314106df5a74b7c90d82c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineLeaderboardAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="dd/d69/class_f_online_leaderboard_accel_byte" kindref="compound">FOnlineLeaderboardAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="60" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="19" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1af79ece0155a703eeabcc29eac7ba20c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboardsCycle</definition>
+        <argsstring>(TArray&lt; FUniqueNetIdRef &gt; const &amp;Players, FOnlineLeaderboardReadRef &amp;ReadObject, FString const &amp;CycleId)</argsstring>
+        <name>ReadLeaderboardsCycle</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboardsCycle</qualifiedname>
+        <param>
+          <type>TArray&lt; FUniqueNetIdRef &gt; const &amp;</type>
+          <declname>Players</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>CycleId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query multiple ranks for multiple users. This request only for Game Client. Note:<orderedlist>
+<listitem><para>This endpoint only gives Cycle type leaderboard.</para>
+</listitem><listitem><para>Please use &apos;Cycle_Point&apos; to name the point column.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of user to get rank for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CycleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cycle id that player want to know. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="74" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="33" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a2d886f18e7de86141b0a1c6adda98e5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboardsForFriendsCycle</definition>
+        <argsstring>(int32 LocalUserNum, FOnlineLeaderboardReadRef &amp;ReadObject, FString const &amp;CycleId)</argsstring>
+        <name>ReadLeaderboardsForFriendsCycle</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboardsForFriendsCycle</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>CycleId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query all user friends&apos; ranks. This request only for Game Client. Note:<orderedlist>
+<listitem><para>This endpoint only gives Cycle type leaderboard.</para>
+</listitem><listitem><para>Please use &apos;Cycle_Point&apos; to name the point column.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to query the rank. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CycleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cycle id that player want to know. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="89" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="67" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1acfbeefd7c7981215ed2ac22eadf46a1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboards</definition>
+        <argsstring>(TArray&lt; FUniqueNetIdRef &gt; const &amp;Players, FOnlineLeaderboardReadRef &amp;ReadObject) override</argsstring>
+        <name>ReadLeaderboards</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboards</qualifiedname>
+        <param>
+          <type>TArray&lt; FUniqueNetIdRef &gt; const &amp;</type>
+          <declname>Players</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query multiple ranks for multiple users. This request only for Game Client. Note:<orderedlist>
+<listitem><para>This endpoint only gives All Time type leaderboard.</para>
+</listitem><listitem><para>Please use &apos;AllTime_Point&apos; to name the point column.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of user to get rank for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="105" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="142" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a3d3a4a595e0c3ed64ea6aa0f9e04bd58" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboardsForFriends</definition>
+        <argsstring>(int32 LocalUserNum, FOnlineLeaderboardReadRef &amp;ReadObject) override</argsstring>
+        <name>ReadLeaderboardsForFriends</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboardsForFriends</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query all user friends&apos; ranks. This request only for Game Client. Note:<orderedlist>
+<listitem><para>This endpoint only gives All Time type leaderboard.</para>
+</listitem><listitem><para>Please use &apos;AllTime_Point&apos; to name the point column.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to query the rank. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="118" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="169" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a0b2fedfcb45d9f8da4c14cdb63db6962" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboardsAroundRank</definition>
+        <argsstring>(int32 Rank, uint32 Range, FOnlineLeaderboardReadRef &amp;ReadObject) override</argsstring>
+        <name>ReadLeaderboardsAroundRank</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboardsAroundRank</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>Rank</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Range</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <briefdescription>
+<para>Query leaderboard ranks around a pivoted rank. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This endpoint will fetch a set amount of ranks based on the pivoted rank and the range. Note:<orderedlist>
+<listitem><para>This endpoint only gives All Time type leaderboard.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rank you want to pivot at. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of ranks to be retrieved below and above the pivoted rank. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="133" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="231" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a548cabb30fa50674f3446aa7ff6f2cd8" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboardCycleAroundRank</definition>
+        <argsstring>(int32 Rank, uint32 Range, FString const &amp;CycleId, FOnlineLeaderboardReadRef &amp;ReadObject)</argsstring>
+        <name>ReadLeaderboardCycleAroundRank</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboardCycleAroundRank</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>Rank</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Range</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>CycleId</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <briefdescription>
+<para>Query leaderboard ranks around a pivoted rank. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This endpoint will fetch a set amount of ranks based on the pivoted rank and the range. Note:<orderedlist>
+<listitem><para>This endpoint only gives Cycle type leaderboard.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rank you want to pivot at. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of ranks to be retrieved below and above the pivoted rank. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CycleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cycle of the leaderboard to retrieve the ranks at. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="151" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="256" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a21e2372e4bddc5cf4e5799d1de834ed3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboardsAroundUser</definition>
+        <argsstring>(FUniqueNetIdRef Player, uint32 Range, FOnlineLeaderboardReadRef &amp;ReadObject) override</argsstring>
+        <name>ReadLeaderboardsAroundUser</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboardsAroundUser</qualifiedname>
+        <param>
+          <type>FUniqueNetIdRef</type>
+          <declname>Player</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Range</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <briefdescription>
+<para>Query leaderboard ranks in the range a specific user rank. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This endpoint will fetch a set amount of ranks closed to a specific user rank. Note:<orderedlist>
+<listitem><para>This endpoint only gives All Time type leaderboard.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pivoted player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of rank to be retrieved. This means the OSS will fetch ranks below and above the user rank in the amount of the range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="169" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="314" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1aefdf87ffc366731f0baa5de573d8166d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::ReadLeaderboardCycleAroundUser</definition>
+        <argsstring>(FUniqueNetIdRef Player, uint32 Range, FString const &amp;CycleId, FOnlineLeaderboardReadRef &amp;ReadObject)</argsstring>
+        <name>ReadLeaderboardCycleAroundUser</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::ReadLeaderboardCycleAroundUser</qualifiedname>
+        <param>
+          <type>FUniqueNetIdRef</type>
+          <declname>Player</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>Range</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>CycleId</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardReadRef &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <briefdescription>
+<para>Query leaderboard ranks in the range a specific user rank. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This endpoint will fetch a set amount of ranks closed to a specific user rank. Note:<orderedlist>
+<listitem><para>This endpoint only gives Cycle type leaderboard.</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pivoted player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of rank to be retrieved. This means the OSS will fetch ranks below and above the user rank in the amount of the range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CycleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cycle of the leaderboard to retrieve the ranks at. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ReadObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will contain the request and results when the operation completes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="187" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="288" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1aa7f142c1157aab02975b115c3c30fe3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineLeaderboardAccelByte::FreeStats</definition>
+        <argsstring>(FOnlineLeaderboardRead &amp;ReadObject) override</argsstring>
+        <name>FreeStats</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::FreeStats</qualifiedname>
+        <param>
+          <type>FOnlineLeaderboardRead &amp;</type>
+          <declname>ReadObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is not supported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="196" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="338" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a49bf8764a3f5cd05b2f93855b2b3198a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::WriteLeaderboards</definition>
+        <argsstring>(FName const &amp;SessionName, FUniqueNetId const &amp;Player, FOnlineLeaderboardWrite &amp;WriteObject) override</argsstring>
+        <name>WriteLeaderboards</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::WriteLeaderboards</qualifiedname>
+        <param>
+          <type>FName const &amp;</type>
+          <declname>SessionName</declname>
+        </param>
+        <param>
+          <type>FUniqueNetId const &amp;</type>
+          <declname>Player</declname>
+        </param>
+        <param>
+          <type>FOnlineLeaderboardWrite &amp;</type>
+          <declname>WriteObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is not supported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="202" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="345" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a1138ea7a9f4aee60ccffd9c5fe1e1a69" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::FlushLeaderboards</definition>
+        <argsstring>(FName const &amp;SessionName) override</argsstring>
+        <name>FlushLeaderboards</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::FlushLeaderboards</qualifiedname>
+        <param>
+          <type>FName const &amp;</type>
+          <declname>SessionName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is not supported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="210" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="354" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a81dfc565a57e8d94fade47e314a2ec39" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineLeaderboardAccelByte::WriteOnlinePlayerRatings</definition>
+        <argsstring>(FName const &amp;SessionName, int32 LeaderboardId, TArray&lt; FOnlinePlayerScore &gt; const &amp;PlayerScores) override</argsstring>
+        <name>WriteOnlinePlayerRatings</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::WriteOnlinePlayerRatings</qualifiedname>
+        <param>
+          <type>FName const &amp;</type>
+          <declname>SessionName</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LeaderboardId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FOnlinePlayerScore &gt; const &amp;</type>
+          <declname>PlayerScores</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is not supported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="216" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineLeaderboardInterfaceAccelByte.cpp" bodystart="361" bodyend="368"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="dd/d69/class_f_online_leaderboard_accel_byte_1a97f6cb079b0f4079773ac3c3d05dfb1d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineLeaderboardAccelByte::FOnlineLeaderboardAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineLeaderboardAccelByte</name>
+        <qualifiedname>FOnlineLeaderboardAccelByte::FOnlineLeaderboardAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="223" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" bodystart="223" bodyend="225"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineLeaderboardAccelByte</label>
+        <link refid="dd/d69/class_f_online_leaderboard_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineLeaderboards</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineLeaderboardAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlineLeaderboardAccelByte</label>
+        <link refid="dd/d69/class_f_online_leaderboard_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>IOnlineLeaderboards</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineLeaderboardAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" line="29" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineLeaderboardInterfaceAccelByte.h" bodystart="32" bodyend="233"/>
+    <listofallmembers>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1acf08c8b5d77b356eb3dad67176a77328" prot="private" virt="non-virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>__pad0__</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a2f64ff0a86c66fae8c05cbc659573c43" prot="protected" virt="non-virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a1138ea7a9f4aee60ccffd9c5fe1e1a69" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>FlushLeaderboards</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a97f6cb079b0f4079773ac3c3d05dfb1d" prot="protected" virt="non-virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>FOnlineLeaderboardAccelByte</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1aa7f142c1157aab02975b115c3c30fe3a" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>FreeStats</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1afb64d427c56315504f2216796c99ecda" prot="private" virt="non-virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a003c50d1411314106df5a74b7c90d82c" prot="private" virt="non-virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1abe0ea809e0d102bc958295f0546b3045" prot="private" virt="non-virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>LeaderboardMetadataLock</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a548cabb30fa50674f3446aa7ff6f2cd8" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboardCycleAroundRank</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1aefdf87ffc366731f0baa5de573d8166d" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboardCycleAroundUser</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1acfbeefd7c7981215ed2ac22eadf46a1b" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboards</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a0b2fedfcb45d9f8da4c14cdb63db6962" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboardsAroundRank</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a21e2372e4bddc5cf4e5799d1de834ed3" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboardsAroundUser</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1af79ece0155a703eeabcc29eac7ba20c9" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboardsCycle</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a3d3a4a595e0c3ed64ea6aa0f9e04bd58" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboardsForFriends</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a2d886f18e7de86141b0a1c6adda98e5d" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>ReadLeaderboardsForFriendsCycle</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a49bf8764a3f5cd05b2f93855b2b3198a" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>WriteLeaderboards</name></member>
+      <member refid="dd/d69/class_f_online_leaderboard_accel_byte_1a81dfc565a57e8d94fade47e314a2ec39" prot="private" virt="virtual"><scope>FOnlineLeaderboardAccelByte</scope><name>WriteOnlinePlayerRatings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

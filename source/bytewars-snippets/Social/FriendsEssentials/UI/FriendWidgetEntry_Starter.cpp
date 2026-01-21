@@ -1,0 +1,86 @@
+// Copyright (c) 2023 AccelByte Inc. All Rights Reserved.
+// This is licensed software from AccelByte Inc, for limitations
+// and restrictions contact your company contract manager.
+
+#include "FriendWidgetEntry_Starter.h"
+#include "Core/Utilities/AccelByteWarsUtility.h"
+#include "Core/UI/Components/AccelByteWarsAsyncImageWidget.h"
+#include "CommonButtonBase.h"
+#include "Components/WidgetSwitcher.h"
+#include "Components/TextBlock.h"
+#include "Components/Image.h"
+#include "TutorialModuleUtilities/TutorialModuleOnlineUtility.h"
+
+#define LOCTEXT_NAMESPACE "AccelByteWars"
+
+void UFriendWidgetEntry_Starter::NativeConstruct()
+{
+	Super::NativeConstruct();
+
+	FriendsSubsystem = GetGameInstance()->GetSubsystem<UFriendsSubsystem_Starter>();
+	ensure(FriendsSubsystem);
+
+	Btn_Invite->OnClicked().Clear();
+	Btn_Accept->OnClicked().Clear();
+	Btn_Reject->OnClicked().Clear();
+	Btn_Cancel->OnClicked().Clear();
+
+	Btn_Invite->OnClicked().AddUObject(this, &ThisClass::OnInviteButtonClicked);
+	Btn_Accept->OnClicked().AddUObject(this, &ThisClass::OnAcceptButtonClicked);
+	Btn_Reject->OnClicked().AddUObject(this, &ThisClass::OnRejectButtonClicked);
+	Btn_Cancel->OnClicked().AddUObject(this, &ThisClass::OnCancelButtonClicked);
+}
+
+void UFriendWidgetEntry_Starter::NativeOnListItemObjectSet(UObject* ListItemObject)
+{
+	Super::NativeOnListItemObjectSet(ListItemObject);
+
+	CachedFriendData = Cast<UFriendData>(ListItemObject);
+
+	// Display display name.
+	if (!CachedFriendData->DisplayName.IsEmpty())
+	{
+		Tb_DisplayName->SetText(FText::FromString(CachedFriendData->DisplayName));
+	}
+	else
+	{
+		Tb_DisplayName->SetText(FText::FromString(
+		UTutorialModuleOnlineUtility::GetUserDefaultDisplayName(CachedFriendData->UserId.ToSharedRef().Get())));
+	}
+
+	// Display avatar image.
+	const FString AvatarURL = CachedFriendData->AvatarURL;
+	Img_Avatar->LoadImage(AvatarURL);
+
+	// Display options based on friend's invitation status.
+	Ws_OptionButtons->SetActiveWidgetIndex((uint8)CachedFriendData->Status);
+
+	// Show the reason why the player cannot send invitation request.
+	Btn_Invite->SetVisibility(!CachedFriendData->bCannotBeInvited ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
+	Tb_CannotInviteMessage->SetVisibility(CachedFriendData->bCannotBeInvited ? ESlateVisibility::Visible : ESlateVisibility::Collapsed);
+	Tb_CannotInviteMessage->SetText(FText::FromString(CachedFriendData->ReasonCannotBeInvited));
+
+	OnListItemObjectSet.Broadcast();
+}
+
+void UFriendWidgetEntry_Starter::OnInviteButtonClicked()
+{
+	// TODO: Call send friend request here.
+}
+
+void UFriendWidgetEntry_Starter::OnAcceptButtonClicked()
+{
+	// TODO: Call accept friend request here.
+}
+
+void UFriendWidgetEntry_Starter::OnRejectButtonClicked()
+{
+	// TODO: Call reject friend request here.
+}
+
+void UFriendWidgetEntry_Starter::OnCancelButtonClicked()
+{
+	// TODO: Call cancel friend request here.
+}
+
+#undef LOCTEXT_NAMESPACE

@@ -1,0 +1,942 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::Api::PresenceBroadcastEvent</compoundname>
+    <basecompoundref refid="d3/dd3/class_accel_byte_1_1_f_api_base" prot="public" virt="non-virtual">AccelByte::FApiBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; PresenceBroadcastEvent, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="da/d1c/_accel_byte_presence_broadcast_event_api_8h" local="no">AccelBytePresenceBroadcastEventApi.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a9a6c5d4f5fcfe3db4ca25eff100c7d59" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; <ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TSharedRef&lt;Credentials, ESPMode::ThreadSafe&gt; AccelByte::Api::PresenceBroadcastEvent::CredentialsRef</definition>
+        <argsstring></argsstring>
+        <name>CredentialsRef</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::CredentialsRef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="136" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a31b8db7f95fa73c53c82e188485c7166" prot="private" static="no" mutable="no">
+        <type>FTimespan</type>
+        <definition>FTimespan AccelByte::Api::PresenceBroadcastEvent::BroadcastInterval</definition>
+        <argsstring></argsstring>
+        <name>BroadcastInterval</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::BroadcastInterval</qualifiedname>
+        <initializer>= FTimespan(0, 10, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="144" column="11" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a3113f93e61b480bbd87bac59bca01da3" prot="private" static="no" mutable="no">
+        <type>const FTimespan</type>
+        <definition>const FTimespan AccelByte::Api::PresenceBroadcastEvent::MinimumBroadcastInterval</definition>
+        <argsstring></argsstring>
+        <name>MinimumBroadcastInterval</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::MinimumBroadcastInterval</qualifiedname>
+        <initializer>= FTimespan(0, 0, 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="145" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aad1af39abc0980479928c27cd47b4772" prot="private" static="no" mutable="no">
+        <type>FTickerDelegate</type>
+        <definition>FTickerDelegate AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEventHeartbeatTickDelegate</definition>
+        <argsstring></argsstring>
+        <name>PresenceBroadcastEventHeartbeatTickDelegate</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEventHeartbeatTickDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="146" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a42c99cba75153603e560c4150c887d2b" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/db6/_accel_byte_defines_8h_1a9147873e40ccb814a396aca451333ab2" kindref="member">FDelegateHandleAlias</ref></type>
+        <definition>FDelegateHandleAlias AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEventHeartbeatTickDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>PresenceBroadcastEventHeartbeatTickDelegateHandle</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEventHeartbeatTickDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="147" column="22" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a4b9fb35c7205242fee29d7f8d63317ba" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref></type>
+        <definition>FVoidHandler AccelByte::Api::PresenceBroadcastEvent::OnSendPresenceHeartbeatSuccess</definition>
+        <argsstring></argsstring>
+        <name>OnSendPresenceHeartbeatSuccess</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::OnSendPresenceHeartbeatSuccess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="149" column="14" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a6e264dbe4355a884cd4adcaac714dacd" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref></type>
+        <definition>FErrorHandler AccelByte::Api::PresenceBroadcastEvent::OnSendPresenceHeartbeatError</definition>
+        <argsstring></argsstring>
+        <name>OnSendPresenceHeartbeatError</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::OnSendPresenceHeartbeatError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="150" column="15" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a6fabfd8540ef687d006e715e2116c538" prot="private" static="no" mutable="no">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastLoginSuccess</definition>
+        <argsstring></argsstring>
+        <name>PresenceBroadcastLoginSuccess</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastLoginSuccess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="152" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a31759395fe0b6154a0410acca238788a" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d0a/struct_f_accel_byte_presence_broadcast_event_payload" kindref="compound">FAccelBytePresenceBroadcastEventPayload</ref></type>
+        <definition>FAccelBytePresenceBroadcastEventPayload AccelByte::Api::PresenceBroadcastEvent::PresencePayload</definition>
+        <argsstring></argsstring>
+        <name>PresencePayload</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresencePayload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="154" column="41" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1a6a79868b188ca7e2bbc906d1eab9c7" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; FJsonObject &gt;</type>
+        <definition>TSharedPtr&lt;FJsonObject&gt; AccelByte::Api::PresenceBroadcastEvent::AdditionalPayload</definition>
+        <argsstring></argsstring>
+        <name>AdditionalPayload</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::AdditionalPayload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="155" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a32251e8a725175ef21e8fa96c9eddff2" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::Api::PresenceBroadcastEvent::FlightId</definition>
+        <argsstring></argsstring>
+        <name>FlightId</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::FlightId</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="157" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a68755874755030a35fffe36d5e2e52e2" prot="private" static="no" mutable="no">
+        <type>const FString</type>
+        <definition>const FString AccelByte::Api::PresenceBroadcastEvent::EventName</definition>
+        <argsstring></argsstring>
+        <name>EventName</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::EventName</qualifiedname>
+        <initializer>= TEXT(&quot;enhanced_presence&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="158" column="15" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a2d2682faaad40b4bbb07979c276264bf" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de0/_accel_byte_presence_broadcast_event_models_8h_1a17da2b7086a6c939ef28658109fddac8" kindref="member">EAccelByteGameState</ref></type>
+        <definition>EAccelByteGameState AccelByte::Api::PresenceBroadcastEvent::GameState</definition>
+        <argsstring></argsstring>
+        <name>GameState</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::GameState</qualifiedname>
+        <initializer>= <ref refid="d2/de0/_accel_byte_presence_broadcast_event_models_8h_1a17da2b7086a6c939ef28658109fddac8ac0737c75a09ba72599e15b0956db421c" kindref="member">EAccelByteGameState::OUT_OF_GAMEPLAY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="160" column="21" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a757ce093c991eb1cc7fd36831beb9e16" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::PresenceBroadcastEvent::bIsGamePlatformSent</definition>
+        <argsstring></argsstring>
+        <name>bIsGamePlatformSent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::bIsGamePlatformSent</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="162" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a87491e7abb4d55964dcd74a7d019262d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::PresenceBroadcastEvent::bIsShuttingDown</definition>
+        <argsstring></argsstring>
+        <name>bIsShuttingDown</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::bIsShuttingDown</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="163" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1502b5e153c0f24f514b27eb1b6be5b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</definition>
+        <argsstring>(Credentials &amp;InCredentialsRef, Settings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; AccelByte::FApiClient, ESPMode::ThreadSafe &gt; const &amp;InApiClient=nullptr)</argsstring>
+        <name>PresenceBroadcastEvent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/d63/class_accel_byte_1_1_f_api_client" kindref="compound">AccelByte::FApiClient</ref>, ESPMode::ThreadSafe &gt; const &amp;</type>
+          <declname>InApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="26" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a0a0dbfc969f9ec838fb53c3e5a210158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</definition>
+        <argsstring>(Credentials &amp;InCredentialsRef, Settings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, FAccelBytePlatformPtr const &amp;InAccelBytePlatform)</argsstring>
+        <name>PresenceBroadcastEvent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</qualifiedname>
+        <param>
+          <type><ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref> &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1affd45a8972d6b6709fb4ea5c179f3dfa" kindref="member">FAccelBytePlatformPtr</ref> const &amp;</type>
+          <declname>InAccelBytePlatform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="31" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a82b93deed8fb34995a766adc157a5883" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AccelByte::Api::PresenceBroadcastEvent::~PresenceBroadcastEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~PresenceBroadcastEvent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::~PresenceBroadcastEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="36" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aa724f80671ec7fe21af4364fd7587fb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString AccelByte::Api::PresenceBroadcastEvent::GetFlightId</definition>
+        <argsstring>()</argsstring>
+        <name>GetFlightId</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::GetFlightId</qualifiedname>
+        <briefdescription>
+<para>Get current flight Id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current flight Id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="43" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1006be5df82c549e9ed3bdb446845c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::PresenceBroadcastEvent::IsGamePlatformSent</definition>
+        <argsstring>()</argsstring>
+        <name>IsGamePlatformSent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::IsGamePlatformSent</qualifiedname>
+        <briefdescription>
+<para>Check whether game platform info is already sent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if it&apos;s already send game platform info, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="50" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a5cd30a2db4e46e2afbe46845489bff41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::SetGameState</definition>
+        <argsstring>(EAccelByteGameState State, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError, FString const &amp;Description=&quot;&quot;)</argsstring>
+        <name>SetGameState</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::SetGameState</qualifiedname>
+        <param>
+          <type><ref refid="d2/de0/_accel_byte_presence_broadcast_event_models_8h_1a17da2b7086a6c939ef28658109fddac8" kindref="member">EAccelByteGameState</ref></type>
+          <declname>State</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Set game state. It will send presence event immediately. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>State</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current game state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback for successful send game state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback for failed send game state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Description for current game state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="61" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a5953a5f6fe54673a2b57ea1ade80612e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::SetHeartbeatInterval</definition>
+        <argsstring>(FTimespan const &amp;Interval)</argsstring>
+        <name>SetHeartbeatInterval</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::SetHeartbeatInterval</qualifiedname>
+        <param>
+          <type>FTimespan const &amp;</type>
+          <declname>Interval</declname>
+        </param>
+        <briefdescription>
+<para>Set the interval of sending presence event. By default it sends the queued events once in a ten minute. Should not be less than 5 seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interval between telemetry event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="73" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="63" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1ac073aad9712aff63397b40ea3c0fb25b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::SetOnSendPresenceHeartbeatError</definition>
+        <argsstring>(FErrorHandler const &amp;OnError)</argsstring>
+        <name>SetOnSendPresenceHeartbeatError</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::SetOnSendPresenceHeartbeatError</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Set a delegate to be triggered when error sending presence event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="80" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1ad71a581ab7ae37ca2107dc6b16d54ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::SetOnSendPresenceHeartbeatSuccess</definition>
+        <argsstring>(FVoidHandler const &amp;OnSuccess)</argsstring>
+        <name>SetOnSendPresenceHeartbeatSuccess</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::SetOnSendPresenceHeartbeatSuccess</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <briefdescription>
+<para>Set a delegate to be triggered when succeeded sending presence event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="87" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a78ccaeb5a57cc0ebd6f67904fc472d29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::SendPlatform</definition>
+        <argsstring>(FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>SendPlatform</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::SendPlatform</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Send platform info event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback for successful send game platform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback for failed send game platform </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="95" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="86" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a6d5f380fd72756bb3cdb79fb3f9f4659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::AddPresenceData</definition>
+        <argsstring>(FString const &amp;Key, FString const &amp;Value)</argsstring>
+        <name>AddPresenceData</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::AddPresenceData</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+<para>Add presence information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Presence event key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Presence event value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="103" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="96" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aa0d89402d5be4d3ab4e9de99c8674056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::RemovePresenceData</definition>
+        <argsstring>(FString const &amp;Key)</argsstring>
+        <name>RemovePresenceData</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::RemovePresenceData</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Remove presence information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Presence event key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="110" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="107" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a9776113b458cc6af7137630a0e17e9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::Startup</definition>
+        <argsstring>()</argsstring>
+        <name>Startup</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::Startup</qualifiedname>
+        <briefdescription>
+<para>Startup module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="115" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aa6bcc0f4fd2f246e6bf38092a4a2336e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::StartHeartbeat</definition>
+        <argsstring>()</argsstring>
+        <name>StartHeartbeat</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::StartHeartbeat</qualifiedname>
+        <briefdescription>
+<para>Start heartbeat. This funtion is DEPRECATED, will be removed soon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="120" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="122" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1acb194386ef99b7cb193278a81c037058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::StopHeartbeat</definition>
+        <argsstring>()</argsstring>
+        <name>StopHeartbeat</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::StopHeartbeat</qualifiedname>
+        <briefdescription>
+<para>Stop heartbeat. This funtion is DEPRECATED, will be removed soon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="125" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="134" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1444f53ed96a568727365e22dd496bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::Shutdown</qualifiedname>
+        <briefdescription>
+<para>Shutdown module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="130" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="145" bodyend="160"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1ae598bdd92d80a44779f3dcf8e1c36f92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</definition>
+        <argsstring>()=delete</argsstring>
+        <name>PresenceBroadcastEvent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a797be5d147a666d5b04dff830ca99f1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</definition>
+        <argsstring>(PresenceBroadcastEvent const &amp;)=delete</argsstring>
+        <name>PresenceBroadcastEvent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</qualifiedname>
+        <param>
+          <type>PresenceBroadcastEvent const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a881616b135ae764a706ea1cd3fbfbd75" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</definition>
+        <argsstring>(PresenceBroadcastEvent &amp;&amp;)=delete</argsstring>
+        <name>PresenceBroadcastEvent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PresenceBroadcastEvent</qualifiedname>
+        <param>
+          <type>PresenceBroadcastEvent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a03fdaeb142f946423718c039d9830180" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::Api::PresenceBroadcastEvent::PeriodicHeartbeat</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>PeriodicHeartbeat</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::PeriodicHeartbeat</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="138" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="167" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a7ed3054f48008243a831ba766d596358" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::OnLoginSuccess</definition>
+        <argsstring>(FOauth2Token const &amp;Response)</argsstring>
+        <name>OnLoginSuccess</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::OnLoginSuccess</qualifiedname>
+        <param>
+          <type><ref refid="d3/deb/struct_f_oauth2_token" kindref="compound">FOauth2Token</ref> const &amp;</type>
+          <declname>Response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="139" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="177" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a3946e729865052c6c27a3cdbd58a35dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::Api::PresenceBroadcastEvent::SendPresenceBroadcastEvent</definition>
+        <argsstring>(FAccelBytePresenceBroadcastEventPayload const &amp;Events, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>SendPresenceBroadcastEvent</name>
+        <qualifiedname>AccelByte::Api::PresenceBroadcastEvent::SendPresenceBroadcastEvent</qualifiedname>
+        <param>
+          <type><ref refid="d5/d0a/struct_f_accel_byte_presence_broadcast_event_payload" kindref="compound">FAccelBytePresenceBroadcastEventPayload</ref> const &amp;</type>
+          <declname>Events</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="140" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelBytePresenceBroadcastEventApi.cpp" bodystart="207" bodyend="253"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Send presence event securely and the user should be logged in first. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AccelByte::Api::PresenceBroadcastEvent</label>
+        <link refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; PresenceBroadcastEvent, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccelByte::Api::PresenceBroadcastEvent</label>
+        <link refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>PresencePayload</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FApiBase</label>
+        <link refid="d3/dd3/class_accel_byte_1_1_f_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::Settings</label>
+        <link refid="df/db1/class_accel_byte_1_1_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>FAccelBytePresenceBroadcastEventPayload</label>
+        <link refid="d5/d0a/struct_f_accel_byte_presence_broadcast_event_payload"/>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="13">
+        <label>TSharedFromThis&lt; PresenceBroadcastEvent, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" line="21" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Api/AccelBytePresenceBroadcastEventApi.h" bodystart="24" bodyend="165"/>
+    <listofallmembers>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1af48fc7e07daa90601940b0bbaeaca4a9" prot="protected" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>AccelBytePlatformPtr</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1a6a79868b188ca7e2bbc906d1eab9c7" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>AdditionalPayload</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a6d5f380fd72756bb3cdb79fb3f9f4659" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>AddPresenceData</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a757ce093c991eb1cc7fd36831beb9e16" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>bIsGamePlatformSent</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a87491e7abb4d55964dcd74a7d019262d" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>bIsShuttingDown</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a31b8db7f95fa73c53c82e188485c7166" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>BroadcastInterval</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a9a6c5d4f5fcfe3db4ca25eff100c7d59" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>CredentialsRef</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a68755874755030a35fffe36d5e2e52e2" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>EventName</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a5b4bfcf158b368358fc0860adece134c" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>FApiBase</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a7532e689716d93aaa2f96568ab14c233" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>FApiBase</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a32251e8a725175ef21e8fa96c9eddff2" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>FlightId</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a2d2682faaad40b4bbb07979c276264bf" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>GameState</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aa724f80671ec7fe21af4364fd7587fb2" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>GetFlightId</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1afd2ef10eecc71f4d34515276ab6a8fcb" prot="protected" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>HttpClient</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a3262dbbbb6404aec16bef79a36480bbf" prot="protected" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>HttpRef</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1006be5df82c549e9ed3bdb446845c3e" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>IsGamePlatformSent</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a3113f93e61b480bbd87bac59bca01da3" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>MinimumBroadcastInterval</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a7ed3054f48008243a831ba766d596358" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>OnLoginSuccess</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a6e264dbe4355a884cd4adcaac714dacd" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>OnSendPresenceHeartbeatError</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a4b9fb35c7205242fee29d7f8d63317ba" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>OnSendPresenceHeartbeatSuccess</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a03fdaeb142f946423718c039d9830180" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PeriodicHeartbeat</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1502b5e153c0f24f514b27eb1b6be5b5" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastEvent</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a0a0dbfc969f9ec838fb53c3e5a210158" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastEvent</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1ae598bdd92d80a44779f3dcf8e1c36f92" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastEvent</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a797be5d147a666d5b04dff830ca99f1c" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastEvent</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a881616b135ae764a706ea1cd3fbfbd75" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastEvent</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aad1af39abc0980479928c27cd47b4772" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastEventHeartbeatTickDelegate</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a42c99cba75153603e560c4150c887d2b" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastEventHeartbeatTickDelegateHandle</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a6fabfd8540ef687d006e715e2116c538" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresenceBroadcastLoginSuccess</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a31759395fe0b6154a0410acca238788a" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>PresencePayload</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aa0d89402d5be4d3ab4e9de99c8674056" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>RemovePresenceData</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a78ccaeb5a57cc0ebd6f67904fc472d29" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SendPlatform</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a3946e729865052c6c27a3cdbd58a35dc" prot="private" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SendPresenceBroadcastEvent</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ab08541fe9d704af8a9b5bae1b87deb44" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SetApiClient</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a5cd30a2db4e46e2afbe46845489bff41" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SetGameState</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a5953a5f6fe54673a2b57ea1ade80612e" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SetHeartbeatInterval</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1ac073aad9712aff63397b40ea3c0fb25b" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SetOnSendPresenceHeartbeatError</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1ad71a581ab7ae37ca2107dc6b16d54ae4" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SetOnSendPresenceHeartbeatSuccess</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ae8ffc36382a4204edb20a6d3430c13ad" prot="protected" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>SettingsRef</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a1444f53ed96a568727365e22dd496bb7" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>Shutdown</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1aa6bcc0f4fd2f246e6bf38092a4a2336e" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>StartHeartbeat</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a9776113b458cc6af7137630a0e17e9ff" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>Startup</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1acb194386ef99b7cb193278a81c037058" prot="public" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>StopHeartbeat</name></member>
+      <member refid="d3/dd3/class_accel_byte_1_1_f_api_base_1abf73c69f11a74c5d79ed767d7e9de861" prot="protected" virt="non-virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>ValidateAccelByteId</name></member>
+      <member refid="de/db7/class_accel_byte_1_1_api_1_1_presence_broadcast_event_1a82b93deed8fb34995a766adc157a5883" prot="public" virt="virtual"><scope>AccelByte::Api::PresenceBroadcastEvent</scope><name>~PresenceBroadcastEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

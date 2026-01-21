@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d7/d8b/_accel_byte_session_models_8cpp" kind="file" language="C++">
+    <compoundname>AccelByteSessionModels.cpp</compoundname>
+    <includes refid="d9/dc0/_accel_byte_session_models_8h" local="yes">Models/AccelByteSessionModels.h</includes>
+    <includes local="yes">Json.h</includes>
+    <includes refid="d2/db2/_accel_byte_report_8h" local="yes">Core/AccelByteReport.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>AccelByteDSMModels.generated.h</label>
+      </node>
+      <node id="10">
+        <label>AccelByteGeneralModels.generated.h</label>
+      </node>
+      <node id="13">
+        <label>AccelByteSessionModels.generated.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Models/AccelByteSessionModels.cpp</label>
+        <link refid="d7/d8b/_accel_byte_session_models_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Core/AccelByteReport.h</label>
+        <link refid="d2/db2/_accel_byte_report_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AccelByteDSMModels.h</label>
+        <link refid="de/de5/_accel_byte_d_s_m_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByteGeneralModels.h</label>
+        <link refid="de/dc6/_accel_byte_general_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Models/AccelByteSessionModels.h</label>
+        <link refid="d9/dc0/_accel_byte_session_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Http.h</label>
+      </node>
+      <node id="8">
+        <label>Interfaces/IHttpRequest.h</label>
+      </node>
+      <node id="7">
+        <label>Interfaces/IHttpResponse.h</label>
+      </node>
+      <node id="14">
+        <label>Json.h</label>
+      </node>
+      <node id="4">
+        <label>JsonObjectWrapper.h</label>
+      </node>
+      <node id="12">
+        <label>Math/NumericLimits.h</label>
+      </node>
+      <node id="9">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="d7/d8b/_accel_byte_session_models_8cpp_1a225b357510ec9cb973759685caa647ee" prot="public" static="no">
+        <name>SET_SESSION_QUERY_FIELD</name>
+        <param><defname>JsonType</defname></param>
+        <param><defname>Value</defname></param>
+        <initializer>    FString ComparisonFieldName;                                                                                       \
+    const TSharedPtr&lt;FJsonObject&gt; ComparisonField = InitializeComparisonField(Comparison, ComparisonFieldName);        \
+    ComparisonField-&gt;Set##JsonType##Field(AttributeName, Value);                                                       \
+    AddToQuery(ComparisonFieldName, ComparisonField);                                                                  \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Models/AccelByteSessionModels.cpp" line="15" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Models/AccelByteSessionModels.cpp" bodystart="15" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/dc0/_accel_byte_session_models_8h" kindref="compound">Models/AccelByteSessionModels.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Json.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/db2/_accel_byte_report_8h" kindref="compound">Core/AccelByteReport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a4adf8fc65ef8edf109b532f0f86e54d6" refkind="member"><highlight class="normal"><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a4adf8fc65ef8edf109b532f0f86e54d6" kindref="member">FAccelByteModelsV2GameSessionQuery::FAccelByteModelsV2GameSessionQuery</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject<sp/>=<sp/>MakeShared&lt;FJsonObject&gt;();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Macro<sp/>to<sp/>reduce<sp/>code<sp/>duplication<sp/>for<sp/>setting<sp/>query<sp/>fields<sp/>in<sp/>the<sp/>JSON<sp/>wrapper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d7/d8b/_accel_byte_session_models_8cpp_1a225b357510ec9cb973759685caa647ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SET_SESSION_QUERY_FIELD(JsonType,<sp/>Value)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>FString<sp/>ComparisonFieldName;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>TSharedPtr&lt;FJsonObject&gt;<sp/>ComparisonField<sp/>=<sp/>InitializeComparisonField(Comparison,<sp/>ComparisonFieldName);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>ComparisonField-&gt;Set##JsonType##Field(AttributeName,<sp/>Value);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>AddToQuery(ComparisonFieldName,<sp/>ComparisonField);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a7870af6ac708c24514a860417de889fc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a7870af6ac708c24514a860417de889fc" kindref="member">FAccelByteModelsV2GameSessionQuery::AddParam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AttributeName</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9c" kindref="member">EAccelByteV2SessionQueryComparisonOp</ref><sp/>Comparison</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AttributeValue)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="24"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca969f331a87d8c958473c32b4d0e61a44" kindref="member">EAccelByteV2SessionQueryComparisonOp::EQUAL</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca4ea2d378cdec20f59330f113297bc1ce" kindref="member">EAccelByteV2SessionQueryComparisonOp::NOT_EQUAL</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByte,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>session<sp/>query<sp/>operator/type<sp/>combination!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8b/_accel_byte_session_models_8cpp_1a225b357510ec9cb973759685caa647ee" kindref="member">SET_SESSION_QUERY_FIELD</ref>(String,<sp/>AttributeValue);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a7d5557e24d0bcfeb3c3dc9cc9253b380" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a7870af6ac708c24514a860417de889fc" kindref="member">FAccelByteModelsV2GameSessionQuery::AddParam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AttributeName</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9c" kindref="member">EAccelByteV2SessionQueryComparisonOp</ref><sp/>Comparison</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>AttributeValue)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="38"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca969f331a87d8c958473c32b4d0e61a44" kindref="member">EAccelByteV2SessionQueryComparisonOp::EQUAL</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca4ea2d378cdec20f59330f113297bc1ce" kindref="member">EAccelByteV2SessionQueryComparisonOp::NOT_EQUAL</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca1625ef4fe09f68fa20d3ff6e02cd5c8e" kindref="member">EAccelByteV2SessionQueryComparisonOp::GREATER_THAN</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca09279b041dc6a109d311853748ee282c" kindref="member">EAccelByteV2SessionQueryComparisonOp::GREATER_THAN_EQUAL</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9caa327176a0a845c117bdfadec134a95e9" kindref="member">EAccelByteV2SessionQueryComparisonOp::LESS_THAN</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9caaf05a7e7899eb44bb6e75bfd32b7957c" kindref="member">EAccelByteV2SessionQueryComparisonOp::LESS_THAN_EQUAL</ref>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByte,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>session<sp/>query<sp/>operator/type<sp/>combination!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8b/_accel_byte_session_models_8cpp_1a225b357510ec9cb973759685caa647ee" kindref="member">SET_SESSION_QUERY_FIELD</ref>(Number,<sp/>AttributeValue);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a921f3c2877bf4949712087691461ae9b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a7870af6ac708c24514a860417de889fc" kindref="member">FAccelByteModelsV2GameSessionQuery::AddParam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AttributeName</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9c" kindref="member">EAccelByteV2SessionQueryComparisonOp</ref><sp/>Comparison</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;&amp;<sp/>AttributeValue)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="56"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca7c8b81e077a45b6d2c9c03d3a22c0d5b" kindref="member">EAccelByteV2SessionQueryComparisonOp::CONTAINS</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca4b7ded10a1737fedce4949a0c54b13a0" kindref="member">EAccelByteV2SessionQueryComparisonOp::NOT_CONTAINS</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByte,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>session<sp/>query<sp/>operator/type<sp/>combination!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;TSharedPtr&lt;FJsonValue&gt;&gt;<sp/>JsonArray;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Item<sp/>:<sp/>AttributeValue)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JsonArray.Add(MakeShared&lt;FJsonValueString&gt;(Item));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8b/_accel_byte_session_models_8cpp_1a225b357510ec9cb973759685caa647ee" kindref="member">SET_SESSION_QUERY_FIELD</ref>(Array,<sp/>JsonArray);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1d6d921315d63d85c4fa4899e3d9e1dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a7870af6ac708c24514a860417de889fc" kindref="member">FAccelByteModelsV2GameSessionQuery::AddParam</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AttributeName</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9c" kindref="member">EAccelByteV2SessionQueryComparisonOp</ref><sp/>Comparison</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;double&gt;&amp;<sp/>AttributeValue)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca7c8b81e077a45b6d2c9c03d3a22c0d5b" kindref="member">EAccelByteV2SessionQueryComparisonOp::CONTAINS</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Comparison<sp/>!=<sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca4b7ded10a1737fedce4949a0c54b13a0" kindref="member">EAccelByteV2SessionQueryComparisonOp::NOT_CONTAINS</ref>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogAccelByte,<sp/>Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>session<sp/>query<sp/>operator/type<sp/>combination!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;TSharedPtr&lt;FJsonValue&gt;&gt;<sp/>JsonArray;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Item<sp/>:<sp/>AttributeValue)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JsonArray.Add(MakeShared&lt;FJsonValueNumber&gt;(Item));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8b/_accel_byte_session_models_8cpp_1a225b357510ec9cb973759685caa647ee" kindref="member">SET_SESSION_QUERY_FIELD</ref>(Array,<sp/>JsonArray);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>SET_SESSION_QUERY_FIELD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1afff194ee7309e24e91333998d0799c36" refkind="member"><highlight class="normal">TSharedPtr&lt;FJsonObject&gt;<sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1afff194ee7309e24e91333998d0799c36" kindref="member">FAccelByteModelsV2GameSessionQuery::InitializeComparisonField</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9c" kindref="member">EAccelByteV2SessionQueryComparisonOp</ref><sp/>Op</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>FString&amp;<sp/>OutFieldName)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="97"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject-&gt;HasTypedField&lt;EJson::Object&gt;(TEXT(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject-&gt;SetObjectField(TEXT(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">),<sp/>MakeShared&lt;FJsonObject&gt;());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FJsonObject&gt;<sp/>QueryObject<sp/>=<sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject-&gt;GetObjectField(TEXT(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(Op)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca969f331a87d8c958473c32b4d0e61a44" kindref="member">EAccelByteV2SessionQueryComparisonOp::EQUAL</ref>:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;equals&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca4ea2d378cdec20f59330f113297bc1ce" kindref="member">EAccelByteV2SessionQueryComparisonOp::NOT_EQUAL</ref>:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;notEquals&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca1625ef4fe09f68fa20d3ff6e02cd5c8e" kindref="member">EAccelByteV2SessionQueryComparisonOp::GREATER_THAN</ref>:</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;greaterThan&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca09279b041dc6a109d311853748ee282c" kindref="member">EAccelByteV2SessionQueryComparisonOp::GREATER_THAN_EQUAL</ref>:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;greaterThanEquals&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9caa327176a0a845c117bdfadec134a95e9" kindref="member">EAccelByteV2SessionQueryComparisonOp::LESS_THAN</ref>:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;lessThan&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9caaf05a7e7899eb44bb6e75bfd32b7957c" kindref="member">EAccelByteV2SessionQueryComparisonOp::LESS_THAN_EQUAL</ref>:</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;lessThanEquals&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca7c8b81e077a45b6d2c9c03d3a22c0d5b" kindref="member">EAccelByteV2SessionQueryComparisonOp::CONTAINS</ref>:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;in&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d9/dc0/_accel_byte_session_models_8h_1af83d840fd0e9bc7b5e3156626cbf2d9ca4b7ded10a1737fedce4949a0c54b13a0" kindref="member">EAccelByteV2SessionQueryComparisonOp::NOT_CONTAINS</ref>:</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutFieldName<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;notIn&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!QueryObject-&gt;HasTypedField&lt;EJson::Object&gt;(OutFieldName))</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QueryObject-&gt;SetObjectField(OutFieldName,<sp/>MakeShared&lt;FJsonObject&gt;());</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QueryObject-&gt;GetObjectField(OutFieldName);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a0ae1ef76075ad0387dc80448ca0d288f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a0ae1ef76075ad0387dc80448ca0d288f" kindref="member">FAccelByteModelsV2GameSessionQuery::AddToQuery</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ComparisonFieldName</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FJsonObject&gt;&amp;<sp/>ComparisonField)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="144"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>#NOTE:<sp/>The<sp/>AddToQuery<sp/>method<sp/>should<sp/>only<sp/>ever<sp/>be<sp/>called<sp/>after<sp/>InitializeComparisonField<sp/>has<sp/>been<sp/>called,<sp/>but</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>putting<sp/>this<sp/>here<sp/>just<sp/>in<sp/>case<sp/>something<sp/>changes<sp/>in<sp/>the<sp/>future</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject-&gt;HasTypedField&lt;EJson::Object&gt;(TEXT(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject-&gt;SetObjectField(TEXT(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">),<sp/>MakeShared&lt;FJsonObject&gt;());</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FJsonObject&gt;<sp/>QueryObject<sp/>=<sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject-&gt;GetObjectField(TEXT(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>QueryObject-&gt;SetObjectField(ComparisonFieldName,<sp/>ComparisonField);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d88/struct_f_accel_byte_models_v2_game_session_query_1a1bf6ba7de405aaacd957021d5ab81aca" kindref="member">JsonWrapper</ref>.JsonObject-&gt;SetObjectField(TEXT(</highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">),<sp/>QueryObject);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a5566a27472a516b41f19ca4df5e2722d" refkind="member"><highlight class="normal"><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession::FAccelByteModelsGameSessionExcludedSession</ref>(<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abf035f7726f5d84f8a947aad0938c2d2" kindref="member">ExclusionType</ref><sp/>Type)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1ad099daaf27efc06b0d4d43648a07e852" kindref="member">CurrentType</ref>(this-&gt;<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a04d847780660339160f304276d3587f0" kindref="member">_CurrentType</ref>)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abe18bff204beb3b3cecbaad041e64d1d" kindref="member">ExcludedPastSessionCount</ref>(this-&gt;<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1ae8d22a22027b95392c84eab1c1777257" kindref="member">_ExcludedPastSessionCount</ref>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a04d847780660339160f304276d3587f0" kindref="member">_CurrentType</ref><sp/>=<sp/>Type;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1ab0dccb3f143c5e8925f43394d70b8ede" refkind="member"><highlight class="normal"><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1ab0dccb3f143c5e8925f43394d70b8ede" kindref="member">FAccelByteModelsGameSessionExcludedSession::CreateNoExclusion</ref>()</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref>(<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abf035f7726f5d84f8a947aad0938c2d2a14d1a85842cf9e292bb8606f7d863c4f" kindref="member">ExclusionType::NONE</ref>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a2a5839506b12c11dac83d418abcefd83" refkind="member"><highlight class="normal"><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a2a5839506b12c11dac83d418abcefd83" kindref="member">FAccelByteModelsGameSessionExcludedSession::CreateExclusionCount</ref>(uint32<sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abe18bff204beb3b3cecbaad041e64d1d" kindref="member">ExcludedPastSessionCount</ref>)<sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Output<sp/>=<sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref>(<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abf035f7726f5d84f8a947aad0938c2d2ae17985573fccf37b7c603c48723720e8" kindref="member">ExclusionType::N_PAST_SESSION</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>Output._ExcludedPastSessionCount<sp/>=<sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abe18bff204beb3b3cecbaad041e64d1d" kindref="member">ExcludedPastSessionCount</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Output;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1afc9f440e664e7389ef1a92ba633ec4c1" refkind="member"><highlight class="normal"><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1afc9f440e664e7389ef1a92ba633ec4c1" kindref="member">FAccelByteModelsGameSessionExcludedSession::CreateExclusionList</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSet&lt;FString&gt;&amp;<sp/>ExcludedGameSessionIDs)<sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Output<sp/>=<sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref>(<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abf035f7726f5d84f8a947aad0938c2d2a873feaefbcc2916e4df2f4f738eedfad" kindref="member">ExclusionType::EXPLICIT_LIST</ref>);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>Output._ExcludedGameSessionIDs<sp/>=<sp/>ExcludedGameSessionIDs;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Output;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a04376fc35f251f35563e094e6ddf010d" refkind="member"><highlight class="normal"><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a04376fc35f251f35563e094e6ddf010d" kindref="member">FAccelByteModelsGameSessionExcludedSession::CreateExclusionEntireSessionMemberPastSession</ref>()</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref>(<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1abf035f7726f5d84f8a947aad0938c2d2a6c2cd21dd69e9fae4a7dd649e64a30dd" kindref="member">ExclusionType::ALL_MEMBER_CACHED_SESSION</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a485c9e8dc0f678d36f0f3cbb0534c283" refkind="member"><highlight class="normal"><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref>&amp;<sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a485c9e8dc0f678d36f0f3cbb0534c283" kindref="member">FAccelByteModelsGameSessionExcludedSession::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a6e7be8574d9c5c0b9d9c55b512fcbd98" kindref="member">FAccelByteModelsGameSessionExcludedSession</ref>&amp;<sp/>Copy)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a04d847780660339160f304276d3587f0" kindref="member">_CurrentType</ref><sp/>=<sp/>Copy.<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1a04d847780660339160f304276d3587f0" kindref="member">_CurrentType</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1ae8d22a22027b95392c84eab1c1777257" kindref="member">_ExcludedPastSessionCount</ref><sp/>=<sp/>Copy.<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1ae8d22a22027b95392c84eab1c1777257" kindref="member">_ExcludedPastSessionCount</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1af45331f55624f3be89a87afba9554be0" kindref="member">_ExcludedGameSessionIDs</ref><sp/>=<sp/>Copy.<ref refid="d3/d02/struct_f_accel_byte_models_game_session_excluded_session_1af45331f55624f3be89a87afba9554be0" kindref="member">_ExcludedGameSessionIDs</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Models/AccelByteSessionModels.cpp"/>
+  </compounddef>
+</doxygen>

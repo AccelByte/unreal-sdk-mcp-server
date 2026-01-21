@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif" kind="struct" language="C++" prot="public">
+    <compoundname>FAccelByteModelsChatUpdateUserTopicNotif</compoundname>
+    <basecompoundref refid="d3/d7e/struct_f_accel_byte_models_chat_update_topic_notif" prot="public" virt="non-virtual">FAccelByteModelsChatUpdateTopicNotif</basecompoundref>
+    <includes refid="d4/d50/_accel_byte_chat_models_8h" local="no">AccelByteChatModels.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif_1a4a514316f30d6183a82725e1886a097b" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d50/_accel_byte_chat_models_8h_1a55cdbd95f6b461e4f6226b23fe8fdccb" kindref="member">ETopicType</ref></type>
+        <definition>ETopicType FAccelByteModelsChatUpdateUserTopicNotif::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <qualifiedname>FAccelByteModelsChatUpdateUserTopicNotif::Type</qualifiedname>
+        <initializer>{<ref refid="d4/d50/_accel_byte_chat_models_8h_1a55cdbd95f6b461e4f6226b23fe8fdccba88183b946cc5f0e8c96b2e66e1c74a7e" kindref="member">ETopicType::Unknown</ref>}</initializer>
+        <briefdescription>
+<para>Chat topic types; either PERSONAL or GROUP; differs in member capacity. PERSONAL==2; GROUP&gt;2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" line="588" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" bodystart="588" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif_1aed0f702b16511fac8c8ad338d3e26c55" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FAccelByteModelsChatUpdateUserTopicNotif::UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>FAccelByteModelsChatUpdateUserTopicNotif::UserId</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Affected user id that added to topic or removed from topic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" line="592" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" bodystart="592" bodyend="592"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif_1a655a02caff4c919fe848d07678084543" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCEINLINE bool</type>
+        <definition>FORCEINLINE bool FAccelByteModelsChatUpdateUserTopicNotif::operator==</definition>
+        <argsstring>(const FAccelByteModelsChatUpdateUserTopicNotif &amp;Other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>FAccelByteModelsChatUpdateUserTopicNotif::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif" kindref="compound">FAccelByteModelsChatUpdateUserTopicNotif</ref> &amp;</type>
+          <declname>Other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" line="594" column="18" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" bodystart="594" bodyend="597"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Notification structure when the user is added / removed from a topic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FAccelByteModelsChatUpdateTopicNotif</label>
+        <link refid="d3/d7e/struct_f_accel_byte_models_chat_update_topic_notif"/>
+      </node>
+      <node id="1">
+        <label>FAccelByteModelsChatUpdateUserTopicNotif</label>
+        <link refid="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FAccelByteModelsChatUpdateTopicNotif</label>
+        <link refid="d3/d7e/struct_f_accel_byte_models_chat_update_topic_notif"/>
+      </node>
+      <node id="1">
+        <label>FAccelByteModelsChatUpdateUserTopicNotif</label>
+        <link refid="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" line="581" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Models/AccelByteChatModels.h" bodystart="583" bodyend="598"/>
+    <listofallmembers>
+      <member refid="d3/d7e/struct_f_accel_byte_models_chat_update_topic_notif_1a7e9f024dd4df7651efc756c597ae985a" prot="public" virt="non-virtual"><scope>FAccelByteModelsChatUpdateUserTopicNotif</scope><name>IsChannel</name></member>
+      <member refid="d3/d7e/struct_f_accel_byte_models_chat_update_topic_notif_1a2cda8456982dd8d3d28aab5e0476e078" prot="public" virt="non-virtual"><scope>FAccelByteModelsChatUpdateUserTopicNotif</scope><name>Name</name></member>
+      <member refid="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif_1a655a02caff4c919fe848d07678084543" prot="public" virt="non-virtual"><scope>FAccelByteModelsChatUpdateUserTopicNotif</scope><name>operator==</name></member>
+      <member refid="d3/d7e/struct_f_accel_byte_models_chat_update_topic_notif_1ab0d1c5ffba43674be70f29719a2a166d" prot="public" virt="non-virtual"><scope>FAccelByteModelsChatUpdateUserTopicNotif</scope><name>SenderId</name></member>
+      <member refid="d3/d7e/struct_f_accel_byte_models_chat_update_topic_notif_1a87666c3611030577fbcf2457fdbe00d6" prot="public" virt="non-virtual"><scope>FAccelByteModelsChatUpdateUserTopicNotif</scope><name>TopicId</name></member>
+      <member refid="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif_1a4a514316f30d6183a82725e1886a097b" prot="public" virt="non-virtual"><scope>FAccelByteModelsChatUpdateUserTopicNotif</scope><name>Type</name></member>
+      <member refid="db/ddf/struct_f_accel_byte_models_chat_update_user_topic_notif_1aed0f702b16511fac8c8ad338d3e26c55" prot="public" virt="non-virtual"><scope>FAccelByteModelsChatUpdateUserTopicNotif</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

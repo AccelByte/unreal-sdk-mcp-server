@@ -1,0 +1,1098 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::GameServerApi::ServerAMS</compoundname>
+    <basecompoundref refid="d8/d4c/class_accel_byte_1_1_f_server_api_base" prot="public" virt="non-virtual">AccelByte::FServerApiBase</basecompoundref>
+    <basecompoundref refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy" prot="public" virt="non-virtual">AccelByte::IWebsocketConfigurableReconnectStrategy</basecompoundref>
+    <includes refid="d3/d84/_accel_byte_server_a_m_s_api_8h" local="no">AccelByteServerAMSApi.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1affef15576d63e48cedb6b8bda3b3e9d0" prot="public" static="no">
+        <type>AccelByteWebSocket::FConnectionCloseDelegate</type>
+        <definition>typedef AccelByteWebSocket::FConnectionCloseDelegate AccelByte::GameServerApi::ServerAMS::FConnectionClosed</definition>
+        <argsstring></argsstring>
+        <name>FConnectionClosed</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::FConnectionClosed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="33" column="54" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1bec5c04bb307b6805f908b88619a09c" prot="public" static="no">
+        <type>AccelByteWebSocket::FReconnectAttemptMulticastDelegate</type>
+        <definition>typedef AccelByteWebSocket::FReconnectAttemptMulticastDelegate AccelByte::GameServerApi::ServerAMS::FReconnectAttempted</definition>
+        <argsstring></argsstring>
+        <name>FReconnectAttempted</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::FReconnectAttempted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="34" column="64" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae250e33b2a8735cbccc2794cfc1e6dbe" prot="public" static="no">
+        <type>AccelByteWebSocket::FMassiveOutageMulticastDelegate</type>
+        <definition>typedef AccelByteWebSocket::FMassiveOutageMulticastDelegate AccelByte::GameServerApi::ServerAMS::FMassiveOutage</definition>
+        <argsstring></argsstring>
+        <name>FMassiveOutage</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::FMassiveOutage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="35" column="61" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a92bdcde49a3c6a4720b1d7b840e38d74" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; <ref refid="d9/da1/class_accel_byte_1_1_accel_byte_web_socket" kindref="compound">AccelByteWebSocket</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TSharedPtr&lt;AccelByteWebSocket, ESPMode::ThreadSafe&gt; AccelByte::GameServerApi::ServerAMS::WebSocket</definition>
+        <argsstring></argsstring>
+        <name>WebSocket</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::WebSocket</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="155" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a784e88e40cc2ce7dd4e44ab90bb98289" prot="private" static="no" mutable="no">
+        <type>FConnectSuccess</type>
+        <definition>FConnectSuccess AccelByte::GameServerApi::ServerAMS::OnConnectSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnConnectSuccessDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnConnectSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="157" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a628c52819e7eb0ad9ba6074cdf211d66" prot="private" static="no" mutable="no">
+        <type>FConnectError</type>
+        <definition>FConnectError AccelByte::GameServerApi::ServerAMS::OnConnectErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnConnectErrorDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnConnectErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="158" column="15" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a7de831789be52320919f58acddc5a7dc" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1affef15576d63e48cedb6b8bda3b3e9d0" kindref="member">FConnectionClosed</ref></type>
+        <definition>FConnectionClosed AccelByte::GameServerApi::ServerAMS::OnConnectionClosedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnConnectionClosedDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnConnectionClosedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="159" column="19" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a2a93a6e70fa4aace1280727d96cebdc5" prot="private" static="no" mutable="no">
+        <type>FOnAMSDrainReceived</type>
+        <definition>FOnAMSDrainReceived AccelByte::GameServerApi::ServerAMS::OnAMSDrainReceivedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnAMSDrainReceivedDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnAMSDrainReceivedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="160" column="21" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aea354f2a4793de15edc0f9fbe7891872" prot="private" static="no" mutable="no">
+        <type>FMulticastOnAMSDrainReceived</type>
+        <definition>FMulticastOnAMSDrainReceived AccelByte::GameServerApi::ServerAMS::AMSDrainReceivedMulticastDelegate</definition>
+        <argsstring></argsstring>
+        <name>AMSDrainReceivedMulticastDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::AMSDrainReceivedMulticastDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="161" column="30" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a116e880a0ea0f2b691843741db0b8195" prot="private" static="no" mutable="no">
+        <type>FTickerDelegate</type>
+        <definition>FTickerDelegate AccelByte::GameServerApi::ServerAMS::AMSHeartbeatTickDelegate</definition>
+        <argsstring></argsstring>
+        <name>AMSHeartbeatTickDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::AMSHeartbeatTickDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="162" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a31068ca4de401d4574ac306d24281292" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1bec5c04bb307b6805f908b88619a09c" kindref="member">FReconnectAttempted</ref></type>
+        <definition>FReconnectAttempted AccelByte::GameServerApi::ServerAMS::ReconnectAttempted</definition>
+        <argsstring></argsstring>
+        <name>ReconnectAttempted</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::ReconnectAttempted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="163" column="21" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1acc6738fae762f000db7950dbf2c925fc" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae250e33b2a8735cbccc2794cfc1e6dbe" kindref="member">FMassiveOutage</ref></type>
+        <definition>FMassiveOutage AccelByte::GameServerApi::ServerAMS::MassiveOutage</definition>
+        <argsstring></argsstring>
+        <name>MassiveOutage</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::MassiveOutage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="164" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a6c24d4af37adb008f03c561a5e502d92" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/db6/_accel_byte_defines_8h_1a9147873e40ccb814a396aca451333ab2" kindref="member">FDelegateHandleAlias</ref></type>
+        <definition>FDelegateHandleAlias AccelByte::GameServerApi::ServerAMS::AMSHeartbeatTickDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>AMSHeartbeatTickDelegateHandle</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::AMSHeartbeatTickDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="166" column="22" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a9a1b4e95c713a59034ff664b6c44dd23" prot="private" static="no" mutable="no">
+        <type>FTimespan</type>
+        <definition>FTimespan AccelByte::GameServerApi::ServerAMS::AMSHeartbeatInterval</definition>
+        <argsstring></argsstring>
+        <name>AMSHeartbeatInterval</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::AMSHeartbeatInterval</qualifiedname>
+        <initializer>= FTimespan(0, 0, 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="168" column="11" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ab0ffc97ae13b525834cffbbdaaa2f699" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString AccelByte::GameServerApi::ServerAMS::AMSWatchdogUrl</definition>
+        <argsstring></argsstring>
+        <name>AMSWatchdogUrl</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::AMSWatchdogUrl</qualifiedname>
+        <initializer>= TEXT(&quot;ws://localhost:5555/watchdog&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="170" column="9" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae81345e53b8badafbcd96f6461370984" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelByte::GameServerApi::ServerAMS::bHeartbeatJobStarted</definition>
+        <argsstring></argsstring>
+        <name>bHeartbeatJobStarted</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::bHeartbeatJobStarted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="172" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a4e79235a74b34c529d96b2f75475b9af" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelByte::GameServerApi::ServerAMS::PingDelay</definition>
+        <argsstring></argsstring>
+        <name>PingDelay</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::PingDelay</qualifiedname>
+        <initializer>= 30.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="174" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a2c979c2e05fb8b97d8d676608e4d7d06" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelByte::GameServerApi::ServerAMS::InitialBackoffDelay</definition>
+        <argsstring></argsstring>
+        <name>InitialBackoffDelay</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::InitialBackoffDelay</qualifiedname>
+        <initializer>= 1.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="175" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ac7751e85bb4f518708f25203eb696267" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelByte::GameServerApi::ServerAMS::MaxBackoffDelay</definition>
+        <argsstring></argsstring>
+        <name>MaxBackoffDelay</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::MaxBackoffDelay</qualifiedname>
+        <initializer>= 30.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="176" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a5101b7990b0508522c27911bfe4087b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerAMS::DECLARE_DELEGATE</definition>
+        <argsstring>(FConnectSuccess)</argsstring>
+        <name>DECLARE_DELEGATE</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::DECLARE_DELEGATE</qualifiedname>
+        <param>
+          <type>FConnectSuccess</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1497d24fd52cbf2c908a7a00c17e552b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerAMS::DECLARE_DELEGATE</definition>
+        <argsstring>(FOnAMSDrainReceived)</argsstring>
+        <name>DECLARE_DELEGATE</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::DECLARE_DELEGATE</qualifiedname>
+        <param>
+          <type>FOnAMSDrainReceived</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a72050a02cc0360cb58474667f50e07b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerAMS::DECLARE_MULTICAST_DELEGATE</definition>
+        <argsstring>(FMulticastOnAMSDrainReceived)</argsstring>
+        <name>DECLARE_MULTICAST_DELEGATE</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::DECLARE_MULTICAST_DELEGATE</qualifiedname>
+        <param>
+          <type>FMulticastOnAMSDrainReceived</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aad76066a264b63ca058185c61422b8a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerAMS::DECLARE_DELEGATE_OneParam</definition>
+        <argsstring>(FConnectError, const FString &amp;)</argsstring>
+        <name>DECLARE_DELEGATE_OneParam</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::DECLARE_DELEGATE_OneParam</qualifiedname>
+        <param>
+          <type>FConnectError</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a025c72fa4d09f5aebc3336bd7045c17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerAMS::ServerAMS</definition>
+        <argsstring>(ServerCredentials const &amp;InCredentialsRef, ServerSettings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; FServerApiClient, ESPMode::ThreadSafe &gt; InServerApiClient=nullptr)</argsstring>
+        <name>ServerAMS</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::ServerAMS</qualifiedname>
+        <param>
+          <type><ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">ServerSettings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/df1/class_accel_byte_1_1_f_server_api_client" kindref="compound">FServerApiClient</ref>, ESPMode::ThreadSafe &gt;</type>
+          <declname>InServerApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="37" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1abca12f228612e58669502421007589be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerAMS::~ServerAMS</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerAMS</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::~ServerAMS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="42" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="33" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1bbcfe6fe153ebe73da3f546109f0686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::Connect</definition>
+        <argsstring>()</argsstring>
+        <name>Connect</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::Connect</qualifiedname>
+        <briefdescription>
+<para>Connect to the AMS websocket. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="47" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="48" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a0ff6fd6e9e3da6dcf351419ccddfbb55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::Disconnect</definition>
+        <argsstring>(bool bForceCleanup=false)</argsstring>
+        <name>Disconnect</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::Disconnect</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bForceCleanup</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Disconnect from AMS if already connected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="52" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="73" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1abbe3d9311e743f86fffe73483ce9418e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::GameServerApi::ServerAMS::IsConnected</definition>
+        <argsstring>() const</argsstring>
+        <name>IsConnected</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::IsConnected</qualifiedname>
+        <briefdescription>
+<para>Check whether the websocket is currently connected to the AMS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if it&apos;s connected, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="59" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1456c2a66b56fbbf3007950a665adace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::SetOnConnectSuccess</definition>
+        <argsstring>(const FConnectSuccess &amp;OnConnectSuccess)</argsstring>
+        <name>SetOnConnectSuccess</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::SetOnConnectSuccess</qualifiedname>
+        <param>
+          <type>const FConnectSuccess &amp;</type>
+          <declname>OnConnectSuccess</declname>
+        </param>
+        <briefdescription>
+<para>set a delegate to be triggered when successfully connect to AMS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnConnectSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="66" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aac1abe86c03ff0c7be9cfdc8e0eb26f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::SetOnConnectError</definition>
+        <argsstring>(const FConnectError &amp;OnConnectError)</argsstring>
+        <name>SetOnConnectError</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::SetOnConnectError</qualifiedname>
+        <param>
+          <type>const FConnectError &amp;</type>
+          <declname>OnConnectError</declname>
+        </param>
+        <briefdescription>
+<para>set a delegate to be triggered when error connecting to AMS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnConnectError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="73" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a574db44cb930436821de652307843165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::SetOnConnectionClosed</definition>
+        <argsstring>(const FConnectionClosed &amp;OnConnectionClosed)</argsstring>
+        <name>SetOnConnectionClosed</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::SetOnConnectionClosed</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1affef15576d63e48cedb6b8bda3b3e9d0" kindref="member">FConnectionClosed</ref> &amp;</type>
+          <declname>OnConnectionClosed</declname>
+        </param>
+        <briefdescription>
+<para>set a delegate to be triggered when AMS connection is closed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnConnectionClosed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="80" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ab4747a9baecd5e3e75211c56a3bade17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::UnbindDelegates</definition>
+        <argsstring>()</argsstring>
+        <name>UnbindDelegates</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::UnbindDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unbind delegates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="85" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="96" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a947806ab9f3c14e81dc26b0b42ab7853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::SendReadyMessage</definition>
+        <argsstring>()</argsstring>
+        <name>SendReadyMessage</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::SendReadyMessage</qualifiedname>
+        <briefdescription>
+<para>send ready message to AMS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="90" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="227" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a14b11764bd3016795f4231592c260f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::SetOnAMSDrainReceivedDelegate</definition>
+        <argsstring>(FOnAMSDrainReceived OnAMSDrain)</argsstring>
+        <name>SetOnAMSDrainReceivedDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::SetOnAMSDrainReceivedDelegate</qualifiedname>
+        <param>
+          <type>FOnAMSDrainReceived</type>
+          <declname>OnAMSDrain</declname>
+        </param>
+        <briefdescription>
+<para>set delegate to be called when drain message is received. Only able to set one delegate. For multiple delegate, please refer to AddOnAMSDrainReceivedMulticastDelegate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnAMSDrain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="98" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="211" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aaf4c7e7cd410148aae511453a1738879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle AccelByte::GameServerApi::ServerAMS::AddOnAMSDrainReceivedMulticastDelegate</definition>
+        <argsstring>(FOnAMSDrainReceived OnAMSDrain)</argsstring>
+        <name>AddOnAMSDrainReceivedMulticastDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::AddOnAMSDrainReceivedMulticastDelegate</qualifiedname>
+        <param>
+          <type>FOnAMSDrainReceived</type>
+          <declname>OnAMSDrain</declname>
+        </param>
+        <briefdescription>
+<para>Add delegate that can be registered to multicast when drain message is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>OnAMSDrain delegate to add. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="105" column="17" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3a82c38c6304de8402fc931054fc37e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::SetDSTimeout</definition>
+        <argsstring>(int32 NewTimeout)</argsstring>
+        <name>SetDSTimeout</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::SetDSTimeout</qualifiedname>
+        <param>
+          <type>int32</type>
+          <declname>NewTimeout</declname>
+        </param>
+        <briefdescription>
+<para>set DS session timeout to the new number given. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new number for DS session timeout </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="112" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="271" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a5aa71b70a9b0b4421dbff1971a747af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::ResetDSTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>ResetDSTimeout</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::ResetDSTimeout</qualifiedname>
+        <briefdescription>
+<para>reset DS session timeout to the one that already set in the fleet settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="117" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="285" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3dedf2af385b552db7712b37b402e2d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1bec5c04bb307b6805f908b88619a09c" kindref="member">FReconnectAttempted</ref> &amp;</type>
+        <definition>FReconnectAttempted &amp; AccelByte::GameServerApi::ServerAMS::OnReconnectAttemptedMulticastDelegate</definition>
+        <argsstring>()</argsstring>
+        <name>OnReconnectAttemptedMulticastDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnReconnectAttemptedMulticastDelegate</qualifiedname>
+        <briefdescription>
+<para>Get a multicast delegate that will be triggered when an attempt to reconnect websocket has been done. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="122" column="21" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a45377fccd860fbf4d3061ae9b81b137a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae250e33b2a8735cbccc2794cfc1e6dbe" kindref="member">FMassiveOutage</ref> &amp;</type>
+        <definition>FMassiveOutage &amp; AccelByte::GameServerApi::ServerAMS::OnMassiveOutageMulticastDelegate</definition>
+        <argsstring>()</argsstring>
+        <name>OnMassiveOutageMulticastDelegate</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnMassiveOutageMulticastDelegate</qualifiedname>
+        <briefdescription>
+<para>Get a multicast delegate that will be triggered when connection is down &amp; can&apos;t be reestablished. Longer than usual. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="130" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1adf4b4489f5443ba374287dde58d3cce0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::CreateWebSocket</definition>
+        <argsstring>()</argsstring>
+        <name>CreateWebSocket</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::CreateWebSocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="137" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="105" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a89d5f2eb86f695dd567416208da819b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::OnConnected</definition>
+        <argsstring>()</argsstring>
+        <name>OnConnected</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="139" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3bb009c52891d32f86c2a6e079b5d4d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::OnConnectionError</definition>
+        <argsstring>(const FString &amp;Error)</argsstring>
+        <name>OnConnectionError</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnConnectionError</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="141" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="149" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae469de4a788bc477b64b1ed56632a870" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::OnMessage</definition>
+        <argsstring>(const FString &amp;Message)</argsstring>
+        <name>OnMessage</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnMessage</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="143" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="171" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a6215785d415a6dc6691a653819e6af8b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::OnClosed</definition>
+        <argsstring>(int32 StatusCode, const FString &amp;Reason, bool bWasClean)</argsstring>
+        <name>OnClosed</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnClosed</qualifiedname>
+        <param>
+          <type>int32</type>
+          <declname>StatusCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Reason</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bWasClean</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="145" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="194" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3da09137ee8c3f168b3555833b8a8405" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::OnReconnectAttempt</definition>
+        <argsstring>(FReconnectAttemptInfo const &amp;ReconnectAttemptInfo)</argsstring>
+        <name>OnReconnectAttempt</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnReconnectAttempt</qualifiedname>
+        <param>
+          <type><ref refid="d4/d6f/struct_accel_byte_1_1_f_reconnect_attempt_info" kindref="compound">FReconnectAttemptInfo</ref> const &amp;</type>
+          <declname>ReconnectAttemptInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="147" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a8787d12644eb03adc745f8b10d01796e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::OnMassiveOutage</definition>
+        <argsstring>(FMassiveOutageInfo const &amp;MassiveOutageInfo)</argsstring>
+        <name>OnMassiveOutage</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::OnMassiveOutage</qualifiedname>
+        <param>
+          <type><ref refid="d9/df5/struct_accel_byte_1_1_f_massive_outage_info" kindref="compound">FMassiveOutageInfo</ref> const &amp;</type>
+          <declname>MassiveOutageInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="149" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1afc89bfde891d06918aa7e8f8d03fc006" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::GameServerApi::ServerAMS::SendHeartbeat</definition>
+        <argsstring>()</argsstring>
+        <name>SendHeartbeat</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::SendHeartbeat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="151" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="249" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ab00254b8ceb7917d9a592c21c5d29089" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::GameServerApi::ServerAMS::PeriodicHeartbeat</definition>
+        <argsstring>(float DeltaTime)</argsstring>
+        <name>PeriodicHeartbeat</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerAMS::PeriodicHeartbeat</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="153" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerAMSApi.cpp" bodystart="262" bodyend="269"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>API for communication from dedicated server to AMS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerAMS</label>
+        <link refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::IWebsocketConfigurableReconnectStrategy</label>
+        <link refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AccelByte::FReconnectionStrategy</label>
+        <link refid="df/d24/class_accel_byte_1_1_f_reconnection_strategy"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>TotalTimeout</edgelabel>
+          <edgelabel>_TotalTimeout</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>InitialBackoffDelay</edgelabel>
+          <edgelabel>_InitialBackoffDelay</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>AggressiveRetryInterval</edgelabel>
+          <edgelabel>_AggressiveRetryInterval</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>BalancedMaxRetryInterval</edgelabel>
+          <edgelabel>_BalancedMaxRetryInterval</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>Advanced_MassiveOutageDuration</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>AccelByte::FReconnectionStrategy::FAggressiveRetryInterval</label>
+        <link refid="db/d35/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_aggressive_retry_interval"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>AccelByte::FReconnectionStrategy::FBalancedMaxRetryInterval</label>
+        <link refid="d6/d3c/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_balanced_max_retry_interval"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>AccelByte::FReconnectionStrategy::FInitialBackoffDelay</label>
+        <link refid="d1/d14/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_initial_backoff_delay"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>AccelByte::FReconnectionStrategy::FMassiveOutageDuration</label>
+        <link refid="d0/d38/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_massive_outage_duration"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>AccelByte::FReconnectionStrategy::FTotalTimeoutDuration</label>
+        <link refid="dd/d14/class_accel_byte_1_1_f_reconnection_strategy_1_1_f_total_timeout_duration"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ServerSettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerAMS</label>
+        <link refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AccelByte::IWebsocketConfigurableReconnectStrategy</label>
+        <link refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>DefaultReconnectionStrategy</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="16">
+        <label>FTimespan</label>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" line="26" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerAMSApi.h" bodystart="27" bodyend="177"/>
+    <listofallmembers>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aaf4c7e7cd410148aae511453a1738879" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>AddOnAMSDrainReceivedMulticastDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aea354f2a4793de15edc0f9fbe7891872" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>AMSDrainReceivedMulticastDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a9a1b4e95c713a59034ff664b6c44dd23" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>AMSHeartbeatInterval</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a116e880a0ea0f2b691843741db0b8195" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>AMSHeartbeatTickDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a6c24d4af37adb008f03c561a5e502d92" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>AMSHeartbeatTickDelegateHandle</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ab0ffc97ae13b525834cffbbdaaa2f699" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>AMSWatchdogUrl</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae81345e53b8badafbcd96f6461370984" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>bHeartbeatJobStarted</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1bbcfe6fe153ebe73da3f546109f0686" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>Connect</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1adf4b4489f5443ba374287dde58d3cce0" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>CreateWebSocket</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a5101b7990b0508522c27911bfe4087b7" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>DECLARE_DELEGATE</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1497d24fd52cbf2c908a7a00c17e552b" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>DECLARE_DELEGATE</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aad76066a264b63ca058185c61422b8a3" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>DECLARE_DELEGATE_OneParam</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a72050a02cc0360cb58474667f50e07b6" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>DECLARE_MULTICAST_DELEGATE</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1a5a8b7415b9c9b6817388f3feb8df9e85" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>DefaultReconnectionStrategy</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a0ff6fd6e9e3da6dcf351419ccddfbb55" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>Disconnect</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1affef15576d63e48cedb6b8bda3b3e9d0" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>FConnectionClosed</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae250e33b2a8735cbccc2794cfc1e6dbe" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>FMassiveOutage</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1bec5c04bb307b6805f908b88619a09c" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>FReconnectAttempted</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9bf60b7a41397c62997b57d33ec11ae4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>FServerApiBase</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1ae157b91e3ab03b7c189c591b5d39e2f7" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>GetDefaultReconnectionStrategy</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1a651131aabd8aaee422fe141faaeeddef" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>GetReconnectionStrategyDictionary</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9c610b4093406fa713b39c8319b2f7d6" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>HttpClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a0ac58ba7cb9e3b872c5391127beafaab" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>HttpRef</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a2c979c2e05fb8b97d8d676608e4d7d06" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>InitialBackoffDelay</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1abbe3d9311e743f86fffe73483ce9418e" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>IsConnected</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1a4732a46c06b66a6d25521e3cbc8fa683" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>IWebsocketConfigurableReconnectStrategy</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1acc6738fae762f000db7950dbf2c925fc" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>MassiveOutage</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ac7751e85bb4f518708f25203eb696267" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>MaxBackoffDelay</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a2a93a6e70fa4aace1280727d96cebdc5" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnAMSDrainReceivedDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a6215785d415a6dc6691a653819e6af8b" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnClosed</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a89d5f2eb86f695dd567416208da819b4" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnConnected</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a628c52819e7eb0ad9ba6074cdf211d66" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnConnectErrorDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a7de831789be52320919f58acddc5a7dc" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnConnectionClosedDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3bb009c52891d32f86c2a6e079b5d4d5" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnConnectionError</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a784e88e40cc2ce7dd4e44ab90bb98289" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnConnectSuccessDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a8787d12644eb03adc745f8b10d01796e" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnMassiveOutage</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a45377fccd860fbf4d3061ae9b81b137a" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnMassiveOutageMulticastDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ae469de4a788bc477b64b1ed56632a870" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnMessage</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3da09137ee8c3f168b3555833b8a8405" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnReconnectAttempt</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3dedf2af385b552db7712b37b402e2d2" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>OnReconnectAttemptedMulticastDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ab00254b8ceb7917d9a592c21c5d29089" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>PeriodicHeartbeat</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a4e79235a74b34c529d96b2f75475b9af" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>PingDelay</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a31068ca4de401d4574ac306d24281292" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ReconnectAttempted</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1ad8868c18d9b391643fce7a832ad3e54a" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ReconnectionStrategyDictionary</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a5aa71b70a9b0b4421dbff1971a747af5" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ResetDSTimeout</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1afc89bfde891d06918aa7e8f8d03fc006" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SendHeartbeat</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a947806ab9f3c14e81dc26b0b42ab7853" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SendReadyMessage</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a025c72fa4d09f5aebc3336bd7045c17d" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ServerAMS</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1aa8ed94ac70b499b1a4227802af7dacc3" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a39c68ed1daaf3b51a1182b9dd457eb07" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ServerCredentialsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a452b7dcace49560836fc87b19d5a599a" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ServerSettingsRef</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1aa66b6227ff42178a81af53eba11d137f" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetDefaultReconnectionStrategy</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a3a82c38c6304de8402fc931054fc37e4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetDSTimeout</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a14b11764bd3016795f4231592c260f16" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetOnAMSDrainReceivedDelegate</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1aac1abe86c03ff0c7be9cfdc8e0eb26f8" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetOnConnectError</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a574db44cb930436821de652307843165" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetOnConnectionClosed</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a1456c2a66b56fbbf3007950a665adace" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetOnConnectSuccess</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1af3924e1aba52efccd68b6b08a1e310aa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetServerApiClient</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1a21250da8a915a4dd4963367b168b2872" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetSpecificReconnectionStrategy</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1ae391d64ba0bbf5a640ec12bbf3ecb15f" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>SetSpecificReconnectionStrategy</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1ab4747a9baecd5e3e75211c56a3bade17" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>UnbindDelegates</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1abda8b2aaa6e06007a914d43329c1af35" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>ValidateAccelByteId</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1a92bdcde49a3c6a4720b1d7b840e38d74" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>WebSocket</name></member>
+      <member refid="d1/dd6/class_accel_byte_1_1_i_websocket_configurable_reconnect_strategy_1a80e85ef5be76357654903846c2c66cd5" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>~IWebsocketConfigurableReconnectStrategy</name></member>
+      <member refid="d9/d29/class_accel_byte_1_1_game_server_api_1_1_server_a_m_s_1abca12f228612e58669502421007589be" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerAMS</scope><name>~ServerAMS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

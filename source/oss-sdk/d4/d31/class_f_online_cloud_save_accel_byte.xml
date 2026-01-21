@@ -1,0 +1,1130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/d31/class_f_online_cloud_save_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineCloudSaveAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineCloudSaveAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d0/d5c/_online_cloud_save_interface_accel_byte_8h" local="no">OnlineCloudSaveInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/d31/class_f_online_cloud_save_accel_byte_1acf79e9c0f14bbeab0d3b780d1aa50481" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineCloudSaveAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineCloudSaveAccelByte(FOnlineSubsystemAccelByte* InSubsystem) : AccelByteSubsystem(InSubsystem) {} TMap&lt;FString</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="35" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d31/class_f_online_cloud_save_accel_byte_1a1b968b0adb7249a73811d75681a41e03" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref> TSharedRef&lt; FAccelByteModelsGameRecord &gt;</type>
+        <definition>PACKAGE_SCOPE TSharedRef&lt;FAccelByteModelsGameRecord&gt; FOnlineCloudSaveAccelByte::GameRecordMap</definition>
+        <argsstring></argsstring>
+        <name>GameRecordMap</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GameRecordMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="40" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d31/class_f_online_cloud_save_accel_byte_1a9b72a0dd0f4e2596dc413e5dadc7fdf9" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineCloudSaveAccelByte::GameRecordMapLock</definition>
+        <argsstring></argsstring>
+        <name>GameRecordMapLock</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GameRecordMapLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical sections for thread safe operation of CurrencyCodeToCurrencyListMap </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="42" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d4/d31/class_f_online_cloud_save_accel_byte_1a95244c02ce929bb452678f1c36c0f78a" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineCloudSaveAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="183" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1ab058289ddca4c7420910969a2a7fd5ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineCloudSaveAccelByte::~FOnlineCloudSaveAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>~FOnlineCloudSaveAccelByte</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::~FOnlineCloudSaveAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="44" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a08df2179e6037287f8669107a0356e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnGetUserRecordCompleted, const FOnlineError &amp;, const FString &amp;, const FAccelByteModelsUserRecord &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnGetUserRecordCompleted</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <param>
+          <type>const FAccelByteModelsUserRecord &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a0881a19a57aa47ba6d8ca9d42ef3d204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnReplaceUserRecordCompleted, const FOnlineError &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnReplaceUserRecordCompleted</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a02df3dadf32fc9067950fb853637eddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnDeleteUserRecordCompleted, const FOnlineError &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnDeleteUserRecordCompleted</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a8055759027f1b3c396f1433b9acef272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnBulkGetPublicUserRecordCompleted, const FOnlineError &amp;, const FListAccelByteModelsUserRecord &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnBulkGetPublicUserRecordCompleted</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <param>
+          <type>const FListAccelByteModelsUserRecord &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a98b2040f88a4fb13bdee8a45e1c1f705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnGetGameRecordCompleted, const FOnlineError &amp;, const FString &amp;, const FAccelByteModelsGameRecord &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnGetGameRecordCompleted</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <param>
+          <type>const FAccelByteModelsGameRecord &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1af2c99f1e23dc75751870837e73187cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnReplaceGameRecordCompleted, const FOnlineError &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnReplaceGameRecordCompleted</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a54e5a60f36846fd90dd40f04bc476fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key)</argsstring>
+        <name>GetUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Get a record (arbitrary JSON data) by its key in user-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to delete </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="77" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1aca6b76fc5cbfa2f8cff48c2e725c65fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const FUniqueNetIdAccelByteUserRef &amp;RecordUserId)</argsstring>
+        <name>GetUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1ae8cb93e2a9e38b9012e1f7f9bdf4ebca" kindref="member">FUniqueNetIdAccelByteUserRef</ref> &amp;</type>
+          <declname>RecordUserId</declname>
+        </param>
+        <briefdescription>
+<para>Get a record (arbitrary JSON data) by its key in user-level. Only for request by Game Server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to delete </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RecordUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserId of the record owner </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="86" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a3da3aa9e3604ee271b33f6a5830ace09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetPublicUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key)</argsstring>
+        <name>GetPublicUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetPublicUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Get a public record (arbitrary JSON data) by its key in user-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to delete </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="94" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a694bd5621f0646b2f4fe533ad63d2a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetPublicUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const FUniqueNetIdAccelByteUserRef &amp;RecordUserId)</argsstring>
+        <name>GetPublicUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetPublicUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1ae8cb93e2a9e38b9012e1f7f9bdf4ebca" kindref="member">FUniqueNetIdAccelByteUserRef</ref> &amp;</type>
+          <declname>RecordUserId</declname>
+        </param>
+        <briefdescription>
+<para>Get a public record (arbitrary JSON data) by its key in user-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to delete </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RecordUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserId of the record owner </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="103" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a4519773232070357e79c6ea5e75adb7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::ReplaceUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const FJsonObject &amp;RecordRequest)</argsstring>
+        <name>ReplaceUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::ReplaceUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const FJsonObject &amp;</type>
+          <declname>RecordRequest</declname>
+        </param>
+        <briefdescription>
+<para>Replace a record in user-level. If the record doesn&apos;t exist, it will create and save the record. If already exists, it will replace the existing one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to replace </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RecordRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record to replace in the form of Json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="112" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a24a3eccebf7003be1b8fd7fbad70e6b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::ReplacePublicUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const FJsonObject &amp;RecordRequest)</argsstring>
+        <name>ReplacePublicUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::ReplacePublicUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const FJsonObject &amp;</type>
+          <declname>RecordRequest</declname>
+        </param>
+        <briefdescription>
+<para>Replace a record in user-level. If the record doesn&apos;t exist, it will create and save the record. If already exists, it will replace the existing one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to replace </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RecordRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record to replace in the form of Json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="121" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1ac4ac5ea5bb46499da9d854d84a1ebcd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::DeleteUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key)</argsstring>
+        <name>DeleteUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::DeleteUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <briefdescription>
+<para>Delete a record under the given key in user-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to delete </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="129" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="77" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a70caad865265d76b9f9469589d12a492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::BulkGetPublicUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const TArray&lt; FString &gt; &amp;UserIds)</argsstring>
+        <name>BulkGetPublicUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::BulkGetPublicUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>UserIds</declname>
+        </param>
+        <briefdescription>
+<para>Get a public record (arbitrary JSON data) by its key and userId in user-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get bulk public user record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List UserId(s) of the record owner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="138" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="106" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a79e3ff78829ab09579be2eb0d449e36e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::BulkGetPublicUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const TArray&lt; FUniqueNetIdAccelByteUserRef &gt; &amp;UniqueNetIds)</argsstring>
+        <name>BulkGetPublicUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::BulkGetPublicUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; <ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1ae8cb93e2a9e38b9012e1f7f9bdf4ebca" kindref="member">FUniqueNetIdAccelByteUserRef</ref> &gt; &amp;</type>
+          <declname>UniqueNetIds</declname>
+        </param>
+        <briefdescription>
+<para>Get a public record (arbitrary JSON data) by its key and userId in user-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get bulk public user record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of record. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UniqueNetIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List UniqueNetId(UserId)(s) of the record owner. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="147" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="136" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a7e0dbc89de3c1ff684c328938ef92e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetGameRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, bool bAlwaysRequestToService=false)</argsstring>
+        <name>GetGameRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetGameRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bAlwaysRequestToService</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Get a record by its key in namespace-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get game record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="155" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="146" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a0cd37c5a2d0e7dfbc3b0ff043b0c1970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetGameRecordFromCache</definition>
+        <argsstring>(const FString &amp;Key, FAccelByteModelsGameRecord &amp;OutRecord)</argsstring>
+        <name>GetGameRecordFromCache</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetGameRecordFromCache</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>FAccelByteModelsGameRecord &amp;</type>
+          <declname>OutRecord</declname>
+        </param>
+        <briefdescription>
+<para>Get a record by its key in namespace-level from cache. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get game record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="163" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="198" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a89ecff9ccd472680fd70a2419b8c5bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::ReplaceGameRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const FJsonObject &amp;RecordRequest)</argsstring>
+        <name>ReplaceGameRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::ReplaceGameRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const FJsonObject &amp;</type>
+          <declname>RecordRequest</declname>
+        </param>
+        <briefdescription>
+<para>Replace a record by its key in namespace-level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user that is attempting to get game record </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The record key to get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RecordRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Record to replace in the form of Json object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="173" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="176" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a7db69530f0dc6c7f86b79444993c96e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineCloudSaveAccelByte::AddGameRecordToMap</definition>
+        <argsstring>(const FString &amp;Key, const TSharedRef&lt; FAccelByteModelsGameRecord &gt; &amp;Record)</argsstring>
+        <name>AddGameRecordToMap</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::AddGameRecordToMap</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; FAccelByteModelsGameRecord &gt; &amp;</type>
+          <declname>Record</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="174" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="279" bodyend="283"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a524ae7d1fddf3111792d1ac481d65818" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, FOnlineCloudSaveAccelBytePtr &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a86fc6f3fe1aac511430a0c5a76be1517" kindref="member">FOnlineCloudSaveAccelBytePtr</ref> &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="53" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a77995782d39e3de322f7aee848faf749" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, FOnlineCloudSaveAccelBytePtr &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a86fc6f3fe1aac511430a0c5a76be1517" kindref="member">FOnlineCloudSaveAccelBytePtr</ref> &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="62" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="33" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a94f09be696e98d589a745daadc741fd4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineCloudSaveAccelByte::FOnlineCloudSaveAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineCloudSaveAccelByte</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::FOnlineCloudSaveAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="178" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" bodystart="178" bodyend="180"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1ab9f0559e83155f511b6001c80693acb5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::GetUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, bool IsPublic, const FString &amp;UserId=TEXT(&quot;&quot;))</argsstring>
+        <name>GetUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::GetUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>IsPublic</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="186" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="218" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d31/class_f_online_cloud_save_accel_byte_1a38d794e9c5b56e8eae6e4e0ac4f9421c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineCloudSaveAccelByte::ReplaceUserRecord</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;Key, const FJsonObject &amp;RecordRequest, bool IsPublic)</argsstring>
+        <name>ReplaceUserRecord</name>
+        <qualifiedname>FOnlineCloudSaveAccelByte::ReplaceUserRecord</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Key</declname>
+        </param>
+        <param>
+          <type>const FJsonObject &amp;</type>
+          <declname>RecordRequest</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>IsPublic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="187" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineCloudSaveInterfaceAccelByte.cpp" bodystart="248" bodyend="276"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of Cloud Save service from <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineCloudSaveAccelByte</label>
+        <link refid="d4/d31/class_f_online_cloud_save_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineCloudSaveAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlineCloudSaveAccelByte</label>
+        <link refid="d4/d31/class_f_online_cloud_save_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineCloudSaveAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" line="33" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineCloudSaveInterfaceAccelByte.h" bodystart="34" bodyend="188"/>
+    <listofallmembers>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1acf79e9c0f14bbeab0d3b780d1aa50481" prot="private" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a95244c02ce929bb452678f1c36c0f78a" prot="protected" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a7db69530f0dc6c7f86b79444993c96e3" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>AddGameRecordToMap</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a70caad865265d76b9f9469589d12a492" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>BulkGetPublicUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a79e3ff78829ab09579be2eb0d449e36e" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>BulkGetPublicUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a08df2179e6037287f8669107a0356e7a" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a98b2040f88a4fb13bdee8a45e1c1f705" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a0881a19a57aa47ba6d8ca9d42ef3d204" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a02df3dadf32fc9067950fb853637eddf" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a8055759027f1b3c396f1433b9acef272" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1af2c99f1e23dc75751870837e73187cdb" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1ac4ac5ea5bb46499da9d854d84a1ebcd5" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>DeleteUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a94f09be696e98d589a745daadc741fd4" prot="protected" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>FOnlineCloudSaveAccelByte</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a1b968b0adb7249a73811d75681a41e03" prot="private" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GameRecordMap</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a9b72a0dd0f4e2596dc413e5dadc7fdf9" prot="private" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GameRecordMapLock</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a524ae7d1fddf3111792d1ac481d65818" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a77995782d39e3de322f7aee848faf749" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a7e0dbc89de3c1ff684c328938ef92e5a" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetGameRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a0cd37c5a2d0e7dfbc3b0ff043b0c1970" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetGameRecordFromCache</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a3da3aa9e3604ee271b33f6a5830ace09" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetPublicUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a694bd5621f0646b2f4fe533ad63d2a52" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetPublicUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a54e5a60f36846fd90dd40f04bc476fb6" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1aca6b76fc5cbfa2f8cff48c2e725c65fb" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1ab9f0559e83155f511b6001c80693acb5" prot="private" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>GetUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a89ecff9ccd472680fd70a2419b8c5bf8" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>ReplaceGameRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a24a3eccebf7003be1b8fd7fbad70e6b3" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>ReplacePublicUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a4519773232070357e79c6ea5e75adb7c" prot="public" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>ReplaceUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1a38d794e9c5b56e8eae6e4e0ac4f9421c" prot="private" virt="non-virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>ReplaceUserRecord</name></member>
+      <member refid="d4/d31/class_f_online_cloud_save_accel_byte_1ab058289ddca4c7420910969a2a7fd5ad" prot="public" virt="virtual"><scope>FOnlineCloudSaveAccelByte</scope><name>~FOnlineCloudSaveAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

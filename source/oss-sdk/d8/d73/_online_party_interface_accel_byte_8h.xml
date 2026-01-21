@@ -1,0 +1,1215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d8/d73/_online_party_interface_accel_byte_8h" kind="file" language="C++">
+    <compoundname>OnlinePartyInterfaceAccelByte.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes local="yes">Runtime/Launch/Resources/Version.h</includes>
+    <includes refid="d1/d3f/_online_subsystem_accel_byte_8h" local="yes">OnlineSubsystemAccelByte.h</includes>
+    <includes refid="d2/daa/_online_subsystem_accel_byte_types_8h" local="yes">OnlineSubsystemAccelByteTypes.h</includes>
+    <includes local="yes">Interfaces/OnlinePartyInterface.h</includes>
+    <includes local="yes">Models/AccelByteLobbyModels.h</includes>
+    <includes refid="d7/d3c/_online_user_cache_accel_byte_8h" local="yes">OnlineUserCacheAccelByte.h</includes>
+    <includedby refid="df/d63/_online_async_task_accel_byte_add_joined_v1_party_member_8cpp" local="yes">OnlineAsyncTaskAccelByteAddJoinedV1PartyMember.cpp</includedby>
+    <includedby refid="de/dfe/_online_async_task_accel_byte_add_joined_v1_party_member_8h" local="yes">OnlineAsyncTaskAccelByteAddJoinedV1PartyMember.h</includedby>
+    <includedby refid="d2/d10/_online_async_task_accel_byte_block_player_8cpp" local="yes">OnlineAsyncTaskAccelByteBlockPlayer.cpp</includedby>
+    <includedby refid="da/d4f/_online_async_task_accel_byte_connect_lobby_8cpp" local="yes">OnlineAsyncTaskAccelByteConnectLobby.cpp</includedby>
+    <includedby refid="d1/d62/_online_async_task_accel_byte_connect_lobby_8h" local="yes">OnlineAsyncTaskAccelByteConnectLobby.h</includedby>
+    <includedby refid="de/d48/_online_async_task_accel_byte_create_v1_party_8cpp" local="yes">OnlineAsyncTaskAccelByteCreateV1Party.cpp</includedby>
+    <includedby refid="df/d70/_online_async_task_accel_byte_get_v1_party_invite_info_8cpp" local="yes">OnlineAsyncTaskAccelByteGetV1PartyInviteInfo.cpp</includedby>
+    <includedby refid="d1/d16/_online_async_task_accel_byte_join_v1_party_8cpp" local="yes">OnlineAsyncTaskAccelByteJoinV1Party.cpp</includedby>
+    <includedby refid="d5/d2e/_online_async_task_accel_byte_join_v1_party_8h" local="yes">OnlineAsyncTaskAccelByteJoinV1Party.h</includedby>
+    <includedby refid="df/d88/_online_async_task_accel_byte_kick_v1_party_member_8cpp" local="yes">OnlineAsyncTaskAccelByteKickV1PartyMember.cpp</includedby>
+    <includedby refid="d5/d5c/_online_async_task_accel_byte_kick_v1_party_member_8h" local="yes">OnlineAsyncTaskAccelByteKickV1PartyMember.h</includedby>
+    <includedby refid="d5/d32/_online_async_task_accel_byte_leave_v1_party_8cpp" local="yes">OnlineAsyncTaskAccelByteLeaveV1Party.cpp</includedby>
+    <includedby refid="d7/d23/_online_async_task_accel_byte_leave_v1_party_8h" local="yes">OnlineAsyncTaskAccelByteLeaveV1Party.h</includedby>
+    <includedby refid="d6/d40/_online_async_task_accel_byte_promote_v1_party_leader_8cpp" local="yes">OnlineAsyncTaskAccelBytePromoteV1PartyLeader.cpp</includedby>
+    <includedby refid="dc/d8f/_online_async_task_accel_byte_promote_v1_party_leader_8h" local="yes">OnlineAsyncTaskAccelBytePromoteV1PartyLeader.h</includedby>
+    <includedby refid="dd/d97/_online_async_task_accel_byte_restore_v1_parties_8cpp" local="yes">OnlineAsyncTaskAccelByteRestoreV1Parties.cpp</includedby>
+    <includedby refid="d3/d5f/_online_async_task_accel_byte_send_v1_party_invite_8cpp" local="yes">OnlineAsyncTaskAccelByteSendV1PartyInvite.cpp</includedby>
+    <includedby refid="dc/df8/_online_async_task_accel_byte_send_v1_party_invite_8h" local="yes">OnlineAsyncTaskAccelByteSendV1PartyInvite.h</includedby>
+    <includedby refid="df/d29/_online_async_task_accel_byte_send_v2_game_session_invite_8h" local="yes">OnlineAsyncTaskAccelByteSendV2GameSessionInvite.h</includedby>
+    <includedby refid="df/d99/_online_async_task_accel_byte_send_v2_party_invite_8h" local="yes">OnlineAsyncTaskAccelByteSendV2PartyInvite.h</includedby>
+    <includedby refid="dd/d6b/_online_async_task_accel_byte_start_v1_matchmaking_8cpp" local="yes">OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp</includedby>
+    <includedby refid="d0/d06/_online_async_task_accel_byte_update_v1_party_data_8cpp" local="yes">OnlineAsyncTaskAccelByteUpdateV1PartyData.cpp</includedby>
+    <includedby refid="df/d55/_online_async_task_accel_byte_update_v1_party_data_8h" local="yes">OnlineAsyncTaskAccelByteUpdateV1PartyData.h</includedby>
+    <includedby refid="da/d02/_online_auth_interface_accel_byte_8cpp" local="yes">OnlineAuthInterfaceAccelByte.cpp</includedby>
+    <includedby refid="da/d35/_online_auth_interface_accel_byte_8h" local="yes">OnlineAuthInterfaceAccelByte.h</includedby>
+    <includedby refid="d0/d8c/_online_party_interface_accel_byte_8cpp" local="yes">OnlinePartyInterfaceAccelByte.cpp</includedby>
+    <includedby refid="df/d58/_online_session_interface_v1_accel_byte_8cpp" local="yes">OnlineSessionInterfaceV1AccelByte.cpp</includedby>
+    <includedby refid="d8/dc8/_online_subsystem_accel_byte_8cpp" local="yes">OnlineSubsystemAccelByte.cpp</includedby>
+    <incdepgraph>
+      <node id="16">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="7">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="5">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlinePartyInterfaceAccelByte.h</label>
+        <link refid="d8/d73/_online_party_interface_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="11">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="6">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="35">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="9">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="17">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="37">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="25">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="41">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="42">
+        <label>Interfaces/OnlinePartyInterface.h</label>
+      </node>
+      <node id="30">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="32">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="36">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="26">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="40">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="43">
+        <label>Models/AccelByteLobbyModels.h</label>
+      </node>
+      <node id="12">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="24">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="13">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="39">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="29">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="14">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="15">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="18">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="3">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="22">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>OnlineAsyncTaskAccelByteBlockPlayer.cpp</label>
+        <link refid="d2/d10/_online_async_task_accel_byte_block_player_8cpp"/>
+      </node>
+      <node id="6">
+        <label>OnlineAsyncTaskAccelByteConnectLobby.cpp</label>
+        <link refid="da/d4f/_online_async_task_accel_byte_connect_lobby_8cpp"/>
+      </node>
+      <node id="7">
+        <label>OnlineAsyncTaskAccelByteConnectLobby.h</label>
+        <link refid="d1/d62/_online_async_task_accel_byte_connect_lobby_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineAsyncTaskAccelByteAddJoinedV1PartyMember.cpp</label>
+        <link refid="df/d63/_online_async_task_accel_byte_add_joined_v1_party_member_8cpp"/>
+      </node>
+      <node id="3">
+        <label>OnlineAsyncTaskAccelByteAddJoinedV1PartyMember.h</label>
+        <link refid="de/dfe/_online_async_task_accel_byte_add_joined_v1_party_member_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>OnlineAsyncTaskAccelByteCreateV1Party.cpp</label>
+        <link refid="de/d48/_online_async_task_accel_byte_create_v1_party_8cpp"/>
+      </node>
+      <node id="10">
+        <label>OnlineAsyncTaskAccelByteGetV1PartyInviteInfo.cpp</label>
+        <link refid="df/d70/_online_async_task_accel_byte_get_v1_party_invite_info_8cpp"/>
+      </node>
+      <node id="11">
+        <label>OnlineAsyncTaskAccelByteJoinV1Party.cpp</label>
+        <link refid="d1/d16/_online_async_task_accel_byte_join_v1_party_8cpp"/>
+      </node>
+      <node id="12">
+        <label>OnlineAsyncTaskAccelByteJoinV1Party.h</label>
+        <link refid="d5/d2e/_online_async_task_accel_byte_join_v1_party_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OnlineAsyncTaskAccelByteKickV1PartyMember.cpp</label>
+        <link refid="df/d88/_online_async_task_accel_byte_kick_v1_party_member_8cpp"/>
+      </node>
+      <node id="14">
+        <label>OnlineAsyncTaskAccelByteKickV1PartyMember.h</label>
+        <link refid="d5/d5c/_online_async_task_accel_byte_kick_v1_party_member_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>OnlineAsyncTaskAccelByteLeaveV1Party.cpp</label>
+        <link refid="d5/d32/_online_async_task_accel_byte_leave_v1_party_8cpp"/>
+      </node>
+      <node id="16">
+        <label>OnlineAsyncTaskAccelByteLeaveV1Party.h</label>
+        <link refid="d7/d23/_online_async_task_accel_byte_leave_v1_party_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>OnlineAsyncTaskAccelBytePromoteV1PartyLeader.cpp</label>
+        <link refid="d6/d40/_online_async_task_accel_byte_promote_v1_party_leader_8cpp"/>
+      </node>
+      <node id="18">
+        <label>OnlineAsyncTaskAccelBytePromoteV1PartyLeader.h</label>
+        <link refid="dc/d8f/_online_async_task_accel_byte_promote_v1_party_leader_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>OnlineAsyncTaskAccelByteRestoreV1Parties.cpp</label>
+        <link refid="dd/d97/_online_async_task_accel_byte_restore_v1_parties_8cpp"/>
+      </node>
+      <node id="20">
+        <label>OnlineAsyncTaskAccelByteSendV1PartyInvite.cpp</label>
+        <link refid="d3/d5f/_online_async_task_accel_byte_send_v1_party_invite_8cpp"/>
+      </node>
+      <node id="21">
+        <label>OnlineAsyncTaskAccelByteSendV1PartyInvite.h</label>
+        <link refid="dc/df8/_online_async_task_accel_byte_send_v1_party_invite_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>OnlineAsyncTaskAccelByteUpdateV1PartyData.cpp</label>
+        <link refid="d0/d06/_online_async_task_accel_byte_update_v1_party_data_8cpp"/>
+      </node>
+      <node id="29">
+        <label>OnlineAsyncTaskAccelByteUpdateV1PartyData.h</label>
+        <link refid="df/d55/_online_async_task_accel_byte_update_v1_party_data_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>OnlineAsyncTaskAccelByteSendV2PartyInvite.cpp</label>
+        <link refid="d1/d90/_online_async_task_accel_byte_send_v2_party_invite_8cpp"/>
+      </node>
+      <node id="25">
+        <label>OnlineAsyncTaskAccelByteSendV2PartyInvite.h</label>
+        <link refid="df/d99/_online_async_task_accel_byte_send_v2_party_invite_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp</label>
+        <link refid="dd/d6b/_online_async_task_accel_byte_start_v1_matchmaking_8cpp"/>
+      </node>
+      <node id="23">
+        <label>OnlineAsyncTaskAccelByteSendV2GameSessionInvite.cpp</label>
+        <link refid="d8/db5/_online_async_task_accel_byte_send_v2_game_session_invite_8cpp"/>
+      </node>
+      <node id="22">
+        <label>OnlineAsyncTaskAccelByteSendV2GameSessionInvite.h</label>
+        <link refid="df/d29/_online_async_task_accel_byte_send_v2_game_session_invite_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>OnlineAuthHandlerComponentAccelByte.cpp</label>
+        <link refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp"/>
+      </node>
+      <node id="30">
+        <label>OnlineAuthInterfaceAccelByte.cpp</label>
+        <link refid="da/d02/_online_auth_interface_accel_byte_8cpp"/>
+      </node>
+      <node id="8">
+        <label>OnlineIdentityInterfaceAccelByte.cpp</label>
+        <link refid="d3/d9e/_online_identity_interface_accel_byte_8cpp"/>
+      </node>
+      <node id="4">
+        <label>OnlinePartyInterfaceAccelByte.cpp</label>
+        <link refid="d0/d8c/_online_party_interface_accel_byte_8cpp"/>
+      </node>
+      <node id="35">
+        <label>OnlineSessionInterfaceV1AccelByte.cpp</label>
+        <link refid="df/d58/_online_session_interface_v1_accel_byte_8cpp"/>
+      </node>
+      <node id="24">
+        <label>OnlineSessionInterfaceV2AccelByte.cpp</label>
+        <link refid="d3/dbc/_online_session_interface_v2_accel_byte_8cpp"/>
+      </node>
+      <node id="34">
+        <label>OnlineSubsystemAccelByte.cpp</label>
+        <link refid="d8/dc8/_online_subsystem_accel_byte_8cpp"/>
+      </node>
+      <node id="32">
+        <label>OnlineAuthHandlerComponentAccelByte.h</label>
+        <link refid="d7/d19/_online_auth_handler_component_accel_byte_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>OnlineAuthInterfaceAccelByte.h</label>
+        <link refid="da/d35/_online_auth_interface_accel_byte_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlinePartyInterfaceAccelByte.h</label>
+        <link refid="d8/d73/_online_party_interface_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/d51/class_f_online_party_id_accel_byte" prot="public">FOnlinePartyIdAccelByte</innerclass>
+    <innerclass refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs" prot="public">TPartyIdConstSharedRefMapKeyFuncs</innerclass>
+    <innerclass refid="d6/d98/class_f_online_party_member_accel_byte" prot="public">FOnlinePartyMemberAccelByte</innerclass>
+    <innerclass refid="dc/d27/class_f_online_party_accel_byte" prot="public">FOnlinePartyAccelByte</innerclass>
+    <innerclass refid="d7/df6/class_f_online_party_join_info_accel_byte" prot="public">FOnlinePartyJoinInfoAccelByte</innerclass>
+    <innerclass refid="de/d75/struct_f_accel_byte_party_invite" prot="public">FAccelBytePartyInvite</innerclass>
+    <innerclass refid="d6/d06/class_f_online_party_system_accel_byte" prot="public">FOnlinePartySystemAccelByte</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1aaaf1e066454e60bf282ee19de5548092" prot="public" static="no">
+        <name>PARTYNOTIF_CUSTOMIZATION_CHANGED</name>
+        <initializer>TEXT(&quot;Customization Changed&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="15" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1a78c022b054610fd7b6183abf5d2daa27" prot="public" static="no">
+        <name>PARTYNOTIF_PARTY_LEADER_JOINED_CUSTOM_GAME</name>
+        <initializer>TEXT(&quot;Party Leader Joined Custom Game&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="16" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1af3db84dcbd64bee2823e38d90f14db7b" prot="public" static="no">
+        <name>PARTYNOTIF_PARTY_MEMBER_INVITED_TO_CUSTOM_GAME</name>
+        <initializer>TEXT(&quot;Party Member Invited To Custom Game&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="17" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1afffaf371e40b231a34129a965348b14f" prot="public" static="no">
+        <name>PARTYNOTIF_PARTY_LEADER_CANCEL_MATCHMAKING</name>
+        <initializer>TEXT(&quot;Party Leader Canceled Matchmaking&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="18" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1a7ea7fc8128225a67376ea60bc566a47c" prot="public" static="no">
+        <name>PARTYNOTIF_CANCEL_MATCHMAKING_DUE_TO_KICK</name>
+        <initializer>TEXT(&quot;Party Member Has Been Kicked Cancel Matchmaking For Kicked User&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="19" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1af3d0d01611cb7f2895969f31302953bd" prot="public" static="no">
+        <name>CROSSPLAY_OBJECT_NAME</name>
+        <initializer>TEXT(&quot;crossplayPlatformMap&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="21" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1a11a7c06cd8c69631585636ec18922da9" prot="public" static="no">
+        <name>CROSSPLAY_OBJECT_PLAYER_PLATFORM_FIELD</name>
+        <initializer>TEXT(&quot;platform&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="22" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1a45aba4b9b67c2262a1ea0cf6d88a5417" prot="public" static="no">
+        <name>CROSSPLAY_OBJECT_PLAYER_CROSSPLAY_FIELD</name>
+        <initializer>TEXT(&quot;crossplay&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="23" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d73/_online_party_interface_accel_byte_8h_1abb028a0ce5f250725fddf72fbeefac79" prot="public" static="no">
+        <name>PARTYDATA_PARTYCODE_ATTR</name>
+        <initializer>TEXT(&quot;partyCode&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="25" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d8/d73/_online_party_interface_accel_byte_8h_1a5e04dba0489ef4469ac22c9960f4ad52" prot="public" static="no">
+        <type>TPair&lt; TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;, TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &gt;</type>
+        <definition>using FInvitedPlayerPair =  TPair&lt;TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt;, TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>FInvitedPlayerPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPair for an invited user, with the first element being the user that invited them, and the second element being the invited user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="105" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d73/_online_party_interface_accel_byte_8h_1a4d5c0a873aaa2d287310027a4c6327da" prot="public" static="no">
+        <type>TMap&lt; TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;, TSharedRef&lt; <ref refid="d6/d98/class_f_online_party_member_accel_byte" kindref="compound">FOnlinePartyMemberAccelByte</ref> &gt;, FDefaultSetAllocator, <ref refid="da/d18/struct_t_user_unique_id_const_shared_ref_map_key_funcs" kindref="compound">TUserUniqueIdConstSharedRefMapKeyFuncs</ref>&lt; TSharedRef&lt; <ref refid="d6/d98/class_f_online_party_member_accel_byte" kindref="compound">FOnlinePartyMemberAccelByte</ref> &gt; &gt; &gt;</type>
+        <definition>using FUserIdToPartyMemberMap =  TMap&lt;TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt;, TSharedRef&lt;FOnlinePartyMemberAccelByte&gt;, FDefaultSetAllocator, TUserUniqueIdConstSharedRefMapKeyFuncs&lt;TSharedRef&lt;FOnlinePartyMemberAccelByte&gt;&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>FUserIdToPartyMemberMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map of user IDs to party member instances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="108" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d73/_online_party_interface_accel_byte_8h_1ad92fd3bc80481102c3ec1ab6f51c8c53" prot="public" static="no">
+        <type>TMap&lt; TSharedRef&lt; const <ref refid="d9/d51/class_f_online_party_id_accel_byte" kindref="compound">FOnlinePartyIdAccelByte</ref> &gt;, TSharedRef&lt; <ref refid="dc/d27/class_f_online_party_accel_byte" kindref="compound">FOnlinePartyAccelByte</ref> &gt;, FDefaultSetAllocator, <ref refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs" kindref="compound">TPartyIdConstSharedRefMapKeyFuncs</ref>&lt; TSharedRef&lt; <ref refid="dc/d27/class_f_online_party_accel_byte" kindref="compound">FOnlinePartyAccelByte</ref> &gt; &gt; &gt;</type>
+        <definition>using FPartyIDToPartyMap =  TMap&lt;TSharedRef&lt;const FOnlinePartyIdAccelByte&gt;, TSharedRef&lt;FOnlinePartyAccelByte&gt;, FDefaultSetAllocator, TPartyIdConstSharedRefMapKeyFuncs&lt;TSharedRef&lt;FOnlinePartyAccelByte&gt;&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>FPartyIDToPartyMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef for a map of shared references to <ref refid="d9/d51/class_f_online_party_id_accel_byte" kindref="compound">FOnlinePartyIdAccelByte</ref> objects to shared references to <ref refid="dc/d27/class_f_online_party_accel_byte" kindref="compound">FOnlinePartyAccelByte</ref> objects </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="300" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d73/_online_party_interface_accel_byte_8h_1aa8eed695ba181f38c126092a2e22b40f" prot="public" static="no">
+        <type>TMap&lt; TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;, <ref refid="d8/d73/_online_party_interface_accel_byte_8h_1ad92fd3bc80481102c3ec1ab6f51c8c53" kindref="member">FPartyIDToPartyMap</ref>, FDefaultSetAllocator, <ref refid="da/d18/struct_t_user_unique_id_const_shared_ref_map_key_funcs" kindref="compound">TUserUniqueIdConstSharedRefMapKeyFuncs</ref>&lt; <ref refid="d8/d73/_online_party_interface_accel_byte_8h_1ad92fd3bc80481102c3ec1ab6f51c8c53" kindref="member">FPartyIDToPartyMap</ref> &gt; &gt;</type>
+        <definition>using FUserIDToPartiesMap =  TMap&lt;TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt;, FPartyIDToPartyMap, FDefaultSetAllocator, TUserUniqueIdConstSharedRefMapKeyFuncs&lt;FPartyIDToPartyMap&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>FUserIDToPartiesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef for a map of user IDs to maps of party IDs and party objects </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="303" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d73/_online_party_interface_accel_byte_8h_1a22f4f5277c2321756a439c83421234ef" prot="public" static="no">
+        <type>TArray&lt; TSharedRef&lt; const <ref refid="de/d75/struct_f_accel_byte_party_invite" kindref="compound">FAccelBytePartyInvite</ref> &gt; &gt;</type>
+        <definition>using FPartyInviteArray =  TArray&lt;TSharedRef&lt;const FAccelBytePartyInvite&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>FPartyInviteArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of party invite structures </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="336" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d73/_online_party_interface_accel_byte_8h_1afa43a34a9475300eb3ab428bdb007b48" prot="public" static="no">
+        <type>TMap&lt; TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;, <ref refid="d8/d73/_online_party_interface_accel_byte_8h_1a22f4f5277c2321756a439c83421234ef" kindref="member">FPartyInviteArray</ref>, FDefaultSetAllocator, <ref refid="da/d18/struct_t_user_unique_id_const_shared_ref_map_key_funcs" kindref="compound">TUserUniqueIdConstSharedRefMapKeyFuncs</ref>&lt; <ref refid="d8/d73/_online_party_interface_accel_byte_8h_1a22f4f5277c2321756a439c83421234ef" kindref="member">FPartyInviteArray</ref> &gt; &gt;</type>
+        <definition>using FUserIdToPartyInvitesMap =  TMap&lt;TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt;, FPartyInviteArray, FDefaultSetAllocator, TUserUniqueIdConstSharedRefMapKeyFuncs&lt;FPartyInviteArray&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>FUserIdToPartyInvitesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map of user IDs to an array of invite structures </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="339" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Runtime/Launch/Resources/Version.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3f/_online_subsystem_accel_byte_8h" kindref="compound">OnlineSubsystemAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h" kindref="compound">OnlineSubsystemAccelByteTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Interfaces/OnlinePartyInterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Models/AccelByteLobbyModels.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d3c/_online_user_cache_accel_byte_8h" kindref="compound">OnlineUserCacheAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#NOTE<sp/>(Voltaire)<sp/>Define<sp/>flags/markers<sp/>for<sp/>party<sp/>notifications<sp/>so<sp/>that<sp/>party<sp/>members<sp/>can<sp/>process<sp/>payload<sp/>accordingly<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d8/d73/_online_party_interface_accel_byte_8h_1aaaf1e066454e60bf282ee19de5548092" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARTYNOTIF_CUSTOMIZATION_CHANGED<sp/>TEXT(&quot;Customization<sp/>Changed&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d8/d73/_online_party_interface_accel_byte_8h_1a78c022b054610fd7b6183abf5d2daa27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARTYNOTIF_PARTY_LEADER_JOINED_CUSTOM_GAME<sp/>TEXT(&quot;Party<sp/>Leader<sp/>Joined<sp/>Custom<sp/>Game&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d8/d73/_online_party_interface_accel_byte_8h_1af3db84dcbd64bee2823e38d90f14db7b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARTYNOTIF_PARTY_MEMBER_INVITED_TO_CUSTOM_GAME<sp/>TEXT(&quot;Party<sp/>Member<sp/>Invited<sp/>To<sp/>Custom<sp/>Game&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d8/d73/_online_party_interface_accel_byte_8h_1afffaf371e40b231a34129a965348b14f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARTYNOTIF_PARTY_LEADER_CANCEL_MATCHMAKING<sp/>TEXT(&quot;Party<sp/>Leader<sp/>Canceled<sp/>Matchmaking&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d8/d73/_online_party_interface_accel_byte_8h_1a7ea7fc8128225a67376ea60bc566a47c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARTYNOTIF_CANCEL_MATCHMAKING_DUE_TO_KICK<sp/>TEXT(&quot;Party<sp/>Member<sp/>Has<sp/>Been<sp/>Kicked<sp/>Cancel<sp/>Matchmaking<sp/>For<sp/>Kicked<sp/>User&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d8/d73/_online_party_interface_accel_byte_8h_1af3d0d01611cb7f2895969f31302953bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CROSSPLAY_OBJECT_NAME<sp/>TEXT(&quot;crossplayPlatformMap&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d8/d73/_online_party_interface_accel_byte_8h_1a11a7c06cd8c69631585636ec18922da9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CROSSPLAY_OBJECT_PLAYER_PLATFORM_FIELD<sp/>TEXT(&quot;platform&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d8/d73/_online_party_interface_accel_byte_8h_1a45aba4b9b67c2262a1ea0cf6d88a5417" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CROSSPLAY_OBJECT_PLAYER_CROSSPLAY_FIELD<sp/>TEXT(&quot;crossplay&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d8/d73/_online_party_interface_accel_byte_8h_1abb028a0ce5f250725fddf72fbeefac79" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARTYDATA_PARTYCODE_ATTR<sp/>TEXT(&quot;partyCode&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d06/class_f_online_party_system_accel_byte" kindref="compound">FOnlinePartySystemAccelByte</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d9/d51/class_f_online_party_id_accel_byte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1a6bc66617ca3aa47c4d9d65d3ea0cd916" kindref="member">FOnlinePartyIdAccelByte</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>FOnlinePartyId</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="d9/d51/class_f_online_party_id_accel_byte_1a6bc66617ca3aa47c4d9d65d3ea0cd916" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1a6bc66617ca3aa47c4d9d65d3ea0cd916" kindref="member">FOnlinePartyIdAccelByte</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1a6bc66617ca3aa47c4d9d65d3ea0cd916" kindref="member">FOnlinePartyIdAccelByte</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InIdStr);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>FOnlinePartyId<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8*<sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1ae51ea87b6f2cb5213c6ef43223d915ef" kindref="member">GetBytes</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1a74129c19f0738a174fc37d3ea20a8ebd" kindref="member">GetSize</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1a5ce812ec5f5887a3ed6ac647c33ddab9" kindref="member">IsValid</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1aa19afbddcb6743d6c96a58f0344c6897" kindref="member">ToString</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1a92bf756734cea01ef5ac037149784272" kindref="member">ToDebugString</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>FOnlinePartyId<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d9/d51/class_f_online_party_id_accel_byte_1af93bb2834b8b7a6f9132ddaa35d9a02e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte_1af93bb2834b8b7a6f9132ddaa35d9a02e" kindref="member">IdStr</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="58" refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs" kindref="compound">TPartyIdConstSharedRefMapKeyFuncs</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TDefaultMapKeyFuncs&lt;TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;,<sp/>ValueType,<sp/>false&gt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs_1a528d92f82bb6e4bd7988727ce74f6b0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;<sp/><ref refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs_1a528d92f82bb6e4bd7988727ce74f6b0a" kindref="member">GetSetKey</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TTuple&lt;TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;,<sp/>ValueType&gt;<sp/>Element)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Element.Key;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs_1af22dd4d1d3062e02e4232bda2d69674f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs_1af22dd4d1d3062e02e4232bda2d69674f" kindref="member">GetKeyHash</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>Key)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetTypeHash(Key.Get());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs_1abe8fe8d0a0059d366e95f8bc95ba9e2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs_1abe8fe8d0a0059d366e95f8bc95ba9e2e" kindref="member">Matches</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>A,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>B)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(A<sp/>==<sp/>B)<sp/>||<sp/>(A.Get()<sp/>==<sp/>B.Get());</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="d6/d98/class_f_online_party_member_accel_byte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1ae749e10a20480788a4e0473928c2b2e3" kindref="member">FOnlinePartyMemberAccelByte</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>FOnlinePartyMember</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1ae749e10a20480788a4e0473928c2b2e3" kindref="member">FOnlinePartyMemberAccelByte</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InDisplayName);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>FOnlineUser<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1a940ce526b4a47b85a7563a03c47d03b5" kindref="member">GetUserId</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1aa015d109532628bcc4cb2a65794e8246" kindref="member">GetRealName</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1a6d54fa97921a23b9b16c98de111b003a" kindref="member">GetDisplayName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Platform<sp/>=<sp/>FString())<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1a8abcb428dc47a913992b18b9c41f08b5" kindref="member">GetUserAttribute</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AttrName,<sp/>FString&amp;<sp/>OutAttrValue)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>FOnlineUser<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="d6/d98/class_f_online_party_member_accel_byte_1a595c12b75797dfe37536bf49cb499e00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1a595c12b75797dfe37536bf49cb499e00" kindref="member">UserId</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d6/d98/class_f_online_party_member_accel_byte_1a46f976c31148cc698d39f1bbb3551efa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1a46f976c31148cc698d39f1bbb3551efa" kindref="member">DisplayName</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="d6/d98/class_f_online_party_member_accel_byte_1a63752f4b3508da1d24987f4a4da7faed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FString,<sp/>FString&gt;<sp/><ref refid="d6/d98/class_f_online_party_member_accel_byte_1a63752f4b3508da1d24987f4a4da7faed" kindref="member">UserAttributes</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="d8/d73/_online_party_interface_accel_byte_8h_1a5e04dba0489ef4469ac22c9960f4ad52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1a5e04dba0489ef4469ac22c9960f4ad52" kindref="member">FInvitedPlayerPair</ref><sp/>=<sp/>TPair&lt;TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&gt;;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="d8/d73/_online_party_interface_accel_byte_8h_1a4d5c0a873aaa2d287310027a4c6327da" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1a4d5c0a873aaa2d287310027a4c6327da" kindref="member">FUserIdToPartyMemberMap</ref><sp/>=<sp/>TMap&lt;TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;,<sp/>TSharedRef&lt;FOnlinePartyMemberAccelByte&gt;,<sp/>FDefaultSetAllocator,<sp/><ref refid="da/d18/struct_t_user_unique_id_const_shared_ref_map_key_funcs" kindref="compound">TUserUniqueIdConstSharedRefMapKeyFuncs&lt;TSharedRef&lt;FOnlinePartyMemberAccelByte&gt;</ref>&gt;&gt;;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="dc/d27/class_f_online_party_accel_byte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a3e0143c06dd5ec1ee6459e7adb1486be" kindref="member">FOnlinePartyAccelByte</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>FOnlineParty</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a3e0143c06dd5ec1ee6459e7adb1486be" kindref="member">FOnlinePartyAccelByte</ref>(</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartySystemAccelByte,<sp/>ESPMode::ThreadSafe&gt;&amp;<sp/>InOwningInterface,<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InPartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InInviteToken,<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FPartyConfiguration&amp;<sp/>InPartyConfiguration,<sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InLeaderId,<sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyData&gt;&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ae3e531a4c0577d95827b3f675aa9bb65" kindref="member">InPartyData</ref><sp/>=<sp/>MakeShared&lt;FOnlinePartyData&gt;(),</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId<sp/>InPartyTypeId<sp/>=<sp/>FOnlinePartyTypeId(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a7e58c1a6dfb020c55b6fb384dedfb49dac2218a028f0279567776199f8c65805c" kindref="member">EAccelBytePartyType::PRIMARY_PARTY</ref>)));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>FOnlineParty<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a532f213a690fca8019559d082229b70f" kindref="member">CanLocalUserInvite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1aff501b1c1259dc4e19fe31f910969168" kindref="member">IsJoinable</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FPartyConfiguration&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ac5de96cb5edef4809a814ee766d09fd7" kindref="member">GetConfiguration</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>FOnlineParty<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1af1fedf5fd431e7d22337f8d5b58371b7" kindref="member">GetMemberCount</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a10978cb0384845b21916ee6e0daf1503" kindref="member">AddPlayerCrossplayPreferenceAndPlatform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1af429c799438839561af74814cb3585b8" kindref="member">RemovePlayerCrossplayPreferenceAndPlatform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserToRemove);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1abc267ed8185fada9cc62e9329369af87" kindref="member">AddPlayerAcceptedTicketId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>TicketId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>MatchId);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1af488a3077e992f0de4375648557e567b" kindref="member">RemovePlayerAcceptedTicketId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="dc/d27/class_f_online_party_accel_byte_1abbcd0a1da72a89ba1d95330b7fb92009" refkind="member"><highlight class="normal"><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref>:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="dc/d27/class_f_online_party_accel_byte_1ae3e531a4c0577d95827b3f675aa9bb65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyAccelByte&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ade5c0e7fbd45abea01d36f19ede7d21d" kindref="member">CreatePartyFromPartyInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartySystemAccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a50411b39c4134f4f4b107d2d51d7f819" kindref="member">PartyInterface</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsPartyJoinResponse&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a80f1cb66d6699ba42116772f168bfcfb" kindref="member">PartyInfo</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ac0a29b5617cdab5cf62322d1696fd584" kindref="member">PartyMemberInfo</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyData&gt;&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ae3e531a4c0577d95827b3f675aa9bb65" kindref="member">InPartyData</ref><sp/>=<sp/>MakeShared&lt;FOnlinePartyData&gt;(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1aba450de823af08141ad6af3cd3d4ef8f" kindref="member">PartyCode</ref>=TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsBulkUserStatusNotif&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a35bbf131bc0b576306305eb671d5a656" kindref="member">InPartyMemberStatus</ref><sp/>=<sp/>FAccelByteModelsBulkUserStatusNotif());</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyAccelByte&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ade5c0e7fbd45abea01d36f19ede7d21d" kindref="member">CreatePartyFromPartyInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartySystemAccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a50411b39c4134f4f4b107d2d51d7f819" kindref="member">PartyInterface</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsInfoPartyResponse&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a80f1cb66d6699ba42116772f168bfcfb" kindref="member">PartyInfo</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ac0a29b5617cdab5cf62322d1696fd584" kindref="member">PartyMemberInfo</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyData&gt;&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ae3e531a4c0577d95827b3f675aa9bb65" kindref="member">InPartyData</ref><sp/>=<sp/>MakeShared&lt;FOnlinePartyData&gt;(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1aba450de823af08141ad6af3cd3d4ef8f" kindref="member">PartyCode</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsBulkUserStatusNotif&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a35bbf131bc0b576306305eb671d5a656" kindref="member">InPartyMemberStatus</ref><sp/>=<sp/>FAccelByteModelsBulkUserStatusNotif());</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1abc066bde232a45d6494ad6e08026afd0" kindref="member">AddMember</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyMemberAccelByte&gt;&amp;<sp/>Member);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1aa67bafdc5c3aabc3fd8426493c2f40fa" kindref="member">AddUserToInvitedPlayers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InviterUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InvitedUserId);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;const<sp/>FOnlinePartyMemberAccelByte&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1adc6e4a03906c3aada276ae521e64b912" kindref="member">GetMember</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1aeda5a5ba99c37627f0f3355d808a4228" kindref="member">RemoveMember</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>RemovedUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EMemberExitedReason&amp;<sp/>ExitReason);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a7a53e4d5313d8c26ba8fa45f0c810c12" kindref="member">RemoveInvite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InvitedUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EPartyInvitationRemovedReason&amp;<sp/>PartyInviteRemoveReason);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FOnlinePartyMemberConstRef&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a90a393540aac5625f116a5b8c2f6c225" kindref="member">GetAllMembers</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;TSharedRef&lt;const<sp/>FUniqueNetId&gt;&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1aa59416d8d5aaffbdf149d3aa096f253d" kindref="member">GetAllPendingInvitedUsers</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FOnlinePartyData&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a172764a146fcc771bfffbdba4295d512" kindref="member">GetPartyData</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1af5fc2bc313ad4d58d9fde863d5ce9723" kindref="member">SetPartyData</ref>(TSharedRef&lt;FOnlinePartyData&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a4c8e9baac3fadebecd9dcdabca4a11db" kindref="member">PartyData</ref>);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1acf8d67d83c27b0e36c739794029eb5fe" kindref="member">SetPartyCode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1aba450de823af08141ad6af3cd3d4ef8f" kindref="member">PartyCode</ref>);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a5733f9e200ded84412d2ed6841fa0792" kindref="member">IsCrossplayParty</ref>();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FString&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1acd50bf60c13481e27821d277d56713ef" kindref="member">GetUniquePlatformsForParty</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="dc/d27/class_f_online_party_accel_byte_1af8e8c334c384ab446cabb344ec25b186" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;FOnlinePartySystemAccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1af8e8c334c384ab446cabb344ec25b186" kindref="member">OwningInterface</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="dc/d27/class_f_online_party_accel_byte_1a6ec2dc4d42de7e66d2e2a3dd8e8249cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a6ec2dc4d42de7e66d2e2a3dd8e8249cc" kindref="member">InviteToken</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="dc/d27/class_f_online_party_accel_byte_1a68c4f4b8035c607c80998f1e1dba97e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FPartyConfiguration&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a68c4f4b8035c607c80998f1e1dba97e1" kindref="member">PartyConfiguration</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="dc/d27/class_f_online_party_accel_byte_1a22927934e57226747f2b50eceb33cade" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1a4d5c0a873aaa2d287310027a4c6327da" kindref="member">FUserIdToPartyMemberMap</ref><sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a22927934e57226747f2b50eceb33cade" kindref="member">UserIdToPartyMemberMap</ref>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="dc/d27/class_f_online_party_accel_byte_1ad3cef25b8f28a3ce5c510d933c2c8d04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FInvitedPlayerPair&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1ad3cef25b8f28a3ce5c510d933c2c8d04" kindref="member">InvitedPlayers</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="dc/d27/class_f_online_party_accel_byte_1a4c8e9baac3fadebecd9dcdabca4a11db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;FOnlinePartyData&gt;<sp/><ref refid="dc/d27/class_f_online_party_accel_byte_1a4c8e9baac3fadebecd9dcdabca4a11db" kindref="member">PartyData</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="dc/d27/class_f_online_party_accel_byte_1ac945d16ce13cdf825552daf0926825b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/d27/class_f_online_party_accel_byte_1ac945d16ce13cdf825552daf0926825b3" kindref="member">FOnlinePartySystemAccelByte</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="d7/df6/class_f_online_party_join_info_accel_byte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1a70bbe683e1d97d5b80eedbf2f6f02623" kindref="member">FOnlinePartyJoinInfoAccelByte</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfo</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="239" refid="d7/df6/class_f_online_party_join_info_accel_byte_1a70bbe683e1d97d5b80eedbf2f6f02623" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1a70bbe683e1d97d5b80eedbf2f6f02623" kindref="member">FOnlinePartyJoinInfoAccelByte</ref>()</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1acdf8bea7feb1c2382820302ac5c23d80" kindref="member">PartyId</ref>(MakeShared&lt;const<sp/><ref refid="d9/d51/class_f_online_party_id_accel_byte" kindref="compound">FOnlinePartyIdAccelByte</ref>&gt;(TEXT(</highlight><highlight class="stringliteral">&quot;INVALID&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1ac60bf1bf931f8ecb9b21c5bcaa270116" kindref="member">SourceUserId</ref>(<ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref>::Invalid())</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1a959e25625ac53a48f422044d3900f09b" kindref="member">SourceUserDisplayName</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;INVALID&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte" kindref="compound">FOnlinePartyJoinInfoAccelByte</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>InPartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InSourceUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InSourceUserDisplayName);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte" kindref="compound">FOnlinePartyJoinInfoAccelByte</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfo&amp;<sp/>BaseInfo);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>IOnlinePartyJoinInfo<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsValid()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyId&gt;<sp/>GetPartyId()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId<sp/>GetPartyTypeId()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetId&gt;<sp/>GetSourceUserId()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>GetSourceDisplayName()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>GetSourcePlatform()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(ENGINE_MAJOR_VERSION<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&lt;<sp/>26)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>GetPlatformData()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasKey()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasPassword()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsAcceptingMembers()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsPartyOfOne()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>GetNotAcceptingReason()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>GetAppId()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>GetBuildId()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CanJoin()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CanJoinWithPassword()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CanRequestAnInvite()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>IOnlinePartyJoinInfo<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="d7/df6/class_f_online_party_join_info_accel_byte_1acdf8bea7feb1c2382820302ac5c23d80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1acdf8bea7feb1c2382820302ac5c23d80" kindref="member">PartyId</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="d7/df6/class_f_online_party_join_info_accel_byte_1ac60bf1bf931f8ecb9b21c5bcaa270116" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1ac60bf1bf931f8ecb9b21c5bcaa270116" kindref="member">SourceUserId</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="d7/df6/class_f_online_party_join_info_accel_byte_1a959e25625ac53a48f422044d3900f09b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1a959e25625ac53a48f422044d3900f09b" kindref="member">SourceUserDisplayName</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="d7/df6/class_f_online_party_join_info_accel_byte_1a1d274b60bbf4bbbafb3246d1cc5d373b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1a1d274b60bbf4bbbafb3246d1cc5d373b" kindref="member">SourcePlatform</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="d7/df6/class_f_online_party_join_info_accel_byte_1aa87382c7aa708b1dad0e95f545869a63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1aa87382c7aa708b1dad0e95f545869a63" kindref="member">PlatformData</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="d7/df6/class_f_online_party_join_info_accel_byte_1ae9a351513a82397ef8a11f15ac102868" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1ae9a351513a82397ef8a11f15ac102868" kindref="member">AppId</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="d7/df6/class_f_online_party_join_info_accel_byte_1a65fac0e9d3cef4605c3bca5618f13a0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte_1a65fac0e9d3cef4605c3bca5618f13a0a" kindref="member">BuildId</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="d8/d73/_online_party_interface_accel_byte_8h_1ad92fd3bc80481102c3ec1ab6f51c8c53" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1ad92fd3bc80481102c3ec1ab6f51c8c53" kindref="member">FPartyIDToPartyMap</ref><sp/>=<sp/>TMap&lt;TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;,<sp/>TSharedRef&lt;FOnlinePartyAccelByte&gt;,<sp/>FDefaultSetAllocator,<sp/><ref refid="dd/dc4/struct_t_party_id_const_shared_ref_map_key_funcs" kindref="compound">TPartyIdConstSharedRefMapKeyFuncs&lt;TSharedRef&lt;FOnlinePartyAccelByte&gt;</ref>&gt;&gt;;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="d8/d73/_online_party_interface_accel_byte_8h_1aa8eed695ba181f38c126092a2e22b40f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1aa8eed695ba181f38c126092a2e22b40f" kindref="member">FUserIDToPartiesMap</ref><sp/>=<sp/>TMap&lt;TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;,<sp/><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1ad92fd3bc80481102c3ec1ab6f51c8c53" kindref="member">FPartyIDToPartyMap</ref>,<sp/>FDefaultSetAllocator,<sp/><ref refid="da/d18/struct_t_user_unique_id_const_shared_ref_map_key_funcs" kindref="compound">TUserUniqueIdConstSharedRefMapKeyFuncs&lt;FPartyIDToPartyMap&gt;</ref>&gt;;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="de/d75/struct_f_accel_byte_party_invite" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1a4d5160f0bb9a87a4b67bc4c91a792379" kindref="member">FAccelBytePartyInvite</ref></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310" refid="de/d75/struct_f_accel_byte_party_invite_1a4d5160f0bb9a87a4b67bc4c91a792379" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1a4d5160f0bb9a87a4b67bc4c91a792379" kindref="member">FAccelBytePartyInvite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>InPartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InInviterId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InInviterDisplayName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InInviteToken)</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1abbbe74d1dc8dcd18bfff4d621da8107c" kindref="member">PartyId</ref>(InPartyId)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1aec84a08218acdeaf4796f404daafff62" kindref="member">InviterId</ref>(InInviterId)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1a1c3c5791b29b8ade61827540835de93f" kindref="member">InviterDisplayName</ref>(InInviterDisplayName)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1a9353f3b8a34e1b17a640cfff34a3ef18" kindref="member">InviteToken</ref>(InInviteToken)</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1add83ab5d730038214997e262c824145a" kindref="member">JoinInfo</ref>(MakeShared&lt;const<sp/><ref refid="d7/df6/class_f_online_party_join_info_accel_byte" kindref="compound">FOnlinePartyJoinInfoAccelByte</ref>&gt;(<ref refid="de/d75/struct_f_accel_byte_party_invite_1abbbe74d1dc8dcd18bfff4d621da8107c" kindref="member">PartyId</ref>,<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1aec84a08218acdeaf4796f404daafff62" kindref="member">InviterId</ref>,<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1a1c3c5791b29b8ade61827540835de93f" kindref="member">InviterDisplayName</ref>))</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="de/d75/struct_f_accel_byte_party_invite_1abbbe74d1dc8dcd18bfff4d621da8107c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1abbbe74d1dc8dcd18bfff4d621da8107c" kindref="member">PartyId</ref>;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="de/d75/struct_f_accel_byte_party_invite_1aec84a08218acdeaf4796f404daafff62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1aec84a08218acdeaf4796f404daafff62" kindref="member">InviterId</ref>;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="de/d75/struct_f_accel_byte_party_invite_1a1c3c5791b29b8ade61827540835de93f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1a1c3c5791b29b8ade61827540835de93f" kindref="member">InviterDisplayName</ref>;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="de/d75/struct_f_accel_byte_party_invite_1a9353f3b8a34e1b17a640cfff34a3ef18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1a9353f3b8a34e1b17a640cfff34a3ef18" kindref="member">InviteToken</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="de/d75/struct_f_accel_byte_party_invite_1add83ab5d730038214997e262c824145a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FOnlinePartyJoinInfoAccelByte&gt;<sp/><ref refid="de/d75/struct_f_accel_byte_party_invite_1add83ab5d730038214997e262c824145a" kindref="member">JoinInfo</ref>;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="d8/d73/_online_party_interface_accel_byte_8h_1a22f4f5277c2321756a439c83421234ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1a22f4f5277c2321756a439c83421234ef" kindref="member">FPartyInviteArray</ref><sp/>=<sp/>TArray&lt;TSharedRef&lt;const<sp/>FAccelBytePartyInvite&gt;&gt;;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="d8/d73/_online_party_interface_accel_byte_8h_1afa43a34a9475300eb3ab428bdb007b48" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1afa43a34a9475300eb3ab428bdb007b48" kindref="member">FUserIdToPartyInvitesMap</ref><sp/>=<sp/>TMap&lt;TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;,<sp/><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1a22f4f5277c2321756a439c83421234ef" kindref="member">FPartyInviteArray</ref>,<sp/>FDefaultSetAllocator,<sp/><ref refid="da/d18/struct_t_user_unique_id_const_shared_ref_map_key_funcs" kindref="compound">TUserUniqueIdConstSharedRefMapKeyFuncs&lt;FPartyInviteArray&gt;</ref>&gt;;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="d6/d06/class_f_online_party_system_accel_byte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac251ffd9ead0cd332eb166d639e8cc3f" kindref="member">FOnlinePartySystemAccelByte</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IOnlinePartySystem,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TSharedFromThis&lt;FOnlinePartySystemAccelByte,<sp/>ESPMode::ThreadSafe&gt;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="343" refid="d6/d06/class_f_online_party_system_accel_byte_1a3bc9f72d90066b4c188957a617938b41" refkind="member"><highlight class="normal"><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref>:</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac251ffd9ead0cd332eb166d639e8cc3f" kindref="member">FOnlinePartySystemAccelByte</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>InSubsystem);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ae980ad5245871e7a7f7f20cc930de16e" kindref="member">GetFromSubsystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem,<sp/>TSharedPtr&lt;FOnlinePartySystemAccelByte,<sp/>ESPMode::ThreadSafe&gt;&amp;<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aaeb26c9e602eb33c6ecafa4c272003a3" kindref="member">GetFromWorld</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UWorld*<sp/>World,<sp/>TSharedPtr&lt;FOnlinePartySystemAccelByte,<sp/>ESPMode::ThreadSafe&gt;&amp;<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a95cc825420a4a2082c53740e5375d90d" kindref="member">Init</ref>();</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a9cce058f87a4ab6cf6bec7ff0cb635e6" kindref="member">RegisterRealTimeLobbyDelegates</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4a9d0075b7c7bff31fac2c77f0159072" kindref="member">AddPartyToInterface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyAccelByte&gt;&amp;<sp/>Party);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac63c7f386176f7dacc689ee4b3726e42" kindref="member">RemovePartyFromInterface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac63c7f386176f7dacc689ee4b3726e42" kindref="member">RemovePartyFromInterface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlinePartyAccelByte&gt;&amp;<sp/>Party);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac63c7f386176f7dacc689ee4b3726e42" kindref="member">RemovePartyFromInterface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;const<sp/>FAccelBytePartyInvite&gt;<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a0a9445e87f8eaf48a657fbbf56b97816" kindref="member">GetInviteForParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;const<sp/>FAccelBytePartyInvite&gt;<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a0a9445e87f8eaf48a657fbbf56b97816" kindref="member">GetInviteForParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InviterId);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a1c2dc36143cbf571df40bc3e7517cc6d" kindref="member">AddPartyInvite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelBytePartyInvite&gt;&amp;<sp/>Invite);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a9e8eabb1b8689c0fe922d0652b2a8049" kindref="member">RemoveInviteForParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EPartyInvitationRemovedReason&amp;<sp/>InvitationRemovalReason);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a9e8eabb1b8689c0fe922d0652b2a8049" kindref="member">RemoveInviteForParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>InviterId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EPartyInvitationRemovedReason&amp;<sp/>InvitationRemovalReason);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a7795cf11a7e0bfafeffcec6b4f774054" kindref="member">ClearInviteForParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;const<sp/>FOnlinePartyId&gt;&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EPartyInvitationRemovedReason&amp;<sp/>InvitationRemovalReason);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ab15b93b47bf0d33ccbbf002f510fe98a" kindref="member">RemovePartyForUser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ab15b93b47bf0d33ccbbf002f510fe98a" kindref="member">RemovePartyForUser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlinePartyAccelByte&gt;<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ab0c013426aed12f1779fb48e39d9b7e9" kindref="member">GetFirstPartyForUser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlinePartyAccelByte&gt;<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aa2e2db6b3593ccce91cc603281fa8a43" kindref="member">GetPartyForUser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FOnlinePartyIdAccelByte&gt;&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a01f4e2f8327c072e80970f3be06b4969" kindref="member">JoinParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>InPartyCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnJoinPartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnJoinPartyComplete());</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454" refid="d6/d06/class_f_online_party_system_accel_byte_1a7809c12977bef20e669831141e44c1f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a7809c12977bef20e669831141e44c1f4" kindref="member">~FOnlinePartySystemAccelByte</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>IOnlinePartySystem<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1af988ff9906c4d0bdf75d07baa6f9dff2" kindref="member">RestoreParties</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnRestorePartiesComplete&amp;<sp/>CompletionDelegate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a592a266a0928831c69f41c86270a809b" kindref="member">RestoreInvites</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnRestoreInvitesComplete&amp;<sp/>CompletionDelegate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a7cce8408ad202066c1933e8badca69b3" kindref="member">CleanupParties</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnCleanupPartiesComplete&amp;<sp/>CompletionDelegate)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4b1eb46720419f904cd2b64171372ef8" kindref="member">CreateParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId<sp/>PartyTypeId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FPartyConfiguration&amp;<sp/>PartyConfig,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnCreatePartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnCreatePartyComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a17d9499e11d5b869bf74524873db308a" kindref="member">UpdateParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FPartyConfiguration&amp;<sp/>PartyConfig,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bShouldRegenerateReservationKey<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnUpdatePartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnUpdatePartyComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a01f4e2f8327c072e80970f3be06b4969" kindref="member">JoinParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfo&amp;<sp/>OnlinePartyJoinInfo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnJoinPartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnJoinPartyComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ab8bb3c05f0e4976d09bcf3a13af9d308" kindref="member">RejoinParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId&amp;<sp/>PartyTypeId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;TSharedRef&lt;const<sp/>FUniqueNetId&gt;&gt;&amp;<sp/>FormerMembers,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnJoinPartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnJoinPartyComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ae0adc703931b470a38f5183ff65b3434" kindref="member">LeaveParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnLeavePartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnLeavePartyComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ae0adc703931b470a38f5183ff65b3434" kindref="member">LeaveParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bSynchronizeLeave,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnLeavePartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnLeavePartyComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a6a0be03a14f10998106c6e47dd769fa5" kindref="member">ApproveJoinRequest</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>RecipientId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsApproved,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>DeniedResultCode<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(ENGINE_MAJOR_VERSION<sp/>==<sp/>5<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&gt;=<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac2fd9ce5ab94191b74e2bf901ec208a2" kindref="member">JIPFromWithinParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PartyLeaderId);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac03a63758bd60383ee197208cf20b8ce" kindref="member">ApproveJIPRequest</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>RecipientId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsApproved,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>DeniedResultCode<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac2fd9ce5ab94191b74e2bf901ec208a2" kindref="member">JIPFromWithinParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>PartyLeaderId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac03a63758bd60383ee197208cf20b8ce" kindref="member">ApproveJIPRequest</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>RecipientId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsApproved,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>DeniedResultCode<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(ENGINE_MAJOR_VERSION<sp/>==<sp/>5<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&gt;=<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a2da91eddcf6c9d0e0f50f4986850ca48" kindref="member">QueryPartyJoinability</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfo&amp;<sp/>OnlinePartyJoinInfo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryPartyJoinabilityComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnQueryPartyJoinabilityComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1abe2522cfa9e0271f0dda178713b88bab" kindref="member">RespondToQueryJoinability</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>RecipientId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bCanJoin,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>DeniedResultCode<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ad7c5015abb573af2e666a6ecebaf5d52" kindref="member">SendInvitation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FPartyInvitationRecipient&amp;<sp/>Recipient,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnSendPartyInvitationComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnSendPartyInvitationComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a2efac1b1cb4a6d6c753880dfccbe845e" kindref="member">RejectInvitation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>SenderId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ad1017aabd0d39177f6cc9e41b7456d11" kindref="member">ClearInvitations</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>SenderId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId*<sp/>PartyId<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac0d1894a00a234e3005355239dd19cb3" kindref="member">KickMember</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>TargetMemberId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnKickPartyMemberComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnKickPartyMemberComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a017e7515cba43a30eadbadc85c5ed813" kindref="member">PromoteMember</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>TargetMemberId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnPromotePartyMemberComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnPromotePartyMemberComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a3da952903b5425c99e4e1d7d03a210cc" kindref="member">IsMemberLeader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>MemberId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4a021d88a742118cbe77929cd3f22041" kindref="member">GetPartyMemberCount</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a50e40192c20d691b8888cffe0b84f85c" kindref="member">GetParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a50e40192c20d691b8888cffe0b84f85c" kindref="member">GetParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId&amp;<sp/>PartyTypeId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyMemberConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a177015b1b5aa40263e1e30755c30c316" kindref="member">GetPartyMember</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>MemberId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfoConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a1e6d512daf450575fb7caeec8da4e10f" kindref="member">GetAdvertisedParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId<sp/>PartyTypeId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ad04c86fe564dde43ee1c8518449a1f87" kindref="member">GetJoinedParties</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/>TArray&lt;TSharedRef&lt;const<sp/>FOnlinePartyId&gt;&gt;&amp;<sp/>OutPartyIdArray)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ae4f192279f39ae6afe663c3ae9ea625d" kindref="member">GetPartyMembers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId<sp/>&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId<sp/>&amp;<sp/>PartyId,<sp/>TArray&lt;FOnlinePartyMemberConstRef&gt;&amp;OutPartyMembersArray)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a128d88ff03eef7cd936d0a7bd285b499" kindref="member">GetPendingInvites</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId<sp/>&amp;<sp/>LocalUserId,<sp/>TArray&lt;IOnlinePartyJoinInfoConstRef&gt;&amp;OutPendingInvitesArray)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a275357ce2f429b86f1f87397a4ba1bb5" kindref="member">GetPendingJoinRequests</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId<sp/>&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId<sp/>&amp;<sp/>PartyId,<sp/>TArray&lt;IOnlinePartyPendingJoinRequestInfoConstRef&gt;&amp;OutPendingJoinRequestArray)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4ef942e2d2556d0569b3b503069f2836" kindref="member">GetPendingInvitedUsers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/>TArray&lt;TSharedRef&lt;const<sp/>FUniqueNetId&gt;&gt;&amp;<sp/>OutPendingInvitedUserArray)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ae53f9cfa77886936c69b7c3a8725b05a" kindref="member">MakeJoinInfoJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfoConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aee313183b20c929b805b914234a1e5b4" kindref="member">MakeJoinInfoFromJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>JoinInfoJson)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a49467217fde0d97f6e545a4566f35ff2" kindref="member">MakeTokenFromJoinInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfo&amp;<sp/>JoinInfo)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfoConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a486d875acd4636651843811c5e5e4378" kindref="member">MakeJoinInfoFromToken</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Token)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfoConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aa99fcae5a1966667123d8ed7fd8086b5" kindref="member">ConsumePendingCommandLineInvite</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a17bec7994f8c4dd1c940e3401abea56a" kindref="member">DumpPartyState</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(ENGINE_MAJOR_VERSION<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&lt;<sp/>26)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4d8ed64919a6ea92d34d72ac1674c57f" kindref="member">UpdatePartyData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Namespace,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyData&amp;<sp/>PartyData)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyDataConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a9507b49d328ae1a757e12a3931cb2412" kindref="member">GetPartyData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Namespace)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyDataConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aade552b95f5258f48039bec44a607361" kindref="member">GetPartyMemberData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>MemberId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Namespace)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aaced89341d1e33aab7874cc8c89f715a" kindref="member">UpdatePartyMemberData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Namespace,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyData&amp;<sp/>PartyMemberData)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4d8ed64919a6ea92d34d72ac1674c57f" kindref="member">UpdatePartyData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyData&amp;<sp/>PartyData)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyDataConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a9507b49d328ae1a757e12a3931cb2412" kindref="member">GetPartyData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>FOnlinePartyDataConstPtr<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aade552b95f5258f48039bec44a607361" kindref="member">GetPartyMemberData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>MemberId)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aaced89341d1e33aab7874cc8c89f715a" kindref="member">UpdatePartyMemberData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyData&amp;<sp/>PartyMemberData)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(ENGINE_MAJOR_VERSION<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&lt;<sp/>27)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a2da91eddcf6c9d0e0f50f4986850ca48" kindref="member">QueryPartyJoinability</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfo&amp;<sp/>OnlinePartyJoinInfo,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnQueryPartyJoinabilityCompleteEx&amp;<sp/>Delegate<sp/>=<sp/>FOnQueryPartyJoinabilityCompleteEx())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1abe2522cfa9e0271f0dda178713b88bab" kindref="member">RespondToQueryJoinability</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId<sp/>&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId<sp/>&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId<sp/>&amp;<sp/>RecipientId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bCanJoin,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>DeniedResultCode,<sp/>FOnlinePartyDataConstPtr<sp/>PartyData)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(ENGINE_MAJOR_VERSION<sp/>==<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RequestToJoinParty(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId<sp/>PartyTypeId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FPartyInvitationRecipient&amp;<sp/>Recipient,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnRequestToJoinPartyComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnRequestToJoinPartyComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearRequestToJoinParty(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>Sender,<sp/>EPartyRequestToJoinRemovedReason<sp/>Reason)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetPendingRequestsToJoin(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/>TArray&lt;IOnlinePartyRequestToJoinInfoConstRef&gt;&amp;<sp/>OutRequestsToJoin)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(ENGINE_MINOR_VERSION<sp/>&gt;=<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CancelInvitation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>TargetUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnCancelPartyInvitationComplete&amp;<sp/>Delegate<sp/>=<sp/>FOnCancelPartyInvitationComplete())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>(ENGINE_MINOR_VERSION<sp/>&gt;=<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(ENGINE_MINOR_VERSION<sp/>&gt;=<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>IOnlinePartyJoinInfoConstPtr<sp/>MakeJoinInfo(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>(ENGINE_MINOR_VERSION<sp/>&gt;=<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>(ENGINE_MAJOR_VERSION<sp/>==<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>IOnlinePartySystem<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a172a2c90b530f3428ab9199f46ec380d" kindref="member">IsPlayerInParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a155be41ab89f9d67d905dcc9d8eefa33" kindref="member">IsPlayerInAnyParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId);</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ab6d06e4cce826f4ed2a0ba7b7d97ace4" kindref="member">GetCurrentPartyMemberCount</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UserId);</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;const<sp/>FOnlinePartyId&gt;<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4fb330ccf9fa9458815d322d5af38a7a" kindref="member">GetFirstPartyIdForUser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId<sp/>&amp;<sp/>UserId);</highlight></codeline>
+<codeline lineno="559" refid="d6/d06/class_f_online_party_system_accel_byte_1a7a8f791c4e60c7e1f840aa8a475bc0d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a7a8f791c4e60c7e1f840aa8a475bc0d2" kindref="member">GetAccelBytePartyTypeId</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FOnlinePartyTypeId(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a7e58c1a6dfb020c55b6fb384dedfb49dac2218a028f0279567776199f8c65805c" kindref="member">EAccelBytePartyType::PRIMARY_PARTY</ref>));<sp/>}</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetPartyCode(FString&amp;<sp/>Output,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575" refid="d6/d06/class_f_online_party_system_accel_byte_1ac251ffd9ead0cd332eb166d639e8cc3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac251ffd9ead0cd332eb166d639e8cc3f" kindref="member">FOnlinePartySystemAccelByte</ref>()</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aa0c7ad214a907250184c072585065cab" kindref="member">AccelByteSubsystem</ref>(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579" refid="d6/d06/class_f_online_party_system_accel_byte_1aa0c7ad214a907250184c072585065cab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aa0c7ad214a907250184c072585065cab" kindref="member">AccelByteSubsystem</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight></codeline>
+<codeline lineno="582" refid="d6/d06/class_f_online_party_system_accel_byte_1a8787229ea13a05110682dea92f578202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1aa8eed695ba181f38c126092a2e22b40f" kindref="member">FUserIDToPartiesMap</ref><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a8787229ea13a05110682dea92f578202" kindref="member">UserIdToPartiesMap</ref>;</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585" refid="d6/d06/class_f_online_party_system_accel_byte_1ac84e23a80ac43a1939ecbd64728314ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FCriticalSection<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac84e23a80ac43a1939ecbd64728314ca" kindref="member">UserIdToPartiesMapLock</ref>;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588" refid="d6/d06/class_f_online_party_system_accel_byte_1a192b8e06a36161ab119fd9a8a65e7fcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d73/_online_party_interface_accel_byte_8h_1afa43a34a9475300eb3ab428bdb007b48" kindref="member">FUserIdToPartyInvitesMap</ref><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a192b8e06a36161ab119fd9a8a65e7fcb" kindref="member">UserIdToPartyInvitesMap</ref>;</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591" refid="d6/d06/class_f_online_party_system_accel_byte_1aaac9dd5b9fa2dea3fed843294069d083" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FOnPartyJoinedDelegate&gt;<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aaac9dd5b9fa2dea3fed843294069d083" kindref="member">OnPartyJoinedPendingTasks</ref>;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593" refid="d6/d06/class_f_online_party_system_accel_byte_1a62bcc4488a5f2e8dc7b98581627d0d06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FOnCreatePartyComplete<sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a62bcc4488a5f2e8dc7b98581627d0d06" kindref="member">OnCreatePartyBeforeJoinCustomGameComplete</ref>;</highlight></codeline>
+<codeline lineno="594" refid="d6/d06/class_f_online_party_system_accel_byte_1a691048d25e28c7fb2b004033bf93701d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a691048d25e28c7fb2b004033bf93701d" kindref="member">bIsAcceptingCustomGameInvitation</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="601" refid="d6/d06/class_f_online_party_system_accel_byte_1a4605d766ac07085ed094f577809915ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4605d766ac07085ed094f577809915ed" kindref="member">bUsingV2Sessions</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a3317a849d7a825b2f05175ba01cc4670" kindref="member">OnReceivedPartyInviteNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsPartyGetInvitedNotice&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a4c22bc1d7dfe16c249d641d7fa40b567" kindref="member">OnPartyInviteSentNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsInvitationNotice&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ac64a7f374ad9bbae508b1efdf439dc30" kindref="member">OnPartyJoinNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsPartyJoinNotice&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a451f9199a09f76456c2f5313accba895" kindref="member">OnPartyMemberLeaveNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsLeavePartyNotice&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a21e7f50d6e2910202238393968162f1b" kindref="member">OnPartyKickNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsGotKickedFromPartyNotice&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a21ddf010c9e45abf4b998f976c0329e0" kindref="member">OnPartyMemberConnectNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsPartyMemberConnectionNotice&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1aca10aceb58941ba29d115129bc71c45e" kindref="member">OnPartyMemberDisconnectNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsPartyMemberConnectionNotice&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a1bf75c2c6c5405aaa6fee6fe0fe585d8" kindref="member">OnPartyDataChangeNotification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsPartyDataNotif&amp;<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId);</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a12475a06d8f798118f63d4afcbf42beb" kindref="member">RunOnPartyJoinedComplete</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnPartyJoinedDelegate&amp;<sp/>Delegate);</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a5170439d46aa3d344cb4049d21483b81" kindref="member">OnPartyJoinedComplete</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1ae78453cd14a994236c32ad1e72992612" kindref="member">OnPartyJoinedCompleteMemberLeaveParty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlinePartyId&amp;<sp/>PartyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsLeavePartyNotice<sp/>Notification,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>UserId,<sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>LocalAccelByteUserId);</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d06/class_f_online_party_system_accel_byte_1a3f0591693e93b62b5a951aa146e65012" kindref="member">OnPromotedLeaderGetPartyCode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bWasSuccessful,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>PartyCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>PartyId);</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h"/>
+  </compounddef>
+</doxygen>

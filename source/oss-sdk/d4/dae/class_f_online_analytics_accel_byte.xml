@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/dae/class_f_online_analytics_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAnalyticsAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineAnalyticsAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d6/db9/_online_analytics_interface_accel_byte_8h" local="no">OnlineAnalyticsInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/dae/class_f_online_analytics_accel_byte_1afefb28b0ed97cbffb2269a34a0a8826c" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineAnalyticsAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineAnalyticsAccelByte(FOnlineSubsystemAccelByte* InSubsystem) : AccelByteSubsystem(InSubsystem) {}public: virtual ~FOnlineAnalyticsAccelByte() {}</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="17" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d4/dae/class_f_online_analytics_accel_byte_1af51c923105cb5dce0d818a08d0eee7bc" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineAnalyticsAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="84" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1abe9af759dcf503f38e9728a8afe80cc7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAnalyticsAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, FOnlineAnalyticsAccelBytePtr &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a7fc0d23a75a0c201cb9b4b743a0dd687" kindref="member">FOnlineAnalyticsAccelBytePtr</ref> &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="32" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAnalyticsInterfaceAccelByte.cpp" bodystart="28" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1a57003493cfc4e91731324fae8a122892" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAnalyticsAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, FOnlineAnalyticsAccelBytePtr &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a7fc0d23a75a0c201cb9b4b743a0dd687" kindref="member">FOnlineAnalyticsAccelBytePtr</ref> &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="42" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAnalyticsInterfaceAccelByte.cpp" bodystart="14" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1a650479e6139ee0a869c6c0fa5ab5f0e1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAnalyticsAccelByte::IsValidTelemetry</definition>
+        <argsstring>(FAccelByteModelsTelemetryBody const &amp;TelemetryBody)</argsstring>
+        <name>IsValidTelemetry</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::IsValidTelemetry</qualifiedname>
+        <param>
+          <type>FAccelByteModelsTelemetryBody const &amp;</type>
+          <declname>TelemetryBody</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function to check if Telemetry body is valid</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TelemetryBody</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>telemetry object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if the telemetry object is valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="101" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAnalyticsInterfaceAccelByte.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1a30a95f86286b4473e7cd81d9e2d3cd9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAnalyticsAccelByte::SetTelemetrySendInterval</definition>
+        <argsstring>(int32 InLocalUserNum)</argsstring>
+        <name>SetTelemetrySendInterval</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::SetTelemetrySendInterval</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set GameTelemetry or ServerGameTelemetry send event interval from DefaultEngine.ini</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InLocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user identifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if task for setting send interval successfully dispatched </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="51" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAnalyticsInterfaceAccelByte.cpp" bodystart="42" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1a7993647641cb4d2fef20e037f5036533" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAnalyticsAccelByte::SetTelemetryImmediateEventList</definition>
+        <argsstring>(int32 InLocalUserNum, TArray&lt; FString &gt; const &amp;EventNames)</argsstring>
+        <name>SetTelemetryImmediateEventList</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::SetTelemetryImmediateEventList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>EventNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set GameTelemetry or ServerGameTelemetry immediate event list</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InLocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user identifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EventNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of immediate event name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if task for setting immediate event lists successfully dispatched </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="60" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAnalyticsInterfaceAccelByte.cpp" bodystart="74" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1a4af2c2bac29578463523deff77fa2fbe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAnalyticsAccelByte::SendTelemetryEvent</definition>
+        <argsstring>(int32 InLocalUserNum, FAccelByteModelsTelemetryBody const &amp;TelemetryBody, AccelByte::FVoidHandler const &amp;OnSuccess, AccelByte::FErrorHandler const &amp;OnError)</argsstring>
+        <name>SendTelemetryEvent</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::SendTelemetryEvent</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>FAccelByteModelsTelemetryBody const &amp;</type>
+          <declname>TelemetryBody</declname>
+        </param>
+        <param>
+          <type>AccelByte::FVoidHandler const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>AccelByte::FErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send GameTelemetry or ServerGameTelemetry event with delegates OnSuccess and OnError</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InLocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user identifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TelemetryBody</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>content of telemetry event </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate will be called after event send succeed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate will be called after event send error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if task for sending telemetry event successfully dispatched </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="72" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAnalyticsInterfaceAccelByte.cpp" bodystart="105" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1a941969557832898c4dc4e381a7c688b2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAnalyticsAccelByte::IsUserLoggedIn</definition>
+        <argsstring>(const int32 InLocalUserNum) const</argsstring>
+        <name>IsUserLoggedIn</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::IsUserLoggedIn</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function to check if user logged in</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InLocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user identifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if the user logged in </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="93" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAnalyticsInterfaceAccelByte.cpp" bodystart="139" bodyend="158"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d4/dae/class_f_online_analytics_accel_byte_1ace7b422bd1c98e08d241db9014cd7d38" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAnalyticsAccelByte::FOnlineAnalyticsAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineAnalyticsAccelByte</name>
+        <qualifiedname>FOnlineAnalyticsAccelByte::FOnlineAnalyticsAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="79" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of Analytics service from <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineAnalyticsAccelByte</label>
+        <link refid="d4/dae/class_f_online_analytics_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineAnalyticsAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="1">
+        <label>FOnlineAnalyticsAccelByte</label>
+        <link refid="d4/dae/class_f_online_analytics_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineAnalyticsAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" line="14" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAnalyticsInterfaceAccelByte.h" bodystart="16" bodyend="102"/>
+    <listofallmembers>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1afefb28b0ed97cbffb2269a34a0a8826c" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1af51c923105cb5dce0d818a08d0eee7bc" prot="protected" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1ace7b422bd1c98e08d241db9014cd7d38" prot="protected" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>FOnlineAnalyticsAccelByte</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1a57003493cfc4e91731324fae8a122892" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1abe9af759dcf503f38e9728a8afe80cc7" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1a941969557832898c4dc4e381a7c688b2" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>IsUserLoggedIn</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1a650479e6139ee0a869c6c0fa5ab5f0e1" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>IsValidTelemetry</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1a4af2c2bac29578463523deff77fa2fbe" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>SendTelemetryEvent</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1a7993647641cb4d2fef20e037f5036533" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>SetTelemetryImmediateEventList</name></member>
+      <member refid="d4/dae/class_f_online_analytics_accel_byte_1a30a95f86286b4473e7cd81d9e2d3cd9e" prot="private" virt="non-virtual"><scope>FOnlineAnalyticsAccelByte</scope><name>SetTelemetrySendInterval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

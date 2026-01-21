@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteRestoreAllV2Sessions, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="dd/d0e/_online_async_task_accel_byte_restore_all_v2_sessions_8h" local="no">OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1af0b8da80579ebfd0ec178923201bfb3c" prot="private" static="no" mutable="no">
+        <type>FThreadSafeBool</type>
+        <definition>FThreadSafeBool FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::bHasRetrievedPartySessionInfo</definition>
+        <argsstring></argsstring>
+        <name>bHasRetrievedPartySessionInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::bHasRetrievedPartySessionInfo</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag denoting when we get a response back for querying information about the user&apos;s party </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="37" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a63d022f16d0def573327bd8743cfbaa6" prot="private" static="no" mutable="no">
+        <type>FThreadSafeBool</type>
+        <definition>FThreadSafeBool FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::bHasRetrievedGameSessionInfo</definition>
+        <argsstring></argsstring>
+        <name>bHasRetrievedGameSessionInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::bHasRetrievedGameSessionInfo</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag denoting when we get a response back for querying information about the user&apos;s game sessions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="40" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a615cdbfb99332a39fd7b263d60db9454" prot="private" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="db/d23/struct_f_online_restored_session_accel_byte" kindref="compound">FOnlineRestoredSessionAccelByte</ref> &gt;</type>
+        <definition>TArray&lt;FOnlineRestoredSessionAccelByte&gt; FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::RestoredSessions</definition>
+        <argsstring></argsstring>
+        <name>RestoredSessions</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::RestoredSessions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of restored sessions that will be moved over to the session interface after execution </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="43" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a61b000be378135e141062503b55bcddf" prot="private" static="no" mutable="no">
+        <type>FOnRestoreActiveSessionsComplete</type>
+        <definition>FOnRestoreActiveSessionsComplete FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::CompletionDelegate</definition>
+        <argsstring></argsstring>
+        <name>CompletionDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::CompletionDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate that is fired when the task to restore a party completes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="46" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a34b12b79260fb932373337120681b119" prot="private" static="no" mutable="no">
+        <type>THandler&lt; FAccelByteModelsV2PaginatedGameSessionQueryResult &gt;</type>
+        <definition>THandler&lt;FAccelByteModelsV2PaginatedGameSessionQueryResult&gt; FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetMyGameSessionsSuccessDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="51" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ac9e0047abae155e7401c17c2d2550396" prot="private" static="no" mutable="no">
+        <type>FErrorHandler</type>
+        <definition>FErrorHandler FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetMyGameSessionsErrorDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="54" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1aea88a7ec33df92221f8c496d3ece301f" prot="private" static="no" mutable="no">
+        <type>THandler&lt; FAccelByteModelsV2PaginatedPartyQueryResult &gt;</type>
+        <definition>THandler&lt;FAccelByteModelsV2PaginatedPartyQueryResult&gt; FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetMyPartiesSuccessDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="57" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a941f5dfacbf73ca50f2cef8659770558" prot="private" static="no" mutable="no">
+        <type>FErrorHandler</type>
+        <definition>FErrorHandler FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetMyPartiesErrorDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="60" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1addbe70ccbb671b7b1ef8e5a4b15afbbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const FUniqueNetId &amp;InLocalUserId, const FOnRestoreActiveSessionsComplete &amp;InCompletionDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InLocalUserId</declname>
+        </param>
+        <param>
+          <type>const FOnRestoreActiveSessionsComplete &amp;</type>
+          <declname>InCompletionDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="21" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a836cfce5ee9994552a2a6491d7f222f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="23" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="21" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a714e94d7d42f753043a52463a91a3b3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::Tick</definition>
+        <argsstring>() override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::Tick</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2">Tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple tick override to check if we are using timeouts, and if so check the task timeout and complete the task unsuccessfully if it&apos;s over its timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="24" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ad446e2de9124cae61c5ba80bb2bf26cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="25" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="50" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a452d24a6f96bd8d88b34e2e5fb6079da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="26" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="71" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a6f82f3df777c73d50f5ff8d842519c0e" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="30" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ac8a69b4f83510cc34ab25130cb029407" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::HasFinishedAsyncWork</definition>
+        <argsstring>()</argsstring>
+        <name>HasFinishedAsyncWork</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::HasFinishedAsyncWork</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether we have completed all work for our task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="49" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ae439ce28bbfd48a84efa070598afed0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsSuccess</definition>
+        <argsstring>(const FAccelByteModelsV2PaginatedGameSessionQueryResult &amp;Result)</argsstring>
+        <name>OnGetMyGameSessionsSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsV2PaginatedGameSessionQueryResult &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="52" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="86" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a036302e8f6463c112db6689efbaafbb5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnGetMyGameSessionsError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyGameSessionsError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="55" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="131" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1aee70c34f2b0236a8fc31343bf88b3b52" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesSuccess</definition>
+        <argsstring>(const FAccelByteModelsV2PaginatedPartyQueryResult &amp;Result)</argsstring>
+        <name>OnGetMyPartiesSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsV2PaginatedPartyQueryResult &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="58" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="138" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ad0f8a88a40e35d75bca87aded7e0d899" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnGetMyPartiesError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnGetMyPartiesError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="61" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="183" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a501801fb994574f0382f183cb17c9047" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnTaskTimedOut</definition>
+        <argsstring>() override</argsstring>
+        <name>OnTaskTimedOut</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions::OnTaskTimedOut</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f">OnTaskTimedOut</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timeout handler </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="64" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.cpp" bodystart="190" bodyend="199"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Async task to restore both party &amp; game sessions if the user exits a game while still in a party or game session. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteRestoreAllV2Sessions, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</label>
+        <link refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteRestoreAllV2Sessions, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</label>
+        <link refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" line="15" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteRestoreAllV2Sessions.h" bodystart="18" bodyend="65"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>ApiClient</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>bHasReference</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a63d022f16d0def573327bd8743cfbaa6" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>bHasRetrievedGameSessionInfo</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1af0b8da80579ebfd0ec178923201bfb3c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>bHasRetrievedPartySessionInfo</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>CompleteTask</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a61b000be378135e141062503b55bcddf" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>CompletionDelegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>CurrentState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>Epic</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ad446e2de9124cae61c5ba80bb2bf26cb" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1addbe70ccbb671b7b1ef8e5a4b15afbbe" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetParentTask</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a6f82f3df777c73d50f5ff8d842519c0e" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>GetTaskName</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ac8a69b4f83510cc34ab25130cb029407" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>HasFinishedAsyncWork</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>HasTaskTimedOut</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a836cfce5ee9994552a2a6491d7f222f5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>Initialize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>LocalUserNum</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a036302e8f6463c112db6689efbaafbb5" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyGameSessionsError</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ac9e0047abae155e7401c17c2d2550396" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyGameSessionsErrorDelegate</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ae439ce28bbfd48a84efa070598afed0f" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyGameSessionsSuccess</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a34b12b79260fb932373337120681b119" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyGameSessionsSuccessDelegate</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1ad0f8a88a40e35d75bca87aded7e0d899" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyPartiesError</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a941f5dfacbf73ca50f2cef8659770558" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyPartiesErrorDelegate</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1aee70c34f2b0236a8fc31343bf88b3b52" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyPartiesSuccess</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1aea88a7ec33df92221f8c496d3ece301f" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnGetMyPartiesSuccessDelegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a501801fb994574f0382f183cb17c9047" prot="private" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>ParentTask</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a615cdbfb99332a39fd7b263d60db9454" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>RestoredSessions</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>ThisPtr</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a714e94d7d42f753043a52463a91a3b3d" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual" ambiguityscope="FOnlineAsyncTaskAccelByte::"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>ToString</name></member>
+      <member refid="d5/d64/class_f_online_async_task_accel_byte_restore_all_v2_sessions_1a452d24a6f96bd8d88b34e2e5fb6079da" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteRestoreAllV2Sessions</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

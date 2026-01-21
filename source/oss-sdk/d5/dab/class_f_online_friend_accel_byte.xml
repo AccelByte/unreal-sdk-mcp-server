@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d5/dab/class_f_online_friend_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineFriendAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FOnlineFriend</basecompoundref>
+    <includes refid="dc/d1c/_online_friends_interface_accel_byte_8h" local="no">OnlineFriendsInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1a7e5426506f845ecc0b7456fcef5db969" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineFriendAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineFriendAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineFriendAccelByte(const FString&amp; InDisplayName</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="30" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1a84c27752e80244bb63a128115603f878" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref> const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+        <definition>PACKAGE_SCOPE const TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt;&amp; FOnlineFriendAccelByte::InUserId</definition>
+        <argsstring></argsstring>
+        <name>InUserId</name>
+        <qualifiedname>FOnlineFriendAccelByte::InUserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="33" column="19" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1af852b20a0a35f0eb8dda5c88ffa47bd8" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref> const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; const EInviteStatus::Type &amp;</type>
+        <definition>PACKAGE_SCOPE const TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt; const EInviteStatus::Type&amp; FOnlineFriendAccelByte::InInviteStatus</definition>
+        <argsstring></argsstring>
+        <name>InInviteStatus</name>
+        <qualifiedname>FOnlineFriendAccelByte::InInviteStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="33" column="54" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1afaa6e0d60445abee3cc6a38a0ed04ee4" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineFriendAccelByte::DisplayName</definition>
+        <argsstring></argsstring>
+        <name>DisplayName</name>
+        <qualifiedname>FOnlineFriendAccelByte::DisplayName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to allow async tasks to set attributes for game code to read` */ bool SetUserAttribute(const FString&amp; AttrName, const FString&amp; AttrValue);</para>
+<para>void SetPresence(const FOnlineUserPresence&amp; InPresence) { Presence = InPresence; }</para>
+<para>public:</para>
+<para>~ Begin FOnlineFriend virtual EInviteStatus::Type GetInviteStatus() const override; virtual const FOnlineUserPresence&amp; GetPresence() const override; ~ End FOnlineFriend</para>
+<para>~ Begin FOnlineUser virtual TSharedRef&lt;const FUniqueNetId&gt; GetUserId() const override; virtual FString GetRealName() const override; virtual FString GetDisplayName(const FString&amp; Platform = FString()) const override; virtual bool GetUserAttribute(const FString&amp; AttrName, FString&amp; OutAttrValue) const override; ~ End FOnlineUser</para>
+<para>private:</para>
+<para>/** Display name of this friend user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="66" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1abcf57ff30efd55ec991400a04a74ea8a" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;</type>
+        <definition>TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt; FOnlineFriendAccelByte::UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>FOnlineFriendAccelByte::UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of this friend user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="69" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1abbec1eee7e502d4d69f1c22ef6113950" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, FString &gt;</type>
+        <definition>TMap&lt;FString, FString&gt; FOnlineFriendAccelByte::UserAttributesMap</definition>
+        <argsstring></argsstring>
+        <name>UserAttributesMap</name>
+        <qualifiedname>FOnlineFriendAccelByte::UserAttributesMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map of attributes for this friend user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="72" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1a6d0c1eba7b19b3439e6257bc734d3730" prot="private" static="no" mutable="no">
+        <type>EInviteStatus::Type</type>
+        <definition>EInviteStatus::Type FOnlineFriendAccelByte::InviteStatus</definition>
+        <argsstring></argsstring>
+        <name>InviteStatus</name>
+        <qualifiedname>FOnlineFriendAccelByte::InviteStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status of our invite for this friend</para>
+<para>Most other OSSes seem to just implement invite status as accepted, since you can manage invites through their platform. However, for our case, since friends are very game-by-game, at least for now, we want to be able to manage these friends from within the game, thus meaning that they will be returned in the friends list itself. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="81" column="21" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dab/class_f_online_friend_accel_byte_1a4263cd453bf44ea491ad0039c7f8f568" prot="private" static="no" mutable="no">
+        <type>FOnlineUserPresence</type>
+        <definition>FOnlineUserPresence FOnlineFriendAccelByte::Presence</definition>
+        <argsstring></argsstring>
+        <name>Presence</name>
+        <qualifiedname>FOnlineFriendAccelByte::Presence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Presence info for this friend </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="84" column="21" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/dab/class_f_online_friend_accel_byte_1ac5178973f02d25a43f521cd97730e2f4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendAccelByte::SetInviteStatus</definition>
+        <argsstring>(const EInviteStatus::Type &amp;InInviteStatus)</argsstring>
+        <name>SetInviteStatus</name>
+        <qualifiedname>FOnlineFriendAccelByte::SetInviteStatus</qualifiedname>
+        <param>
+          <type>const EInviteStatus::Type &amp;</type>
+          <declname>InInviteStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method for the friends interface to update invite status if the friend changes state </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="36" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of a friend represented in the <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> backend </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FOnlineFriend</label>
+      </node>
+      <node id="1">
+        <label>FOnlineFriendAccelByte</label>
+        <link refid="d5/dab/class_f_online_friend_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FOnlineFriend</label>
+      </node>
+      <node id="1">
+        <label>FOnlineFriendAccelByte</label>
+        <link refid="d5/dab/class_f_online_friend_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="28" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="29" bodyend="86"/>
+    <listofallmembers>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1a7e5426506f845ecc0b7456fcef5db969" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1afaa6e0d60445abee3cc6a38a0ed04ee4" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>DisplayName</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1af852b20a0a35f0eb8dda5c88ffa47bd8" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>InInviteStatus</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1a84c27752e80244bb63a128115603f878" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>InUserId</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1a6d0c1eba7b19b3439e6257bc734d3730" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>InviteStatus</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1a4263cd453bf44ea491ad0039c7f8f568" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>Presence</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1ac5178973f02d25a43f521cd97730e2f4" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>SetInviteStatus</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1abbec1eee7e502d4d69f1c22ef6113950" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>UserAttributesMap</name></member>
+      <member refid="d5/dab/class_f_online_friend_accel_byte_1abcf57ff30efd55ec991400a04a74ea8a" prot="private" virt="non-virtual"><scope>FOnlineFriendAccelByte</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dc/d32/_accel_byte_advanced_query_8h" kind="file" language="C++">
+    <compoundname>AccelByteAdvancedQuery.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes local="yes">Containers/Queue.h</includes>
+    <includedby refid="db/d76/_accel_byte_advanced_query_8cpp" local="yes">D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteAdvancedQuery.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Containers/Queue.h</label>
+      </node>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteAdvancedQuery.h</label>
+        <link refid="dc/d32/_accel_byte_advanced_query_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteAdvancedQuery.cpp</label>
+        <link refid="db/d76/_accel_byte_advanced_query_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteAdvancedQuery.h</label>
+        <link refid="dc/d32/_accel_byte_advanced_query_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query" prot="public">AccelByte::FAccelByteAdvancedQuery</innerclass>
+    <innernamespace refid="d3/ddc/namespace_accel_byte">AccelByte</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Containers/Queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ACCELBYTEUE4SDK_API<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a7a4a824bbdec458ecb9ad6fa3934f39d" kindref="member">FAccelByteAdvancedQuery</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteAdvancedQuery&gt;<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a8276a53f07d5c0dc86a14eb8295a8bb2" kindref="member">Start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Option);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a5a94398b9a389bda95d9c9a5e5fd7ccb" kindref="member">Or</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Option);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1ab69cc469861668398decf9b649d50e2e" kindref="member">And</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Option);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FString<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1ad0a8df586f4707b9bbea6362f221968c" kindref="member">Build</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1af0c60f455d009f1ff14c91fe5e454228" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1af0c60f455d009f1ff14c91fe5e454228" kindref="member">OR_OPERATOR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a5ab8e321dd774f1356a45b313ada5946" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a5ab8e321dd774f1356a45b313ada5946" kindref="member">AND_OPERATOR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&amp;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a9c98c3305791a7436976cd6af07bc9f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a9c98c3305791a7436976cd6af07bc9f7" kindref="member">OPEN_PARENTHESES</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a78aebc3d9ae3668fb573e45f75c20290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a78aebc3d9ae3668fb573e45f75c20290" kindref="member">CLOSE_PARENTHESES</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a110a696cfecef749860a98c815492cc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TQueue&lt;FString&gt;<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a110a696cfecef749860a98c815492cc4" kindref="member">Options</ref>;</highlight></codeline>
+<codeline lineno="29" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a30cb0097c56486adafccae67fec15b78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TQueue&lt;FString&gt;<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a30cb0097c56486adafccae67fec15b78" kindref="member">Operators</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FString<sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a2fcef99e51314f743b1e5c695586044c" kindref="member">StringifyTagObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Option);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1aa89688d4029d63e7b70eacb259e99aea" kindref="member">ValidateStringValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Option);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a7a4a824bbdec458ecb9ad6fa3934f39d" kindref="member">FAccelByteAdvancedQuery</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Option);</highlight></codeline>
+<codeline lineno="35" refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a7aaf231828bb05014c4824e6827db7d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d4f/class_accel_byte_1_1_f_accel_byte_advanced_query_1a7aaf231828bb05014c4824e6827db7d4" kindref="member">FAccelByteAdvancedQuery</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteAdvancedQuery.h"/>
+  </compounddef>
+</doxygen>

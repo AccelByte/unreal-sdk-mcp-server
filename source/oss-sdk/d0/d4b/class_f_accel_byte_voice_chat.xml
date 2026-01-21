@@ -1,0 +1,1708 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d0/d4b/class_f_accel_byte_voice_chat" kind="class" language="C++" prot="public">
+    <compoundname>FAccelByteVoiceChat</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FAccelByteVoiceChat, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IVoiceChat</basecompoundref>
+    <includes refid="dc/d5a/_accel_byte_voice_chat_8h" local="no">AccelByteVoiceChat.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1a3b2500822026dc4d33e69a4211f27a65" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FAccelByteVoiceChat::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FAccelByteVoiceChat::__pad0__</qualifiedname>
+        <bitfield> FAccelByteVoiceChat(FOnlineSubsystemAccelByte* InSubsystem)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="16" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1a7627999ffa88f9dd9d208ee3f5c30a48" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a1abf39d4d50c6ef151e8ee7a01c2327b" kindref="member">IVoiceChatPtr</ref></type>
+        <definition>IVoiceChatPtr FAccelByteVoiceChat::VoiceChatPtr</definition>
+        <argsstring></argsstring>
+        <name>VoiceChatPtr</name>
+        <qualifiedname>FAccelByteVoiceChat::VoiceChatPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="118" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1a9609bfcf96a5a3fe8bf1a83016d6c94a" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1ae826ef3d90de6f5273e30b96c231209d" kindref="member">IVoiceChatUserPtr</ref></type>
+        <definition>IVoiceChatUserPtr FAccelByteVoiceChat::VoiceChatUserPtr</definition>
+        <argsstring></argsstring>
+        <name>VoiceChatUserPtr</name>
+        <qualifiedname>FAccelByteVoiceChat::VoiceChatUserPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="119" column="19" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1aadf37a8540b779ce628cf0db3ddf2a4c" prot="private" static="no" mutable="no">
+        <type>TUniqueNetIdMap&lt; <ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1ae826ef3d90de6f5273e30b96c231209d" kindref="member">IVoiceChatUserPtr</ref> &gt;</type>
+        <definition>TUniqueNetIdMap&lt;IVoiceChatUserPtr&gt; FAccelByteVoiceChat::LocalVoiceChatUsers</definition>
+        <argsstring></argsstring>
+        <name>LocalVoiceChatUsers</name>
+        <qualifiedname>FAccelByteVoiceChat::LocalVoiceChatUsers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="120" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1a9b476636ae32d82ce097194d39a3b76b" prot="private" static="no" mutable="no">
+        <type>FOnVoiceChatConnectedDelegate</type>
+        <definition>FOnVoiceChatConnectedDelegate FAccelByteVoiceChat::OnVoiceChatConnectedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnVoiceChatConnectedDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatConnectedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="123" column="31" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1a241d6d62fa850e982eea1847377b66f5" prot="private" static="no" mutable="no">
+        <type>FOnVoiceChatDisconnectedDelegate</type>
+        <definition>FOnVoiceChatDisconnectedDelegate FAccelByteVoiceChat::OnVoiceChatDisconnectedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnVoiceChatDisconnectedDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatDisconnectedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="124" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1a5706bb0b83c1fcefccd80cf9bd8f6035" prot="private" static="no" mutable="no">
+        <type>FOnVoiceChatReconnectedDelegate</type>
+        <definition>FOnVoiceChatReconnectedDelegate FAccelByteVoiceChat::OnVoiceChatReconnectedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnVoiceChatReconnectedDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatReconnectedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="125" column="33" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1ac0b384bfe6b22190e5bfe0f9da2741b1" prot="private" static="no" mutable="no">
+        <type>FOnVoiceChatAvailableAudioDevicesChangedDelegate</type>
+        <definition>FOnVoiceChatAvailableAudioDevicesChangedDelegate FAccelByteVoiceChat::OnVoiceChatAvailableAudioDevicesChangedDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnVoiceChatAvailableAudioDevicesChangedDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatAvailableAudioDevicesChangedDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="127" column="50" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d0/d4b/class_f_accel_byte_voice_chat_1a95d8b25977211a199305e0a62a047d27" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FAccelByteVoiceChat::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FAccelByteVoiceChat::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="114" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a2311e2a557c3f284f49e861710b8f7b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAccelByteVoiceChat::~FAccelByteVoiceChat</definition>
+        <argsstring>() override</argsstring>
+        <name>~FAccelByteVoiceChat</name>
+        <qualifiedname>FAccelByteVoiceChat::~FAccelByteVoiceChat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="18" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a9a1c82edb4f3dcc74510379a2f6a9c8f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAccelByteVoiceChat::FAccelByteVoiceChat</definition>
+        <argsstring>()=delete</argsstring>
+        <name>FAccelByteVoiceChat</name>
+        <qualifiedname>FAccelByteVoiceChat::FAccelByteVoiceChat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="116" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a7c1065bd3149b1fecbf6eebc6ed5110d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1ae826ef3d90de6f5273e30b96c231209d" kindref="member">IVoiceChatUserPtr</ref></type>
+        <definition>IVoiceChatUserPtr FAccelByteVoiceChat::GetVoiceChatUser</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVoiceChatUser</name>
+        <qualifiedname>FAccelByteVoiceChat::GetVoiceChatUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="117" column="19" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a9cb68d70874f3f9a4b28048e618d6e56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::Initialize</definition>
+        <argsstring>(IVoiceChatPtr InVoiceChat)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FAccelByteVoiceChat::Initialize</qualifiedname>
+        <param>
+          <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a1abf39d4d50c6ef151e8ee7a01c2327b" kindref="member">IVoiceChatPtr</ref></type>
+          <declname>InVoiceChat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="20" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="27" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1afabece0cd1a8f5afeaa946556e378802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IVoiceChatUser *</type>
+        <definition>IVoiceChatUser * FAccelByteVoiceChat::GetVoiceChatUser</definition>
+        <argsstring>(const FUniqueNetId &amp;LocalUserId)</argsstring>
+        <name>GetVoiceChatUser</name>
+        <qualifiedname>FAccelByteVoiceChat::GetVoiceChatUser</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="21" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="38" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ab78443034f3863b9ee66ea2b30f9c862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::ReleaseUser</definition>
+        <argsstring>(const FUniqueNetId &amp;LocalUserId)</argsstring>
+        <name>ReleaseUser</name>
+        <qualifiedname>FAccelByteVoiceChat::ReleaseUser</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="22" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="71" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1acd8e67a8de2f4b6d1434514c63e1ca44" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FAccelByteVoiceChat::Initialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="25" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="89" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a4c8fb3055777c1827b9e655b5dc71cde" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::Initialize</definition>
+        <argsstring>(const FOnVoiceChatInitializeCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FAccelByteVoiceChat::Initialize</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatInitializeCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="26" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="99" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a7366f3008501f5986ec5bdb8032c20cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::Uninitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Uninitialize</name>
+        <qualifiedname>FAccelByteVoiceChat::Uninitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="27" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="108" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a0b94fc778aa53182d9ae88412c19cb42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::Uninitialize</definition>
+        <argsstring>(const FOnVoiceChatUninitializeCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>Uninitialize</name>
+        <qualifiedname>FAccelByteVoiceChat::Uninitialize</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatUninitializeCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="28" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="117" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1adc2fcd6321969ebf39887043e52f3670" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::IsInitialized</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsInitialized</name>
+        <qualifiedname>FAccelByteVoiceChat::IsInitialized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="29" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="126" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a58bf6bbd1e86513525e083dcb2354302" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::Connect</definition>
+        <argsstring>(const FOnVoiceChatConnectCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>Connect</name>
+        <qualifiedname>FAccelByteVoiceChat::Connect</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatConnectCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="30" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="135" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aaca0c613b75f4f2f6a423f6a4429fb93" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::Disconnect</definition>
+        <argsstring>(const FOnVoiceChatDisconnectCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>Disconnect</name>
+        <qualifiedname>FAccelByteVoiceChat::Disconnect</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatDisconnectCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="31" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="144" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a33d69ce0474e79bdc94d36264fbf94bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::IsConnecting</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsConnecting</name>
+        <qualifiedname>FAccelByteVoiceChat::IsConnecting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="32" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="153" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aa3041dd806d74277afa0c24b44e770ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::IsConnected</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsConnected</name>
+        <qualifiedname>FAccelByteVoiceChat::IsConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="33" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="162" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a1d3e91abe7d4c5c5ef1e0e6011f6cd81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>FOnVoiceChatConnectedDelegate &amp;</type>
+        <definition>virtual FOnVoiceChatConnectedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatConnected</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatConnected</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="34" column="39" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1af48018b837ec4a5984718cdc5ae63b89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>FOnVoiceChatDisconnectedDelegate &amp;</type>
+        <definition>virtual FOnVoiceChatDisconnectedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatDisconnected</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatDisconnected</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatDisconnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="35" column="42" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a43b43752c4c5689bfbc31717f6b8bd1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>FOnVoiceChatReconnectedDelegate &amp;</type>
+        <definition>virtual FOnVoiceChatReconnectedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatReconnected</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatReconnected</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatReconnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="36" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a2bd71d6d4d6d236eac1cbed5fc266e08" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IVoiceChatUser *</type>
+        <definition>IVoiceChatUser * FAccelByteVoiceChat::CreateUser</definition>
+        <argsstring>() override</argsstring>
+        <name>CreateUser</name>
+        <qualifiedname>FAccelByteVoiceChat::CreateUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="37" column="24" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="171" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ae25cedd1b32d6d9af3d0bf5cea80d5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::ReleaseUser</definition>
+        <argsstring>(IVoiceChatUser *VoiceChatUser) override</argsstring>
+        <name>ReleaseUser</name>
+        <qualifiedname>FAccelByteVoiceChat::ReleaseUser</qualifiedname>
+        <param>
+          <type>IVoiceChatUser *</type>
+          <declname>VoiceChatUser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="38" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="180" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ab34338bf7c626b28cc5e7e48eadeb80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetSetting</definition>
+        <argsstring>(const FString &amp;Name, const FString &amp;Value) override</argsstring>
+        <name>SetSetting</name>
+        <qualifiedname>FAccelByteVoiceChat::SetSetting</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="41" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a0b52d8d156e2fead956ec0518fd367dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FAccelByteVoiceChat::GetSetting</definition>
+        <argsstring>(const FString &amp;Name) override</argsstring>
+        <name>GetSetting</name>
+        <qualifiedname>FAccelByteVoiceChat::GetSetting</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="42" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aba38f475de7e0ba23fc5130b0992a74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetAudioInputVolume</definition>
+        <argsstring>(float Volume) override</argsstring>
+        <name>SetAudioInputVolume</name>
+        <qualifiedname>FAccelByteVoiceChat::SetAudioInputVolume</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>Volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="43" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a9b7336c237c4ae746104fde0a90a2943" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetAudioOutputVolume</definition>
+        <argsstring>(float Volume) override</argsstring>
+        <name>SetAudioOutputVolume</name>
+        <qualifiedname>FAccelByteVoiceChat::SetAudioOutputVolume</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>Volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="44" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1af61c80fc3565b0b42e6fc939d7bd2973" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float FAccelByteVoiceChat::GetAudioInputVolume</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAudioInputVolume</name>
+        <qualifiedname>FAccelByteVoiceChat::GetAudioInputVolume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="45" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aaa31590b4234b6ef878443618d0b8155" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float FAccelByteVoiceChat::GetAudioOutputVolume</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAudioOutputVolume</name>
+        <qualifiedname>FAccelByteVoiceChat::GetAudioOutputVolume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="46" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a9dfbda2eddf9dc22debbabf352ea53b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetAudioInputDeviceMuted</definition>
+        <argsstring>(bool bIsMuted) override</argsstring>
+        <name>SetAudioInputDeviceMuted</name>
+        <qualifiedname>FAccelByteVoiceChat::SetAudioInputDeviceMuted</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bIsMuted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="47" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a8428a491961470df407e3f9082516a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetAudioOutputDeviceMuted</definition>
+        <argsstring>(bool bIsMuted) override</argsstring>
+        <name>SetAudioOutputDeviceMuted</name>
+        <qualifiedname>FAccelByteVoiceChat::SetAudioOutputDeviceMuted</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bIsMuted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="48" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a544d88ad2f504763857c07d9752fc16f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::GetAudioInputDeviceMuted</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAudioInputDeviceMuted</name>
+        <qualifiedname>FAccelByteVoiceChat::GetAudioInputDeviceMuted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="49" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a2d6fcfcb4194af5102bc3eb53cf338c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::GetAudioOutputDeviceMuted</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAudioOutputDeviceMuted</name>
+        <qualifiedname>FAccelByteVoiceChat::GetAudioOutputDeviceMuted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="50" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ab06ca68d46131d5e2570f944bb93725e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TArray&lt; FVoiceChatDeviceInfo &gt;</type>
+        <definition>TArray&lt; FVoiceChatDeviceInfo &gt; FAccelByteVoiceChat::GetAvailableInputDeviceInfos</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAvailableInputDeviceInfos</name>
+        <qualifiedname>FAccelByteVoiceChat::GetAvailableInputDeviceInfos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="51" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aea28a1841b3f05d43ed8c372b854af51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TArray&lt; FVoiceChatDeviceInfo &gt;</type>
+        <definition>TArray&lt; FVoiceChatDeviceInfo &gt; FAccelByteVoiceChat::GetAvailableOutputDeviceInfos</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAvailableOutputDeviceInfos</name>
+        <qualifiedname>FAccelByteVoiceChat::GetAvailableOutputDeviceInfos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="52" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a4933b73cb4fb8e067ded294a1771c6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatAvailableAudioDevicesChangedDelegate &amp;</type>
+        <definition>FOnVoiceChatAvailableAudioDevicesChangedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatAvailableAudioDevicesChanged</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatAvailableAudioDevicesChanged</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatAvailableAudioDevicesChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="53" column="58" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a2940e1ac9d2cdd63979ea079ede4654e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetInputDeviceId</definition>
+        <argsstring>(const FString &amp;InputDeviceId) override</argsstring>
+        <name>SetInputDeviceId</name>
+        <qualifiedname>FAccelByteVoiceChat::SetInputDeviceId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InputDeviceId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="54" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a10032ace1f706d3dd11a9ef738ec6a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetOutputDeviceId</definition>
+        <argsstring>(const FString &amp;OutputDeviceId) override</argsstring>
+        <name>SetOutputDeviceId</name>
+        <qualifiedname>FAccelByteVoiceChat::SetOutputDeviceId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>OutputDeviceId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="55" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a91950d81414d34dfcc19c8afde19078a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FVoiceChatDeviceInfo</type>
+        <definition>FVoiceChatDeviceInfo FAccelByteVoiceChat::GetInputDeviceInfo</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetInputDeviceInfo</name>
+        <qualifiedname>FAccelByteVoiceChat::GetInputDeviceInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="56" column="30" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a2c85b9ddc777011806eb447a78149183" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FVoiceChatDeviceInfo</type>
+        <definition>FVoiceChatDeviceInfo FAccelByteVoiceChat::GetOutputDeviceInfo</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetOutputDeviceInfo</name>
+        <qualifiedname>FAccelByteVoiceChat::GetOutputDeviceInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="57" column="30" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="270" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a7ee39a29ba61d1ff17173cc8e86bbab5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FVoiceChatDeviceInfo</type>
+        <definition>FVoiceChatDeviceInfo FAccelByteVoiceChat::GetDefaultInputDeviceInfo</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetDefaultInputDeviceInfo</name>
+        <qualifiedname>FAccelByteVoiceChat::GetDefaultInputDeviceInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="58" column="30" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="275" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aa7283cd059a855e1704ecafb859e6784" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FVoiceChatDeviceInfo</type>
+        <definition>FVoiceChatDeviceInfo FAccelByteVoiceChat::GetDefaultOutputDeviceInfo</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetDefaultOutputDeviceInfo</name>
+        <qualifiedname>FAccelByteVoiceChat::GetDefaultOutputDeviceInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="59" column="30" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a64f1bb87b770c97d871d4d4ea656613b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::Login</definition>
+        <argsstring>(FPlatformUserId PlatformId, const FString &amp;PlayerName, const FString &amp;Credentials, const FOnVoiceChatLoginCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>Login</name>
+        <qualifiedname>FAccelByteVoiceChat::Login</qualifiedname>
+        <param>
+          <type>FPlatformUserId</type>
+          <declname>PlatformId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PlayerName</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Credentials</declname>
+        </param>
+        <param>
+          <type>const FOnVoiceChatLoginCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="60" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="285" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ab7584f69aeba7f5b1bb8a5d4fd6e6f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::Logout</definition>
+        <argsstring>(const FOnVoiceChatLogoutCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>Logout</name>
+        <qualifiedname>FAccelByteVoiceChat::Logout</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatLogoutCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="61" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="290" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a94031f22e42bd7919c3e20a31c8f7ea8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::IsLoggingIn</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsLoggingIn</name>
+        <qualifiedname>FAccelByteVoiceChat::IsLoggingIn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="62" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="295" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1abe8dfff5a458d8f9d5a908015d3cd511" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::IsLoggedIn</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsLoggedIn</name>
+        <qualifiedname>FAccelByteVoiceChat::IsLoggedIn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="63" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="300" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a2cffa785d854ec77efd6a467ce1d3240" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatLoggedInDelegate &amp;</type>
+        <definition>FOnVoiceChatLoggedInDelegate &amp; FAccelByteVoiceChat::OnVoiceChatLoggedIn</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatLoggedIn</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatLoggedIn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="64" column="38" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="305" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ac0706a9646f1a16d30d6089c4f81345f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatLoggedOutDelegate &amp;</type>
+        <definition>FOnVoiceChatLoggedOutDelegate &amp; FAccelByteVoiceChat::OnVoiceChatLoggedOut</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatLoggedOut</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatLoggedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="65" column="39" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a1b4db1756cfe957d0508c211dbbce670" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FAccelByteVoiceChat::GetLoggedInPlayerName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetLoggedInPlayerName</name>
+        <qualifiedname>FAccelByteVoiceChat::GetLoggedInPlayerName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="66" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="315" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a15d923a187bd8c4f6e3a8a9ac2c07f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::BlockPlayers</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;PlayerNames) override</argsstring>
+        <name>BlockPlayers</name>
+        <qualifiedname>FAccelByteVoiceChat::BlockPlayers</qualifiedname>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>PlayerNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="67" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a0e64dbd88e9faa4c176ff594ca184f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::UnblockPlayers</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;PlayerNames) override</argsstring>
+        <name>UnblockPlayers</name>
+        <qualifiedname>FAccelByteVoiceChat::UnblockPlayers</qualifiedname>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>PlayerNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="68" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="325" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a95e4155b32fd985c3fec4dc8542490a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::JoinChannel</definition>
+        <argsstring>(const FString &amp;ChannelName, const FString &amp;ChannelCredentials, EVoiceChatChannelType ChannelType, const FOnVoiceChatChannelJoinCompleteDelegate &amp;Delegate, TOptional&lt; FVoiceChatChannel3dProperties &gt; Channel3dProperties=TOptional&lt; FVoiceChatChannel3dProperties &gt;()) override</argsstring>
+        <name>JoinChannel</name>
+        <qualifiedname>FAccelByteVoiceChat::JoinChannel</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelCredentials</declname>
+        </param>
+        <param>
+          <type>EVoiceChatChannelType</type>
+          <declname>ChannelType</declname>
+        </param>
+        <param>
+          <type>const FOnVoiceChatChannelJoinCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <param>
+          <type>TOptional&lt; FVoiceChatChannel3dProperties &gt;</type>
+          <declname>Channel3dProperties</declname>
+          <defval>TOptional&lt; FVoiceChatChannel3dProperties &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="69" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="330" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ad2f4007ec7e54bbe48534022a4b58177" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::LeaveChannel</definition>
+        <argsstring>(const FString &amp;Channel, const FOnVoiceChatChannelLeaveCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>LeaveChannel</name>
+        <qualifiedname>FAccelByteVoiceChat::LeaveChannel</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Channel</declname>
+        </param>
+        <param>
+          <type>const FOnVoiceChatChannelLeaveCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="70" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="335" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ae2c58446f8a683d4a8c1552844c69635" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatChannelJoinedDelegate &amp;</type>
+        <definition>FOnVoiceChatChannelJoinedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatChannelJoined</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatChannelJoined</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatChannelJoined</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="71" column="43" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="340" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ad02f39f8c993874ea5956e9684ed3fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatChannelExitedDelegate &amp;</type>
+        <definition>FOnVoiceChatChannelExitedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatChannelExited</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatChannelExited</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatChannelExited</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="72" column="43" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="345" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a58ce583950d9ff80fbcccb14ab3b656f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatCallStatsUpdatedDelegate &amp;</type>
+        <definition>FOnVoiceChatCallStatsUpdatedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatCallStatsUpdated</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatCallStatsUpdated</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatCallStatsUpdated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="73" column="46" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a7100c2b04b322483e03146511ec1b4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::Set3DPosition</definition>
+        <argsstring>(const FString &amp;ChannelName, const FVector &amp;SpeakerPosition, const FVector &amp;ListenerPosition, const FVector &amp;ListenerForwardDirection, const FVector &amp;ListenerUpDirection) override</argsstring>
+        <name>Set3DPosition</name>
+        <qualifiedname>FAccelByteVoiceChat::Set3DPosition</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <param>
+          <type>const FVector &amp;</type>
+          <declname>SpeakerPosition</declname>
+        </param>
+        <param>
+          <type>const FVector &amp;</type>
+          <declname>ListenerPosition</declname>
+        </param>
+        <param>
+          <type>const FVector &amp;</type>
+          <declname>ListenerForwardDirection</declname>
+        </param>
+        <param>
+          <type>const FVector &amp;</type>
+          <declname>ListenerUpDirection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="74" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="355" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aace1246e366d555ad63a9d78c7a5bf9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt; FString &gt; FAccelByteVoiceChat::GetChannels</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetChannels</name>
+        <qualifiedname>FAccelByteVoiceChat::GetChannels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="75" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a229680bef6bc577ea9f802e78f8fdbc7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt; FString &gt; FAccelByteVoiceChat::GetPlayersInChannel</definition>
+        <argsstring>(const FString &amp;ChannelName) const override</argsstring>
+        <name>GetPlayersInChannel</name>
+        <qualifiedname>FAccelByteVoiceChat::GetPlayersInChannel</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="76" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a097a3e5b967c0bb93ab30aae93986fe0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>EVoiceChatChannelType</type>
+        <definition>EVoiceChatChannelType FAccelByteVoiceChat::GetChannelType</definition>
+        <argsstring>(const FString &amp;ChannelName) const override</argsstring>
+        <name>GetChannelType</name>
+        <qualifiedname>FAccelByteVoiceChat::GetChannelType</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="77" column="31" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="370" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a4f4d3b44c3923c4a071edcdbceaf813c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatPlayerAddedDelegate &amp;</type>
+        <definition>FOnVoiceChatPlayerAddedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatPlayerAdded</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatPlayerAdded</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatPlayerAdded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="78" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1afba21d0c862e5fdce8542f5cd365353e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatPlayerRemovedDelegate &amp;</type>
+        <definition>FOnVoiceChatPlayerRemovedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatPlayerRemoved</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatPlayerRemoved</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatPlayerRemoved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="79" column="43" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a49e9ce6bdf29f7b5c3140b6206c3d900" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::IsPlayerTalking</definition>
+        <argsstring>(const FString &amp;PlayerName) const override</argsstring>
+        <name>IsPlayerTalking</name>
+        <qualifiedname>FAccelByteVoiceChat::IsPlayerTalking</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PlayerName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="80" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="385" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a0f2fd1c9f8992fc0dc535cacc9053b7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatPlayerTalkingUpdatedDelegate &amp;</type>
+        <definition>FOnVoiceChatPlayerTalkingUpdatedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatPlayerTalkingUpdated</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatPlayerTalkingUpdated</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatPlayerTalkingUpdated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="81" column="50" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="390" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a07fdc9e31508b5549e24ee37042cee23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetPlayerMuted</definition>
+        <argsstring>(const FString &amp;PlayerName, bool bMuted) override</argsstring>
+        <name>SetPlayerMuted</name>
+        <qualifiedname>FAccelByteVoiceChat::SetPlayerMuted</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PlayerName</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bMuted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="82" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a0c87d699d961d2111bbc3d878bd84f74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAccelByteVoiceChat::IsPlayerMuted</definition>
+        <argsstring>(const FString &amp;PlayerName) const override</argsstring>
+        <name>IsPlayerMuted</name>
+        <qualifiedname>FAccelByteVoiceChat::IsPlayerMuted</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PlayerName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="83" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a92c6ce673eb0038243e2a1341917ea96" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatPlayerMuteUpdatedDelegate &amp;</type>
+        <definition>FOnVoiceChatPlayerMuteUpdatedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatPlayerMuteUpdated</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatPlayerMuteUpdated</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatPlayerMuteUpdated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="84" column="47" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1af63bf74df1239313c9e71053ad1f29e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::SetPlayerVolume</definition>
+        <argsstring>(const FString &amp;PlayerName, float Volume) override</argsstring>
+        <name>SetPlayerVolume</name>
+        <qualifiedname>FAccelByteVoiceChat::SetPlayerVolume</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PlayerName</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="85" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="410" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a1ecb6e188b7f07207bb1db60a179dbc1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float FAccelByteVoiceChat::GetPlayerVolume</definition>
+        <argsstring>(const FString &amp;PlayerName) const override</argsstring>
+        <name>GetPlayerVolume</name>
+        <qualifiedname>FAccelByteVoiceChat::GetPlayerVolume</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PlayerName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="86" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="415" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a2a9015872f75e085746a624966cdcfc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FOnVoiceChatPlayerVolumeUpdatedDelegate &amp;</type>
+        <definition>FOnVoiceChatPlayerVolumeUpdatedDelegate &amp; FAccelByteVoiceChat::OnVoiceChatPlayerVolumeUpdated</definition>
+        <argsstring>() override</argsstring>
+        <name>OnVoiceChatPlayerVolumeUpdated</name>
+        <qualifiedname>FAccelByteVoiceChat::OnVoiceChatPlayerVolumeUpdated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="87" column="49" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a899bf77f07ad7282bc6ec0693e81458d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::TransmitToAllChannels</definition>
+        <argsstring>() override</argsstring>
+        <name>TransmitToAllChannels</name>
+        <qualifiedname>FAccelByteVoiceChat::TransmitToAllChannels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="88" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="425" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a17c0eb2e58db01c7137e128fc5d529c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::TransmitToNoChannels</definition>
+        <argsstring>() override</argsstring>
+        <name>TransmitToNoChannels</name>
+        <qualifiedname>FAccelByteVoiceChat::TransmitToNoChannels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="89" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="430" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a95b0961181767e42cfdc545c481676fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::TransmitToSpecificChannel</definition>
+        <argsstring>(const FString &amp;ChannelName) override</argsstring>
+        <name>TransmitToSpecificChannel</name>
+        <qualifiedname>FAccelByteVoiceChat::TransmitToSpecificChannel</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="90" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="435" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1acecc6c933025c5f8204f4aa6b1c46409" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>EVoiceChatTransmitMode</type>
+        <definition>EVoiceChatTransmitMode FAccelByteVoiceChat::GetTransmitMode</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTransmitMode</name>
+        <qualifiedname>FAccelByteVoiceChat::GetTransmitMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="91" column="32" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="452" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ad7777cebedd0901762a94d1a9d43c0ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FAccelByteVoiceChat::GetTransmitChannel</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTransmitChannel</name>
+        <qualifiedname>FAccelByteVoiceChat::GetTransmitChannel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="92" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="457" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a707c178a3e4946f20072db74d2adcc1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteVoiceChat::StartRecording</definition>
+        <argsstring>(const FOnVoiceChatRecordSamplesAvailableDelegate::FDelegate &amp;Delegate) override</argsstring>
+        <name>StartRecording</name>
+        <qualifiedname>FAccelByteVoiceChat::StartRecording</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatRecordSamplesAvailableDelegate::FDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="93" column="25" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="479" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a611ff27b5f26940d64db1f350173b7ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::StopRecording</definition>
+        <argsstring>(FDelegateHandle Handle) override</argsstring>
+        <name>StopRecording</name>
+        <qualifiedname>FAccelByteVoiceChat::StopRecording</qualifiedname>
+        <param>
+          <type>FDelegateHandle</type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="94" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="484" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a97eb95fd74bf7d11022855ce40e04114" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteVoiceChat::RegisterOnVoiceChatAfterCaptureAudioReadDelegate</definition>
+        <argsstring>(const FOnVoiceChatAfterCaptureAudioReadDelegate::FDelegate &amp;Delegate) override</argsstring>
+        <name>RegisterOnVoiceChatAfterCaptureAudioReadDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::RegisterOnVoiceChatAfterCaptureAudioReadDelegate</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatAfterCaptureAudioReadDelegate::FDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="95" column="25" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="489" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1aac6f74d354d33abccfbaa7af8b433475" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::UnregisterOnVoiceChatAfterCaptureAudioReadDelegate</definition>
+        <argsstring>(FDelegateHandle Handle) override</argsstring>
+        <name>UnregisterOnVoiceChatAfterCaptureAudioReadDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::UnregisterOnVoiceChatAfterCaptureAudioReadDelegate</qualifiedname>
+        <param>
+          <type>FDelegateHandle</type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="96" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="494" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a9be53b1f37d2d91ffd614efd4e230218" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteVoiceChat::RegisterOnVoiceChatBeforeCaptureAudioSentDelegate</definition>
+        <argsstring>(const FOnVoiceChatBeforeCaptureAudioSentDelegate::FDelegate &amp;Delegate) override</argsstring>
+        <name>RegisterOnVoiceChatBeforeCaptureAudioSentDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::RegisterOnVoiceChatBeforeCaptureAudioSentDelegate</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatBeforeCaptureAudioSentDelegate::FDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="97" column="25" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="499" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a4af1f24fb95aa5fcec308f95bf8f9fd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::UnregisterOnVoiceChatBeforeCaptureAudioSentDelegate</definition>
+        <argsstring>(FDelegateHandle Handle) override</argsstring>
+        <name>UnregisterOnVoiceChatBeforeCaptureAudioSentDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::UnregisterOnVoiceChatBeforeCaptureAudioSentDelegate</qualifiedname>
+        <param>
+          <type>FDelegateHandle</type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="98" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="504" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a0600398f626c41f722f4b6af5502b28a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FAccelByteVoiceChat::RegisterOnVoiceChatBeforeRecvAudioRenderedDelegate</definition>
+        <argsstring>(const FOnVoiceChatBeforeRecvAudioRenderedDelegate::FDelegate &amp;Delegate) override</argsstring>
+        <name>RegisterOnVoiceChatBeforeRecvAudioRenderedDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::RegisterOnVoiceChatBeforeRecvAudioRenderedDelegate</qualifiedname>
+        <param>
+          <type>const FOnVoiceChatBeforeRecvAudioRenderedDelegate::FDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="99" column="25" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="509" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a20184e9fc1bfca14114fe6192c2af9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAccelByteVoiceChat::UnregisterOnVoiceChatBeforeRecvAudioRenderedDelegate</definition>
+        <argsstring>(FDelegateHandle Handle) override</argsstring>
+        <name>UnregisterOnVoiceChatBeforeRecvAudioRenderedDelegate</name>
+        <qualifiedname>FAccelByteVoiceChat::UnregisterOnVoiceChatBeforeRecvAudioRenderedDelegate</qualifiedname>
+        <param>
+          <type>FDelegateHandle</type>
+          <declname>Handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="100" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="514" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1a76cf2f4cbce10d4a96ef88f204f8fee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FAccelByteVoiceChat::InsecureGetLoginToken</definition>
+        <argsstring>(const FString &amp;PlayerName) override</argsstring>
+        <name>InsecureGetLoginToken</name>
+        <qualifiedname>FAccelByteVoiceChat::InsecureGetLoginToken</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PlayerName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="101" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="519" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d4b/class_f_accel_byte_voice_chat_1ae9652da5deb7850e3936221aab6f6990" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FAccelByteVoiceChat::InsecureGetJoinToken</definition>
+        <argsstring>(const FString &amp;ChannelName, EVoiceChatChannelType ChannelType, TOptional&lt; FVoiceChatChannel3dProperties &gt; Channel3dProperties=TOptional&lt; FVoiceChatChannel3dProperties &gt;()) override</argsstring>
+        <name>InsecureGetJoinToken</name>
+        <qualifiedname>FAccelByteVoiceChat::InsecureGetJoinToken</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ChannelName</declname>
+        </param>
+        <param>
+          <type>EVoiceChatChannelType</type>
+          <declname>ChannelType</declname>
+        </param>
+        <param>
+          <type>TOptional&lt; FVoiceChatChannel3dProperties &gt;</type>
+          <declname>Channel3dProperties</declname>
+          <defval>TOptional&lt; FVoiceChatChannel3dProperties &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="102" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/VoiceChat/AccelByteVoiceChat.cpp" bodystart="524" bodyend="527"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FAccelByteVoiceChat</label>
+        <link refid="d0/d4b/class_f_accel_byte_voice_chat"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IVoiceChat</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FAccelByteVoiceChat, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="1">
+        <label>FAccelByteVoiceChat</label>
+        <link refid="d0/d4b/class_f_accel_byte_voice_chat"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="3">
+        <label>IVoiceChat</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FAccelByteVoiceChat, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" line="12" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/VoiceChat/AccelByteVoiceChat.h" bodystart="15" bodyend="128"/>
+    <listofallmembers>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a3b2500822026dc4d33e69a4211f27a65" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>__pad0__</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a95d8b25977211a199305e0a62a047d27" prot="protected" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a15d923a187bd8c4f6e3a8a9ac2c07f8a" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>BlockPlayers</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a58bf6bbd1e86513525e083dcb2354302" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Connect</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a2bd71d6d4d6d236eac1cbed5fc266e08" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>CreateUser</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aaca0c613b75f4f2f6a423f6a4429fb93" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Disconnect</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a9a1c82edb4f3dcc74510379a2f6a9c8f" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>FAccelByteVoiceChat</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a544d88ad2f504763857c07d9752fc16f" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetAudioInputDeviceMuted</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1af61c80fc3565b0b42e6fc939d7bd2973" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetAudioInputVolume</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a2d6fcfcb4194af5102bc3eb53cf338c8" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetAudioOutputDeviceMuted</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aaa31590b4234b6ef878443618d0b8155" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetAudioOutputVolume</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ab06ca68d46131d5e2570f944bb93725e" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetAvailableInputDeviceInfos</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aea28a1841b3f05d43ed8c372b854af51" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetAvailableOutputDeviceInfos</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aace1246e366d555ad63a9d78c7a5bf9c" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetChannels</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a097a3e5b967c0bb93ab30aae93986fe0" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetChannelType</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a7ee39a29ba61d1ff17173cc8e86bbab5" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetDefaultInputDeviceInfo</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aa7283cd059a855e1704ecafb859e6784" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetDefaultOutputDeviceInfo</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a91950d81414d34dfcc19c8afde19078a" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetInputDeviceInfo</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a1b4db1756cfe957d0508c211dbbce670" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetLoggedInPlayerName</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a2c85b9ddc777011806eb447a78149183" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetOutputDeviceInfo</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a229680bef6bc577ea9f802e78f8fdbc7" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetPlayersInChannel</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a1ecb6e188b7f07207bb1db60a179dbc1" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetPlayerVolume</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a0b52d8d156e2fead956ec0518fd367dc" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetSetting</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ad7777cebedd0901762a94d1a9d43c0ea" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetTransmitChannel</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1acecc6c933025c5f8204f4aa6b1c46409" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>GetTransmitMode</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1afabece0cd1a8f5afeaa946556e378802" prot="public" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>GetVoiceChatUser</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a7c1065bd3149b1fecbf6eebc6ed5110d" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>GetVoiceChatUser</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a9cb68d70874f3f9a4b28048e618d6e56" prot="public" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>Initialize</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1acd8e67a8de2f4b6d1434514c63e1ca44" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Initialize</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a4c8fb3055777c1827b9e655b5dc71cde" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Initialize</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ae9652da5deb7850e3936221aab6f6990" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>InsecureGetJoinToken</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a76cf2f4cbce10d4a96ef88f204f8fee3" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>InsecureGetLoginToken</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aa3041dd806d74277afa0c24b44e770ef" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>IsConnected</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a33d69ce0474e79bdc94d36264fbf94bb" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>IsConnecting</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1adc2fcd6321969ebf39887043e52f3670" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>IsInitialized</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1abe8dfff5a458d8f9d5a908015d3cd511" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>IsLoggedIn</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a94031f22e42bd7919c3e20a31c8f7ea8" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>IsLoggingIn</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a0c87d699d961d2111bbc3d878bd84f74" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>IsPlayerMuted</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a49e9ce6bdf29f7b5c3140b6206c3d900" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>IsPlayerTalking</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a95e4155b32fd985c3fec4dc8542490a0" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>JoinChannel</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ad2f4007ec7e54bbe48534022a4b58177" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>LeaveChannel</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aadf37a8540b779ce628cf0db3ddf2a4c" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>LocalVoiceChatUsers</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a64f1bb87b770c97d871d4d4ea656613b" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Login</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ab7584f69aeba7f5b1bb8a5d4fd6e6f29" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Logout</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a4933b73cb4fb8e067ded294a1771c6f9" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatAvailableAudioDevicesChanged</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ac0b384bfe6b22190e5bfe0f9da2741b1" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatAvailableAudioDevicesChangedDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a58ce583950d9ff80fbcccb14ab3b656f" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatCallStatsUpdated</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ad02f39f8c993874ea5956e9684ed3fa5" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatChannelExited</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ae2c58446f8a683d4a8c1552844c69635" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatChannelJoined</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a1d3e91abe7d4c5c5ef1e0e6011f6cd81" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatConnected</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a9b476636ae32d82ce097194d39a3b76b" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatConnectedDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1af48018b837ec4a5984718cdc5ae63b89" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatDisconnected</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a241d6d62fa850e982eea1847377b66f5" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatDisconnectedDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a2cffa785d854ec77efd6a467ce1d3240" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatLoggedIn</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ac0706a9646f1a16d30d6089c4f81345f" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatLoggedOut</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a4f4d3b44c3923c4a071edcdbceaf813c" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatPlayerAdded</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a92c6ce673eb0038243e2a1341917ea96" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatPlayerMuteUpdated</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1afba21d0c862e5fdce8542f5cd365353e" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatPlayerRemoved</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a0f2fd1c9f8992fc0dc535cacc9053b7f" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatPlayerTalkingUpdated</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a2a9015872f75e085746a624966cdcfc4" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatPlayerVolumeUpdated</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a43b43752c4c5689bfbc31717f6b8bd1f" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatReconnected</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a5706bb0b83c1fcefccd80cf9bd8f6035" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>OnVoiceChatReconnectedDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a97eb95fd74bf7d11022855ce40e04114" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>RegisterOnVoiceChatAfterCaptureAudioReadDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a9be53b1f37d2d91ffd614efd4e230218" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>RegisterOnVoiceChatBeforeCaptureAudioSentDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a0600398f626c41f722f4b6af5502b28a" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>RegisterOnVoiceChatBeforeRecvAudioRenderedDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ab78443034f3863b9ee66ea2b30f9c862" prot="public" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>ReleaseUser</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ae25cedd1b32d6d9af3d0bf5cea80d5da" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>ReleaseUser</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a7100c2b04b322483e03146511ec1b4fe" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Set3DPosition</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a9dfbda2eddf9dc22debbabf352ea53b1" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetAudioInputDeviceMuted</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aba38f475de7e0ba23fc5130b0992a74b" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetAudioInputVolume</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a8428a491961470df407e3f9082516a88" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetAudioOutputDeviceMuted</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a9b7336c237c4ae746104fde0a90a2943" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetAudioOutputVolume</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a2940e1ac9d2cdd63979ea079ede4654e" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetInputDeviceId</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a10032ace1f706d3dd11a9ef738ec6a6f" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetOutputDeviceId</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a07fdc9e31508b5549e24ee37042cee23" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetPlayerMuted</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1af63bf74df1239313c9e71053ad1f29e7" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetPlayerVolume</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1ab34338bf7c626b28cc5e7e48eadeb80e" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>SetSetting</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a707c178a3e4946f20072db74d2adcc1d" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>StartRecording</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a611ff27b5f26940d64db1f350173b7ba" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>StopRecording</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a899bf77f07ad7282bc6ec0693e81458d" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>TransmitToAllChannels</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a17c0eb2e58db01c7137e128fc5d529c1" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>TransmitToNoChannels</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a95b0961181767e42cfdc545c481676fa" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>TransmitToSpecificChannel</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a0e64dbd88e9faa4c176ff594ca184f8e" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>UnblockPlayers</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a7366f3008501f5986ec5bdb8032c20cc" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Uninitialize</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a0b94fc778aa53182d9ae88412c19cb42" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>Uninitialize</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1aac6f74d354d33abccfbaa7af8b433475" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>UnregisterOnVoiceChatAfterCaptureAudioReadDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a4af1f24fb95aa5fcec308f95bf8f9fd4" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>UnregisterOnVoiceChatBeforeCaptureAudioSentDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a20184e9fc1bfca14114fe6192c2af9cd" prot="public" virt="virtual"><scope>FAccelByteVoiceChat</scope><name>UnregisterOnVoiceChatBeforeRecvAudioRenderedDelegate</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a7627999ffa88f9dd9d208ee3f5c30a48" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>VoiceChatPtr</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a9609bfcf96a5a3fe8bf1a83016d6c94a" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>VoiceChatUserPtr</name></member>
+      <member refid="d0/d4b/class_f_accel_byte_voice_chat_1a2311e2a557c3f284f49e861710b8f7b4" prot="private" virt="non-virtual"><scope>FAccelByteVoiceChat</scope><name>~FAccelByteVoiceChat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

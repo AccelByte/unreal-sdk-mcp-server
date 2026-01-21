@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d7/df6/class_f_online_party_join_info_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlinePartyJoinInfoAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlinePartyJoinInfo</basecompoundref>
+    <includes refid="d8/d73/_online_party_interface_accel_byte_8h" local="no">OnlinePartyInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/df6/class_f_online_party_join_info_accel_byte_1acdf8bea7feb1c2382820302ac5c23d80" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; const <ref refid="d9/d51/class_f_online_party_id_accel_byte" kindref="compound">FOnlinePartyIdAccelByte</ref> &gt;</type>
+        <definition>TSharedRef&lt;const FOnlinePartyIdAccelByte&gt; FOnlinePartyJoinInfoAccelByte::PartyId</definition>
+        <argsstring></argsstring>
+        <name>PartyId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::PartyId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of the party that this join info is representing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="277" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df6/class_f_online_party_join_info_accel_byte_1ac60bf1bf931f8ecb9b21c5bcaa270116" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;</type>
+        <definition>TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt; FOnlinePartyJoinInfoAccelByte::SourceUserId</definition>
+        <argsstring></argsstring>
+        <name>SourceUserId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::SourceUserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of the user that sent the invite to us </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="280" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df6/class_f_online_party_join_info_accel_byte_1a959e25625ac53a48f422044d3900f09b" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlinePartyJoinInfoAccelByte::SourceUserDisplayName</definition>
+        <argsstring></argsstring>
+        <name>SourceUserDisplayName</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::SourceUserDisplayName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Display name of the user that sent the invite to us </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="283" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df6/class_f_online_party_join_info_accel_byte_1a1d274b60bbf4bbbafb3246d1cc5d373b" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlinePartyJoinInfoAccelByte::SourcePlatform</definition>
+        <argsstring></argsstring>
+        <name>SourcePlatform</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::SourcePlatform</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Platform that this party invite originated from, not supported </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="286" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df6/class_f_online_party_join_info_accel_byte_1aa87382c7aa708b1dad0e95f545869a63" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlinePartyJoinInfoAccelByte::PlatformData</definition>
+        <argsstring></argsstring>
+        <name>PlatformData</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::PlatformData</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Platform data for this party invite, not supported </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="289" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df6/class_f_online_party_join_info_accel_byte_1ae9a351513a82397ef8a11f15ac102868" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlinePartyJoinInfoAccelByte::AppId</definition>
+        <argsstring></argsstring>
+        <name>AppId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::AppId</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>App ID that the invite originated from, not supported </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="292" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df6/class_f_online_party_join_info_accel_byte_1a65fac0e9d3cef4605c3bca5618f13a0a" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlinePartyJoinInfoAccelByte::BuildId</definition>
+        <argsstring></argsstring>
+        <name>BuildId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::BuildId</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build ID that the invite originated from, not supported </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="295" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a70bbe683e1d97d5b80eedbf2f6f02623" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlinePartyJoinInfoAccelByte::FOnlinePartyJoinInfoAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlinePartyJoinInfoAccelByte</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::FOnlinePartyJoinInfoAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor for party join info, gives invalid for all members </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="239" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a27b2ff77d1fab70d07bb95125ae10b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlinePartyJoinInfoAccelByte::FOnlinePartyJoinInfoAccelByte</definition>
+        <argsstring>(const TSharedRef&lt; const FOnlinePartyIdAccelByte &gt; &amp;InPartyId, const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;InSourceUserId, const FString &amp;InSourceUserDisplayName)</argsstring>
+        <name>FOnlinePartyJoinInfoAccelByte</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::FOnlinePartyJoinInfoAccelByte</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="d9/d51/class_f_online_party_id_accel_byte" kindref="compound">FOnlinePartyIdAccelByte</ref> &gt; &amp;</type>
+          <declname>InPartyId</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>InSourceUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InSourceUserDisplayName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for building a new <ref refid="d7/df6/class_f_online_party_join_info_accel_byte" kindref="compound">FOnlinePartyJoinInfoAccelByte</ref> instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="247" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="583" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a94b86da9722aca94f155894f564b8473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlinePartyJoinInfoAccelByte::FOnlinePartyJoinInfoAccelByte</definition>
+        <argsstring>(const IOnlinePartyJoinInfo &amp;BaseInfo)</argsstring>
+        <name>FOnlinePartyJoinInfoAccelByte</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::FOnlinePartyJoinInfoAccelByte</qualifiedname>
+        <param>
+          <type>const IOnlinePartyJoinInfo &amp;</type>
+          <declname>BaseInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for building a <ref refid="d7/df6/class_f_online_party_join_info_accel_byte" kindref="compound">FOnlinePartyJoinInfoAccelByte</ref> from a IOnlinePartyJoinInfo reference </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="250" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="570" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1ada104f8b67bfa00ee9e40fda694a0932" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::IsValid</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsValid</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::IsValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="253" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="590" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a462ec8a47c1c876f99993ac2b51d1ca1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TSharedRef&lt; const FOnlinePartyId &gt;</type>
+        <definition>TSharedRef&lt; const FOnlinePartyId &gt; FOnlinePartyJoinInfoAccelByte::GetPartyId</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetPartyId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetPartyId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="254" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="596" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a5087fa15a5ebd1edd320718deb8f39e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FOnlinePartyTypeId</type>
+        <definition>FOnlinePartyTypeId FOnlinePartyJoinInfoAccelByte::GetPartyTypeId</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetPartyTypeId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetPartyTypeId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="255" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="601" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a9b891720069bb3b61aa78e444fc720d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TSharedRef&lt; const FUniqueNetId &gt;</type>
+        <definition>TSharedRef&lt; const FUniqueNetId &gt; FOnlinePartyJoinInfoAccelByte::GetSourceUserId</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetSourceUserId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetSourceUserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="256" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="608" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1aabdad5e185731d41299dd752126792cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const FString &amp;</type>
+        <definition>const FString &amp; FOnlinePartyJoinInfoAccelByte::GetSourceDisplayName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetSourceDisplayName</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetSourceDisplayName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="257" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="613" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a3998782eb89f0f4d2c675fb044f0b774" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const FString &amp;</type>
+        <definition>const FString &amp; FOnlinePartyJoinInfoAccelByte::GetSourcePlatform</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetSourcePlatform</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetSourcePlatform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="258" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="618" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a1378702197094535c9ffadb402732238" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const FString &amp;</type>
+        <definition>const FString &amp; FOnlinePartyJoinInfoAccelByte::GetPlatformData</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetPlatformData</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetPlatformData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="260" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="625" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a342c7f65156f53c3e6f5000f1a6ef7c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::HasKey</definition>
+        <argsstring>() const override</argsstring>
+        <name>HasKey</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::HasKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="262" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="632" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1afdab89eb27a720a60a9f6e7073468b7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::HasPassword</definition>
+        <argsstring>() const override</argsstring>
+        <name>HasPassword</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::HasPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="263" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="638" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a8a0b9f2504df9c705b50f40116837bab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::IsAcceptingMembers</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsAcceptingMembers</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::IsAcceptingMembers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="264" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="644" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a004cdf1a80df60881a39388c1c9bef09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::IsPartyOfOne</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsPartyOfOne</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::IsPartyOfOne</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="265" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="651" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1aa361071a5855325e8689963018c1f8c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlinePartyJoinInfoAccelByte::GetNotAcceptingReason</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetNotAcceptingReason</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetNotAcceptingReason</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="266" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="657" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a1fd541ec07f5c9839d0ca204591aa70a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const FString &amp;</type>
+        <definition>const FString &amp; FOnlinePartyJoinInfoAccelByte::GetAppId</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAppId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetAppId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="267" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="663" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1ae373ad4de6c916c4cc5387d09906b463" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const FString &amp;</type>
+        <definition>const FString &amp; FOnlinePartyJoinInfoAccelByte::GetBuildId</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetBuildId</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::GetBuildId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="268" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="669" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a8943a77df11335285fb34ef7cdf10446" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::CanJoin</definition>
+        <argsstring>() const override</argsstring>
+        <name>CanJoin</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::CanJoin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="269" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="675" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1aa1e0f0887c93f90f323b23f4c8472fca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::CanJoinWithPassword</definition>
+        <argsstring>() const override</argsstring>
+        <name>CanJoinWithPassword</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::CanJoinWithPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="270" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="681" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/class_f_online_party_join_info_accel_byte_1a5f7918d909df54d5bac035d360997681" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePartyJoinInfoAccelByte::CanRequestAnInvite</definition>
+        <argsstring>() const override</argsstring>
+        <name>CanRequestAnInvite</name>
+        <qualifiedname>FOnlinePartyJoinInfoAccelByte::CanRequestAnInvite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="271" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePartyInterfaceAccelByte.cpp" bodystart="687" bodyend="691"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlinePartyJoinInfoAccelByte</label>
+        <link refid="d7/df6/class_f_online_party_join_info_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlinePartyJoinInfo</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FOnlinePartyJoinInfoAccelByte</label>
+        <link refid="d7/df6/class_f_online_party_join_info_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlinePartyJoinInfo</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" line="235" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePartyInterfaceAccelByte.h" bodystart="236" bodyend="297"/>
+    <listofallmembers>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1ae9a351513a82397ef8a11f15ac102868" prot="private" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>AppId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a65fac0e9d3cef4605c3bca5618f13a0a" prot="private" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>BuildId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a8943a77df11335285fb34ef7cdf10446" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>CanJoin</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1aa1e0f0887c93f90f323b23f4c8472fca" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>CanJoinWithPassword</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a5f7918d909df54d5bac035d360997681" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>CanRequestAnInvite</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a70bbe683e1d97d5b80eedbf2f6f02623" prot="public" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>FOnlinePartyJoinInfoAccelByte</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a27b2ff77d1fab70d07bb95125ae10b9c" prot="public" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>FOnlinePartyJoinInfoAccelByte</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a94b86da9722aca94f155894f564b8473" prot="public" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>FOnlinePartyJoinInfoAccelByte</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a1fd541ec07f5c9839d0ca204591aa70a" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetAppId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1ae373ad4de6c916c4cc5387d09906b463" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetBuildId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1aa361071a5855325e8689963018c1f8c0" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetNotAcceptingReason</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a462ec8a47c1c876f99993ac2b51d1ca1" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetPartyId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a5087fa15a5ebd1edd320718deb8f39e9" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetPartyTypeId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a1378702197094535c9ffadb402732238" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetPlatformData</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1aabdad5e185731d41299dd752126792cc" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetSourceDisplayName</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a3998782eb89f0f4d2c675fb044f0b774" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetSourcePlatform</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a9b891720069bb3b61aa78e444fc720d8" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>GetSourceUserId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a342c7f65156f53c3e6f5000f1a6ef7c4" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>HasKey</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1afdab89eb27a720a60a9f6e7073468b7d" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>HasPassword</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a8a0b9f2504df9c705b50f40116837bab" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>IsAcceptingMembers</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a004cdf1a80df60881a39388c1c9bef09" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>IsPartyOfOne</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1ada104f8b67bfa00ee9e40fda694a0932" prot="public" virt="virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>IsValid</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1acdf8bea7feb1c2382820302ac5c23d80" prot="private" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>PartyId</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1aa87382c7aa708b1dad0e95f545869a63" prot="private" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>PlatformData</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a1d274b60bbf4bbbafb3246d1cc5d373b" prot="private" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>SourcePlatform</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1a959e25625ac53a48f422044d3900f09b" prot="private" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>SourceUserDisplayName</name></member>
+      <member refid="d7/df6/class_f_online_party_join_info_accel_byte_1ac60bf1bf931f8ecb9b21c5bcaa270116" prot="private" virt="non-virtual"><scope>FOnlinePartyJoinInfoAccelByte</scope><name>SourceUserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

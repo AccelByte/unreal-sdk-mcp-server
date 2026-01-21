@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d3/dd0/class_f_online_wallet_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineWalletAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineWalletAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="df/dea/_online_wallet_interface_accel_byte_8h" local="no">OnlineWalletInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/dd0/class_f_online_wallet_accel_byte_1ab2de73881e9dd42f0f77c61e0332d9c3" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineWalletAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineWalletAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineWalletAccelByte(FOnlineSubsystemAccelByte* InSubsystem) : AccelByteSubsystem(InSubsystem) {}</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="29" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd0/class_f_online_wallet_accel_byte_1ad1dd7551ff4a44f7822de8a24fc1f2ed" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, TSharedRef&lt; FAccelByteModelsCurrencyList &gt; &gt;</type>
+        <definition>TMap&lt;FString, TSharedRef&lt;FAccelByteModelsCurrencyList&gt; &gt; FOnlineWalletAccelByte::CurrencyCodeToCurrencyListMap</definition>
+        <argsstring></argsstring>
+        <name>CurrencyCodeToCurrencyListMap</name>
+        <qualifiedname>FOnlineWalletAccelByte::CurrencyCodeToCurrencyListMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="36" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd0/class_f_online_wallet_accel_byte_1a0f5b855facdf45b32fe8caea52f431c0" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineWalletAccelByte::CurrencyListLock</definition>
+        <argsstring></argsstring>
+        <name>CurrencyListLock</name>
+        <qualifiedname>FOnlineWalletAccelByte::CurrencyListLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical sections for thread safe operation of CurrencyCodeToCurrencyListMap </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="38" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd0/class_f_online_wallet_accel_byte_1aaab4ef0375a212deb57ad5f9ac1c896e" prot="private" static="no" mutable="no">
+        <type>TUniqueNetIdMap&lt; TMap&lt; FString, TSharedRef&lt; FAccelByteModelsWalletInfo &gt; &gt; &gt;</type>
+        <definition>TUniqueNetIdMap&lt;TMap&lt;FString, TSharedRef&lt;FAccelByteModelsWalletInfo&gt; &gt; &gt; FOnlineWalletAccelByte::UserToWalletInfoMap</definition>
+        <argsstring></argsstring>
+        <name>UserToWalletInfoMap</name>
+        <qualifiedname>FOnlineWalletAccelByte::UserToWalletInfoMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="41" column="18" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd0/class_f_online_wallet_accel_byte_1af2567362cf7b52ef519a9f8e4bd66d97" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineWalletAccelByte::WalletInfoListLock</definition>
+        <argsstring></argsstring>
+        <name>WalletInfoListLock</name>
+        <qualifiedname>FOnlineWalletAccelByte::WalletInfoListLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical sections for thread safe operation of UserToWalletInfoMap </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="43" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineWalletAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineWalletAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="95" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1ae594be812af289ec0ed3f5d4f5061f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineWalletAccelByte::~FOnlineWalletAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>~FOnlineWalletAccelByte</name>
+        <qualifiedname>FOnlineWalletAccelByte::~FOnlineWalletAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="46" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a58245ea3ad722b4e07cc63a3453e4563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineWalletAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnGetCurrencyListCompleted, bool, const TArray&lt; FAccelByteModelsCurrencyList &gt; &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineWalletAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnGetCurrencyListCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsCurrencyList &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1acd4a627651c11f6abac0903d221784fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineWalletAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnGetWalletInfoCompleted, bool, const FAccelByteModelsWalletInfo &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineWalletAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnGetWalletInfoCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FAccelByteModelsWalletInfo &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1ae558f48df57d638a442d7f59c95ec5b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineWalletAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnGetWalletTransactionsCompleted, bool, const TArray&lt; FAccelByteModelsWalletTransactionInfo &gt; &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineWalletAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnGetWalletTransactionsCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsWalletTransactionInfo &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a128447354f045e6120491c9f36554c32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::GetCurrencyList</definition>
+        <argsstring>(int32 LocalUserNum, bool bAlwaysRequestToService=false)</argsstring>
+        <name>GetCurrencyList</name>
+        <qualifiedname>FOnlineWalletAccelByte::GetCurrencyList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bAlwaysRequestToService</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="72" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="40" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a08f50a10a2d7fee13cdfcdd4c632a080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::GetCurrencyFromCache</definition>
+        <argsstring>(const FString &amp;CurrencyCode, FAccelByteModelsCurrencyList &amp;OutCurrency)</argsstring>
+        <name>GetCurrencyFromCache</name>
+        <qualifiedname>FOnlineWalletAccelByte::GetCurrencyFromCache</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>CurrencyCode</declname>
+        </param>
+        <param>
+          <type>FAccelByteModelsCurrencyList &amp;</type>
+          <declname>OutCurrency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="74" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="77" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1ab8d9c7b36b7e9c0e82a76c493946676c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::GetAllCurrencyFromCache</definition>
+        <argsstring>(TArray&lt; FAccelByteModelsCurrencyList &gt; &amp;OutCurrencyList)</argsstring>
+        <name>GetAllCurrencyFromCache</name>
+        <qualifiedname>FOnlineWalletAccelByte::GetAllCurrencyFromCache</qualifiedname>
+        <param>
+          <type>TArray&lt; FAccelByteModelsCurrencyList &gt; &amp;</type>
+          <declname>OutCurrencyList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="76" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="97" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a152e3b07ffdacfb782ef9f43afd820a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineWalletAccelByte::AddCurrencyToList</definition>
+        <argsstring>(const FString &amp;CurrencyCode, const TSharedRef&lt; FAccelByteModelsCurrencyList &gt; &amp;InCurrencyList)</argsstring>
+        <name>AddCurrencyToList</name>
+        <qualifiedname>FOnlineWalletAccelByte::AddCurrencyToList</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>CurrencyCode</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; FAccelByteModelsCurrencyList &gt; &amp;</type>
+          <declname>InCurrencyList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="78" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1af848e9c76138a8f636687f7e2519ea20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::GetWalletInfoByCurrencyCode</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;CurrencyCode, bool bAlwaysRequestToService=false)</argsstring>
+        <name>GetWalletInfoByCurrencyCode</name>
+        <qualifiedname>FOnlineWalletAccelByte::GetWalletInfoByCurrencyCode</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>CurrencyCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bAlwaysRequestToService</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="80" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="120" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a08099bad4d3d9b8a3c2d039258553373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::GetWalletInfoFromCache</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;CurrencyCode, FAccelByteModelsWalletInfo &amp;OutWalletInfo)</argsstring>
+        <name>GetWalletInfoFromCache</name>
+        <qualifiedname>FOnlineWalletAccelByte::GetWalletInfoFromCache</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>CurrencyCode</declname>
+        </param>
+        <param>
+          <type>FAccelByteModelsWalletInfo &amp;</type>
+          <declname>OutWalletInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="82" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="157" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1adca9fd43f32938373aed02e5e0af0d89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineWalletAccelByte::AddWalletInfoToList</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;CurrencyCode, const TSharedRef&lt; FAccelByteModelsWalletInfo &gt; &amp;InWalletInfo)</argsstring>
+        <name>AddWalletInfoToList</name>
+        <qualifiedname>FOnlineWalletAccelByte::AddWalletInfoToList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>CurrencyCode</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; FAccelByteModelsWalletInfo &gt; &amp;</type>
+          <declname>InWalletInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="84" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="178" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a6b985b859f3be0f4132ff0044688b188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::ListWalletTransactionsByCurrencyCode</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;CurrencyCode, int32 Offset=0, int32 Limit=20)</argsstring>
+        <name>ListWalletTransactionsByCurrencyCode</name>
+        <qualifiedname>FOnlineWalletAccelByte::ListWalletTransactionsByCurrencyCode</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>CurrencyCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="86" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="198" bodyend="233"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a1a8c698d0137d576411a8618bc822e24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineWalletAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineWalletAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d3/dd0/class_f_online_wallet_accel_byte" kindref="compound">FOnlineWalletAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="55" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="15" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a989ebd701752feed9b92827c4cdf897e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineWalletAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineWalletAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineWalletAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d3/dd0/class_f_online_wallet_accel_byte" kindref="compound">FOnlineWalletAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="64" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp" bodystart="27" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d3/dd0/class_f_online_wallet_accel_byte_1a63b4f5133982cbe8bbbb6e9d37b9b5f7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineWalletAccelByte::FOnlineWalletAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineWalletAccelByte</name>
+        <qualifiedname>FOnlineWalletAccelByte::FOnlineWalletAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="90" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="90" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of Wallet service from <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineWalletAccelByte</label>
+        <link refid="d3/dd0/class_f_online_wallet_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineWalletAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="1">
+        <label>FOnlineWalletAccelByte</label>
+        <link refid="d3/dd0/class_f_online_wallet_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineWalletAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" line="27" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineWalletInterfaceAccelByte.h" bodystart="28" bodyend="97"/>
+    <listofallmembers>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1ab2de73881e9dd42f0f77c61e0332d9c3" prot="private" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" prot="protected" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a152e3b07ffdacfb782ef9f43afd820a9" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>AddCurrencyToList</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1adca9fd43f32938373aed02e5e0af0d89" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>AddWalletInfoToList</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1ad1dd7551ff4a44f7822de8a24fc1f2ed" prot="private" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>CurrencyCodeToCurrencyListMap</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a0f5b855facdf45b32fe8caea52f431c0" prot="private" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>CurrencyListLock</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a58245ea3ad722b4e07cc63a3453e4563" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1acd4a627651c11f6abac0903d221784fe" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1ae558f48df57d638a442d7f59c95ec5b6" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a63b4f5133982cbe8bbbb6e9d37b9b5f7" prot="protected" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>FOnlineWalletAccelByte</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1ab8d9c7b36b7e9c0e82a76c493946676c" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>GetAllCurrencyFromCache</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a08f50a10a2d7fee13cdfcdd4c632a080" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>GetCurrencyFromCache</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a128447354f045e6120491c9f36554c32" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>GetCurrencyList</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a989ebd701752feed9b92827c4cdf897e" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a1a8c698d0137d576411a8618bc822e24" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1af848e9c76138a8f636687f7e2519ea20" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>GetWalletInfoByCurrencyCode</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a08099bad4d3d9b8a3c2d039258553373" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>GetWalletInfoFromCache</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1a6b985b859f3be0f4132ff0044688b188" prot="public" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>ListWalletTransactionsByCurrencyCode</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1aaab4ef0375a212deb57ad5f9ac1c896e" prot="private" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>UserToWalletInfoMap</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1af2567362cf7b52ef519a9f8e4bd66d97" prot="private" virt="non-virtual"><scope>FOnlineWalletAccelByte</scope><name>WalletInfoListLock</name></member>
+      <member refid="d3/dd0/class_f_online_wallet_accel_byte_1ae594be812af289ec0ed3f5d4f5061f3b" prot="public" virt="virtual"><scope>FOnlineWalletAccelByte</scope><name>~FOnlineWalletAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

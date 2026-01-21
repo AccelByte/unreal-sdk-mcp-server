@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteSendFriendInvite</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteSendFriendInvite, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="df/d6b/_online_async_task_accel_byte_send_friend_invite_8h" local="no">OnlineAsyncTaskAccelByteSendFriendInvite.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a8b3a4f208759e803990d15c168ef4744" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;</type>
+        <definition>TSharedRef&lt;const FUniqueNetIdAccelByteUser&gt; FOnlineAsyncTaskAccelByteSendFriendInvite::FriendId</definition>
+        <argsstring></argsstring>
+        <name>FriendId</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::FriendId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Id of the user that we wish to send a friend invite to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="46" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1abb6d0c39eed568f90cb10752fdf6d52c" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteSendFriendInvite::FriendCode</definition>
+        <argsstring></argsstring>
+        <name>FriendCode</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::FriendCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional friend code that we can use instead of ID to send a friend request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="51" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a57210eb32f50b8a69901229c79b380b9" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteSendFriendInvite::ListName</definition>
+        <argsstring></argsstring>
+        <name>ListName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::ListName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the friends list that we wish to query, not used currently </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="54" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1acf02b77bc478289dc7647b64d006c60d" prot="private" static="no" mutable="no">
+        <type>FOnSendInviteComplete</type>
+        <definition>FOnSendInviteComplete FOnlineAsyncTaskAccelByteSendFriendInvite::Delegate</definition>
+        <argsstring></argsstring>
+        <name>Delegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::Delegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired after we finish the task to send an invite </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="57" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ac426ce1ed844587e8129beeedbdbf225" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteSendFriendInvite::ErrorStr</definition>
+        <argsstring></argsstring>
+        <name>ErrorStr</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::ErrorStr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String representing the error that occurred in the request, if one did </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="60" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a199c74abf0ae2f6f68230c5cd74eee19" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; FOnlineFriend &gt;</type>
+        <definition>TSharedPtr&lt;FOnlineFriend&gt; FOnlineAsyncTaskAccelByteSendFriendInvite::InvitedFriend</definition>
+        <argsstring></argsstring>
+        <name>InvitedFriend</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::InvitedFriend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shared pointer to the friend instance that we are creating for the invite, only gets passed to the friend interface if the invite was successfully sent, otherwise this just gets cleaned up with the task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="66" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a6e303978d8c0952d7147a594e6569aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteSendFriendInvite::FOnlineAsyncTaskAccelByteSendFriendInvite</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, int32 InLocalUserNum, const FUniqueNetId &amp;InFriendId, const FString &amp;InListName, const FOnSendInviteComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteSendFriendInvite</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::FOnlineAsyncTaskAccelByteSendFriendInvite</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InFriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InListName</declname>
+        </param>
+        <param>
+          <type>const FOnSendInviteComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to send a friend request using the ID of the user that you want to send the request to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="25" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="13" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1acadfcdb6958f4f812638c37775cfd1f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteSendFriendInvite::FOnlineAsyncTaskAccelByteSendFriendInvite</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, int32 InLocalUserNum, const FString &amp;InFriendCode, const FString &amp;InListName, const FOnSendInviteComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteSendFriendInvite</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::FOnlineAsyncTaskAccelByteSendFriendInvite</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InFriendCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InListName</declname>
+        </param>
+        <param>
+          <type>const FOnSendInviteComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to send a friend request using a friend code </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="30" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ab75eb60950f887301d2b03da8b346914" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="32" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="32" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a98c488576316605cc0132e5a301486d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="33" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="64" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a54229648fcc47ac177bbf0ef908b96de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="34" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="86" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a6fa09668cc4d8d9dd8b7ddb27ac6167f" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteSendFriendInvite::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="38" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a6691af28377b134cc0b4d49bfc714a73" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::OnGetUserByFriendCodeSuccess</definition>
+        <argsstring>(const FAccelByteModelsPublicUserProfileInfo &amp;Result)</argsstring>
+        <name>OnGetUserByFriendCodeSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::OnGetUserByFriendCodeSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsPublicUserProfileInfo &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when the call to GetPublicUserProfileByPublicId succeeds, used for friend code invite </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="69" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="99" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ac048befe84f2c9128f62917751508025" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::OnGetUserByFriendCodeError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage, const FJsonObject &amp;ErrorObject)</argsstring>
+        <name>OnGetUserByFriendCodeError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::OnGetUserByFriendCodeError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <param>
+          <type>const FJsonObject &amp;</type>
+          <declname>ErrorObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when the call to GetPublicUserProfileByPublicId errors out, used for friend code invite </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="72" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="136" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ac350748ac41fbbeaf401ebaddeca7287" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::QueryInvitedFriend</definition>
+        <argsstring>(const FString &amp;FriendId)</argsstring>
+        <name>QueryInvitedFriend</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::QueryInvitedFriend</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to kick off a query about the user we want to send a request to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="77" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="143" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a18be95bc87a4e4567ffd29c069cdb3a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::OnQueryInvitedFriendComplete</definition>
+        <argsstring>(bool bIsSuccessful, TArray&lt; TSharedRef&lt; FAccelByteUserInfo &gt; &gt; UsersQueried)</argsstring>
+        <name>OnQueryInvitedFriendComplete</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::OnQueryInvitedFriendComplete</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bIsSuccessful</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; <ref refid="da/dd5/struct_f_accel_byte_user_info" kindref="compound">FAccelByteUserInfo</ref> &gt; &gt;</type>
+          <declname>UsersQueried</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when we complete a query for joined party member information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="80" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="160" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1aeb2d5d303e1f69beaa9ea928280ee1b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteSendFriendInvite::OnRequestFriendResponse</definition>
+        <argsstring>(const FAccelByteModelsRequestFriendsResponse &amp;Result)</argsstring>
+        <name>OnRequestFriendResponse</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteSendFriendInvite::OnRequestFriendResponse</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsRequestFriendsResponse &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when the request to send a friend invite completes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="83" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.cpp" bodystart="184" bodyend="214"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Task to send a friend request to a user </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteSendFriendInvite, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteSendFriendInvite</label>
+        <link refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteSendFriendInvite, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteSendFriendInvite</label>
+        <link refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" line="16" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteSendFriendInvite.h" bodystart="19" bodyend="85"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ApiClient</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>bHasReference</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>CurrentState</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1acf02b77bc478289dc7647b64d006c60d" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Delegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Epic</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ac426ce1ed844587e8129beeedbdbf225" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ErrorStr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a98c488576316605cc0132e5a301486d4" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a6e303978d8c0952d7147a594e6569aa4" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>FOnlineAsyncTaskAccelByteSendFriendInvite</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1acadfcdb6958f4f812638c37775cfd1f2" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>FOnlineAsyncTaskAccelByteSendFriendInvite</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1abb6d0c39eed568f90cb10752fdf6d52c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>FriendCode</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a8b3a4f208759e803990d15c168ef4744" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>FriendId</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetParentTask</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a6fa09668cc4d8d9dd8b7ddb27ac6167f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>HasTaskTimedOut</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ab75eb60950f887301d2b03da8b346914" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Initialize</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a199c74abf0ae2f6f68230c5cd74eee19" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>InvitedFriend</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a57210eb32f50b8a69901229c79b380b9" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ListName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>LocalUserNum</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ac048befe84f2c9128f62917751508025" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>OnGetUserByFriendCodeError</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a6691af28377b134cc0b4d49bfc714a73" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>OnGetUserByFriendCodeSuccess</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a18be95bc87a4e4567ffd29c069cdb3a5" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>OnQueryInvitedFriendComplete</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1aeb2d5d303e1f69beaa9ea928280ee1b2" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>OnRequestFriendResponse</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ParentTask</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1ac350748ac41fbbeaf401ebaddeca7287" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>QueryInvitedFriend</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ThisPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>ToString</name></member>
+      <member refid="d4/d02/class_f_online_async_task_accel_byte_send_friend_invite_1a54229648fcc47ac177bbf0ef908b96de" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteSendFriendInvite</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

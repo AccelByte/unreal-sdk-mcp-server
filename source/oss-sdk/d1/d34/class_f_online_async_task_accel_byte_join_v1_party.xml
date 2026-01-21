@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteJoinV1Party</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteJoinV1Party, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d5/d2e/_online_async_task_accel_byte_join_v1_party_8h" local="no">OnlineAsyncTaskAccelByteJoinV1Party.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a655b5daedd9a53c38affefa6044ae3c7" prot="private" static="no" mutable="no">
+        <type><ref refid="d7/df6/class_f_online_party_join_info_accel_byte" kindref="compound">FOnlinePartyJoinInfoAccelByte</ref></type>
+        <definition>FOnlinePartyJoinInfoAccelByte FOnlineAsyncTaskAccelByteJoinV1Party::OnlinePartyJoinInfo</definition>
+        <argsstring></argsstring>
+        <name>OnlinePartyJoinInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::OnlinePartyJoinInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information on the party that the user is joining </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="50" column="31" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a4512026243e095ecfce25661d6446ab0" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteJoinV1Party::PartyCode</definition>
+        <argsstring></argsstring>
+        <name>PartyCode</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::PartyCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional party code used to join a party, will be used depending on what path this task is taking </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="53" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a082e2275223679006a1653a983f75751" prot="private" static="no" mutable="no">
+        <type>FOnJoinPartyComplete</type>
+        <definition>FOnJoinPartyComplete FOnlineAsyncTaskAccelByteJoinV1Party::Delegate</definition>
+        <argsstring></argsstring>
+        <name>Delegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::Delegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate to be fired after party join is complete </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="56" column="22" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1aec419afe900fa5b5a10a72074567b6be" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineAsyncTaskAccelByteJoinV1Party::NotApprovedReason</definition>
+        <argsstring></argsstring>
+        <name>NotApprovedReason</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::NotApprovedReason</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="59" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a56c1df1031cc8bbcecff9447e83b69ca" prot="private" static="no" mutable="no">
+        <type>EJoinPartyCompletionResult</type>
+        <definition>EJoinPartyCompletionResult FOnlineAsyncTaskAccelByteJoinV1Party::CompletionResult</definition>
+        <argsstring></argsstring>
+        <name>CompletionResult</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::CompletionResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status on the completion of the join party task, forwarded to delegate fired </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="62" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a1739215457bfb2ea3f8cc7c7c24f4cef" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TSharedRef&lt; <ref refid="da/dd5/struct_f_accel_byte_user_info" kindref="compound">FAccelByteUserInfo</ref> &gt; &gt;</type>
+        <definition>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt; &gt; FOnlineAsyncTaskAccelByteJoinV1Party::PartyMemberInfo</definition>
+        <argsstring></argsstring>
+        <name>PartyMemberInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::PartyMemberInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of party member IDs to their display names, used in Finalize to construct member instances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="65" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a2b08833262073e6688f7d56d41c6e239" prot="private" static="no" mutable="no">
+        <type>FAccelByteModelsPartyJoinResponse</type>
+        <definition>FAccelByteModelsPartyJoinResponse FOnlineAsyncTaskAccelByteJoinV1Party::PartyInfo</definition>
+        <argsstring></argsstring>
+        <name>PartyInfo</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::PartyInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information on the party joined from the backend, used in Finalize to set up party object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="68" column="35" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1af3725712ebd54b297f98ae33f0a7cc14" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; FOnlinePartyData &gt;</type>
+        <definition>TSharedRef&lt;FOnlinePartyData&gt; FOnlineAsyncTaskAccelByteJoinV1Party::PartyData</definition>
+        <argsstring></argsstring>
+        <name>PartyData</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::PartyData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Party data instance that will be initialized to the party object created in Finalize. We always want to have an instance of this associated with a party, even if there is no data to read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="74" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a4e4923615dd659c965a7ef7520cb54fe" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; const <ref refid="d9/d51/class_f_online_party_id_accel_byte" kindref="compound">FOnlinePartyIdAccelByte</ref> &gt;</type>
+        <definition>TSharedPtr&lt;const FOnlinePartyIdAccelByte&gt; FOnlineAsyncTaskAccelByteJoinV1Party::JoinedPartyId</definition>
+        <argsstring></argsstring>
+        <name>JoinedPartyId</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::JoinedPartyId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ID of the party that we joined, used to fire delegates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="77" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a902743105d00621eb752f86ab0b08a0e" prot="private" static="no" mutable="no">
+        <type>FAccelByteModelsBulkUserStatusNotif</type>
+        <definition>FAccelByteModelsBulkUserStatusNotif FOnlineAsyncTaskAccelByteJoinV1Party::MemberStatuses</definition>
+        <argsstring></argsstring>
+        <name>MemberStatuses</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::MemberStatuses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="79" column="37" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a4f2f6e9a6ca71475f34ae7711dee3955" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteJoinV1Party::FOnlineAsyncTaskAccelByteJoinV1Party</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const FUniqueNetId &amp;InLocalUserId, const IOnlinePartyJoinInfo &amp;InOnlinePartyJoinInfo, const FOnJoinPartyComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteJoinV1Party</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::FOnlineAsyncTaskAccelByteJoinV1Party</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InLocalUserId</declname>
+        </param>
+        <param>
+          <type>const IOnlinePartyJoinInfo &amp;</type>
+          <declname>InOnlinePartyJoinInfo</declname>
+        </param>
+        <param>
+          <type>const FOnJoinPartyComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for joining a party through an invite </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="28" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="16" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a29359565c23dc900f6557d458a274db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteJoinV1Party::FOnlineAsyncTaskAccelByteJoinV1Party</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const FUniqueNetId &amp;InLocalUserId, const FString &amp;InPartyCode, const FOnJoinPartyComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteJoinV1Party</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::FOnlineAsyncTaskAccelByteJoinV1Party</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InLocalUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InPartyCode</declname>
+        </param>
+        <param>
+          <type>const FOnJoinPartyComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for joining a party through a party code </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="33" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a85e1be426a17200ebffe37ef1b01e008" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="35" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="34" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a42f2f342f23bd35c485ccfabf805ebf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::Tick</definition>
+        <argsstring>() override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::Tick</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2">Tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple tick override to check if we are using timeouts, and if so check the task timeout and complete the task unsuccessfully if it&apos;s over its timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="36" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a09f8b5779adc79d8ca54282f1b4ce344" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="37" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="85" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a926b58c538f382ef03ca36e2a7bac669" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="38" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="126" bodyend="146"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a0ef65d2fe8f8301d6a15321514a8fa36" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteJoinV1Party::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="42" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a9daa950cdfe5b78c4df638a89872c84c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::OnGetPartyInfoResponse</definition>
+        <argsstring>(const FAccelByteModelsInfoPartyResponse &amp;Result)</argsstring>
+        <name>OnGetPartyInfoResponse</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::OnGetPartyInfoResponse</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsInfoPartyResponse &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when our request to check whether we are in a party gets a response </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="82" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="148" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a71d6555e6ba48a413ad1e421715f9e88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::OnJoinPartyResponse</definition>
+        <argsstring>(const FAccelByteModelsPartyJoinResponse &amp;Result)</argsstring>
+        <name>OnJoinPartyResponse</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::OnJoinPartyResponse</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsPartyJoinResponse &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when our request to accept an invite and join a party gets a response </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="85" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="192" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a453a76020a99207fc54d696cf4611dd4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::OnQueryPartyInfoComplete</definition>
+        <argsstring>(bool bIsSuccessful, const FAccelBytePartyInfo &amp;Result)</argsstring>
+        <name>OnQueryPartyInfoComplete</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::OnQueryPartyInfoComplete</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bIsSuccessful</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/dc5/struct_f_accel_byte_party_info" kindref="compound">FAccelBytePartyInfo</ref> &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when our request to query all party info completes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="88" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="229" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a2c240dedee13aea6af687b90052add93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::OnLeavePartyResponse</definition>
+        <argsstring>(const FAccelByteModelsLeavePartyResponse &amp;Result)</argsstring>
+        <name>OnLeavePartyResponse</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::OnLeavePartyResponse</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsLeavePartyResponse &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when we get a response back from the backend about leaving the party specified in this task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="91" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="265" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1ac497aed31ff390e007a894cc50ff39dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteJoinV1Party::GetJoinInfoString</definition>
+        <argsstring>()</argsstring>
+        <name>GetJoinInfoString</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::GetJoinInfoString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a string representation of the information we are using to join a party, or blank if none is valid. Used for debug printing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="94" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="273" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1adadc4c3040afaf97cc282a191c501fbc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteJoinV1Party::GetPartyInfoForError</definition>
+        <argsstring>()</argsstring>
+        <name>GetPartyInfoForError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::GetPartyInfoForError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a formatted string to use for errors relating to party join </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="97" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="287" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a0adc7616be1e57388b4d8dd8b088f815" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteJoinV1Party::OnGetUserPresenceComplete</definition>
+        <argsstring>(const FAccelByteModelsBulkUserStatusNotif &amp;Statuses)</argsstring>
+        <name>OnGetUserPresenceComplete</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteJoinV1Party::OnGetUserPresenceComplete</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsBulkUserStatusNotif &amp;</type>
+          <declname>Statuses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="99" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.cpp" bodystart="301" bodyend="327"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Async task to join a party from join info with an invite token </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteJoinV1Party, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteJoinV1Party</label>
+        <link refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteJoinV1Party, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteJoinV1Party</label>
+        <link refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>OnlinePartyJoinInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="7">
+        <label>FOnlinePartyJoinInfoAccelByte</label>
+        <link refid="d7/df6/class_f_online_party_join_info_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IOnlinePartyJoinInfo</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" line="19" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/PartyV1/OnlineAsyncTaskAccelByteJoinV1Party.h" bodystart="22" bodyend="100"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>ApiClient</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>bHasReference</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>CompleteTask</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a56c1df1031cc8bbcecff9447e83b69ca" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>CompletionResult</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>CurrentState</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a082e2275223679006a1653a983f75751" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Delegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Epic</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a09f8b5779adc79d8ca54282f1b4ce344" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a4f2f6e9a6ca71475f34ae7711dee3955" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>FOnlineAsyncTaskAccelByteJoinV1Party</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a29359565c23dc900f6557d458a274db8" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>FOnlineAsyncTaskAccelByteJoinV1Party</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetInternalSP</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1ac497aed31ff390e007a894cc50ff39dd" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetJoinInfoString</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetParentTask</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1adadc4c3040afaf97cc282a191c501fbc" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetPartyInfoForError</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a0ef65d2fe8f8301d6a15321514a8fa36" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>HasTaskTimedOut</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a85e1be426a17200ebffe37ef1b01e008" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Initialize</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a4e4923615dd659c965a7ef7520cb54fe" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>JoinedPartyId</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>LocalUserNum</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a902743105d00621eb752f86ab0b08a0e" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>MemberStatuses</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1aec419afe900fa5b5a10a72074567b6be" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>NotApprovedReason</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a9daa950cdfe5b78c4df638a89872c84c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnGetPartyInfoResponse</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a0adc7616be1e57388b4d8dd8b088f815" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnGetUserPresenceComplete</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a71d6555e6ba48a413ad1e421715f9e88" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnJoinPartyResponse</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a2c240dedee13aea6af687b90052add93" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnLeavePartyResponse</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a655b5daedd9a53c38affefa6044ae3c7" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnlinePartyJoinInfo</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a453a76020a99207fc54d696cf4611dd4" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnQueryPartyInfoComplete</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>ParentTask</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a4512026243e095ecfce25661d6446ab0" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>PartyCode</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1af3725712ebd54b297f98ae33f0a7cc14" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>PartyData</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a2b08833262073e6688f7d56d41c6e239" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>PartyInfo</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a1739215457bfb2ea3f8cc7c7c24f4cef" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>PartyMemberInfo</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>ThisPtr</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a42f2f342f23bd35c485ccfabf805ebf0" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual" ambiguityscope="FOnlineAsyncTaskAccelByte::"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>ToString</name></member>
+      <member refid="d1/d34/class_f_online_async_task_accel_byte_join_v1_party_1a926b58c538f382ef03ca36e2a7bac669" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteJoinV1Party</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

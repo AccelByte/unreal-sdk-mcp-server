@@ -1,0 +1,924 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d0/dd1/_online_async_task_accel_byte_register_dedicated_v1_session_8cpp" kind="file" language="C++">
+    <compoundname>OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.cpp</compoundname>
+    <includes refid="d7/dcd/_online_async_task_accel_byte_register_dedicated_v1_session_8h" local="yes">OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.h</includes>
+    <includes local="yes">Runtime/Launch/Resources/Version.h</includes>
+    <includes local="yes">Engine/Engine.h</includes>
+    <includes local="yes">Engine/World.h</includes>
+    <includes refid="d1/d3f/_online_subsystem_accel_byte_8h" local="yes">OnlineSubsystemAccelByte.h</includes>
+    <includes refid="d2/de4/_online_identity_interface_accel_byte_8h" local="yes">OnlineIdentityInterfaceAccelByte.h</includes>
+    <includes refid="dc/d64/_online_predefined_event_interface_accel_byte_8h" local="yes">OnlinePredefinedEventInterfaceAccelByte.h</includes>
+    <includes local="yes">Core/AccelByteRegistry.h</includes>
+    <includes local="yes">GameServerApi/AccelByteServerDSMApi.h</includes>
+    <includes local="yes">GameServerApi/AccelByteServerSessionBrowserApi.h</includes>
+    <includes local="yes">SocketSubsystem.h</includes>
+    <includes local="yes">Core/AccelByteUtilities.h</includes>
+    <incdepgraph>
+      <node id="63">
+        <label>AccelByteNetworkingStatus.h</label>
+      </node>
+      <node id="25">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="57">
+        <label>Core/AccelByteError.h</label>
+      </node>
+      <node id="51">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="70">
+        <label>Core/AccelByteRegistry.h</label>
+      </node>
+      <node id="11">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="6">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.cpp</label>
+        <link refid="d0/dd1/_online_async_task_accel_byte_register_dedicated_v1_session_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.h</label>
+        <link refid="d7/dcd/_online_async_task_accel_byte_register_dedicated_v1_session_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>FNboSerializeToBufferAccelByte.h</label>
+        <link refid="dc/d9d/_f_nbo_serialize_to_buffer_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>OnlineBaseAnalyticsInterfaceAccelByte.h</label>
+        <link refid="db/d92/_online_base_analytics_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>OnlinePredefinedEventInterfaceAccelByte.h</label>
+        <link refid="dc/d64/_online_predefined_event_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>OnlineSessionInterfaceV1AccelByte.h</label>
+        <link refid="d4/dd9/_online_session_interface_v1_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="9">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="5">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="10">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="43">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="64">
+        <label>Engine/Engine.h</label>
+      </node>
+      <node id="20">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="65">
+        <label>Engine/World.h</label>
+      </node>
+      <node id="71">
+        <label>GameServerApi/AccelByteServerDSMApi.h</label>
+      </node>
+      <node id="72">
+        <label>GameServerApi/AccelByteServerSessionBrowserApi.h</label>
+      </node>
+      <node id="13">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="26">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="45">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="33">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="49">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="50">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="38">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="56">
+        <label>Interfaces/OnlineSessionInterface.h</label>
+      </node>
+      <node id="40">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="60">
+        <label>LANBeacon.h</label>
+      </node>
+      <node id="54">
+        <label>Misc/ScopeLock.h</label>
+      </node>
+      <node id="44">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="34">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="68">
+        <label>Models/AccelByteGameTelemetryModels.h</label>
+      </node>
+      <node id="48">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="59">
+        <label>Models/AccelByteLobbyModels.h</label>
+      </node>
+      <node id="17">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="69">
+        <label>Models/AccelBytePredefinedEventModels.h</label>
+      </node>
+      <node id="58">
+        <label>Models/AccelByteSessionBrowserModels.h</label>
+      </node>
+      <node id="32">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="7">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="62">
+        <label>NboSerializer.h</label>
+      </node>
+      <node id="4">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="47">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="37">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="55">
+        <label>OnlineSessionSettings.h</label>
+      </node>
+      <node id="18">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="19">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="27">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="12">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="15">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="73">
+        <label>SocketSubsystem.h</label>
+      </node>
+      <node id="22">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2021<sp/>-<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/dcd/_online_async_task_accel_byte_register_dedicated_v1_session_8h" kindref="compound">OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Runtime/Launch/Resources/Version.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine/Engine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine/World.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ENGINE_MAJOR_VERSION<sp/>&gt;=<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Online/OnlineSessionNames.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>ENGINE_MAJOR_VERSION<sp/>&gt;=<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3f/_online_subsystem_accel_byte_8h" kindref="compound">OnlineSubsystemAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/de4/_online_identity_interface_accel_byte_8h" kindref="compound">OnlineIdentityInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d64/_online_predefined_event_interface_accel_byte_8h" kindref="compound">OnlinePredefinedEventInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Core/AccelByteRegistry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GameServerApi/AccelByteServerDSMApi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GameServerApi/AccelByteServerSessionBrowserApi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SocketSubsystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Core/AccelByteUtilities.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1ab7d79d7f4429a3697ceac8386398a07d" refkind="member"><highlight class="normal"><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1ab7d79d7f4429a3697ceac8386398a07d" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>InABInterface,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>InHostingPlayerNum,<sp/>FName<sp/>InSessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSettings&amp;<sp/>InNewSessionSettings,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InRegisterToSessionBrowser)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" kindref="member">FOnlineAsyncTaskAccelByte</ref>(InABInterface)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af7945527e98c244c9612878d16687cf4" kindref="member">HostingPlayerNum</ref>(InHostingPlayerNum)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>(InSessionName)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1affaad1879f32efd2fc2319efb72a8a6a" kindref="member">NewSessionSettings</ref>(InNewSessionSettings)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a00ce08e6deaac0e41cbe1314f6a9e362" kindref="member">bRegisterToServerBrowser</ref>(InRegisterToSessionBrowser)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af5dc39e0e83af1877654c9f0a9b6520e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af5dc39e0e83af1877654c9f0a9b6520e" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::Initialize</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30" kindref="member">Super::Initialize</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;SessionName:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a79c7a75b959f926eaef2a64023a33fcf" kindref="member">FOnlineIdentityAccelBytePtr</ref><sp/>IdentityInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineIdentityAccelByte&gt;(Subsystem-&gt;GetIdentityInterface());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>register<sp/>dedicated<sp/>session<sp/>with<sp/>Armada<sp/>as<sp/>our<sp/>identity<sp/>interface<sp/>was<sp/>invalid!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Dedicated<sp/>server<sp/>APIs<sp/>need<sp/>authentication<sp/>with<sp/>client<sp/>credentials<sp/>if<sp/>we<sp/>are<sp/>not<sp/>already<sp/>authenticated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Client<sp/>authentication<sp/>is<sp/>an<sp/>async<sp/>process,<sp/>so<sp/>we&apos;ll<sp/>have<sp/>to<sp/>do<sp/>that,<sp/>wait<sp/>for<sp/>the<sp/>delegate<sp/>result,<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>there<sp/>register<sp/>either<sp/>a<sp/>local<sp/>server<sp/>or<sp/>a<sp/>server<sp/>on<sp/>Armada.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!IdentityInterface-&gt;IsServerAuthenticated())</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnAuthenticateServerComplete<sp/>OnAuthenticateServerCompleteDelegate<sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;FOnAuthenticateServerComplete&gt;::CreateThreadSafeSelfPtr</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1aa9c4173580ee5f1e1dd1516dd95d2a28" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::OnAuthenticateServerComplete</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IdentityInterface-&gt;AuthenticateAccelByteServer(OnAuthenticateServerCompleteDelegate);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Authenticating<sp/>server<sp/>with<sp/>client<sp/>credentials<sp/>for<sp/>session<sp/>&apos;%s&apos;.&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attempt<sp/>to<sp/>register<sp/>either<sp/>a<sp/>local<sp/>dedicated<sp/>or<sp/>Armada<sp/>hosted<sp/>dedicated<sp/>server</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>@todo<sp/>I<sp/>imagine<sp/>there<sp/>are<sp/>cases<sp/>that<sp/>we&apos;d<sp/>want<sp/>player-hosted<sp/>dedicated<sp/>servers<sp/>that<sp/>can<sp/>be<sp/>found<sp/>with<sp/>a<sp/>session</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>browser,<sp/>which<sp/>is<sp/>currently<sp/>unsupported.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Registering<sp/>dedicated<sp/>server<sp/>with<sp/>Armada&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a27358b8b80a45b918af3823674ba5b77" kindref="member">RegisterAccelByteDedicatedServer</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a9113ae52d669593a5dd6fa426e411a3b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a9113ae52d669593a5dd6fa426e411a3b" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::Finalize</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;bWasSuccessful:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a743c92d5f8c7e345612ab9ac8b1ffb6a" kindref="member">LOG_BOOL_FORMAT</ref>(bWasSuccessful));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bWasSuccessful)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSessionPtr<sp/>SessionInterface<sp/>=<sp/>Subsystem-&gt;GetSessionInterface();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>@sessions<sp/>Note<sp/>that<sp/>by<sp/>this<sp/>point,<sp/>since<sp/>sessions<sp/>are<sp/>managed<sp/>by<sp/>the<sp/>matchmaker,<sp/>we<sp/>don&apos;t<sp/>have<sp/>a<sp/>session<sp/>associated<sp/>with<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>server.<sp/>Thus<sp/>we<sp/>just<sp/>want<sp/>to<sp/>add<sp/>the<sp/>session<sp/>without<sp/>an<sp/>associated<sp/>ID,<sp/>and<sp/>once<sp/>we<sp/>get<sp/>our<sp/>first<sp/>RegisterPlayer<sp/>call,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>associate<sp/>the<sp/>session<sp/>ID<sp/>then.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FNamedOnlineSession*<sp/>Session<sp/>=<sp/>SessionInterface-&gt;GetNamedSession(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Session<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>finish<sp/>creating<sp/>a<sp/>dedicated<sp/>session<sp/>as<sp/>a<sp/>session<sp/>with<sp/>the<sp/>name<sp/>&apos;%s&apos;<sp/>was<sp/>not<sp/>found!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Session-&gt;SessionState<sp/>=<sp/>EOnlineSessionState::Pending;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Session-&gt;SessionSettings.Set(<ref refid="d9/d76/_online_subsystem_accel_byte_defines_8h_1ab80862102ad12a60e33d4ad203cf1b37" kindref="member">SETTING_SESSION_LOCAL</ref>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a05e8f1290839f6b14762fc1cbc4828c8" kindref="member">bIsLocal</ref>,<sp/>EOnlineDataAdvertisementType::ViaOnlineService);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Session-&gt;SessionSettings.Set(<ref refid="d9/d76/_online_subsystem_accel_byte_defines_8h_1a7e813a4f4128bbfe181b84c7deb09a14" kindref="member">SETTING_SESSION_SERVER_NAME</ref>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a636458a50d7d70e08b1b242c2006bfd3" kindref="member">ServerName</ref>,<sp/>EOnlineDataAdvertisementType::ViaOnlineService);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlineSessionInfoAccelByteV1&gt;<sp/>SessionInfo<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineSessionInfoAccelByteV1&gt;(Session-&gt;SessionInfo);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!SessionInfo.IsValid())</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>finish<sp/>creating<sp/>as<sp/>session<sp/>&apos;%s&apos;<sp/>has<sp/>invalid<sp/>session<sp/>info<sp/>instance!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!SessionInfo-&gt;GetHostAddr().IsValid())</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>finish<sp/>creating<sp/>as<sp/>session<sp/>&apos;%s&apos;<sp/>has<sp/>an<sp/>invalid<sp/>HostAddr<sp/>instance<sp/>in<sp/>session<sp/>info!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsIpValid<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SessionInfo-&gt;GetHostAddr()-&gt;SetIp(*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1afb96b03785812acef80c09b7a70e5b4c" kindref="member">RegisteredIpAddress</ref>,<sp/>bIsIpValid);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SessionInfo-&gt;GetHostAddr()-&gt;SetPort(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1ad651e16fb65260b16fb2f4fac4151927" kindref="member">RegisteredPort</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a4204ff06160b48f51de3c83305e42568" kindref="member">FOnlinePredefinedEventAccelBytePtr</ref><sp/>PredefinedEventInterface<sp/>=<sp/>Subsystem-&gt;GetPredefinedEventInterface();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PredefinedEventInterface.IsValid())</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FAccelByteModelsDSRegisteredPayload<sp/>DSRegisteredPayload{};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DSRegisteredPayload.PodName<sp/>=<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a636458a50d7d70e08b1b242c2006bfd3" kindref="member">ServerName</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PredefinedEventInterface-&gt;SendEvent(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af7945527e98c244c9612878d16687cf4" kindref="member">HostingPlayerNum</ref>,<sp/>MakeShared&lt;FAccelByteModelsDSRegisteredPayload&gt;(DSRegisteredPayload));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a045de3c48f99cdd1cc1ed29613d45903" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a045de3c48f99cdd1cc1ed29613d45903" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::TriggerDelegates</ref>()</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSessionPtr<sp/>SessionInterface<sp/>=<sp/>Subsystem-&gt;GetSessionInterface();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>SessionInterface-&gt;TriggerOnCreateSessionCompleteDelegates(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>,<sp/>bWasSuccessful);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1aa9c4173580ee5f1e1dd1516dd95d2a28" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1aa9c4173580ee5f1e1dd1516dd95d2a28" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::OnAuthenticateServerComplete</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAuthenticationSuccessful)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;bAuthenticationSuccessful:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a743c92d5f8c7e345612ab9ac8b1ffb6a" kindref="member">LOG_BOOL_FORMAT</ref>(bAuthenticationSuccessful))</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!bAuthenticationSuccessful)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>register<sp/>server<sp/>as<sp/>we<sp/>failed<sp/>to<sp/>authenticate<sp/>with<sp/>our<sp/>client<sp/>credentials!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a27358b8b80a45b918af3823674ba5b77" kindref="member">RegisterAccelByteDedicatedServer</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a27358b8b80a45b918af3823674ba5b77" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a27358b8b80a45b918af3823674ba5b77" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::RegisterAccelByteDedicatedServer</ref>()</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First,<sp/>set<sp/>our<sp/>registered<sp/>IP<sp/>and<sp/>port<sp/>based<sp/>on<sp/>server<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1abcb8245b4f3ac8c8b08a3bc3168bc8d9" kindref="member">GetRegisterIpAddress</ref>(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1afb96b03785812acef80c09b7a70e5b4c" kindref="member">RegisteredIpAddress</ref>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1ad651e16fb65260b16fb2f4fac4151927" kindref="member">RegisteredPort</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Armada<sp/>servers<sp/>always<sp/>have<sp/>a<sp/>POD_NAME<sp/>environment<sp/>variable<sp/>set.<sp/>With<sp/>that<sp/>in<sp/>mind,<sp/>we<sp/>want<sp/>to<sp/>check<sp/>for<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>existence<sp/>of<sp/>this<sp/>environment<sp/>variable.<sp/>If<sp/>it<sp/>exists<sp/>and<sp/>is<sp/>set,<sp/>then<sp/>we<sp/>move<sp/>on<sp/>to<sp/>DSM<sp/>registration<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Armada<sp/>pod.<sp/>If<sp/>this<sp/>is<sp/>not<sp/>the<sp/>case,<sp/>then<sp/>we<sp/>want<sp/>to<sp/>register<sp/>a<sp/>local<sp/>dedicated<sp/>server<sp/>with<sp/>Armada<sp/>that<sp/>we<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quickly<sp/>match<sp/>with.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>PodName<sp/>=<sp/>FPlatformMisc::GetEnvironmentVariable(TEXT(</highlight><highlight class="stringliteral">&quot;POD_NAME&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!PodName.IsEmpty())</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a636458a50d7d70e08b1b242c2006bfd3" kindref="member">ServerName</ref><sp/>=<sp/>PodName;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FVoidHandler<sp/>OnServerRegisterSuccess<sp/>=<sp/>FVoidHandler::CreateLambda([</highlight><highlight class="keyword">this</highlight><highlight class="normal">]()<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Successfully<sp/>registered<sp/>local<sp/>server<sp/>to<sp/>DSM!<sp/>SessionName:<sp/>%s,<sp/>register<sp/>server<sp/>session<sp/>%d&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString(),<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a00ce08e6deaac0e41cbe1314f6a9e362" kindref="member">bRegisterToServerBrowser</ref>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a00ce08e6deaac0e41cbe1314f6a9e362" kindref="member">bRegisterToServerBrowser</ref>)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea505a83f220c02df2f85c3810cd9ceb38" kindref="member">EAccelByteAsyncTaskCompleteState::Success</ref>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af4a1bdd827f5470507f5d3deb1b498fa" kindref="member">CreateGameSession</ref>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FErrorHandler<sp/>OnServerRegisterError<sp/>=<sp/>FErrorHandler::CreateLambda([</highlight><highlight class="keyword">this</highlight><highlight class="normal">](<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Error,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>register<sp/>local<sp/>server<sp/>to<sp/>DSM!<sp/>SessionName:<sp/>%s;<sp/>Error<sp/>code:<sp/>%d;<sp/>Error<sp/>message:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString(),<sp/>ErrorCode,<sp/>*ErrorMessage);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FRegistry::ServerDSM.RegisterServerToDSM(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1ad651e16fb65260b16fb2f4fac4151927" kindref="member">RegisteredPort</ref>,<sp/>OnServerRegisterSuccess,<sp/>OnServerRegisterError);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Sent<sp/>off<sp/>async<sp/>task<sp/>to<sp/>register<sp/>managed<sp/>server<sp/>to<sp/>dedicated<sp/>server<sp/>manager<sp/>for<sp/>session<sp/>&apos;%s&apos;!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a05e8f1290839f6b14762fc1cbc4828c8" kindref="member">bIsLocal</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Attempt<sp/>to<sp/>set<sp/>the<sp/>server<sp/>name<sp/>to<sp/>be<sp/>the<sp/>server<sp/>name<sp/>set<sp/>as<sp/>a<sp/>command<sp/>line<sp/>parameter.<sp/>If<sp/>this<sp/>parameter<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set,<sp/>then<sp/>we<sp/>want<sp/>to<sp/>fall<sp/>back<sp/>to<sp/>a<sp/>reasonable<sp/>default,<sp/>in<sp/>this<sp/>case<sp/>that<sp/>will<sp/>be<sp/>the<sp/>PC<sp/>name<sp/>for<sp/>the<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>running<sp/>the<sp/>server.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!FParse::Value(FCommandLine::Get(),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;-ServerName=&quot;</highlight><highlight class="normal">),<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a636458a50d7d70e08b1b242c2006bfd3" kindref="member">ServerName</ref>))</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a636458a50d7d70e08b1b242c2006bfd3" kindref="member">ServerName</ref><sp/>=<sp/>FPlatformProcess::ComputerName();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FVoidHandler<sp/>OnLocalServerRegisterSuccess<sp/>=<sp/>FVoidHandler::CreateLambda([</highlight><highlight class="keyword">this</highlight><highlight class="normal">]()<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Successfully<sp/>registered<sp/>local<sp/>server<sp/>to<sp/>DSM!<sp/>SessionName:<sp/>%s,<sp/>register<sp/>server<sp/>session<sp/>%d&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString(),<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a00ce08e6deaac0e41cbe1314f6a9e362" kindref="member">bRegisterToServerBrowser</ref>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a00ce08e6deaac0e41cbe1314f6a9e362" kindref="member">bRegisterToServerBrowser</ref>)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea505a83f220c02df2f85c3810cd9ceb38" kindref="member">EAccelByteAsyncTaskCompleteState::Success</ref>);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af4a1bdd827f5470507f5d3deb1b498fa" kindref="member">CreateGameSession</ref>();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FErrorHandler<sp/>OnLocalServerRegisterError<sp/>=<sp/>FErrorHandler::CreateLambda([</highlight><highlight class="keyword">this</highlight><highlight class="normal">](<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage)<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Error,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>register<sp/>local<sp/>server<sp/>to<sp/>DSM!<sp/>SessionName:<sp/>%s;<sp/>Error<sp/>code:<sp/>%d;<sp/>Error<sp/>message:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString(),<sp/>ErrorCode,<sp/>*ErrorMessage);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FRegistry::ServerDSM.RegisterLocalServerToDSM(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1afb96b03785812acef80c09b7a70e5b4c" kindref="member">RegisteredIpAddress</ref>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1ad651e16fb65260b16fb2f4fac4151927" kindref="member">RegisteredPort</ref>,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a636458a50d7d70e08b1b242c2006bfd3" kindref="member">ServerName</ref>,<sp/>OnLocalServerRegisterSuccess,<sp/>OnLocalServerRegisterError);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Sent<sp/>off<sp/>async<sp/>task<sp/>to<sp/>register<sp/>local<sp/>server<sp/>to<sp/>dedicated<sp/>server<sp/>manager<sp/>for<sp/>session<sp/>&apos;%s&apos;!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1abcb8245b4f3ac8c8b08a3bc3168bc8d9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1abcb8245b4f3ac8c8b08a3bc3168bc8d9" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::GetRegisterIpAddress</ref>(FString&amp;<sp/>IpString,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>&amp;<sp/>Port)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(ENGINE_MAJOR_VERSION<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&lt;<sp/>26)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>grab<sp/>our<sp/>current<sp/>port,<sp/>as<sp/>we<sp/>will<sp/>always<sp/>need<sp/>to<sp/>grab<sp/>that<sp/>from<sp/>the<sp/>World<sp/>URL.<sp/>Wish<sp/>there<sp/>was<sp/>a<sp/>better<sp/>way<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>grab<sp/>current<sp/>port<sp/>for<sp/>a<sp/>server,<sp/>but<sp/>this<sp/>is<sp/>the<sp/>best<sp/>we<sp/>have...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>UWorld*<sp/>World<sp/>=<sp/>GEngine-&gt;GetCurrentPlayWorld();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(World<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>get<sp/>world<sp/>instance<sp/>to<sp/>get<sp/>currently<sp/>bound<sp/>listen<sp/>port<sp/>for<sp/>local<sp/>dedicated<sp/>server!<sp/>SessionName:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>Port<sp/>=<sp/>World-&gt;URL.Port;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>Port<sp/>=<sp/>7777;<sp/></highlight><highlight class="comment">//<sp/>#TODO(Maxwell):<sp/>Find<sp/>a<sp/>better<sp/>way<sp/>to<sp/>get<sp/>currently<sp/>bound<sp/>port<sp/>in<sp/>&lt;4.26...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>we<sp/>are<sp/>a<sp/>local<sp/>server<sp/>first,<sp/>if<sp/>we<sp/>aren&apos;t<sp/>then<sp/>it&apos;s<sp/>as<sp/>simple<sp/>as<sp/>using<sp/>our<sp/>IP<sp/>environment<sp/>variable<sp/>and<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>port<sp/>from<sp/>the<sp/>current<sp/>play<sp/>world<sp/>URL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsLocalServer<sp/>=<sp/>FPlatformMisc::GetEnvironmentVariable(TEXT(</highlight><highlight class="stringliteral">&quot;POD_NAME&quot;</highlight><highlight class="normal">)).IsEmpty();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bIsLocalServer)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Grab<sp/>the<sp/>socket<sp/>subsystem<sp/>to<sp/>grab<sp/>our<sp/>local<sp/>host<sp/>address,<sp/>this<sp/>way<sp/>we<sp/>can<sp/>register<sp/>with<sp/>an<sp/>IP<sp/>that<sp/>can<sp/>be<sp/>connected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>anywhere<sp/>on<sp/>the<sp/>local<sp/>network,<sp/>in<sp/>case<sp/>you<sp/>want<sp/>to<sp/>run<sp/>a<sp/>server<sp/>on<sp/>one<sp/>machine<sp/>locally<sp/>and<sp/>then<sp/>play<sp/>on<sp/>a<sp/>different</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>machine<sp/>on<sp/>the<sp/>same<sp/>network.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ISocketSubsystem*<sp/>SocketSubsystem<sp/>=<sp/>ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SocketSubsystem<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>get<sp/>socket<sp/>subsystem<sp/>to<sp/>retrieve<sp/>host<sp/>address<sp/>for<sp/>session<sp/>&apos;%s&apos;!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bCanBindAll;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FInternetAddr&gt;<sp/>LocalIP<sp/>=<sp/>SocketSubsystem-&gt;GetLocalHostAddr(*GLog,<sp/>bCanBindAll);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!LocalIP.IsValid())</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>retrieve<sp/>host<sp/>address<sp/>for<sp/>session<sp/>&apos;%s&apos;!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IpString<sp/>=<sp/>LocalIP-&gt;ToString(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>To<sp/>handle<sp/>a<sp/>specified<sp/>serverIP<sp/>provided<sp/>through<sp/>localds<sp/>commandline<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>i.e.<sp/>&quot;-serverip=192.168.x.x&quot;<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>args<sp/>not<sp/>found,<sp/>then<sp/>the<sp/>value<sp/>won&apos;t<sp/>be<sp/>modified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FAccelByteUtilities::GetValueFromCommandLineSwitch(<ref refid="d9/d76/_online_subsystem_accel_byte_defines_8h_1af7c8e9a37907a00794c56eb80fa16bb0" kindref="member">ACCELBYTE_ARGS_SERVERIP</ref>,<sp/>IpString);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Otherwise,<sp/>just<sp/>use<sp/>the<sp/>IP<sp/>from<sp/>the<sp/>environment<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IpString<sp/>=<sp/>FPlatformMisc::GetEnvironmentVariable(TEXT(</highlight><highlight class="stringliteral">&quot;PUBLIC_IP&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;IP:<sp/>%s;<sp/>Port:<sp/>%d&quot;</highlight><highlight class="normal">),<sp/>*IpString,<sp/>Port);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af4a1bdd827f5470507f5d3deb1b498fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1af4a1bdd827f5470507f5d3deb1b498fa" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::CreateGameSession</ref>()</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSessionPtr<sp/>SessionInterface<sp/>=<sp/>Subsystem-&gt;GetSessionInterface();</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>FNamedOnlineSession*<sp/>Session<sp/>=<sp/>SessionInterface-&gt;GetNamedSession(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Session<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>finish<sp/>creating<sp/>a<sp/>dedicated<sp/>session<sp/>as<sp/>a<sp/>session<sp/>with<sp/>the<sp/>name<sp/>&apos;%s&apos;<sp/>was<sp/>not<sp/>found!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Setting<sp/>=<sp/>Session-&gt;SessionSettings;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>GameMapName;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>GameVersion<sp/>=<sp/>FString::Printf(TEXT(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">),<sp/>GetBuildUniqueId());</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GameNumBot<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MaxSpectator<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>Setting.Get(SETTING_GAMEMODE,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a33f4ddf6d0e10593177bd526b9671c1e" kindref="member">GameMode</ref>);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>Setting.Get(SETTING_MAPNAME,<sp/>GameMapName);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>Setting.Get(SETTING_NUMBOTS,<sp/>GameNumBot);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(ENGINE_MAJOR_VERSION<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>ENGINE_MINOR_VERSION<sp/>&lt;<sp/>26)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>Setting.Get(SETTING_MAXSPECTATORS,<sp/>MaxSpectator);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a33f4ddf6d0e10593177bd526b9671c1e" kindref="member">GameMode</ref>.IsEmpty())</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>finish<sp/>creating<sp/>a<sp/>dedicated<sp/>session<sp/>as<sp/>a<sp/>session<sp/>with<sp/>the<sp/>name<sp/>&apos;%s&apos;<sp/>game<sp/>mode<sp/>is<sp/>empty!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Setting.NumPublicConnections<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>finish<sp/>creating<sp/>a<sp/>dedicated<sp/>session<sp/>as<sp/>a<sp/>session<sp/>with<sp/>the<sp/>name<sp/>&apos;%s&apos;<sp/>public<sp/>connection<sp/>must<sp/>be<sp/>greater<sp/>than<sp/>0!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GameMapName.IsEmpty())</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>finish<sp/>creating<sp/>a<sp/>dedicated<sp/>session<sp/>as<sp/>a<sp/>session<sp/>with<sp/>the<sp/>name<sp/>&apos;%s&apos;<sp/>map<sp/>name<sp/>is<sp/>empty!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>SettingJson<sp/>=<sp/>MakeShared&lt;FJsonObject&gt;();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;Set<sp/>:<sp/>Setting.Settings)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;Data<sp/>=<sp/>Set.Value.Data;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>JsonShared<sp/>=<sp/>Set.Value.Data.ToJson();</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingJson-&gt;SetField(Set.Key.ToString(),<sp/>JsonShared-&gt;TryGetField(TEXT(</highlight><highlight class="stringliteral">&quot;value&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>AccelByte::THandler&lt;FAccelByteModelsSessionBrowserData&gt;<sp/>OnSessionCreateSuccessDelegate<sp/>=</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;AccelByte::THandler&lt;FAccelByteModelsSessionBrowserData&gt;</ref>&gt;::CreateThreadSafeSelfPtr(</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a8006937820185a3ad6a6215c6c0cb674" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::OnSessionCreateSuccess</ref></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>AccelByte::FErrorHandler<sp/>OnSessionCreateFailedDelegate<sp/>=<sp/>AccelByte::FErrorHandler::CreateLambda(</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>Session](<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage)</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>start<sp/>create<sp/>server<sp/>session,<sp/>creating<sp/>server<sp/>session<sp/>failed<sp/>with<sp/>code<sp/>%d<sp/>message<sp/>%s!&quot;</highlight><highlight class="normal">),<sp/>ErrorCode,<sp/>*ErrorMessage);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>AccelByte::FRegistry::ServerSessionBrowser.CreateGameSession(</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EAccelByteSessionType::dedicated,</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a33f4ddf6d0e10593177bd526b9671c1e" kindref="member">GameMode</ref>,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameMapName,</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameVersion,</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameNumBot,</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Setting.NumPublicConnections,</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MaxSpectator,</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingJson,</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnSessionCreateSuccessDelegate,</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnSessionCreateFailedDelegate);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Sent<sp/>off<sp/>async<sp/>task<sp/>to<sp/>create<sp/>dedicated<sp/>game<sp/>session&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a8006937820185a3ad6a6215c6c0cb674" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a8006937820185a3ad6a6215c6c0cb674" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::OnSessionCreateSuccess</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsSessionBrowserData&amp;<sp/>Data)</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;SessionName:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a24a9973d4c26b85e08945f964e5b8067" kindref="member">RegisterCreatedGameSession</ref>(Data.Session_id);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Sent<sp/>off<sp/>async<sp/>task<sp/>to<sp/>register<sp/>created<sp/>dedicated<sp/>game<sp/>session&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a24a9973d4c26b85e08945f964e5b8067" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a24a9973d4c26b85e08945f964e5b8067" kindref="member">FOnlineAsyncTaskAccelByteRegisterDedicatedV1Session::RegisterCreatedGameSession</ref>(FString<sp/>SessionId)</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>OnSessionRegisterSuccess<sp/>=<sp/>THandler&lt;FAccelByteModelsServerCreateSessionResponse&gt;::CreateLambda(</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsServerCreateSessionResponse&amp;<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>)</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Log,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Successfully<sp/>registered<sp/>dedicated<sp/>server<sp/>session<sp/>with<sp/>name:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a063aeeaf458c207b79a4b426f65e926d" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea505a83f220c02df2f85c3810cd9ceb38" kindref="member">EAccelByteAsyncTaskCompleteState::Success</ref>);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>OnSessionRegisterFailed<sp/>=<sp/>AccelByte::FErrorHandler::CreateLambda(</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage)</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>start<sp/>create<sp/>server<sp/>session,<sp/>server<sp/>session<sp/>registration<sp/>failed<sp/>with<sp/>code<sp/>%d<sp/>message<sp/>%s!&quot;</highlight><highlight class="normal">),<sp/>ErrorCode,<sp/>*ErrorMessage);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>AccelByte::FRegistry::ServerDSM.RegisterServerGameSession(SessionId,<sp/><ref refid="dc/d94/class_f_online_async_task_accel_byte_register_dedicated_v1_session_1a33f4ddf6d0e10593177bd526b9671c1e" kindref="member">GameMode</ref>,<sp/>OnSessionRegisterSuccess,<sp/>OnSessionRegisterFailed);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Sent<sp/>off<sp/>async<sp/>task<sp/>to<sp/>register<sp/>created<sp/>dedicated<sp/>game<sp/>session&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="387"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/Server/OnlineAsyncTaskAccelByteRegisterDedicatedV1Session.cpp"/>
+  </compounddef>
+</doxygen>

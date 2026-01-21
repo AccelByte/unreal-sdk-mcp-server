@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dc/d9a/class_f_online_time_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineTimeAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineTime</basecompoundref>
+    <includes refid="da/de7/_online_time_interface_accel_byte_8h" local="no">OnlineTimeInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/d9a/class_f_online_time_accel_byte_1a52cbf45269eeaab8562efad9d4b8969a" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineTimeAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineTimeAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineTimeAccelByte(FOnlineSubsystemAccelByte* InSubsystem)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="13" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="dc/d9a/class_f_online_time_accel_byte_1a0e9e2d1eb97f67c3d9106449cf4cb21a" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineTimeAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineTimeAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="50" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9a/class_f_online_time_accel_byte_1a6ae374e04c7ddb352ad95a74592a4975" prot="protected" static="no" mutable="no">
+        <type>FDateTime</type>
+        <definition>FDateTime FOnlineTimeAccelByte::LastServerTime</definition>
+        <argsstring></argsstring>
+        <name>LastServerTime</name>
+        <qualifiedname>FOnlineTimeAccelByte::LastServerTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="52" column="11" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9a/class_f_online_time_accel_byte_1a60cec65d8500898b6f5ee59b764057e7" prot="protected" static="no" mutable="no">
+        <type>FTimespan</type>
+        <definition>FTimespan FOnlineTimeAccelByte::ServerTimestamp</definition>
+        <argsstring></argsstring>
+        <name>ServerTimestamp</name>
+        <qualifiedname>FOnlineTimeAccelByte::ServerTimestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="53" column="11" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d9a/class_f_online_time_accel_byte_1a5bf6b90f5d2467a4a105cf33e87fe759" prot="protected" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineTimeAccelByte::ServerTimeLock</definition>
+        <argsstring></argsstring>
+        <name>ServerTimeLock</name>
+        <qualifiedname>FOnlineTimeAccelByte::ServerTimeLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical sections for thread safe operation of ServerTime </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="55" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/d9a/class_f_online_time_accel_byte_1a11126d34ab55c7ad6a6874dcf6a06db0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineTimeAccelByte::UpdateServerTime</definition>
+        <argsstring>(const FDateTime &amp;Time)</argsstring>
+        <name>UpdateServerTime</name>
+        <qualifiedname>FOnlineTimeAccelByte::UpdateServerTime</qualifiedname>
+        <param>
+          <type>const FDateTime &amp;</type>
+          <declname>Time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="17" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineTimeInterfaceAccelByte.cpp" bodystart="15" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/d9a/class_f_online_time_accel_byte_1a4d2302fba5e22636662b8d8bc2d85f5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineTimeAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineTimeAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineTimeAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="dc/d9a/class_f_online_time_accel_byte" kindref="compound">FOnlineTimeAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="27" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineTimeInterfaceAccelByte.cpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d9a/class_f_online_time_accel_byte_1a06a6db2b3a1e094301d2931bc0e6463d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineTimeAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineTimeAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineTimeAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="dc/d9a/class_f_online_time_accel_byte" kindref="compound">FOnlineTimeAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="36" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineTimeInterfaceAccelByte.cpp" bodystart="28" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d9a/class_f_online_time_accel_byte_1ae91f5965e18dfb99d14dc70f97737ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineTimeAccelByte::QueryServerUtcTime</definition>
+        <argsstring>() override</argsstring>
+        <name>QueryServerUtcTime</name>
+        <qualifiedname>FOnlineTimeAccelByte::QueryServerUtcTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="38" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineTimeInterfaceAccelByte.cpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d9a/class_f_online_time_accel_byte_1af471bfba5f8a8594ca759e18612e52a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineTimeAccelByte::GetLastServerUtcTime</definition>
+        <argsstring>() override</argsstring>
+        <name>GetLastServerUtcTime</name>
+        <qualifiedname>FOnlineTimeAccelByte::GetLastServerUtcTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="39" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineTimeInterfaceAccelByte.cpp" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d9a/class_f_online_time_accel_byte_1a61f4d79811e6a14ac3ca0cf20f465240" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineTimeAccelByte::GetBackCalculatedServerTime</definition>
+        <argsstring>()</argsstring>
+        <name>GetBackCalculatedServerTime</name>
+        <qualifiedname>FOnlineTimeAccelByte::GetBackCalculatedServerTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get server current timestamp back calculated from cached last server time query</para>
+<para><simplesect kind="return"><para>string representation of time (yyyy.MM.dd-HH.mm.ss) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="46" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineTimeInterfaceAccelByte.cpp" bodystart="57" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineTimeAccelByte</label>
+        <link refid="dc/d9a/class_f_online_time_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineTime</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="1">
+        <label>FOnlineTimeAccelByte</label>
+        <link refid="dc/d9a/class_f_online_time_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineTime</label>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" line="11" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineTimeInterfaceAccelByte.h" bodystart="12" bodyend="56"/>
+    <listofallmembers>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a52cbf45269eeaab8562efad9d4b8969a" prot="private" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>__pad0__</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a0e9e2d1eb97f67c3d9106449cf4cb21a" prot="protected" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a61f4d79811e6a14ac3ca0cf20f465240" prot="public" virt="virtual"><scope>FOnlineTimeAccelByte</scope><name>GetBackCalculatedServerTime</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a4d2302fba5e22636662b8d8bc2d85f5f" prot="public" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a06a6db2b3a1e094301d2931bc0e6463d" prot="public" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1af471bfba5f8a8594ca759e18612e52a5" prot="public" virt="virtual"><scope>FOnlineTimeAccelByte</scope><name>GetLastServerUtcTime</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a6ae374e04c7ddb352ad95a74592a4975" prot="protected" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>LastServerTime</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1ae91f5965e18dfb99d14dc70f97737ea1" prot="public" virt="virtual"><scope>FOnlineTimeAccelByte</scope><name>QueryServerUtcTime</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a5bf6b90f5d2467a4a105cf33e87fe759" prot="protected" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>ServerTimeLock</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a60cec65d8500898b6f5ee59b764057e7" prot="protected" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>ServerTimestamp</name></member>
+      <member refid="dc/d9a/class_f_online_time_accel_byte_1a11126d34ab55c7ad6a6874dcf6a06db0" prot="private" virt="non-virtual"><scope>FOnlineTimeAccelByte</scope><name>UpdateServerTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d2/d81/_online_async_task_accel_byte_query_all_v2_session_invites_8h" local="no">OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aa65a17b37b9d84f2694b4e1a22d42ebb" prot="private" static="no" mutable="no">
+        <type>FThreadSafeBool</type>
+        <definition>FThreadSafeBool FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::bHasReceivedGameSessionInviteResponse</definition>
+        <argsstring></argsstring>
+        <name>bHasReceivedGameSessionInviteResponse</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::bHasReceivedGameSessionInviteResponse</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether or not we have received a response to get all game session invites </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="37" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aef963fc280bf5d35f4ee379d94ae0165" prot="private" static="no" mutable="no">
+        <type>FThreadSafeBool</type>
+        <definition>FThreadSafeBool FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::bHasReceivedPartySessionInviteResponse</definition>
+        <argsstring></argsstring>
+        <name>bHasReceivedPartySessionInviteResponse</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::bHasReceivedPartySessionInviteResponse</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether or not we have received a response to get all party session invites </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="40" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aad102172b28f637c176069a1591fd87b" prot="private" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="de/d1e/struct_f_online_session_invite_accel_byte" kindref="compound">FOnlineSessionInviteAccelByte</ref> &gt;</type>
+        <definition>TArray&lt;FOnlineSessionInviteAccelByte&gt; FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Invites</definition>
+        <argsstring></argsstring>
+        <name>Invites</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Invites</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of constructed invites, will be passed back to session interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="43" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a78a42954434977971d936adf01044e00" prot="private" static="no" mutable="no">
+        <type>THandler&lt; FAccelByteModelsV2PaginatedGameSessionQueryResult &gt;</type>
+        <definition>THandler&lt;FAccelByteModelsV2PaginatedGameSessionQueryResult&gt; FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetGameSessionInvitesSuccessDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="45" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a54cc74b8ee8834f01b4a29691ffdd7c2" prot="private" static="no" mutable="no">
+        <type>FErrorHandler</type>
+        <definition>FErrorHandler FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetGameSessionInvitesErrorDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="48" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a4bd584058097925ef49dc8856310c680" prot="private" static="no" mutable="no">
+        <type>THandler&lt; FAccelByteModelsV2PaginatedPartyQueryResult &gt;</type>
+        <definition>THandler&lt;FAccelByteModelsV2PaginatedPartyQueryResult&gt; FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesSuccessDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetPartySessionInvitesSuccessDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesSuccessDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="51" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a57372251b6e4f2b37813fa475db1ce8a" prot="private" static="no" mutable="no">
+        <type>FErrorHandler</type>
+        <definition>FErrorHandler FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesErrorDelegate</definition>
+        <argsstring></argsstring>
+        <name>OnGetPartySessionInvitesErrorDelegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesErrorDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="54" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aad2bb8b167557e007f94f392f9883233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const FUniqueNetId &amp;InPlayerId)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InPlayerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="21" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a09bdb920a73b5480418132b6477103bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="23" column="18" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="15" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a841e18a81c0021f8c974e92a10b62994" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Tick</definition>
+        <argsstring>() override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Tick</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2">Tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple tick override to check if we are using timeouts, and if so check the task timeout and complete the task unsuccessfully if it&apos;s over its timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="24" column="18" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a73a2e085fc76adfd9498c11e3ac187c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="25" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="42" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a4190844fec789541d0b4d5c4ba4ba798" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="26" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="63" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a917a54e09fa0fecef513256943d45c8d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="30" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aac7a25f4098d68a03a9ff61d6e417789" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesSuccess</definition>
+        <argsstring>(const FAccelByteModelsV2PaginatedGameSessionQueryResult &amp;Result)</argsstring>
+        <name>OnGetGameSessionInvitesSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsV2PaginatedGameSessionQueryResult &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="46" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="80" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aa5d73bc69bccb127149e5856041aa1fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnGetGameSessionInvitesError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetGameSessionInvitesError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="49" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a98ab077e6e5deeaf95e5bb70eb11dd04" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesSuccess</definition>
+        <argsstring>(const FAccelByteModelsV2PaginatedPartyQueryResult &amp;Result)</argsstring>
+        <name>OnGetPartySessionInvitesSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsV2PaginatedPartyQueryResult &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="52" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="113" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a8f561945ba5e343cf2c6a82991ef98b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnGetPartySessionInvitesError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites::OnGetPartySessionInvitesError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="55" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.cpp" bodystart="140" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Queries all invites for a player, includes both game session and party session invites. Developer then can filter those invites locally. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</label>
+        <link refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</label>
+        <link refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" line="15" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteQueryAllV2SessionInvites.h" bodystart="18" bodyend="57"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>ApiClient</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aa65a17b37b9d84f2694b4e1a22d42ebb" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>bHasReceivedGameSessionInviteResponse</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aef963fc280bf5d35f4ee379d94ae0165" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>bHasReceivedPartySessionInviteResponse</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>bHasReference</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>CurrentState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Epic</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a73a2e085fc76adfd9498c11e3ac187c3" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aad2bb8b167557e007f94f392f9883233" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetParentTask</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a917a54e09fa0fecef513256943d45c8d" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>HasTaskTimedOut</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a09bdb920a73b5480418132b6477103bd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Initialize</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aad102172b28f637c176069a1591fd87b" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Invites</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>LocalUserNum</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aa5d73bc69bccb127149e5856041aa1fb" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetGameSessionInvitesError</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a54cc74b8ee8834f01b4a29691ffdd7c2" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetGameSessionInvitesErrorDelegate</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1aac7a25f4098d68a03a9ff61d6e417789" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetGameSessionInvitesSuccess</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a78a42954434977971d936adf01044e00" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetGameSessionInvitesSuccessDelegate</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a8f561945ba5e343cf2c6a82991ef98b2" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetPartySessionInvitesError</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a57372251b6e4f2b37813fa475db1ce8a" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetPartySessionInvitesErrorDelegate</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a98ab077e6e5deeaf95e5bb70eb11dd04" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetPartySessionInvitesSuccess</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a4bd584058097925ef49dc8856310c680" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnGetPartySessionInvitesSuccessDelegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>ParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>ThisPtr</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a841e18a81c0021f8c974e92a10b62994" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual" ambiguityscope="FOnlineAsyncTaskAccelByte::"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>ToString</name></member>
+      <member refid="da/da0/class_f_online_async_task_accel_byte_query_all_v2_session_invites_1a4190844fec789541d0b4d5c4ba4ba798" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryAllV2SessionInvites</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d6/dfd/class_f_online_agreement_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAgreementAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineAgreementAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d3/d4d/_online_agreement_interface_accel_byte_8h" local="no">OnlineAgreementInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/dfd/class_f_online_agreement_accel_byte_1a7655843a217a29d9a118bd1ea547d3e3" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineAgreementAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineAgreementAccelByte::__pad0__</qualifiedname>
+        <bitfield> TUniqueNetIdMap&lt;TArray&lt;TSharedRef&lt;FAccelByteModelsRetrieveUserEligibilitiesResponse&gt;&gt;&gt; EligibilitiesMap</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="52" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dfd/class_f_online_agreement_accel_byte_1a603950f8624919999d2c95dbdb2923df" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, TArray&lt; <ref refid="d4/ddb/struct_f_a_b_localized_policy_content" kindref="compound">FABLocalizedPolicyContent</ref> &gt; &gt;</type>
+        <definition>TMap&lt;FString, TArray&lt;FABLocalizedPolicyContent&gt; &gt; FOnlineAgreementAccelByte::LocalizedContentMap</definition>
+        <argsstring></argsstring>
+        <name>LocalizedContentMap</name>
+        <qualifiedname>FOnlineAgreementAccelByte::LocalizedContentMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="56" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d6/dfd/class_f_online_agreement_accel_byte_1a771a59316b98693247dfc794b6a1802d" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineAgreementAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineAgreementAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="123" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1af10ccbbc03f621ce9ec6cc98c50d0943" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::FOnlineAgreementAccelByte</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *InSubsystem)</argsstring>
+        <name>FOnlineAgreementAccelByte</name>
+        <qualifiedname>FOnlineAgreementAccelByte::FOnlineAgreementAccelByte</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+          <declname>InSubsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor that is invoked by the Subsystem instance to create a user cloud instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="59" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1aa035010f3079c27e23f7ddc13fe01aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineAgreementAccelByte::~FOnlineAgreementAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>~FOnlineAgreementAccelByte</name>
+        <qualifiedname>FOnlineAgreementAccelByte::~FOnlineAgreementAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="64" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a46ceb6f08d586bf5b0fff46059a3eaf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnUserNotComplied)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE</name>
+        <qualifiedname>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnUserNotComplied</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a2673fc41e97b3d01f7ccc546c0f90c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnQueryEligibilitiesCompleted, bool, const TArray&lt; FAccelByteModelsRetrieveUserEligibilitiesResponse &gt; &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnQueryEligibilitiesCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsRetrieveUserEligibilitiesResponse &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a0c337d0af06e5905eadcc9120c70feb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnGetLocalizedPolicyContentCompleted, bool, const FString &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnGetLocalizedPolicyContentCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a3161f31d7afb9f7d241da2b70c66bf5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnAcceptAgreementPoliciesCompleted, bool, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnAcceptAgreementPoliciesCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a3e925020b2a2bbf5e592591c5ccc92b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, AccelByteOnQueryEligibilitiesCompleted, bool, const TArray&lt; FAccelByteModelsRetrieveUserEligibilitiesResponse &gt; &amp;, const FOnlineErrorAccelByte &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>AccelByteOnQueryEligibilitiesCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsRetrieveUserEligibilitiesResponse &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a69f5ec7a6ff03a2861db08b3e511582e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, AccelByteOnGetLocalizedPolicyContentCompleted, bool, const FString &amp;, const FOnlineErrorAccelByte &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>AccelByteOnGetLocalizedPolicyContentCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1acebf3a9af94f1c4530db3c7ec5bfe7f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, AccelByteOnAcceptAgreementPoliciesCompleted, bool, const FOnlineErrorAccelByte &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineAgreementAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>AccelByteOnAcceptAgreementPoliciesCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1aaf995cebd27d17b2562045941da3d8a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAgreementAccelByte::QueryEligibleAgreements</definition>
+        <argsstring>(int32 LocalUserNum, bool bNotAcceptedOnly=false, bool bAlwaysRequestToService=false)</argsstring>
+        <name>QueryEligibleAgreements</name>
+        <qualifiedname>FOnlineAgreementAccelByte::QueryEligibleAgreements</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bNotAcceptedOnly</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bAlwaysRequestToService</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Query user&apos;s eligibilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bNotAcceptedOnly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to only get the eligibilities that not complied yet. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bAlwaysRequestToService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to force create request to query the eligibilities from agreement service. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="99" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAgreementInterfaceAccelByte.cpp" bodystart="40" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a9a6f4f1be06887432c467c53e7149c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAgreementAccelByte::GetEligibleAgreements</definition>
+        <argsstring>(int32 LocalUserNum, TArray&lt; TSharedRef&lt; FAccelByteModelsRetrieveUserEligibilitiesResponse &gt; &gt; &amp;OutEligibilites)</argsstring>
+        <name>GetEligibleAgreements</name>
+        <qualifiedname>FOnlineAgreementAccelByte::GetEligibleAgreements</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FAccelByteModelsRetrieveUserEligibilitiesResponse &gt; &gt; &amp;</type>
+          <declname>OutEligibilites</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="102" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAgreementInterfaceAccelByte.cpp" bodystart="80" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1ac5242fb3c7709c546d7c4d4b67ac1615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAgreementAccelByte::GetLocalizedPolicyContent</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;BasePolicyId, const FString &amp;LocaleCode, bool bAlwaysRequestToService=false)</argsstring>
+        <name>GetLocalizedPolicyContent</name>
+        <qualifiedname>FOnlineAgreementAccelByte::GetLocalizedPolicyContent</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>BasePolicyId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>LocaleCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bAlwaysRequestToService</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Get the localized policy content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bAlwaysRequestToService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to force create request to query the content from agreement service. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="109" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAgreementInterfaceAccelByte.cpp" bodystart="96" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1ad36a9673185f1a723dc09bc684a9a758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAgreementAccelByte::GetLocalizedPolicyContentFromCache</definition>
+        <argsstring>(const FString &amp;BasePolicyId, const FString &amp;LocaleCode, FString &amp;OutLocalizedPolicyContent)</argsstring>
+        <name>GetLocalizedPolicyContentFromCache</name>
+        <qualifiedname>FOnlineAgreementAccelByte::GetLocalizedPolicyContentFromCache</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>BasePolicyId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>LocaleCode</declname>
+        </param>
+        <param>
+          <type>FString &amp;</type>
+          <declname>OutLocalizedPolicyContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="112" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAgreementInterfaceAccelByte.cpp" bodystart="137" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1ae159fe434717973f074a5eff8a3ff603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAgreementAccelByte::AcceptAgreementPolicies</definition>
+        <argsstring>(int32 LocalUserNum, const TArray&lt; FABAcceptAgreementPoliciesRequest &gt; &amp;DocumentsToAccept)</argsstring>
+        <name>AcceptAgreementPolicies</name>
+        <qualifiedname>FOnlineAgreementAccelByte::AcceptAgreementPolicies</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; <ref refid="d8/d3f/struct_f_a_b_accept_agreement_policies_request" kindref="compound">FABAcceptAgreementPoliciesRequest</ref> &gt; &amp;</type>
+          <declname>DocumentsToAccept</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="114" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAgreementInterfaceAccelByte.cpp" bodystart="155" bodyend="192"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1ad901f13abd5add2c1fe9827398949137" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAgreementAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineAgreementAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineAgreementAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d6/dfd/class_f_online_agreement_accel_byte" kindref="compound">FOnlineAgreementAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="73" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAgreementInterfaceAccelByte.cpp" bodystart="14" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a657658256730d7e6afc1cb94c60ad0e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAgreementAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineAgreementAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineAgreementAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d6/dfd/class_f_online_agreement_accel_byte" kindref="compound">FOnlineAgreementAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="82" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAgreementInterfaceAccelByte.cpp" bodystart="27" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d6/dfd/class_f_online_agreement_accel_byte_1a7d0ffd227793d5653714c6da527454a6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAgreementAccelByte::FOnlineAgreementAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineAgreementAccelByte</name>
+        <qualifiedname>FOnlineAgreementAccelByte::FOnlineAgreementAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="118" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of Agreement service from <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineAgreementAccelByte</label>
+        <link refid="d6/dfd/class_f_online_agreement_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineAgreementAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="1">
+        <label>FOnlineAgreementAccelByte</label>
+        <link refid="d6/dfd/class_f_online_agreement_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineAgreementAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" line="50" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAgreementInterfaceAccelByte.h" bodystart="51" bodyend="125"/>
+    <listofallmembers>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a7655843a217a29d9a118bd1ea547d3e3" prot="private" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a771a59316b98693247dfc794b6a1802d" prot="protected" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1ae159fe434717973f074a5eff8a3ff603" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>AcceptAgreementPolicies</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a46ceb6f08d586bf5b0fff46059a3eaf9" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a2673fc41e97b3d01f7ccc546c0f90c8d" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a0c337d0af06e5905eadcc9120c70feb5" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a3e925020b2a2bbf5e592591c5ccc92b4" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a69f5ec7a6ff03a2861db08b3e511582e" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a3161f31d7afb9f7d241da2b70c66bf5d" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1acebf3a9af94f1c4530db3c7ec5bfe7f0" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1af10ccbbc03f621ce9ec6cc98c50d0943" prot="private" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>FOnlineAgreementAccelByte</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a7d0ffd227793d5653714c6da527454a6" prot="protected" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>FOnlineAgreementAccelByte</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a9a6f4f1be06887432c467c53e7149c12" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>GetEligibleAgreements</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1ad901f13abd5add2c1fe9827398949137" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a657658256730d7e6afc1cb94c60ad0e1" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1ac5242fb3c7709c546d7c4d4b67ac1615" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>GetLocalizedPolicyContent</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1ad36a9673185f1a723dc09bc684a9a758" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>GetLocalizedPolicyContentFromCache</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1a603950f8624919999d2c95dbdb2923df" prot="private" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>LocalizedContentMap</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1aaf995cebd27d17b2562045941da3d8a2" prot="public" virt="non-virtual"><scope>FOnlineAgreementAccelByte</scope><name>QueryEligibleAgreements</name></member>
+      <member refid="d6/dfd/class_f_online_agreement_accel_byte_1aa035010f3079c27e23f7ddc13fe01aa7" prot="public" virt="virtual"><scope>FOnlineAgreementAccelByte</scope><name>~FOnlineAgreementAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d7/d28/_accel_byte_timer_object_8h" kind="file" language="C++">
+    <compoundname>AccelByteTimerObject.h</compoundname>
+    <includes local="yes">Tickable.h</includes>
+    <includes local="yes">TimerManager.h</includes>
+    <includedby refid="df/dc3/_accel_byte_timer_object_8cpp" local="yes">AccelByteTimerObject.cpp</includedby>
+    <includedby refid="d8/d4f/_online_async_task_accel_byte_login_8h" local="yes">OnlineAsyncTaskAccelByteLogin.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>AccelByteTimerObject.h</label>
+        <link refid="d7/d28/_accel_byte_timer_object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Tickable.h</label>
+      </node>
+      <node id="3">
+        <label>TimerManager.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>AccelByteTimerObject.cpp</label>
+        <link refid="df/dc3/_accel_byte_timer_object_8cpp"/>
+      </node>
+      <node id="4">
+        <label>OnlineAsyncTaskAccelByteLogin.cpp</label>
+        <link refid="d2/d2e/_online_async_task_accel_byte_login_8cpp"/>
+      </node>
+      <node id="3">
+        <label>OnlineAsyncTaskAccelByteLogin.h</label>
+        <link refid="d8/d4f/_online_async_task_accel_byte_login_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>OnlineIdentityInterfaceAccelByte.cpp</label>
+        <link refid="d3/d9e/_online_identity_interface_accel_byte_8cpp"/>
+      </node>
+      <node id="1">
+        <label>AccelByteTimerObject.h</label>
+        <link refid="d7/d28/_accel_byte_timer_object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/d94/class_f_accel_byte_timer_object" prot="public">FAccelByteTimerObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Tickable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TimerManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d4/d94/class_f_accel_byte_timer_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/d94/class_f_accel_byte_timer_object_1a6fb39da11e9cf200bb4c9b246177a5b0" kindref="member">FAccelByteTimerObject</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>FTickableGameObject</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="d4/d94/class_f_accel_byte_timer_object_1a6fb39da11e9cf200bb4c9b246177a5b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a6fb39da11e9cf200bb4c9b246177a5b0" kindref="member">FAccelByteTimerObject</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a823e5fcf790442c35ea364a8bc4aa833" kindref="member">Start</ref>(int64<sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a06394188c85e305fda8a9b50e2569030" kindref="member">ExpirationTimeMs</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FTimerDelegate&amp;<sp/>InDelegate);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a4a75ad884d3747da9272616447df4425" kindref="member">StartIn</ref>(int64<sp/>StartInMs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FTimerDelegate&amp;<sp/>InDelegate);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1af84daffe2b2f055726e7b353851e933f" kindref="member">Stop</ref>();</highlight></codeline>
+<codeline lineno="23" refid="d4/d94/class_f_accel_byte_timer_object_1aad5dfb28e43838cf9a1d6d5bcd341f00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FORCEINLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1aad5dfb28e43838cf9a1d6d5bcd341f00" kindref="member">IsComplete</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a6ffa00a8fd68b60bdcf9e8f0841eb201" kindref="member">bIsComplete</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="24" refid="d4/d94/class_f_accel_byte_timer_object_1a8040d2468092e9bc1129063cfd41c339" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FORCEINLINE<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a8040d2468092e9bc1129063cfd41c339" kindref="member">IsStarted</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1aecaff3339407ecd9ee20788c5adc454c" kindref="member">bIsStarted</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>FTickableGameObject<sp/>Interface.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d4/d94/class_f_accel_byte_timer_object_1a3f95415c11805625a0f0fb89b45c862f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a3f95415c11805625a0f0fb89b45c862f" kindref="member">IsTickable</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1aecaff3339407ecd9ee20788c5adc454c" kindref="member">bIsStarted</ref><sp/>&amp;&amp;<sp/>!<ref refid="d4/d94/class_f_accel_byte_timer_object_1a6ffa00a8fd68b60bdcf9e8f0841eb201" kindref="member">bIsComplete</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a5758579e5aa3cf010782810fb6b502fb" kindref="member">Tick</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>TStatId<sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1afb1bc74040b4425c910c944187e8f405" kindref="member">GetStatId</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>FTickableGameObject<sp/>Interface.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timer<sp/>started<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d4/d94/class_f_accel_byte_timer_object_1aecaff3339407ecd9ee20788c5adc454c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1aecaff3339407ecd9ee20788c5adc454c" kindref="member">bIsStarted</ref>{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>expiration<sp/>time<sp/>in<sp/>epoch<sp/>milliseconds<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d4/d94/class_f_accel_byte_timer_object_1a06394188c85e305fda8a9b50e2569030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64<sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a06394188c85e305fda8a9b50e2569030" kindref="member">ExpirationTimeMs</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timer<sp/>complete<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d4/d94/class_f_accel_byte_timer_object_1a6ffa00a8fd68b60bdcf9e8f0841eb201" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a6ffa00a8fd68b60bdcf9e8f0841eb201" kindref="member">bIsComplete</ref>{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>delegate<sp/>for<sp/>timer<sp/>complete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d4/d94/class_f_accel_byte_timer_object_1a5b11d8a21978191c14f7aa6467f83612" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FTimerDelegate<sp/><ref refid="d4/d94/class_f_accel_byte_timer_object_1a5b11d8a21978191c14f7aa6467f83612" kindref="member">Delegate</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AccelByteTimerObject.h"/>
+  </compounddef>
+</doxygen>

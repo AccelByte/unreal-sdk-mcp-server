@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/d98/class_f_online_external_u_i_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineExternalUIAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineExternalUI</basecompoundref>
+    <includes refid="d9/d2e/_online_external_u_i_interface_accel_byte_8h" local="no">OnlineExternalUIInterfaceAccelByte.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d98/class_f_online_external_u_i_accel_byte_1a4ffd361455db00277985f0bcc833cb1a" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineExternalUIAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::__pad0__</qualifiedname>
+        <bitfield> explicit FOnlineExternalUIAccelByte(FOnlineSubsystemAccelByte* InSubsystem) : AccelByteSubsystem(InSubsystem) { }private: FOnlineSubsystemAccelByte* AccelByteSubsystem</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="51" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1adfad0b1f760914c5de9263cdea31bf5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineExternalUIAccelByte::~FOnlineExternalUIAccelByte</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FOnlineExternalUIAccelByte</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::~FOnlineExternalUIAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="16" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a47a12362b82fc7751e4a973c5a9681f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowLoginUI</definition>
+        <argsstring>(const int ControllerIndex, bool bShowOnlineOnly, bool bShowSkipButton, const FOnLoginUIClosedDelegate &amp;Delegate=FOnLoginUIClosedDelegate()) override</argsstring>
+        <name>ShowLoginUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowLoginUI</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>ControllerIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bShowOnlineOnly</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bShowSkipButton</declname>
+        </param>
+        <param>
+          <type>const FOnLoginUIClosedDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnLoginUIClosedDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="37" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="33" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a3293f9a4d079984ecc5dea6269a2bee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowAccountCreationUI</definition>
+        <argsstring>(const int ControllerIndex, const FOnAccountCreationUIClosedDelegate &amp;Delegate=FOnAccountCreationUIClosedDelegate()) override</argsstring>
+        <name>ShowAccountCreationUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowAccountCreationUI</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>ControllerIndex</declname>
+        </param>
+        <param>
+          <type>const FOnAccountCreationUIClosedDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnAccountCreationUIClosedDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="38" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="44" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a326bea23a7e2e0ec3cfd8bac8433cebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowFriendsUI</definition>
+        <argsstring>(int32 LocalUserNum) override</argsstring>
+        <name>ShowFriendsUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowFriendsUI</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="39" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="55" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a318d0c87bc0ee87fa34849685de0f7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowInviteUI</definition>
+        <argsstring>(int32 LocalUserNum, FName SessionName=NAME_GameSession) override</argsstring>
+        <name>ShowInviteUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowInviteUI</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>FName</type>
+          <declname>SessionName</declname>
+          <defval>NAME_GameSession</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="40" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a2c4348535dca923dc3abb3cdef2c3e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowAchievementsUI</definition>
+        <argsstring>(int32 LocalUserNum) override</argsstring>
+        <name>ShowAchievementsUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowAchievementsUI</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="41" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="77" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1ab0122c7df9d8452d142cba65ec7661e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowLeaderboardUI</definition>
+        <argsstring>(const FString &amp;LeaderboardName) override</argsstring>
+        <name>ShowLeaderboardUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowLeaderboardUI</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>LeaderboardName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="42" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="88" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1adca2743fde3983e8bbde426b2f698009" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowWebURL</definition>
+        <argsstring>(const FString &amp;Url, const FShowWebUrlParams &amp;ShowParams, const FOnShowWebUrlClosedDelegate &amp;Delegate=FOnShowWebUrlClosedDelegate()) override</argsstring>
+        <name>ShowWebURL</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowWebURL</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type>const FShowWebUrlParams &amp;</type>
+          <declname>ShowParams</declname>
+        </param>
+        <param>
+          <type>const FOnShowWebUrlClosedDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnShowWebUrlClosedDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="43" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="99" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1ad1b1da206655aa95d65e79f25b4659ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::CloseWebURL</definition>
+        <argsstring>() override</argsstring>
+        <name>CloseWebURL</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::CloseWebURL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="44" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="110" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a2d2557582318c2e65ccc00cc9da5546d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowProfileUI</definition>
+        <argsstring>(const FUniqueNetId &amp;Requestor, const FUniqueNetId &amp;Requestee, const FOnProfileUIClosedDelegate &amp;Delegate=FOnProfileUIClosedDelegate()) override</argsstring>
+        <name>ShowProfileUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowProfileUI</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>Requestor</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>Requestee</declname>
+        </param>
+        <param>
+          <type>const FOnProfileUIClosedDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnProfileUIClosedDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="45" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="121" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1ad9d565b8890da8ded9b4c2cc6bd7ba9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowAccountUpgradeUI</definition>
+        <argsstring>(const FUniqueNetId &amp;UniqueId) override</argsstring>
+        <name>ShowAccountUpgradeUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowAccountUpgradeUI</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UniqueId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="46" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="145" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a4a466873f10c8578dac5ab5ebd472671" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowStoreUI</definition>
+        <argsstring>(int32 LocalUserNum, const FShowStoreParams &amp;ShowParams, const FOnShowStoreUIClosedDelegate &amp;Delegate=FOnShowStoreUIClosedDelegate()) override</argsstring>
+        <name>ShowStoreUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowStoreUI</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FShowStoreParams &amp;</type>
+          <declname>ShowParams</declname>
+        </param>
+        <param>
+          <type>const FOnShowStoreUIClosedDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnShowStoreUIClosedDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="47" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="162" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a478d60261a00da3becc9190c5f7bc486" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::ShowSendMessageUI</definition>
+        <argsstring>(int32 LocalUserNum, const FShowSendMessageParams &amp;ShowParams, const FOnShowSendMessageUIClosedDelegate &amp;Delegate=FOnShowSendMessageUIClosedDelegate()) override</argsstring>
+        <name>ShowSendMessageUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::ShowSendMessageUI</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FShowSendMessageParams &amp;</type>
+          <declname>ShowParams</declname>
+        </param>
+        <param>
+          <type>const FOnShowSendMessageUIClosedDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnShowSendMessageUIClosedDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="48" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="173" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1a00902c18a7380bdec5ac1001019ffd80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IOnlineExternalUIPtr</type>
+        <definition>IOnlineExternalUIPtr FOnlineExternalUIAccelByte::GetNativePlatformExternalUI</definition>
+        <argsstring>()</argsstring>
+        <name>GetNativePlatformExternalUI</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::GetNativePlatformExternalUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attempt to get the external UI interface for the native platform of the user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="71" column="22" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="184" bodyend="193"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1ab20405389acf47b1357f16565b608be7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineExternalUIAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d4/d98/class_f_online_external_u_i_accel_byte" kindref="compound">FOnlineExternalUIAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="25" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/class_f_online_external_u_i_accel_byte_1adfa9df9d7c52f7b354ff87a2aa9e3e04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineExternalUIAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineExternalUIAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineExternalUIAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d4/d98/class_f_online_external_u_i_accel_byte" kindref="compound">FOnlineExternalUIAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="34" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineExternalUIInterfaceAccelByte.cpp" bodystart="21" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineExternalUIAccelByte</label>
+        <link refid="d4/d98/class_f_online_external_u_i_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineExternalUI</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FOnlineExternalUIAccelByte</label>
+        <link refid="d4/d98/class_f_online_external_u_i_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineExternalUI</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="13" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" bodystart="14" bodyend="73"/>
+    <listofallmembers>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a4ffd361455db00277985f0bcc833cb1a" prot="public" virt="non-virtual"><scope>FOnlineExternalUIAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1ad1b1da206655aa95d65e79f25b4659ac" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>CloseWebURL</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1ab20405389acf47b1357f16565b608be7" prot="public" virt="non-virtual"><scope>FOnlineExternalUIAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1adfa9df9d7c52f7b354ff87a2aa9e3e04" prot="public" virt="non-virtual"><scope>FOnlineExternalUIAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a00902c18a7380bdec5ac1001019ffd80" prot="public" virt="non-virtual"><scope>FOnlineExternalUIAccelByte</scope><name>GetNativePlatformExternalUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a3293f9a4d079984ecc5dea6269a2bee9" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowAccountCreationUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1ad9d565b8890da8ded9b4c2cc6bd7ba9d" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowAccountUpgradeUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a2c4348535dca923dc3abb3cdef2c3e5f" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowAchievementsUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a326bea23a7e2e0ec3cfd8bac8433cebf" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowFriendsUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a318d0c87bc0ee87fa34849685de0f7bd" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowInviteUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1ab0122c7df9d8452d142cba65ec7661e2" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowLeaderboardUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a47a12362b82fc7751e4a973c5a9681f7" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowLoginUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a2d2557582318c2e65ccc00cc9da5546d" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowProfileUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a478d60261a00da3becc9190c5f7bc486" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowSendMessageUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1a4a466873f10c8578dac5ab5ebd472671" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowStoreUI</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1adca2743fde3983e8bbde426b2f698009" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>ShowWebURL</name></member>
+      <member refid="d4/d98/class_f_online_external_u_i_accel_byte_1adfad0b1f760914c5de9263cdea31bf5f" prot="public" virt="virtual"><scope>FOnlineExternalUIAccelByte</scope><name>~FOnlineExternalUIAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

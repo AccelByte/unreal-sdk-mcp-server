@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/d7d/class_f_online_presence_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlinePresenceAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlinePresence</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlinePresenceAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d9/da8/_online_presence_interface_accel_byte_8h" local="no">OnlinePresenceInterfaceAccelByte.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d7d/class_f_online_presence_accel_byte_1a612d78bdefb965f30de690966d7f7c26" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlinePresenceAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlinePresenceAccelByte::__pad0__</qualifiedname>
+        <bitfield> virtual void RegisterRealTimeLobbyDelegates(int32 LocalUserNum)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="110" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlinePresenceAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlinePresenceAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="133" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, TSharedRef&lt; <ref refid="d1/d2c/class_f_online_user_presence_accel_byte" kindref="compound">FOnlineUserPresenceAccelByte</ref> &gt; &gt;</type>
+        <definition>TMap&lt;FString, TSharedRef&lt;FOnlineUserPresenceAccelByte&gt; &gt; FOnlinePresenceAccelByte::CachedPresenceByUserId</definition>
+        <argsstring></argsstring>
+        <name>CachedPresenceByUserId</name>
+        <qualifiedname>FOnlinePresenceAccelByte::CachedPresenceByUserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>All presence information we have </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="146" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d7d/class_f_online_presence_accel_byte_1ae84fdb4499a00bab1fad555d3845f75d" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlinePresenceAccelByte::PresenceCacheLock</definition>
+        <argsstring></argsstring>
+        <name>PresenceCacheLock</name>
+        <qualifiedname>FOnlinePresenceAccelByte::PresenceCacheLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical section to lock presence cache map while accessing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="149" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a2eb2398e156ab2c4babaeb116e808d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlinePresenceAccelByte::FOnlinePresenceAccelByte</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *InSubsystem)</argsstring>
+        <name>FOnlinePresenceAccelByte</name>
+        <qualifiedname>FOnlinePresenceAccelByte::FOnlinePresenceAccelByte</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+          <declname>InSubsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor that is invoked by the Subsystem instance to create a presence interface instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="67" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a6ba9296e1c15c855b06164cc6f0ed7e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlinePresenceAccelByte::~FOnlinePresenceAccelByte</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~FOnlinePresenceAccelByte</name>
+        <qualifiedname>FOnlinePresenceAccelByte::~FOnlinePresenceAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="68" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a7735657a03c955665056794633912c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlinePresenceAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(OnBulkQueryPresenceComplete, const bool, const FUserIDPresenceMap &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlinePresenceAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>OnBulkQueryPresenceComplete</type>
+        </param>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/da8/_online_presence_interface_accel_byte_8h_1a5b9a8fb432c0f91a0f0f7dcb59655ad2" kindref="member">FUserIDPresenceMap</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a11d5d48a8fffa8ab97be2c338afe6c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlinePresenceAccelByte::SetPresence</definition>
+        <argsstring>(const FUniqueNetId &amp;User, const FOnlineUserPresenceStatus &amp;Status, const FOnPresenceTaskCompleteDelegate &amp;Delegate=FOnPresenceTaskCompleteDelegate()) override</argsstring>
+        <name>SetPresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::SetPresence</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>User</declname>
+        </param>
+        <param>
+          <type>const FOnlineUserPresenceStatus &amp;</type>
+          <declname>Status</declname>
+        </param>
+        <param>
+          <type>const FOnPresenceTaskCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnPresenceTaskCompleteDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="91" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="87" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1ae9ee1e498f9f7e36501d01cf6d7d0c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlinePresenceAccelByte::QueryPresence</definition>
+        <argsstring>(const FUniqueNetId &amp;User, const FOnPresenceTaskCompleteDelegate &amp;Delegate=FOnPresenceTaskCompleteDelegate()) override</argsstring>
+        <name>QueryPresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::QueryPresence</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>User</declname>
+        </param>
+        <param>
+          <type>const FOnPresenceTaskCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnPresenceTaskCompleteDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="92" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="122" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1aeeff91c90b697b9734dc8aae1bdbea17" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>EOnlineCachedResult::Type</type>
+        <definition>EOnlineCachedResult::Type FOnlinePresenceAccelByte::GetCachedPresence</definition>
+        <argsstring>(const FUniqueNetId &amp;User, TSharedPtr&lt; FOnlineUserPresence &gt; &amp;OutPresence) override</argsstring>
+        <name>GetCachedPresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::GetCachedPresence</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>User</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FOnlineUserPresence &gt; &amp;</type>
+          <declname>OutPresence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="93" column="35" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="135" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a4d3083590614d73e553b2123a96b38ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>EOnlineCachedResult::Type</type>
+        <definition>EOnlineCachedResult::Type FOnlinePresenceAccelByte::GetCachedPresenceForApp</definition>
+        <argsstring>(const FUniqueNetId &amp;LocalUserId, const FUniqueNetId &amp;User, const FString &amp;AppId, TSharedPtr&lt; FOnlineUserPresence &gt; &amp;OutPresence) override</argsstring>
+        <name>GetCachedPresenceForApp</name>
+        <qualifiedname>FOnlinePresenceAccelByte::GetCachedPresenceForApp</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>User</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>AppId</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FOnlineUserPresence &gt; &amp;</type>
+          <declname>OutPresence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="94" column="35" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="148" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a5cf809cf91523340b7f8186bdb2227fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlinePresenceAccelByte::PlatformQueryPresence</definition>
+        <argsstring>(const FUniqueNetId &amp;User, const FOnPresenceTaskCompleteDelegate &amp;Delegate=FOnPresenceTaskCompleteDelegate())</argsstring>
+        <name>PlatformQueryPresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::PlatformQueryPresence</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>User</declname>
+        </param>
+        <param>
+          <type>const FOnPresenceTaskCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnPresenceTaskCompleteDelegate()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="98" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="159" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1ae24a5207440629df93d0ad396ab0b64a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>EOnlineCachedResult::Type</type>
+        <definition>EOnlineCachedResult::Type FOnlinePresenceAccelByte::GetPlatformCachedPresence</definition>
+        <argsstring>(const FUniqueNetId &amp;User, TSharedPtr&lt; FOnlineUserPresence &gt; &amp;OutPresence)</argsstring>
+        <name>GetPlatformCachedPresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::GetPlatformCachedPresence</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>User</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; FOnlineUserPresence &gt; &amp;</type>
+          <declname>OutPresence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="99" column="35" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="171" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a8382349c83619b0214990d0134daf355" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlinePresenceAccelByte::BulkQueryPresence</definition>
+        <argsstring>(const FUniqueNetId &amp;LocalUserId, const TArray&lt; FUniqueNetIdRef &gt; &amp;UserIds)</argsstring>
+        <name>BulkQueryPresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::BulkQueryPresence</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FUniqueNetIdRef &gt; &amp;</type>
+          <declname>UserIds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bulk query user presences.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LocalUserId of user making the call. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UserIds to query the presence. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="107" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1ab269d123288ce76cf8a4b921390af852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TSharedRef&lt; <ref refid="d1/d2c/class_f_online_user_presence_accel_byte" kindref="compound">FOnlineUserPresenceAccelByte</ref> &gt;</type>
+        <definition>TSharedRef&lt; FOnlineUserPresenceAccelByte &gt; FOnlinePresenceAccelByte::FindOrCreatePresence</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId)</argsstring>
+        <name>FindOrCreatePresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::FindOrCreatePresence</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to update cached Presence </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="119" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="206" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a299d6e4d2f4165c1399e3a56db3045ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TMap&lt; FString, TSharedRef&lt; <ref refid="d1/d2c/class_f_online_user_presence_accel_byte" kindref="compound">FOnlineUserPresenceAccelByte</ref> &gt; &gt;</type>
+        <definition>TMap&lt; FString, TSharedRef&lt; FOnlineUserPresenceAccelByte &gt; &gt; FOnlinePresenceAccelByte::GetCachedPresence</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCachedPresence</name>
+        <qualifiedname>FOnlinePresenceAccelByte::GetCachedPresence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter function for cached user presence mapped by userId </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="122" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a99ae10ea300606fbe42f99b1daec3e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlinePresenceAccelByte::UpdatePresenceCache</definition>
+        <argsstring>(const TMap&lt; FString, TSharedRef&lt; FOnlineUserPresenceAccelByte &gt; &gt; &amp;UpdatedPresence)</argsstring>
+        <name>UpdatePresenceCache</name>
+        <qualifiedname>FOnlinePresenceAccelByte::UpdatePresenceCache</qualifiedname>
+        <param>
+          <type>const TMap&lt; FString, TSharedRef&lt; <ref refid="d1/d2c/class_f_online_user_presence_accel_byte" kindref="compound">FOnlineUserPresenceAccelByte</ref> &gt; &gt; &amp;</type>
+          <declname>UpdatedPresence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add or Update cached presence </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="125" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="108" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1a292fa8301de7b5f5ded72645ad336cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlinePresenceAccelByte::UpdatePresenceCache</definition>
+        <argsstring>(const FString &amp;UserID, const TSharedRef&lt; FOnlineUserPresenceAccelByte &gt; &amp;Presence)</argsstring>
+        <name>UpdatePresenceCache</name>
+        <qualifiedname>FOnlinePresenceAccelByte::UpdatePresenceCache</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserID</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; <ref refid="d1/d2c/class_f_online_user_presence_accel_byte" kindref="compound">FOnlineUserPresenceAccelByte</ref> &gt; &amp;</type>
+          <declname>Presence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add or Update cached presence </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="128" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="115" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1af195172ffdad6ff999d9f07ecceff8ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePresenceAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlinePresenceAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlinePresenceAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/d7d/class_f_online_presence_accel_byte" kindref="compound">FOnlinePresenceAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="79" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1ab2094b6f96068551566fc37b8e3d44c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlinePresenceAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlinePresenceAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlinePresenceAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/d7d/class_f_online_presence_accel_byte" kindref="compound">FOnlinePresenceAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="88" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="26" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1afa524798205576fcbb3ada1856118e41" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlinePresenceAccelByte::FOnlinePresenceAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlinePresenceAccelByte</name>
+        <qualifiedname>FOnlinePresenceAccelByte::FOnlinePresenceAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="136" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" bodystart="136" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1abefc3d893196b10cd470b7686439e056" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IOnlinePresencePtr</type>
+        <definition>IOnlinePresencePtr FOnlinePresenceAccelByte::GetPlatformOnlinePresenceInterface</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPlatformOnlinePresenceInterface</name>
+        <qualifiedname>FOnlinePresenceAccelByte::GetPlatformOnlinePresenceInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="139" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d7d/class_f_online_presence_accel_byte_1ab40f31dcb87df5ce5fee96dc45cc536e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlinePresenceAccelByte::OnFriendStatusChangedNotificationReceived</definition>
+        <argsstring>(const FAccelByteModelsUsersPresenceNotice &amp;Notification, int32 LocalUserNum)</argsstring>
+        <name>OnFriendStatusChangedNotificationReceived</name>
+        <qualifiedname>FOnlinePresenceAccelByte::OnFriendStatusChangedNotificationReceived</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsUsersPresenceNotice &amp;</type>
+          <declname>Notification</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when a friend change their presence status </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="142" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp" bodystart="44" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of the IOnlinePresence interface using <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlinePresenceAccelByte</label>
+        <link refid="d9/d7d/class_f_online_presence_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlinePresence</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlinePresenceAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlinePresenceAccelByte</label>
+        <link refid="d9/d7d/class_f_online_presence_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>IOnlinePresence</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlinePresenceAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" line="62" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlinePresenceInterfaceAccelByte.h" bodystart="63" bodyend="150"/>
+    <listofallmembers>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a612d78bdefb965f30de690966d7f7c26" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" prot="protected" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a8382349c83619b0214990d0134daf355" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>BulkQueryPresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" prot="private" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>CachedPresenceByUserId</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a7735657a03c955665056794633912c0f" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1ab269d123288ce76cf8a4b921390af852" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>FindOrCreatePresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a2eb2398e156ab2c4babaeb116e808d3a" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>FOnlinePresenceAccelByte</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1afa524798205576fcbb3ada1856118e41" prot="protected" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>FOnlinePresenceAccelByte</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1aeeff91c90b697b9734dc8aae1bdbea17" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>GetCachedPresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a299d6e4d2f4165c1399e3a56db3045ba" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>GetCachedPresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a4d3083590614d73e553b2123a96b38ee" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>GetCachedPresenceForApp</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1af195172ffdad6ff999d9f07ecceff8ed" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1ab2094b6f96068551566fc37b8e3d44c8" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1ae24a5207440629df93d0ad396ab0b64a" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>GetPlatformCachedPresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1abefc3d893196b10cd470b7686439e056" prot="protected" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>GetPlatformOnlinePresenceInterface</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1ab40f31dcb87df5ce5fee96dc45cc536e" prot="protected" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>OnFriendStatusChangedNotificationReceived</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a5cf809cf91523340b7f8186bdb2227fb" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>PlatformQueryPresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1ae84fdb4499a00bab1fad555d3845f75d" prot="private" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>PresenceCacheLock</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1ae9ee1e498f9f7e36501d01cf6d7d0c45" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>QueryPresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a11d5d48a8fffa8ab97be2c338afe6c8d" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>SetPresence</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a99ae10ea300606fbe42f99b1daec3e4d" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>UpdatePresenceCache</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a292fa8301de7b5f5ded72645ad336cf0" prot="public" virt="non-virtual"><scope>FOnlinePresenceAccelByte</scope><name>UpdatePresenceCache</name></member>
+      <member refid="d9/d7d/class_f_online_presence_accel_byte_1a6ba9296e1c15c855b06164cc6f0ed7e9" prot="public" virt="virtual"><scope>FOnlinePresenceAccelByte</scope><name>~FOnlinePresenceAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d3/d62/class_f_online_base_analytics_accel_byte" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>FOnlineBaseAnalyticsAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineBaseAnalyticsAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <derivedcompoundref refid="db/df2/class_f_online_game_standard_event_accel_byte" prot="public" virt="non-virtual">FOnlineGameStandardEventAccelByte</derivedcompoundref>
+    <derivedcompoundref refid="db/da5/class_f_online_predefined_event_accel_byte" prot="public" virt="non-virtual">FOnlinePredefinedEventAccelByte</derivedcompoundref>
+    <includes refid="db/d92/_online_base_analytics_interface_accel_byte_8h" local="no">OnlineBaseAnalyticsInterfaceAccelByte.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1abc5a731ae3f0809059f04df7969a744e" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineBaseAnalyticsAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="62" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1a3062846f886039a1e2d48ee25df977f9" prot="protected" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineBaseAnalyticsAccelByte::bIsHaveSettingInterval</definition>
+        <argsstring></argsstring>
+        <name>bIsHaveSettingInterval</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::bIsHaveSettingInterval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="64" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1ae96c58223a93da6b5f3aa5c141fa9216" prot="protected" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FOnlineBaseAnalyticsAccelByte::SettingInterval</definition>
+        <argsstring></argsstring>
+        <name>SettingInterval</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::SettingInterval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="65" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1ac5946c8cfca76d37b4d276ae55609abb" prot="protected" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>, <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref> &gt;</type>
+        <definition>TMap&lt;int32, bool&gt; FOnlineBaseAnalyticsAccelByte::SetEventIntervalMap</definition>
+        <argsstring></argsstring>
+        <name>SetEventIntervalMap</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::SetEventIntervalMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="66" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1af0d0efbd68829f00ce0587a57f41382d" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineBaseAnalyticsAccelByte::CachedEventsLock</definition>
+        <argsstring></argsstring>
+        <name>CachedEventsLock</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::CachedEventsLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="85" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1a4600bca644bd4ac342eaf0462c20d071" prot="private" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>, TArray&lt; TSharedPtr&lt; FAccelByteModelsTelemetryBody &gt; &gt; &gt;</type>
+        <definition>TMap&lt;int32, TArray&lt;TSharedPtr&lt;FAccelByteModelsTelemetryBody&gt; &gt; &gt; FOnlineBaseAnalyticsAccelByte::CachedEvents</definition>
+        <argsstring></argsstring>
+        <name>CachedEvents</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::CachedEvents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="86" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1a0f72007545324d45a66ec76583b165be" prot="private" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>, FDelegateHandle &gt;</type>
+        <definition>TMap&lt;int32, FDelegateHandle&gt; FOnlineBaseAnalyticsAccelByte::OnLoginSuccessDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>OnLoginSuccessDelegateHandle</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnLoginSuccessDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="87" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1a2fffbcef2775ccc56cf05d9f10658836" prot="private" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>, FDelegateHandle &gt;</type>
+        <definition>TMap&lt;int32, FDelegateHandle&gt; FOnlineBaseAnalyticsAccelByte::OnLogoutSuccessDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>OnLogoutSuccessDelegateHandle</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnLogoutSuccessDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="88" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d62/class_f_online_base_analytics_accel_byte_1abc2d72d094aa63d81518175d52ffaefc" prot="private" static="no" mutable="no">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FOnlineBaseAnalyticsAccelByte::OnLocalUserNumCachedDelegateHandle</definition>
+        <argsstring></argsstring>
+        <name>OnLocalUserNumCachedDelegateHandle</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnLocalUserNumCachedDelegateHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="89" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a48d80abb1a97734ef61a484d5ffbdef2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineBaseAnalyticsAccelByte::FOnlineBaseAnalyticsAccelByte</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *InSubsystem)</argsstring>
+        <name>FOnlineBaseAnalyticsAccelByte</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::FOnlineBaseAnalyticsAccelByte</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+          <declname>InSubsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor that is invoked by the Subsystem instance to create an analytics instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="24" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1ac1b451d72e532d6b43c4ec9dcc55499e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineBaseAnalyticsAccelByte::~FOnlineBaseAnalyticsAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>~FOnlineBaseAnalyticsAccelByte</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::~FOnlineBaseAnalyticsAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="28" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a0bcdb590e152ea7a9c15749728eccec4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineBaseAnalyticsAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, AccelByteOnSendEventCompleted, const FString &amp;, bool, const FOnlineErrorAccelByte &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>AccelByteOnSendEventCompleted</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1afdc4e4ae9150e1fb1fad8f7a0dd4e93b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::ConvertAndAddToCache</definition>
+        <argsstring>(int32 LocalUserNum, const TSharedRef&lt; T &gt; &amp;Payload, const FString &amp;EventName, const FDateTime &amp;ClientTimestamp=FDateTime::UtcNow())</argsstring>
+        <name>ConvertAndAddToCache</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::ConvertAndAddToCache</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; T &gt; &amp;</type>
+          <declname>Payload</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>EventName</declname>
+        </param>
+        <param>
+          <type>const FDateTime &amp;</type>
+          <declname>ClientTimestamp</declname>
+          <defval>FDateTime::UtcNow()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="33" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="33" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a9c19f98cfea91df5187beeb2c8100c9d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineBaseAnalyticsAccelByte::FOnlineBaseAnalyticsAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineBaseAnalyticsAccelByte</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::FOnlineBaseAnalyticsAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="57" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a274759709c5629da7651f5406573a90c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::AddToCache</definition>
+        <argsstring>(int32 LocalUserNum, const TSharedPtr&lt; FAccelByteModelsTelemetryBody &gt; &amp;Cache)</argsstring>
+        <name>AddToCache</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::AddToCache</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TSharedPtr&lt; FAccelByteModelsTelemetryBody &gt; &amp;</type>
+          <declname>Cache</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add Event to cache, used in case of the user is not logged in yet </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="69" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="45" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a15ac4c72ef9fb65637ab3cd1982f2408" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::MoveTempUserCachedEvent</definition>
+        <argsstring>(int32 To)</argsstring>
+        <name>MoveTempUserCachedEvent</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::MoveTempUserCachedEvent</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>To</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move cached event to another user, used for non user-tied event that triggered before any user logged in </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="72" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="57" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a46fd407ddab70e3a7bdb5a819be82cb8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::OnSuccess</definition>
+        <argsstring>(int32 LocalUserNum, FString EventName)</argsstring>
+        <name>OnSuccess</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnSuccess</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>FString</type>
+          <declname>EventName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="73" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1ad8abed58872183203840e877bd79264f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::OnError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage, int32 LocalUserNum, FString EventName)</argsstring>
+        <name>OnError</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>FString</type>
+          <declname>EventName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="74" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a5ac7212a1f17e5f265439e3fcc708536" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::OnLoginSuccess</definition>
+        <argsstring>(int32 LocalUserNum, bool bWasSuccessful, const FUniqueNetId &amp;UserId, const FOnlineErrorAccelByte &amp;Error)</argsstring>
+        <name>OnLoginSuccess</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnLoginSuccess</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bWasSuccessful</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="75" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="69" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1ad1700627d5848815b0646a34964b3f69" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::OnLogoutSuccess</definition>
+        <argsstring>(int32 LocalUserNum, bool bWasSuccessful, const FOnlineErrorAccelByte &amp;Error)</argsstring>
+        <name>OnLogoutSuccess</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnLogoutSuccess</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bWasSuccessful</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="76" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="90" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a3366d985f620d06104c9d7580d355058" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::OnLocalUserNumCachedSuccess</definition>
+        <argsstring>()</argsstring>
+        <name>OnLocalUserNumCachedSuccess</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::OnLocalUserNumCachedSuccess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="77" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="19" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1aef54b9637f038abb9d2612c3a533fa79" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>const int32 FOnlineBaseAnalyticsAccelByte::GetLocalUserNumCached</definition>
+        <argsstring>()</argsstring>
+        <name>GetLocalUserNumCached</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::GetLocalUserNumCached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="78" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="100" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1addca353e16e223919f85fabf698e034f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineBaseAnalyticsAccelByte::SetDelegatesAndInterval</definition>
+        <argsstring>(int32 LocalUserNum)</argsstring>
+        <name>SetDelegatesAndInterval</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::SetDelegatesAndInterval</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="79" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineBaseAnalyticsInterfaceAccelByte.cpp" bodystart="110" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1a608434bcb89fef26b6e96b0f7b6c70cd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>virtual bool FOnlineBaseAnalyticsAccelByte::SetEventSendInterval</definition>
+        <argsstring>(int32 InLocalUserNum)=0</argsstring>
+        <name>SetEventSendInterval</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::SetEventSendInterval</qualifiedname>
+        <reimplementedby refid="db/df2/class_f_online_game_standard_event_accel_byte_1af57ebcc05e8a81970dc04e1b54d093b3">SetEventSendInterval</reimplementedby>
+        <reimplementedby refid="db/da5/class_f_online_predefined_event_accel_byte_1a594c55fe2b1611c09c8ce2091e18f663">SetEventSendInterval</reimplementedby>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="81" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d62/class_f_online_base_analytics_accel_byte_1af76825eb1ca0c7771ece3bbe8267c4b6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FOnlineBaseAnalyticsAccelByte::SendCachedEvent</definition>
+        <argsstring>(int32 InLocalUserNum, const TSharedPtr&lt; FAccelByteModelsTelemetryBody &gt; &amp;CachedEvent)=0</argsstring>
+        <name>SendCachedEvent</name>
+        <qualifiedname>FOnlineBaseAnalyticsAccelByte::SendCachedEvent</qualifiedname>
+        <reimplementedby refid="db/df2/class_f_online_game_standard_event_accel_byte_1addde87f3056c5c56ab0c607cb2a141ff">SendCachedEvent</reimplementedby>
+        <reimplementedby refid="db/da5/class_f_online_predefined_event_accel_byte_1aabff91bd2a1a71c23ec2893e9a7e5a7c">SendCachedEvent</reimplementedby>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TSharedPtr&lt; FAccelByteModelsTelemetryBody &gt; &amp;</type>
+          <declname>CachedEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="82" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of Analytics Api from <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineBaseAnalyticsAccelByte</label>
+        <link refid="d3/d62/class_f_online_base_analytics_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineGameStandardEventAccelByte</label>
+        <link refid="db/df2/class_f_online_game_standard_event_accel_byte"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlinePredefinedEventAccelByte</label>
+        <link refid="db/da5/class_f_online_predefined_event_accel_byte"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineBaseAnalyticsAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlineBaseAnalyticsAccelByte</label>
+        <link refid="d3/d62/class_f_online_base_analytics_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>TSharedFromThis&lt; FOnlineBaseAnalyticsAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" line="19" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineBaseAnalyticsInterfaceAccelByte.h" bodystart="20" bodyend="90"/>
+    <listofallmembers>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1abc5a731ae3f0809059f04df7969a744e" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a274759709c5629da7651f5406573a90c" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>AddToCache</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a3062846f886039a1e2d48ee25df977f9" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>bIsHaveSettingInterval</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a4600bca644bd4ac342eaf0462c20d071" prot="private" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>CachedEvents</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1af0d0efbd68829f00ce0587a57f41382d" prot="private" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>CachedEventsLock</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1afdc4e4ae9150e1fb1fad8f7a0dd4e93b" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>ConvertAndAddToCache</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a0bcdb590e152ea7a9c15749728eccec4" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a48d80abb1a97734ef61a484d5ffbdef2" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>FOnlineBaseAnalyticsAccelByte</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a9c19f98cfea91df5187beeb2c8100c9d" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>FOnlineBaseAnalyticsAccelByte</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1aef54b9637f038abb9d2612c3a533fa79" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>GetLocalUserNumCached</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a15ac4c72ef9fb65637ab3cd1982f2408" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>MoveTempUserCachedEvent</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1ad8abed58872183203840e877bd79264f" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnError</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1abc2d72d094aa63d81518175d52ffaefc" prot="private" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnLocalUserNumCachedDelegateHandle</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a3366d985f620d06104c9d7580d355058" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnLocalUserNumCachedSuccess</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a5ac7212a1f17e5f265439e3fcc708536" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnLoginSuccess</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a0f72007545324d45a66ec76583b165be" prot="private" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnLoginSuccessDelegateHandle</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1ad1700627d5848815b0646a34964b3f69" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnLogoutSuccess</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a2fffbcef2775ccc56cf05d9f10658836" prot="private" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnLogoutSuccessDelegateHandle</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a46fd407ddab70e3a7bdb5a819be82cb8" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>OnSuccess</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1af76825eb1ca0c7771ece3bbe8267c4b6" prot="protected" virt="pure-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>SendCachedEvent</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1addca353e16e223919f85fabf698e034f" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>SetDelegatesAndInterval</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1ac5946c8cfca76d37b4d276ae55609abb" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>SetEventIntervalMap</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1a608434bcb89fef26b6e96b0f7b6c70cd" prot="protected" virt="pure-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>SetEventSendInterval</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1ae96c58223a93da6b5f3aa5c141fa9216" prot="protected" virt="non-virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>SettingInterval</name></member>
+      <member refid="d3/d62/class_f_online_base_analytics_accel_byte_1ac1b451d72e532d6b43c4ec9dcc55499e" prot="protected" virt="virtual"><scope>FOnlineBaseAnalyticsAccelByte</scope><name>~FOnlineBaseAnalyticsAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

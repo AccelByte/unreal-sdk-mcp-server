@@ -1,0 +1,2595 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="db/df7/_accel_byte_heart_beat_api_8cpp" kind="file" language="C++">
+    <compoundname>AccelByteHeartBeatApi.cpp</compoundname>
+    <includes refid="d6/d92/_accel_byte_heart_beat_api_8h" local="yes">Api/AccelByteHeartBeatApi.h</includes>
+    <includes refid="dd/d36/_accel_byte_error_8h" local="yes">Core/AccelByteError.h</includes>
+    <includes refid="d2/db2/_accel_byte_report_8h" local="yes">Core/AccelByteReport.h</includes>
+    <includes refid="db/de4/_accel_byte_http_retry_scheduler_8h" local="yes">Core/AccelByteHttpRetryScheduler.h</includes>
+    <includes refid="db/d01/_accel_byte_settings_8h" local="yes">Core/AccelByteSettings.h</includes>
+    <includes refid="d8/d22/_accel_byte_api_client_8h" local="yes">Core/AccelByteApiClient.h</includes>
+    <includes refid="d5/ddb/_accel_byte_instance_8h" local="yes">Core/AccelByteInstance.h</includes>
+    <includes local="yes">JsonUtilities.h</includes>
+    <includes refid="d0/d8f/_accel_byte_ue4_sdk_module_8h" local="yes">AccelByteUe4SdkModule.h</includes>
+    <includes refid="d9/d91/_accel_byte_utilities_8h" local="yes">Core/AccelByteUtilities.h</includes>
+    <incdepgraph>
+      <node id="90">
+        <label>AccelByteAMSModels.generated.h</label>
+      </node>
+      <node id="84">
+        <label>AccelByteAchievementModels.generated.h</label>
+      </node>
+      <node id="87">
+        <label>AccelByteAgreementModels.generated.h</label>
+      </node>
+      <node id="95">
+        <label>AccelByteBinaryCloudSaveModels.generated.h</label>
+      </node>
+      <node id="65">
+        <label>AccelByteChallengeModels.generated.h</label>
+      </node>
+      <node id="106">
+        <label>AccelByteChatModels.generated.h</label>
+      </node>
+      <node id="94">
+        <label>AccelByteCloudSaveCommonModels.generated.h</label>
+      </node>
+      <node id="109">
+        <label>AccelByteCloudSaveModels.generated.h</label>
+      </node>
+      <node id="112">
+        <label>AccelByteCloudStorageModels.generated.h</label>
+      </node>
+      <node id="115">
+        <label>AccelByteConfigurationsModels.generated.h</label>
+      </node>
+      <node id="219">
+        <label>AccelByteDSHubModels.generated.h</label>
+      </node>
+      <node id="32">
+        <label>AccelByteDSMModels.generated.h</label>
+      </node>
+      <node id="62">
+        <label>AccelByteEcommerceModels.generated.h</label>
+      </node>
+      <node id="40">
+        <label>AccelByteEnvironment.generated.h</label>
+      </node>
+      <node id="59">
+        <label>AccelByteError.generated.h</label>
+      </node>
+      <node id="35">
+        <label>AccelByteErrorModels.generated.h</label>
+      </node>
+      <node id="127">
+        <label>AccelByteGDPRModels.generated.h</label>
+      </node>
+      <node id="121">
+        <label>AccelByteGameProfileModels.generated.h</label>
+      </node>
+      <node id="188">
+        <label>AccelByteGameStandardEventModels.generated.h</label>
+      </node>
+      <node id="19">
+        <label>AccelByteGeneralModels.generated.h</label>
+      </node>
+      <node id="130">
+        <label>AccelByteGroupModels.generated.h</label>
+      </node>
+      <node id="172">
+        <label>AccelByteInventoryModels.generated.h</label>
+      </node>
+      <node id="134">
+        <label>AccelByteLeaderboardModels.generated.h</label>
+      </node>
+      <node id="33">
+        <label>AccelByteLobbyModels.generated.h</label>
+      </node>
+      <node id="140">
+        <label>AccelByteMatchmakingModels.generated.h</label>
+      </node>
+      <node id="227">
+        <label>AccelByteMetricModels.generated.h</label>
+      </node>
+      <node id="21">
+        <label>AccelByteOauth2Models.generated.h</label>
+      </node>
+      <node id="185">
+        <label>AccelBytePredefinedEventModels.generated.h</label>
+      </node>
+      <node id="147">
+        <label>AccelBytePresenceBroadcastEventModels.generated.h</label>
+      </node>
+      <node id="75">
+        <label>AccelByteQosModels.generated.h</label>
+      </node>
+      <node id="153">
+        <label>AccelByteReportingModels.generated.h</label>
+      </node>
+      <node id="157">
+        <label>AccelByteSeasonPassModels.generated.h</label>
+      </node>
+      <node id="199">
+        <label>AccelByteServerSettings.generated.h</label>
+      </node>
+      <node id="160">
+        <label>AccelByteSessionBrowserModels.generated.h</label>
+      </node>
+      <node id="139">
+        <label>AccelByteSessionModels.generated.h</label>
+      </node>
+      <node id="42">
+        <label>AccelByteSettings.generated.h</label>
+      </node>
+      <node id="163">
+        <label>AccelByteStatisticModels.generated.h</label>
+      </node>
+      <node id="166">
+        <label>AccelByteTurnModels.generated.h</label>
+      </node>
+      <node id="169">
+        <label>AccelByteUGCModels.generated.h</label>
+      </node>
+      <node id="30">
+        <label>AccelByteUserModels.generated.h</label>
+      </node>
+      <node id="177">
+        <label>AccelByteUserProfileModels.generated.h</label>
+      </node>
+      <node id="67">
+        <label>AccelByteUtilities.generated.h</label>
+      </node>
+      <node id="53">
+        <label>Containers/List.h</label>
+      </node>
+      <node id="104">
+        <label>Containers/Map.h</label>
+      </node>
+      <node id="7">
+        <label>Containers/Queue.h</label>
+      </node>
+      <node id="123">
+        <label>Containers/Set.h</label>
+      </node>
+      <node id="8">
+        <label>Containers/Ticker.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp</label>
+        <link refid="db/df7/_accel_byte_heart_beat_api_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>AccelByteUe4SdkModule.h</label>
+        <link refid="d0/d8f/_accel_byte_ue4_sdk_module_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>Api/AccelByteAMSApi.h</label>
+        <link refid="d7/df2/_accel_byte_a_m_s_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Api/AccelByteAchievementApi.h</label>
+        <link refid="d9/dc5/_accel_byte_achievement_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>Api/AccelByteAgreementApi.h</label>
+        <link refid="d8/dbb/_accel_byte_agreement_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>Api/AccelByteBaseAnalyticsApi.h</label>
+        <link refid="dd/d22/_accel_byte_base_analytics_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>Api/AccelByteBinaryCloudSaveApi.h</label>
+        <link refid="df/db3/_accel_byte_binary_cloud_save_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>Api/AccelByteCategoryApi.h</label>
+        <link refid="d0/dd7/_accel_byte_category_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>Api/AccelByteChallengeApi.h</label>
+        <link refid="d6/db6/_accel_byte_challenge_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>Api/AccelByteChatApi.h</label>
+        <link refid="d4/d64/_accel_byte_chat_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>Api/AccelByteCloudSaveApi.h</label>
+        <link refid="d9/d1c/_accel_byte_cloud_save_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>Api/AccelByteCloudStorageApi.h</label>
+        <link refid="d5/d0a/_accel_byte_cloud_storage_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>Api/AccelByteConfigurationsApi.h</label>
+        <link refid="db/d04/_accel_byte_configurations_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>Api/AccelByteCurrencyApi.h</label>
+        <link refid="db/d4a/_accel_byte_currency_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>Api/AccelByteEntitlementApi.h</label>
+        <link refid="d2/d89/_accel_byte_entitlement_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>Api/AccelByteFulfillmentApi.h</label>
+        <link refid="d5/dd3/_accel_byte_fulfillment_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>Api/AccelByteGDPRApi.h</label>
+        <link refid="d1/d46/_accel_byte_g_d_p_r_api_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>Api/AccelByteGameProfileApi.h</label>
+        <link refid="db/d57/_accel_byte_game_profile_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>Api/AccelByteGameStandardEventApi.h</label>
+        <link refid="d2/dba/_accel_byte_game_standard_event_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>Api/AccelByteGameTelemetryApi.h</label>
+        <link refid="d5/d21/_accel_byte_game_telemetry_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>Api/AccelByteGroupApi.h</label>
+        <link refid="d5/d4a/_accel_byte_group_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Api/AccelByteHeartBeatApi.h</label>
+        <link refid="d6/d92/_accel_byte_heart_beat_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>Api/AccelByteInventoryApi.h</label>
+        <link refid="d4/d06/_accel_byte_inventory_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>Api/AccelByteItemApi.h</label>
+        <link refid="da/dc1/_accel_byte_item_api_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>Api/AccelByteLeaderboardApi.h</label>
+        <link refid="df/d00/_accel_byte_leaderboard_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>Api/AccelByteLobbyApi.h</label>
+        <link refid="d5/d34/_accel_byte_lobby_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>Api/AccelByteLoginQueueApi.h</label>
+        <link refid="d9/d78/_accel_byte_login_queue_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>Api/AccelByteMatchmakingV2Api.h</label>
+        <link refid="d6/d83/_accel_byte_matchmaking_v2_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>Api/AccelByteMiscellaneousApi.h</label>
+        <link refid="dd/d26/_accel_byte_miscellaneous_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>Api/AccelByteOrderApi.h</label>
+        <link refid="d3/ddb/_accel_byte_order_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>Api/AccelBytePredefinedEventApi.h</label>
+        <link refid="dd/d04/_accel_byte_predefined_event_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>Api/AccelBytePresenceBroadcastEventApi.h</label>
+        <link refid="da/d1c/_accel_byte_presence_broadcast_event_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>Api/AccelByteQos.h</label>
+        <link refid="de/d89/_accel_byte_qos_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>AccelByteQosManagerApi.h</label>
+        <link refid="d1/d3f/_accel_byte_qos_manager_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>Api/AccelByteReportingApi.h</label>
+        <link refid="db/db1/_accel_byte_reporting_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>Api/AccelByteRewardApi.h</label>
+        <link refid="d3/dcd/_accel_byte_reward_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>Api/AccelByteSeasonPassApi.h</label>
+        <link refid="d1/dec/_accel_byte_season_pass_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>Api/AccelByteSessionApi.h</label>
+        <link refid="df/d95/_accel_byte_session_api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>Api/AccelByteSessionBrowserApi.h</label>
+        <link refid="d0/d77/_accel_byte_session_browser_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>Api/AccelByteStatisticApi.h</label>
+        <link refid="d0/df4/_accel_byte_statistic_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>Api/AccelByteStoreDisplayApi.h</label>
+        <link refid="dc/d95/_accel_byte_store_display_api_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>Api/AccelByteTurnManagerApi.h</label>
+        <link refid="d4/def/_accel_byte_turn_manager_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>Api/AccelByteUGCApi.h</label>
+        <link refid="d4/d7b/_accel_byte_u_g_c_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>Api/AccelByteUserApi.h</label>
+        <link refid="dd/dd3/_accel_byte_user_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>Api/AccelByteUserProfileApi.h</label>
+        <link refid="df/d6b/_accel_byte_user_profile_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>Api/AccelByteWalletApi.h</label>
+        <link refid="df/d8f/_accel_byte_wallet_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Core/AGS/AccelBytePlatform.h</label>
+        <link refid="dd/dcc/_accel_byte_platform_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/AccelByteApiBase.h</label>
+        <link refid="d0/d40/_accel_byte_api_base_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>Core/AccelByteApiClient.h</label>
+        <link refid="d8/d22/_accel_byte_api_client_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>AccelByteApiUtilities.h</label>
+        <link refid="d5/dae/_accel_byte_api_utilities_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>Core/AccelByteBaseCredentials.h</label>
+        <link refid="d5/dc3/_accel_byte_base_credentials_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Core/AccelByteBaseSettings.h</label>
+        <link refid="dd/dee/_accel_byte_base_settings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Core/AccelByteCredentials.h</label>
+        <link refid="df/d09/_accel_byte_credentials_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>AccelByteDefines.h</label>
+        <link refid="d9/db6/_accel_byte_defines_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Core/AccelByteEnvironment.h</label>
+        <link refid="d1/d2f/_accel_byte_environment_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Core/AccelByteError.h</label>
+        <link refid="dd/d36/_accel_byte_error_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>Core/AccelByteHttpCache.h</label>
+        <link refid="dc/d16/_accel_byte_http_cache_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>Core/AccelByteHttpClient.h</label>
+        <link refid="d9/dd0/_accel_byte_http_client_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Core/AccelByteHttpRetryScheduler.h</label>
+        <link refid="db/de4/_accel_byte_http_retry_scheduler_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>AccelByteHttpRetrySchedulerBase.h</label>
+        <link refid="dd/d9b/_accel_byte_http_retry_scheduler_base_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Core/AccelByteIdValidator.h</label>
+        <link refid="df/d1d/_accel_byte_id_validator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>Core/AccelByteInstance.h</label>
+        <link refid="d5/ddb/_accel_byte_instance_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Core/AccelByteLRUCache.h</label>
+        <link refid="d3/d3f/_accel_byte_l_r_u_cache_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>Core/AccelByteLockableQueue.h</label>
+        <link refid="de/d23/_accel_byte_lockable_queue_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByteMessagingSystem.h</label>
+        <link refid="d1/d25/_accel_byte_messaging_system_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>Core/AccelByteNetworkConditioner.h</label>
+        <link refid="df/df6/_accel_byte_network_conditioner_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>Core/AccelByteNotificationBuffer.h</label>
+        <link refid="dc/da2/_accel_byte_notification_buffer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Core/AccelByteNotificationSender.h</label>
+        <link refid="d4/d2a/_accel_byte_notification_sender_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Core/AccelByteOauth2Api.h</label>
+        <link refid="d4/dbd/_accel_byte_oauth2_api_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Core/AccelByteReport.h</label>
+        <link refid="d2/db2/_accel_byte_report_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>Core/AccelByteServerApiBase.h</label>
+        <link refid="d9/d6e/_accel_byte_server_api_base_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>Core/AccelByteServerApiClient.h</label>
+        <link refid="d9/d82/_accel_byte_server_api_client_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>Core/AccelByteServerCredentials.h</label>
+        <link refid="d1/dbc/_accel_byte_server_credentials_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>Core/AccelByteServerSettings.h</label>
+        <link refid="d1/d0d/_accel_byte_server_settings_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>AccelByteSettings.h</label>
+        <link refid="db/d01/_accel_byte_settings_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Core/AccelByteTask.h</label>
+        <link refid="d5/dd3/_accel_byte_task_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Core/AccelByteTypeConverter.h</label>
+        <link refid="db/de3/_accel_byte_type_converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Core/AccelByteUtilities.h</label>
+        <link refid="d9/d91/_accel_byte_utilities_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>Core/AccelByteWebSocket.h</label>
+        <link refid="de/de6/_accel_byte_web_socket_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>Core/AccelByteWebSocketErrorTypes.h</label>
+        <link refid="da/daf/_accel_byte_web_socket_error_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>AccelByteWebSocketReconnection.h</label>
+        <link refid="dc/d5c/_accel_byte_web_socket_reconnection_8h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>Core/IAccelByteDataStorage.h</label>
+        <link refid="d9/d64/_i_accel_byte_data_storage_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>Core/IAccelByteTokenGenerator.h</label>
+        <link refid="d5/ddf/_i_accel_byte_token_generator_8h"/>
+      </node>
+      <node id="100">
+        <label>Core/IWebSocketFactory.h</label>
+        <link refid="db/d64/_i_web_socket_factory_8h"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>AccelBytePlatformHandleModels.h</label>
+        <link refid="d0/d05/_accel_byte_platform_handle_models_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>Core/Platform/AccelBytePlatformHandler.h</label>
+        <link refid="d8/d33/_accel_byte_platform_handler_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>IAccelBytePlatformWrapper.h</label>
+        <link refid="d8/d0e/_i_accel_byte_platform_wrapper_8h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Core/ServerTime/AccelByteTimeManager.h</label>
+        <link refid="d3/d5f/_accel_byte_time_manager_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>Core/StatsD/IAccelByteStatsDMetricCollector.h</label>
+        <link refid="d5/d97/_i_accel_byte_stats_d_metric_collector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>GameServerApi/AccelByteServerAMSApi.h</label>
+        <link refid="d3/d84/_accel_byte_server_a_m_s_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>GameServerApi/AccelByteServerAchievementApi.h</label>
+        <link refid="db/df8/_accel_byte_server_achievement_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>GameServerApi/AccelByteServerBaseAnalyticsApi.h</label>
+        <link refid="d0/d69/_accel_byte_server_base_analytics_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>GameServerApi/AccelByteServerBinaryCloudSaveApi.h</label>
+        <link refid="dc/d14/_accel_byte_server_binary_cloud_save_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>GameServerApi/AccelByteServerChallengeApi.h</label>
+        <link refid="d3/d46/_accel_byte_server_challenge_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>GameServerApi/AccelByteServerChatApi.h</label>
+        <link refid="de/d29/_accel_byte_server_chat_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>GameServerApi/AccelByteServerCloudSaveApi.h</label>
+        <link refid="df/d50/_accel_byte_server_cloud_save_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>GameServerApi/AccelByteServerDSHubApi.h</label>
+        <link refid="d5/d56/_accel_byte_server_d_s_hub_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>GameServerApi/AccelByteServerDSMApi.h</label>
+        <link refid="d1/d0b/_accel_byte_server_d_s_m_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>GameServerApi/AccelByteServerEcommerceApi.h</label>
+        <link refid="d0/d75/_accel_byte_server_ecommerce_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>GameServerApi/AccelByteServerGameStandardEventApi.h</label>
+        <link refid="d3/d57/_accel_byte_server_game_standard_event_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>GameServerApi/AccelByteServerGameTelemetryApi.h</label>
+        <link refid="dc/d41/_accel_byte_server_game_telemetry_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>GameServerApi/AccelByteServerInventoryApi.h</label>
+        <link refid="de/df4/_accel_byte_server_inventory_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>GameServerApi/AccelByteServerLobby.h</label>
+        <link refid="d0/d7b/_accel_byte_server_lobby_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>GameServerApi/AccelByteServerMatchmakingApi.h</label>
+        <link refid="d0/d23/_accel_byte_server_matchmaking_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>GameServerApi/AccelByteServerMatchmakingV2Api.h</label>
+        <link refid="d8/daa/_accel_byte_server_matchmaking_v2_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>GameServerApi/AccelByteServerMetricExporterApi.h</label>
+        <link refid="d0/da5/_accel_byte_server_metric_exporter_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>GameServerApi/AccelByteServerOauth2Api.h</label>
+        <link refid="dd/d97/_accel_byte_server_oauth2_api_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>GameServerApi/AccelByteServerPredefinedEventApi.h</label>
+        <link refid="d4/dd1/_accel_byte_server_predefined_event_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>GameServerApi/AccelByteServerQosManagerApi.h</label>
+        <link refid="d9/db9/_accel_byte_server_qos_manager_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>GameServerApi/AccelByteServerSeasonPassApi.h</label>
+        <link refid="d1/dca/_accel_byte_server_season_pass_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>GameServerApi/AccelByteServerSessionApi.h</label>
+        <link refid="d6/d5c/_accel_byte_server_session_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>GameServerApi/AccelByteServerSessionBrowserApi.h</label>
+        <link refid="da/d4c/_accel_byte_server_session_browser_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>GameServerApi/AccelByteServerStatisticApi.h</label>
+        <link refid="d7/d86/_accel_byte_server_statistic_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>GameServerApi/AccelByteServerUGCApi.h</label>
+        <link refid="d0/d18/_accel_byte_server_u_g_c_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>GameServerApi/AccelByteServerUserApi.h</label>
+        <link refid="dc/de6/_accel_byte_server_user_api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Logging/AccelByteServiceLogger.h</label>
+        <link refid="df/de4/_accel_byte_service_logger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>Models/AccelByteAMSModels.h</label>
+        <link refid="d7/dbb/_accel_byte_a_m_s_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>Models/AccelByteAchievementModels.h</label>
+        <link refid="d6/d34/_accel_byte_achievement_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Models/AccelByteAgreementModels.h</label>
+        <link refid="d8/ddc/_accel_byte_agreement_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Models/AccelByteBinaryCloudSaveModels.h</label>
+        <link refid="d4/dd0/_accel_byte_binary_cloud_save_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Models/AccelByteChallengeModels.h</label>
+        <link refid="d6/d8e/_accel_byte_challenge_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>Models/AccelByteChatModels.h</label>
+        <link refid="d4/d50/_accel_byte_chat_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Models/AccelByteCloudSaveCommonModels.h</label>
+        <link refid="db/dcf/_accel_byte_cloud_save_common_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>Models/AccelByteCloudSaveModels.h</label>
+        <link refid="d1/d54/_accel_byte_cloud_save_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>Models/AccelByteCloudStorageModels.h</label>
+        <link refid="dd/d1d/_accel_byte_cloud_storage_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>Models/AccelByteConfigurationsModels.h</label>
+        <link refid="dc/d8f/_accel_byte_configurations_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>Models/AccelByteDSHubModels.h</label>
+        <link refid="de/d88/_accel_byte_d_s_hub_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Models/AccelByteDSMModels.h</label>
+        <link refid="de/de5/_accel_byte_d_s_m_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Models/AccelByteEcommerceModels.h</label>
+        <link refid="df/d4c/_accel_byte_ecommerce_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Models/AccelByteErrorModels.h</label>
+        <link refid="d4/dfd/_accel_byte_error_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>Models/AccelByteGDPRModels.h</label>
+        <link refid="df/d37/_accel_byte_g_d_p_r_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>Models/AccelByteGameProfileModels.h</label>
+        <link refid="d2/d50/_accel_byte_game_profile_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>Models/AccelByteGameStandardEventModels.h</label>
+        <link refid="d7/d72/_accel_byte_game_standard_event_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>Models/AccelByteGameTelemetryModels.h</label>
+        <link refid="d6/d24/_accel_byte_game_telemetry_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>AccelByteGeneralModels.h</label>
+        <link refid="de/dc6/_accel_byte_general_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>Models/AccelByteGroupModels.h</label>
+        <link refid="d3/d7d/_accel_byte_group_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>Models/AccelByteInventoryModels.h</label>
+        <link refid="d7/d9a/_accel_byte_inventory_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>Models/AccelByteLeaderboardModels.h</label>
+        <link refid="db/d80/_accel_byte_leaderboard_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Models/AccelByteLobbyModels.h</label>
+        <link refid="d3/d43/_accel_byte_lobby_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+        <link refid="d1/dfc/_accel_byte_matchmaking_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Models/AccelByteMessagingSystemModels.h</label>
+        <link refid="d2/d1a/_accel_byte_messaging_system_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>Models/AccelByteMetricModels.h</label>
+        <link refid="d4/d22/_accel_byte_metric_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Models/AccelByteOauth2Models.h</label>
+        <link refid="d1/d0a/_accel_byte_oauth2_models_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>Models/AccelBytePredefinedEventModels.h</label>
+        <link refid="d0/d2a/_accel_byte_predefined_event_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>Models/AccelBytePresenceBroadcastEventModels.h</label>
+        <link refid="d2/de0/_accel_byte_presence_broadcast_event_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Models/AccelByteQosModels.h</label>
+        <link refid="d4/d86/_accel_byte_qos_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>Models/AccelByteReportingModels.h</label>
+        <link refid="dd/db4/_accel_byte_reporting_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>Models/AccelByteSeasonPassModels.h</label>
+        <link refid="dc/dfd/_accel_byte_season_pass_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>Models/AccelByteSessionBrowserModels.h</label>
+        <link refid="db/d61/_accel_byte_session_browser_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>Models/AccelByteSessionModels.h</label>
+        <link refid="d9/dc0/_accel_byte_session_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>Models/AccelByteStatisticModels.h</label>
+        <link refid="da/d00/_accel_byte_statistic_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>Models/AccelByteTurnModels.h</label>
+        <link refid="da/de4/_accel_byte_turn_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>Models/AccelByteUGCModels.h</label>
+        <link refid="d7/dfe/_accel_byte_u_g_c_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Models/AccelByteUserModels.h</label>
+        <link refid="d2/dca/_accel_byte_user_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>Models/AccelByteUserProfileModels.h</label>
+        <link refid="d3/d0e/_accel_byte_user_profile_models_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>Delegates/DelegateCombinations.h</label>
+      </node>
+      <node id="54">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="58">
+        <label>EngineMinimal.h</label>
+      </node>
+      <node id="23">
+        <label>Http.h</label>
+      </node>
+      <node id="46">
+        <label>HttpManager.h</label>
+      </node>
+      <node id="79">
+        <label>HttpPackage.h</label>
+      </node>
+      <node id="71">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="101">
+        <label>IWebSocket.h</label>
+      </node>
+      <node id="209">
+        <label>Icmp.h</label>
+      </node>
+      <node id="18">
+        <label>Interfaces/IHttpRequest.h</label>
+      </node>
+      <node id="17">
+        <label>Interfaces/IHttpResponse.h</label>
+      </node>
+      <node id="223">
+        <label>Interfaces/IPv4/IPv4Address.h</label>
+      </node>
+      <node id="224">
+        <label>Interfaces/IPv4/IPv4Endpoint.h</label>
+      </node>
+      <node id="98">
+        <label>JsonDomBuilder.h</label>
+      </node>
+      <node id="12">
+        <label>JsonObjectConverter.h</label>
+      </node>
+      <node id="20">
+        <label>JsonObjectWrapper.h</label>
+      </node>
+      <node id="26">
+        <label>JsonUtilities.h</label>
+      </node>
+      <node id="41">
+        <label>Kismet/BlueprintFunctionLibrary.h</label>
+      </node>
+      <node id="63">
+        <label>Math/NumericLimits.h</label>
+      </node>
+      <node id="80">
+        <label>Math/RandomStream.h</label>
+      </node>
+      <node id="15">
+        <label>Misc/DateTime.h</label>
+      </node>
+      <node id="50">
+        <label>Misc/ScopeLock.h</label>
+      </node>
+      <node id="51">
+        <label>Misc/ScopeTryLock.h</label>
+      </node>
+      <node id="73">
+        <label>Misc/Timespan.h</label>
+      </node>
+      <node id="193">
+        <label>Modules/ModuleManager.h</label>
+      </node>
+      <node id="210">
+        <label>Networking.h</label>
+      </node>
+      <node id="10">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="150">
+        <label>Templates/SharedPointer.h</label>
+      </node>
+      <node id="175">
+        <label>UObject/NoExportTypes.h</label>
+      </node>
+      <node id="56">
+        <label>UObject/ReflectedTypeAccessors.h</label>
+      </node>
+      <node id="48">
+        <label>atomic</label>
+      </node>
+      <node id="44">
+        <label>chrono</label>
+      </node>
+      <node id="66">
+        <label>openssl/sha.h</label>
+      </node>
+      <node id="27">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d3/ddc/namespace_accel_byte">AccelByte</innernamespace>
+    <innernamespace refid="d5/dc2/namespace_accel_byte_1_1_api">AccelByte::Api</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright(c)<sp/>2022<sp/>AccelByte<sp/>Inc.All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d92/_accel_byte_heart_beat_api_8h" kindref="compound">Api/AccelByteHeartBeatApi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/d36/_accel_byte_error_8h" kindref="compound">Core/AccelByteError.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/db2/_accel_byte_report_8h" kindref="compound">Core/AccelByteReport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/de4/_accel_byte_http_retry_scheduler_8h" kindref="compound">Core/AccelByteHttpRetryScheduler.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d01/_accel_byte_settings_8h" kindref="compound">Core/AccelByteSettings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d22/_accel_byte_api_client_8h" kindref="compound">Core/AccelByteApiClient.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/ddb/_accel_byte_instance_8h" kindref="compound">Core/AccelByteInstance.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;JsonUtilities.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d8f/_accel_byte_ue4_sdk_module_8h" kindref="compound">AccelByteUe4SdkModule.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d91/_accel_byte_utilities_8h" kindref="compound">Core/AccelByteUtilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/dc2/namespace_accel_byte_1_1_api" kindref="compound">Api</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a8dae7b020283430726d0fd222f3997a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ab76ae72361b99b3531fd4b4a7f7e877a" kindref="member">HeartBeat::HeartBeat</ref>(<ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>InCredentialsRef</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>InSettingsRef</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref>&amp;<sp/>InHttpRef</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>TSharedPtr&lt;AccelByte::FApiClient,<sp/>ESPMode::ThreadSafe&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>InApiClient)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a5b4bfcf158b368358fc0860adece134c" kindref="member">FApiBase</ref>(InCredentialsRef,<sp/>InSettingsRef,<sp/>InHttpRef,<sp/>InApiClient)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9d1dcc6de6e91ac0c95facea326bb4d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ab76ae72361b99b3531fd4b4a7f7e877a" kindref="member">HeartBeat::HeartBeat</ref>(<ref refid="d0/d90/class_accel_byte_1_1_credentials" kindref="compound">Credentials</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>InCredentialsRef</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="df/db1/class_accel_byte_1_1_settings" kindref="compound">Settings</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>InSettingsRef</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref>&amp;<sp/>InHttpRef</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><ref refid="d3/ddc/namespace_accel_byte_1affd45a8972d6b6709fb4ea5c179f3dfa" kindref="member">FAccelBytePlatformPtr</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>InAccelBytePlatform)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="d3/dd3/class_accel_byte_1_1_f_api_base_1a5b4bfcf158b368358fc0860adece134c" kindref="member">FApiBase</ref>(InCredentialsRef,<sp/>InSettingsRef,<sp/>InHttpRef,<sp/>InAccelBytePlatform)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a49e8931a95561846ce1dd78346b71f04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a49e8931a95561846ce1dd78346b71f04" kindref="member">HeartBeat::~HeartBeat</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adb8b52c99cfde099b5b8e06f56c630c3" kindref="member">Shutdown</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad600f91dfe2681ca1bccb4389bad1bd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad600f91dfe2681ca1bccb4389bad1bd4" kindref="member">HeartBeat::Startup</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2e138093910f350529b99d5f34157ed9" kindref="member">bShuttingDown</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad5bbe9494ae0e19487cf2224212a0ad6" kindref="member">bHeartBeatJobStarted</ref>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a40db5812029153b8bbfc903ff37d1004" kindref="member">StartHeartBeatScheduler</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adb8b52c99cfde099b5b8e06f56c630c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adb8b52c99cfde099b5b8e06f56c630c3" kindref="member">HeartBeat::Shutdown</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2e138093910f350529b99d5f34157ed9" kindref="member">bShuttingDown</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UObjectInitialized())</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a0801c4f49f4dd446f7f6d8078639f4c4" kindref="member">HeartBeatResponseDelegate</ref>.Unbind();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a7b1ba201cb85b684dff857a3029e5ef7" kindref="member">OnHeartBeatError</ref>.Unbind();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9f3b0afa8c66597575ac29548471a101" kindref="member">StopHeartBeatScheduler</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1afb24606008fbf3cc43a5c7b085b2854d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1afb24606008fbf3cc43a5c7b085b2854d" kindref="member">HeartBeat::SetHeartBeatResponseDelegate</ref>(FHeartBeatResponse<sp/>OnHeartBeatResponse,<sp/><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref><sp/>OnError)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a0801c4f49f4dd446f7f6d8078639f4c4" kindref="member">HeartBeatResponseDelegate</ref>.IsBound())</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a0801c4f49f4dd446f7f6d8078639f4c4" kindref="member">HeartBeatResponseDelegate</ref>.Unbind();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a7b1ba201cb85b684dff857a3029e5ef7" kindref="member">OnHeartBeatError</ref>.IsBound())</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a7b1ba201cb85b684dff857a3029e5ef7" kindref="member">OnHeartBeatError</ref>.Unbind();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a0801c4f49f4dd446f7f6d8078639f4c4" kindref="member">HeartBeatResponseDelegate</ref><sp/>=<sp/>OnHeartBeatResponse;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a7b1ba201cb85b684dff857a3029e5ef7" kindref="member">OnHeartBeatError</ref><sp/>=<sp/>OnError;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1abc8b1cce2cb41f398b42320468a81cfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1abc8b1cce2cb41f398b42320468a81cfc" kindref="member">HeartBeat::SetHeartBeatEnabled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bEnable)<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a08d9022c8e18a791b0bd38e75c5cfdd2" kindref="member">bEnableHeartBeat</ref><sp/>=<sp/>bEnable;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a08d9022c8e18a791b0bd38e75c5cfdd2" kindref="member">bEnableHeartBeat</ref>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a40db5812029153b8bbfc903ff37d1004" kindref="member">StartHeartBeatScheduler</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9f3b0afa8c66597575ac29548471a101" kindref="member">StopHeartBeatScheduler</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a40db5812029153b8bbfc903ff37d1004" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a40db5812029153b8bbfc903ff37d1004" kindref="member">HeartBeat::StartHeartBeatScheduler</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adce2f74eece5de2d541dcbb4df1f33a7" kindref="member">HeartBeatTickDelegateHandle</ref>.IsValid())</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2c735379cb5906e12ad0ab56c4026ec3" kindref="member">HeartBeatTickDelegate</ref><sp/>=<sp/>FTickerDelegate::CreateRaw(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ae161bb66f1f2262930671aa50e458cc4" kindref="member">HeartBeat::SendHeartBeatEvent</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adce2f74eece5de2d541dcbb4df1f33a7" kindref="member">HeartBeatTickDelegateHandle</ref><sp/>=<sp/>FTickerAlias::GetCoreTicker().AddTicker(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2c735379cb5906e12ad0ab56c4026ec3" kindref="member">HeartBeatTickDelegate</ref>,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9871a839390d5d71886be523e4daa57c" kindref="member">HeartBeatInterval</ref>.GetTotalSeconds()));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ad5bbe9494ae0e19487cf2224212a0ad6" kindref="member">bHeartBeatJobStarted</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9f3b0afa8c66597575ac29548471a101" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9f3b0afa8c66597575ac29548471a101" kindref="member">HeartBeat::StopHeartBeatScheduler</ref>()</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adce2f74eece5de2d541dcbb4df1f33a7" kindref="member">HeartBeatTickDelegateHandle</ref>.IsValid())</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTickerAlias::GetCoreTicker().RemoveTicker(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adce2f74eece5de2d541dcbb4df1f33a7" kindref="member">HeartBeatTickDelegateHandle</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1adce2f74eece5de2d541dcbb4df1f33a7" kindref="member">HeartBeatTickDelegateHandle</ref>.Reset();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ae161bb66f1f2262930671aa50e458cc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1ae161bb66f1f2262930671aa50e458cc4" kindref="member">HeartBeat::SendHeartBeatEvent</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaTime)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ACCELBYTE_ACTIVATE_PROFILER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRACE_CPUPROFILER_EVENT_SCOPE_STR(TEXT(</highlight><highlight class="stringliteral">&quot;AccelByteHeartBeatEvent&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a2e138093910f350529b99d5f34157ed9" kindref="member">bShuttingDown</ref>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a08d9022c8e18a791b0bd38e75c5cfdd2" kindref="member">bEnableHeartBeat</ref>)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a9f3b0afa8c66597575ac29548471a101" kindref="member">StopHeartBeatScheduler</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d5e/class_accel_byte_1_1_f_report_1a10fd2d0b1139a973159868ae037920b1" kindref="member">FReport::Log</ref>(FString(__FUNCTION__));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>Url<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;https://heartbeat.accelbyte.io/add&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TMap&lt;FString,<sp/>FString&gt;<sp/>Headers<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{TEXT(</highlight><highlight class="stringliteral">&quot;Content-Type&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{TEXT(</highlight><highlight class="stringliteral">&quot;Accept&quot;</highlight><highlight class="normal">),<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;application/json&quot;</highlight><highlight class="normal">)}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/dd3/class_accel_byte_1_1_f_api_base_1afd2ef10eecc71f4d34515276ab6a8fcb" kindref="member">HttpClient</ref>.Request(TEXT(</highlight><highlight class="stringliteral">&quot;POST&quot;</highlight><highlight class="normal">),<sp/>Url,<sp/><ref refid="d3/dd3/class_accel_byte_1_1_f_api_base_1ae8ffc36382a4204edb20a6d3430c13ad" kindref="member">SettingsRef</ref>.HeartBeatData,<sp/>Headers,<sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a0801c4f49f4dd446f7f6d8078639f4c4" kindref="member">HeartBeatResponseDelegate</ref>,<sp/><ref refid="d0/ddb/class_accel_byte_1_1_api_1_1_heart_beat_1a7b1ba201cb85b684dff857a3029e5ef7" kindref="member">OnHeartBeatError</ref>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Api/AccelByteHeartBeatApi.cpp"/>
+  </compounddef>
+</doxygen>

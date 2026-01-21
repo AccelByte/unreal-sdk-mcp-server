@@ -1,0 +1,3569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dd/dd1/class_u_a_b_group" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>UABGroup</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d6/d97/_a_b_group_8h" local="no">ABGroup.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/dd1/class_u_a_b_group_1a0ade7c1e0b0869e73fd4349a536f22a1" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABGroup::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABGroup::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="1075" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" bodystart="1075" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a0b5e6ab219cb0136dae6a9853f9be947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABGroup::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="64" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a5a15ce41dcc777c798bf9b88bbe9cb8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroupList</definition>
+        <argsstring>(const FAccelByteModelsGetGroupListRequest &amp;RequestContent, const FSearchGroupsSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroupList</name>
+        <qualifiedname>UABGroup::GetGroupList</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/dda/struct_f_accel_byte_models_get_group_list_request" kindref="compound">FAccelByteModelsGetGroupListRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FSearchGroupsSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>AKA &quot;SearchGroups&quot;; get list of groups. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Only shows OPEN and PUBLIC group types.</para>
+</listitem><listitem><para>Can search based on the group name by filling the &quot;groupName&quot; query param.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73303</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FGetGroupConfigListResponse&amp;.</para>
+</listitem><listitem><para>Result is simply a FAccelByteModelsGroupInformationResponse + pagination info. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="83" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="39" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1ae0316289e23024f40a4b6a1c9d36fc7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::CreateGroup</definition>
+        <argsstring>(const FAccelByteModelsCreateGroupRequest &amp;RequestContent, const FCreateGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>CreateGroup</name>
+        <qualifiedname>UABGroup::CreateGroup</qualifiedname>
+        <param>
+          <type>const <ref refid="da/dd1/struct_f_accel_byte_models_create_group_request" kindref="compound">FAccelByteModelsCreateGroupRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FCreateGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Requires valid user authentication.</para>
+</listitem><listitem><para>There are some fields that needs to be fulfilled.<itemizedlist>
+<listitem><para>groupDescription: the description of the group (optional).</para>
+</listitem><listitem><para>groupIcon: group icon URL link (optional).</para>
+</listitem><listitem><para>groupName: name of the group.</para>
+</listitem><listitem><para>groupRegion: region of the group.</para>
+</listitem><listitem><para>groupRules: rules for specific group. It consists of groupCustomRule that can be used to save custom rule, and groupPredefinedRules that has similar usage with configuration, but this rule only works in specific group.</para>
+</listitem><listitem><para>allowedAction: available action in group service. It consist of joinGroup and inviteGroup.</para>
+</listitem><listitem><para>ruleAttribute: attribute of the player that needs to be checked.</para>
+</listitem><listitem><para>ruleCriteria: criteria of the value. The value will be in enum of EQUAL, MINIMUM, MAXIMUM.</para>
+</listitem><listitem><para>ruleValue: value that needs to be checked.</para>
+</listitem><listitem><para>customAttributes: additional custom group attributes (optional).</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73304</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New group detail request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="113" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="13" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a9fa5150be9c4ab31537d75925403eace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroup</definition>
+        <argsstring>(const FString &amp;GroupId, const FGetGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroup</name>
+        <qualifiedname>UABGroup::GetGroup</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FGetGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get single single group info (by groupId). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Gets single group information.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73306</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="131" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="65" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1adc377b603b78560f37df2cb0426d8e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateGroup</definition>
+        <argsstring>(const FString &amp;GroupId, const bool bCompletelyReplace, const FAccelByteModelsGroupUpdatable &amp;RequestContent, const FUpdateGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateGroup</name>
+        <qualifiedname>UABGroup::UpdateGroup</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>bCompletelyReplace</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d4/d4c/struct_f_accel_byte_models_group_updatable" kindref="compound">FAccelByteModelsGroupUpdatable</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update existing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks the group ID of the user based on the access token and compares it with the group ID in path parameter.</para>
+</listitem><listitem><para>Checks the member role of the user based on the access token.</para>
+</listitem><listitem><para>Supports partial update (empty elements will convert to null)</para>
+</listitem></itemizedlist>
+</para>
+<para>Action Code: 73307</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bCompletelyReplace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instead of partially-update, do you want to completely replace ALL info? </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="155" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="91" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a7bb02c0610b08c78387328d4b52bb1a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::DeleteGroup</definition>
+        <argsstring>(const FString &amp;GroupId, const FDeleteGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>DeleteGroup</name>
+        <qualifiedname>UABGroup::DeleteGroup</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FDeleteGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete existing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Checks if groupID exists before deleting.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [DELETE]&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73305</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="175" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="161" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a51cae54aada744341c1ff974bf7d6620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateGroupCustomAttributes</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsUpdateGroupCustomAttributesRequest &amp;RequestContent, const FUpdateGroupCustomAttributesSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateGroupCustomAttributes</name>
+        <qualifiedname>UABGroup::UpdateGroupCustomAttributes</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d42/struct_f_accel_byte_models_update_group_custom_attributes_request" kindref="compound">FAccelByteModelsUpdateGroupCustomAttributesRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupCustomAttributesSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Replaces current group custom attributes entirely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Requires valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks group ID of the user based on the access token and compares with group ID in path param.</para>
+</listitem><listitem><para>Checks the member role of the user based on the access token.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73311</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arbitrary {}. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="196" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="127" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a05a1572fee29c5fc5dea185c212a2a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateGroupCustomRule</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsUpdateCustomRulesRequest &amp;RequestContent, const FUpdateGroupCustomRuleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateGroupCustomRule</name>
+        <qualifiedname>UABGroup::UpdateGroupCustomRule</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/dd8/struct_f_accel_byte_models_update_custom_rules_request" kindref="compound">FAccelByteModelsUpdateCustomRulesRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupCustomRuleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update custom (arbitrary) group rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Checks group ID of the user (via access token) and compares with group ID in path param.</para>
+</listitem><listitem><para>Checks member role of the user based on access token.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73308</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arbitrary {}. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="217" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="186" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a30b51b83ffbb5b47450e2ff290ea5058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateGroupPredefinedRule</definition>
+        <argsstring>(const FString &amp;GroupId, const EAccelByteAllowedAction &amp;AllowedAction, const FAccelByteModelsUpdateGroupPredefinedRuleRequest &amp;RequestContent, const FUpdateGroupPredefinedRuleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateGroupPredefinedRule</name>
+        <qualifiedname>UABGroup::UpdateGroupPredefinedRule</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/d7d/_accel_byte_group_models_8h_1ad992cb77f27f95661290bcdca8b25643" kindref="member">EAccelByteAllowedAction</ref> &amp;</type>
+          <declname>AllowedAction</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/dc2/struct_f_accel_byte_models_update_group_predefined_rule_request" kindref="compound">FAccelByteModelsUpdateGroupPredefinedRuleRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupPredefinedRuleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update predefined group rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks group ID of the user (via access token) and compares with group ID in path param.</para>
+</listitem><listitem><para>Checks member role of the user based on access token.</para>
+</listitem><listitem><para>If rule action is not defined in the group, it will be added immediately.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73310</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AllowedAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eg: createGroup, joinedGroup. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RuleDetail { RuleAttribute, RuleCriteria, RuleValue }. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="241" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="220" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1adbba0ed87453f958c0666f1d5ea7f5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::DeleteGroupPredefinedRule</definition>
+        <argsstring>(const FString &amp;GroupId, const EAccelByteAllowedAction &amp;AllowedAction, const FDeleteGroupPredefinedRuleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>DeleteGroupPredefinedRule</name>
+        <qualifiedname>UABGroup::DeleteGroupPredefinedRule</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/d7d/_accel_byte_group_models_8h_1ad992cb77f27f95661290bcdca8b25643" kindref="member">EAccelByteAllowedAction</ref> &amp;</type>
+          <declname>AllowedAction</declname>
+        </param>
+        <param>
+          <type>const FDeleteGroupPredefinedRuleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete predefined group rule, based on the allowed action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks the group ID of the user based on the access token, then compares it with the group ID in path parameter.</para>
+</listitem><listitem><para>Checks the member role of the user based on the access token.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73309</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AllowedAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eg: createGroup, joinedGroup. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Void Result </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="265" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="250" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1ae4c0c9231eeb162c8a5f974b1d3e32aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::AcceptGroupInvitation</definition>
+        <argsstring>(const FString &amp;GroupId, const FAcceptGroupInvitationSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>AcceptGroupInvitation</name>
+        <qualifiedname>UABGroup::AcceptGroupInvitation</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FAcceptGroupInvitationSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Accepts an invitation from a 3rd-party group&apos;s group member to group up. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>If specific user is !invited in the specific group ID, throw errorif the user !invited yet.</para>
+</listitem><listitem><para>Checks if the user who access this endpoint already joined the specific group.</para>
+</listitem><listitem><para>Deletes all requests (invite / join request) for the user who accesses this endpoint.</para>
+</listitem><listitem><para>Existing members will receive notification of the newly-accepted member.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73401</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group that invited you, that you are accepting the invite to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="288" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="280" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1ad9b2d86c734567c16d1766af8b043569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::RejectGroupInvitation</definition>
+        <argsstring>(const FString &amp;GroupId, const FRejectGroupInvitationSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>RejectGroupInvitation</name>
+        <qualifiedname>UABGroup::RejectGroupInvitation</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FRejectGroupInvitationSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Rejects an invitation from a 3rd-party group&apos;s group member to group up. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>If specific user is !invited in the specific group ID, throw errorif the user !invited yet.</para>
+</listitem><listitem><para>Checks if the user who access this endpoint already joined the specific group.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73402</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group that invited you, that you are rejecting the invite from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="306" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="306" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1ae80571c53a49e784a5298579ba7c89bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::JoinGroup</definition>
+        <argsstring>(const FString &amp;GroupId, const FJoinGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>JoinGroup</name>
+        <qualifiedname>UABGroup::JoinGroup</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FJoinGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Join into specific group and become a group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Checks the the the group type based on the groupID.</para>
+</listitem><listitem><para>Checks if the user who access this endpoint already joined the specific group.</para>
+</listitem><listitem><para>Returns status field, for whether the user JOINED or REQUESTED to join the specific group.</para>
+</listitem><listitem><para>More Info:<itemizedlist>
+<listitem><para>User cannot join to the group with PRIVATE type.</para>
+</listitem><listitem><para>Joining PUBLIC group type will create join request and need approval. from the privileged group member to accept the request to become the member.</para>
+</listitem><listitem><para>Joining OPEN group type will make this user become member of that group immediately.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73403</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group you want to join. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="331" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="332" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a7796c1df5abd67cf7ee3a9fc57befb6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::CancelJoinGroupRequest</definition>
+        <argsstring>(const FString &amp;GroupId, const FCancelJoinGroupRequestSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>CancelJoinGroupRequest</name>
+        <qualifiedname>UABGroup::CancelJoinGroupRequest</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FCancelJoinGroupRequestSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Cancel the Join group request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73411</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the !Open group type you asked to join, but now want to cancel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="347" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="358" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1aef0239c699d94e7f20dc2d01e2237cda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroupMembersListByGroupId</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsGetGroupMembersListByGroupIdRequest &amp;RequestContent, const FGetGroupMembersListByGroupIdSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroupMembersListByGroupId</name>
+        <qualifiedname>UABGroup::GetGroupMembersListByGroupId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d15/struct_f_accel_byte_models_get_group_members_list_by_group_id_request" kindref="compound">FAccelByteModelsGetGroupMembersListByGroupIdRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetGroupMembersListByGroupIdSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get list of group members (by GroupId). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73410</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group you want to get a members list from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="364" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="384" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a7f5b1f71d44f376d3e4e6926c56fed84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::LeaveGroup</definition>
+        <argsstring>(const FLeaveGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>LeaveGroup</name>
+        <qualifiedname>UABGroup::LeaveGroup</qualifiedname>
+        <param>
+          <type>const FLeaveGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Leave the group you&apos;re currently in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Admin is not allowed to leave the group.</para>
+</listitem><listitem><para>Will also give response if user does not belong to any group.</para>
+</listitem><listitem><para>Admin is not allowed to leave the group.<itemizedlist>
+<listitem><para>If an Admin wants to leave the group, see DeleteGroup.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Still gives response if the user does not belong to any group.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73404</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="385" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="412" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a8dbd05f4c481ed58e4d8eebfd5e84c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetUserGroupInfoByUserId</definition>
+        <argsstring>(const FString &amp;UserId, const FGetUserGroupInfoByUserIdSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetUserGroupInfoByUserId</name>
+        <qualifiedname>UABGroup::GetUserGroupInfoByUserId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FGetUserGroupInfoByUserIdSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get list of group members by group id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>get user group information by UserId.</para>
+</listitem><listitem><para>If user !belongs to any group, a warning will return.</para>
+</listitem><listitem><para>Group Member Status:<itemizedlist>
+<listitem><para>JOIN: status of user requested to join group.</para>
+</listitem><listitem><para>INVITE: status of user invited to a group.</para>
+</listitem><listitem><para>JOINED: status of user already joined to a group.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73405</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the selected user; you want want to get this user&apos;s list of group members. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="407" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="434" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1ad105934491db79a56e9830888c5286d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::InviteUserToGroup</definition>
+        <argsstring>(const FString &amp;UserId, const FInviteUserToGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>InviteUserToGroup</name>
+        <qualifiedname>UABGroup::InviteUserToGroup</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FInviteUserToGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Invite the other user to your group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:INVITE [CREATE]&quot;.</para>
+</listitem><listitem><para>If specific user already has the join request, response will notify they have a pending accept / reject.</para>
+</listitem><listitem><para>Invited user will receive notification through lobby.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73406</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user you want to invite to your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="426" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="460" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a94cefcfe85d5e351f6d0d8f16b9d1787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::AcceptGroupJoinRequest</definition>
+        <argsstring>(const FString &amp;UserId, const FAcceptGroupJoinRequestSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>AcceptGroupJoinRequest</name>
+        <qualifiedname>UABGroup::AcceptGroupJoinRequest</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FAcceptGroupJoinRequestSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Accept [other] user&apos;s group join request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:JOIN [CREATE]&quot;.</para>
+</listitem><listitem><para>If specific user was not asked to join this specific group, response will return error that they &quot;need a join request&quot;.</para>
+</listitem><listitem><para>Will also check if specific user <emphasis>already</emphasis> joined the specific group.</para>
+</listitem><listitem><para>This also works when a user invites themselves (JoinGroup) to join a PUBLIC group.<itemizedlist>
+<listitem><para>Rather than an OPEN group (where players can just join without permission).</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73407</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user who wants to join your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op.<itemizedlist>
+<listitem><para>Returns { GroupId, UserId } </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="449" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="486" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a875c29ca5f931680a51e8ea1be0c0c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::RejectGroupJoinRequest</definition>
+        <argsstring>(const FString &amp;UserId, const FRejectGroupJoinRequestSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>RejectGroupJoinRequest</name>
+        <qualifiedname>UABGroup::RejectGroupJoinRequest</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FRejectGroupJoinRequestSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Reject [other] user&apos;s group join request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:JOIN [CREATE]&quot;.</para>
+</listitem><listitem><para>If specific user was not asked to join this specific group, response will return error that they &quot;need a join request&quot;.</para>
+</listitem><listitem><para>Will also check if specific user <emphasis>already</emphasis> joined the specific group.</para>
+</listitem><listitem><para>This also works when a user invites themselves (JoinGroup) to join a PUBLIC group.<itemizedlist>
+<listitem><para>Rrather than an OPEN group players can just join.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73408</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user you do NOT want to join your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op.<itemizedlist>
+<listitem><para>Returns { GroupId, UserId } </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="472" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="512" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1aa803037be528321f4fd99828e0aaccc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::KickGroupMember</definition>
+        <argsstring>(const FString &amp;UserId, const FKickGroupMemberSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>KickGroupMember</name>
+        <qualifiedname>UABGroup::KickGroupMember</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FKickGroupMemberSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Kick a group member out of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:KICK [CREATE]&quot;.</para>
+</listitem><listitem><para>Validates the kicker&apos;s: member, group info and role perms.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73409</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user you want to kick from your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op.<itemizedlist>
+<listitem><para>Returns { GroupId, KickedUserId } </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="491" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="538" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a09d109f4244f00a7fa99f946b0f22d24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetMemberRoles</definition>
+        <argsstring>(const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetMemberRolesSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetMemberRoles</name>
+        <qualifiedname>UABGroup::GetMemberRoles</qualifiedname>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetMemberRolesSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get list of [group] member roles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required Member Role Permission: &quot;GROUP:ROLE [READ]&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73201</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="509" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="567" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1ab36673c7e1c117c3a47651d4c264819c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::AssignMemberRole</definition>
+        <argsstring>(const FString &amp;MemberRoleId, const FAccelByteModelsUserIdWrapper &amp;RequestContent, const FAssignMemberRoleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>AssignMemberRole</name>
+        <qualifiedname>UABGroup::AssignMemberRole</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MemberRoleId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d94/struct_f_accel_byte_models_user_id_wrapper" kindref="compound">FAccelByteModelsUserIdWrapper</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FAssignMemberRoleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Assign a role to a group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>AKA AddMemberRole.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:ROLE [UPDATE]&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73204</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MemberRoleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the role you want to assign. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ UserId } of the user you want to assign the role to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="527" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="593" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a0044c9080c07700e5eb743e80f4ee116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::DeleteMemberRole</definition>
+        <argsstring>(const FString &amp;MemberRoleId, const FAccelByteModelsUserIdWrapper &amp;RequestContent, const FDeleteMemberRoleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>DeleteMemberRole</name>
+        <qualifiedname>UABGroup::DeleteMemberRole</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MemberRoleId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d94/struct_f_accel_byte_models_user_id_wrapper" kindref="compound">FAccelByteModelsUserIdWrapper</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FDeleteMemberRoleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Remove a role from a group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>AKA RevokeMemberRole, RemoveMemberRole.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:ROLE [UPDATE]&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73204</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MemberRoleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the role you want to delete. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ UserId } of the user you want to delete the role from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="546" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="621" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1abe718a7e7cdfd1393b1cc2248d075338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroupJoinRequests</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetGroupJoinRequestsSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroupJoinRequests</name>
+        <qualifiedname>UABGroup::GetGroupJoinRequests</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetGroupJoinRequestsSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get list of join requests in a specific group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:JOIN [READ]&quot;.</para>
+</listitem><listitem><para>Group members needs to have permission (+belong to the group) to access this endpoint.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73501</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group you want to see the join requests from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } for pagination. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Paginated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="568" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="652" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a2f33c838d5688588708305a8bd405853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroupInvitationRequests</definition>
+        <argsstring>(const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetGroupInvitationRequestsSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroupInvitationRequests</name>
+        <qualifiedname>UABGroup::GetGroupInvitationRequests</qualifiedname>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetGroupInvitationRequestsSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get group invitation request list for the user calling this endpoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Checks any group invitation for this user.</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code:: 73502</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } for pagination. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Paginated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="585" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="680" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a5d9f9900a84403698e3f08944a1ddf02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::CreateV2Group</definition>
+        <argsstring>(const FAccelByteModelsCreateGroupRequest &amp;RequestContent, const FCreateGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>CreateV2Group</name>
+        <qualifiedname>UABGroup::CreateV2Group</qualifiedname>
+        <param>
+          <type>const <ref refid="da/dd1/struct_f_accel_byte_models_create_group_request" kindref="compound">FAccelByteModelsCreateGroupRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FCreateGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Requires valid user authentication.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New group detail request. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="608" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="714" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1af2deb9fe0797b44d11f772288c9797e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroupsByGroupIds</definition>
+        <argsstring>(const TArray&lt; FString &gt; &amp;GroupIds, const FGetGroupsByGroupIdsSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroupsByGroupIds</name>
+        <qualifiedname>UABGroup::GetGroupsByGroupIds</qualifiedname>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>GroupIds</declname>
+        </param>
+        <param>
+          <type>const FGetGroupsByGroupIdsSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Gets a collection of group information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Requires valid user authentication</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of group ids to get the group information from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const <ref refid="dc/d93/struct_f_accel_byte_models_get_group_list_response" kindref="compound">FAccelByteModelsGetGroupListResponse</ref>&amp;. Support paging. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="623" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="740" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a1f699068c76f5ac8850c55b385f1cc60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateV2Group</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsUpdateGroupRequest &amp;RequestContent, const FUpdateGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateV2Group</name>
+        <qualifiedname>UABGroup::UpdateV2Group</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d2b/struct_f_accel_byte_models_update_group_request" kindref="compound">FAccelByteModelsUpdateGroupRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update existing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks the group ID of the user based on the access token and compares it with the group ID in path parameter.</para>
+</listitem><listitem><para>Checks the member role of the user based on the access token.</para>
+</listitem><listitem><para>Supports partial update (empty elements will convert to null)</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="644" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="766" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a82f164d6fc73c02d63f941998888757a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::DeleteV2Group</definition>
+        <argsstring>(const FString &amp;GroupId, const FDeleteGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>DeleteV2Group</name>
+        <qualifiedname>UABGroup::DeleteV2Group</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FDeleteGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete existing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Checks if groupID exists before deleting.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [DELETE]&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="661" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="794" bodyend="817"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a12678b733a96fb8969948e585998a065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateV2GroupCustomAttributes</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsUpdateGroupCustomAttributesRequest &amp;RequestContent, const FUpdateGroupCustomAttributesSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateV2GroupCustomAttributes</name>
+        <qualifiedname>UABGroup::UpdateV2GroupCustomAttributes</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/d42/struct_f_accel_byte_models_update_group_custom_attributes_request" kindref="compound">FAccelByteModelsUpdateGroupCustomAttributesRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupCustomAttributesSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Replaces current group custom attributes entirely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Requires valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks group ID of the user based on the access token and compares with group ID in path param.</para>
+</listitem><listitem><para>Checks the member role of the user based on the access token.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arbitrary {}. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="680" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="819" bodyend="843"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a3aea35e4e5f11cbb8c1613146c7bae30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateV2GroupCustomRule</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsUpdateCustomRulesRequest &amp;RequestContent, const FUpdateGroupCustomRuleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateV2GroupCustomRule</name>
+        <qualifiedname>UABGroup::UpdateV2GroupCustomRule</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d8/dd8/struct_f_accel_byte_models_update_custom_rules_request" kindref="compound">FAccelByteModelsUpdateCustomRulesRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupCustomRuleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update custom (arbitrary) group rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Checks group ID of the user (via access token) and compares with group ID in path param.</para>
+</listitem><listitem><para>Checks member role of the user based on access token.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arbitrary {}. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="699" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="873" bodyend="897"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a91c5989f2a15bd3445468f4a6eb52463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::UpdateV2GroupPredefinedRule</definition>
+        <argsstring>(const FString &amp;GroupId, const EAccelByteAllowedAction &amp;AllowedAction, const FAccelByteModelsUpdateGroupPredefinedRuleRequest &amp;RequestContent, const FUpdateGroupPredefinedRuleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>UpdateV2GroupPredefinedRule</name>
+        <qualifiedname>UABGroup::UpdateV2GroupPredefinedRule</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/d7d/_accel_byte_group_models_8h_1ad992cb77f27f95661290bcdca8b25643" kindref="member">EAccelByteAllowedAction</ref> &amp;</type>
+          <declname>AllowedAction</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/dc2/struct_f_accel_byte_models_update_group_predefined_rule_request" kindref="compound">FAccelByteModelsUpdateGroupPredefinedRuleRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FUpdateGroupPredefinedRuleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update predefined group rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks group ID of the user (via access token) and compares with group ID in path param.</para>
+</listitem><listitem><para>Checks member role of the user based on access token.</para>
+</listitem><listitem><para>If rule action is not defined in the group, it will be added immediately.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AllowedAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eg: createGroup, joinedGroup. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RuleDetail { RuleAttribute, RuleCriteria, RuleValue }. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is const FAccelByteModelsGroupInformationResponse&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="721" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="953" bodyend="979"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a026a6c1177ce510094b933ee15278947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::DeleteV2GroupPredefinedRule</definition>
+        <argsstring>(const FString &amp;GroupId, const EAccelByteAllowedAction &amp;AllowedAction, const FDeleteGroupPredefinedRuleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>DeleteV2GroupPredefinedRule</name>
+        <qualifiedname>UABGroup::DeleteV2GroupPredefinedRule</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/d7d/_accel_byte_group_models_8h_1ad992cb77f27f95661290bcdca8b25643" kindref="member">EAccelByteAllowedAction</ref> &amp;</type>
+          <declname>AllowedAction</declname>
+        </param>
+        <param>
+          <type>const FDeleteGroupPredefinedRuleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete predefined group rule, based on the allowed action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [UPDATE]&quot;.</para>
+</listitem><listitem><para>Checks the group ID of the user based on the access token, then compares it with the group ID in path parameter.</para>
+</listitem><listitem><para>Checks the member role of the user based on the access token.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AllowedAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eg: createGroup, joinedGroup. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Void Result </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="743" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="899" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a0d08bcd9de5baebfbca27c6430df29ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetUserGroupStatusInfo</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;GroupId, const FGetUserGroupInfoSuccess &amp;OnSuccess, const FDErrorHandler OnError)</argsstring>
+        <name>GetUserGroupStatusInfo</name>
+        <qualifiedname>UABGroup::GetUserGroupStatusInfo</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FGetUserGroupInfoSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Gets user group status information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP [READ]&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The group id the user belongs to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is <ref refid="db/d51/struct_f_accel_byte_models_get_user_group_info_response" kindref="compound">FAccelByteModelsGetUserGroupInfoResponse</ref>&amp;. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation fail. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="761" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="926" bodyend="951"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1afc786c7c7e1a666b3246b2b310095756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroupInviteRequestList</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetGroupInvitationRequestsSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroupInviteRequestList</name>
+        <qualifiedname>UABGroup::GetGroupInviteRequestList</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetGroupInvitationRequestsSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get Group Invite Request List for specific group. Group members needs to have permission and also belong to the group to access this endpoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:JOIN [READ]&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } for pagination. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is <ref refid="db/d57/struct_f_accel_byte_models_get_member_requests_list_response" kindref="compound">FAccelByteModelsGetMemberRequestsListResponse</ref>. </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation fail. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="779" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="845" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a18e59ddeea8fc69ac30e40e5e08308c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetGroupJoinRequestList</definition>
+        <argsstring>(const FString &amp;GroupId, const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetGroupJoinRequestsSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetGroupJoinRequestList</name>
+        <qualifiedname>UABGroup::GetGroupJoinRequestList</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetGroupJoinRequestsSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get Group Join Request List for specific group. Group members needs to have permission and also belong to the group to access this endpoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:JOIN [READ]&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } for pagination. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is <ref refid="db/d57/struct_f_accel_byte_models_get_member_requests_list_response" kindref="compound">FAccelByteModelsGetMemberRequestsListResponse</ref> </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation fail. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="797" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="981" bodyend="1006"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1acd7259c72426820f58a99ec4c2e780b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::CancelGroupMemberInvitation</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;GroupId, const FCanceGroupInviteRequestSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>CancelGroupMemberInvitation</name>
+        <qualifiedname>UABGroup::CancelGroupMemberInvitation</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FCanceGroupInviteRequestSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Cancel invitation to specific user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:INVITE [DELETE]&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user id to which the invitation will be cancelled. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>group id which sent the invitation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded.<itemizedlist>
+<listitem><para>Result is <ref refid="d2/df2/struct_f_accel_byte_models_member_request_group_response" kindref="compound">FAccelByteModelsMemberRequestGroupResponse</ref> </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation fail. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="815" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1008" bodyend="1033"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a8dbe3dbb410272bad2c43d4bfa31e68c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::AcceptV2GroupInvitation</definition>
+        <argsstring>(const FString &amp;GroupId, const FAcceptGroupInvitationSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>AcceptV2GroupInvitation</name>
+        <qualifiedname>UABGroup::AcceptV2GroupInvitation</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FAcceptGroupInvitationSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Accepts an invitation from a 3rd-party group&apos;s group member to group up. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>If specific user is !invited in the specific group ID, throw errorif the user !invited yet.</para>
+</listitem><listitem><para>Checks if the user who access this endpoint already joined the specific group.</para>
+</listitem><listitem><para>Deletes all requests (invite / join request) for the user who accesses this endpoint.</para>
+</listitem><listitem><para>Existing members will receive notification of the newly-accepted member.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group that invited you, that you are accepting the invite to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="839" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1040" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a19fc33a8543051acf95293fd41eae8c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::RejectV2GroupInvitation</definition>
+        <argsstring>(const FString &amp;GroupId, const FRejectGroupInvitationSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>RejectV2GroupInvitation</name>
+        <qualifiedname>UABGroup::RejectV2GroupInvitation</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FRejectGroupInvitationSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Rejects an invitation from a 3rd-party group&apos;s group member to group up. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>If specific user is !invited in the specific group ID, throw errorif the user !invited yet.</para>
+</listitem><listitem><para>Checks if the user who access this endpoint already joined the specific group.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group that invited you, that you are rejecting the invite from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="855" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1066" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a77965be9dcde757eb2d3a23c750ff8f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::JoinV2Group</definition>
+        <argsstring>(const FString &amp;GroupId, const FJoinGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>JoinV2Group</name>
+        <qualifiedname>UABGroup::JoinV2Group</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FJoinGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Join into specific group and become a group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Checks the the the group type based on the groupID.</para>
+</listitem><listitem><para>Checks if the user who access this endpoint already joined the specific group.</para>
+</listitem><listitem><para>Returns status field, for whether the user JOINED or REQUESTED to join the specific group.</para>
+</listitem><listitem><para>More Info:<itemizedlist>
+<listitem><para>User cannot join to the group with PRIVATE type.</para>
+</listitem><listitem><para>Joining PUBLIC group type will create join request and need approval. from the privileged group member to accept the request to become the member.</para>
+</listitem><listitem><para>Joining OPEN group type will make this user become member of that group immediately.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Action code: 73403</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group you want to join. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="880" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1092" bodyend="1116"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a2871a23b96167018fbce834e273a9832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::LeaveV2Group</definition>
+        <argsstring>(const FString &amp;GroupId, const FLeaveGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>LeaveV2Group</name>
+        <qualifiedname>UABGroup::LeaveV2Group</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FLeaveGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Leave the group you&apos;re currently in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication.</para>
+</listitem><listitem><para>Admin is not allowed to leave the group.</para>
+</listitem><listitem><para>Will also give response if user does not belong to any group.</para>
+</listitem><listitem><para>Admin is not allowed to leave the group.<itemizedlist>
+<listitem><para>If an Admin wants to leave the group, see DeleteGroup.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Still gives response if the user does not belong to any group.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group you want to leave. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="899" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1118" bodyend="1142"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a9b6ae967a91a9632e29029f26ef2c1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::InviteUserToV2Group</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;GroupId, const FInviteUserToGroupSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>InviteUserToV2Group</name>
+        <qualifiedname>UABGroup::InviteUserToV2Group</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FInviteUserToGroupSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Invite the other user to your group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:INVITE [CREATE]&quot;.</para>
+</listitem><listitem><para>If specific user already has the join request, response will notify they have a pending accept / reject.</para>
+</listitem><listitem><para>Invited user will receive notification through lobby.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user you want to invite to your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="917" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1144" bodyend="1170"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1abd2a083d6c89409aea2da78070725541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::AcceptV2GroupJoinRequest</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;GroupId, const FAcceptGroupJoinRequestSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>AcceptV2GroupJoinRequest</name>
+        <qualifiedname>UABGroup::AcceptV2GroupJoinRequest</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FAcceptGroupJoinRequestSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Accept [other] user&apos;s group join request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:JOIN [CREATE]&quot;.</para>
+</listitem><listitem><para>If specific user was not asked to join this specific group, response will return error that they &quot;need a join request&quot;.</para>
+</listitem><listitem><para>Will also check if specific user <emphasis>already</emphasis> joined the specific group.</para>
+</listitem><listitem><para>This also works when a user invites themselves (JoinGroup) to join a PUBLIC group.<itemizedlist>
+<listitem><para>Rather than an OPEN group (where players can just join without permission).</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user who wants to join your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op.<itemizedlist>
+<listitem><para>Returns { GroupId, UserId } </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="940" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1172" bodyend="1198"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a77e7000d3e7b80417e3069fd3d22b33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::RejectV2GroupJoinRequest</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;GroupId, const FRejectGroupJoinRequestSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>RejectV2GroupJoinRequest</name>
+        <qualifiedname>UABGroup::RejectV2GroupJoinRequest</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FRejectGroupJoinRequestSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Reject [other] user&apos;s group join request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:JOIN [CREATE]&quot;.</para>
+</listitem><listitem><para>If specific user was not asked to join this specific group, response will return error that they &quot;need a join request&quot;.</para>
+</listitem><listitem><para>Will also check if specific user <emphasis>already</emphasis> joined the specific group.</para>
+</listitem><listitem><para>This also works when a user invites themselves (JoinGroup) to join a PUBLIC group.<itemizedlist>
+<listitem><para>Rrather than an OPEN group players can just join.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user you do NOT want to join your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op.<itemizedlist>
+<listitem><para>Returns { GroupId, UserId } </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="963" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1200" bodyend="1226"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a603e62246b317282d31ee4a5807ffaee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::KickV2GroupMember</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;GroupId, const FKickGroupMemberSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>KickV2GroupMember</name>
+        <qualifiedname>UABGroup::KickV2GroupMember</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const FKickGroupMemberSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Kick a group member out of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user auth.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:KICK [CREATE]&quot;.</para>
+</listitem><listitem><para>Validates the kicker&apos;s: member, group info and role perms.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the user you want to kick from your group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op.<itemizedlist>
+<listitem><para>Returns { GroupId, KickedUserId } </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="981" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1228" bodyend="1254"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a7cc8669c0de35b829131a361764b19ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetMyJoinedGroupInfo</definition>
+        <argsstring>(const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetMyJoinedGroupInfoSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetMyJoinedGroupInfo</name>
+        <qualifiedname>UABGroup::GetMyJoinedGroupInfo</qualifiedname>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetMyJoinedGroupInfoSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get user group joined information. If user does not belong to any group, it will return warning to give information about it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } for pagination. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation is succeeded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation is fail. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="996" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1256" bodyend="1280"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a53905dd3c5f1da7a201f2184576c826c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetMyJoinGroupRequest</definition>
+        <argsstring>(const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetMyJoinGroupRequestSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetMyJoinGroupRequest</name>
+        <qualifiedname>UABGroup::GetMyJoinGroupRequest</qualifiedname>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetMyJoinGroupRequestSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get My Join Request To The Groups. It will check any join request group for this user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Required valid user authentication</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } for pagination. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation is succeeded.<itemizedlist>
+<listitem><para>Result is <ref refid="d0/d4f/struct_f_accel_byte_models_get_group_member_list_response" kindref="compound">FAccelByteModelsGetGroupMemberListResponse</ref> </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation is fail. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="1011" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1282" bodyend="1306"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a2fbc2a215504c7e24487ac28e121dcf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::AssignV2MemberRole</definition>
+        <argsstring>(const FString &amp;MemberRoleId, const FString &amp;GroupId, const FAccelByteModelsUserIdWrapper &amp;RequestContent, const FAssignMemberRoleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>AssignV2MemberRole</name>
+        <qualifiedname>UABGroup::AssignV2MemberRole</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MemberRoleId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d94/struct_f_accel_byte_models_user_id_wrapper" kindref="compound">FAccelByteModelsUserIdWrapper</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FAssignMemberRoleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Assign a role to a group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>AKA AddMemberRole.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:ROLE [UPDATE]&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MemberRoleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the role you want to assign. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the member. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ UserId } of the user and group you want to assign the role to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="1031" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1308" bodyend="1336"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a32207a88c18d25f288c6e2c45a21ec40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::DeleteV2MemberRole</definition>
+        <argsstring>(const FString &amp;MemberRoleId, const FString &amp;GroupId, const FAccelByteModelsUserIdWrapper &amp;RequestContent, const FDeleteMemberRoleSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>DeleteV2MemberRole</name>
+        <qualifiedname>UABGroup::DeleteV2MemberRole</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MemberRoleId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>GroupId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d94/struct_f_accel_byte_models_user_id_wrapper" kindref="compound">FAccelByteModelsUserIdWrapper</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FDeleteMemberRoleSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Remove a role from a group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>AKA RevokeMemberRole, RemoveMemberRole.</para>
+</listitem><listitem><para>Required Member Role Permission: &quot;GROUP:ROLE [UPDATE]&quot;.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MemberRoleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the role you want to delete. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GroupId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the member. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ UserId } of the user you want to delete the role from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon successful op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called upon failed op. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="1050" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1338" bodyend="1366"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dd1/class_u_a_b_group_1a92c9ca020d87a3dd1cc224216a1195aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABGroup::GetAllMemberRoles</definition>
+        <argsstring>(const FAccelByteModelsLimitOffsetRequest &amp;RequestContent, const FGetMemberRolesSuccess &amp;OnSuccess, const FDErrorHandler &amp;OnError)</argsstring>
+        <name>GetAllMemberRoles</name>
+        <qualifiedname>UABGroup::GetAllMemberRoles</qualifiedname>
+        <param>
+          <type>const <ref refid="d1/de0/struct_f_accel_byte_models_limit_offset_request" kindref="compound">FAccelByteModelsLimitOffsetRequest</ref> &amp;</type>
+          <declname>RequestContent</declname>
+        </param>
+        <param>
+          <type>const FGetMemberRolesSuccess &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>const FDErrorHandler &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get list of member roles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RequestContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>{ Limit=1, Offset=0 } for pagination. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation is succeeded.<itemizedlist>
+<listitem><para>Result is <ref refid="de/d76/struct_f_accel_byte_models_get_member_roles_list_response" kindref="compound">FAccelByteModelsGetMemberRolesListResponse</ref> </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation is fail. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="1065" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABGroup.cpp" bodystart="1368" bodyend="1392"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Provide APIs to access Group [Management] service. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>While authed, Namespace is automatically passed to all Requests. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABGroup</label>
+        <link refid="dd/dd1/class_u_a_b_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABGroup</label>
+        <link refid="dd/dd1/class_u_a_b_group"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" line="59" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABGroup.h" bodystart="60" bodyend="1076"/>
+    <listofallmembers>
+      <member refid="dd/dd1/class_u_a_b_group_1ae4c0c9231eeb162c8a5f974b1d3e32aa" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>AcceptGroupInvitation</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a94cefcfe85d5e351f6d0d8f16b9d1787" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>AcceptGroupJoinRequest</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a8dbe3dbb410272bad2c43d4bfa31e68c" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>AcceptV2GroupInvitation</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1abd2a083d6c89409aea2da78070725541" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>AcceptV2GroupJoinRequest</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a0ade7c1e0b0869e73fd4349a536f22a1" prot="private" virt="non-virtual"><scope>UABGroup</scope><name>ApiClientPtr</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1ab36673c7e1c117c3a47651d4c264819c" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>AssignMemberRole</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a2fbc2a215504c7e24487ac28e121dcf0" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>AssignV2MemberRole</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1acd7259c72426820f58a99ec4c2e780b8" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>CancelGroupMemberInvitation</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a7796c1df5abd67cf7ee3a9fc57befb6b" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>CancelJoinGroupRequest</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1ae0316289e23024f40a4b6a1c9d36fc7e" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>CreateGroup</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a5d9f9900a84403698e3f08944a1ddf02" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>CreateV2Group</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a7bb02c0610b08c78387328d4b52bb1a6" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>DeleteGroup</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1adbba0ed87453f958c0666f1d5ea7f5c8" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>DeleteGroupPredefinedRule</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a0044c9080c07700e5eb743e80f4ee116" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>DeleteMemberRole</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a82f164d6fc73c02d63f941998888757a" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>DeleteV2Group</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a026a6c1177ce510094b933ee15278947" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>DeleteV2GroupPredefinedRule</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a32207a88c18d25f288c6e2c45a21ec40" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>DeleteV2MemberRole</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a92c9ca020d87a3dd1cc224216a1195aa" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetAllMemberRoles</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a9fa5150be9c4ab31537d75925403eace" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroup</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a2f33c838d5688588708305a8bd405853" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroupInvitationRequests</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1afc786c7c7e1a666b3246b2b310095756" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroupInviteRequestList</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a18e59ddeea8fc69ac30e40e5e08308c9" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroupJoinRequestList</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1abe718a7e7cdfd1393b1cc2248d075338" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroupJoinRequests</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a5a15ce41dcc777c798bf9b88bbe9cb8c" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroupList</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1aef0239c699d94e7f20dc2d01e2237cda" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroupMembersListByGroupId</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1af2deb9fe0797b44d11f772288c9797e1" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetGroupsByGroupIds</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a09d109f4244f00a7fa99f946b0f22d24" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetMemberRoles</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a7cc8669c0de35b829131a361764b19ea" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetMyJoinedGroupInfo</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a53905dd3c5f1da7a201f2184576c826c" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetMyJoinGroupRequest</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a8dbd05f4c481ed58e4d8eebfd5e84c0f" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetUserGroupInfoByUserId</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a0d08bcd9de5baebfbca27c6430df29ac" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>GetUserGroupStatusInfo</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1ad105934491db79a56e9830888c5286d9" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>InviteUserToGroup</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a9b6ae967a91a9632e29029f26ef2c1b4" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>InviteUserToV2Group</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1ae80571c53a49e784a5298579ba7c89bf" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>JoinGroup</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a77965be9dcde757eb2d3a23c750ff8f0" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>JoinV2Group</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1aa803037be528321f4fd99828e0aaccc3" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>KickGroupMember</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a603e62246b317282d31ee4a5807ffaee" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>KickV2GroupMember</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a7f5b1f71d44f376d3e4e6926c56fed84" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>LeaveGroup</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a2871a23b96167018fbce834e273a9832" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>LeaveV2Group</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1ad9b2d86c734567c16d1766af8b043569" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>RejectGroupInvitation</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a875c29ca5f931680a51e8ea1be0c0c78" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>RejectGroupJoinRequest</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a19fc33a8543051acf95293fd41eae8c6" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>RejectV2GroupInvitation</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a77e7000d3e7b80417e3069fd3d22b33e" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>RejectV2GroupJoinRequest</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a0b5e6ab219cb0136dae6a9853f9be947" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>SetApiClient</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1adc377b603b78560f37df2cb0426d8e46" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateGroup</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a51cae54aada744341c1ff974bf7d6620" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateGroupCustomAttributes</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a05a1572fee29c5fc5dea185c212a2a6a" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateGroupCustomRule</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a30b51b83ffbb5b47450e2ff290ea5058" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateGroupPredefinedRule</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a1f699068c76f5ac8850c55b385f1cc60" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateV2Group</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a12678b733a96fb8969948e585998a065" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateV2GroupCustomAttributes</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a3aea35e4e5f11cbb8c1613146c7bae30" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateV2GroupCustomRule</name></member>
+      <member refid="dd/dd1/class_u_a_b_group_1a91c5989f2a15bd3445468f4a6eb52463" prot="public" virt="non-virtual"><scope>UABGroup</scope><name>UpdateV2GroupPredefinedRule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

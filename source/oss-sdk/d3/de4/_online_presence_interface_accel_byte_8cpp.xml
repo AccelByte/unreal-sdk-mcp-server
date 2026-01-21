@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d3/de4/_online_presence_interface_accel_byte_8cpp" kind="file" language="C++">
+    <compoundname>OnlinePresenceInterfaceAccelByte.cpp</compoundname>
+    <includes refid="d9/da8/_online_presence_interface_accel_byte_8h" local="yes">OnlinePresenceInterfaceAccelByte.h</includes>
+    <includes refid="d2/de4/_online_identity_interface_accel_byte_8h" local="yes">OnlineIdentityInterfaceAccelByte.h</includes>
+    <includes refid="d1/d3f/_online_subsystem_accel_byte_8h" local="yes">OnlineSubsystemAccelByte.h</includes>
+    <includes local="yes">Online.h</includes>
+    <includes local="yes">Core/AccelByteMultiRegistry.h</includes>
+    <includes refid="d3/d9b/_online_async_task_accel_byte_query_user_presence_8h" local="yes">AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserPresence.h</includes>
+    <includes refid="db/d0f/_online_async_task_accel_byte_set_user_presence_8h" local="yes">AsyncTasks/User/OnlineAsyncTaskAccelByteSetUserPresence.h</includes>
+    <includes local="yes">OnlineSubsystemUtils.h</includes>
+    <includes refid="d8/d55/_online_async_task_accel_byte_bulk_query_user_presence_8h" local="yes">AsyncTasks/User/OnlineAsyncTaskAccelByteBulkQueryUserPresence.h</includes>
+    <incdepgraph>
+      <node id="22">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="48">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="9">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="59">
+        <label>AsyncTasks/User/OnlineAsyncTaskAccelByteBulkQueryUserPresence.h</label>
+        <link refid="d8/d55/_online_async_task_accel_byte_bulk_query_user_presence_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserPresence.h</label>
+        <link refid="d3/d9b/_online_async_task_accel_byte_query_user_presence_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>AsyncTasks/User/OnlineAsyncTaskAccelByteSetUserPresence.h</label>
+        <link refid="db/d0f/_online_async_task_accel_byte_set_user_presence_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlinePresenceInterfaceAccelByte.cpp</label>
+        <link refid="d3/de4/_online_presence_interface_accel_byte_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlinePresenceInterfaceAccelByte.h</label>
+        <link refid="d9/da8/_online_presence_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="54">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="52">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="40">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="55">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="10">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="23">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="42">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="30">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="46">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="47">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="17">
+        <label>Interfaces/OnlinePresenceInterface.h</label>
+      </node>
+      <node id="35">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="37">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="41">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="31">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="45">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="18">
+        <label>Models/AccelByteLobbyModels.h</label>
+      </node>
+      <node id="13">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="29">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="53">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="49">
+        <label>Online.h</label>
+      </node>
+      <node id="14">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="44">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="34">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="15">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="7">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="24">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="6">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="58">
+        <label>OnlineSubsystemUtils.h</label>
+      </node>
+      <node id="4">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="5">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/da8/_online_presence_interface_accel_byte_8h" kindref="compound">OnlinePresenceInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/de4/_online_identity_interface_accel_byte_8h" kindref="compound">OnlineIdentityInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3f/_online_subsystem_accel_byte_8h" kindref="compound">OnlineSubsystemAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Online.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Core/AccelByteMultiRegistry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d9b/_online_async_task_accel_byte_query_user_presence_8h" kindref="compound">AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserPresence.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d0f/_online_async_task_accel_byte_set_user_presence_8h" kindref="compound">AsyncTasks/User/OnlineAsyncTaskAccelByteSetUserPresence.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OnlineSubsystemUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d55/_online_async_task_accel_byte_bulk_query_user_presence_8h" kindref="compound">AsyncTasks/User/OnlineAsyncTaskAccelByteBulkQueryUserPresence.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d9/d7d/class_f_online_presence_accel_byte_1a2eb2398e156ab2c4babaeb116e808d3a" refkind="member"><highlight class="normal"><ref refid="d9/d7d/class_f_online_presence_accel_byte_1afa524798205576fcbb3ada1856118e41" kindref="member">FOnlinePresenceAccelByte::FOnlinePresenceAccelByte</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>InSubsystem)<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>(InSubsystem)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d9/d7d/class_f_online_presence_accel_byte_1af195172ffdad6ff999d9f07ecceff8ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1af195172ffdad6ff999d9f07ecceff8ed" kindref="member">FOnlinePresenceAccelByte::GetFromSubsystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem,<sp/><ref refid="d9/da8/_online_presence_interface_accel_byte_8h_1a3e1783c36cf91a2a70715a2d3d33ccdf" kindref="member">FOnlinePresenceAccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlinePresenceAccelByte&gt;(Subsystem-&gt;GetPresenceInterface());</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>OutInterfaceInstance.IsValid();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d9/d7d/class_f_online_presence_accel_byte_1ab2094b6f96068551566fc37b8e3d44c8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ab2094b6f96068551566fc37b8e3d44c8" kindref="member">FOnlinePresenceAccelByte::GetFromWorld</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UWorld*<sp/>World,<sp/><ref refid="d9/da8/_online_presence_interface_accel_byte_8h_1a3e1783c36cf91a2a70715a2d3d33ccdf" kindref="member">FOnlinePresenceAccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem<sp/>=<sp/>::Online::GetSubsystem(World);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Subsystem<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1af195172ffdad6ff999d9f07ecceff8ed" kindref="member">GetFromSubsystem</ref>(Subsystem,<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d9/d7d/class_f_online_presence_accel_byte_1abefc3d893196b10cd470b7686439e056" refkind="member"><highlight class="normal">IOnlinePresencePtr<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1abefc3d893196b10cd470b7686439e056" kindref="member">FOnlinePresenceAccelByte::GetPlatformOnlinePresenceInterface</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>IOnlineSubsystem*<sp/>NativeSubsystem<sp/>=<sp/>IOnlineSubsystem::GetByPlatform();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NativeSubsystem<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>?<sp/>NativeSubsystem-&gt;GetPresenceInterface()<sp/>:<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d9/d7d/class_f_online_presence_accel_byte_1ab40f31dcb87df5ce5fee96dc45cc536e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ab40f31dcb87df5ce5fee96dc45cc536e" kindref="member">FOnlinePresenceAccelByte::OnFriendStatusChangedNotificationReceived</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsUsersPresenceNotice&amp;<sp/>Notification,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First,<sp/>we<sp/>want<sp/>to<sp/>get<sp/>our<sp/>own<sp/>net<sp/>ID,<sp/>as<sp/>delegates<sp/>will<sp/>require<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineIdentityPtr<sp/>IdentityInterface<sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;GetIdentityInterface();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Received<sp/>a<sp/>notification<sp/>for<sp/>a<sp/>friend<sp/>status<sp/>changed,<sp/>but<sp/>cannot<sp/>act<sp/>on<sp/>it<sp/>as<sp/>the<sp/>identity<sp/>interface<sp/>is<sp/>not<sp/>valid!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;const<sp/>FUniqueNetId&gt;<sp/>UserId<sp/>=<sp/>IdentityInterface-&gt;GetUniquePlayerId(LocalUserNum);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!UserId.IsValid())</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Received<sp/>a<sp/>notification<sp/>for<sp/>a<sp/>friend<sp/>status<sp/>changed,<sp/>but<sp/>cannot<sp/>act<sp/>on<sp/>it<sp/>as<sp/>the<sp/>current<sp/>user&apos;s<sp/>ID<sp/>is<sp/>not<sp/>valid!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Next,<sp/>we<sp/>assume<sp/>that<sp/>we<sp/>don&apos;t<sp/>have<sp/>this<sp/>user<sp/>in<sp/>our<sp/>friends<sp/>list<sp/>already<sp/>as<sp/>they<sp/>just<sp/>sent<sp/>us<sp/>an<sp/>invite,<sp/>so<sp/>just</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>an<sp/>async<sp/>task<sp/>to<sp/>get<sp/>data<sp/>about<sp/>that<sp/>friend<sp/>and<sp/>then<sp/>add<sp/>them<sp/>to<sp/>the<sp/>list<sp/>afterwards,<sp/>and<sp/>fire<sp/>off<sp/>the<sp/>delegates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite" kindref="compound">FAccelByteUniqueIdComposite</ref><sp/>FriendCompositeId;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>FriendCompositeId.<ref refid="d6/dbd/struct_f_accel_byte_unique_id_composite_1a0a006d56b824b44c160f46a415cd6da1" kindref="member">Id</ref><sp/>=<sp/>Notification.UserID;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>FriendId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1abff02fe798677e069f37b821994d713e" kindref="member">FUniqueNetIdAccelByteUser::Create</ref>(FriendCompositeId);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlineUserPresenceAccelByte&gt;<sp/>FriendPresence<sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ab269d123288ce76cf8a4b921390af852" kindref="member">FindOrCreatePresence</ref>(FriendId);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d84/class_f_online_user_presence_status_accel_byte" kindref="compound">FOnlineUserPresenceStatusAccelByte</ref><sp/>PresenceStatus;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>PresenceStatus.StatusStr<sp/>=<sp/>Notification.Activity;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>PresenceStatus.<ref refid="d7/d84/class_f_online_user_presence_status_accel_byte_1acd1582c5c5757c99cb8e8d6e7030b005" kindref="member">SetPresenceStatus</ref>(Notification.Availability);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>FriendPresence-&gt;Status<sp/>=<sp/>PresenceStatus;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>FriendPresence-&gt;bIsOnline<sp/>=<sp/>Notification.Availability<sp/>==<sp/>EAvailability::Online<sp/>?<sp/>true<sp/>:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>FriendPresence-&gt;bIsPlayingThisGame<sp/>=<sp/>Notification.Availability<sp/>==<sp/>EAvailability::Online<sp/>?<sp/>true<sp/>:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>FriendPresence-&gt;LastOnline<sp/>=<sp/>Notification.LastSeenAt;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>TriggerOnPresenceReceivedDelegates(FriendId.Get(),<sp/>FriendPresence.ToSharedRef());</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="d9/d7d/class_f_online_presence_accel_byte_1a299d6e4d2f4165c1399e3a56db3045ba" refkind="member"><highlight class="normal">TMap&lt;FString,<sp/>TSharedRef&lt;FOnlineUserPresenceAccelByte&gt;&gt;<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a299d6e4d2f4165c1399e3a56db3045ba" kindref="member">FOnlinePresenceAccelByte::GetCachedPresence</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="83"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" kindref="member">CachedPresenceByUserId</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="d9/d7d/class_f_online_presence_accel_byte_1a11d5d48a8fffa8ab97be2c338afe6c8d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a11d5d48a8fffa8ab97be2c338afe6c8d" kindref="member">FOnlinePresenceAccelByte::SetPresence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>User,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineUserPresenceStatus&amp;<sp/>Status,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnPresenceTaskCompleteDelegate&amp;<sp/>Delegate)<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a79c7a75b959f926eaef2a64023a33fcf" kindref="member">FOnlineIdentityAccelBytePtr</ref><sp/>IdentityInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineIdentityAccelByte&gt;(<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;GetIdentityInterface());</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FUserOnlineAccount&gt;<sp/>UserAccount<sp/>=<sp/>IdentityInterface-&gt;GetUserAccount(User);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserAccount.IsValid())</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FUserOnlineAccountAccelByte&gt;<sp/>UserAccountAccelByte<sp/>=<sp/>StaticCastSharedPtr&lt;FUserOnlineAccountAccelByte&gt;(UserAccount);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(UserAccountAccelByte-&gt;IsConnectedToLobby())</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Async<sp/>task<sp/>to<sp/>set<sp/>presence<sp/>from<sp/>AccelByte<sp/>backend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d7/dc5/class_f_online_async_task_accel_byte_set_user_presence" kindref="compound">FOnlineAsyncTaskAccelByteSetUserPresence</ref>&gt;(<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>,<sp/>User,<sp/>Status,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>Delegate.ExecuteIfBound(User,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="d9/d7d/class_f_online_presence_accel_byte_1a99ae10ea300606fbe42f99b1daec3e4d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a99ae10ea300606fbe42f99b1daec3e4d" kindref="member">FOnlinePresenceAccelByte::UpdatePresenceCache</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;FString,<sp/>TSharedRef&lt;FOnlineUserPresenceAccelByte&gt;&gt;&amp;<sp/>NewPresences)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ae84fdb4499a00bab1fad555d3845f75d" kindref="member">PresenceCacheLock</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" kindref="member">CachedPresenceByUserId</ref>.Append(NewPresences);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="d9/d7d/class_f_online_presence_accel_byte_1a292fa8301de7b5f5ded72645ad336cf0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a99ae10ea300606fbe42f99b1daec3e4d" kindref="member">FOnlinePresenceAccelByte::UpdatePresenceCache</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>UserID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FOnlineUserPresenceAccelByte&gt;&amp;<sp/>Presence)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ae84fdb4499a00bab1fad555d3845f75d" kindref="member">PresenceCacheLock</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" kindref="member">CachedPresenceByUserId</ref>.Emplace(UserID,<sp/>Presence);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="d9/d7d/class_f_online_presence_accel_byte_1ae9ee1e498f9f7e36501d01cf6d7d0c45" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ae9ee1e498f9f7e36501d01cf6d7d0c45" kindref="member">FOnlinePresenceAccelByte::QueryPresence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>User,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnPresenceTaskCompleteDelegate&amp;<sp/>Delegate)<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum<sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;GetLocalUserNumCached();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Async<sp/>task<sp/>to<sp/>query<sp/>presence<sp/>from<sp/>AccelByte<sp/>backend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="de/d46/class_f_online_async_task_accel_byte_query_user_presence" kindref="compound">FOnlineAsyncTaskAccelByteQueryUserPresence</ref>&gt;(<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>,<sp/>User,<sp/>Delegate,<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="d9/d7d/class_f_online_presence_accel_byte_1a8382349c83619b0214990d0134daf355" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a8382349c83619b0214990d0134daf355" kindref="member">FOnlinePresenceAccelByte::BulkQueryPresence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FUniqueNetIdRef&gt;&amp;<sp/>UserIds)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d4/d92/class_f_online_async_task_accel_byte_bulk_query_user_presence" kindref="compound">FOnlineAsyncTaskAccelByteBulkQueryUserPresence</ref>&gt;(<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>,<sp/>LocalUserId,<sp/>UserIds);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="d9/d7d/class_f_online_presence_accel_byte_1aeeff91c90b697b9734dc8aae1bdbea17" refkind="member"><highlight class="normal">EOnlineCachedResult::Type<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a299d6e4d2f4165c1399e3a56db3045ba" kindref="member">FOnlinePresenceAccelByte::GetCachedPresence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>User,<sp/>TSharedPtr&lt;FOnlineUserPresence&gt;&amp;<sp/>OutPresence)<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>CompositeId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(User);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;FOnlineUserPresenceAccelByte&gt;*<sp/>FoundPresence<sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" kindref="member">CachedPresenceByUserId</ref>.Find(CompositeId-&gt;GetAccelByteId());</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FoundPresence<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutPresence<sp/>=<sp/>*FoundPresence;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EOnlineCachedResult::Success;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EOnlineCachedResult::NotFound;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="d9/d7d/class_f_online_presence_accel_byte_1a4d3083590614d73e553b2123a96b38ee" refkind="member"><highlight class="normal">EOnlineCachedResult::Type<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a4d3083590614d73e553b2123a96b38ee" kindref="member">FOnlinePresenceAccelByte::GetCachedPresenceForApp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>LocalUserId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>User,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>AppId,<sp/>TSharedPtr&lt;FOnlineUserPresence&gt;&amp;<sp/>OutPresence)<sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>EOnlineCachedResult::Type<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref><sp/>=<sp/>EOnlineCachedResult::NotFound;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;GetAppId()<sp/>==<sp/>AppId)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref><sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a299d6e4d2f4165c1399e3a56db3045ba" kindref="member">GetCachedPresence</ref>(User,<sp/>OutPresence);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="d9/d7d/class_f_online_presence_accel_byte_1a5cf809cf91523340b7f8186bdb2227fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1a5cf809cf91523340b7f8186bdb2227fb" kindref="member">FOnlinePresenceAccelByte::PlatformQueryPresence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>User,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnPresenceTaskCompleteDelegate&amp;<sp/>Delegate)<sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>IOnlinePresencePtr<sp/>NativePresenceInterface<sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1abefc3d893196b10cd470b7686439e056" kindref="member">GetPlatformOnlinePresenceInterface</ref>();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!NativePresenceInterface.IsValid())</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>#NOTE<sp/>(Maxwell):<sp/>This<sp/>should<sp/>be<sp/>the<sp/>native<sp/>platform<sp/>ID<sp/>itself,<sp/>so<sp/>just<sp/>pass<sp/>this<sp/>in<sp/>directly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>NativePresenceInterface-&gt;QueryPresence(User,<sp/>Delegate);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="d9/d7d/class_f_online_presence_accel_byte_1ae24a5207440629df93d0ad396ab0b64a" refkind="member"><highlight class="normal">EOnlineCachedResult::Type<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ae24a5207440629df93d0ad396ab0b64a" kindref="member">FOnlinePresenceAccelByte::GetPlatformCachedPresence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>User,<sp/>TSharedPtr&lt;FOnlineUserPresence&gt;&amp;<sp/>OutPresence)<sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>IOnlinePresencePtr<sp/>NativePresenceInterface<sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1abefc3d893196b10cd470b7686439e056" kindref="member">GetPlatformOnlinePresenceInterface</ref>();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!NativePresenceInterface.IsValid())</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EOnlineCachedResult::NotFound;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>#NOTE<sp/>(Maxwell):<sp/>This<sp/>should<sp/>be<sp/>the<sp/>native<sp/>platform<sp/>ID<sp/>itself,<sp/>so<sp/>just<sp/>pass<sp/>this<sp/>in<sp/>directly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NativePresenceInterface-&gt;GetCachedPresence(User,<sp/>OutPresence);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FOnlinePresenceAccelByte::RegisterRealTimeLobbyDelegates(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>our<sp/>identity<sp/>interface<sp/>to<sp/>retrieve<sp/>the<sp/>API<sp/>client<sp/>for<sp/>this<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a79c7a75b959f926eaef2a64023a33fcf" kindref="member">FOnlineIdentityAccelBytePtr</ref><sp/>IdentityInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineIdentityAccelByte&gt;(<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ac0081cd88649e0caab248b13230c4d98" kindref="member">AccelByteSubsystem</ref>-&gt;<ref refid="d5/d5d/class_f_online_subsystem_accel_byte_1a850e73c873e18662a489f36e9f171330" kindref="member">GetIdentityInterface</ref>());</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>register<sp/>real-time<sp/>lobby<sp/>as<sp/>an<sp/>identity<sp/>interface<sp/>instance<sp/>could<sp/>not<sp/>be<sp/>retrieved!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>AccelByte::FApiClientPtr<sp/>ApiClient<sp/>=<sp/>IdentityInterface-&gt;GetApiClient(LocalUserNum);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ApiClient.IsValid())</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>register<sp/>real-time<sp/>lobby<sp/>as<sp/>an<sp/>Api<sp/>client<sp/>could<sp/>not<sp/>be<sp/>retrieved<sp/>for<sp/>user<sp/>num<sp/>%d!&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>each<sp/>delegate<sp/>for<sp/>the<sp/>corresponding<sp/>API<sp/>client<sp/>to<sp/>be<sp/>a<sp/>new<sp/>realtime<sp/>delegate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>AccelByte::Api::Lobby::FFriendStatusNotif<sp/>OnFriendStatusChangedNotificationReceivedDelegate<sp/>=<sp/>AccelByte::Api::Lobby::FFriendStatusNotif::CreateThreadSafeSP(AsShared(),<sp/>&amp;<ref refid="d9/d7d/class_f_online_presence_accel_byte_1ab40f31dcb87df5ce5fee96dc45cc536e" kindref="member">FOnlinePresenceAccelByte::OnFriendStatusChangedNotificationReceived</ref>,<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>ApiClient-&gt;Lobby.SetUserPresenceNotifDelegate(OnFriendStatusChangedNotificationReceivedDelegate);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="d9/d7d/class_f_online_presence_accel_byte_1ab269d123288ce76cf8a4b921390af852" refkind="member"><highlight class="normal">TSharedRef&lt;FOnlineUserPresenceAccelByte&gt;<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1ab269d123288ce76cf8a4b921390af852" kindref="member">FOnlinePresenceAccelByte::FindOrCreatePresence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;&amp;<sp/>UserId)<sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedRef&lt;FOnlineUserPresenceAccelByte&gt;*<sp/>UserPresence<sp/>=<sp/><ref refid="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" kindref="member">CachedPresenceByUserId</ref>.Find(UserId-&gt;GetAccelByteId());</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserPresence<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserPresence<sp/>=<sp/>&amp;(<ref refid="d9/d7d/class_f_online_presence_accel_byte_1aa277ae98c7f0eeb91bfa208e5e4ac4eb" kindref="member">CachedPresenceByUserId</ref>.Add(UserId-&gt;GetAccelByteId(),<sp/>MakeShared&lt;FOnlineUserPresenceAccelByte&gt;()));</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*UserPresence;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlinePresenceInterfaceAccelByte.cpp"/>
+  </compounddef>
+</doxygen>

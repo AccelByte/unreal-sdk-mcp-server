@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d2/daa/class_u_a_b_leaderboard" kind="class" language="C++" prot="public">
+    <compoundname>UABLeaderboard</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="da/d06/_a_b_leaderboard_8h" local="no">ABLeaderboard.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/daa/class_u_a_b_leaderboard_1a0005762a1b9635ab26786cd2c90b228a" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABLeaderboard::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABLeaderboard::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="109" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a29666dc4472de18ae8382f94add8e929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABLeaderboard::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="38" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a64631420d2f8e67237220c0adf07503c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetRankings</definition>
+        <argsstring>(FString const &amp;LeaderboardCode, EAccelByteLeaderboardTimeFrame const &amp;TimeFrame, int32 Offset, int32 Limit, FDModelsLeaderboardRankingResultResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetRankings</name>
+        <qualifiedname>UABLeaderboard::GetRankings</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d80/_accel_byte_leaderboard_models_8h_1a819484e282eb52855f6a1b2feadd4340" kindref="member">EAccelByteLeaderboardTimeFrame</ref> const &amp;</type>
+          <declname>TimeFrame</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+        </param>
+        <param>
+          <type>FDModelsLeaderboardRankingResultResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="41" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="17" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a76487398e8091c38d2828ade7036361c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetUserRanking</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;LeaderboardCode, FDModelsUserRankingDataResponse const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetUserRanking</name>
+        <qualifiedname>UABLeaderboard::GetUserRanking</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type>FDModelsUserRankingDataResponse const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="50" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="49" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a57c0e61c637c5acb8f866781f54175e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetLeaderboards</definition>
+        <argsstring>(int32 Offset, int32 Limit, FDModelsPaginatedLeaderboardData const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetLeaderboards</name>
+        <qualifiedname>UABLeaderboard::GetLeaderboards</qualifiedname>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+        </param>
+        <param>
+          <type>FDModelsPaginatedLeaderboardData const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="57" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="77" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a1833af307decb7e1e55ed47fe05f2eb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetRankingByCycle</definition>
+        <argsstring>(FString const &amp;LeaderboardCode, FString const &amp;CycleId, int32 Offset, int32 Limit, FDModelsLeaderboardRankingResultV3 const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetRankingByCycle</name>
+        <qualifiedname>UABLeaderboard::GetRankingByCycle</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>CycleId</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+        </param>
+        <param>
+          <type>FDModelsLeaderboardRankingResultV3 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="63" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="163" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a4608772a61d419f08988efd3ef502d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetLeaderboardsV3</definition>
+        <argsstring>(FDModelsPaginatedLeaderboardData const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>GetLeaderboardsV3</name>
+        <qualifiedname>UABLeaderboard::GetLeaderboardsV3</qualifiedname>
+        <param>
+          <type>FDModelsPaginatedLeaderboardData const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="71" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="85" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a707a5b57612c529f1e947ee5fc213622" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetLeaderboardV3</definition>
+        <argsstring>(FString const &amp;LeaderboardCode, FDModelsBaseLeaderboardData const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetLeaderboardV3</name>
+        <qualifiedname>UABLeaderboard::GetLeaderboardV3</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type>FDModelsBaseLeaderboardData const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="77" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="111" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1aa3e3af7919f89edf1e4c24a9f0353827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetRankingsV3</definition>
+        <argsstring>(FString const &amp;LeaderboardCode, int32 Offset, int32 Limit, FDModelsLeaderboardRankingResultV3 const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetRankingsV3</name>
+        <qualifiedname>UABLeaderboard::GetRankingsV3</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+        </param>
+        <param>
+          <type>FDModelsLeaderboardRankingResultV3 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="82" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="135" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a93e9a509f2665a8af823cf730acef449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetRankingByCycleV3</definition>
+        <argsstring>(FString const &amp;LeaderboardCode, FString const &amp;CycleId, FDModelsLeaderboardRankingResultV3 const &amp;OnSuccess, FDErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>GetRankingByCycleV3</name>
+        <qualifiedname>UABLeaderboard::GetRankingByCycleV3</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>CycleId</declname>
+        </param>
+        <param>
+          <type>FDModelsLeaderboardRankingResultV3 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="89" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="173" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1aa53a25b02c6a7942cdb55b9c41bfadda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetUserRankingV3</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;LeaderboardCode, FDModelsUserRankingDataV3 const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetUserRankingV3</name>
+        <qualifiedname>UABLeaderboard::GetUserRankingV3</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type>FDModelsUserRankingDataV3 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="97" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="203" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/daa/class_u_a_b_leaderboard_1a782ff61265905c729ca05303434d3c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABLeaderboard::GetBulkUserRankingV3</definition>
+        <argsstring>(TArray&lt; FString &gt; const &amp;UserIds, FString const &amp;LeaderboardCode, FDModelsBulkUserRankingDataV3 const &amp;OnSuccess, FDErrorHandler const &amp;OnError)</argsstring>
+        <name>GetBulkUserRankingV3</name>
+        <qualifiedname>UABLeaderboard::GetBulkUserRankingV3</qualifiedname>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>UserIds</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>LeaderboardCode</declname>
+        </param>
+        <param>
+          <type>FDModelsBulkUserRankingDataV3 const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="103" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABLeaderboard.cpp" bodystart="229" bodyend="253"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABLeaderboard</label>
+        <link refid="d2/daa/class_u_a_b_leaderboard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABLeaderboard</label>
+        <link refid="d2/daa/class_u_a_b_leaderboard"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" line="33" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABLeaderboard.h" bodystart="34" bodyend="110"/>
+    <listofallmembers>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a0005762a1b9635ab26786cd2c90b228a" prot="private" virt="non-virtual"><scope>UABLeaderboard</scope><name>ApiClientPtr</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a782ff61265905c729ca05303434d3c2b" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetBulkUserRankingV3</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a57c0e61c637c5acb8f866781f54175e4" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetLeaderboards</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a4608772a61d419f08988efd3ef502d2d" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetLeaderboardsV3</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a707a5b57612c529f1e947ee5fc213622" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetLeaderboardV3</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a1833af307decb7e1e55ed47fe05f2eb7" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetRankingByCycle</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a93e9a509f2665a8af823cf730acef449" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetRankingByCycleV3</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a64631420d2f8e67237220c0adf07503c" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetRankings</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1aa3e3af7919f89edf1e4c24a9f0353827" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetRankingsV3</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a76487398e8091c38d2828ade7036361c" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetUserRanking</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1aa53a25b02c6a7942cdb55b9c41bfadda" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>GetUserRankingV3</name></member>
+      <member refid="d2/daa/class_u_a_b_leaderboard_1a29666dc4472de18ae8382f94add8e929" prot="public" virt="non-virtual"><scope>UABLeaderboard</scope><name>SetApiClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

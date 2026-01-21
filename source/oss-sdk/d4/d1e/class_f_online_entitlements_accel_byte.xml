@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/d1e/class_f_online_entitlements_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineEntitlementsAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineEntitlements</basecompoundref>
+    <includes refid="dd/dd2/_online_entitlements_interface_accel_byte_8h" local="no">OnlineEntitlementsInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/d1e/class_f_online_entitlements_accel_byte_1aaee122670f7f3cf2cda19134b559c50e" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineEntitlementsAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineEntitlementsAccelByte(FOnlineSubsystemAccelByte* InSubsystem)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="23" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d1e/class_f_online_entitlements_accel_byte_1a68601563909d3be050e4baea40bdd62f" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/dd2/_online_entitlements_interface_accel_byte_8h_1a6ab9fc6ee947cb27fae36adf5bef2eea" kindref="member">FUserIDToEntitlementMap</ref></type>
+        <definition>FUserIDToEntitlementMap FOnlineEntitlementsAccelByte::EntitlementMap</definition>
+        <argsstring></argsstring>
+        <name>EntitlementMap</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::EntitlementMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="74" column="25" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d1e/class_f_online_entitlements_accel_byte_1abd9292b67684684be58ae28451bc46bd" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/dd2/_online_entitlements_interface_accel_byte_8h_1a89ba11e4115beefe1baf34a186c766ef" kindref="member">FUserIDToItemEntitlementMap</ref></type>
+        <definition>FUserIDToItemEntitlementMap FOnlineEntitlementsAccelByte::ItemEntitlementMap</definition>
+        <argsstring></argsstring>
+        <name>ItemEntitlementMap</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::ItemEntitlementMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="75" column="29" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d1e/class_f_online_entitlements_accel_byte_1a4dffa0e4f26c7b5d9e043ccea4a37572" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineEntitlementsAccelByte::EntitlementMapLock</definition>
+        <argsstring></argsstring>
+        <name>EntitlementMapLock</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::EntitlementMapLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical sections for thread safe operation of EntitlementMap </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="78" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d4/d1e/class_f_online_entitlements_accel_byte_1a5b2029344819e002560db38c3d7b5e50" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineEntitlementsAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="71" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1a7b27cb827a18ab8aa0a8fd6f997eed93" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineEntitlementsAccelByte::AddEntitlementToMap</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId, TSharedRef&lt; FOnlineEntitlement &gt; Entitlement)</argsstring>
+        <name>AddEntitlementToMap</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::AddEntitlementToMap</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TSharedRef&lt; FOnlineEntitlement &gt;</type>
+          <declname>Entitlement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="27" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="17" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1aa7eefd8d118665728d1f0bf69d482432" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineEntitlementsAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineEntitlementsAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d4/d1e/class_f_online_entitlements_accel_byte" kindref="compound">FOnlineEntitlementsAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="37" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1a0ed2e3339fe481bacb959e1f54dd92c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineEntitlementsAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineEntitlementsAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d4/d1e/class_f_online_entitlements_accel_byte" kindref="compound">FOnlineEntitlementsAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="46" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="33" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1acd89c9c7102444f4c13a0f74939f4fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineEntitlementsAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</definition>
+        <argsstring>(OnConsumeEntitlementComplete, bool, const FUniqueNetId &amp;, const TSharedPtr&lt; FOnlineEntitlement &gt; &amp;, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</qualifiedname>
+        <param>
+          <type>OnConsumeEntitlementComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const TSharedPtr&lt; FOnlineEntitlement &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1a0f2017aa54fe4f28dd3ff26a3d1aa298" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; FOnlineEntitlement &gt;</type>
+        <definition>TSharedPtr&lt; FOnlineEntitlement &gt; FOnlineEntitlementsAccelByte::GetEntitlement</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FUniqueEntitlementId &amp;EntitlementId) override</argsstring>
+        <name>GetEntitlement</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::GetEntitlement</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueEntitlementId &amp;</type>
+          <declname>EntitlementId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="50" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="45" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1ac3f462fe9aeaf03f55f01d9d8c834fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; FOnlineEntitlement &gt;</type>
+        <definition>TSharedPtr&lt; FOnlineEntitlement &gt; FOnlineEntitlementsAccelByte::GetItemEntitlement</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;ItemId) override</argsstring>
+        <name>GetItemEntitlement</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::GetItemEntitlement</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ItemId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="51" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="61" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1a309085df7a66cd537fb170bc0a7e0ddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineEntitlementsAccelByte::GetAllEntitlements</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;Namespace, TArray&lt; TSharedRef&lt; FOnlineEntitlement &gt; &gt; &amp;OutUserEntitlements) override</argsstring>
+        <name>GetAllEntitlements</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::GetAllEntitlements</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Namespace</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FOnlineEntitlement &gt; &gt; &amp;</type>
+          <declname>OutUserEntitlements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="52" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="77" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1a96b62a149eef21d9ea7a25bed09cd443" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineEntitlementsAccelByte::QueryEntitlements</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;Namespace, const FPagedQuery &amp;Page=FPagedQuery{}) override</argsstring>
+        <name>QueryEntitlements</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::QueryEntitlements</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Namespace</declname>
+        </param>
+        <param>
+          <type>const FPagedQuery &amp;</type>
+          <declname>Page</declname>
+          <defval>FPagedQuery{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="53" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1afd3a0a85ca639a25062ff23840792a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineEntitlementsAccelByte::SyncPlatformPurchase</definition>
+        <argsstring>(int32 LocalUserNum, FAccelByteModelsEntitlementSyncBase EntitlementSyncBase, const FOnRequestCompleted &amp;CompletionDelegate=FOnRequestCompleted())</argsstring>
+        <name>SyncPlatformPurchase</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::SyncPlatformPurchase</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>FAccelByteModelsEntitlementSyncBase</type>
+          <declname>EntitlementSyncBase</declname>
+        </param>
+        <param>
+          <type>const FOnRequestCompleted &amp;</type>
+          <declname>CompletionDelegate</declname>
+          <defval>FOnRequestCompleted()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="54" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1a13fc9c27185faa4319e2938f3b731ab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineEntitlementsAccelByte::SyncDLC</definition>
+        <argsstring>(const FUniqueNetId &amp;InLocalUserId, const FOnRequestCompleted &amp;CompletionDelegate)</argsstring>
+        <name>SyncDLC</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::SyncDLC</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InLocalUserId</declname>
+        </param>
+        <param>
+          <type>const FOnRequestCompleted &amp;</type>
+          <declname>CompletionDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="55" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d1e/class_f_online_entitlements_accel_byte_1aaf7c8f60899275b3dce2c51b0e830152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineEntitlementsAccelByte::ConsumeEntitlement</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FUniqueEntitlementId &amp;EntitlementId, int32 UseCount, TArray&lt; FString &gt; Options={}, const FString &amp;RequestId={})</argsstring>
+        <name>ConsumeEntitlement</name>
+        <qualifiedname>FOnlineEntitlementsAccelByte::ConsumeEntitlement</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueEntitlementId &amp;</type>
+          <declname>EntitlementId</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>UseCount</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt;</type>
+          <declname>Options</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>RequestId</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Consume a user entitlement. Trigger FOnConsumeEntitlementComplete on complete</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the entilement owner </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EntitlementId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the entitlement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UseCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of consumed entitlement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Options of consumed entitlements. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RequestId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request id(Optional), A unique tracking ID provided by the developer, can just left it empty if they don&apos;t want to track When a request id is submitted, it will return original successful response </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="67" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineEntitlementsInterfaceAccelByte.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineEntitlementsAccelByte</label>
+        <link refid="d4/d1e/class_f_online_entitlements_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineEntitlements</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlineEntitlementsAccelByte</label>
+        <link refid="d4/d1e/class_f_online_entitlements_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>IOnlineEntitlements</label>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" line="21" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineEntitlementsInterfaceAccelByte.h" bodystart="22" bodyend="80"/>
+    <listofallmembers>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1aaee122670f7f3cf2cda19134b559c50e" prot="private" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a5b2029344819e002560db38c3d7b5e50" prot="protected" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a7b27cb827a18ab8aa0a8fd6f997eed93" prot="private" virt="virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>AddEntitlementToMap</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1aaf7c8f60899275b3dce2c51b0e830152" prot="public" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>ConsumeEntitlement</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1acd89c9c7102444f4c13a0f74939f4fa5" prot="public" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a68601563909d3be050e4baea40bdd62f" prot="private" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>EntitlementMap</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a4dffa0e4f26c7b5d9e043ccea4a37572" prot="private" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>EntitlementMapLock</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a309085df7a66cd537fb170bc0a7e0ddb" prot="public" virt="virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>GetAllEntitlements</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a0f2017aa54fe4f28dd3ff26a3d1aa298" prot="public" virt="virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>GetEntitlement</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1aa7eefd8d118665728d1f0bf69d482432" prot="public" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a0ed2e3339fe481bacb959e1f54dd92c9" prot="public" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1ac3f462fe9aeaf03f55f01d9d8c834fd3" prot="public" virt="virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>GetItemEntitlement</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1abd9292b67684684be58ae28451bc46bd" prot="private" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>ItemEntitlementMap</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a96b62a149eef21d9ea7a25bed09cd443" prot="public" virt="virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>QueryEntitlements</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1a13fc9c27185faa4319e2938f3b731ab4" prot="public" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>SyncDLC</name></member>
+      <member refid="d4/d1e/class_f_online_entitlements_accel_byte_1afd3a0a85ca639a25062ff23840792a93" prot="public" virt="non-virtual"><scope>FOnlineEntitlementsAccelByte</scope><name>SyncPlatformPurchase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

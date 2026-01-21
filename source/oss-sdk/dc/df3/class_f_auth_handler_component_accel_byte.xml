@@ -1,0 +1,1185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dc/df3/class_f_auth_handler_component_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FAuthHandlerComponentAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">HandlerComponent</basecompoundref>
+    <includes refid="d7/d19/_online_auth_handler_component_accel_byte_8h" local="no">OnlineAuthHandlerComponentAccelByte.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7f" prot="private" static="no" strong="yes">
+        <type>uint8</type>
+        <name>EState</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::EState</qualifiedname>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7faf704f57ea420275ad51bf55b7dec2c96" prot="private">
+          <name>Uninitialized</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fa3256c43a07b6413c69a05f2d7a562d8c" prot="private">
+          <name>SentKey</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fa24921fd291b3b5125284e8205c98da4d" prot="private">
+          <name>RecvedKey</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fa77a4ce8bade720470ad8db5b97def74d" prot="private">
+          <name>WaitForJwks</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fab7caeb2cdf75366e21e3886d016de215" prot="private">
+          <name>ReadyJwks</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fa8a09b2e292401c62d0627b5d4024d505" prot="private">
+          <name>WaitForAuth</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fa8361da4b005f679a24eed3ff4998e7b6" prot="private">
+          <name>SentAuth</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fa6140c41eed2db8c6b1a3aa46ab2e3d51" prot="private">
+          <name>AuthFail</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7fa59d87a4758a9d35fbaf6b204341bb399" prot="private">
+          <name>Initialized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="35" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dc/df3/class_f_auth_handler_component_accel_byte_1a2c781f96933b268d756d82d78f6deb7f" prot="private" static="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>(AccelByte::FRSAEncryptionOpenSSL::*</type>
+        <definition>typedef int32(AccelByte::FRSAEncryptionOpenSSL::* FAuthHandlerComponentAccelByte::PF_CRYPTO) (const TArrayView&lt; const uint8 &gt;, TArray&lt; uint8 &gt; &amp;)</definition>
+        <argsstring>)(const TArrayView&lt; const uint8 &gt;, TArray&lt; uint8 &gt; &amp;)</argsstring>
+        <name>PF_CRYPTO</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::PF_CRYPTO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="132" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dc/df3/class_f_auth_handler_component_accel_byte_1ac9b89e0cbde870bafa15a0671a48999c" prot="private" static="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref>(FAuthHandlerComponentAccelByte::*</type>
+        <definition>typedef bool(FAuthHandlerComponentAccelByte::* FAuthHandlerComponentAccelByte::PF_ENCRYPTO) (FBitWriter &amp;Packet)</definition>
+        <argsstring>)(FBitWriter &amp;Packet)</argsstring>
+        <name>PF_ENCRYPTO</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::PF_ENCRYPTO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="137" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dc/df3/class_f_auth_handler_component_accel_byte_1a9156de1c625f32810bd192bc935bb495" prot="private" static="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref>(FAuthHandlerComponentAccelByte::*</type>
+        <definition>typedef bool(FAuthHandlerComponentAccelByte::* FAuthHandlerComponentAccelByte::PF_DECRYPTO) (FBitReader &amp;Packet)</definition>
+        <argsstring>)(FBitReader &amp;Packet)</argsstring>
+        <name>PF_DECRYPTO</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::PF_DECRYPTO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="138" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a520c5acf691179beb5fcf665240f3714" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7f" kindref="member">EState</ref></type>
+        <definition>EState FAuthHandlerComponentAccelByte::State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::State</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="124" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a81f2320de3207247d1cb064f86766418" prot="private" static="no" mutable="no">
+        <type>AccelByte::FRSAEncryptionOpenSSL</type>
+        <definition>AccelByte::FRSAEncryptionOpenSSL FAuthHandlerComponentAccelByte::RSACrypto</definition>
+        <argsstring></argsstring>
+        <name>RSACrypto</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RSACrypto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>handler for encrypting with the RSA key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="127" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a1deffefd5c0119a422e1038c460520ab" prot="private" static="no" mutable="no">
+        <type>AccelByte::FAESEncryptionOpenSSL</type>
+        <definition>AccelByte::FAESEncryptionOpenSSL FAuthHandlerComponentAccelByte::AESCrypto</definition>
+        <argsstring></argsstring>
+        <name>AESCrypto</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::AESCrypto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>handler for encrypting with the AES key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="130" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a7cc9b12ae8f35570be39559fdb9dfb60" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/df3/class_f_auth_handler_component_accel_byte_1a2c781f96933b268d756d82d78f6deb7f" kindref="member">PF_CRYPTO</ref></type>
+        <definition>PF_CRYPTO FAuthHandlerComponentAccelByte::RSAEncryptor</definition>
+        <argsstring></argsstring>
+        <name>RSAEncryptor</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RSAEncryptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="134" column="11" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a26102b0ff7b3f565196492f0fae806b9" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/df3/class_f_auth_handler_component_accel_byte_1a2c781f96933b268d756d82d78f6deb7f" kindref="member">PF_CRYPTO</ref></type>
+        <definition>PF_CRYPTO FAuthHandlerComponentAccelByte::RSADecryptor</definition>
+        <argsstring></argsstring>
+        <name>RSADecryptor</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RSADecryptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="135" column="11" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a01ee740efdd6d8318b769e2c1d45af16" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/df3/class_f_auth_handler_component_accel_byte_1ac9b89e0cbde870bafa15a0671a48999c" kindref="member">PF_ENCRYPTO</ref></type>
+        <definition>PF_ENCRYPTO FAuthHandlerComponentAccelByte::EncryptorPacket</definition>
+        <argsstring></argsstring>
+        <name>EncryptorPacket</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::EncryptorPacket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="140" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1ae1edadd2d522ede6677471c9f9d2763d" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/df3/class_f_auth_handler_component_accel_byte_1a9156de1c625f32810bd192bc935bb495" kindref="member">PF_DECRYPTO</ref></type>
+        <definition>PF_DECRYPTO FAuthHandlerComponentAccelByte::DecryptorPacket</definition>
+        <argsstring></argsstring>
+        <name>DecryptorPacket</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::DecryptorPacket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="141" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a804ed237abaf681e57d29933160ba4f6" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FAuthHandlerComponentAccelByte::OnlineSubsystem</definition>
+        <argsstring></argsstring>
+        <name>OnlineSubsystem</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::OnlineSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="143" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a34f45bd2ce6e0533a2428ad4f293092a" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 FAuthHandlerComponentAccelByte::RecvSegCount</definition>
+        <argsstring></argsstring>
+        <name>RecvSegCount</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RecvSegCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="146" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a33789a7ef38f8255ebe44db9e361546a" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::bIsEnabled</definition>
+        <argsstring></argsstring>
+        <name>bIsEnabled</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::bIsEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="147" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a8ffae5e5c858c9c774f13670677607b9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FAuthHandlerComponentAccelByte::LastTimestamp</definition>
+        <argsstring></argsstring>
+        <name>LastTimestamp</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::LastTimestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="148" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1abe4fcb49fb3eae62990d4ef428ebe94e" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::bEnabledEncryption</definition>
+        <argsstring></argsstring>
+        <name>bEnabledEncryption</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::bEnabledEncryption</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="149" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1aaf6b65c721d07c268a56a6ce49f70a20" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::bOriginRequiresReliability</definition>
+        <argsstring></argsstring>
+        <name>bOriginRequiresReliability</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::bOriginRequiresReliability</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="150" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a205ab0dcb6cf856436d66850c5d7fc7f" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FAuthHandlerComponentAccelByte::UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="152" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a4089d133753815977186f8bb31b170e9" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FAuthHandlerComponentAccelByte::AuthData</definition>
+        <argsstring></argsstring>
+        <name>AuthData</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::AuthData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="153" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/df3/class_f_auth_handler_component_accel_byte_1a3b0fdc17a5b7e732a8aa8c2d9d5242f6" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a68c98c2179268c257e7b60caf71b055b" kindref="member">FOnlineAuthAccelBytePtr</ref></type>
+        <definition>FOnlineAuthAccelBytePtr FAuthHandlerComponentAccelByte::AuthInterface</definition>
+        <argsstring></argsstring>
+        <name>AuthInterface</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::AuthInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="155" column="25" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a809fe8fc681eb0f056f00b2d14ac3e30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FAuthHandlerComponentAccelByte::FAuthHandlerComponentAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FAuthHandlerComponentAccelByte</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::FAuthHandlerComponentAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OnlineSubsystemAccelByte.AuthHandlerComponentAccelByteFactory </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="21" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="81" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ac786c504948c3ad6302b3147f717012e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FAuthHandlerComponentAccelByte::~FAuthHandlerComponentAccelByte</definition>
+        <argsstring>() override</argsstring>
+        <name>~FAuthHandlerComponentAccelByte</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::~FAuthHandlerComponentAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="22" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a79ec7b2b7da1ce31d952708e23d353bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>virtual bool FAuthHandlerComponentAccelByte::IsValid</definition>
+        <argsstring>() const</argsstring>
+        <name>IsValid</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::IsValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="25" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ada6a54eb9754f8198d139b6900c4fc05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::Initialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="26" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="153" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a632837cc2275be5f0c9f0c5ff03346ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FAuthHandlerComponentAccelByte::GetReservedPacketBits</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetReservedPacketBits</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::GetReservedPacketBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="27" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="762" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ac6cb71aba08d0264d87fb568b5ea510a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::NotifyHandshakeBegin</definition>
+        <argsstring>() override</argsstring>
+        <name>NotifyHandshakeBegin</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::NotifyHandshakeBegin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="28" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="384" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a618b0e43e113dac86a62d2d65014a4f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::Incoming</definition>
+        <argsstring>(FBitReader &amp;Packet) override</argsstring>
+        <name>Incoming</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::Incoming</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="29" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="327" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a48230c4265e6f09d5395bacff32a2122" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::Outgoing</definition>
+        <argsstring>(FBitWriter &amp;Packet, FOutPacketTraits &amp;Traits) override</argsstring>
+        <name>Outgoing</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::Outgoing</qualifiedname>
+        <param>
+          <type>FBitWriter &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <param>
+          <type>FOutPacketTraits &amp;</type>
+          <declname>Traits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="30" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="354" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1af2d04ecd807c881dc69619a367b1176f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::Tick</definition>
+        <argsstring>(float DeltaTime) override</argsstring>
+        <name>Tick</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::Tick</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>DeltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="31" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="213" bodyend="260"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ac923748d4daecdb92edbce634ddc1ba5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::IncomingHandshake</definition>
+        <argsstring>(FBitReader &amp;Packet)</argsstring>
+        <name>IncomingHandshake</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::IncomingHandshake</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes an incoming packet during the handshake stage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="51" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="418" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a4cfc0248d1372fc3d5cfe57a52b97cda" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::PackPublicKey</definition>
+        <argsstring>(FBitWriter &amp;Packet)</argsstring>
+        <name>PackPublicKey</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::PackPublicKey</qualifiedname>
+        <param>
+          <type>FBitWriter &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="54" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="590" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a9c43af28bc3bf07538b7272f7b60aa5e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::UnpackPublicKey</definition>
+        <argsstring>(FBitReader &amp;Packet)</argsstring>
+        <name>UnpackPublicKey</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::UnpackPublicKey</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="57" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="620" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1acd05356a513ab647f381a1e361dec0b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::EncryptRSA</definition>
+        <argsstring>(FBitWriter &amp;Packet)</argsstring>
+        <name>EncryptRSA</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::EncryptRSA</qualifiedname>
+        <param>
+          <type>FBitWriter &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="60" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="678" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a9c902468ecc44e1e06de57947e495344" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::DecryptRSA</definition>
+        <argsstring>(FBitReader &amp;Packet)</argsstring>
+        <name>DecryptRSA</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::DecryptRSA</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="63" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="721" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1aadc8f606b3d4df937f5545947bb73a3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SetAuthState</definition>
+        <argsstring>(EState State)</argsstring>
+        <name>SetAuthState</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SetAuthState</qualifiedname>
+        <param>
+          <type><ref refid="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7f" kindref="member">EState</ref></type>
+          <declname>State</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="66" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="757" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1aae9b222a79543ead26ddb21cfe8edc02" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SendKey</definition>
+        <argsstring>()</argsstring>
+        <name>SendKey</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SendKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="69" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="288" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a22ba2006ce62021d87dbf2f597505ded" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SendPublicKey</definition>
+        <argsstring>()</argsstring>
+        <name>SendPublicKey</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SendPublicKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="72" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="564" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ad9215ddb43ab1d44818964d7e06da7d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::RecvPublicKey</definition>
+        <argsstring>(FBitReader &amp;Packet)</argsstring>
+        <name>RecvPublicKey</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RecvPublicKey</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="75" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="575" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a6b5f3793f77972e9720a65071bc609d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SendKeyAES</definition>
+        <argsstring>()</argsstring>
+        <name>SendKeyAES</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SendKeyAES</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="78" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="775" bodyend="797"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ac975f8ddcf089d37b468b9328d1194f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::RecvKeyAES</definition>
+        <argsstring>(FBitReader &amp;Packet)</argsstring>
+        <name>RecvKeyAES</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RecvKeyAES</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="81" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="799" bodyend="827"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a5d365b5b563b252645e772f1d0e7b3e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::CompletedHandshaking</definition>
+        <argsstring>(bool bResult)</argsstring>
+        <name>CompletedHandshaking</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::CompletedHandshaking</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="84" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="522" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1aa6965de58de136d2d9bb197ca634e212" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::EncryptAES</definition>
+        <argsstring>(FBitWriter &amp;Packet)</argsstring>
+        <name>EncryptAES</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::EncryptAES</qualifiedname>
+        <param>
+          <type>FBitWriter &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="87" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="829" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a3630bc0cf645df97ba30d2d67282a92b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::DecryptAES</definition>
+        <argsstring>(FBitReader &amp;Packet)</argsstring>
+        <name>DecryptAES</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::DecryptAES</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="90" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="878" bodyend="918"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a6ed7c2d094143232279cad5f4a0ed249" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::SetAuthData</definition>
+        <argsstring>(FString &amp;AuthToken)</argsstring>
+        <name>SetAuthData</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SetAuthData</qualifiedname>
+        <param>
+          <type>FString &amp;</type>
+          <declname>AuthToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Authenticate User</para>
+<para>set up the client&apos;s secure data from Credentials information. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>the client handler</para>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="93" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1121" bodyend="1154"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a4c3f13613f64d3ea49dabd00c0c43dd1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SendAuthData</definition>
+        <argsstring>()</argsstring>
+        <name>SendAuthData</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SendAuthData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="94" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="979" bodyend="1011"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ae6e4813e3e9a322639502fc538260700" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::SendAuthData</definition>
+        <argsstring>(TArray&lt; uint8 &gt; &amp;Packet, uint32 &amp;SegmentsNum)</argsstring>
+        <name>SendAuthData</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SendAuthData</qualifiedname>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <param>
+          <type>uint32 &amp;</type>
+          <declname>SegmentsNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="95" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1013" bodyend="1037"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a3c27179780e147fc6cfaf7f88dc16829" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::RecvAuthData</definition>
+        <argsstring>(FBitReader &amp;Packet)</argsstring>
+        <name>RecvAuthData</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RecvAuthData</qualifiedname>
+        <param>
+          <type>FBitReader &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="96" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1039" bodyend="1060"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a4da828f2c654aa0655c03225387de000" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::VerifyAuthToken</definition>
+        <argsstring>()</argsstring>
+        <name>VerifyAuthToken</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::VerifyAuthToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="98" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1062" bodyend="1077"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ac36bae30d4950a3028f394e856223b0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::OnVerifyAuthToken</definition>
+        <argsstring>()</argsstring>
+        <name>OnVerifyAuthToken</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::OnVerifyAuthToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="99" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1079" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a46df2ddb973ebae35e363a8be1cb6cae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::OnAuthenticateUser</definition>
+        <argsstring>()</argsstring>
+        <name>OnAuthenticateUser</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::OnAuthenticateUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>the DS handler</para>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="100" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1090" bodyend="1100"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a28e8eb72b0294baf1c6b971df86e1c08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SendAuthResult</definition>
+        <argsstring>()</argsstring>
+        <name>SendAuthResult</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SendAuthResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="102" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="262" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1af7c9746333fc14a6403aea772ba89a42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::OnSendAuthResult</definition>
+        <argsstring>(bool InAuthResult)</argsstring>
+        <name>OnSendAuthResult</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::OnSendAuthResult</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>InAuthResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="103" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="965" bodyend="977"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a19189af74150f440de71fbc328b80fb5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::AuthenticateUserResult</definition>
+        <argsstring>(bool Result)</argsstring>
+        <name>AuthenticateUserResult</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::AuthenticateUserResult</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="105" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1102" bodyend="1116"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a01c80af80476764a0e1013db24256e2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::RequestResend</definition>
+        <argsstring>()</argsstring>
+        <name>RequestResend</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::RequestResend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="106" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="920" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ae5d27acdf29e48d59b720bbc935b1ca8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::LoadSettings</definition>
+        <argsstring>()</argsstring>
+        <name>LoadSettings</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::LoadSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="108" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="139" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a5a80f7573286ed60129501f65eb70b53" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SetComponentReady</definition>
+        <argsstring>()</argsstring>
+        <name>SetComponentReady</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SetComponentReady</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="109" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="171" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a0856bd7102dfb02d0a0f3f8dd0ebb7eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SendPacket</definition>
+        <argsstring>(FBitWriter &amp;Packet)</argsstring>
+        <name>SendPacket</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SendPacket</qualifiedname>
+        <param>
+          <type>FBitWriter &amp;</type>
+          <declname>Packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="111" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="957" bodyend="963"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a56a0114c0d26a66f042b4520643d9dbe" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FAuthHandlerComponentAccelByte::IsServer</definition>
+        <argsstring>() const</argsstring>
+        <name>IsServer</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::IsServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="113" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1161" bodyend="1164"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ad798f228cdb9780a4d4a1b77d239a800" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::SetCryptor</definition>
+        <argsstring>()</argsstring>
+        <name>SetCryptor</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::SetCryptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="115" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="199" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a1ad5e91ceff80b8f03c4f1155379bd97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::Clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="117" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="122" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1a97ad648971386e9a35acab8aee6d1bf1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FAuthHandlerComponentAccelByte::NetCleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>NetCleanUp</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::NetCleanUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="118" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="549" bodyend="562"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="dc/df3/class_f_auth_handler_component_accel_byte_1ad90bc88ac761d41291f29c33745fa1e1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+        <definition>int32 FAuthHandlerComponentAccelByte::GetMaxTokenSizeInBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaxTokenSizeInBytes</name>
+        <qualifiedname>FAuthHandlerComponentAccelByte::GetMaxTokenSizeInBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="120" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineAuthHandlerComponentAccelByte.cpp" bodystart="1156" bodyend="1159"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FAuthHandlerComponentAccelByte</label>
+        <link refid="dc/df3/class_f_auth_handler_component_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HandlerComponent</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="1">
+        <label>FAuthHandlerComponentAccelByte</label>
+        <link refid="dc/df3/class_f_auth_handler_component_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>OnlineSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="3">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>HandlerComponent</label>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" line="19" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineAuthHandlerComponentAccelByte.h" bodystart="19" bodyend="156"/>
+    <listofallmembers>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a1deffefd5c0119a422e1038c460520ab" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>AESCrypto</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a4089d133753815977186f8bb31b170e9" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>AuthData</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a19189af74150f440de71fbc328b80fb5" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>AuthenticateUserResult</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a3b0fdc17a5b7e732a8aa8c2d9d5242f6" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>AuthInterface</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1abe4fcb49fb3eae62990d4ef428ebe94e" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>bEnabledEncryption</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a33789a7ef38f8255ebe44db9e361546a" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>bIsEnabled</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1aaf6b65c721d07c268a56a6ce49f70a20" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>bOriginRequiresReliability</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a1ad5e91ceff80b8f03c4f1155379bd97" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>Clear</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a5d365b5b563b252645e772f1d0e7b3e5" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>CompletedHandshaking</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a3630bc0cf645df97ba30d2d67282a92b" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>DecryptAES</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ae1edadd2d522ede6677471c9f9d2763d" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>DecryptorPacket</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a9c902468ecc44e1e06de57947e495344" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>DecryptRSA</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1aa6965de58de136d2d9bb197ca634e212" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>EncryptAES</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a01ee740efdd6d8318b769e2c1d45af16" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>EncryptorPacket</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1acd05356a513ab647f381a1e361dec0b8" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>EncryptRSA</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1aaf18a3e2179dccdb3c4bd907de1e5a7f" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>EState</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a809fe8fc681eb0f056f00b2d14ac3e30" prot="public" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>FAuthHandlerComponentAccelByte</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ad90bc88ac761d41291f29c33745fa1e1" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>GetMaxTokenSizeInBytes</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a632837cc2275be5f0c9f0c5ff03346ee" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>GetReservedPacketBits</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a618b0e43e113dac86a62d2d65014a4f0" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>Incoming</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ac923748d4daecdb92edbce634ddc1ba5" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>IncomingHandshake</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ada6a54eb9754f8198d139b6900c4fc05" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>Initialize</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a56a0114c0d26a66f042b4520643d9dbe" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>IsServer</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a79ec7b2b7da1ce31d952708e23d353bc" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>IsValid</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a8ffae5e5c858c9c774f13670677607b9" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>LastTimestamp</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ae5d27acdf29e48d59b720bbc935b1ca8" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>LoadSettings</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a97ad648971386e9a35acab8aee6d1bf1" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>NetCleanUp</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ac6cb71aba08d0264d87fb568b5ea510a" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>NotifyHandshakeBegin</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a46df2ddb973ebae35e363a8be1cb6cae" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>OnAuthenticateUser</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a804ed237abaf681e57d29933160ba4f6" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>OnlineSubsystem</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1af7c9746333fc14a6403aea772ba89a42" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>OnSendAuthResult</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ac36bae30d4950a3028f394e856223b0c" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>OnVerifyAuthToken</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a48230c4265e6f09d5395bacff32a2122" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>Outgoing</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a4cfc0248d1372fc3d5cfe57a52b97cda" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>PackPublicKey</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a2c781f96933b268d756d82d78f6deb7f" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>PF_CRYPTO</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a9156de1c625f32810bd192bc935bb495" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>PF_DECRYPTO</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ac9b89e0cbde870bafa15a0671a48999c" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>PF_ENCRYPTO</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a3c27179780e147fc6cfaf7f88dc16829" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RecvAuthData</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ac975f8ddcf089d37b468b9328d1194f2" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RecvKeyAES</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ad9215ddb43ab1d44818964d7e06da7d6" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RecvPublicKey</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a34f45bd2ce6e0533a2428ad4f293092a" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RecvSegCount</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a01c80af80476764a0e1013db24256e2f" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RequestResend</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a81f2320de3207247d1cb064f86766418" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RSACrypto</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a26102b0ff7b3f565196492f0fae806b9" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RSADecryptor</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a7cc9b12ae8f35570be39559fdb9dfb60" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>RSAEncryptor</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a4c3f13613f64d3ea49dabd00c0c43dd1" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SendAuthData</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ae6e4813e3e9a322639502fc538260700" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SendAuthData</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a28e8eb72b0294baf1c6b971df86e1c08" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SendAuthResult</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1aae9b222a79543ead26ddb21cfe8edc02" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SendKey</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a6b5f3793f77972e9720a65071bc609d5" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SendKeyAES</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a0856bd7102dfb02d0a0f3f8dd0ebb7eb" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SendPacket</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a22ba2006ce62021d87dbf2f597505ded" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SendPublicKey</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a6ed7c2d094143232279cad5f4a0ed249" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SetAuthData</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1aadc8f606b3d4df937f5545947bb73a3a" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SetAuthState</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a5a80f7573286ed60129501f65eb70b53" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SetComponentReady</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ad798f228cdb9780a4d4a1b77d239a800" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>SetCryptor</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a520c5acf691179beb5fcf665240f3714" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>State</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1af2d04ecd807c881dc69619a367b1176f" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>Tick</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a9c43af28bc3bf07538b7272f7b60aa5e" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>UnpackPublicKey</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a205ab0dcb6cf856436d66850c5d7fc7f" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>UserId</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1a4da828f2c654aa0655c03225387de000" prot="private" virt="non-virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>VerifyAuthToken</name></member>
+      <member refid="dc/df3/class_f_auth_handler_component_accel_byte_1ac786c504948c3ad6302b3147f717012e" prot="public" virt="virtual"><scope>FAuthHandlerComponentAccelByte</scope><name>~FAuthHandlerComponentAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

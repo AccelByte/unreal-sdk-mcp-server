@@ -1,0 +1,1469 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d5/d24/class_f_online_friends_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineFriendsAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineFriends</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineFriendsAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="dc/d1c/_online_friends_interface_accel_byte_8h" local="no">OnlineFriendsInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d24/class_f_online_friends_accel_byte_1a18c80a1e18c9f8a7423eda0182d9c833" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineFriendsAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineFriendsAccelByte::__pad0__</qualifiedname>
+        <bitfield> TUniqueNetIdMap&lt;TArray&lt;TSharedRef&lt;FOnlineRecentPlayerAccelByte&gt;&gt;&gt; RecentPlayersMap</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="171" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d24/class_f_online_friends_accel_byte_1a7068e7604e461dd87241c3d807ca7b49" prot="private" static="no" mutable="no">
+        <type>FDelegateHandle</type>
+        <definition>FDelegateHandle FOnlineFriendsAccelByte::PresenceReceivedHandle</definition>
+        <argsstring></argsstring>
+        <name>PresenceReceivedHandle</name>
+        <qualifiedname>FOnlineFriendsAccelByte::PresenceReceivedHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="178" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d5/d24/class_f_online_friends_accel_byte_1a251ea5f6c7b29a50c6bf4be02dadb898" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineFriendsAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineFriendsAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="304" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d24/class_f_online_friends_accel_byte_1a9a334ad6b3b3000c548e554228365428" prot="protected" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>, TArray&lt; TSharedPtr&lt; FOnlineFriend &gt; &gt; &gt;</type>
+        <definition>TMap&lt;int32, TArray&lt;TSharedPtr&lt;FOnlineFriend&gt; &gt; &gt; FOnlineFriendsAccelByte::LocalUserNumToFriendsMap</definition>
+        <argsstring></argsstring>
+        <name>LocalUserNumToFriendsMap</name>
+        <qualifiedname>FOnlineFriendsAccelByte::LocalUserNumToFriendsMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map of user IDs representing local users to an array of FOnlineFriend instances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="311" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d24/class_f_online_friends_accel_byte_1a36481cf318796e88447d71ebe313063e" prot="protected" static="no" mutable="no">
+        <type><ref refid="dc/d1c/_online_friends_interface_accel_byte_8h_1ae1afb9952f5f65e4fe30016b5667f7b5" kindref="member">FUserIdToBlockedPlayersMap</ref></type>
+        <definition>FUserIdToBlockedPlayersMap FOnlineFriendsAccelByte::UserIdToBlockedPlayersMap</definition>
+        <argsstring></argsstring>
+        <name>UserIdToBlockedPlayersMap</name>
+        <qualifiedname>FOnlineFriendsAccelByte::UserIdToBlockedPlayersMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map of user IDs representing local users to an array of FOnlineBlockedPlayer instances </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="314" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d24/class_f_online_friends_accel_byte_1ad65df98b79d629a713d071ed277ba6e1" prot="protected" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineFriendsAccelByte::UserIdToBlockedPlayersMapLock</definition>
+        <argsstring></argsstring>
+        <name>UserIdToBlockedPlayersMapLock</name>
+        <qualifiedname>FOnlineFriendsAccelByte::UserIdToBlockedPlayersMapLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="315" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a72805db93720f8232b584ec98d449012" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineFriendsAccelByte::FOnlineFriendsAccelByte</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *InSubsystem)</argsstring>
+        <name>FOnlineFriendsAccelByte</name>
+        <qualifiedname>FOnlineFriendsAccelByte::FOnlineFriendsAccelByte</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+          <declname>InSubsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor that is invoked by the Subsystem instance to create a friend interface instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="176" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a3ef6573f01f03ffa37b9d33cf79d18f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::RegisterRealTimeLobbyDelegates</definition>
+        <argsstring>(int32 LocalUserNum)</argsstring>
+        <name>RegisterRealTimeLobbyDelegates</name>
+        <qualifiedname>FOnlineFriendsAccelByte::RegisterRealTimeLobbyDelegates</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used by the Identity interface to register delegates for friend notifications to this interface to get real-time updates from the Lobby websocket. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="184" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="327" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a96360b459fe3c04e6c6a355f9ccc966a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::AddFriendsToList</definition>
+        <argsstring>(int32 LocalUserNum, const TArray&lt; TSharedPtr&lt; FOnlineFriend &gt; &gt; &amp;NewFriends)</argsstring>
+        <name>AddFriendsToList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::AddFriendsToList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; TSharedPtr&lt; FOnlineFriend &gt; &gt; &amp;</type>
+          <declname>NewFriends</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used by async tasks to add an array of friends to the friend list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="187" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="371" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aa532b93a2817ad4c99a56503d533f902" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::AddFriendToList</definition>
+        <argsstring>(int32 LocalUserNum, const TSharedPtr&lt; FOnlineFriend &gt; &amp;NewFriend)</argsstring>
+        <name>AddFriendToList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::AddFriendToList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TSharedPtr&lt; FOnlineFriend &gt; &amp;</type>
+          <declname>NewFriend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used by async tasks to add a single friend to the friends list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="190" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="389" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a4fd3a5027914232290f383aab37fe08b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::RemoveFriendFromList</definition>
+        <argsstring>(int32 LocalUserNum, const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;FriendId)</argsstring>
+        <name>RemoveFriendFromList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::RemoveFriendFromList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used by async tasks to remove a single friend from the friends list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="193" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="418" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a9b911107282007bf2e875f562b4ef036" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::AddBlockedPlayersToList</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId, const TArray&lt; TSharedPtr&lt; FOnlineBlockedPlayer &gt; &gt; &amp;NewBlockedPlayers)</argsstring>
+        <name>AddBlockedPlayersToList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::AddBlockedPlayersToList</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; TSharedPtr&lt; FOnlineBlockedPlayer &gt; &gt; &amp;</type>
+          <declname>NewBlockedPlayers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used by async tasks to add an array of blocked users to the blocked users list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="196" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="435" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a2190d5fa4fc3596f70b179e900595799" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::AddBlockedPlayerToList</definition>
+        <argsstring>(int32 LocalUserNum, const TSharedPtr&lt; FOnlineBlockedPlayer &gt; &amp;NewBlockedPlayer)</argsstring>
+        <name>AddBlockedPlayerToList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::AddBlockedPlayerToList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TSharedPtr&lt; FOnlineBlockedPlayer &gt; &amp;</type>
+          <declname>NewBlockedPlayer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used by async tasks to remove a single blocked user to the blocked users list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="199" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="469" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aa817fb11ef8b113818ea22869000805a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::RemoveBlockedPlayerFromList</definition>
+        <argsstring>(int32 LocalUserNum, const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;PlayerId)</argsstring>
+        <name>RemoveBlockedPlayerFromList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::RemoveBlockedPlayerFromList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>PlayerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method used by async tasks to remove a single blocked player from the blocked players list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="202" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="515" bodyend="548"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a7cd1ce111cc2f0730cc09f7f47e6eacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineFriendsAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_ONE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnSyncThirdPartyPlatformFriendsComplete, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_ONE_PARAM</name>
+        <qualifiedname>FOnlineFriendsAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_ONE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnSyncThirdPartyPlatformFriendsComplete</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aa9e26e65d16681a2827fb50e6e4bcb21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineFriendsAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnSyncThirdPartyPlatformFriendsV2Complete, const FOnlineError &amp;, const TArray&lt; FAccelByteModelsSyncThirdPartyFriendsResponse &gt; &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineFriendsAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnSyncThirdPartyPlatformFriendsV2Complete</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsSyncThirdPartyFriendsResponse &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a78bc1be954a6b4802f05bdacadaea7cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineFriendsAccelByte::~FOnlineFriendsAccelByte</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~FOnlineFriendsAccelByte</name>
+        <qualifiedname>FOnlineFriendsAccelByte::~FOnlineFriendsAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="209" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aa9843c89402b23633f067751b74a2788" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::ReadFriendsList</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;ListName, const FOnReadFriendsListComplete &amp;Delegate=FOnReadFriendsListComplete()) override</argsstring>
+        <name>ReadFriendsList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::ReadFriendsList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>const FOnReadFriendsListComplete &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnReadFriendsListComplete()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="230" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="569" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a95c5f7d4572247ce08d02d4f3f4f6f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::DeleteFriendsList</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;ListName, const FOnDeleteFriendsListComplete &amp;Delegate=FOnDeleteFriendsListComplete()) override</argsstring>
+        <name>DeleteFriendsList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::DeleteFriendsList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>const FOnDeleteFriendsListComplete &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnDeleteFriendsListComplete()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="231" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="578" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a9ccc8de07b89847213ed38f246ffb441" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::SendInvite</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName, const FOnSendInviteComplete &amp;Delegate=FOnSendInviteComplete()) override</argsstring>
+        <name>SendInvite</name>
+        <qualifiedname>FOnlineFriendsAccelByte::SendInvite</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>const FOnSendInviteComplete &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnSendInviteComplete()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="232" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="590" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a1cde1334a2b608526c71837861d2f347" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::AcceptInvite</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName, const FOnAcceptInviteComplete &amp;Delegate=FOnAcceptInviteComplete()) override</argsstring>
+        <name>AcceptInvite</name>
+        <qualifiedname>FOnlineFriendsAccelByte::AcceptInvite</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>const FOnAcceptInviteComplete &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnAcceptInviteComplete()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="233" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="642" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a7596586857eb534abdf54ccca9864699" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::RejectInvite</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName) override</argsstring>
+        <name>RejectInvite</name>
+        <qualifiedname>FOnlineFriendsAccelByte::RejectInvite</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="234" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="652" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1af31c81f46eaac2abb55070ad5f720546" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::DeleteFriend</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName) override</argsstring>
+        <name>DeleteFriend</name>
+        <qualifiedname>FOnlineFriendsAccelByte::DeleteFriend</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="235" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="658" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1ac37e3817f2a4de9789c04a5ac0345842" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::SetFriendAlias</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName, const FString &amp;Alias, const FOnSetFriendAliasComplete &amp;Delegate=FOnSetFriendAliasComplete()) override</argsstring>
+        <name>SetFriendAlias</name>
+        <qualifiedname>FOnlineFriendsAccelByte::SetFriendAlias</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Alias</declname>
+        </param>
+        <param>
+          <type>const FOnSetFriendAliasComplete &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnSetFriendAliasComplete()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="236" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="664" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aa3bff59e88028584d34d0a267ebf4c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::DeleteFriendAlias</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName, const FOnDeleteFriendAliasComplete &amp;Delegate=FOnDeleteFriendAliasComplete()) override</argsstring>
+        <name>DeleteFriendAlias</name>
+        <qualifiedname>FOnlineFriendsAccelByte::DeleteFriendAlias</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>const FOnDeleteFriendAliasComplete &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnDeleteFriendAliasComplete()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="237" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="673" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1af568342d9926183ea7647ff893eb8c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::AddRecentPlayers</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const TArray&lt; FReportPlayedWithUser &gt; &amp;InRecentPlayers, const FString &amp;ListName, const FOnAddRecentPlayersComplete &amp;InCompletionDelegate) override</argsstring>
+        <name>AddRecentPlayers</name>
+        <qualifiedname>FOnlineFriendsAccelByte::AddRecentPlayers</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FReportPlayedWithUser &gt; &amp;</type>
+          <declname>InRecentPlayers</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>const FOnAddRecentPlayersComplete &amp;</type>
+          <declname>InCompletionDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="238" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="682" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a1965bf1030204ac907eb1ca396f0ac71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::QueryRecentPlayers</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;Namespace) override</argsstring>
+        <name>QueryRecentPlayers</name>
+        <qualifiedname>FOnlineFriendsAccelByte::QueryRecentPlayers</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Namespace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="239" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="691" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a9c3d24793c6ab55b2b0f77b60235ead8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::BlockPlayer</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;PlayerId) override</argsstring>
+        <name>BlockPlayer</name>
+        <qualifiedname>FOnlineFriendsAccelByte::BlockPlayer</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>PlayerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="240" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="700" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1ac3a75aa072b831604894844a3717ebb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::UnblockPlayer</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;PlayerId) override</argsstring>
+        <name>UnblockPlayer</name>
+        <qualifiedname>FOnlineFriendsAccelByte::UnblockPlayer</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>PlayerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="241" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="709" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a10e4fb7aadecad608968c5a412b2d01f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::QueryBlockedPlayers</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) override</argsstring>
+        <name>QueryBlockedPlayers</name>
+        <qualifiedname>FOnlineFriendsAccelByte::QueryBlockedPlayers</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="242" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="715" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1abac13a119d9551983dc15a8c387ad236" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::GetFriendsList</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;ListName, TArray&lt; TSharedRef&lt; FOnlineFriend &gt; &gt; &amp;OutFriends) override</argsstring>
+        <name>GetFriendsList</name>
+        <qualifiedname>FOnlineFriendsAccelByte::GetFriendsList</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FOnlineFriend &gt; &gt; &amp;</type>
+          <declname>OutFriends</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="246" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="724" bodyend="748"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a7382530bc41f618af0982f85e4390b2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; FOnlineFriend &gt;</type>
+        <definition>TSharedPtr&lt; FOnlineFriend &gt; FOnlineFriendsAccelByte::GetFriend</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName) override</argsstring>
+        <name>GetFriend</name>
+        <qualifiedname>FOnlineFriendsAccelByte::GetFriend</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="247" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="750" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a2ec1b77a4ffca2c96662883cc3b03007" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::IsFriend</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetId &amp;FriendId, const FString &amp;ListName) override</argsstring>
+        <name>IsFriend</name>
+        <qualifiedname>FOnlineFriendsAccelByte::IsFriend</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>FriendId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="248" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="770" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a160acbf9afa2ba506835af21f0d54339" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::GetRecentPlayers</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;Namespace, TArray&lt; TSharedRef&lt; FOnlineRecentPlayer &gt; &gt; &amp;OutRecentPlayers) override</argsstring>
+        <name>GetRecentPlayers</name>
+        <qualifiedname>FOnlineFriendsAccelByte::GetRecentPlayers</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Namespace</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FOnlineRecentPlayer &gt; &gt; &amp;</type>
+          <declname>OutRecentPlayers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="249" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="775" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aee504d98b77b17508c4afa81cef9529d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::GetBlockedPlayers</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, TArray&lt; TSharedRef&lt; FOnlineBlockedPlayer &gt; &gt; &amp;OutBlockedPlayers) override</argsstring>
+        <name>GetBlockedPlayers</name>
+        <qualifiedname>FOnlineFriendsAccelByte::GetBlockedPlayers</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FOnlineBlockedPlayer &gt; &gt; &amp;</type>
+          <declname>OutBlockedPlayers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="250" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="784" bodyend="810"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a6aaaa1578f3ced6f0d419f9c8a1f764c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::DumpRecentPlayers</definition>
+        <argsstring>() const override</argsstring>
+        <name>DumpRecentPlayers</name>
+        <qualifiedname>FOnlineFriendsAccelByte::DumpRecentPlayers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="251" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="812" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a063b75a30ef6489bcce1e37035c6336d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::DumpBlockedPlayers</definition>
+        <argsstring>() const override</argsstring>
+        <name>DumpBlockedPlayers</name>
+        <qualifiedname>FOnlineFriendsAccelByte::DumpBlockedPlayers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="252" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="817" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a8ea6f28e8a941a71dfed95aaae5ca7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::SendInvite</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;InFriendCode, const FString &amp;ListName=TEXT(&quot;&quot;), const FOnSendInviteComplete &amp;Delegate=FOnSendInviteComplete())</argsstring>
+        <name>SendInvite</name>
+        <qualifiedname>FOnlineFriendsAccelByte::SendInvite</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InFriendCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ListName</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <param>
+          <type>const FOnSendInviteComplete &amp;</type>
+          <declname>Delegate</declname>
+          <defval>FOnSendInviteComplete()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts an async task that sends an invite to another player.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user that is sending the invite </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InFriendCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Friend&apos;s PublicCode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ListName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the friends list to invite to. Not yet implemented on <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> you can leave it blank </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fired when the request is complete</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the request was started successfully, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="266" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="599" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aaeb509be0e52b8819d961648df2e672c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::IsPlayerBlocked</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FUniqueNetId &amp;BlockedId)</argsstring>
+        <name>IsPlayerBlocked</name>
+        <qualifiedname>FOnlineFriendsAccelByte::IsPlayerBlocked</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>BlockedId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check on the cached list whether player is blocked</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of user that made the request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BlockedId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of user to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if blocked, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="276" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="608" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aeefba3bb15d995943ed26d6c786e5d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::SyncThirdPartyPlatformFriend</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;NativeFriendListName, const FString &amp;AccelByteFriendListName=TEXT(&quot;&quot;))</argsstring>
+        <name>SyncThirdPartyPlatformFriend</name>
+        <qualifiedname>FOnlineFriendsAccelByte::SyncThirdPartyPlatformFriend</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>NativeFriendListName</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>AccelByteFriendListName</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sync third party platform friend to <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> service, this will automatically add the third party friends to <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> service if they already linked their account to <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> service. The native friend list is retrieved using native OSS.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user that sending friend sync request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NativeFriendListName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>friend list name in native platform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AccelByteFriendListName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>friend list name in <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> service (optional)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the request was started successfully, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="288" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="626" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aac53ce679a172029f8e3e27ad0e3c4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::SyncThirdPartyPlatformFriendV2</definition>
+        <argsstring>(int32 LocalUserNum, const FAccelByteModelsSyncThirdPartyFriendsRequest &amp;Request)</argsstring>
+        <name>SyncThirdPartyPlatformFriendV2</name>
+        <qualifiedname>FOnlineFriendsAccelByte::SyncThirdPartyPlatformFriendV2</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FAccelByteModelsSyncThirdPartyFriendsRequest &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sync third party platform friend to <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> service, this will make an S2S call to platform of choice to sync friends.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user that sending friend sync request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>request parameters for friend sync</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the request was started successfully, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="298" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="635" bodyend="640"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1ada671c0e5deb39b969b43997e27162fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineFriendsAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineFriendsAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d5/d24/class_f_online_friends_accel_byte" kindref="compound">FOnlineFriendsAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="218" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="551" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a8e63058315b5ff32d0e7d38aae43e8d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineFriendsAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineFriendsAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d5/d24/class_f_online_friends_accel_byte" kindref="compound">FOnlineFriendsAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="227" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="557" bodyend="567"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1ae046cdb72fe717d77e7b810435899253" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineFriendsAccelByte::FOnlineFriendsAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineFriendsAccelByte</name>
+        <qualifiedname>FOnlineFriendsAccelByte::FOnlineFriendsAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="307" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="307" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a85ac8523a3850aca6260b8e49e09ead3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::OnFriendRequestAcceptedNotificationReceived</definition>
+        <argsstring>(const FAccelByteModelsAcceptFriendsNotif &amp;Notification, int32 LocalUserNum)</argsstring>
+        <name>OnFriendRequestAcceptedNotificationReceived</name>
+        <qualifiedname>FOnlineFriendsAccelByte::OnFriendRequestAcceptedNotificationReceived</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsAcceptFriendsNotif &amp;</type>
+          <declname>Notification</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when another user accepts our friend request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="318" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="161" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a2610a847e7d449acc127dabee738a315" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::OnFriendRequestReceivedNotificationReceived</definition>
+        <argsstring>(const FAccelByteModelsRequestFriendsNotif &amp;Notification, int32 LocalUserNum)</argsstring>
+        <name>OnFriendRequestReceivedNotificationReceived</name>
+        <qualifiedname>FOnlineFriendsAccelByte::OnFriendRequestReceivedNotificationReceived</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsRequestFriendsNotif &amp;</type>
+          <declname>Notification</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when we receive a friend request from another user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="321" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="224" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1abc5ad866b1a6b35e47e2e5028166a3ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::OnUnfriendNotificationReceived</definition>
+        <argsstring>(const FAccelByteModelsUnfriendNotif &amp;Notification, int32 LocalUserNum)</argsstring>
+        <name>OnUnfriendNotificationReceived</name>
+        <qualifiedname>FOnlineFriendsAccelByte::OnUnfriendNotificationReceived</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsUnfriendNotif &amp;</type>
+          <declname>Notification</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when another user removes us as a friend </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="324" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="254" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1abd054377e050f9da91d0457755b39243" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::OnRejectFriendRequestNotificationReceived</definition>
+        <argsstring>(const FAccelByteModelsRejectFriendsNotif &amp;Notification, int32 LocalUserNum)</argsstring>
+        <name>OnRejectFriendRequestNotificationReceived</name>
+        <qualifiedname>FOnlineFriendsAccelByte::OnRejectFriendRequestNotificationReceived</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsRejectFriendsNotif &amp;</type>
+          <declname>Notification</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when another user rejects our friend request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="327" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="275" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1aec2993adc033c721a8520ab4e281c4b8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::OnCancelFriendRequestNotificationReceived</definition>
+        <argsstring>(const FAccelByteModelsCancelFriendsNotif &amp;Notification, int32 LocalUserNum)</argsstring>
+        <name>OnCancelFriendRequestNotificationReceived</name>
+        <qualifiedname>FOnlineFriendsAccelByte::OnCancelFriendRequestNotificationReceived</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsCancelFriendsNotif &amp;</type>
+          <declname>Notification</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when another user cancels their friend request to us </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="330" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="296" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1afc2c46e0ba17cfa2cb5e2d10dda28b12" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineFriendsAccelByte::OnPresenceReceived</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const TSharedRef&lt; FOnlineUserPresence &gt; &amp;Presence, int32 LocalUserNum)</argsstring>
+        <name>OnPresenceReceived</name>
+        <qualifiedname>FOnlineFriendsAccelByte::OnPresenceReceived</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const TSharedRef&lt; FOnlineUserPresence &gt; &amp;</type>
+          <declname>Presence</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="332" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="317" bodyend="325"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="d5/d24/class_f_online_friends_accel_byte_1a678fe4692fd7fb3b40d531117e8618df" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineFriendsAccelByte::IsBlockedPlayersListChanged</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; FOnlineBlockedPlayer &gt; &gt; &amp;OldBlockedPlayersList, const TArray&lt; TSharedPtr&lt; FOnlineBlockedPlayer &gt; &gt; &amp;NewBlockedPlayersList)</argsstring>
+        <name>IsBlockedPlayersListChanged</name>
+        <qualifiedname>FOnlineFriendsAccelByte::IsBlockedPlayersListChanged</qualifiedname>
+        <param>
+          <type>const TArray&lt; TSharedPtr&lt; FOnlineBlockedPlayer &gt; &gt; &amp;</type>
+          <declname>OldBlockedPlayersList</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; TSharedPtr&lt; FOnlineBlockedPlayer &gt; &gt; &amp;</type>
+          <declname>NewBlockedPlayersList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="334" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineFriendsInterfaceAccelByte.cpp" bodystart="837" bodyend="868"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of the IOnlineFriends interface using <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineFriendsAccelByte</label>
+        <link refid="d5/d24/class_f_online_friends_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineFriends</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineFriendsAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlineFriendsAccelByte</label>
+        <link refid="d5/d24/class_f_online_friends_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>IOnlineFriends</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineFriendsAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" line="169" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineFriendsInterfaceAccelByte.h" bodystart="170" bodyend="336"/>
+    <listofallmembers>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a18c80a1e18c9f8a7423eda0182d9c833" prot="private" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a251ea5f6c7b29a50c6bf4be02dadb898" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a1cde1334a2b608526c71837861d2f347" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>AcceptInvite</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a9b911107282007bf2e875f562b4ef036" prot="private" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>AddBlockedPlayersToList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a2190d5fa4fc3596f70b179e900595799" prot="private" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>AddBlockedPlayerToList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a96360b459fe3c04e6c6a355f9ccc966a" prot="private" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>AddFriendsToList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aa532b93a2817ad4c99a56503d533f902" prot="private" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>AddFriendToList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1af568342d9926183ea7647ff893eb8c67" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>AddRecentPlayers</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a9c3d24793c6ab55b2b0f77b60235ead8" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>BlockPlayer</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a7cd1ce111cc2f0730cc09f7f47e6eacc" prot="public" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_ONE_PARAM</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aa9e26e65d16681a2827fb50e6e4bcb21" prot="public" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1af31c81f46eaac2abb55070ad5f720546" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>DeleteFriend</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aa3bff59e88028584d34d0a267ebf4c9a" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>DeleteFriendAlias</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a95c5f7d4572247ce08d02d4f3f4f6f86" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>DeleteFriendsList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a063b75a30ef6489bcce1e37035c6336d" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>DumpBlockedPlayers</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a6aaaa1578f3ced6f0d419f9c8a1f764c" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>DumpRecentPlayers</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a72805db93720f8232b584ec98d449012" prot="private" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>FOnlineFriendsAccelByte</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1ae046cdb72fe717d77e7b810435899253" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>FOnlineFriendsAccelByte</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aee504d98b77b17508c4afa81cef9529d" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>GetBlockedPlayers</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a7382530bc41f618af0982f85e4390b2f" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>GetFriend</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1abac13a119d9551983dc15a8c387ad236" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>GetFriendsList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1ada671c0e5deb39b969b43997e27162fd" prot="public" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a8e63058315b5ff32d0e7d38aae43e8d3" prot="public" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a160acbf9afa2ba506835af21f0d54339" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>GetRecentPlayers</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a678fe4692fd7fb3b40d531117e8618df" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>IsBlockedPlayersListChanged</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a2ec1b77a4ffca2c96662883cc3b03007" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>IsFriend</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aaeb509be0e52b8819d961648df2e672c" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>IsPlayerBlocked</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a9a334ad6b3b3000c548e554228365428" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>LocalUserNumToFriendsMap</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aec2993adc033c721a8520ab4e281c4b8" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>OnCancelFriendRequestNotificationReceived</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a85ac8523a3850aca6260b8e49e09ead3" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>OnFriendRequestAcceptedNotificationReceived</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a2610a847e7d449acc127dabee738a315" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>OnFriendRequestReceivedNotificationReceived</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1afc2c46e0ba17cfa2cb5e2d10dda28b12" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>OnPresenceReceived</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1abd054377e050f9da91d0457755b39243" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>OnRejectFriendRequestNotificationReceived</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1abc5ad866b1a6b35e47e2e5028166a3ab" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>OnUnfriendNotificationReceived</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a7068e7604e461dd87241c3d807ca7b49" prot="private" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>PresenceReceivedHandle</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a10e4fb7aadecad608968c5a412b2d01f" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>QueryBlockedPlayers</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a1965bf1030204ac907eb1ca396f0ac71" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>QueryRecentPlayers</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aa9843c89402b23633f067751b74a2788" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>ReadFriendsList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a3ef6573f01f03ffa37b9d33cf79d18f2" prot="private" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>RegisterRealTimeLobbyDelegates</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a7596586857eb534abdf54ccca9864699" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>RejectInvite</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aa817fb11ef8b113818ea22869000805a" prot="private" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>RemoveBlockedPlayerFromList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a4fd3a5027914232290f383aab37fe08b" prot="private" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>RemoveFriendFromList</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a9ccc8de07b89847213ed38f246ffb441" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>SendInvite</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a8ea6f28e8a941a71dfed95aaae5ca7a2" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>SendInvite</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1ac37e3817f2a4de9789c04a5ac0345842" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>SetFriendAlias</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aeefba3bb15d995943ed26d6c786e5d94" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>SyncThirdPartyPlatformFriend</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1aac53ce679a172029f8e3e27ad0e3c4ba" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>SyncThirdPartyPlatformFriendV2</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1ac3a75aa072b831604894844a3717ebb5" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>UnblockPlayer</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a36481cf318796e88447d71ebe313063e" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>UserIdToBlockedPlayersMap</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1ad65df98b79d629a713d071ed277ba6e1" prot="protected" virt="non-virtual"><scope>FOnlineFriendsAccelByte</scope><name>UserIdToBlockedPlayersMapLock</name></member>
+      <member refid="d5/d24/class_f_online_friends_accel_byte_1a78bc1be954a6b4802f05bdacadaea7cd" prot="public" virt="virtual"><scope>FOnlineFriendsAccelByte</scope><name>~FOnlineFriendsAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

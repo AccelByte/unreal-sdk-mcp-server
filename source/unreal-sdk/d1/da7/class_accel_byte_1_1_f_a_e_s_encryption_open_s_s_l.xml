@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::FAESEncryptionOpenSSL</compoundname>
+    <includes refid="d5/d10/_accel_byte_open_s_s_l_8h" local="no">AccelByteOpenSSL.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a32904a0548161c375571f0052d2d5350" prot="private" static="no" strong="yes">
+        <type>uint8</type>
+        <name>EState</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::EState</qualifiedname>
+        <enumvalue id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a32904a0548161c375571f0052d2d5350af704f57ea420275ad51bf55b7dec2c96" prot="private">
+          <name>Uninitialized</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initialize needs to be called before data may be encrypted successfully </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a32904a0548161c375571f0052d2d5350a59d87a4758a9d35fbaf6b204341bb399" prot="private">
+          <name>Initialized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initialize succeeded and is currently able to encrypt data </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="348" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="349" bodyend="354"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aab728cb172acb0f3cae4f62df2cbed46" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::FAESEncryptionOpenSSL::KeySizeInBits</definition>
+        <argsstring></argsstring>
+        <name>KeySizeInBits</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::KeySizeInBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the AES key in bits </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="357" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a62208959d99b2bf8ae89ba667560efc4" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::FAESEncryptionOpenSSL::KeySizeInBytes</definition>
+        <argsstring></argsstring>
+        <name>KeySizeInBytes</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::KeySizeInBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the AES key in bytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="360" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ab66cd45c6c762a42c0e23b0fff12925a" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::FAESEncryptionOpenSSL::BlockSize</definition>
+        <argsstring></argsstring>
+        <name>BlockSize</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::BlockSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of the AES block </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="363" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a1b8be41eb59ad290c4986ed098c53c85" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d2a/class_accel_byte_1_1_f_cipher_ctx" kindref="compound">FCipherCtx</ref></type>
+        <definition>FCipherCtx AccelByte::FAESEncryptionOpenSSL::CipherCtx</definition>
+        <argsstring></argsstring>
+        <name>CipherCtx</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::CipherCtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RAII wrapper for the OpenSSL EVP Cipher context object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="367" column="12" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ac62e72170e1c869f869528643431213c" prot="private" static="no" mutable="no">
+        <type>const openssl::EVP_CIPHER *</type>
+        <definition>const openssl::EVP_CIPHER* AccelByte::FAESEncryptionOpenSSL::Cipher</definition>
+        <argsstring></argsstring>
+        <name>Cipher</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::Cipher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="369" column="27" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aaa0431100806f8667e7ab301c236ffbd" prot="private" static="no" mutable="no">
+        <type>TArray&lt; uint8 &gt;</type>
+        <definition>TArray&lt;uint8&gt; AccelByte::FAESEncryptionOpenSSL::Key</definition>
+        <argsstring></argsstring>
+        <name>Key</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::Key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The AES key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="373" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a6dabf35a7803622be055898baf50647c" prot="private" static="no" mutable="no">
+        <type>TArray&lt; uint8 &gt;</type>
+        <definition>TArray&lt;uint8&gt; AccelByte::FAESEncryptionOpenSSL::IV</definition>
+        <argsstring></argsstring>
+        <name>IV</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::IV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The initialization vector </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="376" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af3a26c6a607c050f4c6ed463188d924f" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a32904a0548161c375571f0052d2d5350" kindref="member">EState</ref></type>
+        <definition>EState AccelByte::FAESEncryptionOpenSSL::State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::State</qualifiedname>
+        <initializer>= <ref refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a32904a0548161c375571f0052d2d5350af704f57ea420275ad51bf55b7dec2c96" kindref="member">EState::Uninitialized</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="378" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af53b7415ab9e2d86a6fd2d563e53036d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::FAESEncryptionOpenSSL::FAESEncryptionOpenSSL</definition>
+        <argsstring>()</argsstring>
+        <name>FAESEncryptionOpenSSL</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::FAESEncryptionOpenSSL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="294" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="294" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ae63be56b864752efab9b8927391c8d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::FAESEncryptionOpenSSL::~FAESEncryptionOpenSSL</definition>
+        <argsstring>()</argsstring>
+        <name>~FAESEncryptionOpenSSL</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::~FAESEncryptionOpenSSL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="302" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a7942909df8391c04d196dd5681021c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::Empty</definition>
+        <argsstring>()</argsstring>
+        <name>Empty</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::Empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="307" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteOpenSSL.cpp" bodystart="463" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a49a830e075484719a6e2833ceb3bb332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::Initialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Select encryption module based on cipher size (Bytes)</para>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="309" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteOpenSSL.cpp" bodystart="439" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af0116a9adb10e599463bd18d6185b457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelByte::FAESEncryptionOpenSSL::GenerateRandomBytes</definition>
+        <argsstring>(TArray&lt; uint8 &gt; &amp;OutKey, uint32 &amp;InSizeBytes)</argsstring>
+        <name>GenerateRandomBytes</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GenerateRandomBytes</qualifiedname>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>OutKey</declname>
+        </param>
+        <param>
+          <type>uint32 &amp;</type>
+          <declname>InSizeBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="312" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteOpenSSL.cpp" bodystart="476" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aa8c8c285fb901b22acb6850157ec3e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::GenerateKey</definition>
+        <argsstring>(uint32 InKeySizeInBytes=32, uint32 InBlockSize=AES_BLOCK_SIZE)</argsstring>
+        <name>GenerateKey</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GenerateKey</qualifiedname>
+        <param>
+          <type>uint32</type>
+          <declname>InKeySizeInBytes</declname>
+          <defval>32</defval>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>InBlockSize</declname>
+          <defval>AES_BLOCK_SIZE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="316" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteOpenSSL.cpp" bodystart="497" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a77bbdec9f041996db72ad12a873e71ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::Encrypt</definition>
+        <argsstring>(const TArrayView&lt; const uint8 &gt; &amp;InPlaintext, TArray&lt; uint8 &gt; &amp;OutCiphertext, int32 &amp;Length)</argsstring>
+        <name>Encrypt</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::Encrypt</qualifiedname>
+        <param>
+          <type>const TArrayView&lt; const uint8 &gt; &amp;</type>
+          <declname>InPlaintext</declname>
+        </param>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>OutCiphertext</declname>
+        </param>
+        <param>
+          <type>int32 &amp;</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="319" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteOpenSSL.cpp" bodystart="584" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a99d24383fd9abe07f156c2b8933ed54f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::Decrypt</definition>
+        <argsstring>(const TArrayView&lt; const uint8 &gt; &amp;InCiphertext, TArray&lt; uint8 &gt; &amp;OutPlaintext, int32 &amp;Length)</argsstring>
+        <name>Decrypt</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::Decrypt</qualifiedname>
+        <param>
+          <type>const TArrayView&lt; const uint8 &gt; &amp;</type>
+          <declname>InCiphertext</declname>
+        </param>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>OutPlaintext</declname>
+        </param>
+        <param>
+          <type>int32 &amp;</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="322" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Core/AccelByteOpenSSL.cpp" bodystart="529" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af4d02f95942cc8f35e7447aaeaa6750a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TArray&lt; uint8 &gt; &amp;</type>
+        <definition>TArray&lt; uint8 &gt; &amp; AccelByte::FAESEncryptionOpenSSL::GetKey</definition>
+        <argsstring>()</argsstring>
+        <name>GetKey</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GetKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the AES key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="325" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="325" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ab789be06c2b6902d7259e948ee2ca071" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TArray&lt; uint8 &gt; &amp;</type>
+        <definition>TArray&lt; uint8 &gt; &amp; AccelByte::FAESEncryptionOpenSSL::GetIV</definition>
+        <argsstring>()</argsstring>
+        <name>GetIV</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GetIV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the initialization vector </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="328" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="328" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ae1c00e8d25efdf47a5b6a979501c338f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::SetKey</definition>
+        <argsstring>(TArray&lt; uint8 &gt; &amp;In)</argsstring>
+        <name>SetKey</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::SetKey</qualifiedname>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>In</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set a AES key </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="331" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="331" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aed97d170b6ad1cf3dc8cd0b2b882a5e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::SetIV</definition>
+        <argsstring>(TArray&lt; uint8 &gt; &amp;In)</argsstring>
+        <name>SetIV</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::SetIV</qualifiedname>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>In</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set a initialization vector </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="334" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="334" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a71eec6b84378c6a003d8c70e924c23af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::FAESEncryptionOpenSSL::GetKeySizeInBits</definition>
+        <argsstring>() const</argsstring>
+        <name>GetKeySizeInBits</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GetKeySizeInBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="336" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="336" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a06514fe6c8318823ace922142dbc91d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::FAESEncryptionOpenSSL::GetKeySizeInBytes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetKeySizeInBytes</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GetKeySizeInBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="337" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="337" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a00d2ab79a51b2d93a530b2abd020240a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 AccelByte::FAESEncryptionOpenSSL::GetBlockSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBlockSize</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GetBlockSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="338" column="8" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="338" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a6f2a545862d685b57f1dce5c8930f787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::SetKeySizeInBits</definition>
+        <argsstring>(uint32 In)</argsstring>
+        <name>SetKeySizeInBits</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::SetKeySizeInBits</qualifiedname>
+        <param>
+          <type>uint32</type>
+          <declname>In</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="340" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="340" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a2d6538964cd4e22e643f66e2407c4208" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::SetKeySizeInBytes</definition>
+        <argsstring>(uint32 In)</argsstring>
+        <name>SetKeySizeInBytes</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::SetKeySizeInBytes</qualifiedname>
+        <param>
+          <type>uint32</type>
+          <declname>In</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="341" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="341" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a94b6c3bfec5cfcbacc7732c8f780654a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelByte::FAESEncryptionOpenSSL::SetBlockSize</definition>
+        <argsstring>(uint32 In)</argsstring>
+        <name>SetBlockSize</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::SetBlockSize</qualifiedname>
+        <param>
+          <type>uint32</type>
+          <declname>In</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="342" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="342" bodyend="342"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1abc72df9aac11046b83d9577a8481d4a9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 AccelByte::FAESEncryptionOpenSSL::GetIVSizeBytes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIVSizeBytes</name>
+        <qualifiedname>AccelByte::FAESEncryptionOpenSSL::GetIVSizeBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="345" column="7" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="345" bodyend="345"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AccelByte::FAESEncryptionOpenSSL</label>
+        <link refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CipherCtx</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FCipherCtx</label>
+        <link refid="da/d2a/class_accel_byte_1_1_f_cipher_ctx"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" line="291" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Core/AccelByteOpenSSL.h" bodystart="292" bodyend="379"/>
+    <listofallmembers>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ab66cd45c6c762a42c0e23b0fff12925a" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>BlockSize</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ac62e72170e1c869f869528643431213c" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>Cipher</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a1b8be41eb59ad290c4986ed098c53c85" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>CipherCtx</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a99d24383fd9abe07f156c2b8933ed54f" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>Decrypt</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a7942909df8391c04d196dd5681021c7d" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>Empty</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a77bbdec9f041996db72ad12a873e71ac" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>Encrypt</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a32904a0548161c375571f0052d2d5350" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>EState</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af53b7415ab9e2d86a6fd2d563e53036d" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>FAESEncryptionOpenSSL</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aa8c8c285fb901b22acb6850157ec3e41" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GenerateKey</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af0116a9adb10e599463bd18d6185b457" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GenerateRandomBytes</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a00d2ab79a51b2d93a530b2abd020240a" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GetBlockSize</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ab789be06c2b6902d7259e948ee2ca071" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GetIV</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1abc72df9aac11046b83d9577a8481d4a9" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GetIVSizeBytes</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af4d02f95942cc8f35e7447aaeaa6750a" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GetKey</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a71eec6b84378c6a003d8c70e924c23af" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GetKeySizeInBits</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a06514fe6c8318823ace922142dbc91d9" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>GetKeySizeInBytes</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a49a830e075484719a6e2833ceb3bb332" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>Initialize</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a6dabf35a7803622be055898baf50647c" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>IV</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aaa0431100806f8667e7ab301c236ffbd" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>Key</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aab728cb172acb0f3cae4f62df2cbed46" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>KeySizeInBits</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a62208959d99b2bf8ae89ba667560efc4" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>KeySizeInBytes</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a94b6c3bfec5cfcbacc7732c8f780654a" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>SetBlockSize</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1aed97d170b6ad1cf3dc8cd0b2b882a5e9" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>SetIV</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ae1c00e8d25efdf47a5b6a979501c338f" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>SetKey</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a6f2a545862d685b57f1dce5c8930f787" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>SetKeySizeInBits</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1a2d6538964cd4e22e643f66e2407c4208" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>SetKeySizeInBytes</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1af3a26c6a607c050f4c6ed463188d924f" prot="private" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>State</name></member>
+      <member refid="d1/da7/class_accel_byte_1_1_f_a_e_s_encryption_open_s_s_l_1ae63be56b864752efab9b8927391c8d7a" prot="public" virt="non-virtual"><scope>AccelByte::FAESEncryptionOpenSSL</scope><name>~FAESEncryptionOpenSSL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

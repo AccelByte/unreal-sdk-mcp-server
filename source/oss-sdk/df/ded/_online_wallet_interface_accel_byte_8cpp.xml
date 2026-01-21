@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="df/ded/_online_wallet_interface_accel_byte_8cpp" kind="file" language="C++">
+    <compoundname>OnlineWalletInterfaceAccelByte.cpp</compoundname>
+    <includes refid="df/dea/_online_wallet_interface_accel_byte_8h" local="yes">OnlineWalletInterfaceAccelByte.h</includes>
+    <includes refid="d1/d3f/_online_subsystem_accel_byte_8h" local="yes">OnlineSubsystemAccelByte.h</includes>
+    <includes local="yes">Core/AccelByteMultiRegistry.h</includes>
+    <includes refid="d2/de4/_online_identity_interface_accel_byte_8h" local="yes">OnlineIdentityInterfaceAccelByte.h</includes>
+    <includes refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h" local="yes">OnlineSubsystemAccelByteInternalHelpers.h</includes>
+    <includes refid="d8/d85/_online_async_task_accel_byte_get_currency_list_8h" local="yes">AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetCurrencyList.h</includes>
+    <includes refid="d6/d67/_online_async_task_accel_byte_get_wallet_info_8h" local="yes">AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetWalletInfo.h</includes>
+    <includes refid="d9/da8/_online_async_task_accel_byte_get_wallet_transactions_8h" local="yes">AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetWalletTransactions.h</includes>
+    <includes local="yes">OnlineSubsystemUtils.h</includes>
+    <includes local="yes">Engine/World.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="43">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="9">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="47">
+        <label>AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetCurrencyList.h</label>
+        <link refid="d8/d85/_online_async_task_accel_byte_get_currency_list_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetWalletInfo.h</label>
+        <link refid="d6/d67/_online_async_task_accel_byte_get_wallet_info_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetWalletTransactions.h</label>
+        <link refid="d9/da8/_online_async_task_accel_byte_get_wallet_transactions_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlineWalletInterfaceAccelByte.cpp</label>
+        <link refid="df/ded/_online_wallet_interface_accel_byte_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="46">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="49">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineWalletInterfaceAccelByte.h</label>
+        <link refid="df/dea/_online_wallet_interface_accel_byte_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="37">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="52">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="57">
+        <label>Engine/World.h</label>
+      </node>
+      <node id="10">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="19">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="39">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="27">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="42">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="45">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="32">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="34">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="38">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="28">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="41">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="14">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="26">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="50">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="15">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="5">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="31">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="16">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="51">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="17">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="20">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="4">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="56">
+        <label>OnlineSubsystemUtils.h</label>
+      </node>
+      <node id="12">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="24">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/dea/_online_wallet_interface_accel_byte_8h" kindref="compound">OnlineWalletInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3f/_online_subsystem_accel_byte_8h" kindref="compound">OnlineSubsystemAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Core/AccelByteMultiRegistry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/de4/_online_identity_interface_accel_byte_8h" kindref="compound">OnlineIdentityInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h" kindref="compound">OnlineSubsystemAccelByteInternalHelpers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d85/_online_async_task_accel_byte_get_currency_list_8h" kindref="compound">AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetCurrencyList.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d67/_online_async_task_accel_byte_get_wallet_info_8h" kindref="compound">AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetWalletInfo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/da8/_online_async_task_accel_byte_get_wallet_transactions_8h" kindref="compound">AsyncTasks/Wallet/OnlineAsyncTaskAccelByteGetWalletTransactions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OnlineSubsystemUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine/World.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d3/dd0/class_f_online_wallet_accel_byte_1a1a8c698d0137d576411a8618bc822e24" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a1a8c698d0137d576411a8618bc822e24" kindref="member">FOnlineWalletAccelByte::GetFromWorld</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UWorld*<sp/>World,<sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a3a6f38f5d48801786900f3161c924c1e" kindref="member">FOnlineWalletAccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem<sp/>=<sp/>::Online::GetSubsystem(World);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Subsystem<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a989ebd701752feed9b92827c4cdf897e" kindref="member">GetFromSubsystem</ref>(Subsystem,<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="d3/dd0/class_f_online_wallet_accel_byte_1a989ebd701752feed9b92827c4cdf897e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a989ebd701752feed9b92827c4cdf897e" kindref="member">FOnlineWalletAccelByte::GetFromSubsystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem,<sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a3a6f38f5d48801786900f3161c924c1e" kindref="member">FOnlineWalletAccelBytePtr</ref>&amp;<sp/>OutInterfaceInstance)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>ABSubsystem<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(Subsystem);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ABSubsystem<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>OutInterfaceInstance<sp/>=<sp/>ABSubsystem-&gt;<ref refid="d5/d5d/class_f_online_subsystem_accel_byte_1aad1343652dc7b83df1d488b32606b19e" kindref="member">GetWalletInterface</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>OutInterfaceInstance.IsValid();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d3/dd0/class_f_online_wallet_accel_byte_1a128447354f045e6120491c9f36554c32" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a128447354f045e6120491c9f36554c32" kindref="member">FOnlineWalletAccelByte::GetCurrencyList</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAlwaysRequestToService)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a2147ccb5ed6ddb1db12565d0f0014225" kindref="member">AB_OSS_INTERFACE_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Get<sp/>Currency<sp/>List,<sp/>LocalUserNum:<sp/>%d&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineIdentityPtr<sp/>IdentityInterface<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;GetIdentityInterface();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>whether<sp/>user<sp/>is<sp/>connected<sp/>or<sp/>not<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface-&gt;GetLoginStatus(LocalUserNum)<sp/>==<sp/>ELoginStatus::LoggedIn)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;const<sp/>FUniqueNetId&gt;<sp/>UserIdPtr<sp/>=<sp/>IdentityInterface-&gt;GetUniquePlayerId(LocalUserNum);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FUserOnlineAccount&gt;<sp/>UserAccount;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserIdPtr.IsValid())</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d3/d0a/class_f_online_async_task_accel_byte_get_currency_list" kindref="compound">FOnlineAsyncTaskAccelByteGetCurrencyList</ref>&gt;(<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>,<sp/>*UserIdPtr.Get(),<sp/>bAlwaysRequestToService);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Dispatching<sp/>async<sp/>task<sp/>to<sp/>attempt<sp/>to<sp/>get<sp/>currency<sp/>list!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>ErrorStr<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;get-currency-list-failed-userid-invalid&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;UserId<sp/>is<sp/>not<sp/>valid<sp/>at<sp/>user<sp/>index<sp/>&apos;%d&apos;!&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TriggerOnGetCurrencyListCompletedDelegates(LocalUserNum,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>TArray&lt;FAccelByteModelsCurrencyList&gt;{},<sp/>ErrorStr);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>ErrorStr<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;get-currency-list-failed-not-logged-in&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;User<sp/>not<sp/>logged<sp/>in<sp/>at<sp/>user<sp/>index<sp/>&apos;%d&apos;!&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>TriggerOnGetCurrencyListCompletedDelegates(LocalUserNum,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>TArray&lt;FAccelByteModelsCurrencyList&gt;{},<sp/>ErrorStr);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="d3/dd0/class_f_online_wallet_accel_byte_1a08f50a10a2d7fee13cdfcdd4c632a080" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a08f50a10a2d7fee13cdfcdd4c632a080" kindref="member">FOnlineWalletAccelByte::GetCurrencyFromCache</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CurrencyCode,<sp/>FAccelByteModelsCurrencyList&amp;<sp/>OutCurrency)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a2147ccb5ed6ddb1db12565d0f0014225" kindref="member">AB_OSS_INTERFACE_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Get<sp/>Currency,<sp/>CurrencyCode:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*CurrencyCode);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a0f5b855facdf45b32fe8caea52f431c0" kindref="member">CurrencyListLock</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1ad1dd7551ff4a44f7822de8a24fc1f2ed" kindref="member">CurrencyCodeToCurrencyListMap</ref>.Num()<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>Currency<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1ad1dd7551ff4a44f7822de8a24fc1f2ed" kindref="member">CurrencyCodeToCurrencyListMap</ref>.Find(CurrencyCode);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Currency<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutCurrency<sp/>=<sp/>Currency-&gt;Get();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Currency<sp/>found<sp/>for<sp/>currency<sp/>code<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*CurrencyCode);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Currency<sp/>not<sp/>found<sp/>for<sp/>currency<sp/>code<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*CurrencyCode);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d3/dd0/class_f_online_wallet_accel_byte_1ab8d9c7b36b7e9c0e82a76c493946676c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1ab8d9c7b36b7e9c0e82a76c493946676c" kindref="member">FOnlineWalletAccelByte::GetAllCurrencyFromCache</ref>(TArray&lt;FAccelByteModelsCurrencyList&gt;&amp;<sp/>OutCurrencyList)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a0f5b855facdf45b32fe8caea52f431c0" kindref="member">CurrencyListLock</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1ad1dd7551ff4a44f7822de8a24fc1f2ed" kindref="member">CurrencyCodeToCurrencyListMap</ref>.Num()<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>Currency<sp/>:<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1ad1dd7551ff4a44f7822de8a24fc1f2ed" kindref="member">CurrencyCodeToCurrencyListMap</ref>)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutCurrencyList.Add(Currency.Value.Get());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="d3/dd0/class_f_online_wallet_accel_byte_1a152e3b07ffdacfb782ef9f43afd820a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a152e3b07ffdacfb782ef9f43afd820a9" kindref="member">FOnlineWalletAccelByte::AddCurrencyToList</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CurrencyCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteModelsCurrencyList&gt;&amp;<sp/>InCurrencyList)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a0f5b855facdf45b32fe8caea52f431c0" kindref="member">CurrencyListLock</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1ad1dd7551ff4a44f7822de8a24fc1f2ed" kindref="member">CurrencyCodeToCurrencyListMap</ref>.Add(CurrencyCode,<sp/>InCurrencyList);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="d3/dd0/class_f_online_wallet_accel_byte_1af848e9c76138a8f636687f7e2519ea20" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1af848e9c76138a8f636687f7e2519ea20" kindref="member">FOnlineWalletAccelByte::GetWalletInfoByCurrencyCode</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CurrencyCode,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAlwaysRequestToService)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a2147ccb5ed6ddb1db12565d0f0014225" kindref="member">AB_OSS_INTERFACE_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Get<sp/>Wallet<sp/>Info,<sp/>LocalUserNum:<sp/>%d&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineIdentityPtr<sp/>IdentityInterface<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;GetIdentityInterface();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>whether<sp/>user<sp/>is<sp/>connected<sp/>or<sp/>not<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface-&gt;GetLoginStatus(LocalUserNum)<sp/>==<sp/>ELoginStatus::LoggedIn)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;const<sp/>FUniqueNetId&gt;<sp/>UserIdPtr<sp/>=<sp/>IdentityInterface-&gt;GetUniquePlayerId(LocalUserNum);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FUserOnlineAccount&gt;<sp/>UserAccount;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserIdPtr.IsValid())</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d0/d0b/class_f_online_async_task_accel_byte_get_wallet_info" kindref="compound">FOnlineAsyncTaskAccelByteGetWalletInfo</ref>&gt;(<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>,<sp/>*UserIdPtr.Get(),<sp/>CurrencyCode,<sp/>bAlwaysRequestToService);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Dispatching<sp/>async<sp/>task<sp/>to<sp/>attempt<sp/>to<sp/>get<sp/>wallet<sp/>info!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>ErrorStr<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;get-wallet-info-failed-userid-invalid&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;UserId<sp/>is<sp/>not<sp/>valid<sp/>at<sp/>user<sp/>index<sp/>&apos;%d&apos;!&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TriggerOnGetWalletInfoCompletedDelegates(LocalUserNum,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>FAccelByteModelsWalletInfo{},<sp/>ErrorStr);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>ErrorStr<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;get-wallet-info-failed-not-logged-in&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;User<sp/>not<sp/>logged<sp/>in<sp/>at<sp/>user<sp/>index<sp/>&apos;%d&apos;!&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>TriggerOnGetWalletInfoCompletedDelegates(LocalUserNum,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>FAccelByteModelsWalletInfo{},<sp/>ErrorStr);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="d3/dd0/class_f_online_wallet_accel_byte_1a08099bad4d3d9b8a3c2d039258553373" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a08099bad4d3d9b8a3c2d039258553373" kindref="member">FOnlineWalletAccelByte::GetWalletInfoFromCache</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CurrencyCode,<sp/>FAccelByteModelsWalletInfo&amp;<sp/>OutWalletInfo)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineIdentityPtr<sp/>IdentityInterface<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;GetIdentityInterface();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1af2567362cf7b52ef519a9f8e4bd66d97" kindref="member">WalletInfoListLock</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TMap&lt;FString,<sp/>TSharedRef&lt;FAccelByteModelsWalletInfo&gt;&gt;<sp/>CurrencyToWalletInfoMap<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1aaab4ef0375a212deb57ad5f9ac1c896e" kindref="member">UserToWalletInfoMap</ref>.FindRef(IdentityInterface-&gt;GetUniquePlayerId(LocalUserNum)-&gt;AsShared());</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CurrencyToWalletInfoMap.Num()<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;FAccelByteModelsWalletInfo&gt;*<sp/>WalletInfo<sp/>=<sp/>CurrencyToWalletInfoMap.Find(CurrencyCode);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WalletInfo<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutWalletInfo<sp/>=<sp/>WalletInfo-&gt;Get();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="d3/dd0/class_f_online_wallet_accel_byte_1adca9fd43f32938373aed02e5e0af0d89" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1adca9fd43f32938373aed02e5e0af0d89" kindref="member">FOnlineWalletAccelByte::AddWalletInfoToList</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CurrencyCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedRef&lt;FAccelByteModelsWalletInfo&gt;&amp;<sp/>InWalletInfo)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineIdentityPtr<sp/>IdentityInterface<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;GetIdentityInterface();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>whether<sp/>user<sp/>is<sp/>connected<sp/>or<sp/>not<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface-&gt;GetLoginStatus(LocalUserNum)<sp/>==<sp/>ELoginStatus::LoggedIn)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;const<sp/>FUniqueNetId&gt;<sp/>UserIdPtr<sp/>=<sp/>IdentityInterface-&gt;GetUniquePlayerId(LocalUserNum);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserIdPtr.IsValid())</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FScopeLock<sp/>ScopeLock(&amp;<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1af2567362cf7b52ef519a9f8e4bd66d97" kindref="member">WalletInfoListLock</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>CurrencyCodeToWalletInfo<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1aaab4ef0375a212deb57ad5f9ac1c896e" kindref="member">UserToWalletInfoMap</ref>.FindRef(UserIdPtr.ToSharedRef());</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CurrencyCodeToWalletInfo.Emplace(CurrencyCode,<sp/>InWalletInfo);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1aaab4ef0375a212deb57ad5f9ac1c896e" kindref="member">UserToWalletInfoMap</ref>.Emplace(UserIdPtr.ToSharedRef(),<sp/>CurrencyCodeToWalletInfo);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="d3/dd0/class_f_online_wallet_accel_byte_1a6b985b859f3be0f4132ff0044688b188" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a6b985b859f3be0f4132ff0044688b188" kindref="member">FOnlineWalletAccelByte::ListWalletTransactionsByCurrencyCode</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>CurrencyCode,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>Offset,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>Limit)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a2147ccb5ed6ddb1db12565d0f0014225" kindref="member">AB_OSS_INTERFACE_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Get<sp/>Wallet<sp/>Transaction<sp/>List,<sp/>LocalUserNum:<sp/>%d&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineIdentityPtr<sp/>IdentityInterface<sp/>=<sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;GetIdentityInterface();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>whether<sp/>user<sp/>is<sp/>connected<sp/>or<sp/>not<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface-&gt;GetLoginStatus(LocalUserNum)<sp/>==<sp/>ELoginStatus::LoggedIn)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;const<sp/>FUniqueNetId&gt;<sp/>UserIdPtr<sp/>=<sp/>IdentityInterface-&gt;GetUniquePlayerId(LocalUserNum);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FUserOnlineAccount&gt;<sp/>UserAccount;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserIdPtr.IsValid())</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>-&gt;CreateAndDispatchAsyncTaskParallel&lt;<ref refid="d7/d5a/class_f_online_async_task_accel_byte_get_wallet_transactions" kindref="compound">FOnlineAsyncTaskAccelByteGetWalletTransactions</ref>&gt;(<ref refid="d3/dd0/class_f_online_wallet_accel_byte_1a836fb96dc529d8aa276eabc8d0f7286b" kindref="member">AccelByteSubsystem</ref>,<sp/>*UserIdPtr.Get(),<sp/>CurrencyCode,<sp/>Offset,<sp/>Limit);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;Dispatching<sp/>async<sp/>task<sp/>to<sp/>attempt<sp/>to<sp/>get<sp/>wallet<sp/>transaction<sp/>list!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>ErrorStr<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;get-wallet-transaction-list-failed-userid-invalid&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;UserId<sp/>is<sp/>not<sp/>valid<sp/>at<sp/>user<sp/>index<sp/>&apos;%d&apos;!&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TriggerOnGetWalletTransactionsCompletedDelegates(LocalUserNum,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>TArray&lt;FAccelByteModelsWalletTransactionInfo&gt;{},<sp/>ErrorStr);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>ErrorStr<sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;get-wallet-transaction-list-failed-not-logged-in&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a68d3987755df9aed5baf7e778d066de9" kindref="member">AB_OSS_INTERFACE_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;User<sp/>not<sp/>logged<sp/>in<sp/>at<sp/>user<sp/>index<sp/>&apos;%d&apos;!&quot;</highlight><highlight class="normal">),<sp/>LocalUserNum);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>TriggerOnGetWalletTransactionsCompletedDelegates(LocalUserNum,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>TArray&lt;FAccelByteModelsWalletTransactionInfo&gt;{},<sp/>ErrorStr);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineWalletInterfaceAccelByte.cpp"/>
+  </compounddef>
+</doxygen>

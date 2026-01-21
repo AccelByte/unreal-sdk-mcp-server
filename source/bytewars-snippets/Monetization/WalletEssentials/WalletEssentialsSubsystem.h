@@ -1,0 +1,49 @@
+﻿// Copyright (c) 2023 AccelByte Inc. All Rights Reserved.
+// This is licensed software from AccelByte Inc, for limitations
+// and restrictions contact your company contract manager.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "OnlineSubsystemAccelByte.h"
+#include "WalletEssentialsModel.h"
+#include "Core/AssetManager/TutorialModules/TutorialModuleSubsystem.h"
+#include "WalletEssentialsSubsystem.generated.h"
+
+UCLASS()
+class ACCELBYTEWARS_API UWalletEssentialsSubsystem : public UTutorialModuleSubsystem
+{
+	GENERATED_BODY()
+
+	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+	virtual void Deinitialize() override;
+
+// @@@SNIPSTART WalletEssentialsSubsystem.h-public
+// @@@MULTISNIP QueryOrGetWalletInfoByCurrencyCode {"selectedLines": ["1-5"]}
+// @@@MULTISNIP OnQueryOrGetWalletInfoCompleteDelegates {"selectedLines": ["1", "6"]}
+public:
+	void QueryOrGetWalletInfoByCurrencyCode(
+		const APlayerController* OwningPlayer,
+		const FString& CurrencyCode,
+		const bool bAlwaysRequestToService = true) const;
+	FOnGetWalletInfoComplete OnQueryOrGetWalletInfoCompleteDelegates;
+// @@@SNIPEND
+
+// @@@SNIPSTART WalletEssentialsSubsystem.h-private
+// @@@MULTISNIP Interface {"selectedLines": ["1-2"]}
+// @@@MULTISNIP OnQueryOrGetWalletInfoByCurrencyCodeComplete {"selectedLines": ["1", "4-8"]}
+// @@@MULTISNIP GetLocalUserNumFromPlayerController {"selectedLines": ["1", "11"]}
+private:
+	FOnlineWalletV2AccelBytePtr WalletInterface;
+
+	void OnQueryOrGetWalletInfoByCurrencyCodeComplete(
+		int32 LocalUserNum,
+		bool bWasSuccessful,
+		const FAccelByteModelsWalletInfoResponse& Response,
+		const FString& Error) const;
+
+#pragma region "Utilities"
+	static int32 GetLocalUserNumFromPlayerController(const APlayerController* PlayerController);
+#pragma endregion
+// @@@SNIPEND
+};

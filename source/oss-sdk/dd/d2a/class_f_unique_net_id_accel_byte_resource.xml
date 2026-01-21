@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dd/d2a/class_f_unique_net_id_accel_byte_resource" kind="class" language="C++" prot="public">
+    <compoundname>FUniqueNetIdAccelByteResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FUniqueNetIdString</basecompoundref>
+    <derivedcompoundref refid="df/d08/class_f_unique_net_id_accel_byte_user" prot="public" virt="non-virtual">FUniqueNetIdAccelByteUser</derivedcompoundref>
+    <includes refid="d2/daa/_online_subsystem_accel_byte_types_8h" local="no">OnlineSubsystemAccelByteTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a4d24495ec1934ad99b3a596396df006c" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FUniqueNetIdAccelByteResource::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::__pad0__</qualifiedname>
+        <bitfield> static FUniqueNetIdAccelByteResourceRef CastChecked(FUniqueNetId const&amp; InNetId)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="206" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a4e9ce0b4e5c797da6d6b94deea899cda" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>TArgs</declname>
+            <defname>TArgs</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a49b2dd11cc794f788519f3bbff2a93ff" kindref="member">FUniqueNetIdAccelByteResourceRef</ref></type>
+        <definition>static FUniqueNetIdAccelByteResourceRef FUniqueNetIdAccelByteResource::Create</definition>
+        <argsstring>(TArgs &amp;&amp;... Args)</argsstring>
+        <name>Create</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::Create</qualifiedname>
+        <param>
+          <type>TArgs &amp;&amp;...</type>
+          <declname>Args</declname>
+        </param>
+        <briefdescription>
+<para>Create a new <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments that will be forwarded to the Constructor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A shared reference of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="152" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a733c2beaeff986a988622eaca8424990" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a49b2dd11cc794f788519f3bbff2a93ff" kindref="member">FUniqueNetIdAccelByteResourceRef</ref></type>
+        <definition>FUniqueNetIdAccelByteResourceRef FUniqueNetIdAccelByteResource::Cast</definition>
+        <argsstring>(FUniqueNetId const &amp;InNetId)</argsstring>
+        <name>Cast</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::Cast</qualifiedname>
+        <param>
+          <type>FUniqueNetId const &amp;</type>
+          <declname>InNetId</declname>
+        </param>
+        <briefdescription>
+<para>Takes an UniqueNetId object and converts it to an <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance if the type matches. Will return an Invalid ID reference if the conversion cannot be made. Prefer the other Cast methods if possible. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UniqueNetId object to attempt to convert to an <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A shared reference of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="165" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="123" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a49e266130612eea08f8c57bd2543621f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a3d8ed45cfa42526414081437cab023c7" kindref="member">FUniqueNetIdAccelByteResourcePtr</ref></type>
+        <definition>FUniqueNetIdAccelByteResourcePtr FUniqueNetIdAccelByteResource::TryCast</definition>
+        <argsstring>(FUniqueNetId const &amp;InNetId)</argsstring>
+        <name>TryCast</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::TryCast</qualifiedname>
+        <param>
+          <type>FUniqueNetId const &amp;</type>
+          <declname>InNetId</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to convert an UniqueNetId object to an <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance. Will return nullptr if the cast cannot be made. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UniqueNetId object to attempt to convert to an <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A shared pointer of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="175" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1aa07fefe843ca4b3916c9f81ac3bdf43b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a3d8ed45cfa42526414081437cab023c7" kindref="member">FUniqueNetIdAccelByteResourcePtr</ref></type>
+        <definition>FUniqueNetIdAccelByteResourcePtr FUniqueNetIdAccelByteResource::TryCast</definition>
+        <argsstring>(FUniqueNetIdRef const &amp;InNetIdRef)</argsstring>
+        <name>TryCast</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::TryCast</qualifiedname>
+        <param>
+          <type>FUniqueNetIdRef const &amp;</type>
+          <declname>InNetIdRef</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to convert a shared reference of UniqueNetId object to an <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance. Will return nullptr if the cast cannot be made. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetIdRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shared reference of UniqueNetId object to attempt to convert to an <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A shared pointer of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="185" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a5d58e60cd2e098ff4c484f99056cc497" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a49b2dd11cc794f788519f3bbff2a93ff" kindref="member">FUniqueNetIdAccelByteResourceRef</ref></type>
+        <definition>static FUniqueNetIdAccelByteResourceRef FUniqueNetIdAccelByteResource::Invalid</definition>
+        <argsstring>()</argsstring>
+        <name>Invalid</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::Invalid</qualifiedname>
+        <briefdescription>
+<para>Convenience method to construct an invalid instance of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A shared reference of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId object that has Invalid ID. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="192" column="41"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a4811dc5d42c361e7a7d9f8b589052f5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a49b2dd11cc794f788519f3bbff2a93ff" kindref="member">FUniqueNetIdAccelByteResourceRef</ref></type>
+        <definition>FUniqueNetIdAccelByteResourceRef FUniqueNetIdAccelByteResource::CastChecked</definition>
+        <argsstring>(FUniqueNetIdRef const &amp;InNetIdRef)</argsstring>
+        <name>CastChecked</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::CastChecked</qualifiedname>
+        <param>
+          <type>FUniqueNetIdRef const &amp;</type>
+          <declname>InNetIdRef</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to convert a shared reference of UniqueNetId object to an <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance. Guarded by a check call that will crash if an improper ID is attempted to be casted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetIdRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shared reference of UniqueNetId object that will be converted to <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A shared reference of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> Resource UniqueNetId object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="225" column="41" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a3b32c2019a22ce44a63e2d447a59826b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FName</type>
+        <definition>FName FUniqueNetIdAccelByteResource::GetType</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetType</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::GetType</qualifiedname>
+        <reimplementedby refid="df/d08/class_f_unique_net_id_accel_byte_user_1a863fba6d2a50efac12c48575a5dbd360">GetType</reimplementedby>
+        <briefdescription>
+<para>Return the type of this unique ID. In this case, it should always be ACCELBYTE_RESOURCE_ID_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ACCELBYTE_RESOURCE_ID_TYPE. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="199" column="15" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a406eb71aa5cceb56e002b7deeec4605d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FUniqueNetIdAccelByteResource::IsValid</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsValid</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::IsValid</qualifiedname>
+        <reimplementedby refid="df/d08/class_f_unique_net_id_accel_byte_user_1a933adc46e687e011ff4082af4c455f94">IsValid</reimplementedby>
+        <briefdescription>
+<para>Check whether this resource ID is valid or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="204" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a94de5ed72a0c8caf2f28da8f7affd2a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</definition>
+        <argsstring>()</argsstring>
+        <name>FUniqueNetIdAccelByteResource</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="231" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineSubsystemAccelByteTypes.cpp" bodystart="56" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a374184a938c251c5f112a9010d5d6ba2" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</definition>
+        <argsstring>(FString const &amp;InNetIdStr)</argsstring>
+        <name>FUniqueNetIdAccelByteResource</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>InNetIdStr</declname>
+        </param>
+        <briefdescription>
+<para>Internal constructor that accepts an UniqueNetId string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetIdStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UniqueNetId string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="238" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a53fe686eaa439d96f5f80cb276fad8db" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</definition>
+        <argsstring>(FString &amp;&amp;InNetIdStr)</argsstring>
+        <name>FUniqueNetIdAccelByteResource</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</qualifiedname>
+        <param>
+          <type>FString &amp;&amp;</type>
+          <declname>InNetIdStr</declname>
+        </param>
+        <briefdescription>
+<para>Internal constructor that pass the ownership of UniqueNetId string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetIdStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UniqueNetId string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="245" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a30e663352daddcf8aeafbeac89b71f74" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</definition>
+        <argsstring>(FUniqueNetId const &amp;InNetId)</argsstring>
+        <name>FUniqueNetIdAccelByteResource</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</qualifiedname>
+        <param>
+          <type>FUniqueNetId const &amp;</type>
+          <declname>InNetId</declname>
+        </param>
+        <briefdescription>
+<para>Internal constructor that accepts an instance of UniqueNetId. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UniqueNetId object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="252" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1ab961ed21c2674536004d467a7df9cc32" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</definition>
+        <argsstring>(FString const &amp;InNetIdStr, FName const InType)</argsstring>
+        <name>FUniqueNetIdAccelByteResource</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>InNetIdStr</declname>
+        </param>
+        <param>
+          <type>FName const</type>
+          <declname>InType</declname>
+        </param>
+        <briefdescription>
+<para>Internal constructor that accepts an UniqueNetId string and its type name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetIdStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UniqueNetId string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type name of UniqueNetId. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="260" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a0026251d5930b0f9a15cde47e8085bcf" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</definition>
+        <argsstring>(FString &amp;&amp;InNetIdStr, FName const InType)</argsstring>
+        <name>FUniqueNetIdAccelByteResource</name>
+        <qualifiedname>FUniqueNetIdAccelByteResource::FUniqueNetIdAccelByteResource</qualifiedname>
+        <param>
+          <type>FString &amp;&amp;</type>
+          <declname>InNetIdStr</declname>
+        </param>
+        <param>
+          <type>FName const</type>
+          <declname>InType</declname>
+        </param>
+        <briefdescription>
+<para>Internal constructor that accepts the ownership of UniqueNetId string and its type name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InNetIdStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UniqueNetId string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type name of UniqueNetId. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="268" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Unique ID instance for identifying generic <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> resources other than users. User IDs should use <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> as they have extra composite components that are useful for identifying a user on their specific platform. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FUniqueNetIdAccelByteResource</label>
+        <link refid="dd/d2a/class_f_unique_net_id_accel_byte_resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FUniqueNetIdAccelByteUser</label>
+        <link refid="df/d08/class_f_unique_net_id_accel_byte_user"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FUniqueNetIdString</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FUniqueNetIdAccelByteResource</label>
+        <link refid="dd/d2a/class_f_unique_net_id_accel_byte_resource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FUniqueNetIdString</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" line="140" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineSubsystemAccelByteTypes.h" bodystart="142" bodyend="269"/>
+    <listofallmembers>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a4d24495ec1934ad99b3a596396df006c" prot="public" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>__pad0__</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a733c2beaeff986a988622eaca8424990" prot="public" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>Cast</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a4811dc5d42c361e7a7d9f8b589052f5f" prot="public" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>CastChecked</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a4e9ce0b4e5c797da6d6b94deea899cda" prot="public" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>Create</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a94de5ed72a0c8caf2f28da8f7affd2a2" prot="protected" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>FUniqueNetIdAccelByteResource</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a374184a938c251c5f112a9010d5d6ba2" prot="protected" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>FUniqueNetIdAccelByteResource</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a53fe686eaa439d96f5f80cb276fad8db" prot="protected" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>FUniqueNetIdAccelByteResource</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a30e663352daddcf8aeafbeac89b71f74" prot="protected" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>FUniqueNetIdAccelByteResource</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1ab961ed21c2674536004d467a7df9cc32" prot="protected" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>FUniqueNetIdAccelByteResource</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a0026251d5930b0f9a15cde47e8085bcf" prot="protected" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>FUniqueNetIdAccelByteResource</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a3b32c2019a22ce44a63e2d447a59826b" prot="public" virt="virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>GetType</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a5d58e60cd2e098ff4c484f99056cc497" prot="public" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>Invalid</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a406eb71aa5cceb56e002b7deeec4605d" prot="public" virt="virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>IsValid</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1a49e266130612eea08f8c57bd2543621f" prot="public" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>TryCast</name></member>
+      <member refid="dd/d2a/class_f_unique_net_id_accel_byte_resource_1aa07fefe843ca4b3916c9f81ac3bdf43b" prot="public" virt="non-virtual"><scope>FUniqueNetIdAccelByteResource</scope><name>TryCast</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

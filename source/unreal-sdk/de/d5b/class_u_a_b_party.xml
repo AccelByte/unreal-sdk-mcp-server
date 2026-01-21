@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="de/d5b/class_u_a_b_party" kind="class" language="C++" prot="public">
+    <compoundname>UABParty</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UObject</basecompoundref>
+    <includes refid="d1/de9/_a_b_party_8h" local="no">ABParty.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d5b/class_u_a_b_party_1a7895b12cbe4fef8e9ec0c3d23e01d96f" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref></type>
+        <definition>AccelByte::FApiClientPtr UABParty::ApiClientPtr</definition>
+        <argsstring></argsstring>
+        <name>ApiClientPtr</name>
+        <qualifiedname>UABParty::ApiClientPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="282" column="26" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a8fa665b67d2127bac033fe8c5de30568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetApiClient</definition>
+        <argsstring>(AccelByte::FApiClientPtr const &amp;NewApiClientPtr)</argsstring>
+        <name>SetApiClient</name>
+        <qualifiedname>UABParty::SetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1af0c390f8ec3d3b32e613eec7b5d7ee9e" kindref="member">AccelByte::FApiClientPtr</ref> const &amp;</type>
+          <declname>NewApiClientPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="171" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a33742bd081a3ff1a5eea9d5f4a0c40d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyInfo</definition>
+        <argsstring>(FDInfoPartyResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyInfo</name>
+        <qualifiedname>UABParty::PartyInfo</qualifiedname>
+        <param>
+          <type>FDInfoPartyResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="177" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="16" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1ad3d8b55df12f641d8987a2345b4789f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::CreateParty</definition>
+        <argsstring>(FDPartyCreateResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>CreateParty</name>
+        <qualifiedname>UABParty::CreateParty</qualifiedname>
+        <param>
+          <type>FDPartyCreateResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="180" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="40" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a795ea4f23c68c8b5a6bf8a22671028b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyLeave</definition>
+        <argsstring>(FDLeavePartyResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyLeave</name>
+        <qualifiedname>UABParty::PartyLeave</qualifiedname>
+        <param>
+          <type>FDLeavePartyResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="183" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="65" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a0888608a49a4241d62cd0b0adb1b4ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyInvite</definition>
+        <argsstring>(FPartyInviteRequest const &amp;Request, FDPartyInviteResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyInvite</name>
+        <qualifiedname>UABParty::PartyInvite</qualifiedname>
+        <param>
+          <type><ref refid="da/d80/struct_f_party_invite_request" kindref="compound">FPartyInviteRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyInviteResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="186" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="89" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1af1ed08b581656e5ef2089fef9414e039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyJoin</definition>
+        <argsstring>(FPartyJoinRequest const &amp;Request, FDPartyJoinResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyJoin</name>
+        <qualifiedname>UABParty::PartyJoin</qualifiedname>
+        <param>
+          <type><ref refid="d0/da5/struct_f_party_join_request" kindref="compound">FPartyJoinRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyJoinResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="189" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="116" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1af5778f7e70365d63032aa77b4bb6176a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyReject</definition>
+        <argsstring>(FPartyRejectRequest const &amp;Request, FDPartyRejectResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyReject</name>
+        <qualifiedname>UABParty::PartyReject</qualifiedname>
+        <param>
+          <type><ref refid="d6/d5c/struct_f_party_reject_request" kindref="compound">FPartyRejectRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyRejectResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="192" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="143" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a7a0dc7e69daf56a5b4f9d77e52dcadf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyKick</definition>
+        <argsstring>(FPartyKickRequest const &amp;Request, FDPartyKickResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyKick</name>
+        <qualifiedname>UABParty::PartyKick</qualifiedname>
+        <param>
+          <type><ref refid="db/df0/struct_f_party_kick_request" kindref="compound">FPartyKickRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyKickResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="195" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="170" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a3c8377242f4bd7e059086c1a360edaf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyGenerateCode</definition>
+        <argsstring>(FDPartyGenerateCodeResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyGenerateCode</name>
+        <qualifiedname>UABParty::PartyGenerateCode</qualifiedname>
+        <param>
+          <type>FDPartyGenerateCodeResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="198" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="197" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a4061e4ff54fc2256aae9242bae09650a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyGetCode</definition>
+        <argsstring>(FDPartyGetCodeResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyGetCode</name>
+        <qualifiedname>UABParty::PartyGetCode</qualifiedname>
+        <param>
+          <type>FDPartyGetCodeResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="201" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="224" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1ae4c65a6bfc06de6f0a2367a1be5b9331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyDeleteCode</definition>
+        <argsstring>(FDPartyDeleteCodeResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyDeleteCode</name>
+        <qualifiedname>UABParty::PartyDeleteCode</qualifiedname>
+        <param>
+          <type>FDPartyDeleteCodeResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="204" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="250" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1ad18b201ca58ea846d448a698f8c85128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyJoinViaCode</definition>
+        <argsstring>(FPartyJoinViaCodeRequest const &amp;Request, FDPartyJoinViaCodeResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyJoinViaCode</name>
+        <qualifiedname>UABParty::PartyJoinViaCode</qualifiedname>
+        <param>
+          <type><ref refid="d1/d50/struct_f_party_join_via_code_request" kindref="compound">FPartyJoinViaCodeRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyJoinViaCodeResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="207" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="276" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1af32fb3e62f1ae4f3b45a88018d05b7e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::PartyPromoteLeader</definition>
+        <argsstring>(FPartyPromoteLeaderRequest const &amp;Request, FDPartyPromoteLeaderResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>PartyPromoteLeader</name>
+        <qualifiedname>UABParty::PartyPromoteLeader</qualifiedname>
+        <param>
+          <type><ref refid="d7/db5/struct_f_party_promote_leader_request" kindref="compound">FPartyPromoteLeaderRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyPromoteLeaderResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="210" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="303" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a8f9df2d6ed8d577b1fdff961b8d9fdc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetPartySizeLimit</definition>
+        <argsstring>(const FString &amp;PartyId, const int32 Limit, const FDHandler &amp;OnSuccess, FDErrorHandler OnError)</argsstring>
+        <name>SetPartySizeLimit</name>
+        <qualifiedname>UABParty::SetPartySizeLimit</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PartyId</declname>
+        </param>
+        <param>
+          <type>const int32</type>
+          <declname>Limit</declname>
+        </param>
+        <param>
+          <type>const FDHandler &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="214" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="359" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1af74674eeac489794fc9afdaf4b45bf99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::GetPartyData</definition>
+        <argsstring>(FGetPartyDataRequest const &amp;Request, FDPartyGetDataResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>GetPartyData</name>
+        <qualifiedname>UABParty::GetPartyData</qualifiedname>
+        <param>
+          <type><ref refid="d3/d6c/struct_f_get_party_data_request" kindref="compound">FGetPartyDataRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyGetDataResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="217" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="381" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1ade61f6ac66c7f723481ebf374b2935fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::GetPartyStorage</definition>
+        <argsstring>(FGetPartyStorageRequest const &amp;Request, FDPartyGetStorageResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>GetPartyStorage</name>
+        <qualifiedname>UABParty::GetPartyStorage</qualifiedname>
+        <param>
+          <type><ref refid="d4/d8f/struct_f_get_party_storage_request" kindref="compound">FGetPartyStorageRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyGetStorageResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="220" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="407" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a3ac02bb3aad594cbf94e6f059bde2183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::WritePartyStorage</definition>
+        <argsstring>(FWritePartyStorageRequest const &amp;Request, FDPartyWriteDataResponse OnResponse, FDErrorHandler OnError)</argsstring>
+        <name>WritePartyStorage</name>
+        <qualifiedname>UABParty::WritePartyStorage</qualifiedname>
+        <param>
+          <type><ref refid="dd/d07/struct_f_write_party_storage_request" kindref="compound">FWritePartyStorageRequest</ref> const &amp;</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type>FDPartyWriteDataResponse</type>
+          <declname>OnResponse</declname>
+        </param>
+        <param>
+          <type>FDErrorHandler</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="224" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="433" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a2741092e9e77df5dce784121e4c11ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyDataUpdate</definition>
+        <argsstring>(FDPartyDataUpdateNotif OnNotif)</argsstring>
+        <name>SetOnPartyDataUpdate</name>
+        <qualifiedname>UABParty::SetOnPartyDataUpdate</qualifiedname>
+        <param>
+          <type>FDPartyDataUpdateNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="230" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="344" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a585fca6fb8e4fe6dba858041275f7696" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyDataUpdateNotifDelegate</definition>
+        <argsstring>(FDPartyDataUpdateNotif OnNotif)</argsstring>
+        <name>SetOnPartyDataUpdateNotifDelegate</name>
+        <qualifiedname>UABParty::SetOnPartyDataUpdateNotifDelegate</qualifiedname>
+        <param>
+          <type>FDPartyDataUpdateNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="233" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="330" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a556969fb5efe0ea13581f58a3e58619a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyGetInvited</definition>
+        <argsstring>(FDPartyGetInvitedNotif OnNotif)</argsstring>
+        <name>SetOnPartyGetInvited</name>
+        <qualifiedname>UABParty::SetOnPartyGetInvited</qualifiedname>
+        <param>
+          <type>FDPartyGetInvitedNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="235" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="461" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a6dc0a929b4244cd8f1a3e35d924f7427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyJoin</definition>
+        <argsstring>(FDPartyJoinNotif OnNotif)</argsstring>
+        <name>SetOnPartyJoin</name>
+        <qualifiedname>UABParty::SetOnPartyJoin</qualifiedname>
+        <param>
+          <type>FDPartyJoinNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="238" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="475" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a256bfa3d4467ea187dc1a8608b1aff20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyReject</definition>
+        <argsstring>(FDPartyRejectNotif OnNotif)</argsstring>
+        <name>SetOnPartyReject</name>
+        <qualifiedname>UABParty::SetOnPartyReject</qualifiedname>
+        <param>
+          <type>FDPartyRejectNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="241" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="489" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1ad95763e27df36c0ec7b4b0866e51023b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyLeave</definition>
+        <argsstring>(FDPartyLeaveNotif OnNotif)</argsstring>
+        <name>SetOnPartyLeave</name>
+        <qualifiedname>UABParty::SetOnPartyLeave</qualifiedname>
+        <param>
+          <type>FDPartyLeaveNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+<para>Set a trigger function when a party member leave from the party. This function is DEPRECATED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnNotif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate parameter with returned model called <ref refid="d9/ddf/struct_f_accel_byte_models_leave_party_notice" kindref="compound">FAccelByteModelsLeavePartyNotice</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="248" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="503" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a2bd09ca2811afd9acb8d8a39007b31fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyMemberLeave</definition>
+        <argsstring>(FDPartyMemberLeaveNotif OnNotif)</argsstring>
+        <name>SetOnPartyMemberLeave</name>
+        <qualifiedname>UABParty::SetOnPartyMemberLeave</qualifiedname>
+        <param>
+          <type>FDPartyMemberLeaveNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+<para>Set a trigger function when a party member leave from the party. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnNotif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>delegate parameter with returned model called <ref refid="d9/ddf/struct_f_accel_byte_models_leave_party_notice" kindref="compound">FAccelByteModelsLeavePartyNotice</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="255" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="517" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a66782539c62b571cb7728e9bf0c453f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyKick</definition>
+        <argsstring>(FDPartyKickNotif OnNotif)</argsstring>
+        <name>SetOnPartyKick</name>
+        <qualifiedname>UABParty::SetOnPartyKick</qualifiedname>
+        <param>
+          <type>FDPartyKickNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="258" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="531" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1aadb69ecd48f9358ce281c003c39604dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyUpdate</definition>
+        <argsstring>(FDPartyUpdateNotif OnNotif)</argsstring>
+        <name>SetOnPartyUpdate</name>
+        <qualifiedname>UABParty::SetOnPartyUpdate</qualifiedname>
+        <param>
+          <type>FDPartyUpdateNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="261" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="545" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1aee9fbee3faee6f837d9441dc0f94677a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyInvite</definition>
+        <argsstring>(FDPartyInviteNotif OnNotif)</argsstring>
+        <name>SetOnPartyInvite</name>
+        <qualifiedname>UABParty::SetOnPartyInvite</qualifiedname>
+        <param>
+          <type>FDPartyInviteNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="264" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="558" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a905ad9e929e3f2f90f5046b2f4294370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyMemberConnect</definition>
+        <argsstring>(FDPartyMemberConnectNotif OnNotif)</argsstring>
+        <name>SetOnPartyMemberConnect</name>
+        <qualifiedname>UABParty::SetOnPartyMemberConnect</qualifiedname>
+        <param>
+          <type>FDPartyMemberConnectNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+<para>Set a trigger function when a party member reconnecting to the lobby. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnNotif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>return models called <ref refid="d8/d71/struct_f_accel_byte_models_party_member_connection_notice" kindref="compound">FAccelByteModelsPartyMemberConnectionNotice</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="271" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="573" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d5b/class_u_a_b_party_1a41673b8b9cda96cf5af39192494c5860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UABParty::SetOnPartyMemberDisconnect</definition>
+        <argsstring>(FDPartyMemberDisconnectNotif OnNotif)</argsstring>
+        <name>SetOnPartyMemberDisconnect</name>
+        <qualifiedname>UABParty::SetOnPartyMemberDisconnect</qualifiedname>
+        <param>
+          <type>FDPartyMemberDisconnectNotif</type>
+          <declname>OnNotif</declname>
+        </param>
+        <briefdescription>
+<para>Set a trigger function when a party member disconnect from lobby. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnNotif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>return models called <ref refid="d8/d71/struct_f_accel_byte_models_party_member_connection_notice" kindref="compound">FAccelByteModelsPartyMemberConnectionNotice</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="278" column="6" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/Blueprints/ABParty.cpp" bodystart="587" bodyend="599"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>UABParty</label>
+        <link refid="de/d5b/class_u_a_b_party"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>UABParty</label>
+        <link refid="de/d5b/class_u_a_b_party"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" line="167" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/Blueprints/ABParty.h" bodystart="168" bodyend="283"/>
+    <listofallmembers>
+      <member refid="de/d5b/class_u_a_b_party_1a7895b12cbe4fef8e9ec0c3d23e01d96f" prot="private" virt="non-virtual"><scope>UABParty</scope><name>ApiClientPtr</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1ad3d8b55df12f641d8987a2345b4789f7" prot="public" virt="non-virtual"><scope>UABParty</scope><name>CreateParty</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1af74674eeac489794fc9afdaf4b45bf99" prot="public" virt="non-virtual"><scope>UABParty</scope><name>GetPartyData</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1ade61f6ac66c7f723481ebf374b2935fe" prot="public" virt="non-virtual"><scope>UABParty</scope><name>GetPartyStorage</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1ae4c65a6bfc06de6f0a2367a1be5b9331" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyDeleteCode</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a3c8377242f4bd7e059086c1a360edaf2" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyGenerateCode</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a4061e4ff54fc2256aae9242bae09650a" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyGetCode</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a33742bd081a3ff1a5eea9d5f4a0c40d3" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyInfo</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a0888608a49a4241d62cd0b0adb1b4ed6" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyInvite</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1af1ed08b581656e5ef2089fef9414e039" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyJoin</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1ad18b201ca58ea846d448a698f8c85128" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyJoinViaCode</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a7a0dc7e69daf56a5b4f9d77e52dcadf9" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyKick</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a795ea4f23c68c8b5a6bf8a22671028b5" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyLeave</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1af32fb3e62f1ae4f3b45a88018d05b7e8" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyPromoteLeader</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1af5778f7e70365d63032aa77b4bb6176a" prot="public" virt="non-virtual"><scope>UABParty</scope><name>PartyReject</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a8fa665b67d2127bac033fe8c5de30568" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetApiClient</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a2741092e9e77df5dce784121e4c11ece" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyDataUpdate</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a585fca6fb8e4fe6dba858041275f7696" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyDataUpdateNotifDelegate</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a556969fb5efe0ea13581f58a3e58619a" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyGetInvited</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1aee9fbee3faee6f837d9441dc0f94677a" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyInvite</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a6dc0a929b4244cd8f1a3e35d924f7427" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyJoin</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a66782539c62b571cb7728e9bf0c453f7" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyKick</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1ad95763e27df36c0ec7b4b0866e51023b" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyLeave</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a905ad9e929e3f2f90f5046b2f4294370" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyMemberConnect</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a41673b8b9cda96cf5af39192494c5860" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyMemberDisconnect</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a2bd09ca2811afd9acb8d8a39007b31fc" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyMemberLeave</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a256bfa3d4467ea187dc1a8608b1aff20" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyReject</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1aadb69ecd48f9358ce281c003c39604dd" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetOnPartyUpdate</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a8f9df2d6ed8d577b1fdff961b8d9fdc3" prot="public" virt="non-virtual"><scope>UABParty</scope><name>SetPartySizeLimit</name></member>
+      <member refid="de/d5b/class_u_a_b_party_1a3ac02bb3aad594cbf94e6f059bde2183" prot="public" virt="non-virtual"><scope>UABParty</scope><name>WritePartyStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

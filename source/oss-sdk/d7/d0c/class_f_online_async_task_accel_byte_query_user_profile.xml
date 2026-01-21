@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteQueryUserProfile</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryUserProfile, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d9/d6e/_online_async_task_accel_byte_query_user_profile_8h" local="no">OnlineAsyncTaskAccelByteQueryUserProfile.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ada512c1d06ba94bf9a330a170b527f69" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt;</type>
+        <definition>TArray&lt;TSharedRef&lt;const FUniqueNetId&gt; &gt; FOnlineAsyncTaskAccelByteQueryUserProfile::InitialUserIds</definition>
+        <argsstring></argsstring>
+        <name>InitialUserIds</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::InitialUserIds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of user IDs that we initially sent to query </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="46" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1acbad552201ffaefef51948afff0a9fab" prot="private" static="no" mutable="no">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt;FString&gt; FOnlineAsyncTaskAccelByteQueryUserProfile::UserIdsToQuery</definition>
+        <argsstring></argsstring>
+        <name>UserIdsToQuery</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::UserIdsToQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of strings for initial user IDs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="49" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a2ea56d3234c642e0422b23aa766d3ffa" prot="private" static="no" mutable="no">
+        <type>TArray&lt; FAccelByteModelsPublicUserProfileInfo &gt;</type>
+        <definition>TArray&lt;FAccelByteModelsPublicUserProfileInfo&gt; FOnlineAsyncTaskAccelByteQueryUserProfile::UsersQueried</definition>
+        <argsstring></argsstring>
+        <name>UsersQueried</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::UsersQueried</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of users that we have retrieved from the query </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="52" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a45ea562302e7d3b826cc203c58775eb3" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt;</type>
+        <definition>TArray&lt;TSharedRef&lt;const FUniqueNetId&gt; &gt; FOnlineAsyncTaskAccelByteQueryUserProfile::QueriedUserIds</definition>
+        <argsstring></argsstring>
+        <name>QueriedUserIds</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::QueriedUserIds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of user IDs that we successfully queried (should be the same as initial, but may also differ if a user isn&apos;t found) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="55" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ace266b8981e7dfa15f8f3b71fc8fd357" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteQueryUserProfile::ErrorStr</definition>
+        <argsstring></argsstring>
+        <name>ErrorStr</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::ErrorStr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String representing the error that was encountered while trying to query user information </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="58" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1af3bc914672a22de64ff380093c437d0c" prot="private" static="no" mutable="no">
+        <type>FOnQueryUserProfileComplete</type>
+        <definition>FOnQueryUserProfileComplete FOnlineAsyncTaskAccelByteQueryUserProfile::Delegate</definition>
+        <argsstring></argsstring>
+        <name>Delegate</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::Delegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate to fire on completion </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="61" column="29" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a18f3eeb291b6312ad5b5c290fa35e260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, int32 InLocalUserNum, const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;InUserIds, const FOnQueryUserProfileComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUserProfile</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;</type>
+          <declname>InUserIds</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUserProfileComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to setup the QueryUserProfile task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="21" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="16" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1af82539303a932f7f55c0ecc2b22308e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, int32 InLocalUserNum, const TArray&lt; FString &gt; &amp;InUserIds, const FOnQueryUserProfileComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUserProfile</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>InLocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>InUserIds</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUserProfileComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to setup the QueryUserProfile task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="24" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="50" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a16c845356a12e950d631c4aca6a96178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, const FUniqueNetId &amp;InUserId, const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;InUserIds, const FOnQueryUserProfileComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUserProfile</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InUserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;</type>
+          <declname>InUserIds</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUserProfileComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to setup the QueryUserProfile task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="27" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="62" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a3d70e69a22dde3102f7561492bf6b23a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABSubsystem, const FUniqueNetId &amp;InUserId, const TArray&lt; FString &gt; &amp;InUserIds, const FOnQueryUserProfileComplete &amp;InDelegate)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteQueryUserProfile</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::FOnlineAsyncTaskAccelByteQueryUserProfile</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABSubsystem</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InUserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>InUserIds</declname>
+        </param>
+        <param>
+          <type>const FOnQueryUserProfileComplete &amp;</type>
+          <declname>InDelegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to setup the QueryUserProfile task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="30" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="96" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ad64a47aecf49bff954e5bcc6f89748f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUserProfile::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="32" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="107" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ad57cfff41e0a0a30f204892cdd1e5e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUserProfile::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="33" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="135" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a7afc0d6e4b2249c0479e87fc9d2e9d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUserProfile::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="34" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="203" bodyend="212"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1aa30b20892422912343f3cd57f8e8de3b" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteQueryUserProfile::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="38" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a308f28848f460fefe432c86b0c6cebeb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUserProfile::OnQueryUsersProfileComplete</definition>
+        <argsstring>(const TArray&lt; FAccelByteModelsPublicUserProfileInfo &gt; &amp;InUsersQueried)</argsstring>
+        <name>OnQueryUsersProfileComplete</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::OnQueryUsersProfileComplete</qualifiedname>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsPublicUserProfileInfo &gt; &amp;</type>
+          <declname>InUsersQueried</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when we complete a query for users from the backend </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="64" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="214" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a585681d8e367916d39a31dfffe83b746" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteQueryUserProfile::OnQueryUserProfileError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnQueryUserProfileError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteQueryUserProfile::OnQueryUserProfileError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when getting the user&apos;s profile from the game namespace from the <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> SDK fails.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Code returned from the backend that represents the error encountered for the request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ErrorMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message from the backend that describes the error encountered </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="72" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.cpp" bodystart="223" bodyend="228"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryUserProfile, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteQueryUserProfile</label>
+        <link refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteQueryUserProfile, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteQueryUserProfile</label>
+        <link refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" line="14" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/User/OnlineAsyncTaskAccelByteQueryUserProfile.h" bodystart="17" bodyend="74"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>ApiClient</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>bHasReference</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>CurrentState</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1af3bc914672a22de64ff380093c437d0c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Delegate</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Epic</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ace266b8981e7dfa15f8f3b71fc8fd357" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>ErrorStr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ad57cfff41e0a0a30f204892cdd1e5e98" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a18f3eeb291b6312ad5b5c290fa35e260" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>FOnlineAsyncTaskAccelByteQueryUserProfile</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1af82539303a932f7f55c0ecc2b22308e3" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>FOnlineAsyncTaskAccelByteQueryUserProfile</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a16c845356a12e950d631c4aca6a96178" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>FOnlineAsyncTaskAccelByteQueryUserProfile</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a3d70e69a22dde3102f7561492bf6b23a" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>FOnlineAsyncTaskAccelByteQueryUserProfile</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetParentTask</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1aa30b20892422912343f3cd57f8e8de3b" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>HasTaskTimedOut</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ad64a47aecf49bff954e5bcc6f89748f1" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Initialize</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1ada512c1d06ba94bf9a330a170b527f69" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>InitialUserIds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>LocalUserNum</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a585681d8e367916d39a31dfffe83b746" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>OnQueryUserProfileError</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a308f28848f460fefe432c86b0c6cebeb" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>OnQueryUsersProfileComplete</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>ParentTask</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a45ea562302e7d3b826cc203c58775eb3" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>QueriedUserIds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>ThisPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>ToString</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a7afc0d6e4b2249c0479e87fc9d2e9d7d" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>UserId</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1acbad552201ffaefef51948afff0a9fab" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>UserIdsToQuery</name></member>
+      <member refid="d7/d0c/class_f_online_async_task_accel_byte_query_user_profile_1a2ea56d3234c642e0422b23aa766d3ffa" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>UsersQueried</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteQueryUserProfile</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

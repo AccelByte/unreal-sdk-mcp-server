@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d2/d10/_online_async_task_accel_byte_block_player_8cpp" kind="file" language="C++">
+    <compoundname>OnlineAsyncTaskAccelByteBlockPlayer.cpp</compoundname>
+    <includes refid="d8/d74/_online_async_task_accel_byte_block_player_8h" local="yes">OnlineAsyncTaskAccelByteBlockPlayer.h</includes>
+    <includes refid="d1/d3f/_online_subsystem_accel_byte_8h" local="yes">OnlineSubsystemAccelByte.h</includes>
+    <includes refid="dc/d1c/_online_friends_interface_accel_byte_8h" local="yes">OnlineFriendsInterfaceAccelByte.h</includes>
+    <includes refid="d8/d73/_online_party_interface_accel_byte_8h" local="yes">OnlinePartyInterfaceAccelByte.h</includes>
+    <includes refid="dc/d64/_online_predefined_event_interface_accel_byte_8h" local="yes">OnlinePredefinedEventInterfaceAccelByte.h</includes>
+    <includes local="yes">Core/AccelByteRegistry.h</includes>
+    <includes local="yes">Api/AccelByteLobbyApi.h</includes>
+    <includes refid="d7/d3c/_online_user_cache_accel_byte_8h" local="yes">OnlineUserCacheAccelByte.h</includes>
+    <incdepgraph>
+      <node id="64">
+        <label>Api/AccelByteLobbyApi.h</label>
+      </node>
+      <node id="25">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="51">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="63">
+        <label>Core/AccelByteRegistry.h</label>
+      </node>
+      <node id="11">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="6">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="1">
+        <label>OnlineAsyncTaskAccelByteBlockPlayer.cpp</label>
+        <link refid="d2/d10/_online_async_task_accel_byte_block_player_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineAsyncTaskAccelByteBlockPlayer.h</label>
+        <link refid="d8/d74/_online_async_task_accel_byte_block_player_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>OnlineBaseAnalyticsInterfaceAccelByte.h</label>
+        <link refid="db/d92/_online_base_analytics_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>OnlineFriendsInterfaceAccelByte.h</label>
+        <link refid="dc/d1c/_online_friends_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>OnlinePartyInterfaceAccelByte.h</label>
+        <link refid="d8/d73/_online_party_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>OnlinePredefinedEventInterfaceAccelByte.h</label>
+        <link refid="dc/d64/_online_predefined_event_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="9">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="5">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="10">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="43">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="20">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="13">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="26">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="45">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="33">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="54">
+        <label>Interfaces/OnlineFriendsInterface.h</label>
+      </node>
+      <node id="49">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="50">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="58">
+        <label>Interfaces/OnlinePartyInterface.h</label>
+      </node>
+      <node id="55">
+        <label>Interfaces/OnlinePresenceInterface.h</label>
+      </node>
+      <node id="38">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="40">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="44">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="34">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="61">
+        <label>Models/AccelByteGameTelemetryModels.h</label>
+      </node>
+      <node id="48">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="56">
+        <label>Models/AccelByteLobbyModels.h</label>
+      </node>
+      <node id="17">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="62">
+        <label>Models/AccelBytePredefinedEventModels.h</label>
+      </node>
+      <node id="32">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="7">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="4">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="47">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="37">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="18">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="19">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="27">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="12">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="15">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="22">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d74/_online_async_task_accel_byte_block_player_8h" kindref="compound">OnlineAsyncTaskAccelByteBlockPlayer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3f/_online_subsystem_accel_byte_8h" kindref="compound">OnlineSubsystemAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d1c/_online_friends_interface_accel_byte_8h" kindref="compound">OnlineFriendsInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d73/_online_party_interface_accel_byte_8h" kindref="compound">OnlinePartyInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/d64/_online_predefined_event_interface_accel_byte_8h" kindref="compound">OnlinePredefinedEventInterfaceAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Core/AccelByteRegistry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Api/AccelByteLobbyApi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d3c/_online_user_cache_accel_byte_8h" kindref="compound">OnlineUserCacheAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a9f68f3d2556af82301c96b5694e97f66" refkind="member"><highlight class="normal"><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a9f68f3d2556af82301c96b5694e97f66" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::FOnlineAsyncTaskAccelByteBlockPlayer</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>InABInterface,<sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>InLocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>InPlayerId)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" kindref="member">FOnlineAsyncTaskAccelByte</ref>(InABInterface)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>(<ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref>::CastChecked(InPlayerId))</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref><sp/>=<sp/>InLocalUserNum;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="db/d84/class_f_online_async_task_accel_byte_block_player_1aeb9ea4f73fc26605933419fc7d29e33e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1aeb9ea4f73fc26605933419fc7d29e33e" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::Initialize</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30" kindref="member">Super::Initialize</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;LocalUserNum:<sp/>%d;<sp/>PlayerId:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/>*<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;ToDebugString());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;IsValid())</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>block<sp/>player<sp/>as<sp/>their<sp/>ID<sp/>was<sp/>invalid!<sp/>Id:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;ToDebugString());</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First,<sp/>check<sp/>if<sp/>the<sp/>player<sp/>we<sp/>want<sp/>to<sp/>block<sp/>is<sp/>one<sp/>of<sp/>our<sp/>friends,<sp/>if<sp/>this<sp/>is<sp/>the<sp/>case,<sp/>then<sp/>we<sp/>just<sp/>want<sp/>to<sp/>get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>reference<sp/>to<sp/>this<sp/>player<sp/>in<sp/>this<sp/>task<sp/>so<sp/>we<sp/>can<sp/>not<sp/>only<sp/>update<sp/>their<sp/>friend<sp/>status<sp/>but<sp/>also<sp/>add<sp/>the<sp/>blocked</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>player<sp/>to<sp/>the<sp/>list<sp/>without<sp/>an<sp/>extra<sp/>request<sp/>to<sp/>get<sp/>their<sp/>display<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineFriendsPtr<sp/>FriendsInterface<sp/>=<sp/>Subsystem-&gt;GetFriendsInterface();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1af87e552dcada4be92c85fd466a9d1380" kindref="member">FoundFriend</ref><sp/>=<sp/>FriendsInterface-&gt;GetFriend(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>.Get(),<sp/>EFriendsLists::ToString(EFriendsLists::Default));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now,<sp/>send<sp/>the<sp/>request<sp/>to<sp/>block<sp/>the<sp/>player<sp/>through<sp/>the<sp/>lobby<sp/>websocket</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>AccelByte::Api::Lobby::FBlockPlayerResponse<sp/>OnBlockPlayerResponseDelegate<sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;AccelByte::Api::Lobby::FBlockPlayerResponse&gt;::CreateThreadSafeSelfPtr</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a75b370c3fa5af0c20e7d51fcbb63b2e8" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::OnBlockPlayerResponse</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" kindref="member">ApiClient</ref>-&gt;Lobby.SetBlockPlayerResponseDelegate(OnBlockPlayerResponseDelegate);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" kindref="member">ApiClient</ref>-&gt;Lobby.BlockPlayer(<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;GetAccelByteId());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a165a370494f53525ecb38402b1bd71fc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a165a370494f53525ecb38402b1bd71fc" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::Finalize</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;bWasSuccessful:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a743c92d5f8c7e345612ab9ac8b1ffb6a" kindref="member">LOG_BOOL_FORMAT</ref>(bWasSuccessful));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bWasSuccessful)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>the<sp/>blocked<sp/>player<sp/>from<sp/>the<sp/>users<sp/>friends<sp/>list<sp/>if<sp/>they<sp/>were<sp/>already<sp/>in<sp/>their<sp/>friends<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FOnlineFriendsAccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/>FriendsInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineFriendsAccelByte&gt;(Subsystem-&gt;GetFriendsInterface());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1af87e552dcada4be92c85fd466a9d1380" kindref="member">FoundFriend</ref>.IsValid())</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FriendsInterface-&gt;RemoveFriendFromList(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>will<sp/>want<sp/>to<sp/>then<sp/>perform<sp/>actions<sp/>on<sp/>the<sp/>party<sp/>depending<sp/>on<sp/>party<sp/>role</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FOnlineIdentityAccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/>IdentityInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineIdentityAccelByte&gt;(Subsystem-&gt;GetIdentityInterface());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IdentityInterface.IsValid())</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a819ecc018d83cd35ad53f878ffaedccf" kindref="member">FOnlinePartySystemAccelBytePtr</ref><sp/>PartyInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlinePartySystemAccelByte&gt;(Subsystem-&gt;GetPartyInterface());</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PartyInterface.IsValid())</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE<sp/>@Damar<sp/>:<sp/>FUniqueId<sp/>public<sp/>constructor<sp/>will<sp/>be<sp/>deprecated,<sp/>changed<sp/>to<sp/>Create<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>CompositeId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1abff02fe798677e069f37b821994d713e" kindref="member">FUniqueNetIdAccelByteUser::Create</ref>(IdentityInterface-&gt;GetUniquePlayerId(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>).ToSharedRef().Get());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlinePartyAccelByte&gt;<sp/>UserParty<sp/>=<sp/>PartyInterface-&gt;GetFirstPartyForUser(CompositeId);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserParty<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>user<sp/>is<sp/>in<sp/>a<sp/>multi-user<sp/>party</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TArray&lt;FOnlinePartyMemberConstRef&gt;<sp/>CurrentMembers<sp/>=<sp/>UserParty-&gt;GetAllMembers();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CurrentMembers.Num()<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PartyInterface-&gt;IsMemberLeader(IdentityInterface-&gt;GetUniquePlayerId(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>).ToSharedRef().Get(),<sp/>UserParty-&gt;PartyId.Get(),<sp/>IdentityInterface-&gt;GetUniquePlayerId(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>).ToSharedRef().Get()))</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>this<sp/>user<sp/>blocks<sp/>a<sp/>player<sp/>who<sp/>is<sp/>currently<sp/>in<sp/>the<sp/>same<sp/>party<sp/>as<sp/>the<sp/>user,<sp/>and<sp/>is<sp/>the<sp/>party<sp/>leader,<sp/>then<sp/>kick<sp/>the<sp/>blocked<sp/>player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(FOnlinePartyMemberConstRef<sp/>PartyMember<sp/>:<sp/>CurrentMembers)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>PartyMemberCompositeId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(PartyMember-&gt;GetUserId());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PartyMemberCompositeId-&gt;GetAccelByteId()<sp/>==<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;GetAccelByteId())</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PartyInterface-&gt;KickMember(IdentityInterface-&gt;GetUniquePlayerId(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>).ToSharedRef().Get(),UserParty-&gt;PartyId.Get(),<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>.Get());</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>this<sp/>user<sp/>blocks<sp/>a<sp/>player<sp/>who<sp/>is<sp/>currently<sp/>in<sp/>the<sp/>same<sp/>party<sp/>as<sp/>the<sp/>user,<sp/>and<sp/>is<sp/>just<sp/>a<sp/>member<sp/>aka<sp/>not<sp/>party<sp/>leader,<sp/>then<sp/>leave<sp/>the<sp/>party</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(FOnlinePartyMemberConstRef<sp/>PartyMember<sp/>:<sp/>CurrentMembers)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;const<sp/>FUniqueNetIdAccelByteUser&gt;<sp/>PartyMemberCompositeId<sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(PartyMember-&gt;GetUserId());</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PartyMemberCompositeId-&gt;GetAccelByteId()<sp/>==<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;GetAccelByteId())</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PartyInterface-&gt;LeaveParty(IdentityInterface-&gt;GetUniquePlayerId(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>).ToSharedRef().Get(),<sp/>UserParty-&gt;PartyId.Get());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>blocked<sp/>player<sp/>to<sp/>the<sp/>blocked<sp/>players<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FriendsInterface-&gt;AddBlockedPlayerToList(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1ab9d3cbd2952ea0127cb5ddeca3f5d25a" kindref="member">BlockedPlayer</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a4204ff06160b48f51de3c83305e42568" kindref="member">FOnlinePredefinedEventAccelBytePtr</ref><sp/>PredefinedEventInterface<sp/>=<sp/>Subsystem-&gt;GetPredefinedEventInterface();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PredefinedEventInterface.IsValid()<sp/>&amp;&amp;<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;IsValid())</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FAccelByteModelsUserBlockedPayload<sp/>UserBlockedPayload{};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserBlockedPayload.SenderId<sp/>=<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" kindref="member">UserId</ref>-&gt;GetAccelByteId();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserBlockedPayload.ReceiverId<sp/>=<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;GetAccelByteId();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PredefinedEventInterface-&gt;SendEvent(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/>MakeShared&lt;FAccelByteModelsUserBlockedPayload&gt;(UserBlockedPayload));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a61e72fa23445993599dfdfeab3cc74ab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a61e72fa23445993599dfdfeab3cc74ab" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::TriggerDelegates</ref>()</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;bWasSuccessful:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a743c92d5f8c7e345612ab9ac8b1ffb6a" kindref="member">LOG_BOOL_FORMAT</ref>(bWasSuccessful));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineFriendsPtr<sp/>FriendsInterface<sp/>=<sp/>Subsystem-&gt;GetFriendsInterface();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>FriendsInterface-&gt;TriggerOnBlockedPlayerCompleteDelegates(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/>bWasSuccessful,<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>.Get(),<sp/>EFriendsLists::ToString(EFriendsLists::Default),<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a33201c34cb99623f2394f48c5bebbb10" kindref="member">ErrorStr</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a75b370c3fa5af0c20e7d51fcbb63b2e8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a75b370c3fa5af0c20e7d51fcbb63b2e8" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::OnBlockPlayerResponse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsBlockPlayerResponse&amp;<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>.Code<sp/>!=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a33201c34cb99623f2394f48c5bebbb10" kindref="member">ErrorStr</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;block-player-request-failed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>block<sp/>player<sp/>%s<sp/>as<sp/>the<sp/>request<sp/>to<sp/>the<sp/>backend<sp/>failed!<sp/>Error<sp/>code:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;ToDebugString(),<sp/>*<ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>.Code);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>have<sp/>a<sp/>friend<sp/>instance<sp/>already,<sp/>we<sp/>want<sp/>to<sp/>construct<sp/>a<sp/>blocked<sp/>player<sp/>instance<sp/>from<sp/>that<sp/>friend<sp/>and<sp/>complete<sp/>the<sp/>task...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1af87e552dcada4be92c85fd466a9d1380" kindref="member">FoundFriend</ref>.IsValid())</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1ab9d3cbd2952ea0127cb5ddeca3f5d25a" kindref="member">BlockedPlayer</ref><sp/>=<sp/>MakeShared&lt;FOnlineBlockedPlayerAccelByte&gt;(<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1af87e552dcada4be92c85fd466a9d1380" kindref="member">FoundFriend</ref>-&gt;GetDisplayName(),<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea505a83f220c02df2f85c3810cd9ceb38" kindref="member">EAccelByteAsyncTaskCompleteState::Success</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Otherwise,<sp/>we<sp/>need<sp/>to<sp/>go<sp/>and<sp/>query<sp/>the<sp/>player<sp/>ID<sp/>to<sp/>get<sp/>a<sp/>display<sp/>name<sp/>to<sp/>properly<sp/>construct<sp/>a<sp/>blocked<sp/>player...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1ade5529f060753297bbe25e169046fbb4" kindref="member">FOnlineUserCacheAccelBytePtr</ref><sp/>UserStore<sp/>=<sp/>Subsystem-&gt;GetUserCache();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!UserStore.IsValid())</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>get<sp/>information<sp/>on<sp/>blocked<sp/>user<sp/>&apos;%s&apos;!&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;ToDebugString());</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914eaedf260198e4d75d1cb3c7588f7380120" kindref="member">EAccelByteAsyncTaskCompleteState::InvalidState</ref>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" kindref="member">Super::ExecuteCriticalSectionAction</ref>(FVoidHandler::CreateLambda([&amp;]()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FOnQueryUsersComplete<sp/>OnQueryBlockedPlayerCompleteDelegate<sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;FOnQueryUsersComplete&gt;::CreateThreadSafeSelfPtr</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a072898f8a1e2ee4b2b9ebfc292ac1bf3" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::OnQueryBlockedPlayerComplete</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserStore-&gt;QueryUsersByAccelByteIds(<ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/>{<sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;GetAccelByteId()<sp/>},<sp/>OnQueryBlockedPlayerCompleteDelegate,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a072898f8a1e2ee4b2b9ebfc292ac1bf3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a072898f8a1e2ee4b2b9ebfc292ac1bf3" kindref="member">FOnlineAsyncTaskAccelByteBlockPlayer::OnQueryBlockedPlayerComplete</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsSuccessful,<sp/>TArray&lt;TSharedRef&lt;FAccelByteUserInfo&gt;&gt;<sp/>UsersQueried)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bIsSuccessful<sp/>&amp;&amp;<sp/>UsersQueried.IsValidIndex(0))</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TSharedRef&lt;FAccelByteUserInfo&gt;<sp/>User<sp/>=<sp/>UsersQueried[0];</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1ab9d3cbd2952ea0127cb5ddeca3f5d25a" kindref="member">BlockedPlayer</ref><sp/>=<sp/>MakeShared&lt;FOnlineBlockedPlayerAccelByte&gt;(User-&gt;DisplayName,<sp/>User-&gt;Id.ToSharedRef());</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea505a83f220c02df2f85c3810cd9ceb38" kindref="member">EAccelByteAsyncTaskCompleteState::Success</ref>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a33201c34cb99623f2394f48c5bebbb10" kindref="member">ErrorStr</ref><sp/>=<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;block-player-failed-retrieve-player-info&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>block<sp/>player<sp/>completely<sp/>as<sp/>we<sp/>could<sp/>not<sp/>get<sp/>information<sp/>on<sp/>the<sp/>blocked<sp/>player<sp/>from<sp/>the<sp/>backend!<sp/>LocalUserNum:<sp/>%d;<sp/>BlockedPlayerId:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" kindref="member">LocalUserNum</ref>,<sp/>*<ref refid="db/d84/class_f_online_async_task_accel_byte_block_player_1a036d23e5500b25c62fb42664588ff717" kindref="member">PlayerId</ref>-&gt;ToDebugString());</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/Friends/OnlineAsyncTaskAccelByteBlockPlayer.cpp"/>
+  </compounddef>
+</doxygen>

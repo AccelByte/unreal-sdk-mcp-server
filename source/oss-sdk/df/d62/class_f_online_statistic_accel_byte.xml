@@ -1,0 +1,1199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="df/d62/class_f_online_statistic_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineStatisticAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineStats</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineStatisticAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d8/dfa/_online_statistic_interface_accel_byte_8h" local="no">OnlineStatisticInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/d62/class_f_online_statistic_accel_byte_1a2087619b6e204f766428c40a669152eb" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineStatisticAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineStatisticAccelByte::__pad0__</qualifiedname>
+        <bitfield> TUniqueNetIdMap&lt;TArray&lt;TSharedRef&lt;FAccelByteModelsFetchUser&gt;&gt;&gt; UsersMap</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="35" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d62/class_f_online_statistic_accel_byte_1ab254420be6f8bc54bb54ef01afffe9d0" prot="private" static="no" mutable="no">
+        <type>TSharedPtr&lt; const FOnlineStatsUserStats &gt;</type>
+        <definition>TSharedPtr&lt;const FOnlineStatsUserStats&gt; FOnlineStatisticAccelByte::UserStats</definition>
+        <argsstring></argsstring>
+        <name>UserStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::UserStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="245" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d62/class_f_online_statistic_accel_byte_1a057ca42a71b63e6f640cd50b7700bd96" prot="private" static="no" mutable="yes">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection FOnlineStatisticAccelByte::StatsLock</definition>
+        <argsstring></argsstring>
+        <name>StatsLock</name>
+        <qualifiedname>FOnlineStatisticAccelByte::StatsLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical sections for thread safe operation of UsersStats </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="247" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d62/class_f_online_statistic_accel_byte_1af1ab8457950e8b88040330f1ee93ce1c" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TSharedRef&lt; const FOnlineStatsUserStats &gt; &gt;</type>
+        <definition>TArray&lt;TSharedRef&lt;const FOnlineStatsUserStats&gt; &gt; FOnlineStatisticAccelByte::UsersStats</definition>
+        <argsstring></argsstring>
+        <name>UsersStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::UsersStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="248" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="df/d62/class_f_online_statistic_accel_byte_1a36d9e465aea52ecd5a2171495957921d" prot="protected" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineStatisticAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineStatisticAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="241" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1ad85909a79e3d458dcc6564cd3e122d64" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineStatisticAccelByte::FOnlineStatisticAccelByte</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *InSubsystem)</argsstring>
+        <name>FOnlineStatisticAccelByte</name>
+        <qualifiedname>FOnlineStatisticAccelByte::FOnlineStatisticAccelByte</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+          <declname>InSubsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor that is invoked by the Subsystem instance to create a user cloud instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="40" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1ad8bb46ced5a5276dfc74736dd046339b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineStatisticAccelByte::~FOnlineStatisticAccelByte</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~FOnlineStatisticAccelByte</name>
+        <qualifiedname>FOnlineStatisticAccelByte::~FOnlineStatisticAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="45" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a320773e65d6878fcef182110e6e54eea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineStatisticAccelByte::ListUserStatItems</definition>
+        <argsstring>(int32 LocalUserNum, const TArray&lt; FString &gt; &amp;StatCodes, const TArray&lt; FString &gt; &amp;Tags, const FString &amp;AdditionalKey, bool bAlwaysRequestToService)</argsstring>
+        <name>ListUserStatItems</name>
+        <qualifiedname>FOnlineStatisticAccelByte::ListUserStatItems</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>StatCodes</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>Tags</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>AdditionalKey</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bAlwaysRequestToService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="47" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="18" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1acca33ab40573ee5d52453ee384f61692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineStatisticAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnListUserStatItemsCompleted, bool, const TArray&lt; FAccelByteModelsFetchUser &gt; &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineStatisticAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnListUserStatItemsCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsFetchUser &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a409953a7db31599b003ed99c1b07b614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineStatisticAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnUserStatItemsResetCompleted, bool, const TArray&lt; FAccelByteModelsUpdateUserStatItemsResponse &gt; &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineStatisticAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnUserStatItemsResetCompleted</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsUpdateUserStatItemsResponse &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a7aceabda266653519f614c48111a0618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineStatisticAccelByte::DEFINE_ONLINE_DELEGATE_ONE_PARAM</definition>
+        <argsstring>(OnUserStatItemsDeleteCompleted, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_ONE_PARAM</name>
+        <qualifiedname>FOnlineStatisticAccelByte::DEFINE_ONLINE_DELEGATE_ONE_PARAM</qualifiedname>
+        <param>
+          <type>OnUserStatItemsDeleteCompleted</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when we delete one statistic for a player.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ResultState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Result of statistic deletion process </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1aa89ff3bec49bb784ee918eefea1d1eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineStatisticAccelByte::GetListUserStatItems</definition>
+        <argsstring>(int32 LocalUserNum, TArray&lt; TSharedRef&lt; FAccelByteModelsFetchUser &gt; &gt; &amp;OutUsers)</argsstring>
+        <name>GetListUserStatItems</name>
+        <qualifiedname>FOnlineStatisticAccelByte::GetListUserStatItems</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FAccelByteModelsFetchUser &gt; &gt; &amp;</type>
+          <declname>OutUsers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="66" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="33" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a06de16f1ac33afc269f5bd8e6c45b3e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TSharedPtr&lt; const FOnlineStatsUserStats &gt;</type>
+        <definition>TSharedPtr&lt; const FOnlineStatsUserStats &gt; FOnlineStatisticAccelByte::GetAllListUserStatItemFromCache</definition>
+        <argsstring>(const FUniqueNetIdRef StatsUserId) const</argsstring>
+        <name>GetAllListUserStatItemFromCache</name>
+        <qualifiedname>FOnlineStatisticAccelByte::GetAllListUserStatItemFromCache</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="69" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="335" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1aca5a035ae2ed91376d30a0da3803e625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::QueryStats</definition>
+        <argsstring>(const FUniqueNetIdRef LocalUserId, const FUniqueNetIdRef StatsUser, const TArray&lt; FString &gt; &amp;StatNames, const FOnlineStatsQueryUserStatsComplete &amp;Delegate)</argsstring>
+        <name>QueryStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::QueryStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUser</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>StatNames</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsQueryUserStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query a specific user&apos;s stats</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to query as (if applicable) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsUser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to get stats for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stats to get stats for all specified users </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called when the user&apos;s stats have finished being requested and are now available, or when we fail to retrieve the user&apos;s stats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="79" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="187" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a5eb8e31111047b74e4175a98c0a554b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::QueryStats</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetIdRef StatsUser, const TArray&lt; FString &gt; &amp;StatNames, const FOnlineStatsQueryUserStatsComplete &amp;Delegate)</argsstring>
+        <name>QueryStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::QueryStats</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUser</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>StatNames</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsQueryUserStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query a specific user&apos;s stats</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user(or server) to query as </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsUser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to get stats for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stats to get stats for all specified users </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called when the user&apos;s stats have finished being requested and are now available, or when we fail to retrieve the user&apos;s stats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="92" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="213" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a1f6719cd27bf11a333c7f05eacb228c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::QueryStats</definition>
+        <argsstring>(int32 LocalUserNum, const FUniqueNetIdRef StatsUser, const FOnlineStatsQueryUserStatsComplete &amp;Delegate)</argsstring>
+        <name>QueryStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::QueryStats</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUser</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsQueryUserStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query a specific user&apos;s stats</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user(or server) to query as </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsUser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to get stats for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called when the user&apos;s stats have finished being requested and are now available, or when we fail to retrieve the user&apos;s stats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="104" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="246" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1aa1a5b6198bb4a56b33b131c01ccb5dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::QueryStats</definition>
+        <argsstring>(int32 LocalUserNum, const TArray&lt; FUniqueNetIdRef &gt; &amp;StatsUsers, const TArray&lt; FString &gt; &amp;StatNames, const FOnlineStatsQueryUsersStatsComplete &amp;Delegate)</argsstring>
+        <name>QueryStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::QueryStats</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FUniqueNetIdRef &gt; &amp;</type>
+          <declname>StatsUsers</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>StatNames</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsQueryUsersStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query a one or more user&apos;s stats</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user(or server) to query as </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsUsers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Users to get stats for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stats to get stats for all specified users </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called when the user&apos;s stats have finished being requested and are now available, or when we fail to retrieve the user&apos;s stats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="116" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="270" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a70b5bab4198ac4cfbde60273db5d50ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::CreateStats</definition>
+        <argsstring>(const int32 LocalUserNum, const FUniqueNetIdRef StatsUser, const TArray&lt; FString &gt; &amp;StatNames, const FOnlineStatsCreateStatsComplete &amp;Delegate)</argsstring>
+        <name>CreateStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::CreateStats</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUser</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>StatNames</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsCreateStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a one or more user&apos;s stats. Only for request by Game Server</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user(server) that is attempting to create the stats </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsUser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to create stats for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatNames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stats to create stats for all specified users </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called when the user&apos;s stats have finished being created, or when we fail to create the user&apos;s stats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="129" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="49" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a12f4617a487390f6e7a634b48b71f147" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::EmplaceStats</definition>
+        <argsstring>(const TSharedPtr&lt; const FOnlineStatsUserStats &gt; &amp;InUserStats)</argsstring>
+        <name>EmplaceStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::EmplaceStats</qualifiedname>
+        <param>
+          <type>const TSharedPtr&lt; const FOnlineStatsUserStats &gt; &amp;</type>
+          <declname>InUserStats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Emplace a user&apos;s cached stats object</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserStats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stats to emplace </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="139" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="62" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a108de9e6bec09d8424ee2ccef41355ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::EmplaceStats</definition>
+        <argsstring>(const TArray&lt; TSharedPtr&lt; const FOnlineStatsUserStats &gt; &gt; &amp;InUsersStats)</argsstring>
+        <name>EmplaceStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::EmplaceStats</qualifiedname>
+        <param>
+          <type>const TArray&lt; TSharedPtr&lt; const FOnlineStatsUserStats &gt; &gt; &amp;</type>
+          <declname>InUsersStats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Emplace user&apos;s cached stats object</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UsersStats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stats to emplace </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="146" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="81" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a0796f6707a4589e2c0f3bb85cae4d297" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::RemoveStats</definition>
+        <argsstring>(const FUniqueNetIdRef StatsUserId, const FString &amp;StatsCode)</argsstring>
+        <name>RemoveStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::RemoveStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>StatsCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove user&apos;s cached stats object</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StatsUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to remove stats for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stats id to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="154" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="89" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a9261aa7338cb4ab593e8937b83cb9687" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::ResetStats</definition>
+        <argsstring>(const int32 LocalUserNum, const FUniqueNetIdRef StatsUserId)</argsstring>
+        <name>ResetStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::ResetStats</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset all user statistics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user(server) that is attempting to create the stats </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to reset stats for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="163" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="127" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a8837d618498fb02518961d81e40e5ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::UpdateStats</definition>
+        <argsstring>(const int32 LocalUserNum, const TArray&lt; FOnlineStatsUserUpdatedStats &gt; &amp;BulkUpdateMultipleUserStatItems, const FOnUpdateMultipleUserStatItemsComplete &amp;Delegate)</argsstring>
+        <name>UpdateStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::UpdateStats</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FOnlineStatsUserUpdatedStats &gt; &amp;</type>
+          <declname>BulkUpdateMultipleUserStatItems</declname>
+        </param>
+        <param>
+          <type>const FOnUpdateMultipleUserStatItemsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update multiple statistics for multiple users. This request only for Game Server</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user(server) that is attempting to update the stats. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BulkUpdateMultipleUserStatItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Updated Statistics. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called when the statistics have finished being updated, or when we fail to update the stats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="173" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="142" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a248d69967acb1bb8f3734f40b9a567b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::UpdateStats</definition>
+        <argsstring>(const FUniqueNetIdRef LocalUserId, const TArray&lt; FOnlineStatsUserUpdatedStats &gt; &amp;UpdatedUserStats, const FOnUpdateMultipleUserStatItemsComplete &amp;Delegate)</argsstring>
+        <name>UpdateStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::UpdateStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FOnlineStatsUserUpdatedStats &gt; &amp;</type>
+          <declname>UpdatedUserStats</declname>
+        </param>
+        <param>
+          <type>const FOnUpdateMultipleUserStatItemsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update multiple statistics for a user. This request only for Game Client This endpoint extends from <ref refid="df/d62/class_f_online_statistic_accel_byte_1a19fb71f337cbd9893fcd8882cbbb1597" kindref="member">UpdateStats(const FUniqueNetIdRef LocalUserId, const TArray&lt;FOnlineStatsUserUpdatedStats&gt;&amp; UpdatedUserStats, const FOnlineStatsUpdateStatsComplete&amp; Delegate)</ref> Which is providing the messages in &apos;Details&apos; field after receiving the response.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to query as (if applicable) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UpdatedUserStats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of Updated Statistics. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Delegate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Called when the statistics have finished being updated, or when we fail to update the stats </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="187" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="157" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1ab2f1786caa65aabeda531421ef592b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::DeleteStats</definition>
+        <argsstring>(const int32 LocalUserNum, const FUniqueNetIdRef StatsUserId, const FString &amp;StatsCode, const FString &amp;AdditionalKey)</argsstring>
+        <name>DeleteStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::DeleteStats</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>StatsCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>AdditionalKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete one statistic for one user. This request only for Game Server</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of user(server) that is attempting to delete the stats. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User to delete stat for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatsCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stats id to remove. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AdditionalKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AdditionalKey relate to statistic. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="199" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="170" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1ad233d522cc5348bf843c6d9753a09289" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::QueryStats</definition>
+        <argsstring>(const FUniqueNetIdRef LocalUserId, const FUniqueNetIdRef StatsUser, const FOnlineStatsQueryUserStatsComplete &amp;Delegate) override</argsstring>
+        <name>QueryStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::QueryStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUser</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsQueryUserStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="205" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a66bb532876551f87d190aec6dc3ccc37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::QueryStats</definition>
+        <argsstring>(const FUniqueNetIdRef LocalUserId, const TArray&lt; FUniqueNetIdRef &gt; &amp;StatsUsers, const TArray&lt; FString &gt; &amp;StatsNames, const FOnlineStatsQueryUsersStatsComplete &amp;Delegate) override</argsstring>
+        <name>QueryStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::QueryStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FUniqueNetIdRef &gt; &amp;</type>
+          <declname>StatsUsers</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FString &gt; &amp;</type>
+          <declname>StatsNames</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsQueryUsersStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="209" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="256" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a540acd3e9c7b06cffd4d9401e4efcaf9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; const FOnlineStatsUserStats &gt;</type>
+        <definition>TSharedPtr&lt; const FOnlineStatsUserStats &gt; FOnlineStatisticAccelByte::GetStats</definition>
+        <argsstring>(const FUniqueNetIdRef StatsUserId) const override</argsstring>
+        <name>GetStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::GetStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="214" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="296" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a19fb71f337cbd9893fcd8882cbbb1597" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::UpdateStats</definition>
+        <argsstring>(const FUniqueNetIdRef LocalUserId, const TArray&lt; FOnlineStatsUserUpdatedStats &gt; &amp;UpdatedUserStats, const FOnlineStatsUpdateStatsComplete &amp;Delegate) override</argsstring>
+        <name>UpdateStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::UpdateStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>LocalUserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FOnlineStatsUserUpdatedStats &gt; &amp;</type>
+          <declname>UpdatedUserStats</declname>
+        </param>
+        <param>
+          <type>const FOnlineStatsUpdateStatsComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="216" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="319" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a8811d42271bb6d680dd8315f3745ab20" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineStatisticAccelByte::ResetStats</definition>
+        <argsstring>(const FUniqueNetIdRef StatsUserId) override</argsstring>
+        <name>ResetStats</name>
+        <qualifiedname>FOnlineStatisticAccelByte::ResetStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetIdRef</type>
+          <declname>StatsUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="221" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="348" bodyend="362"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1afe5b53b21521fafb7a129c7505668234" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EAccelByteStatisticUpdateStrategy</type>
+        <definition>EAccelByteStatisticUpdateStrategy FOnlineStatisticAccelByte::ConvertUpdateStrategy</definition>
+        <argsstring>(FOnlineStatUpdate::EOnlineStatModificationType Strategy)</argsstring>
+        <name>ConvertUpdateStrategy</name>
+        <qualifiedname>FOnlineStatisticAccelByte::ConvertUpdateStrategy</qualifiedname>
+        <param>
+          <type>FOnlineStatUpdate::EOnlineStatModificationType</type>
+          <declname>Strategy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert Unreal built-in enum to Accelbyte enum for statistic update strategy</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Strategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the strategy to update the statistic </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="232" column="42" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineStatisticInterfaceAccelByte.cpp" bodystart="365" bodyend="380"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="df/d62/class_f_online_statistic_accel_byte_1a0da62549553e351c76afad4464c84490" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineStatisticAccelByte::FOnlineStatisticAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineStatisticAccelByte</name>
+        <qualifiedname>FOnlineStatisticAccelByte::FOnlineStatisticAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="236" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="236" bodyend="238"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of Statistic service from <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineStatisticAccelByte</label>
+        <link refid="df/d62/class_f_online_statistic_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineStats</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineStatisticAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlineStatisticAccelByte</label>
+        <link refid="df/d62/class_f_online_statistic_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>IOnlineStats</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineStatisticAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" line="31" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineStatisticInterfaceAccelByte.h" bodystart="34" bodyend="249"/>
+    <listofallmembers>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a2087619b6e204f766428c40a669152eb" prot="private" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>__pad0__</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a36d9e465aea52ecd5a2171495957921d" prot="protected" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1afe5b53b21521fafb7a129c7505668234" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>ConvertUpdateStrategy</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a70b5bab4198ac4cfbde60273db5d50ac" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>CreateStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a7aceabda266653519f614c48111a0618" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_ONE_PARAM</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1acca33ab40573ee5d52453ee384f61692" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a409953a7db31599b003ed99c1b07b614" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1ab2f1786caa65aabeda531421ef592b17" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>DeleteStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a12f4617a487390f6e7a634b48b71f147" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>EmplaceStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a108de9e6bec09d8424ee2ccef41355ee" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>EmplaceStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1ad85909a79e3d458dcc6564cd3e122d64" prot="private" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>FOnlineStatisticAccelByte</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a0da62549553e351c76afad4464c84490" prot="protected" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>FOnlineStatisticAccelByte</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a06de16f1ac33afc269f5bd8e6c45b3e8" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>GetAllListUserStatItemFromCache</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1aa89ff3bec49bb784ee918eefea1d1eb5" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>GetListUserStatItems</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a540acd3e9c7b06cffd4d9401e4efcaf9" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>GetStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a320773e65d6878fcef182110e6e54eea" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>ListUserStatItems</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1aca5a035ae2ed91376d30a0da3803e625" prot="public" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>QueryStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a5eb8e31111047b74e4175a98c0a554b8" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>QueryStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a1f6719cd27bf11a333c7f05eacb228c1" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>QueryStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1aa1a5b6198bb4a56b33b131c01ccb5dbd" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>QueryStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1ad233d522cc5348bf843c6d9753a09289" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>QueryStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a66bb532876551f87d190aec6dc3ccc37" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>QueryStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a0796f6707a4589e2c0f3bb85cae4d297" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>RemoveStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a9261aa7338cb4ab593e8937b83cb9687" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>ResetStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a8811d42271bb6d680dd8315f3745ab20" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>ResetStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a057ca42a71b63e6f640cd50b7700bd96" prot="private" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>StatsLock</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a8837d618498fb02518961d81e40e5ce8" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>UpdateStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a248d69967acb1bb8f3734f40b9a567b3" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>UpdateStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1a19fb71f337cbd9893fcd8882cbbb1597" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>UpdateStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1af1ab8457950e8b88040330f1ee93ce1c" prot="private" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>UsersStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1ab254420be6f8bc54bb54ef01afffe9d0" prot="private" virt="non-virtual"><scope>FOnlineStatisticAccelByte</scope><name>UserStats</name></member>
+      <member refid="df/d62/class_f_online_statistic_accel_byte_1ad8bb46ced5a5276dfc74736dd046339b" prot="public" virt="virtual"><scope>FOnlineStatisticAccelByte</scope><name>~FOnlineStatisticAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

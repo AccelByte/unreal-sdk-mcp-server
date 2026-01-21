@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/d2e/_online_external_u_i_interface_accel_byte_8h" kind="file" language="C++">
+    <compoundname>OnlineExternalUIInterfaceAccelByte.h</compoundname>
+    <includes local="yes">Interfaces/OnlineExternalUIInterface.h</includes>
+    <includes refid="db/dc4/_online_subsystem_accel_byte_package_8h" local="yes">OnlineSubsystemAccelBytePackage.h</includes>
+    <includedby refid="df/d31/_online_external_u_i_interface_accel_byte_8cpp" local="yes">OnlineExternalUIInterfaceAccelByte.cpp</includedby>
+    <includedby refid="d8/dc8/_online_subsystem_accel_byte_8cpp" local="yes">OnlineSubsystemAccelByte.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>OnlineExternalUIInterfaceAccelByte.h</label>
+        <link refid="d9/d2e/_online_external_u_i_interface_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="2">
+        <label>Interfaces/OnlineExternalUIInterface.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>OnlineExternalUIInterfaceAccelByte.cpp</label>
+        <link refid="df/d31/_online_external_u_i_interface_accel_byte_8cpp"/>
+      </node>
+      <node id="3">
+        <label>OnlineSubsystemAccelByte.cpp</label>
+        <link refid="d8/dc8/_online_subsystem_accel_byte_8cpp"/>
+      </node>
+      <node id="1">
+        <label>OnlineExternalUIInterfaceAccelByte.h</label>
+        <link refid="d9/d2e/_online_external_u_i_interface_accel_byte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/d98/class_f_online_external_u_i_accel_byte" prot="public">FOnlineExternalUIAccelByte</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d9/d2e/_online_external_u_i_interface_accel_byte_8h_1ac1987b3bf663b7e0ee01798809297e45" prot="public" static="no">
+        <type>TSharedPtr&lt; <ref refid="d4/d98/class_f_online_external_u_i_accel_byte" kindref="compound">FOnlineExternalUIAccelByte</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>typedef TSharedPtr&lt;FOnlineExternalUIAccelByte, ESPMode::ThreadSafe&gt; FOnlineExternalUIAccelBytePtr</definition>
+        <argsstring></argsstring>
+        <name>FOnlineExternalUIAccelBytePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" line="75" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Interfaces/OnlineExternalUIInterface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/dc4/_online_subsystem_accel_byte_package_8h" kindref="compound">OnlineSubsystemAccelBytePackage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IOnlineSubsystem;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d4/d98/class_f_online_external_u_i_accel_byte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ONLINESUBSYSTEMACCELBYTE_API<sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte" kindref="compound">FOnlineExternalUIAccelByte</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IOnlineExternalUI</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="d4/d98/class_f_online_external_u_i_accel_byte_1adfad0b1f760914c5de9263cdea31bf5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1adfad0b1f760914c5de9263cdea31bf5f" kindref="member">~FOnlineExternalUIAccelByte</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1ab20405389acf47b1357f16565b608be7" kindref="member">GetFromSubsystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IOnlineSubsystem*<sp/>Subsystem,<sp/>TSharedPtr&lt;FOnlineExternalUIAccelByte,<sp/>ESPMode::ThreadSafe&gt;&amp;<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1adfa9df9d7c52f7b354ff87a2aa9e3e04" kindref="member">GetFromWorld</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UWorld*<sp/>World,<sp/>TSharedPtr&lt;FOnlineExternalUIAccelByte,<sp/>ESPMode::ThreadSafe&gt;&amp;<sp/>OutInterfaceInstance);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>Begin<sp/>Override<sp/>IOnlineExternalUI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a47a12362b82fc7751e4a973c5a9681f7" kindref="member">ShowLoginUI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ControllerIndex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bShowOnlineOnly,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bShowSkipButton,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnLoginUIClosedDelegate&amp;<sp/>Delegate<sp/>=<sp/>FOnLoginUIClosedDelegate())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a3293f9a4d079984ecc5dea6269a2bee9" kindref="member">ShowAccountCreationUI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ControllerIndex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnAccountCreationUIClosedDelegate&amp;<sp/>Delegate<sp/>=<sp/>FOnAccountCreationUIClosedDelegate())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a326bea23a7e2e0ec3cfd8bac8433cebf" kindref="member">ShowFriendsUI</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a318d0c87bc0ee87fa34849685de0f7bd" kindref="member">ShowInviteUI</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/>FName<sp/>SessionName<sp/>=<sp/>NAME_GameSession)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a2c4348535dca923dc3abb3cdef2c3e5f" kindref="member">ShowAchievementsUI</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1ab0122c7df9d8452d142cba65ec7661e2" kindref="member">ShowLeaderboardUI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>LeaderboardName)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1adca2743fde3983e8bbde426b2f698009" kindref="member">ShowWebURL</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>Url,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FShowWebUrlParams&amp;<sp/>ShowParams,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnShowWebUrlClosedDelegate&amp;<sp/>Delegate<sp/>=<sp/>FOnShowWebUrlClosedDelegate())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1ad1b1da206655aa95d65e79f25b4659ac" kindref="member">CloseWebURL</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a2d2557582318c2e65ccc00cc9da5546d" kindref="member">ShowProfileUI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>Requestor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>Requestee,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnProfileUIClosedDelegate&amp;<sp/>Delegate<sp/>=<sp/>FOnProfileUIClosedDelegate())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1ad9d565b8890da8ded9b4c2cc6bd7ba9d" kindref="member">ShowAccountUpgradeUI</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FUniqueNetId&amp;<sp/>UniqueId)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a4a466873f10c8578dac5ab5ebd472671" kindref="member">ShowStoreUI</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FShowStoreParams&amp;<sp/>ShowParams,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnShowStoreUIClosedDelegate&amp;<sp/>Delegate<sp/>=<sp/>FOnShowStoreUIClosedDelegate())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte_1a478d60261a00da3becc9190c5f7bc486" kindref="member">ShowSendMessageUI</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>LocalUserNum,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FShowSendMessageParams&amp;<sp/>ShowParams,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnShowSendMessageUIClosedDelegate&amp;<sp/>Delegate<sp/>=<sp/>FOnShowSendMessageUIClosedDelegate())<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~<sp/>End<sp/>Override<sp/>IOnlineExternalUI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d4/d98/class_f_online_external_u_i_accel_byte_1a4ffd361455db00277985f0bcc833cb1a" refkind="member"><highlight class="normal"><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref>:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d4/d98/class_f_online_external_u_i_accel_byte" kindref="compound">FOnlineExternalUIAccelByte</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>InSubsystem)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>AccelByteSubsystem(InSubsystem)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/>AccelByteSubsystem;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>IOnlineExternalUIPtr<sp/>GetNativePlatformExternalUI();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="d9/d2e/_online_external_u_i_interface_accel_byte_8h_1ac1987b3bf663b7e0ee01798809297e45" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FOnlineExternalUIAccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/><ref refid="d9/d2e/_online_external_u_i_interface_accel_byte_8h_1ac1987b3bf663b7e0ee01798809297e45" kindref="member">FOnlineExternalUIAccelBytePtr</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineExternalUIInterfaceAccelByte.h"/>
+  </compounddef>
+</doxygen>

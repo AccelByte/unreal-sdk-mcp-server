@@ -1,0 +1,783 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="db/d1b/_online_async_task_accel_byte_update_game_session_v2_8cpp" kind="file" language="C++">
+    <compoundname>OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp</compoundname>
+    <includes refid="d7/d12/_online_async_task_accel_byte_update_game_session_v2_8h" local="yes">OnlineAsyncTaskAccelByteUpdateGameSessionV2.h</includes>
+    <includes refid="d4/de4/_online_session_settings_accel_byte_8h" local="yes">OnlineSessionSettingsAccelByte.h</includes>
+    <includes refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h" local="yes">OnlineSubsystemAccelByteSessionSettings.h</includes>
+    <includes local="yes">GameServerApi/AccelByteServerSessionApi.h</includes>
+    <includes local="yes">Api/AccelByteSessionApi.h</includes>
+    <includes refid="dc/df7/_online_async_task_accel_byte_refresh_v2_game_session_8h" local="yes">OnlineAsyncTaskAccelByteRefreshV2GameSession.h</includes>
+    <incdepgraph>
+      <node id="58">
+        <label>AccelByteNetworkingStatus.h</label>
+      </node>
+      <node id="64">
+        <label>Api/AccelByteSessionApi.h</label>
+      </node>
+      <node id="25">
+        <label>Core/AccelByteApiClient.h</label>
+      </node>
+      <node id="51">
+        <label>Core/AccelByteMultiRegistry.h</label>
+      </node>
+      <node id="11">
+        <label>Core/AccelByteUtilities.h</label>
+      </node>
+      <node id="59">
+        <label>Core/StatsD/IAccelByteStatsDMetricCollector.h</label>
+      </node>
+      <node id="6">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="65">
+        <label>OnlineAsyncTaskAccelByteRefreshV2GameSession.h</label>
+        <link refid="dc/df7/_online_async_task_accel_byte_refresh_v2_game_session_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp</label>
+        <link refid="db/d1b/_online_async_task_accel_byte_update_game_session_v2_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OnlineAsyncTaskAccelByteUpdateGameSessionV2.h</label>
+        <link refid="d7/d12/_online_async_task_accel_byte_update_game_session_v2_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByte.h</label>
+        <link refid="de/d06/_online_async_task_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>AsyncTasks/OnlineAsyncTaskAccelByteUtils.h</label>
+        <link refid="d8/d78/_online_async_task_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>OnlineAchievementsInterfaceAccelByte.h</label>
+        <link refid="d8/dec/_online_achievements_interface_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>OnlineAsyncTaskManagerAccelByte.h</label>
+        <link refid="dd/da1/_online_async_task_manager_accel_byte_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>OnlineChatInterfaceAccelByte.h</label>
+        <link refid="da/d9b/_online_chat_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>OnlineEntitlementsInterfaceAccelByte.h</label>
+        <link refid="dd/dd2/_online_entitlements_interface_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>OnlineErrorAccelByte.h</label>
+        <link refid="db/db2/_online_error_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>OnlineGroupsInterfaceAccelByte.h</label>
+        <link refid="d6/da7/_online_groups_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>OnlineIdentityInterfaceAccelByte.h</label>
+        <link refid="d2/de4/_online_identity_interface_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>OnlinePurchaseInterfaceAccelByte.h</label>
+        <link refid="d0/d60/_online_purchase_interface_accel_byte_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>OnlineSessionInterfaceV2AccelByte.h</label>
+        <link refid="d6/d55/_online_session_interface_v2_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>OnlineSessionSettingsAccelByte.h</label>
+        <link refid="d4/de4/_online_session_settings_accel_byte_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>OnlineStoreInterfaceV2AccelByte.h</label>
+        <link refid="df/d7e/_online_store_interface_v2_accel_byte_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>OnlineSubsystemAccelByte.h</label>
+        <link refid="d1/d3f/_online_subsystem_accel_byte_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OnlineSubsystemAccelByteDefines.h</label>
+        <link refid="d9/d76/_online_subsystem_accel_byte_defines_8h"/>
+      </node>
+      <node id="9">
+        <label>OnlineSubsystemAccelByteInternalHelpers.h</label>
+        <link refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h"/>
+      </node>
+      <node id="5">
+        <label>OnlineSubsystemAccelByteModule.h</label>
+        <link refid="da/dfd/_online_subsystem_accel_byte_module_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>OnlineSubsystemAccelBytePackage.h</label>
+        <link refid="db/dc4/_online_subsystem_accel_byte_package_8h"/>
+      </node>
+      <node id="62">
+        <label>OnlineSubsystemAccelByteSessionSettings.h</label>
+        <link refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h"/>
+      </node>
+      <node id="10">
+        <label>OnlineSubsystemAccelByteTypes.h</label>
+        <link refid="d2/daa/_online_subsystem_accel_byte_types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>OnlineSubsystemAccelByteUtils.h</label>
+        <link refid="d1/d42/_online_subsystem_accel_byte_utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>OnlineUserCacheAccelByte.h</label>
+        <link refid="d7/d3c/_online_user_cache_accel_byte_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Delegates/IDelegateInstance.h</label>
+      </node>
+      <node id="43">
+        <label>Dom/JsonObject.h</label>
+      </node>
+      <node id="20">
+        <label>Engine/LocalPlayer.h</label>
+      </node>
+      <node id="60">
+        <label>GameServerApi/AccelByteServerMetricExporterApi.h</label>
+      </node>
+      <node id="63">
+        <label>GameServerApi/AccelByteServerSessionApi.h</label>
+      </node>
+      <node id="13">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="26">
+        <label>Interfaces/OnlineAchievementsInterface.h</label>
+      </node>
+      <node id="45">
+        <label>Interfaces/OnlineChatInterface.h</label>
+      </node>
+      <node id="33">
+        <label>Interfaces/OnlineEntitlementsInterface.h</label>
+      </node>
+      <node id="49">
+        <label>Interfaces/OnlineGroupsInterface.h</label>
+      </node>
+      <node id="50">
+        <label>Interfaces/OnlineIdentityInterface.h</label>
+      </node>
+      <node id="38">
+        <label>Interfaces/OnlinePurchaseInterface.h</label>
+      </node>
+      <node id="54">
+        <label>Interfaces/OnlineSessionInterface.h</label>
+      </node>
+      <node id="40">
+        <label>Interfaces/OnlineStoreInterfaceV2.h</label>
+      </node>
+      <node id="44">
+        <label>Models/AccelByteChatModels.h</label>
+      </node>
+      <node id="57">
+        <label>Models/AccelByteDSHubModels.h</label>
+      </node>
+      <node id="34">
+        <label>Models/AccelByteEcommerceModels.h</label>
+      </node>
+      <node id="48">
+        <label>Models/AccelByteGroupModels.h</label>
+      </node>
+      <node id="17">
+        <label>Models/AccelByteMatchmakingModels.h</label>
+      </node>
+      <node id="56">
+        <label>Models/AccelByteSessionModels.h</label>
+      </node>
+      <node id="32">
+        <label>Models/AccelByteUserModels.h</label>
+      </node>
+      <node id="7">
+        <label>Modules/ModuleInterface.h</label>
+      </node>
+      <node id="4">
+        <label>OnlineAsyncTaskManager.h</label>
+      </node>
+      <node id="47">
+        <label>OnlineDelegateMacros.h</label>
+      </node>
+      <node id="37">
+        <label>OnlineError.h</label>
+      </node>
+      <node id="55">
+        <label>OnlineSessionSettings.h</label>
+      </node>
+      <node id="18">
+        <label>OnlineStats.h</label>
+      </node>
+      <node id="8">
+        <label>OnlineSubsystem.h</label>
+      </node>
+      <node id="19">
+        <label>OnlineSubsystemAccelByteTypes.generated.h</label>
+      </node>
+      <node id="27">
+        <label>OnlineSubsystemImpl.h</label>
+      </node>
+      <node id="12">
+        <label>OnlineSubsystemTypes.h</label>
+      </node>
+      <node id="15">
+        <label>Runtime/Launch/Resources/Version.h</label>
+      </node>
+      <node id="22">
+        <label>UObject/CoreOnline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2022<sp/>AccelByte<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>licensed<sp/>software<sp/>from<sp/>AccelByte<sp/>Inc,<sp/>for<sp/>limitations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>restrictions<sp/>contact<sp/>your<sp/>company<sp/>contract<sp/>manager.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d12/_online_async_task_accel_byte_update_game_session_v2_8h" kindref="compound">OnlineAsyncTaskAccelByteUpdateGameSessionV2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/de4/_online_session_settings_accel_byte_8h" kindref="compound">OnlineSessionSettingsAccelByte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h" kindref="compound">OnlineSubsystemAccelByteSessionSettings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GameServerApi/AccelByteServerSessionApi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Api/AccelByteSessionApi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/df7/_online_async_task_accel_byte_refresh_v2_game_session_8h" kindref="compound">OnlineAsyncTaskAccelByteRefreshV2GameSession.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7234d877b9b142ceae6f4d7fb758286a" refkind="member"><highlight class="normal"><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7234d877b9b142ceae6f4d7fb758286a" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::FOnlineAsyncTaskAccelByteUpdateGameSessionV2</ref>(<ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>InABInterface,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>InSessionName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FOnlineSessionSettings&amp;<sp/>InNewSessionSettings)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>as<sp/>a<sp/>server<sp/>task<sp/>if<sp/>we<sp/>are<sp/>running<sp/>a<sp/>dedicated<sp/>server,<sp/>as<sp/>this<sp/>doubles<sp/>as<sp/>a<sp/>server<sp/>task.<sp/>Otherwise,<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>flags<sp/>to<sp/>indicate<sp/>that<sp/>it&apos;s<sp/>a<sp/>client<sp/>task.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" kindref="member">FOnlineAsyncTaskAccelByte</ref>(InABInterface,<sp/>INVALID_CONTROLLERID,<sp/>(IsRunningDedicatedServer())<sp/>?<sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a4c1068f087469104f57255065e771e26" kindref="member">ASYNC_TASK_FLAG_BIT</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1a6cb920d7cc2540166b1e2297000faabb" kindref="member">EAccelByteAsyncTaskFlags</ref>::<ref refid="de/d06/_online_async_task_accel_byte_8h_1a6cb920d7cc2540166b1e2297000faabbad23a1898466775ab66a0b4ed2808ab87" kindref="member">ServerTask</ref>)<sp/>:<sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a4c1068f087469104f57255065e771e26" kindref="member">ASYNC_TASK_FLAG_BIT</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1a6cb920d7cc2540166b1e2297000faabb" kindref="member">EAccelByteAsyncTaskFlags</ref>::<ref refid="de/d06/_online_async_task_accel_byte_8h_1a6cb920d7cc2540166b1e2297000faabba6adf97f83acf6453d4a6a4b1070f3754" kindref="member">None</ref>))</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>(InSessionName)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>(InNewSessionSettings)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!IsRunningDedicatedServer())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IOnlineSessionPtr<sp/>SessionInterface<sp/>=<sp/>Subsystem-&gt;GetSessionInterface();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ensure(SessionInterface.IsValid()))</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FNamedOnlineSession*<sp/>Session<sp/>=<sp/>SessionInterface-&gt;GetNamedSession(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ensure(Session<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" kindref="member">UserId</ref><sp/>=<sp/><ref refid="df/d08/class_f_unique_net_id_accel_byte_user_1ac2ab225874ba1392879b16f9b88ceef3" kindref="member">FUniqueNetIdAccelByteUser::CastChecked</ref>(Session-&gt;LocalOwnerId.ToSharedRef());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a76aeee6204a06136ab404e6fd321f165" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a76aeee6204a06136ab404e6fd321f165" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::Initialize</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30" kindref="member">Super::Initialize</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;SessionName:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>*<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d55/_online_session_interface_v2_accel_byte_8h_1aecc70315e288c2be8debf7af48ace9ac" kindref="member">FOnlineSessionV2AccelBytePtr</ref><sp/>SessionInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineSessionV2AccelByte&gt;(Subsystem-&gt;GetSessionInterface());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ada14474a228c1bbb8b7872743d33905b" kindref="member">AB_ASYNC_TASK_ENSURE</ref>(SessionInterface.IsValid(),<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>update<sp/>game<sp/>session<sp/>as<sp/>our<sp/>session<sp/>interface<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>FNamedOnlineSession*<sp/>Session<sp/>=<sp/>SessionInterface-&gt;GetNamedSession(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ada14474a228c1bbb8b7872743d33905b" kindref="member">AB_ASYNC_TASK_ENSURE</ref>(Session<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>update<sp/>game<sp/>session<sp/>as<sp/>our<sp/>local<sp/>session<sp/>instance<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FOnlineSessionInfoAccelByteV2&gt;<sp/>SessionInfo<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineSessionInfoAccelByteV2&gt;(Session-&gt;SessionInfo);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ada14474a228c1bbb8b7872743d33905b" kindref="member">AB_ASYNC_TASK_ENSURE</ref>(SessionInfo.IsValid(),<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>update<sp/>game<sp/>session<sp/>as<sp/>our<sp/>local<sp/>session<sp/>info<sp/>instance<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ada14474a228c1bbb8b7872743d33905b" kindref="member">AB_ASYNC_TASK_ENSURE</ref>(SessionInfo-&gt;GetBackendSessionData()-&gt;SessionType<sp/>==<sp/>EAccelByteV2SessionType::GameSession,<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>update<sp/>game<sp/>session<sp/>as<sp/>our<sp/>local<sp/>backend<sp/>session<sp/>info<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>TSharedPtr&lt;FAccelByteModelsV2GameSession&gt;<sp/>GameSessionBackendData<sp/>=<sp/>StaticCastSharedPtr&lt;FAccelByteModelsV2GameSession&gt;(SessionInfo-&gt;GetBackendSessionData());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ada14474a228c1bbb8b7872743d33905b" kindref="member">AB_ASYNC_TASK_ENSURE</ref>(GameSessionBackendData.IsValid(),<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>update<sp/>game<sp/>session<sp/>as<sp/>our<sp/>local<sp/>backend<sp/>session<sp/>info<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>FAccelByteModelsV2GameSessionUpdateRequest<sp/>UpdateRequest;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>version<sp/>for<sp/>update<sp/>to<sp/>be<sp/>the<sp/>current<sp/>version<sp/>on<sp/>backend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>UpdateRequest.Version<sp/>=<sp/>GameSessionBackendData-&gt;Version;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Currently<sp/>we<sp/>just<sp/>want<sp/>to<sp/>update<sp/>our<sp/>attributes<sp/>based<sp/>on<sp/>the<sp/>new<sp/>settings<sp/>object<sp/>passed<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>UpdateRequest.Attributes.JsonObject<sp/>=<sp/>SessionInterface-&gt;ConvertSessionSettingsToJsonObject(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>joinability<sp/>has<sp/>changed<sp/>and<sp/>if<sp/>so<sp/>send<sp/>it<sp/>along<sp/>to<sp/>the<sp/>backend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>JoinTypeString;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1a236ebcdf4ad5fc5216561ba1cbd338f9" kindref="member">SETTING_SESSION_JOIN_TYPE</ref>,<sp/>JoinTypeString);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EAccelByteV2SessionJoinability<sp/>JoinType<sp/>=<sp/>SessionInterface-&gt;GetJoinabilityFromString(JoinTypeString);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(JoinType<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.Joinability<sp/>&amp;&amp;<sp/>JoinType<sp/>!=<sp/>EAccelByteV2SessionJoinability::EMPTY)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.Joinability<sp/>=<sp/>JoinType;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>requested<sp/>regions<sp/>for<sp/>the<sp/>DS<sp/>request<sp/>if<sp/>the<sp/>settings<sp/>have<sp/>changed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TArray&lt;FString&gt;<sp/>OldRequestedRegions<sp/>=<sp/>GameSessionBackendData-&gt;Configuration.RequestedRegions;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FString&gt;<sp/>NewRequestedRegions;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/db2/class_f_online_session_settings_accel_byte_1aafe6029ad49b494bffd224b6012c74d4" kindref="member">FOnlineSessionSettingsAccelByte::Get</ref>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>,<sp/><ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1a53bc34b6793590b009f89b2610fd1cbe" kindref="member">SETTING_GAMESESSION_REQUESTEDREGIONS</ref>,<sp/>NewRequestedRegions);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bUpdateRequestedRegions<sp/>=<sp/>NewRequestedRegions.Num()<sp/>!=<sp/>OldRequestedRegions.Num();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!bUpdateRequestedRegions)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>NewRegion<sp/>:<sp/>NewRequestedRegions)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!OldRequestedRegions.Contains(NewRegion))</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bUpdateRequestedRegions<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bUpdateRequestedRegions)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.RequestedRegions<sp/>=<sp/>NewRequestedRegions;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>ClientVersion{};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1ad7fb72cd50cdfe152ebcd5bdb74563f1" kindref="member">SETTING_GAMESESSION_CLIENTVERSION</ref>,<sp/>ClientVersion)<sp/>&amp;&amp;<sp/>ClientVersion<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.ClientVersion)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.ClientVersion<sp/>=<sp/>ClientVersion;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>Deployment{};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1a9490f6d464f4316621aad0101f2b5271" kindref="member">SETTING_GAMESESSION_DEPLOYMENT</ref>,<sp/>Deployment)<sp/>&amp;&amp;<sp/>Deployment<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.Deployment)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.Deployment<sp/>=<sp/>Deployment;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bUpdatePlayerCounts<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>MinimumPlayers<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1ac37c44240eb0325116adddaad7917c28" kindref="member">SETTING_SESSION_MINIMUM_PLAYERS</ref>,<sp/>MinimumPlayers)<sp/>&amp;&amp;<sp/>MinimumPlayers<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.MinPlayers)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bUpdatePlayerCounts<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>StoredMaximumPlayers<sp/>=<sp/>SessionInterface-&gt;GetSessionMaxPlayerCount(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(StoredMaximumPlayers<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.MaxPlayers)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bUpdatePlayerCounts<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bUpdatePlayerCounts)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.MinPlayers<sp/>=<sp/>MinimumPlayers;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.MaxPlayers<sp/>=<sp/>StoredMaximumPlayers;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>InactiveTimeout<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1ab5d07275ca5cd4f0643f4a7fb0eb71ee" kindref="member">SETTING_SESSION_INACTIVE_TIMEOUT</ref>,<sp/>InactiveTimeout)<sp/>&amp;&amp;<sp/>InactiveTimeout<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.InactiveTimeout)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.InactiveTimeout<sp/>=<sp/>InactiveTimeout;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>InviteTimeout<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1a33201f4b6bf81d8d7415c855557934d0" kindref="member">SETTING_SESSION_INVITE_TIMEOUT</ref>,<sp/>InviteTimeout)<sp/>&amp;&amp;<sp/>InviteTimeout<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.InviteTimeout)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.InviteTimeout<sp/>=<sp/>InviteTimeout;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>MatchPool{};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1a44566268a3086fdfe2b18a6cfce107c8" kindref="member">SETTING_SESSION_MATCHPOOL</ref>,<sp/>MatchPool)<sp/>&amp;&amp;<sp/>MatchPool<sp/>!=<sp/>GameSessionBackendData-&gt;MatchPool)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.MatchPool<sp/>=<sp/>MatchPool;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>ServerTypeString{};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>.Get(<ref refid="d1/d3b/_online_subsystem_accel_byte_session_settings_8h_1ac2bf55a48ffc1e48cf7772defac0dc49" kindref="member">SETTING_SESSION_SERVER_TYPE</ref>,<sp/>ServerTypeString);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EAccelByteV2SessionConfigurationServerType<sp/>ServerType<sp/>=<sp/>SessionInterface-&gt;GetServerTypeFromString(ServerTypeString);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ServerType<sp/>!=<sp/>GameSessionBackendData-&gt;Configuration.Type<sp/>&amp;&amp;<sp/>ServerType<sp/>!=<sp/>EAccelByteV2SessionConfigurationServerType::EMPTY)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.Type<sp/>=<sp/>ServerType;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>#NOTE<sp/>Team<sp/>assignments<sp/>will<sp/>override<sp/>the<sp/>session&apos;s<sp/>members<sp/>list<sp/>on<sp/>the<sp/>backend!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>skip<sp/>adding<sp/>teams<sp/>in<sp/>update<sp/>request<sp/>if<sp/>it&apos;s<sp/>a<sp/>closed<sp/>session,<sp/>or<sp/>the<sp/>request<sp/>will<sp/>be<sp/>denied<sp/>by<sp/>backend.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsUpdatingNotToClosed<sp/>=<sp/>JoinType<sp/>!=<sp/>EAccelByteV2SessionJoinability::CLOSED;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsNotUpdatingJoinability<sp/>=<sp/>JoinType<sp/>==<sp/>EAccelByteV2SessionJoinability::EMPTY;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsSessionCurrentlyNotClosed<sp/>=<sp/>GameSessionBackendData-&gt;Configuration.Joinability<sp/>!=<sp/>EAccelByteV2SessionJoinability::CLOSED;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bIsUpdatingNotToClosed<sp/>||<sp/>(bIsNotUpdatingJoinability<sp/>&amp;&amp;<sp/>bIsSessionCurrentlyNotClosed))</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.Teams<sp/>=<sp/>SessionInfo-&gt;GetTeamAssignments();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IsRunningDedicatedServer())</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>game<sp/>server<sp/>to<sp/>empty<sp/>team<sp/>assignment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateRequest.bIncludeEmptyTeams<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>the<sp/>API<sp/>call<sp/>based<sp/>on<sp/>whether<sp/>we<sp/>are<sp/>a<sp/>server<sp/>or<sp/>a<sp/>client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a58f5d450ccad1cfa705605999ccaddf7" kindref="member">OnUpdateGameSessionSuccessDelegate</ref><sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;THandler&lt;FAccelByteModelsV2GameSession&gt;</ref>&gt;::CreateThreadSafeSelfPtr(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aee4d2387c9c20b771d90a24ce1a0636c" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionSuccess</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a959e37c8d9c21c8ce49be8612b0960a8" kindref="member">OnUpdateGameSessionErrorDelegate</ref><sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;FErrorHandler&gt;::CreateThreadSafeSelfPtr</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a23afacb7911b19f2fdb400e19f6beb56" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionError</ref>);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IsRunningDedicatedServer())</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FRegistry::ServerSession.UpdateGameSession(SessionInfo-&gt;GetSessionId().ToString(),<sp/>UpdateRequest,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a58f5d450ccad1cfa705605999ccaddf7" kindref="member">OnUpdateGameSessionSuccessDelegate</ref>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a959e37c8d9c21c8ce49be8612b0960a8" kindref="member">OnUpdateGameSessionErrorDelegate</ref>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" kindref="member">ApiClient</ref>-&gt;Session.UpdateGameSession(SessionInfo-&gt;GetSessionId().ToString(),<sp/>UpdateRequest,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a58f5d450ccad1cfa705605999ccaddf7" kindref="member">OnUpdateGameSessionSuccessDelegate</ref>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a959e37c8d9c21c8ce49be8612b0960a8" kindref="member">OnUpdateGameSessionErrorDelegate</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa34d7b639257263e306278c5b2021626" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa34d7b639257263e306278c5b2021626" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::Finalize</ref>()</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;bWasSuccessful:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a743c92d5f8c7e345612ab9ac8b1ffb6a" kindref="member">LOG_BOOL_FORMAT</ref>(bWasSuccessful));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bWasSuccessful)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d55/_online_session_interface_v2_accel_byte_8h_1aecc70315e288c2be8debf7af48ace9ac" kindref="member">FOnlineSessionV2AccelBytePtr</ref><sp/>SessionInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineSessionV2AccelByte&gt;(Subsystem-&gt;GetSessionInterface());</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ensure(SessionInterface.IsValid()))</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>finalize<sp/>updating<sp/>game<sp/>session<sp/>as<sp/>our<sp/>session<sp/>interface<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>don&apos;t<sp/>care<sp/>about<sp/>this<sp/>out<sp/>flag<sp/>in<sp/>this<sp/>case</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsConnectingToP2P<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SessionInterface-&gt;UpdateInternalGameSession(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7b05d90ae5d8032c704747f7e2307b37" kindref="member">NewSessionData</ref>,<sp/>bIsConnectingToP2P);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a95e23b18e24e6bea775c1fc91a7370e2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a95e23b18e24e6bea775c1fc91a7370e2" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::TriggerDelegates</ref>()</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;bWasSuccessful:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/><ref refid="d3/d56/_online_subsystem_accel_byte_internal_helpers_8h_1a743c92d5f8c7e345612ab9ac8b1ffb6a" kindref="member">LOG_BOOL_FORMAT</ref>(bWasSuccessful));</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d55/_online_session_interface_v2_accel_byte_8h_1aecc70315e288c2be8debf7af48ace9ac" kindref="member">FOnlineSessionV2AccelBytePtr</ref><sp/>SessionInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineSessionV2AccelByte&gt;(Subsystem-&gt;GetSessionInterface());</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ensure(SessionInterface.IsValid()))</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ad69e9d0dafc015c98dc007561115d445" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END_VERBOSITY</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>trigger<sp/>delegates<sp/>for<sp/>updating<sp/>game<sp/>session<sp/>as<sp/>our<sp/>session<sp/>interface<sp/>is<sp/>invalid!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1ae1e86abcd0886c51de2712645fca5b4e" kindref="member">bWasConflictError</ref>)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SessionInterface-&gt;TriggerOnSessionUpdateConflictErrorDelegates(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a320dca912f0dc9f5158b9e173537af7a" kindref="member">NewSessionSettings</ref>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>SessionInterface-&gt;TriggerOnUpdateSessionCompleteDelegates(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>,<sp/>bWasSuccessful);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>SessionInterface-&gt;TriggerOnSessionUpdateRequestCompleteDelegates(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>,<sp/>bWasSuccessful);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aee4d2387c9c20b771d90a24ce1a0636c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aee4d2387c9c20b771d90a24ce1a0636c" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionSuccess</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsV2GameSession&amp;<sp/>BackendSessionData)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;UpdatedSessionVersion:<sp/>%lli&quot;</highlight><highlight class="normal">),<sp/>BackendSessionData.Version);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a7b05d90ae5d8032c704747f7e2307b37" kindref="member">NewSessionData</ref><sp/>=<sp/>BackendSessionData;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea505a83f220c02df2f85c3810cd9ceb38" kindref="member">EAccelByteAsyncTaskCompleteState::Success</ref>);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a23afacb7911b19f2fdb400e19f6beb56" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a23afacb7911b19f2fdb400e19f6beb56" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnUpdateGameSessionError</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d3f/_online_subsystem_accel_byte_8h_1a75fe5bd667a016f765e86ac3b157e977" kindref="member">UE_LOG_AB</ref>(Warning,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>update<sp/>game<sp/>session<sp/>on<sp/>backend!<sp/>Error<sp/>code:<sp/>%d;<sp/>Error<sp/>message:<sp/>%s&quot;</highlight><highlight class="normal">),<sp/>ErrorCode,<sp/>*ErrorMessage);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>this<sp/>is<sp/>a<sp/>version<sp/>conflict<sp/>error,<sp/>we<sp/>want<sp/>to<sp/>refresh<sp/>the<sp/>local<sp/>session<sp/>data<sp/>before<sp/>completing<sp/>the<sp/>task</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ErrorCode<sp/>!=<sp/>StaticCast&lt;int32&gt;(AccelByte::ErrorCodes::SessionUpdateVersionMismatch))</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1ae1e86abcd0886c51de2712645fca5b4e" kindref="member">bWasConflictError</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a4d53f067946cbc8da25b332858b319d4" kindref="member">RefreshSession</ref>();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a4d53f067946cbc8da25b332858b319d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a4d53f067946cbc8da25b332858b319d4" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::RefreshSession</ref>()</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FOnlineSessionV2AccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/>SessionInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineSessionV2AccelByte&gt;(Subsystem-&gt;GetSessionInterface());</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>check(SessionInterface.IsValid());</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>FNamedOnlineSession*<sp/>Session<sp/>=<sp/>SessionInterface-&gt;GetNamedSession(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ada14474a228c1bbb8b7872743d33905b" kindref="member">AB_ASYNC_TASK_ENSURE</ref>(Session<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>refresh<sp/>game<sp/>session<sp/>named<sp/>&apos;%s&apos;<sp/>as<sp/>the<sp/>session<sp/>does<sp/>not<sp/>exist<sp/>locally!&quot;</highlight><highlight class="normal">,<sp/>*<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString<sp/>SessionId<sp/>=<sp/>Session-&gt;GetSessionIdStr();</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1ada14474a228c1bbb8b7872743d33905b" kindref="member">AB_ASYNC_TASK_ENSURE</ref>(!SessionId.Equals(TEXT(</highlight><highlight class="stringliteral">&quot;InvalidSession&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>refresh<sp/>game<sp/>session<sp/>named<sp/>&apos;%s&apos;<sp/>as<sp/>there<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>session<sp/>ID<sp/>associated!&quot;</highlight><highlight class="normal">,<sp/>*<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>.ToString());</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>the<sp/>API<sp/>call<sp/>based<sp/>on<sp/>whether<sp/>we<sp/>are<sp/>a<sp/>server<sp/>or<sp/>a<sp/>client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a371a1be68a6404061d3ee3af7725f34b" kindref="member">OnRefreshGameSessionSuccessDelegate</ref><sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;THandler&lt;FAccelByteModelsV2GameSession&gt;</ref>&gt;::CreateThreadSafeSelfPtr(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a65cf4c8cf52adaea7cbc3c5c9632cac6" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionSuccess</ref>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa9a4e458b98fd6e3be89500b93e9370d" kindref="member">OnRefreshGameSessionErrorDelegate</ref><sp/>=<sp/><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a5ec558c587639ecd602637ba19ad7dc1" kindref="member">TDelegateUtils&lt;FErrorHandler&gt;::CreateThreadSafeSelfPtr</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1af26443ecfd2900118a14d3216acb9d50" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionError</ref>);;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(IsRunningDedicatedServer())</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FMultiRegistry::GetServerApiClient()-&gt;ServerSession.GetGameSessionDetails(SessionId,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a371a1be68a6404061d3ee3af7725f34b" kindref="member">OnRefreshGameSessionSuccessDelegate</ref>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa9a4e458b98fd6e3be89500b93e9370d" kindref="member">OnRefreshGameSessionErrorDelegate</ref>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" kindref="member">ApiClient</ref>-&gt;Session.GetGameSessionDetails(SessionId,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a371a1be68a6404061d3ee3af7725f34b" kindref="member">OnRefreshGameSessionSuccessDelegate</ref>,<sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1aa9a4e458b98fd6e3be89500b93e9370d" kindref="member">OnRefreshGameSessionErrorDelegate</ref>);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a65cf4c8cf52adaea7cbc3c5c9632cac6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a65cf4c8cf52adaea7cbc3c5c9632cac6" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionSuccess</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FAccelByteModelsV2GameSession&amp;<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1aedf82b7e967ed238b353636eb0456fc5" kindref="member">AB_OSS_ASYNC_TASK_TRACE_BEGIN</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TSharedPtr&lt;FOnlineSessionV2AccelByte,<sp/>ESPMode::ThreadSafe&gt;<sp/>SessionInterface<sp/>=<sp/>StaticCastSharedPtr&lt;FOnlineSessionV2AccelByte&gt;(Subsystem-&gt;GetSessionInterface());</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SessionInterface.IsValid())</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>don&apos;t<sp/>care<sp/>about<sp/>this<sp/>out<sp/>flag<sp/>in<sp/>this<sp/>case</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIsConnectingToP2P<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SessionInterface-&gt;UpdateInternalGameSession(<ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1a16b6a0ce5c89d0cb2b11d1c49537966c" kindref="member">SessionName</ref>,<sp/><ref refid="d5/d1b/_online_auth_handler_component_accel_byte_8cpp_1a2a57b3281a287876284226a74fa46a9aa8eea62084ca7e541d918e823422bd82e" kindref="member">Result</ref>,<sp/>bIsConnectingToP2P);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>had<sp/>to<sp/>refresh<sp/>the<sp/>session,<sp/>then<sp/>the<sp/>overall<sp/>update<sp/>request<sp/>still<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a68d40d6ce93e63bbed8459ff7e0acfbf" kindref="member">AB_OSS_ASYNC_TASK_TRACE_END</ref>(TEXT(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1af26443ecfd2900118a14d3216acb9d50" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/de0/class_f_online_async_task_accel_byte_update_game_session_v2_1af26443ecfd2900118a14d3216acb9d50" kindref="member">FOnlineAsyncTaskAccelByteUpdateGameSessionV2::OnRefreshGameSessionError</ref>(<ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref><sp/>ErrorCode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FString&amp;<sp/>ErrorMessage)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d06/_online_async_task_accel_byte_8h_1a25d3ac79957687e486bd9aa3abb3d286" kindref="member">AB_ASYNC_TASK_REQUEST_FAILED</ref>(</highlight><highlight class="stringliteral">&quot;Request<sp/>to<sp/>refresh<sp/>game<sp/>session<sp/>failed<sp/>on<sp/>backend!&quot;</highlight><highlight class="normal">,<sp/>ErrorCode,<sp/>ErrorMessage);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" kindref="member">CompleteTask</ref>(<ref refid="de/d06/_online_async_task_accel_byte_8h_1acf10155ec5ca44716f0ca48f0a49914ea16776a607b5d629c58d164bd2b8e99ab" kindref="member">EAccelByteAsyncTaskCompleteState::RequestFailed</ref>);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV2/OnlineAsyncTaskAccelByteUpdateGameSessionV2.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;</compoundname>
+    <includes refid="d8/d78/_online_async_task_accel_byte_utils_8h" local="no">OnlineAsyncTaskAccelByteUtils.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename InRetValType</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>ParamTypes</declname>
+        <defname>ParamTypes</defname>
+      </param>
+      <param>
+        <type>typename UserPolicy</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a99824ee00a379242c0ee79ac25c6b84c" prot="private" static="no">
+        <type>InRetValType(ParamTypes...)</type>
+        <definition>using AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::FuncType =  InRetValType(ParamTypes...)</definition>
+        <argsstring></argsstring>
+        <name>FuncType</name>
+        <qualifiedname>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::FuncType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" line="37" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a4fd74524a03e211404648733297ef332" prot="private" static="no">
+        <type>InRetValType</type>
+        <definition>typedef InRetValType AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::RetValType</definition>
+        <argsstring></argsstring>
+        <name>RetValType</name>
+        <qualifiedname>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::RetValType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" line="38" column="22" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a6cb13957e8c70c04b63529cf096f9995" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UserClass</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>VarTypes</declname>
+            <defname>VarTypes</defname>
+          </param>
+        </templateparamlist>
+        <type>UE_NODISCARD <ref refid="d8/d78/_online_async_task_accel_byte_utils_8h_1aecb34422f8346b329cde90fc9790cd07" kindref="member">DELEGATE_TEMPLATE_TYPE</ref></type>
+        <definition>static UE_NODISCARD DELEGATE_TEMPLATE_TYPE AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::CreateThreadSafeSelfPtr</definition>
+        <argsstring>(TSelfPtr&lt; UserClass, ESPMode::ThreadSafe &gt; *InUserObjectRef, typename TMemFunPtrType&lt; false, UserClass, RetValType(ParamTypes..., VarTypes...)&gt;::Type InFunc, VarTypes... Vars)</argsstring>
+        <name>CreateThreadSafeSelfPtr</name>
+        <qualifiedname>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::CreateThreadSafeSelfPtr</qualifiedname>
+        <param>
+          <type><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" kindref="compound">TSelfPtr</ref>&lt; UserClass, ESPMode::ThreadSafe &gt; *</type>
+          <declname>InUserObjectRef</declname>
+        </param>
+        <param>
+          <type>typename TMemFunPtrType&lt; false, UserClass, <ref refid="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a4fd74524a03e211404648733297ef332" kindref="member">RetValType</ref>(ParamTypes..., VarTypes...)&gt;::Type</type>
+          <declname>InFunc</declname>
+        </param>
+        <param>
+          <type>VarTypes...</type>
+          <declname>Vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" line="42" column="51" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" bodystart="42" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a219f20871adfc8410adaaf9e28a307a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UserClass</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>VarTypes</declname>
+            <defname>VarTypes</defname>
+          </param>
+        </templateparamlist>
+        <type>UE_NODISCARD <ref refid="d8/d78/_online_async_task_accel_byte_utils_8h_1aecb34422f8346b329cde90fc9790cd07" kindref="member">DELEGATE_TEMPLATE_TYPE</ref></type>
+        <definition>static UE_NODISCARD DELEGATE_TEMPLATE_TYPE AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::CreateThreadSafeSelfPtr</definition>
+        <argsstring>(TSelfPtr&lt; UserClass, ESPMode::ThreadSafe &gt; *InUserObjectRef, typename TMemFunPtrType&lt; true, UserClass, RetValType(ParamTypes..., VarTypes...)&gt;::Type InFunc, VarTypes... Vars)</argsstring>
+        <name>CreateThreadSafeSelfPtr</name>
+        <qualifiedname>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;::CreateThreadSafeSelfPtr</qualifiedname>
+        <param>
+          <type><ref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" kindref="compound">TSelfPtr</ref>&lt; UserClass, ESPMode::ThreadSafe &gt; *</type>
+          <declname>InUserObjectRef</declname>
+        </param>
+        <param>
+          <type>typename TMemFunPtrType&lt; true, UserClass, <ref refid="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a4fd74524a03e211404648733297ef332" kindref="member">RetValType</ref>(ParamTypes..., VarTypes...)&gt;::Type</type>
+          <declname>InFunc</declname>
+        </param>
+        <param>
+          <type>VarTypes...</type>
+          <declname>Vars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" line="51" column="51" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" bodystart="51" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" line="30" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/AsyncTasks/OnlineAsyncTaskAccelByteUtils.h" bodystart="36" bodyend="57"/>
+    <listofallmembers>
+      <member refid="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a6cb13957e8c70c04b63529cf096f9995" prot="public" virt="non-virtual"><scope>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;</scope><name>CreateThreadSafeSelfPtr</name></member>
+      <member refid="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a219f20871adfc8410adaaf9e28a307a7" prot="public" virt="non-virtual"><scope>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;</scope><name>CreateThreadSafeSelfPtr</name></member>
+      <member refid="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a99824ee00a379242c0ee79ac25c6b84c" prot="private" virt="non-virtual"><scope>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;</scope><name>FuncType</name></member>
+      <member refid="da/dde/class_accel_byte_1_1_t_delegate_utils_3_01_d_e_l_e_g_a_t_e___t_e_m_p_l_a_t_e___t_y_p_e_01_4_1a4fd74524a03e211404648733297ef332" prot="private" virt="non-virtual"><scope>AccelByte::TDelegateUtils&lt; DELEGATE_TEMPLATE_TYPE &gt;</scope><name>RetValType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

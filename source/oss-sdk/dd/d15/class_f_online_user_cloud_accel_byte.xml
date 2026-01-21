@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dd/d15/class_f_online_user_cloud_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineUserCloudAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineUserCloud</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineUserCloudAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d9/d1e/_online_user_cloud_interface_accel_byte_8h" local="no">OnlineUserCloudInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d15/class_f_online_user_cloud_accel_byte_1a22659bbba089a9d8d0e7b66511a54fb5" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineUserCloudAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::AccelByteSubsystem</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instance of the subsystem that created this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="31" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d15/class_f_online_user_cloud_accel_byte_1a5ac88176cdcd2c87c634bc8e0a650323" prot="private" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineUserCloudAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::__pad0__</qualifiedname>
+        <bitfield> FOnlineUserCloudAccelByte(FOnlineSubsystemAccelByte* InSubsystem)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="37" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d15/class_f_online_user_cloud_accel_byte_1a9e2f752dd000db5e3d4563ab88f0c177" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d1e/_online_user_cloud_interface_accel_byte_8h_1a4c0b35326fc68c83b7c46b95f70a03d4" kindref="member">FUserIdToFileNameFileContentsMap</ref></type>
+        <definition>FUserIdToFileNameFileContentsMap FOnlineUserCloudAccelByte::UserIdToFileNameFileContentsMap</definition>
+        <argsstring></argsstring>
+        <name>UserIdToFileNameFileContentsMap</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::UserIdToFileNameFileContentsMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached map of file contents mapped to file names per user ID, will persist until GetFileContents is called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="105" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d15/class_f_online_user_cloud_accel_byte_1a4e7396bb964f2ea73fd48ba728dafb57" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d1e/_online_user_cloud_interface_accel_byte_8h_1a9f7bab14f6120319b941ae3dc1282e31" kindref="member">FUserIdToFileNameFileHeaderMap</ref></type>
+        <definition>FUserIdToFileNameFileHeaderMap FOnlineUserCloudAccelByte::UserIdToFileNameFileHeaderMap</definition>
+        <argsstring></argsstring>
+        <name>UserIdToFileNameFileHeaderMap</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::UserIdToFileNameFileHeaderMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached map of file headers mapped to file names per user ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="108" column="32" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d15/class_f_online_user_cloud_accel_byte_1abc3afaec482fc9f65dd06e61c0961cf1" prot="private" static="no" mutable="no">
+        <type><ref refid="d9/d1e/_online_user_cloud_interface_accel_byte_8h_1a859d14843f4df6b92890b856a2eed915" kindref="member">FUserIdToFileNameSlotIdMap</ref></type>
+        <definition>FUserIdToFileNameSlotIdMap FOnlineUserCloudAccelByte::UserIdToFileNameSlotIdMap</definition>
+        <argsstring></argsstring>
+        <name>UserIdToFileNameSlotIdMap</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::UserIdToFileNameSlotIdMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cached map of file names to slot IDs per user ID.</para>
+<para>Intended to cut down on extra calls to GetAllSlots to resolve a file name to a slot ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="115" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a986538be79e164d2c9048afc254ac411" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineUserCloudAccelByte::FOnlineUserCloudAccelByte</definition>
+        <argsstring>()</argsstring>
+        <name>FOnlineUserCloudAccelByte</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::FOnlineUserCloudAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hidden default constructor, the constructor that takes in a subsystem instance should be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="34" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" bodystart="34" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a409249f308fadb9d2b9c447d4f9dc676" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::AddCloudHeaders</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId, const TMap&lt; FString, FCloudFileHeader &gt; &amp;InFileNamesToCloudHeaders)</argsstring>
+        <name>AddCloudHeaders</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::AddCloudHeaders</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const TMap&lt; FString, FCloudFileHeader &gt; &amp;</type>
+          <declname>InFileNamesToCloudHeaders</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by async tasks to pass file name to file header associations back to this interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="45" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="49" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a77b0cdb65cf1d27e018421eb741f7aa5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::AddFileContentsToReadCache</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId, const FString &amp;FileName, TArray&lt; uint8 &gt; &amp;&amp;FileContents)</argsstring>
+        <name>AddFileContentsToReadCache</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::AddFileContentsToReadCache</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;&amp;</type>
+          <declname>FileContents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by async tasks to pass file contents to the read cache for a user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="50" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="67" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1afcb22fdcaa1cb7775b86dd1c75409f42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::AddSlotIdToCache</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId, const FString &amp;FileName, const FString &amp;SlotId)</argsstring>
+        <name>AddSlotIdToCache</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::AddSlotIdToCache</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>SlotId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by async tasks to cache a slot ID associated with a file name for a user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="53" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="93" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1aeb4ab578654320a23b83ff00c0215958" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::RemoveSlotIdFromCache</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId, const FString &amp;FileName)</argsstring>
+        <name>RemoveSlotIdFromCache</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::RemoveSlotIdFromCache</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by the delete file async task to pop a slot ID from the cache </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="56" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="110" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a46eed1035e009ca5b4326f9aad940c9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineUserCloudAccelByte::GetSlotIdFromCache</definition>
+        <argsstring>(const TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; &amp;UserId, const FString &amp;FileName)</argsstring>
+        <name>GetSlotIdFromCache</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::GetSlotIdFromCache</qualifiedname>
+        <param>
+          <type>const TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt; &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by async tasks to attempt to get a cached slot ID from a file name and user ID.</para>
+<para><simplesect kind="return"><para>the ID of the slot associated with the file name, or blank if none found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="63" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="121" bodyend="136"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1abc12e56730c40d69d6045ac4f375f13c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineUserCloudAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="dd/d15/class_f_online_user_cloud_accel_byte" kindref="compound">FOnlineUserCloudAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="73" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a231c970d771829cd48893b182bc46d53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineUserCloudAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="dd/d15/class_f_online_user_cloud_accel_byte" kindref="compound">FOnlineUserCloudAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="82" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="25" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a6d1f72afd6b2b712f95dec85430636f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::EnumerateUserFiles</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) override</argsstring>
+        <name>EnumerateUserFiles</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::EnumerateUserFiles</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="85" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="37" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a7f4d24fec395795d61ad8d9ec05d7231" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::ReadUserFile</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;FileName) override</argsstring>
+        <name>ReadUserFile</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::ReadUserFile</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="86" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="138" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a152ebd24262d05c5bafbb6753ebb3e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::WriteUserFile</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;FileName, TArray&lt; uint8 &gt; &amp;FileContents, bool bCompressBeforeUpload=false) override</argsstring>
+        <name>WriteUserFile</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::WriteUserFile</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>FileContents</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bCompressBeforeUpload</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="87" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="274" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a67ac2316718d0037e38542bf661155c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::CancelWriteUserFile</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;FileName) override</argsstring>
+        <name>CancelWriteUserFile</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::CancelWriteUserFile</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="88" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="287" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1aae453ac34ba237bd46017f30cb48f488" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::DeleteUserFile</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;FileName, bool bShouldCloudDelete, bool bShouldLocallyDelete) override</argsstring>
+        <name>DeleteUserFile</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::DeleteUserFile</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bShouldCloudDelete</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bShouldLocallyDelete</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="89" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="298" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1adba984b2be7acaf8afbb20a977de7470" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::RequestUsageInfo</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) override</argsstring>
+        <name>RequestUsageInfo</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::RequestUsageInfo</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="90" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="311" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a67dd2e89d868d968ec53784d1924e9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::GetFileContents</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;FileName, TArray&lt; uint8 &gt; &amp;FileContents) override</argsstring>
+        <name>GetFileContents</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::GetFileContents</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>TArray&lt; uint8 &gt; &amp;</type>
+          <declname>FileContents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="94" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="151" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a9cecbf7edbf4a94b7bcb841557c2c732" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::ClearFiles</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) override</argsstring>
+        <name>ClearFiles</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::ClearFiles</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="95" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="178" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1af38c1d68d6df9909defd005d7f3c860f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineUserCloudAccelByte::ClearFile</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;FileName) override</argsstring>
+        <name>ClearFile</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::ClearFile</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="96" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="192" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a6ec8edca5989754fb21335a874c95e30" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::GetUserFileList</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, TArray&lt; FCloudFileHeader &gt; &amp;UserFiles) override</argsstring>
+        <name>GetUserFileList</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::GetUserFileList</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FCloudFileHeader &gt; &amp;</type>
+          <declname>UserFiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="97" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="209" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1aca803b27dad0ed31fbb3c187b7968e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::DumpCloudState</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) override</argsstring>
+        <name>DumpCloudState</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::DumpCloudState</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="98" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="221" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d15/class_f_online_user_cloud_accel_byte_1a1e053e22eb4beff3657a74db8b298b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineUserCloudAccelByte::DumpCloudFileState</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;FileName) override</argsstring>
+        <name>DumpCloudFileState</name>
+        <qualifiedname>FOnlineUserCloudAccelByte::DumpCloudFileState</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="99" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineUserCloudInterfaceAccelByte.cpp" bodystart="229" bodyend="272"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of the UserCloud interface using <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> services. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineUserCloudAccelByte</label>
+        <link refid="dd/d15/class_f_online_user_cloud_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineUserCloud</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineUserCloudAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="1">
+        <label>FOnlineUserCloudAccelByte</label>
+        <link refid="dd/d15/class_f_online_user_cloud_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineUserCloud</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineUserCloudAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" line="26" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineUserCloudInterfaceAccelByte.h" bodystart="27" bodyend="117"/>
+    <listofallmembers>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a5ac88176cdcd2c87c634bc8e0a650323" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>__pad0__</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a22659bbba089a9d8d0e7b66511a54fb5" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a409249f308fadb9d2b9c447d4f9dc676" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>AddCloudHeaders</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a77b0cdb65cf1d27e018421eb741f7aa5" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>AddFileContentsToReadCache</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1afcb22fdcaa1cb7775b86dd1c75409f42" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>AddSlotIdToCache</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a67ac2316718d0037e38542bf661155c7" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>CancelWriteUserFile</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1af38c1d68d6df9909defd005d7f3c860f" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>ClearFile</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a9cecbf7edbf4a94b7bcb841557c2c732" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>ClearFiles</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1aae453ac34ba237bd46017f30cb48f488" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>DeleteUserFile</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a1e053e22eb4beff3657a74db8b298b05" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>DumpCloudFileState</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1aca803b27dad0ed31fbb3c187b7968e4c" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>DumpCloudState</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a6d1f72afd6b2b712f95dec85430636f0" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>EnumerateUserFiles</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a986538be79e164d2c9048afc254ac411" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>FOnlineUserCloudAccelByte</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a67dd2e89d868d968ec53784d1924e9fc" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>GetFileContents</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1abc12e56730c40d69d6045ac4f375f13c" prot="public" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a231c970d771829cd48893b182bc46d53" prot="public" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a46eed1035e009ca5b4326f9aad940c9e" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>GetSlotIdFromCache</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a6ec8edca5989754fb21335a874c95e30" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>GetUserFileList</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a7f4d24fec395795d61ad8d9ec05d7231" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>ReadUserFile</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1aeb4ab578654320a23b83ff00c0215958" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>RemoveSlotIdFromCache</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1adba984b2be7acaf8afbb20a977de7470" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>RequestUsageInfo</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a9e2f752dd000db5e3d4563ab88f0c177" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>UserIdToFileNameFileContentsMap</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a4e7396bb964f2ea73fd48ba728dafb57" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>UserIdToFileNameFileHeaderMap</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1abc3afaec482fc9f65dd06e61c0961cf1" prot="private" virt="non-virtual"><scope>FOnlineUserCloudAccelByte</scope><name>UserIdToFileNameSlotIdMap</name></member>
+      <member refid="dd/d15/class_f_online_user_cloud_accel_byte_1a152ebd24262d05c5bafbb6753ebb3e46" prot="public" virt="virtual"><scope>FOnlineUserCloudAccelByte</scope><name>WriteUserFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

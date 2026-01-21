@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteStartV1Matchmaking</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteStartV1Matchmaking, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d0/d4f/_online_async_task_accel_byte_start_v1_matchmaking_8h" local="no">OnlineAsyncTaskAccelByteStartV1Matchmaking.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1abed0f3f07206978d881f47d5081aaccb" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt;</type>
+        <definition>TArray&lt;TSharedRef&lt;const FUniqueNetId&gt; &gt; FOnlineAsyncTaskAccelByteStartV1Matchmaking::LocalPlayers</definition>
+        <argsstring></argsstring>
+        <name>LocalPlayers</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::LocalPlayers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="35" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a4b9c0e75136ee9c3d28419fac32b2ec2" prot="private" static="no" mutable="no">
+        <type>FName</type>
+        <definition>FName FOnlineAsyncTaskAccelByteStartV1Matchmaking::SessionName</definition>
+        <argsstring></argsstring>
+        <name>SessionName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::SessionName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="38" column="7" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1aeb3fbc5dae01a64f3830ec1c11c7c4b7" prot="private" static="no" mutable="no">
+        <type>FOnlineSessionSettings</type>
+        <definition>FOnlineSessionSettings FOnlineAsyncTaskAccelByteStartV1Matchmaking::NewSessionSettings</definition>
+        <argsstring></argsstring>
+        <name>NewSessionSettings</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::NewSessionSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Desired settings for this matchmaking session </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="41" column="24" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1af51529afa223a7cfa15f5e60759b3c74" prot="private" static="no" mutable="no">
+        <type>TSharedRef&lt; FOnlineSessionSearch &gt;</type>
+        <definition>TSharedRef&lt;FOnlineSessionSearch&gt; FOnlineAsyncTaskAccelByteStartV1Matchmaking::SearchSettings</definition>
+        <argsstring></argsstring>
+        <name>SearchSettings</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::SearchSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Search parameters for the matchmaking request </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="44" column="12" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a189c20828cc6f57777b93ede80de0111" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteStartV1Matchmaking::ErrorStringKey</definition>
+        <argsstring></argsstring>
+        <name>ErrorStringKey</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::ErrorStringKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The key of the error message for the ErrorStrings table. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="47" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1aecb63b1995e7213fad8baec4de98e4a4" prot="private" static="no" mutable="no">
+        <type>TArray&lt; TPair&lt; FString, float &gt; &gt;</type>
+        <definition>TArray&lt;TPair&lt;FString, float&gt; &gt; FOnlineAsyncTaskAccelByteStartV1Matchmaking::Latencies</definition>
+        <argsstring></argsstring>
+        <name>Latencies</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::Latencies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of latency pairs that will get passed to matchmaking </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="50" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a0fb038c0e312f67cb8249bd00310cc6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteStartV1Matchmaking::FOnlineAsyncTaskAccelByteStartV1Matchmaking</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;InLocalPlayers, FName InSessionName, const FOnlineSessionSettings &amp;InNewSessionSettings, TSharedRef&lt; FOnlineSessionSearch &gt; &amp;InSearchSettings)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteStartV1Matchmaking</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::FOnlineAsyncTaskAccelByteStartV1Matchmaking</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; TSharedRef&lt; const FUniqueNetId &gt; &gt; &amp;</type>
+          <declname>InLocalPlayers</declname>
+        </param>
+        <param>
+          <type>FName</type>
+          <declname>InSessionName</declname>
+        </param>
+        <param>
+          <type>const FOnlineSessionSettings &amp;</type>
+          <declname>InNewSessionSettings</declname>
+        </param>
+        <param>
+          <type>TSharedRef&lt; FOnlineSessionSearch &gt; &amp;</type>
+          <declname>InSearchSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to setup the StartMatchmaking task </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="19" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="28" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a1a3e59eced2ba1d7ac45ac2cd090755b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteStartV1Matchmaking::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="21" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="42" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a92d583834f42b5222512749eb7af04c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteStartV1Matchmaking::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="22" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="102" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a82fadfdeba4e30ea3005426bcc0ed173" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteStartV1Matchmaking::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="23" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="114" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a1c5bc875f0595fa527c4019a3d380742" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteStartV1Matchmaking::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="27" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a3e88bae6680a82f718d03f04bf1daad1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteStartV1Matchmaking::OnGetServerLatenciesSuccess</definition>
+        <argsstring>(const TArray&lt; TPair&lt; FString, float &gt; &gt; &amp;Result)</argsstring>
+        <name>OnGetServerLatenciesSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::OnGetServerLatenciesSuccess</qualifiedname>
+        <param>
+          <type>const TArray&lt; TPair&lt; FString, float &gt; &gt; &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when we get a successful response back for getting server latencies </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="55" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="136" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a9632949efb97babde36e66bd66ff05e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteStartV1Matchmaking::OnGetServerLatenciesError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnGetServerLatenciesError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::OnGetServerLatenciesError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when we get an error response back for getting server latencies </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="60" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="149" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a78866c5110187d16919091bddcfe2032" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteStartV1Matchmaking::CreateMatchmakingSessionAndStartMatchmaking</definition>
+        <argsstring>()</argsstring>
+        <name>CreateMatchmakingSessionAndStartMatchmaking</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::CreateMatchmakingSessionAndStartMatchmaking</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to create a new named session set up for matchmaking and to send off the request to start matchmaking with the <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> backend. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="65" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="156" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a59c7516fce98f2b314eb45a911544a0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteStartV1Matchmaking::OnStartMatchmakingResponseReceived</definition>
+        <argsstring>(const FAccelByteModelsMatchmakingResponse &amp;Result)</argsstring>
+        <name>OnStartMatchmakingResponseReceived</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteStartV1Matchmaking::OnStartMatchmakingResponseReceived</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsMatchmakingResponse &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="67" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.cpp" bodystart="190" bodyend="215"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteStartV1Matchmaking, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteStartV1Matchmaking</label>
+        <link refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteStartV1Matchmaking, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteStartV1Matchmaking</label>
+        <link refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" line="12" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/SessionV1/OnlineAsyncTaskAccelByteStartV1Matchmaking.h" bodystart="15" bodyend="69"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>ApiClient</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>bHasReference</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>CompleteTask</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a78866c5110187d16919091bddcfe2032" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>CreateMatchmakingSessionAndStartMatchmaking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>CurrentState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Epic</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a189c20828cc6f57777b93ede80de0111" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>ErrorStringKey</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a92d583834f42b5222512749eb7af04c6" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a0fb038c0e312f67cb8249bd00310cc6a" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>FOnlineAsyncTaskAccelByteStartV1Matchmaking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetParentTask</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a1c5bc875f0595fa527c4019a3d380742" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>HasTaskTimedOut</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a1a3e59eced2ba1d7ac45ac2cd090755b" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Initialize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1aecb63b1995e7213fad8baec4de98e4a4" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Latencies</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1abed0f3f07206978d881f47d5081aaccb" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>LocalPlayers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>LocalUserNum</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1aeb3fbc5dae01a64f3830ec1c11c7c4b7" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>NewSessionSettings</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a9632949efb97babde36e66bd66ff05e3" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>OnGetServerLatenciesError</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a3e88bae6680a82f718d03f04bf1daad1" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>OnGetServerLatenciesSuccess</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a59c7516fce98f2b314eb45a911544a0f" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>OnStartMatchmakingResponseReceived</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>ParentTask</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1af51529afa223a7cfa15f5e60759b3c74" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>SearchSettings</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a4b9c0e75136ee9c3d28419fac32b2ec2" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>SessionName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>ThisPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>ToString</name></member>
+      <member refid="d2/d40/class_f_online_async_task_accel_byte_start_v1_matchmaking_1a82fadfdeba4e30ea3005426bcc0ed173" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteStartV1Matchmaking</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="da/d58/deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="d6/d2d/class_accel_byte_1_1_api_1_1_chat_1a00aedee309a9cee811b8aecbe3c2256c" kindref="member">AccelByte::Api::Chat::CreateGroupTopic</ref>  (TSet&lt; FString &gt; const &amp;Users, TSet&lt; FString &gt; const &amp;Admins, FString const &amp;TopicName, bool bIsJoinable, FChatActionTopicResponse const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError=nullptr)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000001"/>Manual topic creation is deprecated - please use V2 Sessions to auto-create chat topics!  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="d6/d2d/class_accel_byte_1_1_api_1_1_chat_1a7355236d1459faefd59bddbd13ad1c72" kindref="member">AccelByte::Api::Chat::CreateGroupTopic</ref>  (<ref refid="d2/db6/struct_f_accel_byte_models_chat_create_topic_request" kindref="compound">FAccelByteModelsChatCreateTopicRequest</ref> const &amp;Request, FChatActionTopicResponse const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError=nullptr)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000002"/>Manual topic creation is deprecated - please use V2 Sessions to auto-create chat topics!  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="dc/d18/class_accel_byte_1_1_api_1_1_u_g_c_1aeb2a223652dc0cb9d6d4a5caad3023e0" kindref="member">AccelByte::Api::UGC::GetLikedContent</ref>  (TArray&lt; FString &gt; const &amp;Tags, FString const &amp;Name, FString const &amp;Type, FString const &amp;Subtype, bool IsOfficial, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler&lt; FAccelByteModelsUGCContentPageResponse &gt;</ref> const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError, int32 Limit=1000, int32 Offset=0, <ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1a890b50bdeb112385ec0455417a22e75e" kindref="member">EAccelByteUgcSortBy</ref> SortBy=<ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1a890b50bdeb112385ec0455417a22e75ea633a6c7a6b9958f8174250094daf1e6a" kindref="member">EAccelByteUgcSortBy::DATE</ref>, <ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221" kindref="member">EAccelByteUgcOrderBy</ref> OrderBy=<ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221a65a6d757dbb571ccc3af9706e9a5f607" kindref="member">EAccelByteUgcOrderBy::DESC</ref>)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000005"/>This method will be removed in the future, so please use void GetLikedContent(const TArray&lt;FString&gt;&amp; Tags , ... , <ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae196d141805db292d0fb7672f6428320" kindref="member">EAccelByteLikedContentSortBy</ref> SortBy = <ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ae196d141805db292d0fb7672f6428320a633a6c7a6b9958f8174250094daf1e6a" kindref="member">EAccelByteLikedContentSortBy::DATE</ref> , <ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221" kindref="member">EAccelByteUgcOrderBy</ref> OrderBy = <ref refid="d7/dfe/_accel_byte_u_g_c_models_8h_1ad192de51c8d9d16d12626a3f22429221a65a6d757dbb571ccc3af9706e9a5f607" kindref="member">EAccelByteUgcOrderBy::DESC</ref>); </para>
+</listitem>
+<varlistentry><term>Member <ref refid="dc/d18/class_accel_byte_1_1_api_1_1_u_g_c_1ac0609f18c934b75fb2a4984aa927084b" kindref="member">AccelByte::Api::UGC::ModifyContent</ref>  (FString const &amp;ChannelId, FString const &amp;ContentId, <ref refid="db/d10/struct_f_accel_byte_models_u_g_c_request" kindref="compound">FAccelByteModelsUGCRequest</ref> const &amp;UGCRequest, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler&lt; FAccelByteModelsUGCResponse &gt;</ref> const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError, bool bUpdateContent=false)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000003"/>This method will be removed in the future, so please use void <ref refid="dc/d18/class_accel_byte_1_1_api_1_1_u_g_c_1a3f1b286b162dfbe41e244e8ac10c3230" kindref="member">ModifyContent(FString const&amp; ChannelId
+ , FString const&amp; ContentId
+ , FAccelByteModelsUGCUpdateRequest const&amp; ModifyRequest
+ , THandler&lt;FAccelByteModelsUGCResponse&gt; const&amp; OnSuccess
+ , FErrorHandler const&amp; OnError)</ref>; </para>
+</listitem>
+<varlistentry><term>Member <ref refid="dc/d18/class_accel_byte_1_1_api_1_1_u_g_c_1a126756cba75ad6d5125687ce08b472d6" kindref="member">AccelByte::Api::UGC::ModifyContent</ref>  (FString const &amp;ChannelId, FString const &amp;ContentId, FString const &amp;Name, FString const &amp;Type, FString const &amp;SubType, TArray&lt; FString &gt; const &amp;Tags, TArray&lt; uint8 &gt; const &amp;Preview, FString const &amp;FileExtension, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler&lt; FAccelByteModelsUGCResponse &gt;</ref> const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError, FString const &amp;ContentType=TEXT(&quot;application/octet-stream&quot;), bool bUpdateContent=false)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000004"/>This method will be removed in the future, so please use void <ref refid="dc/d18/class_accel_byte_1_1_api_1_1_u_g_c_1a3f1b286b162dfbe41e244e8ac10c3230" kindref="member">ModifyContent(FString const&amp; ChannelId
+ , FString const&amp; ContentId
+ , FAccelByteModelsUGCUpdateRequest const&amp; ModifyRequest
+ , THandler&lt;FAccelByteModelsUGCResponse&gt; const&amp; OnSuccess
+ , FErrorHandler const&amp; OnError)</ref>; </para>
+</listitem>
+<varlistentry><term>Member <ref refid="dc/d3f/class_accel_byte_1_1_api_1_1_user_1a67900b5235b5eca1f4caee37175b01f8" kindref="member">AccelByte::Api::User::UnlinkOtherPlatform</ref>  (<ref refid="d2/dca/_accel_byte_user_models_8h_1af2103291fde066bffa53267e3621f1d2" kindref="member">EAccelBytePlatformType</ref> PlatformType, <ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000006"/>This method will be removed in the future. Please use same function with the <ref refid="d3/ddc/namespace_accel_byte_1a8d5692a20324bbf4015989d8081c8193" kindref="member">FCustomErrorHandler</ref> parameter instead. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="db/da2/class_accel_byte_1_1_api_1_1_user_profile_1a879675793ea79575080bd6bda30b6f53" kindref="member">AccelByte::Api::UserProfile::BatchGetPublicUserProfileInfos</ref>  (FString const &amp;UserIds, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; FAccelByteModelsPublicUserProfileInfo &gt; &gt; const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError)</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000007"/>This method will be removed in the future, so please use <ref refid="db/da2/class_accel_byte_1_1_api_1_1_user_profile_1a4767d15e1dfbce4251293931e5320b95" kindref="member">BulkGetPublicUserProfileInfos(const TArray&lt;FString&gt;&amp; UserIds
+    , const THandler&lt;TArray&lt;FAccelByteModelsPublicUserProfileInfo&gt;&gt;&amp; OnSuccess
+    , FErrorHandler const&amp; OnError)</ref> </para>
+</listitem>
+<varlistentry><term>Member <ref refid="d6/d81/class_oauth2_1aee11de4eb6c97b19b7e34396dcc95b6e" kindref="member">Oauth2::GetTokenWithAuthorizationCode</ref>  (FString const &amp;ClientId, FString const &amp;ClientSecret, FString const &amp;AuthorizationCode, FString const &amp;RedirectUri, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler&lt; FOauth2Token &gt;</ref> const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError, FString const &amp;IamUrl=TEXT(&quot;&quot;), TMap&lt; FString, FString &gt; AdditionalHeaders={})</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000008"/>This method will be removed in the future, so please use GetTokenWithAuthorizationCodeV3(FString const&amp; ClientId
+    , FString const&amp; ClientSecret, FString const&amp; AuthorizationCode, FString const&amp; RedirectUri
+    , THandler&lt;FOauth2Token&gt;&amp; OnSuccess, FOAuthErrorHandler const&amp; OnError, FString const&amp; IamUrl) </para>
+</listitem>
+<varlistentry><term>Member <ref refid="d6/d81/class_oauth2_1ab4955ebd4db156902d0322f0342254a8" kindref="member">Oauth2::GetTokenWithAuthorizationCode</ref>  (FString const &amp;ClientId, FString const &amp;ClientSecret, FString const &amp;AuthorizationCode, FString const &amp;RedirectUri, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler&lt; FOauth2Token &gt;</ref> const &amp;OnSuccess, FOAuthErrorHandler const &amp;OnError, FString const &amp;IamUrl=TEXT(&quot;&quot;), TMap&lt; FString, FString &gt; AdditionalHeaders={})</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000009"/>This method will be removed in the future, so please use GetTokenWithAuthorizationCodeV3(FString const&amp; ClientId
+    , FString const&amp; ClientSecret, FString const&amp; AuthorizationCode, FString const&amp; RedirectUri
+    , THandler&lt;FOauth2Token&gt;&amp; OnSuccess, FOAuthErrorHandler const&amp; OnError, FString const&amp; IamUrl) </para>
+</listitem>
+<varlistentry><term>Member <ref refid="d6/d81/class_oauth2_1a57245ad67825147757a3fb8544b663ae" kindref="member">Oauth2::GetTokenWithPasswordCredentials</ref>  (FString const &amp;ClientId, FString const &amp;ClientSecret, FString const &amp;Username, FString const &amp;Password, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler&lt; FOauth2Token &gt;</ref> const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError, FString const &amp;IamUrl=TEXT(&quot;&quot;), TMap&lt; FString, FString &gt; AdditionalHeaders={}, FString const &amp;DeviceId=TEXT(&quot;&quot;))</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000010"/>This method will be removed in the future, so please use GetTokenWithPasswordCredentialsV3(FString const&amp; ClientId
+    , FString const&amp; ClientSecret, FString const&amp; Username, FString const&amp; Password, THandler&lt;FOauth2Token&gt;&amp; OnSuccess
+    , FOAuthErrorHandler const&amp; OnError, FString const&amp; IamUrl) </para>
+</listitem>
+<varlistentry><term>Member <ref refid="d6/d81/class_oauth2_1ab4dd685ff5d15eec7bca1f27ee0723d2" kindref="member">Oauth2::GetTokenWithPasswordCredentials</ref>  (FString const &amp;ClientId, FString const &amp;ClientSecret, FString const &amp;Username, FString const &amp;Password, <ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler&lt; FOauth2Token &gt;</ref> const &amp;OnSuccess, FOAuthErrorHandler const &amp;OnError, FString const &amp;IamUrl=TEXT(&quot;&quot;), TMap&lt; FString, FString &gt; AdditionalHeaders={}, FString const &amp;DeviceId=TEXT(&quot;&quot;))</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000011"/>This method will be removed in the future, so please use GetTokenWithPasswordCredentialsV3(FString const&amp; ClientId
+    , FString const&amp; ClientSecret, FString const&amp; Username, FString const&amp; Password, THandler&lt;FOauth2Token&gt;&amp; OnSuccess
+    , FOAuthErrorHandler const&amp; OnError, FString const&amp; IamUrl) </para>
+</listitem>
+<varlistentry><term>Member <ref refid="d6/d81/class_oauth2_1a576f52f49e33f96eb014640f40201390" kindref="member">Oauth2::RevokeToken</ref>  (FString const &amp;AccessToken, <ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;OnSuccess, <ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;OnError, FString const &amp;IamUrl=TEXT(&quot;&quot;), TMap&lt; FString, FString &gt; AdditionalHeaders={})</term></varlistentry>
+<listitem><para><anchor id="da/d58/deprecated_1_deprecated000012"/>This method is using wrong auth type, so please use RevokeToken(FString const&amp; ClientId
+    , FString const&amp; ClientSecret, FString const&amp; AccessToken, FVoidHandler const&amp; OnSuccess
+    , FOAuthErrorHandler const&amp; OnError, FString const&amp; IamUrl)</para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="da/d58/deprecated"/>
+  </compounddef>
+</doxygen>

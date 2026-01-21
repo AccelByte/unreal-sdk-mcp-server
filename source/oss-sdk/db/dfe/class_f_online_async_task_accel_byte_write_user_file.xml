@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="db/dfe/class_f_online_async_task_accel_byte_write_user_file" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineAsyncTaskAccelByteWriteUserFile</compoundname>
+    <basecompoundref refid="d6/d53/class_f_online_async_task_accel_byte" prot="public" virt="non-virtual">FOnlineAsyncTaskAccelByte</basecompoundref>
+    <basecompoundref refid="d8/de9/class_accel_byte_1_1_t_self_ptr" prot="public" virt="non-virtual">AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteWriteUserFile, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d5/d94/_online_async_task_accel_byte_write_user_file_8h" local="no">OnlineAsyncTaskAccelByteWriteUserFile.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a96f6ac570d655705c9a638fad7d0682e" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteWriteUserFile::FileName</definition>
+        <argsstring></argsstring>
+        <name>FileName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::FileName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the file that we wish to write to the cloud storage slot </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="35" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a5e417032a0b8b7010f1eb8e32a499026" prot="private" static="no" mutable="no">
+        <type>TArray&lt; uint8 &gt;</type>
+        <definition>TArray&lt;uint8&gt; FOnlineAsyncTaskAccelByteWriteUserFile::FileContents</definition>
+        <argsstring></argsstring>
+        <name>FileContents</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::FileContents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of bytes corresponding to the data that we wish to write to cloud storage </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="38" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a5cc50e220cbaba81b2e1f8671a468d82" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineAsyncTaskAccelByteWriteUserFile::bCompressBeforeUpload</definition>
+        <argsstring></argsstring>
+        <name>bCompressBeforeUpload</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::bCompressBeforeUpload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether we should compress the file before uploading it to the backend </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="41" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1aecd13c11e894bfa9f63bd407f390290e" prot="private" static="no" mutable="no">
+        <type>FThreadSafeBool</type>
+        <definition>FThreadSafeBool FOnlineAsyncTaskAccelByteWriteUserFile::bHasUploadStarted</definition>
+        <argsstring></argsstring>
+        <name>bHasUploadStarted</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::bHasUploadStarted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether we have initiated the create or update call </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="44" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a647dd21619e078008036b122031837cf" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineAsyncTaskAccelByteWriteUserFile::ResolvedSlotId</definition>
+        <argsstring></argsstring>
+        <name>ResolvedSlotId</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::ResolvedSlotId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slot ID that the write operation was ultimately performed on </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="47" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a9fb06388e390a529ab603df7d4771b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineAsyncTaskAccelByteWriteUserFile::FOnlineAsyncTaskAccelByteWriteUserFile</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *const InABInterface, const FUniqueNetId &amp;InUserId, const FString &amp;InFileName, const TArray&lt; uint8 &gt; &amp;InFileContents, bool InBCompressBeforeUpload)</argsstring>
+        <name>FOnlineAsyncTaskAccelByteWriteUserFile</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::FOnlineAsyncTaskAccelByteWriteUserFile</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *const</type>
+          <declname>InABInterface</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>InUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InFileName</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; uint8 &gt; &amp;</type>
+          <declname>InFileContents</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>InBCompressBeforeUpload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="19" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="13" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1abf11506ba95210ecbebc4c9cb2156502" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::Initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::Initialize</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a29e7f08e874e289f7ac87ba81c403b30">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic initialize override to check if we are using timeouts, and if so update the last task update time to the current time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="21" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="22" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a9ab1da7a3826f426998e71447eeb1ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::Finalize</definition>
+        <argsstring>() override</argsstring>
+        <name>Finalize</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::Finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="22" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="45" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1aa27fa86f170983de0b152aba58952fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::TriggerDelegates</definition>
+        <argsstring>() override</argsstring>
+        <name>TriggerDelegates</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::TriggerDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="23" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="61" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a5dd35f6caf81d25b0ca7ac7f566104dd" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const FString</type>
+        <definition>virtual const FString FOnlineAsyncTaskAccelByteWriteUserFile::GetTaskName</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetTaskName</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::GetTaskName</qualifiedname>
+        <reimplements refid="d6/d53/class_f_online_async_task_accel_byte_1a801284695a11552afbd0aeaeb3ebc477">GetTaskName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic method to get the current name of the task, used for ToString on tasks as well as trace logs.</para>
+<para>Should be overridden by any async task that extends from this base class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="27" column="23" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1adbbc23d2f0f6a86d916ee41302ff3ab5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::RunWriteSlot</definition>
+        <argsstring>(const FString &amp;SlotId)</argsstring>
+        <name>RunWriteSlot</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::RunWriteSlot</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>SlotId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Makes the API call to create or update the slot</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SlotId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ID of the slot that we wish to write to, will create a new slot if blank </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="54" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="74" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a2b71815dec05f60cfba8eb941a17a6f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::OnGetAllSlotsSuccess</definition>
+        <argsstring>(const TArray&lt; FAccelByteModelsSlot &gt; &amp;Results)</argsstring>
+        <name>OnGetAllSlotsSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::OnGetAllSlotsSuccess</qualifiedname>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsSlot &gt; &amp;</type>
+          <declname>Results</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when the GetAllSlots call succeeds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="57" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="95" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a33f2f4d4db64157ef6006a50b0ee479c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::OnGetAllSlotsError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnGetAllSlotsError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::OnGetAllSlotsError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when the GetAllSlots call fails </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="60" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="115" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1adf38a60d747e8e515a39128355b789ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::OnCreateOrUpdateSlotSuccess</definition>
+        <argsstring>(const FAccelByteModelsSlot &amp;Result)</argsstring>
+        <name>OnCreateOrUpdateSlotSuccess</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::OnCreateOrUpdateSlotSuccess</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsSlot &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when the CreateSlot or UpdateSlot call succeeds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="63" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="124" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1ac8cb883e426b16b1736e09d0bbd66d39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::OnCreateOrUpdateSlotProgress</definition>
+        <argsstring>(FHttpRequestPtr Request, int32 BytesSent, int32 BytesReceived)</argsstring>
+        <name>OnCreateOrUpdateSlotProgress</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::OnCreateOrUpdateSlotProgress</qualifiedname>
+        <param>
+          <type>FHttpRequestPtr</type>
+          <declname>Request</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>BytesSent</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>BytesReceived</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when request progress is updated for a CreateSlot or UpdateSlot call </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="66" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="135" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1ab995902808f2354f3c530180fe7315f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineAsyncTaskAccelByteWriteUserFile::OnCreateOrUpdateSlotError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnCreateOrUpdateSlotError</name>
+        <qualifiedname>FOnlineAsyncTaskAccelByteWriteUserFile::OnCreateOrUpdateSlotError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate handler for when the CreateSlot or UpdateSlot call fails </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="69" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.cpp" bodystart="144" bodyend="151"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Async task to write a file to a slot using the CloudStorage API. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteWriteUserFile, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteWriteUserFile</label>
+        <link refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="6">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncTaskAccelByteWriteUserFile, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="4">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FOnlineAsyncTaskAccelByteWriteUserFile</label>
+        <link refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" line="13" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/AsyncTasks/UserCloud/OnlineAsyncTaskAccelByteWriteUserFile.h" bodystart="16" bodyend="71"/>
+    <listofallmembers>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5e2fc94cd589a21223734e5cc3f47de6" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>ApiClient</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a5cc50e220cbaba81b2e1f8671a468d82" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>bCompressBeforeUpload</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a3f2271653e3cf6ef5aa6a93531c0b902" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>bHasReference</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1aecd13c11e894bfa9f63bd407f390290e" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>bHasUploadStarted</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4db3ad635a07f6ccd8b27c6301ff5268" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>bShouldUseTimeout</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8e6c2ba23b6b904757411b6ea57caa30" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>CompleteState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a93e03a915234d57e492fba9ad5c65328" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>CompleteTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a7868b778768a766631fe27dbdc2dcb6d" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>CurrentState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aae1f2e6b32b83498210fcecc5428be81" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>DeltaTickAccumulation</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1adb02f67d10711d06394f7fa60b9a2d50" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>Epic</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1afeb2fd2ce618f14971dcc878afba5a48" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>ExecuteCriticalSectionAction</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a5e417032a0b8b7010f1eb8e32a499026" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>FileContents</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a96f6ac570d655705c9a638fad7d0682e" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>FileName</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a9ab1da7a3826f426998e71447eeb1ca7" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>Finalize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af4a08a1d0e3f5f3607c2e416c96a99b3" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>Flags</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1e8f62cec0c41aec87fee23855adb8f6" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab67fd7e91d9a546107e1ab6c4b0d8406" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a75d21288ded845410ecf58f6bdc8c1bd" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>FOnlineAsyncTaskAccelByte</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a9fb06388e390a529ab603df7d4771b72" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>FOnlineAsyncTaskAccelByteWriteUserFile</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a3fb22dd524fedc8570a5e89f5abdfe10" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>ForcefullySetTimeoutState</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa17489d23f243df387fc5138e87f3ccb" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4583b800a04d388a5a1410b6cbc7d38f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetApiClient</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac311ae2f5d605f65db5ac342298f059f" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetCurrentState</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a80878bc0780c4b1279d4e9354b843e53" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetInternalSP</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a9945ddf282c7cb3588e23456449074dc" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetLocalUserNum</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a511d68eb2b1e523027bd98acf1f71040" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetOtherUserIdentifiers</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a1830e17afab0953d755adc81acc719b5" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetParentTask</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a5dd35f6caf81d25b0ca7ac7f566104dd" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>GetTaskName</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a09542ba50aa4064231f604fc94c07f88" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>HasFlag</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63f4f48655baf9b2e0a93d6302d1e61" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>HasParent</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5ca7b3c39d025ed9a54bc24becea23ea" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>HasTaskTimedOut</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1abf11506ba95210ecbebc4c9cb2156502" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>Initialize</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a2f75765c2ad15acc4dc4d83ab14e67f2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>LastTaskUpdateInSeconds</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ab9035df366f6e2835c2cbb9342482efb" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>LocalUserNum</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1ab995902808f2354f3c530180fe7315f9" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>OnCreateOrUpdateSlotError</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1ac8cb883e426b16b1736e09d0bbd66d39" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>OnCreateOrUpdateSlotProgress</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1adf38a60d747e8e515a39128355b789ff" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>OnCreateOrUpdateSlotSuccess</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a33f2f4d4db64157ef6006a50b0ee479c" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>OnGetAllSlotsError</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a2b71815dec05f60cfba8eb941a17a6f4" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>OnGetAllSlotsSuccess</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16bab356a79a037b3c2173b5fdcc156a" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>OnTaskStartWorking</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ac59f349911c4a61aaf075c190538cb9f" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>OnTaskTimedOut</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a16a33efe67bc8b3745e19c9fc0199b86" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>ParentTask</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1a647dd21619e078008036b122031837cf" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>ResolvedSlotId</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1adbbc23d2f0f6a86d916ee41302ff3ab5" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>RunWriteSlot</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8c0d17f4cc97dc0eb90273f28294db55" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>SetEpicForThisTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ae63c0c3ebf2e14d1d8e7a198abb527e3" prot="protected" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>SetLastUpdateTimeToCurrentTime</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1abf301abe3c6789b13046b758eaa8b871" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>SetParentTask</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aa020ebf74b12903ef2bf7a22e1263030" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>Super</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1aebaf8505d1c52715e4628d9630102da2" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>TaskTimeoutInSeconds</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1aea2234cded38c815dcfb3cf0e34dcc09" prot="private" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>ThisPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a8846eef37d8fc97abd0cbf76eb31e1c2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1af7ff296a9e491876bcda084f53a5be8a" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>Tick</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a5812386e4926288a17d15afa1e307538" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>TimeoutLock</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1a4937d5819b9a83f125210ab93a5f5bcd" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>ToString</name></member>
+      <member refid="db/dfe/class_f_online_async_task_accel_byte_write_user_file_1aa27fa86f170983de0b152aba58952fa2" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>TriggerDelegates</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1ad9778eacbc75a836bb30a1725eb16699" prot="public" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>TSelfPtr</name></member>
+      <member refid="d6/d53/class_f_online_async_task_accel_byte_1ad0d01175128b8a52068ae871c8dff6b1" prot="protected" virt="non-virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>UserId</name></member>
+      <member refid="d8/de9/class_accel_byte_1_1_t_self_ptr_1a46858838e05b1eee423930a51a702870" prot="public" virt="virtual"><scope>FOnlineAsyncTaskAccelByteWriteUserFile</scope><name>~TSelfPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d7/dac/class_f_online_chat_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineChatAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineChat</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineChatAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="da/d9b/_online_chat_interface_accel_byte_8h" local="no">OnlineChatInterfaceAccelByte.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/dac/class_f_online_chat_accel_byte_1aab4217571d9fb630a7bce1848f700e73" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+        <definition>FOnlineSubsystemAccelByte* FOnlineChatAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineChatAccelByte::AccelByteSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the main <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> subsystem </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="174" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dac/class_f_online_chat_accel_byte_1a879cead8c1cc2e879c7b9e93a5a8ad4c" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, <ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1a50b75feb7c97cae2830caa89bde9cd5f" kindref="member">FAccelByteChatRoomInfoRef</ref> &gt;</type>
+        <definition>TMap&lt;FString, FAccelByteChatRoomInfoRef&gt; FOnlineChatAccelByte::TopicIdToChatRoomInfoCached</definition>
+        <argsstring></argsstring>
+        <name>TopicIdToChatRoomInfoCached</name>
+        <qualifiedname>FOnlineChatAccelByte::TopicIdToChatRoomInfoCached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache chat room info. Populated after connect and updated on topic related events </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="529" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dac/class_f_online_chat_accel_byte_1a3bf1a2e6f2eda82e2bf6995d7b27ead2" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, <ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1aa1f6cbba3c2ac6bf412f77e0fb565d19" kindref="member">FAccelByteChatRoomMemberRef</ref> &gt;</type>
+        <definition>TMap&lt;FString, FAccelByteChatRoomMemberRef&gt; FOnlineChatAccelByte::UserIdToChatRoomMemberCached</definition>
+        <argsstring></argsstring>
+        <name>UserIdToChatRoomMemberCached</name>
+        <qualifiedname>FOnlineChatAccelByte::UserIdToChatRoomMemberCached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache chat room member. Populated along with the topic events </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="531" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dac/class_f_online_chat_accel_byte_1a2d1452d3c4c97948bcd8b84f57c64123" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1a4f10f24b71a30957534d4d1ec9b46b83" kindref="member">FUserIdToRoomChatMessages</ref></type>
+        <definition>FUserIdToRoomChatMessages FOnlineChatAccelByte::UserIdToChatRoomMessagesCached</definition>
+        <argsstring></argsstring>
+        <name>UserIdToChatRoomMessagesCached</name>
+        <qualifiedname>FOnlineChatAccelByte::UserIdToChatRoomMessagesCached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache live chat messages </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="533" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/dac/class_f_online_chat_accel_byte_1a548a1f10aec6d7bfa5c096f75b9bb234" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineChatAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineChatAccelByte::__pad0__</qualifiedname>
+        <bitfield> void RegisterChatDelegates(const FUniqueNetId&amp; PlayerId)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="474" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a6ad34ea768177c9110e87850ea6e7ea4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineChatAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineChatAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d7/dac/class_f_online_chat_accel_byte" kindref="compound">FOnlineChatAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="184" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a486d787a91c435b1a46124a7cde84dca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineChatAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineChatAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d7/dac/class_f_online_chat_accel_byte" kindref="compound">FOnlineChatAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="193" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a846b3fb4da9b2fc2e64999d52a36912a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineChatAccelByte::SessionV2IdToChatTopicId</definition>
+        <argsstring>(const FString &amp;SessionId)</argsstring>
+        <name>SessionV2IdToChatTopicId</name>
+        <qualifiedname>FOnlineChatAccelByte::SessionV2IdToChatTopicId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>SessionId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert Game Session Id to TopicId Note: Session chat only available when TextChat configuration is true </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="357" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aeb56d64e3d09ccf36f2b9762a9ad9f2d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineChatAccelByte::PartyV2IdToChatTopicId</definition>
+        <argsstring>(const FString &amp;PartyId)</argsstring>
+        <name>PartyV2IdToChatTopicId</name>
+        <qualifiedname>FOnlineChatAccelByte::PartyV2IdToChatTopicId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PartyId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert Session Party Id to Topic Id Note: Party chat only available when TextChat configuration is true </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="362" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="421" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1af44096b8d70fc677aa0232af12da3e55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineChatAccelByte::PartyV1IdToChatTopicId</definition>
+        <argsstring>(const FString &amp;PartyId)</argsstring>
+        <name>PartyV1IdToChatTopicId</name>
+        <qualifiedname>FOnlineChatAccelByte::PartyV1IdToChatTopicId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PartyId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert Lobby Party Id to Topic Id Note: Party chat only available when TextChat configuration is true </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="366" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="426" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1af9b6837d26a2ff7f3c63e9d8c305c3a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineChatAccelByte::PersonalChatTopicId</definition>
+        <argsstring>(const FString &amp;FromUserId, const FString &amp;ToUserId)</argsstring>
+        <name>PersonalChatTopicId</name>
+        <qualifiedname>FOnlineChatAccelByte::PersonalChatTopicId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FromUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ToUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert User Id to personal Topic Id To be able to send personal chat, personal topic need to be created first </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="371" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="431" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1abb0d57af093282a62ba6271c45f84cb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1a608207cce3c7195adb45f219d64d070e" kindref="member">EAccelByteChatRoomType</ref></type>
+        <definition>EAccelByteChatRoomType FOnlineChatAccelByte::GetChatRoomType</definition>
+        <argsstring>(const FString &amp;TopicId)</argsstring>
+        <name>GetChatRoomType</name>
+        <qualifiedname>FOnlineChatAccelByte::GetChatRoomType</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TopicId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine chat room type based on topic Id </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="376" column="31" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="438" bodyend="457"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a08a80d0251bf28b0d9191d260eacd7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::FOnlineChatAccelByte</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *InSubsystem)</argsstring>
+        <name>FOnlineChatAccelByte</name>
+        <qualifiedname>FOnlineChatAccelByte::FOnlineChatAccelByte</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+          <declname>InSubsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="195" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aa54afea9f0042f38452a6ddb41727a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnConnectChatComplete, bool, const FUniqueNetId &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnConnectChatComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ad74a9b986bcc0d0bd1edb426e40f390d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::Connect</definition>
+        <argsstring>(int32 LocalUserNum)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>FOnlineChatAccelByte::Connect</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="199" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="50" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ab00c3fbe8aaae9d8a2b563491dc6ecb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::CreateRoom</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, const FString &amp;Nickname, const FChatRoomConfig &amp;ChatRoomConfig) override</argsstring>
+        <name>CreateRoom</name>
+        <qualifiedname>FOnlineChatAccelByte::CreateRoom</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Nickname</declname>
+        </param>
+        <param>
+          <type>const FChatRoomConfig &amp;</type>
+          <declname>ChatRoomConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new chat room containing the given user. Deprecated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user creating the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RoomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>#NOTE Unsupported field as the backend will generate an ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Nickname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local nickname of the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChatRoomConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>#NOTE Unsupported field as the backend does not support these configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating whether the process was started successfully</para>
+</simplesect>
+<xrefsect id="da/d58/deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Manual room creation is deprecated - please use V2 Sessions to auto-create chat rooms! </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="212" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="94" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aa9a8fb48f2cfccf137178e93afcb0622" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::CreateRoom</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FString &amp;Nickname, const FAccelByteChatRoomConfig &amp;ChatRoomConfig)</argsstring>
+        <name>CreateRoom</name>
+        <qualifiedname>FOnlineChatAccelByte::CreateRoom</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Nickname</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/dec/struct_f_accel_byte_chat_room_config" kindref="compound">FAccelByteChatRoomConfig</ref> &amp;</type>
+          <declname>ChatRoomConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new chat room containing the given user. Deprecated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user creating the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Nickname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The local nickname of the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChatRoomConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration for the chat room </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating whether the process was started successfully</para>
+</simplesect>
+<xrefsect id="da/d58/deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Manual room creation is deprecated - please use V2 Sessions to auto-create chat rooms! </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="224" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="105" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aa746e05ff44e0d13e829735ee0b4b454" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::ConfigureRoom</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, const FChatRoomConfig &amp;ChatRoomConfig) override</argsstring>
+        <name>ConfigureRoom</name>
+        <qualifiedname>FOnlineChatAccelByte::ConfigureRoom</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomConfig &amp;</type>
+          <declname>ChatRoomConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update a room&apos;s configuration</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user updating the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RoomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChatRoomConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>#NOTE Unsupported </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating whether the process was started successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="234" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="120" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a7fd8eadbf6540c8f00712f3708296ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::ConfigureRoom</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, const FAccelByteChatRoomConfig &amp;ChatRoomConfig)</argsstring>
+        <name>ConfigureRoom</name>
+        <qualifiedname>FOnlineChatAccelByte::ConfigureRoom</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/dec/struct_f_accel_byte_chat_room_config" kindref="compound">FAccelByteChatRoomConfig</ref> &amp;</type>
+          <declname>ChatRoomConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update a room&apos;s configuration</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user updating the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RoomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChatRoomConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration for the chat room </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating whether the process was started successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="244" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="131" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ad625f438a8f153b23a3635d721ed3c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::JoinPublicRoom</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, const FString &amp;Nickname, const FChatRoomConfig &amp;ChatRoomConfig) override</argsstring>
+        <name>JoinPublicRoom</name>
+        <qualifiedname>FOnlineChatAccelByte::JoinPublicRoom</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Nickname</declname>
+        </param>
+        <param>
+          <type>const FChatRoomConfig &amp;</type>
+          <declname>ChatRoomConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Join a chat room</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user joining the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RoomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Nickname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local nickname for the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChatRoomConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>#NOTE Unsupported </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating whether the process was started successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="255" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="142" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a4ecaa61b470e0731ea45f040e5538a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::JoinPrivateRoom</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, const FString &amp;Nickname, const FChatRoomConfig &amp;ChatRoomConfig) override</argsstring>
+        <name>JoinPrivateRoom</name>
+        <qualifiedname>FOnlineChatAccelByte::JoinPrivateRoom</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Nickname</declname>
+        </param>
+        <param>
+          <type>const FChatRoomConfig &amp;</type>
+          <declname>ChatRoomConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Join a private chat room - not supported! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="260" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="162" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a29e708f63342104692e5e2d1084b4848" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::ExitRoom</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId) override</argsstring>
+        <name>ExitRoom</name>
+        <qualifiedname>FOnlineChatAccelByte::ExitRoom</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exit a chat room</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user exiting the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RoomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the chat room </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating whether the process was started successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="269" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="173" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a44c1f49c5f854f9a62a67de8367a240c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::SendRoomChat</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, const FString &amp;MsgBody) override</argsstring>
+        <name>SendRoomChat</name>
+        <qualifiedname>FOnlineChatAccelByte::SendRoomChat</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MsgBody</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a chat message to a room</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user sending the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RoomId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the chat room </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MsgBody</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to send </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating whether the process was started successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="279" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="184" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a215752505f91908eb6ebc739b1a78d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::SendPrivateChat</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FUniqueNetId &amp;RecipientId, const FString &amp;MsgBody) override</argsstring>
+        <name>SendPrivateChat</name>
+        <qualifiedname>FOnlineChatAccelByte::SendPrivateChat</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>RecipientId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MsgBody</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Kick off request for sending a chat message privately between users</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of user that is sending the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RecipientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of user to send the chat to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MsgBody</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>plain text of message body</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if successfully started the async operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="290" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="203" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ad584f8531fb84381f90f3cf26ee77872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::DeleteSystemMessages</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const TSet&lt; FString &gt; &amp;MessageIds)</argsstring>
+        <name>DeleteSystemMessages</name>
+        <qualifiedname>FOnlineChatAccelByte::DeleteSystemMessages</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const TSet&lt; FString &gt; &amp;</type>
+          <declname>MessageIds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete system message(s) in user system inbox based on the message ids. Listen to OnDeleteSystemMessagesComplete delegate for the result after the action completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of user that perform this action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MessageIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of message ids to be deleted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if successfully started the async operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="300" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="214" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aa27ce5721e47c08ca4df93f4e8a2f48b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::UpdateSystemMessages</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const TArray&lt; FAccelByteModelsActionUpdateSystemMessage &gt; &amp;ActionUpdateSystemMessages)</argsstring>
+        <name>UpdateSystemMessages</name>
+        <qualifiedname>FOnlineChatAccelByte::UpdateSystemMessages</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsActionUpdateSystemMessage &gt; &amp;</type>
+          <declname>ActionUpdateSystemMessages</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update system message(s) in user system inbox. This can be used for marking message as keep or as read. Listen to OnUpdateSystemMessagesComplete delegate for the result after the action completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of user that perform this action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ActionUpdateSystemMessages</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of the action will be performed to the system message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if successfully started the async operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="310" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="231" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1af526d6ae4fec6c27e724419e25575363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::QuerySystemMessage</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FQuerySystemMessageOptions &amp;OptionalParams={})</argsstring>
+        <name>QuerySystemMessage</name>
+        <qualifiedname>FOnlineChatAccelByte::QuerySystemMessage</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FQuerySystemMessageOptions &amp;</type>
+          <declname>OptionalParams</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query system message(s) in user system inbox. Listen to OnQuerySystemMessageComplete delegate for the result after the action completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of user that perform this action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OptionalParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional query params, if left empty it will query all of the system messages </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if successfully started the async operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="320" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="247" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a4510684c68274ab3a4c2624a5bd30b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::QueryTransientSystemMessage</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FQuerySystemMessageOptions &amp;OptionalParams={})</argsstring>
+        <name>QueryTransientSystemMessage</name>
+        <qualifiedname>FOnlineChatAccelByte::QueryTransientSystemMessage</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FQuerySystemMessageOptions &amp;</type>
+          <declname>OptionalParams</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query transient system message(s) in user system inbox. Listen to OnQueryTransientSystemMessageComplete delegate for the result after the action completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of user that perform this action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OptionalParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional query params, if left empty it will query all of the system messages </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if successfully started the async operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="330" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="256" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a55f1f878065784bfc7bb7eb4b1dec2f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::GetSystemMessageStats</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FAccelByteGetSystemMessageStatsRequest &amp;Request={})</argsstring>
+        <name>GetSystemMessageStats</name>
+        <qualifiedname>FOnlineChatAccelByte::GetSystemMessageStats</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FAccelByteGetSystemMessageStatsRequest &amp;</type>
+          <declname>Request</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get system message(s) statistic in user system inbox. Currently the stats have oldest unread and unread count of system messages. Listen to OnGetSystemMessageStatsComplete delegate for the result after the action completed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of user that perform this action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional params for getting system message stats, currently it is still empty and can be ignored </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if successfully started the async operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="340" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="265" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a775416cd374e01b75e43945f8964f5c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::IsChatAllowed</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FUniqueNetId &amp;RecipientId) const override</argsstring>
+        <name>IsChatAllowed</name>
+        <qualifiedname>FOnlineChatAccelByte::IsChatAllowed</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>RecipientId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="342" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="274" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a223b86418041e1616817fdf2bad87bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::GetJoinedRooms</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, TArray&lt; FChatRoomId &gt; &amp;OutRooms) override</argsstring>
+        <name>GetJoinedRooms</name>
+        <qualifiedname>FOnlineChatAccelByte::GetJoinedRooms</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FChatRoomId &gt; &amp;</type>
+          <declname>OutRooms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="343" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="279" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a175bf7de00f8c90bd0f440cd893b3449" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; FChatRoomInfo &gt;</type>
+        <definition>TSharedPtr&lt; FChatRoomInfo &gt; FOnlineChatAccelByte::GetRoomInfo</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId) override</argsstring>
+        <name>GetRoomInfo</name>
+        <qualifiedname>FOnlineChatAccelByte::GetRoomInfo</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="344" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="296" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a5273802c22d97cf90311f92e7c1c66be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::GetMembers</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, TArray&lt; TSharedRef&lt; FChatRoomMember &gt; &gt; &amp;OutMembers) override</argsstring>
+        <name>GetMembers</name>
+        <qualifiedname>FOnlineChatAccelByte::GetMembers</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FChatRoomMember &gt; &gt; &amp;</type>
+          <declname>OutMembers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="345" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="312" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ac421a70c792107d2496c29aa0ccddfda" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; FChatRoomMember &gt;</type>
+        <definition>TSharedPtr&lt; FChatRoomMember &gt; FOnlineChatAccelByte::GetMember</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, const FUniqueNetId &amp;MemberId) override</argsstring>
+        <name>GetMember</name>
+        <qualifiedname>FOnlineChatAccelByte::GetMember</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>MemberId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="346" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="335" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a9bdc86f6b3e626b61c43fba90e8c3a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::GetLastMessages</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatRoomId &amp;RoomId, int32 NumMessages, TArray&lt; TSharedRef&lt; FChatMessage &gt; &gt; &amp;OutMessages) override</argsstring>
+        <name>GetLastMessages</name>
+        <qualifiedname>FOnlineChatAccelByte::GetLastMessages</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>NumMessages</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; FChatMessage &gt; &gt; &amp;</type>
+          <declname>OutMessages</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return only live messages </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="348" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="363" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a690437b1c1d99211b863a83ccaecb16d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::IsMessageFromLocalUser</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FChatMessage &amp;Message, const bool bIncludeExternalInstances) override</argsstring>
+        <name>IsMessageFromLocalUser</name>
+        <qualifiedname>FOnlineChatAccelByte::IsMessageFromLocalUser</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FChatMessage &amp;</type>
+          <declname>Message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bIncludeExternalInstances</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="349" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ad1d100c2bd671f63c843b2475d9299f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::DumpChatState</definition>
+        <argsstring>() const override</argsstring>
+        <name>DumpChatState</name>
+        <qualifiedname>FOnlineChatAccelByte::DumpChatState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="350" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="412" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a6a0f1597293be2efef1a8feb293e703f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::IsJoinedTopic</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;TopicId)</argsstring>
+        <name>IsJoinedTopic</name>
+        <qualifiedname>FOnlineChatAccelByte::IsJoinedTopic</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TopicId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if user has joined topic Can be use to check if user joined session chat or party chat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="382" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="459" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ae1311cde5fef8e35ac2c2bd6cb23cd35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineChatAccelByte::HasPersonalChat</definition>
+        <argsstring>(const FString &amp;FromUserId, const FString &amp;ToUserId)</argsstring>
+        <name>HasPersonalChat</name>
+        <qualifiedname>FOnlineChatAccelByte::HasPersonalChat</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FromUserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ToUserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if user has personal chat topic to target user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="386" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="465" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a419e3ab43a20066403132b64331624a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_ONE_PARAM</definition>
+        <argsstring>(OnChatDisconnected, FString)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_ONE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_ONE_PARAM</qualifiedname>
+        <param>
+          <type>OnChatDisconnected</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding disconnection from the chat service </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="392" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a0fee959c070977c03c80c109abab27b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</definition>
+        <argsstring>(OnSendChatComplete, FString, FString, FString, bool)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</qualifiedname>
+        <param>
+          <type>OnSendChatComplete</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a sending a chat message is completed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="397" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a07857a7e2c59555e3164b733a7d53c8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_ONE_PARAM</definition>
+        <argsstring>(OnReadChatReceived, TArray&lt; FAccelByteModelsChatReadChatData &gt;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_ONE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_ONE_PARAM</qualifiedname>
+        <param>
+          <type>OnReadChatReceived</type>
+        </param>
+        <param>
+          <type>TArray&lt; FAccelByteModelsChatReadChatData &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding a read chat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="402" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a43b0b61f0ea5516217581cd974b728ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(OnTopicAdded, FString, FString, FString)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>OnTopicAdded</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding being added to a topic </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="407" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a0475557166591dc7008a92836bb0f420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(OnTopicRemoved, FString, FString, FString)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>OnTopicRemoved</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding being removed from a topic </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="412" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aaca35c2afafc592efad1d219506b76e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</definition>
+        <argsstring>(OnTopicUpdated, FString, FString, FString, bool)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</qualifiedname>
+        <param>
+          <type>OnTopicUpdated</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding a topic being updated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aa3cd8f2c7479a913499ac45226060793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</definition>
+        <argsstring>(OnTopicDeleted, FString, FString, FString, bool)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FOUR_PARAM</qualifiedname>
+        <param>
+          <type>OnTopicDeleted</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding a topic being deleted </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="422" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a66177a0924edba64f1f89e34cb93b809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FIVE_PARAM</definition>
+        <argsstring>(OnUserBanned, FString, EBanType, FString, EBanReason, bool)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_FIVE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FIVE_PARAM</qualifiedname>
+        <param>
+          <type>OnUserBanned</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>EBanType</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>EBanReason</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding being banned from chat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="427" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aa5e0a2826993b219fada70965e477e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FIVE_PARAM</definition>
+        <argsstring>(OnUserUnbanned, FString, EBanType, FString, EBanReason, bool)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_FIVE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_FIVE_PARAM</qualifiedname>
+        <param>
+          <type>OnUserUnbanned</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>EBanType</type>
+        </param>
+        <param>
+          <type>FString</type>
+        </param>
+        <param>
+          <type>EBanReason</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a notification is received regarding being un-banned from chat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="432" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a42b5ac3c7bb99fbde12021a7eebf7b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(OnSystemMessageReceived, const FUniqueNetId &amp;, const FSystemMessageNotifMessage &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>OnSystemMessageReceived</type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FSystemMessageNotifMessage &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a system message received. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a0d0c402c831411a5bbe5a5c888af9224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(OnTransientSystemMessageReceived, const FUniqueNetId &amp;, const FAccelByteModelsChatSystemMessageNotif &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>OnTransientSystemMessageReceived</type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FAccelByteModelsChatSystemMessageNotif &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a transient system message received. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="442" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1af67450cfa410e8a29908bc744655fa36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(OnDeleteSystemMessagesComplete, const FUniqueNetId &amp;, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>OnDeleteSystemMessagesComplete</type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when action to delete system messages completed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a9e23ec49f66bffae8f66d3ae9b943767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(OnUpdateSystemMessagesComplete, const FUniqueNetId &amp;, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>OnUpdateSystemMessagesComplete</type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when action to update system messages completed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="452" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ae7190e08b5b2aff01557f86c3bd32171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(OnQuerySystemMessageComplete, const FUniqueNetId &amp;, const TArray&lt; FSystemMessageNotifMessage &gt; &amp;, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>OnQuerySystemMessageComplete</type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const TArray&lt; FSystemMessageNotifMessage &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a query for system message completed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="457" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a0a81a1fed323b720768c1d0afe44f1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(OnQueryTransientSystemMessageComplete, const FUniqueNetId &amp;, const TArray&lt; FAccelByteModelsQuerySystemMessagesResponseItem &gt; &amp;, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>OnQueryTransientSystemMessageComplete</type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const TArray&lt; FAccelByteModelsQuerySystemMessagesResponseItem &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when a query for transient system message completed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="462" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ae553d14bfa93d088f207c015fafa31b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(OnGetSystemMessageStatsComplete, const FUniqueNetId &amp;, const FAccelByteGetSystemMessageStatsResponse &amp;, const FOnlineError &amp;)</argsstring>
+        <name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineChatAccelByte::DEFINE_ONLINE_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>OnGetSystemMessageStatsComplete</type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FAccelByteGetSystemMessageStatsResponse &amp;</type>
+        </param>
+        <param>
+          <type>const FOnlineError &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate fired when action to get system message stats completed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="467" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aee349bc78bf3c2ec520a5c9dc28a7c17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::RemoveMemberFromTopic</definition>
+        <argsstring>(const FString &amp;UserId, const FString &amp;TopicId)</argsstring>
+        <name>RemoveMemberFromTopic</name>
+        <qualifiedname>FOnlineChatAccelByte::RemoveMemberFromTopic</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TopicId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove member to topic cache. Called on EventRemovedFromTopic </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="481" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="472" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a0d96d945c7f671c355c340cdaf195524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::AddTopic</definition>
+        <argsstring>(const FAccelByteChatRoomInfoRef &amp;ChatRoomInfo)</argsstring>
+        <name>AddTopic</name>
+        <qualifiedname>FOnlineChatAccelByte::AddTopic</qualifiedname>
+        <param>
+          <type>const <ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1a50b75feb7c97cae2830caa89bde9cd5f" kindref="member">FAccelByteChatRoomInfoRef</ref> &amp;</type>
+          <declname>ChatRoomInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add topic to cache. Called on after connect success </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="485" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="481" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ab40a3d5c51be7af08a9c49b291eb07e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::RemoveTopic</definition>
+        <argsstring>(const FString &amp;TopicId)</argsstring>
+        <name>RemoveTopic</name>
+        <qualifiedname>FOnlineChatAccelByte::RemoveTopic</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TopicId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove topicId from cache. Called on EventTopicDeleted </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="489" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="486" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ab8e27c6d81788332df1f52dd13a317f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1a71d593021880a1f77f616b43113e8ca5" kindref="member">FAccelByteChatRoomInfoPtr</ref></type>
+        <definition>FAccelByteChatRoomInfoPtr FOnlineChatAccelByte::GetTopic</definition>
+        <argsstring>(const FString &amp;TopicId)</argsstring>
+        <name>GetTopic</name>
+        <qualifiedname>FOnlineChatAccelByte::GetTopic</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TopicId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get topic from cache </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="493" column="27" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="491" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a36c043005eeef6309ff9b6b49d4471f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::AddChatRoomMembers</definition>
+        <argsstring>(TArray&lt; TSharedRef&lt; FAccelByteUserInfo &gt; &gt; Users)</argsstring>
+        <name>AddChatRoomMembers</name>
+        <qualifiedname>FOnlineChatAccelByte::AddChatRoomMembers</qualifiedname>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; <ref refid="da/dd5/struct_f_accel_byte_user_info" kindref="compound">FAccelByteUserInfo</ref> &gt; &gt;</type>
+          <declname>Users</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add Chat Room Member Information to cache </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="497" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="501" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a51014eda37337d1e98ad1bb3f1024112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::AddChatMessage</definition>
+        <argsstring>(FUniqueNetIdAccelByteUserRef AccelByteUserId, const FChatRoomId &amp;ChatRoomId, TSharedRef&lt; FChatMessage &gt; ChatMessage)</argsstring>
+        <name>AddChatMessage</name>
+        <qualifiedname>FOnlineChatAccelByte::AddChatMessage</qualifiedname>
+        <param>
+          <type><ref refid="d2/daa/_online_subsystem_accel_byte_types_8h_1ae8cb93e2a9e38b9012e1f7f9bdf4ebca" kindref="member">FUniqueNetIdAccelByteUserRef</ref></type>
+          <declname>AccelByteUserId</declname>
+        </param>
+        <param>
+          <type>const FChatRoomId &amp;</type>
+          <declname>ChatRoomId</declname>
+        </param>
+        <param>
+          <type>TSharedRef&lt; FChatMessage &gt;</type>
+          <declname>ChatMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add Chat message to cache </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="501" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="518" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a597856facdfc276f4a9f4eaa264cd380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1aa1f6cbba3c2ac6bf412f77e0fb565d19" kindref="member">FAccelByteChatRoomMemberRef</ref></type>
+        <definition>FAccelByteChatRoomMemberRef FOnlineChatAccelByte::GetAccelByteChatRoomMember</definition>
+        <argsstring>(const FString &amp;UserId)</argsstring>
+        <name>GetAccelByteChatRoomMember</name>
+        <qualifiedname>FOnlineChatAccelByte::GetAccelByteChatRoomMember</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get cached room member </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="505" column="29" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="530" bodyend="543"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a5b417ac77e895fc5c230fa59aa061769" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnChatDisconnectedNotification</definition>
+        <argsstring>(const FAccelByteModelsChatDisconnectNotif &amp;DisconnectEvent, int32 LocalUserNum)</argsstring>
+        <name>OnChatDisconnectedNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnChatDisconnectedNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatDisconnectNotif &amp;</type>
+          <declname>DisconnectEvent</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="510" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="624" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a17f3cfbd431b75d1bd8897b0921af157" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnRemoveFromTopicNotification</definition>
+        <argsstring>(const FAccelByteModelsChatUpdateUserTopicNotif &amp;RemoveTopicEvent, int32 LocalUserNum)</argsstring>
+        <name>OnRemoveFromTopicNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnRemoveFromTopicNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatUpdateUserTopicNotif &amp;</type>
+          <declname>RemoveTopicEvent</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="511" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="633" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a84e3a2c71a4387ac75c7e31aedfa821d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnAddToTopicNotification</definition>
+        <argsstring>(const FAccelByteModelsChatUpdateUserTopicNotif &amp;AddTopicEvent, int32 LocalUserNum)</argsstring>
+        <name>OnAddToTopicNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnAddToTopicNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatUpdateUserTopicNotif &amp;</type>
+          <declname>AddTopicEvent</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="512" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="658" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ad8207fab33489f5743a9598fb339b4bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnReceivedChatNotification</definition>
+        <argsstring>(const FAccelByteModelsChatNotif &amp;ChatNotif, int32 LocalUserNum)</argsstring>
+        <name>OnReceivedChatNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnReceivedChatNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatNotif &amp;</type>
+          <declname>ChatNotif</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="513" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="734" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1adc7d455aa7f6196cd1dc97d4346e9b40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnUpdateTopicNotification</definition>
+        <argsstring>(const FAccelByteModelsChatUpdateTopicNotif &amp;UpdateTopicNotif, int32 LocalUserNum)</argsstring>
+        <name>OnUpdateTopicNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnUpdateTopicNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatUpdateTopicNotif &amp;</type>
+          <declname>UpdateTopicNotif</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="514" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="777" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a5cccaa781d963065c8460da56efd7eeb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnDeleteTopicNotification</definition>
+        <argsstring>(const FAccelByteModelsChatUpdateTopicNotif &amp;DeleteTopicNotif, int32 LocalUserNum)</argsstring>
+        <name>OnDeleteTopicNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnDeleteTopicNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatUpdateTopicNotif &amp;</type>
+          <declname>DeleteTopicNotif</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="515" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="802" bodyend="818"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ad6d34d34a59147a124808521a1b1abdf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnReadChatNotification</definition>
+        <argsstring>(const FAccelByteModelsReadChatNotif &amp;ReadChatNotif, int32 LocalUserNum)</argsstring>
+        <name>OnReadChatNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnReadChatNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsReadChatNotif &amp;</type>
+          <declname>ReadChatNotif</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="516" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="820" bodyend="827"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a62cae07498925c031833bd645098435a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnUserBanNotification</definition>
+        <argsstring>(const FAccelByteModelsChatUserBanUnbanNotif &amp;UserBanNotif, int32 LocalUserNum)</argsstring>
+        <name>OnUserBanNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnUserBanNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatUserBanUnbanNotif &amp;</type>
+          <declname>UserBanNotif</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="517" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="829" bodyend="836"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a69d32b1198b9b315dfa9f7451c347b37" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnUserUnbanNotification</definition>
+        <argsstring>(const FAccelByteModelsChatUserBanUnbanNotif &amp;UserUnbanNotif, int32 LocalUserNum)</argsstring>
+        <name>OnUserUnbanNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnUserUnbanNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatUserBanUnbanNotif &amp;</type>
+          <declname>UserUnbanNotif</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="518" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="838" bodyend="845"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a9449fe1309397c90754e2714adf8d839" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnSystemMessageNotification</definition>
+        <argsstring>(const FAccelByteModelsChatSystemMessageNotif &amp;SystemMessageNotif, int32 LocalUserNum)</argsstring>
+        <name>OnSystemMessageNotification</name>
+        <qualifiedname>FOnlineChatAccelByte::OnSystemMessageNotification</qualifiedname>
+        <param>
+          <type>const FAccelByteModelsChatSystemMessageNotif &amp;</type>
+          <declname>SystemMessageNotif</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="519" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="847" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1ad47ec6835824a6a6891cbe91215e6bfe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnQueryChatRoomInfoComplete</definition>
+        <argsstring>(bool bWasSuccessful, TArray&lt; FAccelByteChatRoomInfoRef &gt; RoomList, int32 LocalUserNum)</argsstring>
+        <name>OnQueryChatRoomInfoComplete</name>
+        <qualifiedname>FOnlineChatAccelByte::OnQueryChatRoomInfoComplete</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bWasSuccessful</declname>
+        </param>
+        <param>
+          <type>TArray&lt; <ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1a50b75feb7c97cae2830caa89bde9cd5f" kindref="member">FAccelByteChatRoomInfoRef</ref> &gt;</type>
+          <declname>RoomList</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="523" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="879" bodyend="884"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1a70fea747119fb12d9b7d87de56409263" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnQueryChatMemberInfo_TriggerChatRoomMemberJoin</definition>
+        <argsstring>(bool bIsSuccessful, TArray&lt; TSharedRef&lt; FAccelByteUserInfo &gt; &gt; UsersQueried, FString RoomId, TSharedPtr&lt; const FUniqueNetId &gt; UserId, TSharedPtr&lt; const FUniqueNetId &gt; MemberId)</argsstring>
+        <name>OnQueryChatMemberInfo_TriggerChatRoomMemberJoin</name>
+        <qualifiedname>FOnlineChatAccelByte::OnQueryChatMemberInfo_TriggerChatRoomMemberJoin</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bIsSuccessful</declname>
+        </param>
+        <param>
+          <type>TArray&lt; TSharedRef&lt; <ref refid="da/dd5/struct_f_accel_byte_user_info" kindref="compound">FAccelByteUserInfo</ref> &gt; &gt;</type>
+          <declname>UsersQueried</declname>
+        </param>
+        <param>
+          <type>FString</type>
+          <declname>RoomId</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+          <declname>MemberId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="524" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="886" bodyend="899"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dac/class_f_online_chat_accel_byte_1aa1d6d39d40f9b06d9ed4686dff2274dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineChatAccelByte::OnQueryChatRoomById_TriggerChatRoomMemberJoin</definition>
+        <argsstring>(bool bWasSuccessful, FAccelByteChatRoomInfoPtr RoomInfo, int32 LocalUserNum, TSharedPtr&lt; const FUniqueNetId &gt; UserId, TSharedPtr&lt; const FUniqueNetId &gt; MemberId)</argsstring>
+        <name>OnQueryChatRoomById_TriggerChatRoomMemberJoin</name>
+        <qualifiedname>FOnlineChatAccelByte::OnQueryChatRoomById_TriggerChatRoomMemberJoin</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bWasSuccessful</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d9b/_online_chat_interface_accel_byte_8h_1a71d593021880a1f77f616b43113e8ca5" kindref="member">FAccelByteChatRoomInfoPtr</ref></type>
+          <declname>RoomInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+          <declname>MemberId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="525" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineChatInterfaceAccelByte.cpp" bodystart="901" bodyend="914"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineChatAccelByte</label>
+        <link refid="d7/dac/class_f_online_chat_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineChat</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineChatAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>AccelByte::TSelfPtr&lt; FOnlineAsyncEpicTaskAccelByte, ESPMode::ThreadSafe &gt;</label>
+        <link refid="d8/de9/class_accel_byte_1_1_t_self_ptr"/>
+      </node>
+      <node id="7">
+        <label>FOnlineAsyncEpicTaskAccelByte</label>
+        <link refid="d9/d57/class_f_online_async_epic_task_accel_byte"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>FOnlineAsyncTaskAccelByte</label>
+        <link refid="d6/d53/class_f_online_async_task_accel_byte"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTask</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Epic</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>FOnlineAsyncTaskBasic&lt; FOnlineSubsystemAccelByte &gt;</label>
+      </node>
+      <node id="1">
+        <label>FOnlineChatAccelByte</label>
+        <link refid="d7/dac/class_f_online_chat_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AccelByteSubsystem</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FOnlineSubsystemAccelByte</label>
+        <link refid="d5/d5d/class_f_online_subsystem_accel_byte"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>EpicForUpcomingTask</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ParentTaskForUpcomingTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FOnlineSubsystemImpl</label>
+      </node>
+      <node id="2">
+        <label>IOnlineChat</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineChatAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="6">
+        <label>TSharedFromThis&lt; FOnlineSubsystemAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" line="170" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineChatInterfaceAccelByte.h" bodystart="171" bodyend="534"/>
+    <listofallmembers>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a548a1f10aec6d7bfa5c096f75b9bb234" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aab4217571d9fb630a7bce1848f700e73" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a51014eda37337d1e98ad1bb3f1024112" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>AddChatMessage</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a36c043005eeef6309ff9b6b49d4471f6" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>AddChatRoomMembers</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a0d96d945c7f671c355c340cdaf195524" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>AddTopic</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aa746e05ff44e0d13e829735ee0b4b454" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>ConfigureRoom</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a7fd8eadbf6540c8f00712f3708296ac8" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>ConfigureRoom</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ad74a9b986bcc0d0bd1edb426e40f390d" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>Connect</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ab00c3fbe8aaae9d8a2b563491dc6ecb2" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>CreateRoom</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aa9a8fb48f2cfccf137178e93afcb0622" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>CreateRoom</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a66177a0924edba64f1f89e34cb93b809" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_FIVE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aa5e0a2826993b219fada70965e477e92" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_FIVE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a0fee959c070977c03c80c109abab27b9" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aaca35c2afafc592efad1d219506b76e4" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aa3cd8f2c7479a913499ac45226060793" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_FOUR_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a419e3ab43a20066403132b64331624a4" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_ONE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a07857a7e2c59555e3164b733a7d53c8b" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_ONE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a43b0b61f0ea5516217581cd974b728ec" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a0475557166591dc7008a92836bb0f420" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ae7190e08b5b2aff01557f86c3bd32171" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a0a81a1fed323b720768c1d0afe44f1e9" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ae553d14bfa93d088f207c015fafa31b5" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a42b5ac3c7bb99fbde12021a7eebf7b1b" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a0d0c402c831411a5bbe5a5c888af9224" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1af67450cfa410e8a29908bc744655fa36" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a9e23ec49f66bffae8f66d3ae9b943767" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aa54afea9f0042f38452a6ddb41727a25" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ad584f8531fb84381f90f3cf26ee77872" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>DeleteSystemMessages</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ad1d100c2bd671f63c843b2475d9299f7" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>DumpChatState</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a29e708f63342104692e5e2d1084b4848" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>ExitRoom</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a08a80d0251bf28b0d9191d260eacd7c0" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>FOnlineChatAccelByte</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a597856facdfc276f4a9f4eaa264cd380" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>GetAccelByteChatRoomMember</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1abb0d57af093282a62ba6271c45f84cb3" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>GetChatRoomType</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a6ad34ea768177c9110e87850ea6e7ea4" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a486d787a91c435b1a46124a7cde84dca" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a223b86418041e1616817fdf2bad87bd2" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>GetJoinedRooms</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a9bdc86f6b3e626b61c43fba90e8c3a54" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>GetLastMessages</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ac421a70c792107d2496c29aa0ccddfda" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>GetMember</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a5273802c22d97cf90311f92e7c1c66be" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>GetMembers</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a175bf7de00f8c90bd0f440cd893b3449" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>GetRoomInfo</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a55f1f878065784bfc7bb7eb4b1dec2f4" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>GetSystemMessageStats</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ab8e27c6d81788332df1f52dd13a317f2" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>GetTopic</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ae1311cde5fef8e35ac2c2bd6cb23cd35" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>HasPersonalChat</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a775416cd374e01b75e43945f8964f5c6" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>IsChatAllowed</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a6a0f1597293be2efef1a8feb293e703f" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>IsJoinedTopic</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a690437b1c1d99211b863a83ccaecb16d" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>IsMessageFromLocalUser</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a4ecaa61b470e0731ea45f040e5538a1f" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>JoinPrivateRoom</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ad625f438a8f153b23a3635d721ed3c82" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>JoinPublicRoom</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a84e3a2c71a4387ac75c7e31aedfa821d" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnAddToTopicNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a5b417ac77e895fc5c230fa59aa061769" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnChatDisconnectedNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a5cccaa781d963065c8460da56efd7eeb" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnDeleteTopicNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a70fea747119fb12d9b7d87de56409263" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnQueryChatMemberInfo_TriggerChatRoomMemberJoin</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aa1d6d39d40f9b06d9ed4686dff2274dc" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnQueryChatRoomById_TriggerChatRoomMemberJoin</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ad47ec6835824a6a6891cbe91215e6bfe" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnQueryChatRoomInfoComplete</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ad6d34d34a59147a124808521a1b1abdf" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnReadChatNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ad8207fab33489f5743a9598fb339b4bd" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnReceivedChatNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a17f3cfbd431b75d1bd8897b0921af157" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnRemoveFromTopicNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a9449fe1309397c90754e2714adf8d839" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnSystemMessageNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1adc7d455aa7f6196cd1dc97d4346e9b40" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnUpdateTopicNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a62cae07498925c031833bd645098435a" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnUserBanNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a69d32b1198b9b315dfa9f7451c347b37" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>OnUserUnbanNotification</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1af44096b8d70fc677aa0232af12da3e55" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>PartyV1IdToChatTopicId</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aeb56d64e3d09ccf36f2b9762a9ad9f2d" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>PartyV2IdToChatTopicId</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1af9b6837d26a2ff7f3c63e9d8c305c3a4" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>PersonalChatTopicId</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1af526d6ae4fec6c27e724419e25575363" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>QuerySystemMessage</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a4510684c68274ab3a4c2624a5bd30b09" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>QueryTransientSystemMessage</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aee349bc78bf3c2ec520a5c9dc28a7c17" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>RemoveMemberFromTopic</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1ab40a3d5c51be7af08a9c49b291eb07e7" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>RemoveTopic</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a215752505f91908eb6ebc739b1a78d3c" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>SendPrivateChat</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a44c1f49c5f854f9a62a67de8367a240c" prot="public" virt="virtual"><scope>FOnlineChatAccelByte</scope><name>SendRoomChat</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a846b3fb4da9b2fc2e64999d52a36912a" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>SessionV2IdToChatTopicId</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a879cead8c1cc2e879c7b9e93a5a8ad4c" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>TopicIdToChatRoomInfoCached</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1aa27ce5721e47c08ca4df93f4e8a2f48b" prot="public" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>UpdateSystemMessages</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a3bf1a2e6f2eda82e2bf6995d7b27ead2" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>UserIdToChatRoomMemberCached</name></member>
+      <member refid="d7/dac/class_f_online_chat_accel_byte_1a2d1452d3c4c97948bcd8b84f57c64123" prot="private" virt="non-virtual"><scope>FOnlineChatAccelByte</scope><name>UserIdToChatRoomMessagesCached</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

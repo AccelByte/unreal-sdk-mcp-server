@@ -1,0 +1,1471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d3/d47/class_f_online_identity_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineIdentityAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IOnlineIdentity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TSharedFromThis&lt; FOnlineIdentityAccelByte, ESPMode::ThreadSafe &gt;</basecompoundref>
+    <includes refid="d2/de4/_online_identity_interface_accel_byte_8h" local="no">OnlineIdentityInterfaceAccelByte.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1a0aebf4be72aaee98fb103a9ccc4ed263" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref></type>
+        <definition>PACKAGE_SCOPE FOnlineIdentityAccelByte::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>FOnlineIdentityAccelByte::__pad0__</qualifiedname>
+        <bitfield> void AddNewAuthenticatedUser(int32 LocalUserNum</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="212" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1ab26f14948470d483382247f827f341f2" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref> const TSharedRef&lt; const FUniqueNetId &gt; &amp;</type>
+        <definition>PACKAGE_SCOPE const TSharedRef&lt;const FUniqueNetId&gt;&amp; FOnlineIdentityAccelByte::UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>FOnlineIdentityAccelByte::UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="216" column="19" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1ab5cae9405da0934777362b41286fe2ce" prot="public" static="no" mutable="no">
+        <type><ref refid="db/dc4/_online_subsystem_accel_byte_package_8h_1a8395f6f23bb3a906a5d9aaea908947dc" kindref="member">PACKAGE_SCOPE</ref> const TSharedRef&lt; const FUniqueNetId &gt; const TSharedRef&lt; FUserOnlineAccount &gt; &amp;</type>
+        <definition>PACKAGE_SCOPE const TSharedRef&lt;const FUniqueNetId&gt; const TSharedRef&lt;FUserOnlineAccount&gt;&amp; FOnlineIdentityAccelByte::Account</definition>
+        <argsstring></argsstring>
+        <name>Account</name>
+        <qualifiedname>FOnlineIdentityAccelByte::Account</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="216" column="43" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1a672c410ffbd74312aaeea9bec7aeff1e" prot="private" static="no" mutable="no">
+        <type>TWeakPtr&lt; <ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref>, ESPMode::ThreadSafe &gt;</type>
+        <definition>TWeakPtr&lt;FOnlineSubsystemAccelByte, ESPMode::ThreadSafe&gt; FOnlineIdentityAccelByte::AccelByteSubsystem</definition>
+        <argsstring></argsstring>
+        <name>AccelByteSubsystem</name>
+        <qualifiedname>FOnlineIdentityAccelByte::AccelByteSubsystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parent subsystem that spawned this instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="231" column="10" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1af29ce5b1efaa3c1f637454eaf16a299b" prot="private" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>, TSharedRef&lt; const FUniqueNetId &gt; &gt;</type>
+        <definition>TMap&lt;int32, TSharedRef&lt;const FUniqueNetId&gt; &gt; FOnlineIdentityAccelByte::LocalUserNumToNetIdMap</definition>
+        <argsstring></argsstring>
+        <name>LocalUserNumToNetIdMap</name>
+        <qualifiedname>FOnlineIdentityAccelByte::LocalUserNumToNetIdMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple mapping for LocalUserNum to FUniqueNetIdAccelByte for users. Filled when users log in. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="234" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1a5b3f983cd36a572f3a9329a9e31fa68b" prot="private" static="no" mutable="no">
+        <type>TMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref>, ELoginStatus::Type &gt;</type>
+        <definition>TMap&lt;int32, ELoginStatus::Type&gt; FOnlineIdentityAccelByte::LocalUserNumToLoginStatusMap</definition>
+        <argsstring></argsstring>
+        <name>LocalUserNumToLoginStatusMap</name>
+        <qualifiedname>FOnlineIdentityAccelByte::LocalUserNumToLoginStatusMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping of local user indices to login statuses, used to query login status for a user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="237" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1adb8271bc7c658e8c374f0550363c70bd" prot="private" static="no" mutable="no">
+        <type>TUniqueNetIdMap&lt; <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref> &gt;</type>
+        <definition>TUniqueNetIdMap&lt;int32&gt; FOnlineIdentityAccelByte::NetIdToLocalUserNumMap</definition>
+        <argsstring></argsstring>
+        <name>NetIdToLocalUserNumMap</name>
+        <qualifiedname>FOnlineIdentityAccelByte::NetIdToLocalUserNumMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple mapping for FUniqueNetIdAccelByte to LocalUserNum. Filled when users log in. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="240" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1a38b3488d0e70cfee88bfb980e8fe57be" prot="private" static="no" mutable="no">
+        <type>TUniqueNetIdMap&lt; TSharedRef&lt; FUserOnlineAccount &gt; &gt;</type>
+        <definition>TUniqueNetIdMap&lt;TSharedRef&lt;FUserOnlineAccount&gt; &gt; FOnlineIdentityAccelByte::NetIdToOnlineAccountMap</definition>
+        <argsstring></argsstring>
+        <name>NetIdToOnlineAccountMap</name>
+        <qualifiedname>FOnlineIdentityAccelByte::NetIdToOnlineAccountMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mapping of <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> net IDs to <ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> user accounts. Filled when users log in. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="243" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1afa10007b44ae4d0764f888fc070b31df" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineIdentityAccelByte::LogoutReason</definition>
+        <argsstring></argsstring>
+        <name>LogoutReason</name>
+        <qualifiedname>FOnlineIdentityAccelByte::LogoutReason</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="245" column="9" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1a1ffad20de3ca2b22fe7d2b2c01ef0d93" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::bIsAuthenticatingServer</definition>
+        <argsstring></argsstring>
+        <name>bIsAuthenticatingServer</name>
+        <qualifiedname>FOnlineIdentityAccelByte::bIsAuthenticatingServer</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag denoting whether or not we are currently authenticating as a server to prevent duplicate logins </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="270" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1a60dcdd227a11e70a11ce93b2cb4aa2aa" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::bIsServerAuthenticated</definition>
+        <argsstring></argsstring>
+        <name>bIsServerAuthenticated</name>
+        <qualifiedname>FOnlineIdentityAccelByte::bIsServerAuthenticated</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag denoting whether or not we have successfully authenticated as a server in this instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="275" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1ae50dce818308fc017358a13161629718" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::bIsAutoLoginCreateHeadless</definition>
+        <argsstring></argsstring>
+        <name>bIsAutoLoginCreateHeadless</name>
+        <qualifiedname>FOnlineIdentityAccelByte::bIsAutoLoginCreateHeadless</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag denoting whether or not we create headless account on successfully 3rd party login using AutoLogin </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="280" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d47/class_f_online_identity_accel_byte_1a64eba3100713a704bf490ed2ae03ac55" prot="private" static="no" mutable="no">
+        <type>TArray&lt; FOnAuthenticateServerComplete &gt;</type>
+        <definition>TArray&lt;FOnAuthenticateServerComplete&gt; FOnlineIdentityAccelByte::ServerAuthDelegates</definition>
+        <argsstring></argsstring>
+        <name>ServerAuthDelegates</name>
+        <qualifiedname>FOnlineIdentityAccelByte::ServerAuthDelegates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of pending server login delegates, will be all fired once login is finished </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="285" column="8" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a4af95a7554c2b1afbacca19905d67428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineIdentityAccelByte::FOnlineIdentityAccelByte</definition>
+        <argsstring>(FOnlineSubsystemAccelByte *InSubsystem)</argsstring>
+        <name>FOnlineIdentityAccelByte</name>
+        <qualifiedname>FOnlineIdentityAccelByte::FOnlineIdentityAccelByte</qualifiedname>
+        <param>
+          <type><ref refid="d5/d5d/class_f_online_subsystem_accel_byte" kindref="compound">FOnlineSubsystemAccelByte</ref> *</type>
+          <declname>InSubsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct an instance of our identity interface</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InSubsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem that owns this identity interface</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Begin <ref refid="d3/d47/class_f_online_identity_accel_byte" kindref="compound">FOnlineIdentityAccelByte</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="81" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a3b8c315372c7b014cb7ea7bc6acd5f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual FOnlineIdentityAccelByte::~FOnlineIdentityAccelByte</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~FOnlineIdentityAccelByte</name>
+        <qualifiedname>FOnlineIdentityAccelByte::~FOnlineIdentityAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="82" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a596fba56b7757cd5372b4bb6cd12aeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::Login</definition>
+        <argsstring>(int32 LocalUserNum, const FOnlineAccountCredentialsAccelByte &amp;AccountCredentials)</argsstring>
+        <name>Login</name>
+        <qualifiedname>FOnlineIdentityAccelByte::Login</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/dd2/class_f_online_account_credentials_accel_byte" kindref="compound">FOnlineAccountCredentialsAccelByte</ref> &amp;</type>
+          <declname>AccountCredentials</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="103" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="74" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a1adf434e8071734ae898e847a0e0e229" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::Login</definition>
+        <argsstring>(int32 LocalUserNum, const FOnlineAccountCredentials &amp;AccountCredentials) override</argsstring>
+        <name>Login</name>
+        <qualifiedname>FOnlineIdentityAccelByte::Login</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FOnlineAccountCredentials &amp;</type>
+          <declname>AccountCredentials</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="104" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a06df06f31fc652b8a535319880fb038f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::Logout</definition>
+        <argsstring>(int32 LocalUserNum) override</argsstring>
+        <name>Logout</name>
+        <qualifiedname>FOnlineIdentityAccelByte::Logout</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="105" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="145" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ae63febfc0a15e902c1165c2fdc443601" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::AutoLogin</definition>
+        <argsstring>(int32 LocalUserNum) override</argsstring>
+        <name>AutoLogin</name>
+        <qualifiedname>FOnlineIdentityAccelByte::AutoLogin</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="106" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="211" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ad7ebb38afc3d2fa1a504bd500e77b15c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; FUserOnlineAccount &gt;</type>
+        <definition>TSharedPtr&lt; FUserOnlineAccount &gt; FOnlineIdentityAccelByte::GetUserAccount</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) const override</argsstring>
+        <name>GetUserAccount</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetUserAccount</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="107" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="275" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a376c458d4758575d13f8893644f80bb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TArray&lt; TSharedPtr&lt; FUserOnlineAccount &gt; &gt;</type>
+        <definition>TArray&lt; TSharedPtr&lt; FUserOnlineAccount &gt; &gt; FOnlineIdentityAccelByte::GetAllUserAccounts</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAllUserAccounts</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetAllUserAccounts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="108" column="16" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="291" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a03f206d25583142285b170dc8a0ff79a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+        <definition>TSharedPtr&lt; const FUniqueNetId &gt; FOnlineIdentityAccelByte::GetUniquePlayerId</definition>
+        <argsstring>(int32 LocalUserNum) const override</argsstring>
+        <name>GetUniquePlayerId</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetUniquePlayerId</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="109" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="307" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a24a629e9769d4c65590a713cb3653dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+        <definition>TSharedPtr&lt; const FUniqueNetId &gt; FOnlineIdentityAccelByte::CreateUniquePlayerId</definition>
+        <argsstring>(uint8 *Bytes, int32 Size) override</argsstring>
+        <name>CreateUniquePlayerId</name>
+        <qualifiedname>FOnlineIdentityAccelByte::CreateUniquePlayerId</qualifiedname>
+        <param>
+          <type>uint8 *</type>
+          <declname>Bytes</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>Size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="110" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="323" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a84042f79463fddf41a2621fea2d1239f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TSharedPtr&lt; const FUniqueNetId &gt;</type>
+        <definition>TSharedPtr&lt; const FUniqueNetId &gt; FOnlineIdentityAccelByte::CreateUniquePlayerId</definition>
+        <argsstring>(const FString &amp;Str) override</argsstring>
+        <name>CreateUniquePlayerId</name>
+        <qualifiedname>FOnlineIdentityAccelByte::CreateUniquePlayerId</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="111" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="334" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ae777cd325a27db93c1931f01beddd889" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ELoginStatus::Type</type>
+        <definition>ELoginStatus::Type FOnlineIdentityAccelByte::GetLoginStatus</definition>
+        <argsstring>(int32 LocalUserNum) const override</argsstring>
+        <name>GetLoginStatus</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetLoginStatus</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="112" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="339" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a7518dae30279d56670b0db6c92535ba0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ELoginStatus::Type</type>
+        <definition>ELoginStatus::Type FOnlineIdentityAccelByte::GetLoginStatus</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) const override</argsstring>
+        <name>GetLoginStatus</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetLoginStatus</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="113" column="28" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="355" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a59c1b9d96b474867a55d55a6dc82efb3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineIdentityAccelByte::GetPlayerNickname</definition>
+        <argsstring>(int32 LocalUserNum) const override</argsstring>
+        <name>GetPlayerNickname</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetPlayerNickname</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="114" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="393" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1aeda51dc424c1b32e7002e875d00d688b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineIdentityAccelByte::GetPlayerNickname</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId) const override</argsstring>
+        <name>GetPlayerNickname</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetPlayerNickname</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="115" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="408" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a670154d0f20ff043b65d1f6f1307d37b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineIdentityAccelByte::GetAuthToken</definition>
+        <argsstring>(int32 LocalUserNum) const override</argsstring>
+        <name>GetAuthToken</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetAuthToken</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="116" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="423" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ae0653cd813b09cb441c2ed2913902ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::RevokeAuthToken</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, const FOnRevokeAuthTokenCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>RevokeAuthToken</name>
+        <qualifiedname>FOnlineIdentityAccelByte::RevokeAuthToken</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>const FOnRevokeAuthTokenCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="117" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="442" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a8ef20e2fa6566289b023e2de41fda0f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::GetLinkedAccountAuthToken</definition>
+        <argsstring>(int32 LocalUserNum, const FOnGetLinkedAccountAuthTokenCompleteDelegate &amp;Delegate) const override</argsstring>
+        <name>GetLinkedAccountAuthToken</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetLinkedAccountAuthToken</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FOnGetLinkedAccountAuthTokenCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="118" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="461" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a77f1c0cbb43b3887596053cf0a227f67" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::GetUserPrivilege</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, EUserPrivileges::Type Privilege, const FOnGetUserPrivilegeCompleteDelegate &amp;Delegate) override</argsstring>
+        <name>GetUserPrivilege</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetUserPrivilege</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>EUserPrivileges::Type</type>
+          <declname>Privilege</declname>
+        </param>
+        <param>
+          <type>const FOnGetUserPrivilegeCompleteDelegate &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="119" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="470" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a84084b273c035a7b6fa78d930c7c17fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FPlatformUserId</type>
+        <definition>FPlatformUserId FOnlineIdentityAccelByte::GetPlatformUserIdFromUniqueNetId</definition>
+        <argsstring>(const FUniqueNetId &amp;UniqueNetId) const override</argsstring>
+        <name>GetPlatformUserIdFromUniqueNetId</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetPlatformUserIdFromUniqueNetId</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UniqueNetId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="120" column="25" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="521" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a2f26d71d2a73ac990ed3f31d4e8e0ff8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>FString</type>
+        <definition>FString FOnlineIdentityAccelByte::GetAuthType</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetAuthType</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetAuthType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="121" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="544" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a8231c6c236ed15e461c0e46b645e5ab3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::GetLocalUserNum</definition>
+        <argsstring>(const FUniqueNetId &amp;NetId, int32 &amp;OutLocalUserNum) const</argsstring>
+        <name>GetLocalUserNum</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetLocalUserNum</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>NetId</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref> &amp;</type>
+          <declname>OutLocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra method to try and get a LocalUserNum from a FUniqueNetId instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="125" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="549" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1afeeaf1116baedd9380e6a674c39f8dcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::Logout</definition>
+        <argsstring>(int32 LocalUserNum, FString Reason)</argsstring>
+        <name>Logout</name>
+        <qualifiedname>FOnlineIdentityAccelByte::Logout</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>FString</type>
+          <declname>Reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="127" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="154" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ac3d82c6552f165e7e8b59eceb9e0e09e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AccelByte::FApiClientPtr</type>
+        <definition>AccelByte::FApiClientPtr FOnlineIdentityAccelByte::GetApiClient</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId)</argsstring>
+        <name>GetApiClient</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetApiClient</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the FApiClient that is used for a particular user by their net ID.</para>
+<para>Used to make raw SDK calls for user if needed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="134" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="560" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a0f6dc6c2ad1daa1544bad2bd15fc5540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AccelByte::FApiClientPtr</type>
+        <definition>AccelByte::FApiClientPtr FOnlineIdentityAccelByte::GetApiClient</definition>
+        <argsstring>(int32 LocalUserNum)</argsstring>
+        <name>GetApiClient</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetApiClient</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the FApiClient that is used for a particular user by their net ID.</para>
+<para>Used to make raw SDK calls for user if needed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="141" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="572" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ac05dde6edcba29bfd008764201d81619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::AuthenticateAccelByteServer</definition>
+        <argsstring>(const FOnAuthenticateServerComplete &amp;Delegate, int32 LocalUserNum=0)</argsstring>
+        <name>AuthenticateAccelByteServer</name>
+        <qualifiedname>FOnlineIdentityAccelByte::AuthenticateAccelByteServer</qualifiedname>
+        <param>
+          <type>const FOnAuthenticateServerComplete &amp;</type>
+          <declname>Delegate</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Authenticate a server on the backend using the FRegistry global API client</para>
+<para>#TODO (Maxwell): This really should be supported by AutoLogin as a separate authentication path, as there&apos;s a ton of hacky code we need to write to make sure that any server call is working when authenticated. If we use AutoLogin for server auth, we bypass a lot of that code. However, this would require a rework to the current server code that we don&apos;t have time for... For now, use this method for all server auth... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="151" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="583" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1aab7331c13d5c5ceac74b8e43b2b4403d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::IsServerAuthenticated</definition>
+        <argsstring>(int32 LocalUserNum=0)</argsstring>
+        <name>IsServerAuthenticated</name>
+        <qualifiedname>FOnlineIdentityAccelByte::IsServerAuthenticated</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether or not our server is authenticated or not </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="156" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="631" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a651e6ae8a2200d8481196330b113a4f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnConnectLobbyComplete, bool, const FUniqueNetId &amp;, const FString &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnConnectLobbyComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a2ffd3dd7bb94b54a46e41c9535c7f87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, OnLoginWithOAuthErrorComplete, bool, const FUniqueNetId &amp;, const FErrorOAuthInfo &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>OnLoginWithOAuthErrorComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const FErrorOAuthInfo &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1abeb34c89a87fa99b649c669d6f9d97b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, AccelByteOnLoginComplete, bool, const FUniqueNetId &amp;, const FOnlineErrorAccelByte &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>AccelByteOnLoginComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when user account login has completed after calling <ref refid="d3/d47/class_f_online_identity_accel_byte_1a596fba56b7757cd5372b4bb6cd12aeb7" kindref="member">Login()</ref> or <ref refid="d3/d47/class_f_online_identity_accel_byte_1ae63febfc0a15e902c1165c2fdc443601" kindref="member">AutoLogin()</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the controller number of the associated user </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bWasSuccessful</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if server was contacted and a valid result received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user id received from the server on successful login </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the error condition </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1aa9bd0523efbc482e521c95c2ce8040af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, AccelByteOnLogoutComplete, bool, const FOnlineErrorAccelByte &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name>
+        <qualifiedname>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>AccelByteOnLogoutComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegate used in notifying the that manual logout completed</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the controller number of the associated user </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bWasSuccessful</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether the async call completed properly or not </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the error condition </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ab5e8108a9f14de8c8b51444f1522c522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</definition>
+        <argsstring>(MAX_LOCAL_PLAYERS, AccelByteOnConnectLobbyComplete, bool, const FUniqueNetId &amp;, const FOnlineErrorAccelByte &amp;)</argsstring>
+        <name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name>
+        <qualifiedname>FOnlineIdentityAccelByte::DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</qualifiedname>
+        <param>
+          <type>MAX_LOCAL_PLAYERS</type>
+        </param>
+        <param>
+          <type>AccelByteOnConnectLobbyComplete</type>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        </param>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when user account login succesfully connected to lobby</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the controller number of the associated user </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bWasSuccessful</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if server was contacted and a valid result received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user id received from the server on successful connect </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the error condition </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1afcb96b25353b0dad9fa2f953089c2fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::ConnectAccelByteLobby</definition>
+        <argsstring>(int32 LocalUserNum)</argsstring>
+        <name>ConnectAccelByteLobby</name>
+        <qualifiedname>FOnlineIdentityAccelByte::ConnectAccelByteLobby</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="191" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="637" bodyend="687"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a84d0fdba4721d7abfd75fa957668dabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::SetAutoLoginCreateHeadless</definition>
+        <argsstring>(bool bInIsAutoLoginCreateHeadless)</argsstring>
+        <name>SetAutoLoginCreateHeadless</name>
+        <qualifiedname>FOnlineIdentityAccelByte::SetAutoLoginCreateHeadless</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bInIsAutoLoginCreateHeadless</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to create headless account when try to do 3rd party login using AutoLogin. The default value is true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="196" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="690" bodyend="693"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1ad1e0340c005071336719f606fe96cdd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::GenerateCodeForPublisherToken</definition>
+        <argsstring>(int32 LocalUserNum, const FString &amp;PublisherClientId, FGenerateCodeForPublisherTokenComplete Delegate)</argsstring>
+        <name>GenerateCodeForPublisherToken</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GenerateCodeForPublisherToken</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>PublisherClientId</declname>
+        </param>
+        <param>
+          <type>FGenerateCodeForPublisherTokenComplete</type>
+          <declname>Delegate</declname>
+        </param>
+        <briefdescription>
+<para>This function generate ab code that can be exchanged into publisher namespace token (i.e. by web portal). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PublisherClientID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The targeted game&apos;s publisher ClientID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="210" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="802" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a8cf40ba822775fb13c049e5813953f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::SetLoginStatus</definition>
+        <argsstring>(int32 LocalUserNum, ELoginStatus::Type NewStatus)</argsstring>
+        <name>SetLoginStatus</name>
+        <qualifiedname>FOnlineIdentityAccelByte::SetLoginStatus</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type>ELoginStatus::Type</type>
+          <declname>NewStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set login status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="219" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="373" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1af8400246b95646ff0cca4e73b926356c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::AddAuthenticatedServer</definition>
+        <argsstring>(int32 LocalUserNum)</argsstring>
+        <name>AddAuthenticatedServer</name>
+        <qualifiedname>FOnlineIdentityAccelByte::AddAuthenticatedServer</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new authenticated server to the identity interface mappings for V2 session flow </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="224" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="386" bodyend="391"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1acee9ed9f3e9a82b140ce4756bf0573c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::GetFromSubsystem</definition>
+        <argsstring>(const IOnlineSubsystem *Subsystem, TSharedPtr&lt; FOnlineIdentityAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromSubsystem</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetFromSubsystem</qualifiedname>
+        <param>
+          <type>const IOnlineSubsystem *</type>
+          <declname>Subsystem</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d3/d47/class_f_online_identity_accel_byte" kindref="compound">FOnlineIdentityAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Subsystem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subsystem instance that we wish to get this interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="91" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a89da85d9f7d6606bdf37e3e57084915d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::GetFromWorld</definition>
+        <argsstring>(const UWorld *World, TSharedPtr&lt; FOnlineIdentityAccelByte, ESPMode::ThreadSafe &gt; &amp;OutInterfaceInstance)</argsstring>
+        <name>GetFromWorld</name>
+        <qualifiedname>FOnlineIdentityAccelByte::GetFromWorld</qualifiedname>
+        <param>
+          <type>const UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d3/d47/class_f_online_identity_accel_byte" kindref="compound">FOnlineIdentityAccelByte</ref>, ESPMode::ThreadSafe &gt; &amp;</type>
+          <declname>OutInterfaceInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to get an instance of this interface from the subsystem associated with the world passed in.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>World</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World instance that we wish to get the interface from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OutInterfaceInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance of the interface that we got from the subsystem, or nullptr if not found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean that is true if we could get an instance of the interface, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="100" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a997b331efa5dcdcdd9dfcd1022056b06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineIdentityAccelByte::IsLogoutRequired</definition>
+        <argsstring>(int32 WsClosedConnectionStatusCode)</argsstring>
+        <name>IsLogoutRequired</name>
+        <qualifiedname>FOnlineIdentityAccelByte::IsLogoutRequired</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>WsClosedConnectionStatusCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>To decide whether the current user should be logged out or not. Logout required for specific range of codes. Which means connection closure is abnormal and client should not reconnect (i.e. ban &amp; access token revocation) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="203" column="13" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="787" bodyend="800"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1afb61435ff748491e724b0ef901ed207c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineIdentityAccelByte::FOnlineIdentityAccelByte</definition>
+        <argsstring>()=delete</argsstring>
+        <name>FOnlineIdentityAccelByte</name>
+        <qualifiedname>FOnlineIdentityAccelByte::FOnlineIdentityAccelByte</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable the default constructor, as we only want to be able to construct this interface passing in the parent subsystem </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1aabd8bf668ab5fba1c292041fcc4180e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::OnLogout</definition>
+        <argsstring>(const int32 LocalUserNum, bool bWasSuccessful)</argsstring>
+        <name>OnLogout</name>
+        <qualifiedname>FOnlineIdentityAccelByte::OnLogout</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+          <declname>bWasSuccessful</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call when the user logged out.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the user who logged out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bWasSuccessful</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the user is successfully logged out or False otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="253" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="705" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a799afd3fa8f1ec9dd7294b8d2557ed7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::RemoveUserFromMappings</definition>
+        <argsstring>(const int32 LocalUserNum)</argsstring>
+        <name>RemoveUserFromMappings</name>
+        <qualifiedname>FOnlineIdentityAccelByte::RemoveUserFromMappings</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all mappings for a user by their user index. Should only be called when the user logs out.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LocalUserNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the user that we wish to remove mappings for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="260" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="719" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a4d08abeea94b9f9108eec2279281e716" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::OnGetNativeUserPrivilegeComplete</definition>
+        <argsstring>(const FUniqueNetId &amp;UserId, EUserPrivileges::Type Privilege, uint32 PrivilegeResults, FOnGetUserPrivilegeCompleteDelegate OriginalDelegate, TSharedRef&lt; const FUniqueNetIdAccelByteUser &gt; AccelByteId)</argsstring>
+        <name>OnGetNativeUserPrivilegeComplete</name>
+        <qualifiedname>FOnlineIdentityAccelByte::OnGetNativeUserPrivilegeComplete</qualifiedname>
+        <param>
+          <type>const FUniqueNetId &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>EUserPrivileges::Type</type>
+          <declname>Privilege</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>PrivilegeResults</declname>
+        </param>
+        <param>
+          <type>FOnGetUserPrivilegeCompleteDelegate</type>
+          <declname>OriginalDelegate</declname>
+        </param>
+        <param>
+          <type>TSharedRef&lt; const <ref refid="df/d08/class_f_unique_net_id_accel_byte_user" kindref="compound">FUniqueNetIdAccelByteUser</ref> &gt;</type>
+          <declname>AccelByteId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handler for when our internal call to the native platform for querying user privileges completes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="265" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="740" bodyend="743"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a47459b38bcc9a7bf275adcdb43de21c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::OnAuthenticateAccelByteServerSuccess</definition>
+        <argsstring>(int32 LocalUserNum=0)</argsstring>
+        <name>OnAuthenticateAccelByteServerSuccess</name>
+        <qualifiedname>FOnlineIdentityAccelByte::OnAuthenticateAccelByteServerSuccess</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>LocalUserNum</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handler for when we finish authenticating a server to fire off delegates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="290" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="746" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d47/class_f_online_identity_accel_byte_1a28dbf1238319a8b15cbe799db976892d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineIdentityAccelByte::OnAuthenticateAccelByteServerError</definition>
+        <argsstring>(int32 ErrorCode, const FString &amp;ErrorMessage)</argsstring>
+        <name>OnAuthenticateAccelByteServerError</name>
+        <qualifiedname>FOnlineIdentityAccelByte::OnAuthenticateAccelByteServerError</qualifiedname>
+        <param>
+          <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handler for when we fail to authenticate a server to fire off delegates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="295" column="6" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineIdentityInterfaceAccelByte.cpp" bodystart="770" bodyend="784"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d3/ddc/namespace_accel_byte" kindref="compound">AccelByte</ref> service implementation of the online identity interface </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FOnlineIdentityAccelByte</label>
+        <link refid="d3/d47/class_f_online_identity_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineIdentity</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineIdentityAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FOnlineIdentityAccelByte</label>
+        <link refid="d3/d47/class_f_online_identity_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IOnlineIdentity</label>
+      </node>
+      <node id="3">
+        <label>TSharedFromThis&lt; FOnlineIdentityAccelByte, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" line="73" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineIdentityInterfaceAccelByte.h" bodystart="74" bodyend="297"/>
+    <listofallmembers>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a0aebf4be72aaee98fb103a9ccc4ed263" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>__pad0__</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a672c410ffbd74312aaeea9bec7aeff1e" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>AccelByteSubsystem</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ab5cae9405da0934777362b41286fe2ce" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>Account</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1af8400246b95646ff0cca4e73b926356c" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>AddAuthenticatedServer</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ac05dde6edcba29bfd008764201d81619" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>AuthenticateAccelByteServer</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ae63febfc0a15e902c1165c2fdc443601" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>AutoLogin</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a1ffad20de3ca2b22fe7d2b2c01ef0d93" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>bIsAuthenticatingServer</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ae50dce818308fc017358a13161629718" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>bIsAutoLoginCreateHeadless</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a60dcdd227a11e70a11ce93b2cb4aa2aa" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>bIsServerAuthenticated</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1afcb96b25353b0dad9fa2f953089c2fdc" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>ConnectAccelByteLobby</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a24a629e9769d4c65590a713cb3653dbb" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>CreateUniquePlayerId</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a84042f79463fddf41a2621fea2d1239f" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>CreateUniquePlayerId</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a651e6ae8a2200d8481196330b113a4f0" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a2ffd3dd7bb94b54a46e41c9535c7f87e" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1abeb34c89a87fa99b649c669d6f9d97b4" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ab5e8108a9f14de8c8b51444f1522c522" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_THREE_PARAM</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1aa9bd0523efbc482e521c95c2ce8040af" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>DEFINE_ONLINE_PLAYER_DELEGATE_TWO_PARAM</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a4af95a7554c2b1afbacca19905d67428" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>FOnlineIdentityAccelByte</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1afb61435ff748491e724b0ef901ed207c" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>FOnlineIdentityAccelByte</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ad1e0340c005071336719f606fe96cdd0" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>GenerateCodeForPublisherToken</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a376c458d4758575d13f8893644f80bb1" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetAllUserAccounts</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ac3d82c6552f165e7e8b59eceb9e0e09e" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetApiClient</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a0f6dc6c2ad1daa1544bad2bd15fc5540" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetApiClient</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a670154d0f20ff043b65d1f6f1307d37b" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetAuthToken</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a2f26d71d2a73ac990ed3f31d4e8e0ff8" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetAuthType</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1acee9ed9f3e9a82b140ce4756bf0573c6" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetFromSubsystem</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a89da85d9f7d6606bdf37e3e57084915d" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetFromWorld</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a8ef20e2fa6566289b023e2de41fda0f0" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetLinkedAccountAuthToken</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a8231c6c236ed15e461c0e46b645e5ab3" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetLocalUserNum</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ae777cd325a27db93c1931f01beddd889" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetLoginStatus</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a7518dae30279d56670b0db6c92535ba0" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetLoginStatus</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a84084b273c035a7b6fa78d930c7c17fd" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetPlatformUserIdFromUniqueNetId</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a59c1b9d96b474867a55d55a6dc82efb3" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetPlayerNickname</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1aeda51dc424c1b32e7002e875d00d688b" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetPlayerNickname</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a03f206d25583142285b170dc8a0ff79a" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetUniquePlayerId</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ad7ebb38afc3d2fa1a504bd500e77b15c" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetUserAccount</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a77f1c0cbb43b3887596053cf0a227f67" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>GetUserPrivilege</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a997b331efa5dcdcdd9dfcd1022056b06" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>IsLogoutRequired</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1aab7331c13d5c5ceac74b8e43b2b4403d" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>IsServerAuthenticated</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a5b3f983cd36a572f3a9329a9e31fa68b" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>LocalUserNumToLoginStatusMap</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1af29ce5b1efaa3c1f637454eaf16a299b" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>LocalUserNumToNetIdMap</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a596fba56b7757cd5372b4bb6cd12aeb7" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>Login</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a1adf434e8071734ae898e847a0e0e229" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>Login</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a06df06f31fc652b8a535319880fb038f" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>Logout</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1afeeaf1116baedd9380e6a674c39f8dcb" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>Logout</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1afa10007b44ae4d0764f888fc070b31df" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>LogoutReason</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1adb8271bc7c658e8c374f0550363c70bd" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>NetIdToLocalUserNumMap</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a38b3488d0e70cfee88bfb980e8fe57be" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>NetIdToOnlineAccountMap</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a28dbf1238319a8b15cbe799db976892d" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>OnAuthenticateAccelByteServerError</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a47459b38bcc9a7bf275adcdb43de21c0" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>OnAuthenticateAccelByteServerSuccess</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a4d08abeea94b9f9108eec2279281e716" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>OnGetNativeUserPrivilegeComplete</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1aabd8bf668ab5fba1c292041fcc4180e0" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>OnLogout</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a799afd3fa8f1ec9dd7294b8d2557ed7b" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>RemoveUserFromMappings</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ae0653cd813b09cb441c2ed2913902ea0" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>RevokeAuthToken</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a64eba3100713a704bf490ed2ae03ac55" prot="private" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>ServerAuthDelegates</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a84d0fdba4721d7abfd75fa957668dabc" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>SetAutoLoginCreateHeadless</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a8cf40ba822775fb13c049e5813953f90" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>SetLoginStatus</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1ab26f14948470d483382247f827f341f2" prot="public" virt="non-virtual"><scope>FOnlineIdentityAccelByte</scope><name>UserId</name></member>
+      <member refid="d3/d47/class_f_online_identity_accel_byte_1a3b8c315372c7b014cb7ea7bc6acd5f2d" prot="public" virt="virtual"><scope>FOnlineIdentityAccelByte</scope><name>~FOnlineIdentityAccelByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

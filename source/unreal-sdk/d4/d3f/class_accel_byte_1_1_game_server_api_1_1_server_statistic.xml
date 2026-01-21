@@ -1,0 +1,1463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic" kind="class" language="C++" prot="public">
+    <compoundname>AccelByte::GameServerApi::ServerStatistic</compoundname>
+    <basecompoundref refid="d8/d4c/class_accel_byte_1_1_f_server_api_base" prot="public" virt="non-virtual">AccelByte::FServerApiBase</basecompoundref>
+    <includes refid="d7/d86/_accel_byte_server_statistic_api_8h" local="no">AccelByteServerStatisticApi.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a301cfa213243efb3ed3a4eaec265b1fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</definition>
+        <argsstring>(ServerCredentials const &amp;InCredentialsRef, ServerSettings const &amp;InSettingsRef, FHttpRetrySchedulerBase &amp;InHttpRef, TSharedPtr&lt; FServerApiClient, ESPMode::ThreadSafe &gt; InServerApiClient=nullptr)</argsstring>
+        <name>ServerStatistic</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</qualifiedname>
+        <param>
+          <type><ref refid="d2/d6d/class_accel_byte_1_1_server_credentials" kindref="compound">ServerCredentials</ref> const &amp;</type>
+          <declname>InCredentialsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/db0/class_accel_byte_1_1_server_settings" kindref="compound">ServerSettings</ref> const &amp;</type>
+          <declname>InSettingsRef</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base" kindref="compound">FHttpRetrySchedulerBase</ref> &amp;</type>
+          <declname>InHttpRef</declname>
+        </param>
+        <param>
+          <type>TSharedPtr&lt; <ref refid="d9/df1/class_accel_byte_1_1_f_server_api_client" kindref="compound">FServerApiClient</ref>, ESPMode::ThreadSafe &gt;</type>
+          <declname>InServerApiClient</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="29" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a5ddc9f8368eb48b594231a125aca55c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerStatistic::~ServerStatistic</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerStatistic</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::~ServerStatistic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="33" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a70cdca1989573bbbe09887f01108e6fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::CreateUserStatItems</definition>
+        <argsstring>(FString const &amp;UserId, TArray&lt; FString &gt; const &amp;StatCodes, THandler&lt; TArray&lt; FAccelByteModelsBulkStatItemOperationResult &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>CreateUserStatItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::CreateUserStatItems</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>StatCodes</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d0/dd3/struct_f_accel_byte_models_bulk_stat_item_operation_result" kindref="compound">FAccelByteModelsBulkStatItemOperationResult</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Create stat items for a user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatCodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an <ref refid="da/d2c/struct_f_accel_byte_models_user_stat_item_paging_sliced_result" kindref="compound">FAccelByteModelsUserStatItemPagingSlicedResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="45" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="54" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a1160910f5ec8fc7090675d6ec7bfb148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::GetAllUserStatItems</definition>
+        <argsstring>(FString const &amp;UserId, THandler&lt; FAccelByteModelsUserStatItemPagingSlicedResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0, EAccelByteStatisticSortBy SortBy=EAccelByteStatisticSortBy::UPDATED_AT_ASC)</argsstring>
+        <name>GetAllUserStatItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::GetAllUserStatItems</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="da/d2c/struct_f_accel_byte_models_user_stat_item_paging_sliced_result" kindref="compound">FAccelByteModelsUserStatItemPagingSlicedResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="da/d00/_accel_byte_statistic_models_8h_1a1d7f059e1ba976fba61ac2605ea0997a" kindref="member">EAccelByteStatisticSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="da/d00/_accel_byte_statistic_models_8h_1a1d7f059e1ba976fba61ac2605ea0997aa8f8261849484f52896dec63ef3a295b5" kindref="member">EAccelByteStatisticSortBy::UPDATED_AT_ASC</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get all stat items from a specified user id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an <ref refid="da/d2c/struct_f_accel_byte_models_user_stat_item_paging_sliced_result" kindref="compound">FAccelByteModelsUserStatItemPagingSlicedResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page size, default value is 20. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page number, default value is 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SortBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorting method for the statistic result.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="62" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="95" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ad40a92c6982b2be0e733b8d9ff0c42ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::GetUserStatItems</definition>
+        <argsstring>(FString const &amp;UserId, TArray&lt; FString &gt; const &amp;StatCodes, TArray&lt; FString &gt; const &amp;Tags, THandler&lt; FAccelByteModelsUserStatItemPagingSlicedResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, int32 Limit=20, int32 Offset=0, EAccelByteStatisticSortBy SortBy=EAccelByteStatisticSortBy::UPDATED_AT_ASC)</argsstring>
+        <name>GetUserStatItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::GetUserStatItems</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>StatCodes</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>Tags</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="da/d2c/struct_f_accel_byte_models_user_stat_item_paging_sliced_result" kindref="compound">FAccelByteModelsUserStatItemPagingSlicedResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="da/d00/_accel_byte_statistic_models_8h_1a1d7f059e1ba976fba61ac2605ea0997a" kindref="member">EAccelByteStatisticSortBy</ref></type>
+          <declname>SortBy</declname>
+          <defval><ref refid="da/d00/_accel_byte_statistic_models_8h_1a1d7f059e1ba976fba61ac2605ea0997aa8f8261849484f52896dec63ef3a295b5" kindref="member">EAccelByteStatisticSortBy::UPDATED_AT_ASC</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get a user stat items by specifying statCodes and tags to get from. Returned stat items will only contain stat items specified by statCodes and tags (inclusive). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatCodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify statCodes for stat items to get from this method </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify tags for for stat items to get from this method </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify tags for for stat items to get from this method </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page size, default value is 20. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page number, default value is 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SortBy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sorting method for the statistic result.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="84" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="114" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a54438c3b1fd75e478799cdf6a3cfe845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::GetUserStatCycleItems</definition>
+        <argsstring>(FString const &amp;CycleId, FString const &amp;TargetUserId, THandler&lt; FAccelByteModelsUserStatCycleItemPagingSlicedResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, TArray&lt; FString &gt; const &amp;StatCodes={}, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>GetUserStatCycleItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::GetUserStatCycleItems</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>CycleId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>TargetUserId</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d5/d76/struct_f_accel_byte_models_user_stat_cycle_item_paging_sliced_result" kindref="compound">FAccelByteModelsUserStatCycleItemPagingSlicedResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>StatCodes</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Get a user stat items within the cycle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CycleId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the CycleId where the stat items belong to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TargetUserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user Id to be queried </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d5/d76/struct_f_accel_byte_models_user_stat_cycle_item_paging_sliced_result" kindref="compound">FAccelByteModelsUserStatCycleItemPagingSlicedResult</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatCodes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional. the StatCode of the user stat item. Determine which stat code to get with the cycle id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page size, default value is 20. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Page number, default value is 0.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="106" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="151" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a159d7c33d857ce3b06ba604576ea53ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::IncrementManyUsersStatItems</definition>
+        <argsstring>(TArray&lt; FAccelByteModelsBulkUserStatItemInc &gt; const &amp;Data, THandler&lt; TArray&lt; FAccelByteModelsBulkStatItemOperationResult &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>IncrementManyUsersStatItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::IncrementManyUsersStatItems</qualifiedname>
+        <param>
+          <type>TArray&lt; <ref refid="d4/dcd/struct_f_accel_byte_models_bulk_user_stat_item_inc" kindref="compound">FAccelByteModelsBulkUserStatItemInc</ref> &gt; const &amp;</type>
+          <declname>Data</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d0/dd3/struct_f_accel_byte_models_bulk_stat_item_operation_result" kindref="compound">FAccelByteModelsBulkStatItemOperationResult</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk add stat item(s) value from specified user id(s) by stat code(s). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array consist of increased value, user id, and stat code. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an array of <ref refid="d0/dd3/struct_f_accel_byte_models_bulk_stat_item_operation_result" kindref="compound">FAccelByteModelsBulkStatItemOperationResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="124" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="176" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a7fdec9f97aedae8a16b9867b13be729b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::IncrementUserStatItems</definition>
+        <argsstring>(FString const &amp;UserId, TArray&lt; FAccelByteModelsBulkStatItemInc &gt; const &amp;Data, THandler&lt; TArray&lt; FAccelByteModelsBulkStatItemOperationResult &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>IncrementUserStatItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::IncrementUserStatItems</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>TArray&lt; <ref refid="d7/d26/struct_f_accel_byte_models_bulk_stat_item_inc" kindref="compound">FAccelByteModelsBulkStatItemInc</ref> &gt; const &amp;</type>
+          <declname>Data</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d0/dd3/struct_f_accel_byte_models_bulk_stat_item_operation_result" kindref="compound">FAccelByteModelsBulkStatItemOperationResult</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Increment stat items of a user (could be negative). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array consist of increased value and stat code. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an array of <ref refid="d0/dd3/struct_f_accel_byte_models_bulk_stat_item_operation_result" kindref="compound">FAccelByteModelsBulkStatItemOperationResult</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="138" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="205" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a3400028e62867bd308b6d858fed9e333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::BulkFetchUserStatItemValues</definition>
+        <argsstring>(FString const &amp;StatCode, TArray&lt; FString &gt; const &amp;UserIds, FString const &amp;AdditionalKey, THandler&lt; TArray&lt; FAccelByteModelsFetchUser &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>BulkFetchUserStatItemValues</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::BulkFetchUserStatItemValues</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>StatCode</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>UserIds</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AdditionalKey</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d6/d2f/struct_f_accel_byte_models_fetch_user" kindref="compound">FAccelByteModelsFetchUser</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk fetch multiple user&apos;s stat item values for a given namespace and statCode. If stat item does not exist, will return default value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StatCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the StatCode that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the UserId array that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AdditionalKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the AdditionalKey that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an array of <ref refid="d6/d2f/struct_f_accel_byte_models_fetch_user" kindref="compound">FAccelByteModelsFetchUser</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="155" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="243" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a2728cc318fa75b38c1a6324ab9f409f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::BulkFetchStatItemsValue</definition>
+        <argsstring>(FString const &amp;StatCode, TArray&lt; FString &gt; const &amp;UserIds, THandler&lt; TArray&lt; FAccelByteModelsStatItemValueResponse &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>BulkFetchStatItemsValue</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::BulkFetchStatItemsValue</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>StatCode</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>UserIds</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="de/d07/struct_f_accel_byte_models_stat_item_value_response" kindref="compound">FAccelByteModelsStatItemValueResponse</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk fetch multiple user&apos;s stat item values for a given namespace and statCode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StatCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the StatCode that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the UserId array that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an array of <ref refid="de/d07/struct_f_accel_byte_models_stat_item_value_response" kindref="compound">FAccelByteModelsStatItemValueResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="171" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="271" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a99b5453fea1345afc5bd7fbba1a9e768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::BulkUpdateMultipleUserStatItemsValue</definition>
+        <argsstring>(TArray&lt; FAccelByteModelsUpdateUserStatItem &gt; const &amp;BulkUpdateMultipleUserStatItems, THandler&lt; TArray&lt; FAccelByteModelsUpdateUserStatItemsResponse &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>BulkUpdateMultipleUserStatItemsValue</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::BulkUpdateMultipleUserStatItemsValue</qualifiedname>
+        <param>
+          <type>TArray&lt; <ref refid="db/d1f/struct_f_accel_byte_models_update_user_stat_item" kindref="compound">FAccelByteModelsUpdateUserStatItem</ref> &gt; const &amp;</type>
+          <declname>BulkUpdateMultipleUserStatItems</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d5/dd7/struct_f_accel_byte_models_update_user_stat_items_response" kindref="compound">FAccelByteModelsUpdateUserStatItemsResponse</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk update multiple user&apos;s statitems value with specific update strategy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BulkUpdateMultipleUserStatItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the BulkUpdateMultipleUserStatItem array that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an array of <ref refid="d5/dd7/struct_f_accel_byte_models_update_user_stat_items_response" kindref="compound">FAccelByteModelsUpdateUserStatItemsResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="185" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="301" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a5eb55b3651b7b033dec5f98bf60080f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::BulkResetUserStatItemsValues</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;AdditionalKey, TArray&lt; FAccelByteModelsUserStatItem &gt; const &amp;BulkUserStatItems, THandler&lt; TArray&lt; FAccelByteModelsUpdateUserStatItemsResponse &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>BulkResetUserStatItemsValues</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::BulkResetUserStatItemsValues</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AdditionalKey</declname>
+        </param>
+        <param>
+          <type>TArray&lt; <ref refid="dc/d23/struct_f_accel_byte_models_user_stat_item" kindref="compound">FAccelByteModelsUserStatItem</ref> &gt; const &amp;</type>
+          <declname>BulkUserStatItems</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d5/dd7/struct_f_accel_byte_models_update_user_stat_items_response" kindref="compound">FAccelByteModelsUpdateUserStatItemsResponse</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk reset user&apos;s statitem values for given namespace and user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the UserId that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AdditionalKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the AdditionalKey that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BulkUserStatItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the BulkUserStatItem array that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an array of <ref refid="d5/dd7/struct_f_accel_byte_models_update_user_stat_items_response" kindref="compound">FAccelByteModelsUpdateUserStatItemsResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="200" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="317" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a3a198cc7a6d3472140646dd5d24d878c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::BulkResetMultipleUserStatItemsValue</definition>
+        <argsstring>(TArray&lt; FAccelByteModelsResetUserStatItemValue &gt; const &amp;UserStatItemValue, THandler&lt; TArray&lt; FAccelByteModelsUpdateUserStatItemsResponse &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>BulkResetMultipleUserStatItemsValue</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::BulkResetMultipleUserStatItemsValue</qualifiedname>
+        <param>
+          <type>TArray&lt; <ref refid="df/d0d/struct_f_accel_byte_models_reset_user_stat_item_value" kindref="compound">FAccelByteModelsResetUserStatItemValue</ref> &gt; const &amp;</type>
+          <declname>UserStatItemValue</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d5/dd7/struct_f_accel_byte_models_update_user_stat_items_response" kindref="compound">FAccelByteModelsUpdateUserStatItemsResponse</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk reset multiple user&apos;s statitems value. User&apos;s statitem value will be reset to the default value defined in the statistic configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserStatItemValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of UserId and StatCode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is TArray&lt;FAccelByteModelsUpdateUserStatItemsResponse&gt;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="216" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="347" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a76b7bcfea60a1ff6e67bc2967c2dd925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::BulkUpdateUserStatItemValue</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;AdditionalKey, TArray&lt; FAccelByteModelsUpdateUserStatItemWithStatCode &gt; const &amp;BulkUpdateUserStatItems, THandler&lt; TArray&lt; FAccelByteModelsUpdateUserStatItemsResponse &gt; &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>BulkUpdateUserStatItemValue</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::BulkUpdateUserStatItemValue</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AdditionalKey</declname>
+        </param>
+        <param>
+          <type>TArray&lt; <ref refid="d2/d52/struct_f_accel_byte_models_update_user_stat_item_with_stat_code" kindref="compound">FAccelByteModelsUpdateUserStatItemWithStatCode</ref> &gt; const &amp;</type>
+          <declname>BulkUpdateUserStatItems</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; TArray&lt; <ref refid="d5/dd7/struct_f_accel_byte_models_update_user_stat_items_response" kindref="compound">FAccelByteModelsUpdateUserStatItemsResponse</ref> &gt; &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Bulk update user&apos;s statitems value for given namespace and user with specific update strategy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UserId. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AdditionalKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the AdditionalKey that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BulkUpdateUserStatItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the BulkUpdateUserStatItem array that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is an array of <ref refid="d5/dd7/struct_f_accel_byte_models_update_user_stat_items_response" kindref="compound">FAccelByteModelsUpdateUserStatItemsResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="231" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="362" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1aac1b83d10798d87674b0f53e322ebc19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::UpdateUserStatItemValue</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;StatCode, FString const &amp;AdditionalKey, FAccelByteModelsUpdateUserStatItem const &amp;UpdateUserStatItemValue, THandler&lt; FAccelByteModelsUpdateUserStatItemValueResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>UpdateUserStatItemValue</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::UpdateUserStatItemValue</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>StatCode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AdditionalKey</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d1f/struct_f_accel_byte_models_update_user_stat_item" kindref="compound">FAccelByteModelsUpdateUserStatItem</ref> const &amp;</type>
+          <declname>UpdateUserStatItemValue</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d0/d91/struct_f_accel_byte_models_update_user_stat_item_value_response" kindref="compound">FAccelByteModelsUpdateUserStatItemValueResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Update user&apos;s statitem value for a given namespace and user with a certain update strategy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UserId. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>StatCode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AdditionalKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the AdditionalKey that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UpdateUserStatItemValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the <ref refid="db/d1f/struct_f_accel_byte_models_update_user_stat_item" kindref="compound">FAccelByteModelsUpdateUserStatItem</ref> that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d0/d91/struct_f_accel_byte_models_update_user_stat_item_value_response" kindref="compound">FAccelByteModelsUpdateUserStatItemValueResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="249" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="392" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ab50a5f929334ff66b1543a02116d52ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::DeleteUserStatItems</definition>
+        <argsstring>(FString const &amp;UserId, FString const &amp;StatCode, FString const &amp;AdditionalKey, FVoidHandler const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>DeleteUserStatItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::DeleteUserStatItems</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>UserId</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>StatCode</declname>
+        </param>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>AdditionalKey</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ab7df5ba36fd7ed5bfd4f92bc44169895" kindref="member">FVoidHandler</ref> const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Delete user&apos;s stat items for given namespace, statCode, and user Id. If query param additionalKey is provided, it will delete user stat items of specific key (i.e. characterName). Otherwise, it will delete all stat items related to the user Id.. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the UserId that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StatCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the StatCode that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AdditionalKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the AdditionalKey that will be stored in the slot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="269" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="421" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ab0dddc94cddb3dbce5c3cc6141cd7eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::GetGlobalStatItemsByStatCode</definition>
+        <argsstring>(FString const &amp;StatCode, THandler&lt; FAccelByteModelsGlobalStatItemValueResponse &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError)</argsstring>
+        <name>GetGlobalStatItemsByStatCode</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::GetGlobalStatItemsByStatCode</qualifiedname>
+        <param>
+          <type>FString const &amp;</type>
+          <declname>StatCode</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d2/d5a/struct_f_accel_byte_models_global_stat_item_value_response" kindref="compound">FAccelByteModelsGlobalStatItemValueResponse</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <briefdescription>
+<para>Get global stat items by specifying statCodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>StatCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The StatCode of the global stat items </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d2/d5a/struct_f_accel_byte_models_global_stat_item_value_response" kindref="compound">FAccelByteModelsGlobalStatItemValueResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="284" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="449" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a59741399216e6fb4afdebd518d2f3791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/ddc/namespace_accel_byte_1a173c4278c5ba4f18213059f2f80dd409" kindref="member">FAccelByteTaskWPtr</ref></type>
+        <definition>FAccelByteTaskWPtr AccelByte::GameServerApi::ServerStatistic::ListGlobalStatItems</definition>
+        <argsstring>(THandler&lt; FAccelByteModelsGlobalStatItemPagingSlicedResult &gt; const &amp;OnSuccess, FErrorHandler const &amp;OnError, TArray&lt; FString &gt; const &amp;StatCodes={}, int32 Limit=20, int32 Offset=0)</argsstring>
+        <name>ListGlobalStatItems</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::ListGlobalStatItems</qualifiedname>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1a1319bc7aa2394f622bcc2d2a18589963" kindref="member">THandler</ref>&lt; <ref refid="d9/da4/struct_f_accel_byte_models_global_stat_item_paging_sliced_result" kindref="compound">FAccelByteModelsGlobalStatItemPagingSlicedResult</ref> &gt; const &amp;</type>
+          <declname>OnSuccess</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/ddc/namespace_accel_byte_1ae0bf5a8f95bccc96bb0d31802bf5ce13" kindref="member">FErrorHandler</ref> const &amp;</type>
+          <declname>OnError</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FString &gt; const &amp;</type>
+          <declname>StatCodes</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Limit</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Offset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>List global stat items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OnSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation succeeded. The result is <ref refid="d2/d5a/struct_f_accel_byte_models_global_stat_item_value_response" kindref="compound">FAccelByteModelsGlobalStatItemValueResponse</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OnError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This will be called when the operation failed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>AccelByteTask object to track and cancel the ongoing API operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="296" column="20" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="469" bodyend="494"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a94769f28dae1e626bee4822ef6cdd1a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</definition>
+        <argsstring>()=delete</argsstring>
+        <name>ServerStatistic</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a17843d966b6a6b596c8269d6e14fe303" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</definition>
+        <argsstring>(ServerStatistic const &amp;)=delete</argsstring>
+        <name>ServerStatistic</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</qualifiedname>
+        <param>
+          <type>ServerStatistic const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a1b7258267bb93bbb5560df5ace37197e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</definition>
+        <argsstring>(ServerStatistic &amp;&amp;)=delete</argsstring>
+        <name>ServerStatistic</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::ServerStatistic</qualifiedname>
+        <param>
+          <type>ServerStatistic &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="305" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ad5f25767ebaa826baf842eb53ed8f159" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString AccelByte::GameServerApi::ServerStatistic::ConvertUserStatisticSortByToString</definition>
+        <argsstring>(const EAccelByteStatisticSortBy &amp;SortBy)</argsstring>
+        <name>ConvertUserStatisticSortByToString</name>
+        <qualifiedname>AccelByte::GameServerApi::ServerStatistic::ConvertUserStatisticSortByToString</qualifiedname>
+        <param>
+          <type>const <ref refid="da/d00/_accel_byte_statistic_models_8h_1a1d7f059e1ba976fba61ac2605ea0997a" kindref="member">EAccelByteStatisticSortBy</ref> &amp;</type>
+          <declname>SortBy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="307" column="16" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Private/GameServerApi/AccelByteServerStatisticApi.cpp" bodystart="27" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Statistic API to manage user&apos;s in-game profiles&apos;s statistic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerStatistic</label>
+        <link refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>AccelByte::BaseCredentials</label>
+        <link refid="d1/db4/class_accel_byte_1_1_base_credentials"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>AuthToken</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ErrorOAuth</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AccelByte::BaseSettings</label>
+        <link refid="d3/dfe/class_accel_byte_1_1_base_settings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AccelByte::FHttpClient</label>
+        <link refid="d8/d7e/class_accel_byte_1_1_f_http_client"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CredentialsRef</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SettingsRef</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>AccelByte::FHttpRetrySchedulerBase</label>
+        <link refid="df/d3f/class_accel_byte_1_1_f_http_retry_scheduler_base"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AccelByte::FServerApiBase</label>
+        <link refid="d8/d4c/class_accel_byte_1_1_f_server_api_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ServerSettingsRef</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>HttpRef</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>HttpClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AccelByte::GameServerApi::ServerStatistic</label>
+        <link refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AccelByte::ServerSettings</label>
+        <link refid="d2/db0/class_accel_byte_1_1_server_settings"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>FErrorOAuthInfo</label>
+        <link refid="de/dcb/struct_f_error_o_auth_info"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserBan</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>FOauth2Token</label>
+        <link refid="d3/deb/struct_f_oauth2_token"/>
+      </node>
+      <node id="12">
+        <label>FUserBan</label>
+        <link refid="d0/dce/struct_f_user_ban"/>
+      </node>
+      <node id="5">
+        <label>TSharedFromThis&lt; BaseSettings, ESPMode::ThreadSafe &gt;</label>
+      </node>
+      <node id="7">
+        <label>TSharedFromThis&lt; FHttpRetrySchedulerBase, ESPMode::ThreadSafe &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" line="26" column="1" bodyfile="D:/dev/mcp/justice-unreal-sdk-plugin/Source/AccelByteUe4Sdk/Public/GameServerApi/AccelByteServerStatisticApi.h" bodystart="27" bodyend="308"/>
+    <listofallmembers>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a2728cc318fa75b38c1a6324ab9f409f8" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>BulkFetchStatItemsValue</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a3400028e62867bd308b6d858fed9e333" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>BulkFetchUserStatItemValues</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a3a198cc7a6d3472140646dd5d24d878c" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>BulkResetMultipleUserStatItemsValue</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a5eb55b3651b7b033dec5f98bf60080f3" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>BulkResetUserStatItemsValues</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a99b5453fea1345afc5bd7fbba1a9e768" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>BulkUpdateMultipleUserStatItemsValue</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a76b7bcfea60a1ff6e67bc2967c2dd925" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>BulkUpdateUserStatItemValue</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ad5f25767ebaa826baf842eb53ed8f159" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ConvertUserStatisticSortByToString</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a70cdca1989573bbbe09887f01108e6fd" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>CreateUserStatItems</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ab50a5f929334ff66b1543a02116d52ea" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>DeleteUserStatItems</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9bf60b7a41397c62997b57d33ec11ae4" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>FServerApiBase</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a1160910f5ec8fc7090675d6ec7bfb148" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>GetAllUserStatItems</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ab0dddc94cddb3dbce5c3cc6141cd7eb9" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>GetGlobalStatItemsByStatCode</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a54438c3b1fd75e478799cdf6a3cfe845" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>GetUserStatCycleItems</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1ad40a92c6982b2be0e733b8d9ff0c42ef" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>GetUserStatItems</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a9c610b4093406fa713b39c8319b2f7d6" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>HttpClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a0ac58ba7cb9e3b872c5391127beafaab" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>HttpRef</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a159d7c33d857ce3b06ba604576ea53ba" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>IncrementManyUsersStatItems</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a7fdec9f97aedae8a16b9867b13be729b" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>IncrementUserStatItems</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a59741399216e6fb4afdebd518d2f3791" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ListGlobalStatItems</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1aa8ed94ac70b499b1a4227802af7dacc3" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ServerApiClient</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a39c68ed1daaf3b51a1182b9dd457eb07" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ServerCredentialsRef</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1a452b7dcace49560836fc87b19d5a599a" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ServerSettingsRef</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a301cfa213243efb3ed3a4eaec265b1fa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ServerStatistic</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a94769f28dae1e626bee4822ef6cdd1a1" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ServerStatistic</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a17843d966b6a6b596c8269d6e14fe303" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ServerStatistic</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a1b7258267bb93bbb5560df5ace37197e" prot="private" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ServerStatistic</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1af3924e1aba52efccd68b6b08a1e310aa" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>SetServerApiClient</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1aac1b83d10798d87674b0f53e322ebc19" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>UpdateUserStatItemValue</name></member>
+      <member refid="d8/d4c/class_accel_byte_1_1_f_server_api_base_1abda8b2aaa6e06007a914d43329c1af35" prot="protected" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>ValidateAccelByteId</name></member>
+      <member refid="d4/d3f/class_accel_byte_1_1_game_server_api_1_1_server_statistic_1a5ddc9f8368eb48b594231a125aca55c3" prot="public" virt="non-virtual"><scope>AccelByte::GameServerApi::ServerStatistic</scope><name>~ServerStatistic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="d9/d63/class_f_online_error_accel_byte" kind="class" language="C++" prot="public">
+    <compoundname>FOnlineErrorAccelByte</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FOnlineError</basecompoundref>
+    <includes refid="db/db2/_online_error_accel_byte_8h" local="no">OnlineErrorAccelByte.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d9/d63/class_f_online_error_accel_byte_1a0c5aced7789c8223ec51e91bdd972bf0" prot="private" static="yes" mutable="no">
+        <type><ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1af6a258d8f3ee5206d682d799316314b1" kindref="member">bool</ref></type>
+        <definition>bool FOnlineErrorAccelByte::bIsTablesRegistered</definition>
+        <argsstring></argsstring>
+        <name>bIsTablesRegistered</name>
+        <qualifiedname>FOnlineErrorAccelByte::bIsTablesRegistered</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="63" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d63/class_f_online_error_accel_byte_1a9686c5f1eb82f3b1f499a9a6ed82449a" prot="private" static="yes" mutable="no">
+        <type>FString</type>
+        <definition>FString FOnlineErrorAccelByte::Language</definition>
+        <argsstring></argsstring>
+        <name>Language</name>
+        <qualifiedname>FOnlineErrorAccelByte::Language</qualifiedname>
+        <initializer>= TEXT(&quot;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="65" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d63/class_f_online_error_accel_byte_1a1f2529f575abfb6e0f19311eee56e3c6" prot="private" static="yes" mutable="no">
+        <type>const FString</type>
+        <definition>const FString FOnlineErrorAccelByte::DefaultLanguage</definition>
+        <argsstring></argsstring>
+        <name>DefaultLanguage</name>
+        <qualifiedname>FOnlineErrorAccelByte::DefaultLanguage</qualifiedname>
+        <initializer>= TEXT(&quot;en&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="67" column="26" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1ac9be5328702e138fdf7beed3a312a150" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref></type>
+        <definition>FOnlineErrorAccelByte FOnlineErrorAccelByte::CreateError</definition>
+        <argsstring>(const FString &amp;ErrorNamespace, const FString &amp;ErrorKey, EOnlineErrorResult Result=EOnlineErrorResult::RequestFailure)</argsstring>
+        <name>CreateError</name>
+        <qualifiedname>FOnlineErrorAccelByte::CreateError</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorNamespace</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorKey</declname>
+        </param>
+        <param>
+          <type>EOnlineErrorResult</type>
+          <declname>Result</declname>
+          <defval>EOnlineErrorResult::RequestFailure</defval>
+        </param>
+        <briefdescription>
+<para>Create factory for <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> with specified ErrorKey and to get the Localized ErrorMessage as well. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="18" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="47" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1a940831d2d1bde5a551519b0b6abf0803" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref></type>
+        <definition>FOnlineErrorAccelByte FOnlineErrorAccelByte::CreateError</definition>
+        <argsstring>(const FString &amp;ErrorNamespace, const int32 ErrorCode, EOnlineErrorResult Result=EOnlineErrorResult::RequestFailure)</argsstring>
+        <name>CreateError</name>
+        <qualifiedname>FOnlineErrorAccelByte::CreateError</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorNamespace</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>EOnlineErrorResult</type>
+          <declname>Result</declname>
+          <defval>EOnlineErrorResult::RequestFailure</defval>
+        </param>
+        <briefdescription>
+<para>Create factory for <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> with specified ErrorCode and to get the Localized ErrorMessage as well. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="23" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1a9e421563632224a20dcb85493beb2243" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref></type>
+        <definition>FOnlineErrorAccelByte FOnlineErrorAccelByte::CreateError</definition>
+        <argsstring>(const FString &amp;ErrorNamespace, FOnlineError ErrorInfo)</argsstring>
+        <name>CreateError</name>
+        <qualifiedname>FOnlineErrorAccelByte::CreateError</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorNamespace</declname>
+        </param>
+        <param>
+          <type>FOnlineError</type>
+          <declname>ErrorInfo</declname>
+        </param>
+        <briefdescription>
+<para>Create factory for <ref refid="d9/d63/class_f_online_error_accel_byte" kindref="compound">FOnlineErrorAccelByte</ref> using FOnlineError object and to get the Localized ErrorMessage as well. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="28" column="34" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="68" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1ac5e001cfc63b96f65863fcaa260a46c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineErrorAccelByte::PublicGetErrorKey</definition>
+        <argsstring>(const int32 ErrorCode, const FString &amp;DefaultErrorKey=TEXT(&quot;&quot;))</argsstring>
+        <name>PublicGetErrorKey</name>
+        <qualifiedname>FOnlineErrorAccelByte::PublicGetErrorKey</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>DefaultErrorKey</declname>
+          <defval>TEXT(&quot;&quot;)</defval>
+        </param>
+        <briefdescription>
+<para>Public function to get ErrorKey from an ErrorCode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ErrorCode(usually from BE) to search on the Table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DefaultErrorKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorKey to put if the ErrorCode not found on the table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="36" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="89" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1a2b4e323c2ca177bf6b321c49555bd95b" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FOnlineErrorAccelByte::FOnlineErrorAccelByte</definition>
+        <argsstring>(EOnlineErrorResult InResult, const FString &amp;InErrorCode, const FText &amp;InErrorMessage)</argsstring>
+        <name>FOnlineErrorAccelByte</name>
+        <qualifiedname>FOnlineErrorAccelByte::FOnlineErrorAccelByte</qualifiedname>
+        <param>
+          <type>EOnlineErrorResult</type>
+          <declname>InResult</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InErrorCode</declname>
+        </param>
+        <param>
+          <type>const FText &amp;</type>
+          <declname>InErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="39" column="14" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1a0b7dcca295c5a89e7a73e978af022d99" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FText</type>
+        <definition>FText FOnlineErrorAccelByte::GetErrorText</definition>
+        <argsstring>(const FString &amp;ErrorKey)</argsstring>
+        <name>GetErrorText</name>
+        <qualifiedname>FOnlineErrorAccelByte::GetErrorText</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ErrorKey</declname>
+        </param>
+        <briefdescription>
+<para>Get ErrorText from the Localization ErrorMessages String Table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ErrorKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ErrorKey to search on the Table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="46" column="18" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="99" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1a7a8f9dfe7775b6146aa40d9f6ce9db4c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FOnlineErrorAccelByte::GetErrorKey</definition>
+        <argsstring>(const int32 ErrorCode)</argsstring>
+        <name>GetErrorKey</name>
+        <qualifiedname>FOnlineErrorAccelByte::GetErrorKey</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/de4/_online_identity_interface_accel_byte_8h_1ada104807b93ac7cd59dac80d98ba857b" kindref="member">int32</ref></type>
+          <declname>ErrorCode</declname>
+        </param>
+        <briefdescription>
+<para>Get ErrorKey from the ErrorCodes String Table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ErrorCode(usually from BE) to search on the Table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="53" column="20" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d63/class_f_online_error_accel_byte_1a1ac85f5b34dc8c198bc861c6ec35cdb7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FOnlineErrorAccelByte::RegisterTables</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterTables</name>
+        <qualifiedname>FOnlineErrorAccelByte::RegisterTables</qualifiedname>
+        <briefdescription>
+<para>Register the String Tables, import from the existing csv files, only register the tables once every runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="58" column="17" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Private/OnlineErrorAccelByte.cpp" bodystart="120" bodyend="138"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FOnlineError</label>
+      </node>
+      <node id="1">
+        <label>FOnlineErrorAccelByte</label>
+        <link refid="d9/d63/class_f_online_error_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FOnlineError</label>
+      </node>
+      <node id="1">
+        <label>FOnlineErrorAccelByte</label>
+        <link refid="d9/d63/class_f_online_error_accel_byte"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" line="10" column="1" bodyfile="justice-ue4-oss/OnlineSubsystemAccelByte/Source/OnlineSubsystemAccelByte/Public/OnlineErrorAccelByte.h" bodystart="12" bodyend="68"/>
+    <listofallmembers>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a0c5aced7789c8223ec51e91bdd972bf0" prot="private" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>bIsTablesRegistered</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1ac9be5328702e138fdf7beed3a312a150" prot="public" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>CreateError</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a940831d2d1bde5a551519b0b6abf0803" prot="public" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>CreateError</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a9e421563632224a20dcb85493beb2243" prot="public" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>CreateError</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a1f2529f575abfb6e0f19311eee56e3c6" prot="private" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>DefaultLanguage</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a2b4e323c2ca177bf6b321c49555bd95b" prot="private" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>FOnlineErrorAccelByte</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a7a8f9dfe7775b6146aa40d9f6ce9db4c" prot="private" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>GetErrorKey</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a0b7dcca295c5a89e7a73e978af022d99" prot="private" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>GetErrorText</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a9686c5f1eb82f3b1f499a9a6ed82449a" prot="private" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>Language</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1ac5e001cfc63b96f65863fcaa260a46c8" prot="public" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>PublicGetErrorKey</name></member>
+      <member refid="d9/d63/class_f_online_error_accel_byte_1a1ac85f5b34dc8c198bc861c6ec35cdb7" prot="private" virt="non-virtual"><scope>FOnlineErrorAccelByte</scope><name>RegisterTables</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
