@@ -635,6 +635,197 @@ function isCacheValid(baseDir) {
 }
 
 /**
+ * Index example components from data/example-components.
+ * Example components are full .h/.cpp classes annotated with AB_MCP_BEGIN/END
+ * blocks that contain JSON metadata describing their capabilities.
+ */
+export function indexExampleComponents(baseDir) {
+  const componentsDir = path.join(baseDir, "data", "example-components");
+
+  const exampleIndex = {
+    components: {}, // id -> metadata + file list
+    byService: {},  // service -> [ids]
+  };
+
+  if (!fs.existsSync(componentsDir)) {
+    console.error(`Example components directory not found: ${componentsDir}`);
+    return exampleIndex;
+  }
+
+  function ensureComponent(id, meta, relativePath, fullPath) {
+    let component = exampleIndex.components[id];
+
+    if (!component) {
+      component = {
+        id,
+        service: meta.service || null,
+        provider: meta.provider || null,
+        language: meta.language || "unreal-cpp",
+        description: meta.description || "",
+        controllerClass: meta.controllerClass || null,
+        entryStruct: meta.entryStruct || null,
+        uiWidgetClass: meta.uiWidgetClass || null,
+        rowWidgetClass: meta.rowWidgetClass || null,
+        publicInterface: meta.publicInterface || {},
+        asyncState: meta.asyncState || {},
+        dataModel: meta.dataModel || {},
+        // Hint flags and extra metadata for ranking and UX
+        dropInReady: meta.dropInReady !== undefined ? !!meta.dropInReady : true,
+        recommended: meta.recommended !== undefined ? !!meta.recommended : true,
+        integrationHints: Array.isArray(meta.integrationHints)
+          ? meta.integrationHints
+          : (meta.integrationHints ? [String(meta.integrationHints)] : []),
+        files: [],
+        filePaths: [],
+      };
+
+      exampleIndex.components[id] = component;
+
+      if (component.service) {
+        if (!Array.isArray(exampleIndex.byService[component.service])) {
+          exampleIndex.byService[component.service] = [];
+        }
+        if (!exampleIndex.byService[component.service].includes(id)) {
+          exampleIndex.byService[component.service].push(id);
+        }
+      }
+    } else {
+      // If this block has a more specific description, prefer it
+      if (meta.description && !component.description) {
+        component.description = meta.description;
+      }
+    }
+
+    if (relativePath && !component.files.includes(relativePath)) {
+      component.files.push(relativePath);
+    }
+    if (fullPath && !component.filePaths.includes(fullPath)) {
+      component.filePaths.push(fullPath);
+    }
+  }
+
+  function extractExampleComponentsFromFile(filePath, relativePath) {
+    const content = fs.readFileSync(filePath, "utf8");
+    const lines = content.split("\n");
+
+    let currentId = null;
+    let collecting = false;
+    let jsonLines = [];
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+
+      // Look for AB_MCP_BEGIN:Some.Id
+      const beginMatch = line.match(/AB_MCP_BEGIN:([^\s]+)/);
+      if (beginMatch) {
+        // If we were in the middle of one, discard it (malformed)
+        currentId = beginMatch[1].trim();
+        collecting = true;
+        jsonLines = [];
+        continue;
+      }
+
+      // Look for AB_MCP_END:Same.Id
+      const endMatch = line.match(/AB_MCP_END:([^\s]+)/);
+      if (endMatch && collecting && currentId && endMatch[1].trim() === currentId) {
+        // We have a complete block, try to parse JSON
+        const jsonText = jsonLines
+          .map((l) => {
+            // Strip leading comment markers like // or /// with optional space
+            return l.replace(/^\s*\/\/\s?/, "");
+          })
+          .join("\n")
+          .trim();
+
+        if (jsonText) {
+          try {
+            const meta = JSON.parse(jsonText);
+            ensureComponent(currentId, meta, relativePath, filePath);
+          } catch (error) {
+            console.error(
+              `Failed to parse example component metadata for '${currentId}' in ${filePath}: ${error.message}`
+            );
+          }
+        }
+
+        // Reset state
+        currentId = null;
+        collecting = false;
+        jsonLines = [];
+        continue;
+      }
+
+      // Collect JSON comment lines between BEGIN/END
+      if (collecting && currentId) {
+        // Only collect comment lines to avoid pulling actual code
+        if (line.trim().startsWith("//")) {
+          jsonLines.push(line);
+        }
+      }
+    }
+  }
+
+  function scanComponentsDirectory(dir, relativePath = "") {
+    if (!fs.existsSync(dir)) {
+      return;
+    }
+
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      const relPath = relativePath ? path.join(relativePath, entry.name) : entry.name;
+
+      if (entry.isDirectory()) {
+        scanComponentsDirectory(fullPath, relPath);
+      } else if (entry.isFile() && (entry.name.endsWith(".h") || entry.name.endsWith(".cpp"))) {
+        extractExampleComponentsFromFile(fullPath, relPath);
+      }
+    }
+  }
+
+  console.error(`Indexing example components from: ${componentsDir}`);
+  scanComponentsDirectory(componentsDir, "");
+
+  // Post-processing: ensure paired .h/.cpp files are included
+  for (const [id, component] of Object.entries(exampleIndex.components)) {
+    const filesSet = new Set(component.files);
+    
+    for (const file of component.files) {
+      const ext = path.extname(file);
+      const baseName = path.basename(file, ext);
+      const dir = path.dirname(file);
+      
+      // If we have .h, look for .cpp
+      if (ext === '.h') {
+        const cppPath = dir ? path.join(dir, `${baseName}.cpp`) : `${baseName}.cpp`;
+        const cppFullPath = path.join(componentsDir, cppPath);
+        if (fs.existsSync(cppFullPath) && !filesSet.has(cppPath)) {
+          component.files.push(cppPath);
+          component.filePaths.push(cppFullPath);
+          filesSet.add(cppPath);
+        }
+      }
+      // If we have .cpp, look for .h
+      else if (ext === '.cpp') {
+        const hPath = dir ? path.join(dir, `${baseName}.h`) : `${baseName}.h`;
+        const hFullPath = path.join(componentsDir, hPath);
+        if (fs.existsSync(hFullPath) && !filesSet.has(hPath)) {
+          component.files.push(hPath);
+          component.filePaths.push(hFullPath);
+          filesSet.add(hPath);
+        }
+      }
+    }
+  }
+
+  const componentCount = Object.keys(exampleIndex.components).length;
+  console.error(`Example component indexing complete: ${componentCount} components indexed`);
+
+  return exampleIndex;
+}
+
+/**
  * Generate snippet cache (force regeneration, ignores existing cache)
  */
 export function generateSnippetCache(baseDir) {
