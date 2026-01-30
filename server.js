@@ -529,6 +529,11 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
               type: "string",
               description: "Path to the Unreal project root (directory containing the .uproject file). Absolute path or relative to workspace.",
             },
+            components: {
+              type: "array",
+              items: { type: "string", enum: ["sdk", "oss", "networkUtilities"] },
+              description: "Components to install: 'sdk' (AccelByte Game SDK), 'oss' (Online Subsystem), 'networkUtilities' (AccelByteNetworkUtilities). Default ['sdk']. Install order: networkUtilities, sdk, oss. Use ['sdk', 'oss', 'networkUtilities'] for full integration.",
+            },
             workspaceRoot: {
               type: "string",
               description: "Optional. Workspace root used to resolve a relative projectPath. Defaults to current working directory.",
@@ -733,6 +738,16 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             );
           }
 
+          if (component.moduleDependencies && component.moduleDependencies.length > 0) {
+            parts.push(
+              `Add these to your module's Build.cs PublicDependencyModuleNames: ${component.moduleDependencies.join(", ")}.`
+            );
+          }
+
+          if (component.integrationHints && component.integrationHints.length > 0) {
+            parts.push(component.integrationHints.join(" "));
+          }
+
           return parts.join(" ");
         };
 
@@ -841,6 +856,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             recommended: !!recommended,
             match_type: matchType,
             integration_hint: buildIntegrationHint(component),
+            moduleDependencies: component.moduleDependencies || [],
+            integrationHints: component.integrationHints || [],
             // Resource URI for fetching full metadata/code if needed
             resourceUri: `example://${component.id}`,
           };
@@ -1017,6 +1034,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const {
           projectPath,
           workspaceRoot,
+          components,
           source = "release",
           version,
           setupProjectFiles = false,
@@ -1025,6 +1043,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const result = await installUnrealSdk({
           projectPath,
           workspaceRoot,
+          components,
           source,
           version,
           setupProjectFiles,

@@ -36,7 +36,9 @@
 //       "CurrentValue": "float",
 //       "TargetValue": "float"
 //     }
-//   }
+//   },
+//   "moduleDependencies": ["Slate", "SlateCore"],
+//   "integrationHints": ["Add Slate, SlateCore (and your AccelByte SDK module) to PublicDependencyModuleNames in your module's .Build.cs."]
 // }
 // AB_MCP_END:AccelByte.Achievements.Panel
 

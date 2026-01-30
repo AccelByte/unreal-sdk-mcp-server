@@ -11,9 +11,25 @@ import AdmZip from "adm-zip";
 
 const REGENERATE_TIMEOUT_MS = 120000;
 
-const GITHUB_REPO = "AccelByte/accelbyte-unreal-sdk-plugin";
-const GITHUB_REPO_URL = `https://github.com/${GITHUB_REPO}.git`;
 const GITHUB_API_BASE = "https://api.github.com/repos";
+
+/** Installable AccelByte components: SDK, OSS, NetworkUtilities. Order = dependency order. */
+const SDK_COMPONENTS = {
+  sdk: {
+    repo: "AccelByte/accelbyte-unreal-sdk-plugin",
+    addDefaultConfig: true,
+  },
+  oss: {
+    repo: "AccelByte/accelbyte-unreal-oss",
+    addDefaultConfig: false,
+  },
+  networkUtilities: {
+    repo: "AccelByte/accelbyte-unreal-network-utilities",
+    addDefaultConfig: false,
+  },
+};
+
+const INSTALL_ORDER = ["networkUtilities", "sdk", "oss"];
 
 /**
  * Resolve projectPath to absolute; ensure it exists and contains exactly one .uproject file.
@@ -87,14 +103,49 @@ function getPluginModuleName(pluginDir) {
 }
 
 /**
- * Download release ZIP from GitHub (latest or specific tag) and extract to a temp directory.
- * @param version - Optional tag (e.g. "v1.2.0"). Omit for latest.
- * @returns {string} Path to the extracted plugin folder (single top-level folder, or root if single .uplugin at root)
+ * Find the plugin folder (containing .uplugin) inside a directory (extracted zip or clone root).
+ * @param dir - Directory to search (e.g. temp extract root or repo root)
+ * @returns {string} Path to the folder that contains a .uplugin file
  */
-async function downloadReleaseZip(version) {
+function findPluginFolderInDir(dir) {
+  const topEntries = fs.readdirSync(dir);
+  if (topEntries.length === 0) {
+    throw new Error("Directory is empty.");
+  }
+  if (topEntries.length === 1) {
+    const single = path.join(dir, topEntries[0]);
+    if (fs.statSync(single).isDirectory()) {
+      return single;
+    }
+  }
+  const hasUpluginAtRoot = topEntries.some((e) => e.endsWith(".uplugin"));
+  if (hasUpluginAtRoot) {
+    return dir;
+  }
+  for (const entry of topEntries) {
+    const full = path.join(dir, entry);
+    if (fs.statSync(full).isDirectory()) {
+      const subEntries = fs.readdirSync(full);
+      if (subEntries.some((e) => e.endsWith(".uplugin"))) {
+        return full;
+      }
+    }
+  }
+  throw new Error(
+    "Directory does not contain a recognizable plugin folder (expected a .uplugin file)."
+  );
+}
+
+/**
+ * Download release ZIP from GitHub (latest or specific tag) and extract to a temp directory.
+ * @param repo - GitHub repo "Owner/name" (e.g. "AccelByte/accelbyte-unreal-sdk-plugin")
+ * @param version - Optional tag (e.g. "v1.2.0"). Omit for latest.
+ * @returns {string} Path to the extracted plugin folder
+ */
+async function downloadReleaseZip(repo, version) {
   const url = version
-    ? `${GITHUB_API_BASE}/${GITHUB_REPO}/releases/tags/${encodeURIComponent(version)}`
-    : `${GITHUB_API_BASE}/${GITHUB_REPO}/releases/latest`;
+    ? `${GITHUB_API_BASE}/${repo}/releases/tags/${encodeURIComponent(version)}`
+    : `${GITHUB_API_BASE}/${repo}/releases/latest`;
 
   const res = await fetch(url, {
     headers: { Accept: "application/vnd.github+json", "User-Agent": "AccelByte-Unreal-SDK-MCP" },
@@ -111,7 +162,7 @@ async function downloadReleaseZip(version) {
   const zipAsset = assets.find((a) => (a.name && a.name.toLowerCase().endsWith(".zip")) || false);
   if (!zipAsset || !zipAsset.browser_download_url) {
     throw new Error(
-      `No ZIP asset found in release "${release.tag_name || release.name}". Check ${GITHUB_REPO}/releases.`
+      `No ZIP asset found in release "${release.tag_name || release.name}". Check ${repo}/releases.`
     );
   }
 
@@ -131,48 +182,16 @@ async function downloadReleaseZip(version) {
 
   const zip = new AdmZip(buffer);
   zip.extractAllTo(tempDir, true);
-
-  const topEntries = fs.readdirSync(tempDir);
-  if (topEntries.length === 0) {
-    throw new Error("Downloaded ZIP is empty.");
-  }
-
-  // If single top-level directory, that's the plugin folder
-  if (topEntries.length === 1) {
-    const single = path.join(tempDir, topEntries[0]);
-    if (fs.statSync(single).isDirectory()) {
-      return single;
-    }
-  }
-
-  // If .uplugin is at root of extracted content, use tempDir as plugin folder
-  const hasUpluginAtRoot = topEntries.some((e) => e.endsWith(".uplugin"));
-  if (hasUpluginAtRoot) {
-    return tempDir;
-  }
-
-  // Look for a subfolder that contains .uplugin
-  for (const entry of topEntries) {
-    const full = path.join(tempDir, entry);
-    if (fs.statSync(full).isDirectory()) {
-      const subEntries = fs.readdirSync(full);
-      if (subEntries.some((e) => e.endsWith(".uplugin"))) {
-        return full;
-      }
-    }
-  }
-
-  throw new Error(
-    "Downloaded ZIP does not contain a recognizable plugin folder (expected a folder with a .uplugin file)."
-  );
+  return findPluginFolderInDir(tempDir);
 }
 
 /**
  * Clone repo via git into a temp directory and return path to plugin folder.
+ * @param repo - GitHub repo "Owner/name" (e.g. "AccelByte/accelbyte-unreal-sdk-plugin")
  * @param version - Optional branch or tag. Omit for default branch.
- * @returns {string} Path to the plugin folder (repo root if .uplugin at root, else single subfolder)
+ * @returns {string} Path to the plugin folder
  */
-function cloneGit(version) {
+function cloneGit(repo, version) {
   try {
     execSync("git --version", { stdio: "pipe" });
   } catch (e) {
@@ -181,11 +200,12 @@ function cloneGit(version) {
     );
   }
 
+  const repoUrl = `https://github.com/${repo}.git`;
   const tempDir = path.join(os.tmpdir(), `accelbyte-sdk-git-${Date.now()}`);
   fs.mkdirSync(tempDir, { recursive: true });
 
   const branchArg = version ? `--branch ${version}` : "";
-  const cmd = `git clone --depth 1 ${branchArg} ${GITHUB_REPO_URL} plugin`.replace(/\s+/g, " ").trim();
+  const cmd = `git clone --depth 1 ${branchArg} ${repoUrl} plugin`.replace(/\s+/g, " ").trim();
   try {
     execSync(cmd, { cwd: tempDir, stdio: "pipe", timeout: 120000 });
   } catch (e) {
@@ -198,20 +218,7 @@ function cloneGit(version) {
   if (!fs.existsSync(pluginPath)) {
     throw new Error("Git clone did not create expected 'plugin' directory.");
   }
-
-  const entries = fs.readdirSync(pluginPath);
-  const hasUpluginAtRoot = entries.some((e) => e.endsWith(".uplugin"));
-  if (hasUpluginAtRoot) {
-    return pluginPath;
-  }
-  const subdir = entries.find((e) => {
-    const full = path.join(pluginPath, e);
-    return fs.statSync(full).isDirectory() && fs.readdirSync(full).some((f) => f.endsWith(".uplugin"));
-  });
-  if (subdir) {
-    return path.join(pluginPath, subdir);
-  }
-  return pluginPath;
+  return findPluginFolderInDir(pluginPath);
 }
 
 const PLUGINS_SUBFOLDER = "Accelbyte";
@@ -254,15 +261,56 @@ function copyDirSync(src, dest) {
 }
 
 /**
- * Add plugin to .uproject Plugins array and add module to Build.cs and Target.cs.
+ * Ensure [OnlineSubsystem] and DefaultPlatformService=AccelByte in Config/DefaultEngine.ini (for OSS).
+ * @param projectRoot - Unreal project root
+ * @param changes - Array to push change messages to
+ */
+function ensureOnlineSubsystemConfig(projectRoot, changes) {
+  const configDir = path.join(projectRoot, "Config");
+  const configPath = path.join(configDir, "DefaultEngine.ini");
+  const onlineSubsystemSection = "[OnlineSubsystem]";
+  const defaultPlatformLine = "DefaultPlatformService=AccelByte";
+
+  if (!fs.existsSync(configPath)) {
+    fs.mkdirSync(configDir, { recursive: true });
+    fs.writeFileSync(
+      configPath,
+      `${onlineSubsystemSection}\n; Use AccelByte as the default online platform\n${defaultPlatformLine}\n`,
+      "utf8"
+    );
+    changes.push("Created Config/DefaultEngine.ini with [OnlineSubsystem] DefaultPlatformService=AccelByte.");
+    return;
+  }
+
+  const content = fs.readFileSync(configPath, "utf8");
+  if (content.includes(defaultPlatformLine)) {
+    return;
+  }
+  if (content.includes(onlineSubsystemSection)) {
+    const insertIdx = content.indexOf(onlineSubsystemSection) + onlineSubsystemSection.length;
+    const newContent =
+      content.slice(0, insertIdx) + "\n" + defaultPlatformLine + content.slice(insertIdx);
+    fs.writeFileSync(configPath, newContent, "utf8");
+    changes.push("Added DefaultPlatformService=AccelByte to [OnlineSubsystem] in Config/DefaultEngine.ini.");
+  } else {
+    const trimmed = content.trimEnd();
+    fs.writeFileSync(
+      configPath,
+      trimmed + "\n\n" + onlineSubsystemSection + "\n" + defaultPlatformLine + "\n",
+      "utf8"
+    );
+    changes.push("Added [OnlineSubsystem] and DefaultPlatformService=AccelByte to Config/DefaultEngine.ini.");
+  }
+}
+
+/**
+ * Add one module to .uproject Plugins array and to Build.cs and Target.cs.
  * @param projectRoot - Unreal project root
  * @param uprojectPath - Full path to .uproject file
  * @param moduleName - Plugin module name (e.g. AccelByteUe4Sdk)
- * @returns {string[]} List of changes made
+ * @param changes - Array to push change messages to
  */
-function patchProjectFiles(projectRoot, uprojectPath, moduleName) {
-  const changes = [];
-
+function patchOneModule(projectRoot, uprojectPath, moduleName, changes) {
   try {
     const uprojectContent = fs.readFileSync(uprojectPath, "utf8");
     const uproject = JSON.parse(uprojectContent);
@@ -286,16 +334,14 @@ function patchProjectFiles(projectRoot, uprojectPath, moduleName) {
   const sourceDir = path.join(projectRoot, "Source");
   if (!fs.existsSync(sourceDir)) {
     changes.push("No Source/ directory; skip Build.cs and Target.cs (add module manually if needed).");
-    return changes;
+    return;
   }
 
   const projectName = path.basename(uprojectPath, ".uproject");
   const buildCsPath = path.join(sourceDir, projectName, `${projectName}.Build.cs`);
   if (fs.existsSync(buildCsPath)) {
     const buildContent = fs.readFileSync(buildCsPath, "utf8");
-    if (buildContent.includes(`"${moduleName}"`)) {
-      changes.push(`Build.cs already contained "${moduleName}"`);
-    } else {
+    if (!buildContent.includes(`"${moduleName}"`)) {
       const newContent = buildContent.replace(
         /(PublicDependencyModuleNames\.AddRange\s*\(\s*new\s+string\[\]\s*\{)/,
         (m) => `${m} "${moduleName}",`
@@ -318,12 +364,13 @@ function patchProjectFiles(projectRoot, uprojectPath, moduleName) {
           changes.push(`Could not patch Build.cs; add PublicDependencyModuleNames.Add("${moduleName}") manually.`);
         }
       }
+    } else {
+      changes.push(`Build.cs already contained "${moduleName}"`);
     }
   } else {
     changes.push(`Build.cs not found at ${buildCsPath}; add PublicDependencyModuleNames.Add("${moduleName}") manually.`);
   }
 
-  // Main project target files: Source/*.Target.cs (e.g. MyGame.Target.cs, MyGameEditor.Target.cs)
   const targetFiles = fs.readdirSync(sourceDir).filter((e) => e.endsWith(".Target.cs"));
   for (const targetFile of targetFiles) {
     const targetPath = path.join(sourceDir, targetFile);
@@ -331,14 +378,12 @@ function patchProjectFiles(projectRoot, uprojectPath, moduleName) {
     if (targetContent.includes(`"${moduleName}"`)) {
       changes.push(`${targetFile} already contained "${moduleName}"`);
     } else {
-      // Prefer AddRange( new string[] { ... } ) - insert module after opening brace
       const addRangeRegex = /(ExtraModuleNames\s*\.\s*AddRange\s*\(\s*new\s+string\[\]\s*\{)/;
       let patched = targetContent.replace(addRangeRegex, (m) => `${m} "${moduleName}",`);
       if (patched !== targetContent) {
         fs.writeFileSync(targetPath, patched, "utf8");
         changes.push(`Added "${moduleName}" to ${targetFile} ExtraModuleNames`);
       } else {
-        // Fallback: add new line ExtraModuleNames.Add("ModuleName"); after last ExtraModuleNames line
         const lastExtra = targetContent.lastIndexOf("ExtraModuleNames");
         if (lastExtra !== -1) {
           const lineEnd = targetContent.indexOf("\n", lastExtra);
@@ -355,8 +400,30 @@ function patchProjectFiles(projectRoot, uprojectPath, moduleName) {
       }
     }
   }
+}
 
-  writeDefaultAccelByteConfig(projectRoot, moduleName, changes);
+/**
+ * Add plugins to .uproject, Build.cs, Target.cs; optionally add default AccelByte config and [OnlineSubsystem].
+ * @param projectRoot - Unreal project root
+ * @param uprojectPath - Full path to .uproject file
+ * @param moduleNames - Array of plugin module names (e.g. ["AccelByteNetworkUtilities", "AccelByteUe4Sdk", "OnlineSubsystemAccelByte"])
+ * @param options - { addDefaultConfigModuleName?: string, ensureOnlineSubsystem?: boolean }
+ * @returns {string[]} List of changes made
+ */
+function patchProjectFiles(projectRoot, uprojectPath, moduleNames, options = {}) {
+  const changes = [];
+  const { addDefaultConfigModuleName, ensureOnlineSubsystem } = options;
+
+  for (const moduleName of moduleNames) {
+    patchOneModule(projectRoot, uprojectPath, moduleName, changes);
+  }
+
+  if (ensureOnlineSubsystem) {
+    ensureOnlineSubsystemConfig(projectRoot, changes);
+  }
+  if (addDefaultConfigModuleName) {
+    writeDefaultAccelByteConfig(projectRoot, addDefaultConfigModuleName, changes);
+  }
 
   return changes;
 }
@@ -558,24 +625,80 @@ function regenerateProjectFiles(uprojectPath) {
 }
 
 /**
+ * Download and install one AccelByte component (SDK, OSS, or NetworkUtilities).
+ * @param repo - GitHub repo "Owner/name"
+ * @param source - "release" or "git"
+ * @param version - Optional tag/branch
+ * @param projectRoot - Unreal project root
+ * @returns {{ installedPath: string, pluginFolderName: string, moduleName: string, addDefaultConfig: boolean }}
+ */
+async function downloadAndInstallOne(repo, source, version, projectRoot) {
+  let sourcePluginDir;
+  if (source === "git") {
+    sourcePluginDir = cloneGit(repo, version);
+  } else {
+    try {
+      sourcePluginDir = await downloadReleaseZip(repo, version);
+    } catch (e) {
+      const isNoZip = e.message && (e.message.includes("No ZIP asset") || e.message.includes("No ZIP"));
+      if (isNoZip) {
+        sourcePluginDir = cloneGit(repo, version);
+      } else {
+        throw e;
+      }
+    }
+  }
+
+  let moduleName;
+  try {
+    moduleName = getPluginModuleName(sourcePluginDir);
+  } catch (e) {
+    moduleName = null;
+  }
+
+  const result = installPlugin(sourcePluginDir, projectRoot, moduleName || undefined);
+  if (!moduleName) {
+    moduleName = getPluginModuleName(result.installedPath);
+  }
+  return {
+    installedPath: result.installedPath,
+    pluginFolderName: result.pluginFolderName,
+    moduleName,
+  };
+}
+
+/**
  * Main entry: download (release or git), install, and optionally setup project files.
  * @param params.projectPath - Required. Unreal project root (absolute or relative to workspaceRoot).
  * @param params.workspaceRoot - Optional. Workspace root for resolving relative projectPath.
+ * @param params.components - Optional. Array of components to install: "sdk", "oss", "networkUtilities". Default ["sdk"]. Install order: networkUtilities, sdk, oss.
  * @param params.source - "release" (default) or "git"
- * @param params.version - Optional. For release: tag (e.g. "v1.2.0"). For git: branch or tag.
+ * @param params.version - Optional. For release: tag (e.g. "v1.2.0"). For git: branch or tag. Applies to all components unless versionMap is used.
  * @param params.setupProjectFiles - Optional. If true, patch .uproject and Build/Target files. Default false.
  * @param params.regenerateProjectFiles - Optional. If true, run UnrealVersionSelector/GenerateProjectFiles to regenerate .sln/.vcxproj. Default false.
- * @returns {{ success: boolean, installedPath?: string, message: string, setupDetails?: string[], regenerateResult?: { success: boolean, message: string } }}
+ * @returns {{ success: boolean, installedPaths?: string[], message: string, setupDetails?: string[], regenerateResult?: { success: boolean, message: string } }}
  */
 export async function installUnrealSdk(params) {
   const {
     projectPath,
     workspaceRoot,
+    components: requestedComponents = ["sdk"],
     source = "release",
     version,
     setupProjectFiles = false,
     regenerateProjectFiles: doRegenerate = false,
   } = params || {};
+
+  const components = Array.isArray(requestedComponents) && requestedComponents.length > 0
+    ? requestedComponents
+    : ["sdk"];
+  const toInstall = INSTALL_ORDER.filter((c) => components.includes(c));
+  if (toInstall.length === 0) {
+    return {
+      success: false,
+      message: `components must include at least one of: sdk, oss, networkUtilities. Got: ${JSON.stringify(components)}`,
+    };
+  }
 
   if (!projectPath || typeof projectPath !== "string") {
     return {
@@ -594,55 +717,42 @@ export async function installUnrealSdk(params) {
     return { success: false, message: e.message };
   }
 
-  let sourcePluginDir;
-  try {
-    if (source === "git") {
-      sourcePluginDir = cloneGit(version);
-    } else {
-      sourcePluginDir = await downloadReleaseZip(version);
-    }
-  } catch (e) {
-    return { success: false, message: e.message };
-  }
-
-  let moduleName;
-  try {
-    moduleName = getPluginModuleName(sourcePluginDir);
-  } catch (e) {
-    moduleName = null;
-  }
-
-  let installedPath;
-  let pluginFolderName;
-  try {
-    const result = installPlugin(sourcePluginDir, projectRoot, moduleName || undefined);
-    installedPath = result.installedPath;
-    pluginFolderName = result.pluginFolderName;
-  } catch (e) {
-    return { success: false, message: e.message };
-  }
-
-  if (!moduleName) {
+  const installed = [];
+  for (const componentId of toInstall) {
+    const config = SDK_COMPONENTS[componentId];
+    if (!config) continue;
     try {
-      moduleName = getPluginModuleName(installedPath);
+      const one = await downloadAndInstallOne(config.repo, source, version, projectRoot);
+      installed.push({
+        ...one,
+        addDefaultConfig: config.addDefaultConfig,
+        componentId,
+      });
     } catch (e) {
       return {
-        success: true,
-        installedPath,
-        message: `Plugin copied to ${installedPath}. ${e.message}`,
+        success: false,
+        message: `Failed to install ${componentId}: ${e.message}`,
       };
     }
   }
 
+  const installedPaths = installed.map((i) => i.installedPath);
+  const moduleNames = installed.map((i) => i.moduleName);
+  const addDefaultConfigModuleName = installed.find((i) => i.addDefaultConfig)?.moduleName ?? null;
+  const ensureOnlineSubsystem = components.includes("oss") && !components.includes("sdk");
+
   let setupDetails;
   if (setupProjectFiles) {
     try {
-      setupDetails = patchProjectFiles(projectRoot, uprojectPath, moduleName);
+      setupDetails = patchProjectFiles(projectRoot, uprojectPath, moduleNames, {
+        addDefaultConfigModuleName,
+        ensureOnlineSubsystem,
+      });
     } catch (e) {
       return {
         success: true,
-        installedPath,
-        message: `Plugin installed at ${installedPath}. Setup failed: ${e.message}. Add the plugin and module manually (see AccelByte Unreal SDK install docs).`,
+        installedPaths,
+        message: `Plugins installed at ${installedPaths.join(", ")}. Setup failed: ${e.message}. Add plugins and modules manually (see AccelByte Unreal SDK install docs).`,
         setupDetails: [],
       };
     }
@@ -658,16 +768,17 @@ export async function installUnrealSdk(params) {
 
   const nextSteps =
     "Configure DefaultEngine.ini with your AGS credentials (see https://docs.accelbyte.io/gaming-services/getting-started/setup-game-sdk/unreal-sdk).";
+  const names = installed.map((i) => i.pluginFolderName).join(", ");
   let message = setupProjectFiles
-    ? `Installed ${pluginFolderName} to ${installedPath} and updated project files. ${nextSteps}`
-    : `Installed ${pluginFolderName} to ${installedPath}. Add the plugin to .uproject and Build.cs/Target.cs, then ${nextSteps}`;
+    ? `Installed ${names} and updated project files. ${nextSteps}`
+    : `Installed ${names}. Add the plugins to .uproject and Build.cs/Target.cs, then ${nextSteps}`;
   if (doRegenerate && regenerateResult) {
     message += ` ${regenerateResult.success ? "Project files regenerated." : ` Regenerate: ${regenerateResult.message}`}`;
   }
 
   return {
     success: true,
-    installedPath,
+    installedPaths,
     message,
     setupDetails: setupDetails || undefined,
     regenerateResult: regenerateResult || undefined,

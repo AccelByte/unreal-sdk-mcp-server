@@ -675,6 +675,9 @@ export function indexExampleComponents(baseDir) {
         integrationHints: Array.isArray(meta.integrationHints)
           ? meta.integrationHints
           : (meta.integrationHints ? [String(meta.integrationHints)] : []),
+        moduleDependencies: Array.isArray(meta.moduleDependencies)
+          ? meta.moduleDependencies
+          : (meta.moduleDependencies ? [String(meta.moduleDependencies)] : []),
         files: [],
         filePaths: [],
       };
@@ -693,6 +696,16 @@ export function indexExampleComponents(baseDir) {
       // If this block has a more specific description, prefer it
       if (meta.description && !component.description) {
         component.description = meta.description;
+      }
+      if (Array.isArray(meta.moduleDependencies) && meta.moduleDependencies.length > 0) {
+        component.moduleDependencies = meta.moduleDependencies;
+      } else if (meta.moduleDependencies) {
+        component.moduleDependencies = [String(meta.moduleDependencies)];
+      }
+      if (Array.isArray(meta.integrationHints) && meta.integrationHints.length > 0) {
+        component.integrationHints = meta.integrationHints;
+      } else if (meta.integrationHints) {
+        component.integrationHints = [String(meta.integrationHints)];
       }
     }
 

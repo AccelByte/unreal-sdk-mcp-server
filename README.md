@@ -195,29 +195,41 @@ Get detailed information about specific symbols, including their fields, methods
 
 ### 4. `install_unreal_sdk`
 
-Download from GitHub and install the AccelByte Unreal SDK plugin into an Unreal project; optionally update `.uproject` and Build files.
+Download from GitHub and install AccelByte Unreal components into an Unreal project; optionally update `.uproject`, Build files, and DefaultEngine.ini. Supports the **AccelByte Game SDK**, **AccelByte OSS** (Online Subsystem), and **AccelByteNetworkUtilities**. All plugins are installed under `Plugins/Accelbyte/` with full integration (plugin entries, Build.cs, Target.cs, and default config where applicable).
 
 **Parameters:**
 - `projectPath` (required, string): Path to the Unreal project root (directory containing the `.uproject` file). Use an absolute path or a path relative to `workspaceRoot`.
+- `components` (optional, array of strings): Components to install: `"sdk"` (AccelByte Game SDK), `"oss"` (Online Subsystem), `"networkUtilities"` (AccelByteNetworkUtilities). Default `["sdk"]`. Install order: networkUtilities, sdk, oss. Use `["sdk", "oss", "networkUtilities"]` for full integration.
 - `workspaceRoot` (optional, string): Workspace root used to resolve a relative `projectPath`. Defaults to current working directory.
-- `source` (optional, enum): How to get the SDK - `"release"` (default) = download latest release ZIP from GitHub; `"git"` = clone the repository via Git.
-- `version` (optional, string): For `source: "release"`: tag name (e.g. `"v1.2.0"`). Omit for latest release. For `source: "git"`: branch or tag to clone.
-- `setupProjectFiles` (optional, boolean): If `true`, add the plugin to `.uproject` and add the module to `Build.cs` and `Target.cs`. Default `false` (copy plugin only; you configure project files manually).
+- `source` (optional, enum): How to get each component - `"release"` (default) = download latest release ZIP from GitHub; `"git"` = clone the repository via Git.
+- `version` (optional, string): For `source: "release"`: tag name (e.g. `"v1.2.0"`). Omit for latest release. For `source: "git"`: branch or tag to clone. Applies to all components.
+- `setupProjectFiles` (optional, boolean): If `true`, add plugins to `.uproject`, `Build.cs`, and `Target.cs`, and add default AccelByte config (and [OnlineSubsystem] when using OSS) to `DefaultEngine.ini`. Default `false`.
 - `regenerateProjectFiles` (optional, boolean): If `true`, run UnrealVersionSelector (Windows) or GenerateProjectFiles (Mac) to regenerate the IDE project files (`.sln` / `.vcxproj`) after setup. Default `false`.
 
 **Returns:**
 - `success` (boolean): Whether the operation succeeded.
-- `installedPath` (string, if success): Full path to the installed plugin folder (e.g. `Project/Plugins/accelbyte-unreal-sdk-plugin-1.2.0`).
+- `installedPaths` (array of strings, if success): Full paths to the installed plugin folders (e.g. `Project/Plugins/Accelbyte/AccelByteUe4Sdk`, `Project/Plugins/Accelbyte/OnlineSubsystemAccelByte`).
 - `message` (string): Human-readable result or next steps.
-- `setupDetails` (array, optional): When `setupProjectFiles` is true, list of changes made (e.g. "Added AccelByteUe4Sdk to .uproject Plugins array"); when `regenerateProjectFiles` succeeds, includes the regeneration message.
+- `setupDetails` (array, optional): When `setupProjectFiles` is true, list of changes made; when `regenerateProjectFiles` succeeds, includes the regeneration message.
 - `regenerateResult` (object, optional): When `regenerateProjectFiles` is true, `{ success, message }` (and `stderr` on failure).
 
-**Example:**
+**Example (SDK only, default):**
 ```json
 {
   "projectPath": "C:/MyGame",
   "source": "release",
   "setupProjectFiles": true
+}
+```
+
+**Example (full integration: SDK + OSS + NetworkUtilities):**
+```json
+{
+  "projectPath": "C:/MyGame",
+  "components": ["sdk", "oss", "networkUtilities"],
+  "source": "release",
+  "setupProjectFiles": true,
+  "regenerateProjectFiles": true
 }
 ```
 
