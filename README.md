@@ -100,7 +100,7 @@ If any cache is missing, you'll see warnings instructing you to run `generateCac
 
 ## Tools
 
-The server provides three tools for searching and retrieving SDK information:
+The server provides tools for searching and retrieving SDK information and for installing the Unreal SDK:
 
 ### 1. `search_symbols`
 
@@ -192,6 +192,36 @@ Get detailed information about specific symbols, including their fields, methods
   "snippetLimit": 5
 }
 ```
+
+### 4. `install_unreal_sdk`
+
+Download from GitHub and install the AccelByte Unreal SDK plugin into an Unreal project; optionally update `.uproject` and Build files.
+
+**Parameters:**
+- `projectPath` (required, string): Path to the Unreal project root (directory containing the `.uproject` file). Use an absolute path or a path relative to `workspaceRoot`.
+- `workspaceRoot` (optional, string): Workspace root used to resolve a relative `projectPath`. Defaults to current working directory.
+- `source` (optional, enum): How to get the SDK - `"release"` (default) = download latest release ZIP from GitHub; `"git"` = clone the repository via Git.
+- `version` (optional, string): For `source: "release"`: tag name (e.g. `"v1.2.0"`). Omit for latest release. For `source: "git"`: branch or tag to clone.
+- `setupProjectFiles` (optional, boolean): If `true`, add the plugin to `.uproject` and add the module to `Build.cs` and `Target.cs`. Default `false` (copy plugin only; you configure project files manually).
+- `regenerateProjectFiles` (optional, boolean): If `true`, run UnrealVersionSelector (Windows) or GenerateProjectFiles (Mac) to regenerate the IDE project files (`.sln` / `.vcxproj`) after setup. Default `false`.
+
+**Returns:**
+- `success` (boolean): Whether the operation succeeded.
+- `installedPath` (string, if success): Full path to the installed plugin folder (e.g. `Project/Plugins/accelbyte-unreal-sdk-plugin-1.2.0`).
+- `message` (string): Human-readable result or next steps.
+- `setupDetails` (array, optional): When `setupProjectFiles` is true, list of changes made (e.g. "Added AccelByteUe4Sdk to .uproject Plugins array"); when `regenerateProjectFiles` succeeds, includes the regeneration message.
+- `regenerateResult` (object, optional): When `regenerateProjectFiles` is true, `{ success, message }` (and `stderr` on failure).
+
+**Example:**
+```json
+{
+  "projectPath": "C:/MyGame",
+  "source": "release",
+  "setupProjectFiles": true
+}
+```
+
+After installation, configure `DefaultEngine.ini` with your AGS credentials. See the [official AccelByte Unreal SDK install docs](https://docs.accelbyte.io/gaming-services/getting-started/setup-game-sdk/unreal-sdk) for manual steps and configuration.
 
 ## Resources
 

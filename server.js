@@ -10,7 +10,8 @@ import { fileURLToPath } from "url";
 import { dirname, join, basename } from "path";
 import fs from "fs";
 import { loadSymbols } from "./parser.js";
-import { indexSnippets, searchSnippets, indexExampleComponents } from "./sourceIndexer.js";
+import { indexSourceFiles, indexSnippets, searchSnippets, indexExampleComponents } from "./sourceIndexer.js";
+import { installUnrealSdk } from "./sdkInstaller.js";
 
 // Get the directory of this script file (not cwd)
 const __filename = fileURLToPath(import.meta.url);
@@ -519,6 +520,41 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         },
       },
       {
+        name: "install_unreal_sdk",
+        description: "Download from GitHub and install the AccelByte Unreal SDK plugin into an Unreal project; optionally update .uproject and Build files.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            projectPath: {
+              type: "string",
+              description: "Path to the Unreal project root (directory containing the .uproject file). Absolute path or relative to workspace.",
+            },
+            workspaceRoot: {
+              type: "string",
+              description: "Optional. Workspace root used to resolve a relative projectPath. Defaults to current working directory.",
+            },
+            source: {
+              type: "string",
+              description: "How to get the SDK: 'release' (default) = download latest release ZIP from GitHub; 'git' = clone via Git.",
+              enum: ["release", "git"],
+            },
+            version: {
+              type: "string",
+              description: "For source 'release': tag name (e.g. 'v1.2.0'). Omit for latest. For source 'git': branch or tag to clone.",
+            },
+            setupProjectFiles: {
+              type: "boolean",
+              description: "If true, add plugin to .uproject and add module to Build.cs and Target.cs. Default false (copy only).",
+            },
+            regenerateProjectFiles: {
+              type: "boolean",
+              description: "If true, run UnrealVersionSelector/GenerateProjectFiles to regenerate .sln/.vcxproj after setup. Default false.",
+            },
+          },
+          required: ["projectPath"],
+        },
+      },
+      {
         name: "describe_symbols",
         description: "Get full descriptions of symbols by their IDs, including fields, methods, and links to relevant code snippets that use them.",
         inputSchema: {
@@ -972,6 +1008,33 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                 symbols: results,
                 count: results.length,
               }, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "install_unreal_sdk": {
+        const {
+          projectPath,
+          workspaceRoot,
+          source = "release",
+          version,
+          setupProjectFiles = false,
+          regenerateProjectFiles = false,
+        } = args || {};
+        const result = await installUnrealSdk({
+          projectPath,
+          workspaceRoot,
+          source,
+          version,
+          setupProjectFiles,
+          regenerateProjectFiles,
+        });
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(result, null, 2),
             },
           ],
         };
