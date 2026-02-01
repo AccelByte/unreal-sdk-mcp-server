@@ -28,6 +28,8 @@ const ossSDKDir = join(sourcesDir, "oss-sdk");
 const cacheDir = join(__dirname, "..", ".cache");
 const repoRoot = cacheDir; // indexSourceFiles will handle cloning into .cache/accelbyte-unreal-sdk-plugin
 
+const SDK_REQUIREMENT_NOTE = "The AccelByte Unreal SDK (and OSS / NetworkUtilities if used) must be installed in your Unreal project for this code or API to work. If not already installed, use the install_unreal_sdk tool to download and set up the SDK(s).";
+
 // Load symbols from cache only (do not generate)
 let unrealsdk_symbols = {};
 let osssdk_symbols = {};
@@ -418,7 +420,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     tools: [
       {
         name: "search_symbols",
-        description: "Search for symbols in the SDK documentation by name, type, or description",
+        description: "Search for symbols in the SDK documentation by name, type, or description. Returned code and APIs require the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) to be installed; use install_unreal_sdk if needed.",
         inputSchema: {
           type: "object",
           properties: {
@@ -447,7 +449,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       },
       {
         name: "search_snippets",
-        description: "Search for code snippets by query, area, tags, or content. Helps find relevant code examples from the tutorial modules.",
+        description: "Search for code snippets by query, area, tags, or content. Helps find relevant code examples from the tutorial modules. Returned code and APIs require the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) to be installed; use install_unreal_sdk if needed.",
         inputSchema: {
           type: "object",
           properties: {
@@ -477,7 +479,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       },
       {
         name: "search_example_components",
-        description: "Search for ready-made, drop-in example components (full Unreal C++/Slate panels and controllers) that implement common AccelByte flows such as showing player achievements, stats, friends, login queue, etc. Returns component metadata including class names, public interfaces, and a fileResourceUris array. IMPORTANT: Use the standard MCP resources/read handler with the fileResourceUris (e.g., 'example-file://ComponentName.h') to fetch the actual source code files (.h and .cpp). The fileResourceUris are MCP resource URIs, not tool calls.",
+        description: "Search for ready-made, drop-in example components (full Unreal C++/Slate panels and controllers) that implement common AccelByte flows such as showing player achievements, stats, friends, login queue, etc. Returns component metadata including class names, public interfaces, and a fileResourceUris array. IMPORTANT: Use the standard MCP resources/read handler with the fileResourceUris (e.g., 'example-file://ComponentName.h') to fetch the actual source code files (.h and .cpp). The fileResourceUris are MCP resource URIs, not tool calls. Returned code and APIs require the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) to be installed; use install_unreal_sdk if needed.",
         inputSchema: {
           type: "object",
           properties: {
@@ -561,7 +563,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       },
       {
         name: "describe_symbols",
-        description: "Get full descriptions of symbols by their IDs, including fields, methods, and links to relevant code snippets that use them.",
+        description: "Get full descriptions of symbols by their IDs, including fields, methods, and links to relevant code snippets that use them. Returned code and APIs require the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) to be installed; use install_unreal_sdk if needed.",
         inputSchema: {
           type: "object",
           properties: {
@@ -682,6 +684,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                   source: source || null,
                   type: type || null,
                 },
+                sdkRequirement: SDK_REQUIREMENT_NOTE,
               }, null, 2),
             },
           ],
@@ -740,7 +743,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
           if (component.moduleDependencies && component.moduleDependencies.length > 0) {
             parts.push(
-              `Add these to your module's Build.cs PublicDependencyModuleNames: ${component.moduleDependencies.join(", ")}.`
+              `First ensure the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) is installed in your project (use the install_unreal_sdk tool). Then add these to your module's Build.cs PublicDependencyModuleNames: ${component.moduleDependencies.join(", ")}.`
             );
           }
 
@@ -876,6 +879,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                     service: service || null,
                     language: language || null,
                   },
+                  sdkRequirement: SDK_REQUIREMENT_NOTE,
                 },
                 null,
                 2
@@ -911,6 +915,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                   area: area || null,
                   tags: tags.length > 0 ? tags : null,
                 },
+                sdkRequirement: SDK_REQUIREMENT_NOTE,
               }, null, 2),
             },
           ],
@@ -1024,6 +1029,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
               text: JSON.stringify({ 
                 symbols: results,
                 count: results.length,
+                sdkRequirement: SDK_REQUIREMENT_NOTE,
               }, null, 2),
             },
           ],
@@ -1128,6 +1134,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
               text: JSON.stringify({
                 files: results,
                 count: results.length,
+                sdkRequirement: SDK_REQUIREMENT_NOTE,
               }, null, 2),
             },
           ],

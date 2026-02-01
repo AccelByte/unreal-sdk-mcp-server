@@ -100,7 +100,7 @@ If any cache is missing, you'll see warnings instructing you to run `generateCac
 
 ## Tools
 
-The server provides tools for searching and retrieving SDK information and for installing the Unreal SDK:
+The server provides tools for searching and retrieving SDK information and for installing the Unreal SDK. Tools that return or suggest AccelByte code (search_symbols, search_snippets, search_example_components, describe_symbols, describe_example_components) include a top-level `sdkRequirement` field in their response stating that the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) must be installed for the code to work and that `install_unreal_sdk` can be used if needed.
 
 ### 1. `search_symbols`
 

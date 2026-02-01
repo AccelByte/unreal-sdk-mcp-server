@@ -38,7 +38,7 @@
 //     }
 //   },
 //   "moduleDependencies": ["Slate", "SlateCore"],
-//   "integrationHints": ["Add Slate, SlateCore (and your AccelByte SDK module) to PublicDependencyModuleNames in your module's .Build.cs."]
+//   "integrationHints": ["Install the AccelByte Unreal SDK first (use the install_unreal_sdk tool) if not already installed. Then add Slate, SlateCore (and your AccelByte SDK module) to PublicDependencyModuleNames in your module's .Build.cs."]
 // }
 // AB_MCP_END:AccelByte.Achievements.Panel
 
