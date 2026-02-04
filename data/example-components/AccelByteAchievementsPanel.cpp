@@ -81,10 +81,10 @@ void FAccelByteAchievementsPanel::Initialise(FApiClientPtr InApiClient, const FS
 	}
 
 	THandler<FAccelByteModelsPaginatedPublicAchievement> OnSuccess =
-		THandler<FAccelByteModelsPaginatedPublicAchievement>::CreateRaw(
+		THandler<FAccelByteModelsPaginatedPublicAchievement>::CreateSP(
 			this, &FAccelByteAchievementsPanel::OnQueryDefinitionsSuccess);
 
-	FErrorHandler OnError = FErrorHandler::CreateRaw(
+	FErrorHandler OnError = FErrorHandler::CreateSP(
 		this, &FAccelByteAchievementsPanel::OnAccelByteError);
 
 	// Query all public achievements for this namespace, ordered by list order
@@ -95,6 +95,21 @@ void FAccelByteAchievementsPanel::Initialise(FApiClientPtr InApiClient, const FS
 		OnError,
 		0,
 		100); // Limit: adjust as needed
+}
+
+FAccelByteAchievementsPanel::~FAccelByteAchievementsPanel()
+{
+	// Hide and clear widget to ensure proper cleanup
+	if (bVisible)
+	{
+		Hide();
+	}
+	Widget.Reset();
+	RootWidget.Reset();
+	
+	// Clear all entries to break any circular references
+	Entries.Empty();
+	CodeToIndex.Empty();
 }
 
 void FAccelByteAchievementsPanel::Update()
@@ -120,10 +135,10 @@ void FAccelByteAchievementsPanel::Update()
 	}
 
 	THandler<FAccelByteModelsPaginatedUserAchievement> OnSuccess =
-		THandler<FAccelByteModelsPaginatedUserAchievement>::CreateRaw(
+		THandler<FAccelByteModelsPaginatedUserAchievement>::CreateSP(
 			this, &FAccelByteAchievementsPanel::OnQueryUserAchievementsSuccess);
 
-	FErrorHandler OnError = FErrorHandler::CreateRaw(
+	FErrorHandler OnError = FErrorHandler::CreateSP(
 		this, &FAccelByteAchievementsPanel::OnAccelByteError);
 
 	// Query current user's achievements (progress + unlocked state)
@@ -248,9 +263,13 @@ void FAccelByteAchievementsPanel::OnQueryDefinitionsSuccess(const FAccelByteMode
 		Update();
 	}
 
-	AsyncTask(ENamedThreads::GameThread, [this]()
+	TWeakPtr<FAccelByteAchievementsPanel> WeakThis = AsShared();
+	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 	{
-		RefreshWidget();
+		if (TSharedPtr<FAccelByteAchievementsPanel> StrongThis = WeakThis.Pin())
+		{
+			StrongThis->RefreshWidget();
+		}
 	});
 }
 
@@ -309,9 +328,13 @@ void FAccelByteAchievementsPanel::OnQueryUserAchievementsSuccess(const FAccelByt
 
 	UE_LOG(LogTemp, Log, TEXT("FAccelByteAchievementsPanel::OnQueryUserAchievementsSuccess - Updated %d user achievements"), Result.Data.Num());
 
-	AsyncTask(ENamedThreads::GameThread, [this]()
+	TWeakPtr<FAccelByteAchievementsPanel> WeakThis = AsShared();
+	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 	{
-		RefreshWidget();
+		if (TSharedPtr<FAccelByteAchievementsPanel> StrongThis = WeakThis.Pin())
+		{
+			StrongThis->RefreshWidget();
+		}
 	});
 }
 
@@ -385,9 +408,11 @@ void FAccelByteAchievementsPanel::OnIconDownloadComplete(FHttpRequestPtr Request
 	const int32 Width = ImageWrapper->GetWidth();
 	const int32 Height = ImageWrapper->GetHeight();
 
-	AsyncTask(ENamedThreads::GameThread, [this, ItemIndex, Width, Height, RawData]()
+	TWeakPtr<FAccelByteAchievementsPanel> WeakThis = AsShared();
+	AsyncTask(ENamedThreads::GameThread, [WeakThis, ItemIndex, Width, Height, RawData]()
 	{
-		if (!Entries.IsValidIndex(ItemIndex))
+		TSharedPtr<FAccelByteAchievementsPanel> StrongThis = WeakThis.Pin();
+		if (!StrongThis.IsValid() || !StrongThis->Entries.IsValidIndex(ItemIndex))
 		{
 			return;
 		}
@@ -406,7 +431,7 @@ void FAccelByteAchievementsPanel::OnIconDownloadComplete(FHttpRequestPtr Request
 
 		Texture->UpdateResource();
 
-		TSharedPtr<FAccelByteAchievementEntry>& Entry = Entries[ItemIndex];
+		TSharedPtr<FAccelByteAchievementEntry>& Entry = StrongThis->Entries[ItemIndex];
 		if (!Entry->IconBrush.IsValid())
 		{
 			Entry->IconBrush = MakeShared<FSlateBrush>();

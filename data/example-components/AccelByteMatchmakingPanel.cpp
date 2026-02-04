@@ -76,6 +76,21 @@ void FAccelByteMatchmakingPanel::Initialise()
 	MatchmakingSessionName = DefaultMatchmakingSessionName;
 }
 
+FAccelByteMatchmakingPanel::~FAccelByteMatchmakingPanel()
+{
+	// Critical: Unbind all delegates before destruction to prevent dangling pointer callbacks
+	UnbindDelegates();
+	
+	// Hide and clear widget to ensure proper cleanup
+	if (bVisible)
+	{
+		Hide();
+	}
+	Widget.Reset();
+	RootWidget.Reset();
+	SearchHandle.Reset();
+}
+
 void FAccelByteMatchmakingPanel::Show(float Width, float Height)
 {
 	if (bVisible)

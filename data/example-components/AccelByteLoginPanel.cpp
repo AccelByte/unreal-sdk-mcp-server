@@ -90,6 +90,21 @@ void FAccelByteLoginPanel::Initialise()
 	PendingRegisterPassword.Empty();
 }
 
+FAccelByteLoginPanel::~FAccelByteLoginPanel()
+{
+	// Critical: Unbind all delegates before destruction to prevent dangling pointer callbacks
+	UnbindLoginDelegate();
+	UnbindLogoutDelegate();
+	
+	// Hide and clear widget to ensure proper cleanup
+	if (bVisible)
+	{
+		Hide();
+	}
+	Widget.Reset();
+	RootWidget.Reset();
+}
+
 void FAccelByteLoginPanel::Show(float Width, float Height)
 {
 	if (bVisible)
@@ -181,7 +196,33 @@ void FAccelByteLoginPanel::OnLoginClicked(const FString& Username, const FString
 	RefreshWidget();
 
 	FOnlineAccountCredentialsAccelByte Creds(EAccelByteLoginType::AccelByte, Username, Password);
-	LoginCompleteHandle = Identity->AddOnLoginCompleteDelegate_Handle(0, FOnLoginCompleteDelegate::CreateRaw(this, &FAccelByteLoginPanel::OnLoginComplete));
+	LoginCompleteHandle = Identity->AddOnLoginCompleteDelegate_Handle(0, FOnLoginCompleteDelegate::CreateSP(this, &FAccelByteLoginPanel::OnLoginComplete));
+	Identity->Login(0, Creds);
+}
+
+void FAccelByteLoginPanel::OnDeviceIdLoginClicked()
+{
+	IOnlineSubsystem* OSS = IOnlineSubsystem::Get();
+	if (!OSS)
+	{
+		SetError(TEXT("Online subsystem not available"));
+		return;
+	}
+	IOnlineIdentityPtr Identity = OSS->GetIdentityInterface();
+	if (!Identity.IsValid())
+	{
+		SetError(TEXT("Identity not available"));
+		return;
+	}
+	UnbindLoginDelegate();
+	SetError(FString());
+	SetState(ELoginPanelState::LoggingIn);
+	bRegisterPending = false;  // CRITICAL: No upgrade needed for device ID login
+	RefreshWidget();
+
+	// Device ID login - no username/password required
+	FOnlineAccountCredentialsAccelByte Creds(EAccelByteLoginType::DeviceId, TEXT(""), TEXT(""));
+	LoginCompleteHandle = Identity->AddOnLoginCompleteDelegate_Handle(0, FOnLoginCompleteDelegate::CreateSP(this, &FAccelByteLoginPanel::OnLoginComplete));
 	Identity->Login(0, Creds);
 }
 
@@ -192,28 +233,36 @@ void FAccelByteLoginPanel::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessf
 	{
 		if (!bWasSuccessful)
 		{
-			AsyncTask(ENamedThreads::GameThread, [this, Error]()
+			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+			AsyncTask(ENamedThreads::GameThread, [WeakThis, Error]()
 			{
-				bRegisterPending = false;
-				PendingRegisterUsername.Empty();
-				PendingRegisterPassword.Empty();
-				SetState(ELoginPanelState::LoggedOut);
-				SetError(Error.IsEmpty() ? TEXT("Could not create account.") : Error);
-				RefreshWidget();
+				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+				{
+					StrongThis->bRegisterPending = false;
+					StrongThis->PendingRegisterUsername.Empty();
+					StrongThis->PendingRegisterPassword.Empty();
+					StrongThis->SetState(ELoginPanelState::LoggedOut);
+					StrongThis->SetError(Error.IsEmpty() ? TEXT("Could not create account.") : Error);
+					StrongThis->RefreshWidget();
+				}
 			});
 			return;
 		}
 		FOnlineSubsystemAccelByte* ABSubsystem = static_cast<FOnlineSubsystemAccelByte*>(IOnlineSubsystem::Get());
 		if (!ABSubsystem)
 		{
-			AsyncTask(ENamedThreads::GameThread, [this]()
+			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+			AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 			{
-				bRegisterPending = false;
-				PendingRegisterUsername.Empty();
-				PendingRegisterPassword.Empty();
-				SetState(ELoginPanelState::LoggedOut);
-				SetError(TEXT("AccelByte subsystem not available."));
-				RefreshWidget();
+				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+				{
+					StrongThis->bRegisterPending = false;
+					StrongThis->PendingRegisterUsername.Empty();
+					StrongThis->PendingRegisterPassword.Empty();
+					StrongThis->SetState(ELoginPanelState::LoggedOut);
+					StrongThis->SetError(TEXT("AccelByte subsystem not available."));
+					StrongThis->RefreshWidget();
+				}
 			});
 			return;
 		}
@@ -228,51 +277,63 @@ void FAccelByteLoginPanel::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessf
 		}
 		if (!ApiClient.IsValid())
 		{
-			AsyncTask(ENamedThreads::GameThread, [this]()
+			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+			AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 			{
-				bRegisterPending = false;
-				PendingRegisterUsername.Empty();
-				PendingRegisterPassword.Empty();
-				SetState(ELoginPanelState::LoggedOut);
-				SetError(TEXT("Could not get API client for upgrade."));
-				RefreshWidget();
+				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+				{
+					StrongThis->bRegisterPending = false;
+					StrongThis->PendingRegisterUsername.Empty();
+					StrongThis->PendingRegisterPassword.Empty();
+					StrongThis->SetState(ELoginPanelState::LoggedOut);
+					StrongThis->SetError(TEXT("Could not get API client for upgrade."));
+					StrongThis->RefreshWidget();
+				}
 			});
 			return;
 		}
 		Api::UserPtr UserApi = ApiClient->GetUserApi().Pin();
 		if (!UserApi.IsValid())
 		{
-			AsyncTask(ENamedThreads::GameThread, [this]()
+			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+			AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 			{
-				bRegisterPending = false;
-				PendingRegisterUsername.Empty();
-				PendingRegisterPassword.Empty();
-				SetState(ELoginPanelState::LoggedOut);
-				SetError(TEXT("User API not available."));
-				RefreshWidget();
+				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+				{
+					StrongThis->bRegisterPending = false;
+					StrongThis->PendingRegisterUsername.Empty();
+					StrongThis->PendingRegisterPassword.Empty();
+					StrongThis->SetState(ELoginPanelState::LoggedOut);
+					StrongThis->SetError(TEXT("User API not available."));
+					StrongThis->RefreshWidget();
+				}
 			});
 			return;
 		}
 		FString User = PendingRegisterUsername;
 		FString Pass = PendingRegisterPassword;
-		THandler<FAccountUserData> OnUpgradeSuccessHandler = THandler<FAccountUserData>::CreateRaw(this, &FAccelByteLoginPanel::OnUpgradeSuccess);
-		FErrorHandler OnUpgradeErrorHandler = FErrorHandler::CreateRaw(this, &FAccelByteLoginPanel::OnUpgradeError);
+		THandler<FAccountUserData> OnUpgradeSuccessHandler = THandler<FAccountUserData>::CreateSP(this, &FAccelByteLoginPanel::OnUpgradeSuccess);
+		FErrorHandler OnUpgradeErrorHandler = FErrorHandler::CreateSP(this, &FAccelByteLoginPanel::OnUpgradeError);
 		UserApi->Upgrade(User, Pass, OnUpgradeSuccessHandler, OnUpgradeErrorHandler);
 		return;
 	}
-	AsyncTask(ENamedThreads::GameThread, [this, bWasSuccessful, Error]()
+	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+	AsyncTask(ENamedThreads::GameThread, [WeakThis, bWasSuccessful, Error]()
 	{
-		if (bWasSuccessful)
+		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 		{
-			SetState(ELoginPanelState::LoggedIn);
-			SetError(FString());
+			if (bWasSuccessful)
+			{
+				StrongThis->SetState(ELoginPanelState::LoggedIn);
+				StrongThis->SetError(FString());
+			}
+			else
+			{
+				StrongThis->SetState(ELoginPanelState::LoggedOut);
+				StrongThis->SetError(Error.IsEmpty() ? TEXT("Login failed.") : Error);
+			}
+			StrongThis->RefreshWidget();
 		}
-		else
-		{
-			SetState(ELoginPanelState::LoggedOut);
-			SetError(Error.IsEmpty() ? TEXT("Login failed.") : Error);
-		}
-		RefreshWidget();
 	});
 }
 
@@ -299,15 +360,19 @@ void FAccelByteLoginPanel::OnLogoutClicked()
 	FOnlineIdentityAccelByte* ABIdentity = static_cast<FOnlineIdentityAccelByte*>(Identity.Get());
 	if (ABIdentity)
 	{
-		LogoutCompleteHandle = ABIdentity->AddAccelByteOnLogoutCompleteDelegate_Handle(0, FAccelByteOnLogoutCompleteDelegate::CreateRaw(this, &FAccelByteLoginPanel::OnLogoutComplete));
+		LogoutCompleteHandle = ABIdentity->AddAccelByteOnLogoutCompleteDelegate_Handle(0, FAccelByteOnLogoutCompleteDelegate::CreateSP(this, &FAccelByteLoginPanel::OnLogoutComplete));
 	}
 	Identity->Logout(0);
 	if (!ABIdentity)
 	{
-		AsyncTask(ENamedThreads::GameThread, [this]()
+		TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+		AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 		{
-			SetState(ELoginPanelState::LoggedOut);
-			RefreshWidget();
+			if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+			{
+				StrongThis->SetState(ELoginPanelState::LoggedOut);
+				StrongThis->RefreshWidget();
+			}
 		});
 	}
 }
@@ -315,12 +380,16 @@ void FAccelByteLoginPanel::OnLogoutClicked()
 void FAccelByteLoginPanel::OnLogoutComplete(int32 LocalUserNum, bool bWasSuccessful, const FOnlineErrorAccelByte& Error)
 {
 	UnbindLogoutDelegate();
-	AsyncTask(ENamedThreads::GameThread, [this]()
+	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 	{
-		SetState(ELoginPanelState::LoggedOut);
-		SetError(FString());
-		ClearStoredCredentials();
-		RefreshWidget();
+		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+		{
+			StrongThis->SetState(ELoginPanelState::LoggedOut);
+			StrongThis->SetError(FString());
+			StrongThis->ClearStoredCredentials();
+			StrongThis->RefreshWidget();
+		}
 	});
 }
 
@@ -384,34 +453,42 @@ void FAccelByteLoginPanel::OnRegisterClicked(const FString& Username, const FStr
 
 	UnbindLoginDelegate();
 	FOnlineAccountCredentialsAccelByte Creds(EAccelByteLoginType::DeviceId, TEXT(""), TEXT(""), true);
-	LoginCompleteHandle = Identity->AddOnLoginCompleteDelegate_Handle(0, FOnLoginCompleteDelegate::CreateRaw(this, &FAccelByteLoginPanel::OnLoginComplete));
+	LoginCompleteHandle = Identity->AddOnLoginCompleteDelegate_Handle(0, FOnLoginCompleteDelegate::CreateSP(this, &FAccelByteLoginPanel::OnLoginComplete));
 	Identity->Login(0, Creds);
 }
 
 void FAccelByteLoginPanel::OnUpgradeSuccess(const FAccountUserData& Response)
 {
-	AsyncTask(ENamedThreads::GameThread, [this]()
+	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
 	{
-		bRegisterPending = false;
-		PendingRegisterUsername.Empty();
-		PendingRegisterPassword.Empty();
-		bRegisterMode = false;
-		SetState(ELoginPanelState::LoggedIn);
-		SetError(FString());
-		RefreshWidget();
+		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+		{
+			StrongThis->bRegisterPending = false;
+			StrongThis->PendingRegisterUsername.Empty();
+			StrongThis->PendingRegisterPassword.Empty();
+			StrongThis->bRegisterMode = false;
+			StrongThis->SetState(ELoginPanelState::LoggedIn);
+			StrongThis->SetError(FString());
+			StrongThis->RefreshWidget();
+		}
 	});
 }
 
 void FAccelByteLoginPanel::OnUpgradeError(int32 ErrorCode, const FString& ErrorMessage)
 {
-	AsyncTask(ENamedThreads::GameThread, [this, ErrorCode, ErrorMessage]()
+	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
+	AsyncTask(ENamedThreads::GameThread, [WeakThis, ErrorCode, ErrorMessage]()
 	{
-		bRegisterPending = false;
-		PendingRegisterUsername.Empty();
-		PendingRegisterPassword.Empty();
-		SetState(ELoginPanelState::LoggedOut);
-		SetError(ErrorMessage.IsEmpty() ? FString::Printf(TEXT("Upgrade failed (code %d)"), ErrorCode) : ErrorMessage);
-		RefreshWidget();
+		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
+		{
+			StrongThis->bRegisterPending = false;
+			StrongThis->PendingRegisterUsername.Empty();
+			StrongThis->PendingRegisterPassword.Empty();
+			StrongThis->SetState(ELoginPanelState::LoggedOut);
+			StrongThis->SetError(ErrorMessage.IsEmpty() ? FString::Printf(TEXT("Upgrade failed (code %d)"), ErrorCode) : ErrorMessage);
+			StrongThis->RefreshWidget();
+		}
 	});
 	IOnlineSubsystem* OSS = IOnlineSubsystem::Get();
 	if (OSS)
@@ -681,6 +758,23 @@ TSharedRef<SWidget> SAccelByteLoginWidget::BuildLoginForm()
 			]
 			.OnClicked_Lambda([this]() {
 				if (Panel) { Panel->SetRegisterMode(true); }
+				return FReply::Handled();
+			})
+		]
+		+ SVerticalBox::Slot()
+		.AutoHeight()
+		.Padding(0, 6, 0, 0)
+		[
+			SNew(SButton)
+			.Content()
+			[
+				SNew(STextBlock)
+				.Text(NSLOCTEXT("AccelByteLoginPanel", "GuestLoginButton", "Login as Guest"))
+				.Font(FCoreStyle::GetDefaultFontStyle("Bold", LoginPanelButtonFontSize))
+				.Justification(ETextJustify::Center)
+			]
+			.OnClicked_Lambda([this]() {
+				if (Panel) { Panel->OnDeviceIdLoginClicked(); }
 				return FReply::Handled();
 			})
 		];

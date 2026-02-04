@@ -56,14 +56,16 @@ enum class ELoginPanelState
  * Controller class that handles login, register (device ID then upgrade headless), and logout via AccelByte OSS.
  * Does not take an ApiClient; uses OSS Identity and, for register, gets ApiClient after device login to call Upgrade.
  */
-class FAccelByteLoginPanel
+class FAccelByteLoginPanel : public TSharedFromThis<FAccelByteLoginPanel>
 {
 public:
+	~FAccelByteLoginPanel();
+	
 	void Initialise();
-	void Show(float Width = 400.f, float Height = 380.f);
+	void Show(float Width = 400.f, float Height = 430.f);
 	void Hide();
 	TSharedPtr<SWidget> GetWidget() const;
-	TSharedRef<SWidget> BuildWidget(float Width = 400.f, float Height = 380.f);
+	TSharedRef<SWidget> BuildWidget(float Width = 400.f, float Height = 430.f);
 
 	ELoginPanelState GetState() const { return State; }
 	bool IsLoggedIn() const { return State == ELoginPanelState::LoggedIn; }
@@ -81,6 +83,7 @@ public:
 
 	void OnLoginClicked(const FString& Username, const FString& Password);
 	void OnRegisterClicked(const FString& Username, const FString& Password, const FString& DisplayName);
+	void OnDeviceIdLoginClicked();
 	void OnLogoutClicked();
 	void OnBackToLoginClicked();
 
@@ -121,7 +124,7 @@ class SAccelByteLoginWidget : public SCompoundWidget
 public:
 	SLATE_BEGIN_ARGS(SAccelByteLoginWidget)
 		: _Width(400.f)
-		, _Height(380.f)
+		, _Height(430.f)
 	{}
 		SLATE_ARGUMENT(float, Width)
 		SLATE_ARGUMENT(float, Height)

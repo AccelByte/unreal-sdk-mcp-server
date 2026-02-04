@@ -75,6 +75,8 @@ enum class EMatchmakingPanelState
 class FAccelByteMatchmakingPanel : public TSharedFromThis<FAccelByteMatchmakingPanel>
 {
 public:
+	~FAccelByteMatchmakingPanel();
+	
 	void Initialise();
 	void Show(float Width = 400.f, float Height = 300.f);
 	void Hide();

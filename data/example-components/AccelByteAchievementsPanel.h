@@ -94,9 +94,11 @@ struct FAccelByteAchievementEntry
  * - Update:     fetch latest player achievement state.
  * - Show/Hide:  add or remove the Slate panel from the viewport.
  */
-class FAccelByteAchievementsPanel
+class FAccelByteAchievementsPanel : public TSharedFromThis<FAccelByteAchievementsPanel>
 {
 public:
+	~FAccelByteAchievementsPanel();
+	
 	/**
 	 * Initialize the panel by providing an AccelByte API client.
 	 *
