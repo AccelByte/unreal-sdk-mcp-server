@@ -37,8 +37,8 @@
 //       "TargetValue": "float"
 //     }
 //   },
-//   "moduleDependencies": ["Slate", "SlateCore"],
-//   "integrationHints": ["Install the AccelByte Unreal SDK first (use the install_unreal_sdk tool) if not already installed. Then add Slate, SlateCore (and your AccelByte SDK module) to PublicDependencyModuleNames in your module's .Build.cs."]
+//   "moduleDependencies": ["Slate", "SlateCore", "HTTP", "ImageWrapper"],
+//   "integrationHints": ["Install the AccelByte Unreal SDK first (use the install_unreal_sdk tool) if not already installed. Then add these to PublicDependencyModuleNames in your module's .Build.cs: Slate, SlateCore, HTTP (for icon download), ImageWrapper (for decoding achievement icons), and your AccelByte SDK module."]
 // }
 // AB_MCP_END:AccelByte.Achievements.Panel
 

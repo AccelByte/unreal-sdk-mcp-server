@@ -158,8 +158,15 @@ void FAccelByteAchievementsPanel::Show(float Width, float Height)
 		return;
 	}
 
-	RootWidget = Widget;
-	GEngine->GameViewport->AddViewportWidgetContent(Widget.ToSharedRef());
+	// Wrap in a centred overlay so the panel has fixed size and is centred, not fullscreen
+	RootWidget = SNew(SOverlay)
+		+ SOverlay::Slot()
+		.HAlign(HAlign_Center)
+		.VAlign(VAlign_Center)
+		[
+			Widget.ToSharedRef()
+		];
+	GEngine->GameViewport->AddViewportWidgetContent(RootWidget.ToSharedRef());
 
 	bVisible = true;
 
@@ -174,9 +181,9 @@ void FAccelByteAchievementsPanel::Hide()
 		return;
 	}
 
-	if (GEngine && GEngine->GameViewport && Widget.IsValid())
+	if (GEngine && GEngine->GameViewport && RootWidget.IsValid())
 	{
-		GEngine->GameViewport->RemoveViewportWidgetContent(Widget.ToSharedRef());
+		GEngine->GameViewport->RemoveViewportWidgetContent(RootWidget.ToSharedRef());
 	}
 
 	bVisible = false;
