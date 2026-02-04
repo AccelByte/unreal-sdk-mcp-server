@@ -26,8 +26,8 @@
 //     "pendingRegisterUsernameField": "PendingRegisterUsername",
 //     "pendingRegisterPasswordField": "PendingRegisterPassword"
 //   },
-//   "moduleDependencies": ["Slate", "SlateCore"],
-//   "integrationHints": ["Install the AccelByte Unreal SDK first (use the install_unreal_sdk tool) if not already installed. Then add Slate, SlateCore (and your AccelByte SDK module) to PublicDependencyModuleNames in your module's .Build.cs."]
+//   "moduleDependencies": ["Slate", "SlateCore", "OnlineSubsystem"],
+//   "integrationHints": ["Install the AccelByte Unreal SDK first (use the install_unreal_sdk tool) if not already installed. Then add these to PublicDependencyModuleNames in your module's .Build.cs: Slate, SlateCore, OnlineSubsystem (for identity/login), and your AccelByte SDK module."]
 // }
 // AB_MCP_END:AccelByte.Login.Panel
 
