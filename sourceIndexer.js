@@ -669,6 +669,8 @@ export function indexExampleComponents(baseDir) {
         publicInterface: meta.publicInterface || {},
         asyncState: meta.asyncState || {},
         dataModel: meta.dataModel || {},
+        engineConfiguration: meta.engineConfiguration || {},
+        backendRequirements: meta.backendRequirements || {},
         // Hint flags and extra metadata for ranking and UX
         dropInReady: meta.dropInReady !== undefined ? !!meta.dropInReady : true,
         recommended: meta.recommended !== undefined ? !!meta.recommended : true,

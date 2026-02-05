@@ -64,6 +64,7 @@ public:
 	void Initialise();
 	void Show(float Width = 400.f, float Height = 430.f);
 	void Hide();
+	bool IsVisible() const { return bVisible; }
 	TSharedPtr<SWidget> GetWidget() const;
 	TSharedRef<SWidget> BuildWidget(float Width = 400.f, float Height = 430.f);
 

@@ -119,6 +119,9 @@ public:
 	/** Hide the achievements panel and remove it from the viewport. */
 	void Hide();
 
+	/** Check if the panel is currently visible. */
+	bool IsVisible() const { return bVisible; }
+
 	/** Access the underlying Slate widget (for custom integration if desired). */
 	TSharedPtr<SWidget> GetWidget() const;
 

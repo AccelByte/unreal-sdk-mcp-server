@@ -853,6 +853,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             publicInterface: component.publicInterface,
             asyncState: component.asyncState,
             dataModel: component.dataModel,
+            engineConfiguration: component.engineConfiguration || {},
+            backendRequirements: component.backendRequirements || {},
             files: component.files,
             fileResourceUris: fileResourceUris,
             drop_in_ready: component.dropInReady !== false,
