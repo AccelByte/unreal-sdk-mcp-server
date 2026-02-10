@@ -30,6 +30,8 @@
 // }
 // AB_MCP_END:AccelByte.Login.Panel
 
+// AccelByte login/register panel - implementation
+
 #include "AccelByteLoginPanel.h"
 #include "Async/Async.h"
 #include "Engine/Engine.h"
@@ -127,13 +129,14 @@ void FAccelByteLoginPanel::Show(float Width, float Height)
 	bVisible = true;
 	RefreshWidget();
 
-	// Route all keyboard/mouse input to UI only so editor shortcuts (e.g. @) don't fire.
+	// Use GameAndUI so the L key toggle still works while panel is visible
 	UWorld* World = GEngine->GameViewport ? GEngine->GameViewport->GetWorld() : nullptr;
 	APlayerController* PC = World ? World->GetFirstPlayerController() : nullptr;
 	if (PC)
 	{
-		FInputModeUIOnly InputMode;
+		FInputModeGameAndUI InputMode;
 		InputMode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+		InputMode.SetHideCursorDuringCapture(false);
 		PC->SetInputMode(InputMode);
 	}
 	if (Widget.IsValid())
@@ -233,8 +236,7 @@ void FAccelByteLoginPanel::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessf
 	{
 		if (!bWasSuccessful)
 		{
-			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-			AsyncTask(ENamedThreads::GameThread, [WeakThis, Error]()
+			AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak(), Error]()
 			{
 				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 				{
@@ -251,8 +253,7 @@ void FAccelByteLoginPanel::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessf
 		FOnlineSubsystemAccelByte* ABSubsystem = static_cast<FOnlineSubsystemAccelByte*>(IOnlineSubsystem::Get());
 		if (!ABSubsystem)
 		{
-			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-			AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+			AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 			{
 				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 				{
@@ -277,8 +278,7 @@ void FAccelByteLoginPanel::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessf
 		}
 		if (!ApiClient.IsValid())
 		{
-			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-			AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+			AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 			{
 				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 				{
@@ -295,8 +295,7 @@ void FAccelByteLoginPanel::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessf
 		Api::UserPtr UserApi = ApiClient->GetUserApi().Pin();
 		if (!UserApi.IsValid())
 		{
-			TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-			AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+			AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 			{
 				if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 				{
@@ -317,8 +316,7 @@ void FAccelByteLoginPanel::OnLoginComplete(int32 LocalUserNum, bool bWasSuccessf
 		UserApi->Upgrade(User, Pass, OnUpgradeSuccessHandler, OnUpgradeErrorHandler);
 		return;
 	}
-	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-	AsyncTask(ENamedThreads::GameThread, [WeakThis, bWasSuccessful, Error]()
+	AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak(), bWasSuccessful, Error]()
 	{
 		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 		{
@@ -365,8 +363,7 @@ void FAccelByteLoginPanel::OnLogoutClicked()
 	Identity->Logout(0);
 	if (!ABIdentity)
 	{
-		TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-		AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+		AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 		{
 			if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 			{
@@ -380,8 +377,7 @@ void FAccelByteLoginPanel::OnLogoutClicked()
 void FAccelByteLoginPanel::OnLogoutComplete(int32 LocalUserNum, bool bWasSuccessful, const FOnlineErrorAccelByte& Error)
 {
 	UnbindLogoutDelegate();
-	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+	AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 	{
 		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 		{
@@ -459,8 +455,7 @@ void FAccelByteLoginPanel::OnRegisterClicked(const FString& Username, const FStr
 
 void FAccelByteLoginPanel::OnUpgradeSuccess(const FAccountUserData& Response)
 {
-	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+	AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 	{
 		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 		{
@@ -477,8 +472,7 @@ void FAccelByteLoginPanel::OnUpgradeSuccess(const FAccountUserData& Response)
 
 void FAccelByteLoginPanel::OnUpgradeError(int32 ErrorCode, const FString& ErrorMessage)
 {
-	TWeakPtr<FAccelByteLoginPanel> WeakThis = AsShared();
-	AsyncTask(ENamedThreads::GameThread, [WeakThis, ErrorCode, ErrorMessage]()
+	AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak(), ErrorCode, ErrorMessage]()
 	{
 		if (TSharedPtr<FAccelByteLoginPanel> StrongThis = WeakThis.Pin())
 		{
@@ -531,11 +525,47 @@ void FAccelByteLoginPanel::RefreshWidget()
 void FAccelByteLoginPanel::SetState(ELoginPanelState NewState)
 {
 	State = NewState;
+	// Broadcast login success when transitioning to LoggedIn state
+	if (NewState == ELoginPanelState::LoggedIn)
+	{
+		// Get the API client to pass to callbacks
+		AccelByte::FApiClientPtr ApiClient;
+		FOnlineSubsystemAccelByte* ABSubsystem = static_cast<FOnlineSubsystemAccelByte*>(IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM));
+		if (ABSubsystem)
+		{
+			ApiClient = ABSubsystem->GetApiClient(0);
+		}
+		OnLoginSuccessDelegate.Broadcast(ApiClient);
+	}
 }
 
 void FAccelByteLoginPanel::SetError(const FString& InError)
 {
 	ErrorText = InError;
+}
+
+FDelegateHandle FAccelByteLoginPanel::RegisterOnLoginSuccess(FOnLoginPanelLoginSuccess::FDelegate&& Callback)
+{
+	FDelegateHandle Handle = OnLoginSuccessDelegate.Add(MoveTemp(Callback));
+	
+	// If already logged in, fire the callback immediately
+	if (IsLoggedIn())
+	{
+		// Get the API client to pass to the callback
+		AccelByte::FApiClientPtr ApiClient;
+		FOnlineSubsystemAccelByte* ABSubsystem = static_cast<FOnlineSubsystemAccelByte*>(IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM));
+		if (ABSubsystem)
+		{
+			ApiClient = ABSubsystem->GetApiClient(0);
+		}
+		Callback.Execute(ApiClient);
+	}
+	return Handle;
+}
+
+void FAccelByteLoginPanel::UnregisterOnLoginSuccess(FDelegateHandle Handle)
+{
+	OnLoginSuccessDelegate.Remove(Handle);
 }
 
 void SAccelByteLoginWidget::Construct(const FArguments& InArgs)

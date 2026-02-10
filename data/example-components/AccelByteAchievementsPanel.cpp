@@ -263,8 +263,7 @@ void FAccelByteAchievementsPanel::OnQueryDefinitionsSuccess(const FAccelByteMode
 		Update();
 	}
 
-	TWeakPtr<FAccelByteAchievementsPanel> WeakThis = AsShared();
-	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+	AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 	{
 		if (TSharedPtr<FAccelByteAchievementsPanel> StrongThis = WeakThis.Pin())
 		{
@@ -328,8 +327,7 @@ void FAccelByteAchievementsPanel::OnQueryUserAchievementsSuccess(const FAccelByt
 
 	UE_LOG(LogTemp, Log, TEXT("FAccelByteAchievementsPanel::OnQueryUserAchievementsSuccess - Updated %d user achievements"), Result.Data.Num());
 
-	TWeakPtr<FAccelByteAchievementsPanel> WeakThis = AsShared();
-	AsyncTask(ENamedThreads::GameThread, [WeakThis]()
+	AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak()]()
 	{
 		if (TSharedPtr<FAccelByteAchievementsPanel> StrongThis = WeakThis.Pin())
 		{
@@ -408,8 +406,7 @@ void FAccelByteAchievementsPanel::OnIconDownloadComplete(FHttpRequestPtr Request
 	const int32 Width = ImageWrapper->GetWidth();
 	const int32 Height = ImageWrapper->GetHeight();
 
-	TWeakPtr<FAccelByteAchievementsPanel> WeakThis = AsShared();
-	AsyncTask(ENamedThreads::GameThread, [WeakThis, ItemIndex, Width, Height, RawData]()
+	AsyncTask(ENamedThreads::GameThread, [WeakThis = AsWeak(), ItemIndex, Width, Height, RawData]()
 	{
 		TSharedPtr<FAccelByteAchievementsPanel> StrongThis = WeakThis.Pin();
 		if (!StrongThis.IsValid() || !StrongThis->Entries.IsValidIndex(ItemIndex))
