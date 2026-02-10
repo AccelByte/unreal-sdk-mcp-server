@@ -121,29 +121,12 @@ const server = new Server(
   }
 );
 
-// Handler for resources/list - lists all available symbols and source files
+// Handler for resources/list - lists source files, snippets, and example components
 server.setRequestHandler(ListResourcesRequestSchema, async () => {
   const resources = [];
 
-  Object.keys(osssdk_symbols).forEach((id) => {
-    resources.push({
-      uri: `oss-sdk/cpp://${id}`,
-      name: osssdk_symbols[id].name,
-      description: `${osssdk_symbols[id].type}: ${osssdk_symbols[id].name}`,
-      mimeType: "application/json",
-    });
-  });
-  // Add symbol resources (from XML documentation)
-  Object.keys(unrealsdk_symbols).forEach((id) => {
-    resources.push({
-      uri: `unreal-sdk/cpp://${id}`,
-      name: unrealsdk_symbols[id].name,
-      description: `${unrealsdk_symbols[id].type}: ${unrealsdk_symbols[id].name}`,
-      mimeType: "application/json",
-    });
-  });
-
-
+  // Note: Symbols are not listed as resources to avoid clutter.
+  // Use search_symbols and describe_symbols tools to find and access symbols.
 
   // Add source file resources
   if (sourceIndex) {
