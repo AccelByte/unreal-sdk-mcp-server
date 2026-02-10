@@ -6,6 +6,10 @@ import {
   ListToolsRequestSchema,
   CallToolRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
+import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
+import express from "express";
+import cors from "cors";
+import { randomUUID } from "node:crypto";
 import { fileURLToPath } from "url";
 import { dirname, join, basename } from "path";
 import fs from "fs";
@@ -1159,12 +1163,107 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 });
 
-// Start the server with stdio transport (required for Cursor)
-async function main() {
+// Parse command-line arguments
+function parseArgs() {
+  const args = {
+    transport: 'stdio', // Default to stdio for Cursor compatibility
+    port: 3000,
+  };
+  
+  for (const arg of process.argv.slice(2)) {
+    if (arg.startsWith('--transport=')) {
+      args.transport = arg.split('=')[1];
+    } else if (arg.startsWith('--port=')) {
+      args.port = parseInt(arg.split('=')[1], 10);
+    }
+  }
+  
+  return args;
+}
+
+// Start server with stdio transport
+async function startStdioServer() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  // Log to stderr (stdout is reserved for JSON-RPC messages in MCP)
-  console.error("MCP server running (stdio transport)");
+  console.error("MCP server running on stdio transport");
+}
+
+// Start server with SSE transport
+async function startSseServer(port) {
+  const app = express();
+  
+  // Enable CORS for browser-based clients
+  app.use(
+    cors({
+      exposedHeaders: ['Content-Type'],
+      origin: '*'
+    })
+  );
+  
+  app.use(express.json());
+  
+  // SSE endpoint
+  app.get('/sse', async (req, res) => {
+    console.error('SSE client connected');
+    
+    // Create SSE transport
+    const transport = new SSEServerTransport('/message', res);
+    await server.connect(transport);
+    
+    // Set headers for SSE
+    res.writeHead(200, {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-cache',
+      'Connection': 'keep-alive'
+    });
+    
+    // Keep connection alive
+    req.on('close', () => {
+      console.error('SSE client disconnected');
+      transport.close();
+    });
+  });
+  
+  // Message endpoint for client requests
+  app.post('/message', express.text({ type: '*/*' }), async (req, res) => {
+    console.error('Received message request');
+    // The SSEServerTransport will handle this automatically
+    res.status(202).end();
+  });
+  
+  app.listen(port, () => {
+    console.error(`MCP server running on SSE transport at http://localhost:${port}`);
+    console.error(`SSE endpoint: http://localhost:${port}/sse`);
+    console.error(`Message endpoint: http://localhost:${port}/message`);
+  });
+  
+  // Handle shutdown
+  process.on('SIGINT', () => {
+    console.error('Shutting down SSE server...');
+    process.exit(0);
+  });
+}
+
+// Main function to start the appropriate transport
+async function main() {
+  const args = parseArgs();
+  
+  console.error(`Starting MCP server with ${args.transport} transport...`);
+  
+  switch (args.transport) {
+    case 'stdio':
+      await startStdioServer();
+      break;
+    case 'http':
+    case 'sse':
+      // Use SSE transport for HTTP mode (v1 SDK)
+      await startSseServer(args.port);
+      break;
+    default:
+      console.error(`Unknown transport: ${args.transport}`);
+      console.error('Valid options: stdio, http, sse');
+      process.exit(1);
+  }
 }
 
 main().catch((error) => {

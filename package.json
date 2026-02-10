@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
+    "start:http": "node server.js --transport=http --port=3000",
+    "start:sse": "node server.js --transport=sse --port=3000",
     "generate-cache": "node generateCache.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +15,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.25.2",
+    "@modelcontextprotocol/sdk": "^1.26.0",
     "adm-zip": "^0.5.16",
+    "cors": "^2.8.5",
     "express": "^5.2.1",
     "fast-xml-parser": "^5.3.3",
-    "zod": "^4.3.5"
+    "zod": "^4.3.5",
+    "eventsource-parser": "^3.0.0"
   }
 }
