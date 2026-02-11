@@ -1,0 +1,314 @@
+{
+  "guides": [
+    {
+      "id": "get-apiclient",
+      "title": "How to Get AccelByte API Client Instance",
+      "keywords": ["accelbyteinstance", "apiclient", "instance", "initialize", "setup", "access sdk", "get api", "obtain client", "fapilientptr"],
+      "source_url": "https://docs.accelbyte.io/gaming-services/knowledge-base/sdk-tools/sdk-guides/accelbyte-singleton-in-sdk/manage-ags-ue-sdk-accelbyte-instance/",
+      "overview": "There are two main approaches to obtain an AccelByte API client instance in Unreal Engine. The recommended approach is using the AccelByte OnlineSubsystem (OSS), but you can also create and manage instances manually.",
+      "methods": [
+        {
+          "name": "Via AccelByte OSS (Recommended)",
+          "when_to_use": "When using AccelByte OnlineSubsystem plugin for game client. This is the recommended approach for most game implementations.",
+          "prerequisites": [
+            "OnlineSubsystemAccelByte module in Build.cs",
+            "Player must be logged in via OSS",
+            "Include OnlineSubsystemAccelByte.h"
+          ],
+          "code_template": "#include \"OnlineSubsystemAccelByte.h\"\n#include \"Core/AccelByteApiClient.h\"\n\nauto ABSubsystem = IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM);\nif (ABSubsystem == nullptr)\n{\n    return;\n}\n\nFOnlineSubsystemAccelByte* AccelByteOSS = static_cast<FOnlineSubsystemAccelByte*>(ABSubsystem);\nif (AccelByteOSS == nullptr)\n{\n    return;\n}\n\n// For game client - use local player number\nAccelByte::FApiClientPtr ApiClient = AccelByteOSS->GetApiClient(LocalPlayerNum);\nif (ApiClient.IsValid())\n{\n    // Use ApiClient to access APIs\n    auto UserApi = ApiClient->GetUserApi().Pin();\n}",
+          "steps": [
+            "1. Include OnlineSubsystemAccelByte.h and Core/AccelByteApiClient.h",
+            "2. Get IOnlineSubsystem with ACCELBYTE_SUBSYSTEM constant",
+            "3. Cast to FOnlineSubsystemAccelByte*",
+            "4. Call GetApiClient(LocalPlayerNum) to get FApiClientPtr",
+            "5. Validate with IsValid() before using",
+            "6. Access specific APIs via GetXxxApi().Pin() methods"
+          ]
+        },
+        {
+          "name": "Via AccelByte OSS with Custom ID",
+          "when_to_use": "When using SDK without OSS plugin, or need custom ApiClient identifier",
+          "prerequisites": [
+            "OnlineSubsystemAccelByte module",
+            "AccelByte instance available"
+          ],
+          "code_template": "#include \"OnlineSubsystemAccelByte.h\"\n#include \"Core/AccelByteApiClient.h\"\n\nauto ABSubsystem = IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM);\nFOnlineSubsystemAccelByte* AccelByteOSS = static_cast<FOnlineSubsystemAccelByte*>(ABSubsystem);\n\nconst FString ApiClientId = TEXT(\"YOUR_CUSTOM_IDENTIFIER\");\nFAccelByteInstancePtr AccelByteInstancePtr = AccelByteOSS->GetAccelByteInstance().Pin();\nauto ApiClient = AccelByteInstancePtr->GetApiClient(ApiClientId);",
+          "steps": [
+            "1. Get AccelByte OSS instance",
+            "2. Call GetAccelByteInstance().Pin()",
+            "3. Use GetApiClient(CustomId) with your identifier",
+            "4. Ensure proper lifetime management of AccelByteInstancePtr"
+          ]
+        },
+        {
+          "name": "Create Manual AccelByte Instance",
+          "when_to_use": "When not using OSS plugin at all - complete manual management",
+          "prerequisites": [
+            "AccelByteUe4Sdk module in Build.cs",
+            "Include AccelByteUe4SdkModule.h"
+          ],
+          "code_template": "#include \"AccelByteUe4SdkModule.h\"\n\nauto AccelByteInstancePtr = IAccelByteUe4SdkModuleInterface::Get().CreateAccelByteInstance();\nif (!AccelByteInstancePtr.IsValid())\n{\n    return;\n}\n\n// You must manage the lifetime of AccelByteInstancePtr\n// Store it as a member variable or ensure it stays alive",
+          "steps": [
+            "1. Include AccelByteUe4SdkModule.h",
+            "2. Call IAccelByteUe4SdkModuleInterface::Get().CreateAccelByteInstance()",
+            "3. Store AccelByteInstancePtr to manage its lifetime",
+            "4. Get ApiClient from the instance as needed"
+          ]
+        },
+        {
+          "name": "For Game Server",
+          "when_to_use": "When implementing dedicated server functionality",
+          "prerequisites": [
+            "OnlineSubsystemAccelByte configured for server",
+            "Server credentials configured"
+          ],
+          "code_template": "FAccelByteInstancePtr AccelByteInstancePtr = AccelByteOSS->GetAccelByteInstance().Pin();\nauto ServerApiClient = AccelByteInstancePtr->GetServerApiClient();\nServerApiClient->ServerInventory.GetInventories(...);",
+          "steps": [
+            "1. Get AccelByte instance from OSS",
+            "2. Call GetServerApiClient() instead of GetApiClient()",
+            "3. Access server-specific APIs directly (no .Pin() needed)"
+          ]
+        }
+      ],
+      "best_practices": [
+        "Always validate ApiClient with IsValid() before use",
+        "Use TWeakPtr when storing API references (e.g., auto UserApi = ApiClient->GetUserApi().Pin())",
+        "Prefer OSS approach for game client implementations",
+        "Ensure proper lifetime management of AccelByteInstance when creating manually",
+        "The singleton pattern (FRegistry/FMultiRegistry) is deprecated - do not use",
+        "For game servers, use GetServerApiClient() instead of GetApiClient()"
+      ],
+      "related_snippets": {
+        "areas": ["access", "auth"],
+        "tags": ["authentication", "login"]
+      },
+      "related_components": ["AccelByteLoginPanel"],
+      "common_pitfalls": [
+        "Forgetting to check IsValid() on ApiClient - leads to crashes",
+        "Using deprecated FRegistry::GetApiClient() instead of instance-based approach",
+        "Not managing AccelByteInstance lifetime when creating manually",
+        "Forgetting to Pin() weak API pointers before use",
+        "Using wrong GetApiClient method for game server (should use GetServerApiClient)"
+      ]
+    },
+    {
+      "id": "add-api-call",
+      "title": "How to Add New API Calls to Unreal SDK",
+      "keywords": ["add api", "extend sdk", "new endpoint", "custom api", "add function", "new service"],
+      "source_url": "https://docs.accelbyte.io/gaming-services/knowledge-base/sdk-tools/sdk-guides/adding-api-calls/",
+      "overview": "Step-by-step guide to add new API endpoints to the AccelByte Unreal SDK. This involves creating models for request/response, declaring API functions, and optionally exposing to Blueprint.",
+      "directories": {
+        "models_public": "Source/AccelByteUe4Sdk/Public/Models",
+        "api_public": "Source/AccelByteUe4Sdk/Public/Api",
+        "api_private": "Source/AccelByteUe4Sdk/Private/Api",
+        "blueprints_public": "Source/AccelByteUe4Sdk/Public/Blueprints",
+        "blueprints_private": "Source/AccelByteUe4Sdk/Private/Blueprints"
+      },
+      "file_naming": {
+        "api_header": "AccelByte<ServiceName>Api.h",
+        "api_impl": "AccelByte<ServiceName>Api.cpp",
+        "models": "AccelByte<ServiceName>Models.h",
+        "blueprint_header": "AB<ServiceName>.h",
+        "blueprint_impl": "AB<ServiceName>.cpp"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "Find endpoint in AccelByte API Explorer",
+          "details": "Navigate to AccelByte API Explorer and locate the endpoint you want to add. Note the HTTP method, URL path, query parameters, request body, and response format."
+        },
+        {
+          "step": 2,
+          "action": "Add response model struct",
+          "file": "Public/Models/AccelByte<Service>Models.h",
+          "details": "Create a USTRUCT that matches the API response JSON structure. Use UPROPERTY macros for each field.",
+          "code_template": "USTRUCT(BlueprintType)\nstruct ACCELBYTEUE4SDK_API FAccelByteModels<YourModelName>\n{\n    GENERATED_BODY()\n\n    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"AccelByte | <Service> | Models\")\n    FString YourField{};\n\n    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"AccelByte | <Service> | Models\")\n    TArray<FString> YourArrayField{};\n};",
+          "example": "For ListGlobalStatItems endpoint returning {data: [...], paging: {...}}, create FAccelByteModelsGlobalStatItemPagingSlicedResult with Data and Paging fields"
+        },
+        {
+          "step": 3,
+          "action": "Declare API function",
+          "file": "Public/Api/AccelByte<Service>Api.h",
+          "details": "Add function declaration with THandler for success callback and FErrorHandler for error callback. Return FAccelByteTaskWPtr for async task management.",
+          "code_template": "FAccelByteTaskWPtr YourFunctionName(\n    THandler<FAccelByteModels<YourResponse>> const& OnSuccess,\n    FErrorHandler const& OnError,\n    // Add your parameters here\n    FString const& Param1 = TEXT(\"\"),\n    int32 Param2 = 0\n);",
+          "example": "FAccelByteTaskWPtr ListGlobalStatItems(THandler<FAccelByteModelsGlobalStatItemPagingSlicedResult> const& OnSuccess, FErrorHandler const& OnError, TArray<FString> const& StatCodes = {}, int32 Limit = 20, int32 Offset = 0);"
+        },
+        {
+          "step": 4,
+          "action": "Implement API function",
+          "file": "Private/Api/AccelByte<Service>Api.cpp",
+          "details": "Build the URL using server URL from settings, construct query parameters, and call HttpClient.ApiRequest with appropriate HTTP method.",
+          "code_template": "FAccelByteTaskWPtr <Service>::YourFunctionName(\n    THandler<FAccelByteModels<YourResponse>> const& OnSuccess,\n    FErrorHandler const& OnError,\n    FString const& Param1,\n    int32 Param2)\n{\n    FReport::Log(FString(__FUNCTION__));\n    \n    const FString Url = FString::Printf(TEXT(\"%s/v1/public/namespaces/%s/<endpoint>\"),\n        *SettingsRef.<Service>ServerUrl,\n        *CredentialsRef->GetNamespace());\n    \n    TMultiMap<FString, FString> QueryParams;\n    QueryParams.Emplace(TEXT(\"param1\"), Param1);\n    QueryParams.Emplace(TEXT(\"param2\"), FString::FromInt(Param2));\n    \n    return HttpClient.ApiRequest(TEXT(\"GET\"), Url, QueryParams, FString(), OnSuccess, OnError);\n}",
+          "example": "See AccelByteStatisticApi.cpp implementation of ListGlobalStatItems for complete example"
+        },
+        {
+          "step": 5,
+          "action": "Expose to Blueprint (optional)",
+          "file": "Public/Blueprints/AB<Service>.h and Private/Blueprints/AB<Service>.cpp",
+          "details": "Create UFUNCTION wrappers with dynamic delegates. Note: Blueprint doesn't support function overloading, so create separate functions for different parameter sets.",
+          "code_template": "// In header:\nDECLARE_DYNAMIC_DELEGATE_OneParam(FD<ModelName>Response, FAccelByteModels<ModelName>, Response);\n\nUFUNCTION(BlueprintCallable, Category = \"AccelByte | <Service> | Api\")\nvoid YourFunctionName(\n    FD<ModelName>Response const& OnSuccess,\n    FDErrorHandler const& OnError\n);\n\n// In cpp:\nvoid UAB<Service>::YourFunctionName(\n    FD<ModelName>Response const& OnSuccess,\n    FDErrorHandler const& OnError)\n{\n    const auto ApiPtr = ApiClientPtr->Get<Service>Api().Pin();\n    if (ApiPtr.IsValid())\n    {\n        ApiPtr->YourFunctionName(\n            THandler<FAccelByteModels<ModelName>>::CreateLambda(\n                [OnSuccess](FAccelByteModels<ModelName> const& Response)\n                {\n                    OnSuccess.ExecuteIfBound(Response);\n                }\n            ),\n            FErrorHandler::CreateLambda(\n                [OnError](int32 Code, FString const& Message)\n                {\n                    OnError.ExecuteIfBound(Code, Message);\n                }\n            )\n        );\n    }\n    else\n    {\n        OnError.ExecuteIfBound(static_cast<int32>(AccelByte::ErrorCodes::InvalidRequest), TEXT(\"Api already destroyed!\"));\n    }\n}"
+        }
+      ],
+      "best_practices": [
+        "Always use FReport::Log(FString(__FUNCTION__)) at the start of API function implementations",
+        "Validate all parameters before making HTTP calls",
+        "Use FAccelByteTaskWPtr return type for async operations",
+        "Follow existing naming conventions exactly (AccelByte<Service>Api, FAccelByteModels<Name>)",
+        "For Blueprint: Create separate functions for different parameter sets (no overloading)",
+        "Use THandler and FErrorHandler for callbacks consistently",
+        "Check API pointer validity with IsValid() before calling methods",
+        "Use Pin() when accessing weak API pointers"
+      ],
+      "related_snippets": {
+        "query": "HttpClient ApiRequest"
+      },
+      "common_pitfalls": [
+        "Forgetting FReport::Log in function implementation",
+        "Incorrect URL formatting (check server URL setting name)",
+        "Not handling optional parameters in query params properly",
+        "Forgetting ACCELBYTEUE4SDK_API macro in model structs",
+        "Using function overloading in Blueprint wrappers (not supported)"
+      ]
+    },
+    {
+      "id": "authentication",
+      "title": "How to Authenticate Users with AccelByte",
+      "keywords": ["login", "authenticate", "sign in", "credentials", "device id", "email password"],
+      "overview": "AccelByte supports multiple authentication methods including device ID (guest), email/password, and platform accounts. Use the OnlineIdentity interface from AccelByte OSS.",
+      "methods": [
+        {
+          "name": "Device ID Login (Guest Account)",
+          "when_to_use": "For temporary/guest accounts, testing, or allowing users to play without registration",
+          "code_template": "#include \"OnlineSubsystemAccelByte.h\"\n#include \"Interfaces/OnlineIdentityInterface.h\"\n\nauto ABSubsystem = IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM);\nIOnlineIdentityPtr Identity = ABSubsystem->GetIdentityInterface();\n\nFOnlineAccountCredentials Credentials;\nCredentials.Type = TEXT(\"AccelByte\");\nCredentials.Id = TEXT(\"\"); // Empty for device ID\nCredentials.Token = TEXT(\"\"); // Empty for device ID\n\nIdentity->Login(LocalUserNum, Credentials);",
+          "steps": [
+            "1. Get OnlineIdentity interface from OSS",
+            "2. Create FOnlineAccountCredentials with Type='AccelByte'",
+            "3. Leave Id and Token empty for device ID login",
+            "4. Call Login(LocalUserNum, Credentials)",
+            "5. Bind to OnLoginComplete delegate to handle result"
+          ]
+        },
+        {
+          "name": "Email and Password Login",
+          "when_to_use": "For permanent user accounts with credentials",
+          "code_template": "FOnlineAccountCredentials Credentials;\nCredentials.Type = TEXT(\"AccelByte\");\nCredentials.Id = UserEmail;\nCredentials.Token = UserPassword;\n\nIdentity->Login(LocalUserNum, Credentials);",
+          "steps": [
+            "1. Get OnlineIdentity interface",
+            "2. Set Credentials.Id to user's email",
+            "3. Set Credentials.Token to password",
+            "4. Call Login and handle OnLoginComplete"
+          ]
+        }
+      ],
+      "best_practices": [
+        "Always bind OnLoginComplete delegate before calling Login",
+        "Check login success status in callback before accessing ApiClient",
+        "Store ApiClient after successful login for use by other systems",
+        "Use device ID for development/testing, proper auth for production",
+        "Implement proper error handling for login failures"
+      ],
+      "related_snippets": {
+        "areas": ["access", "auth"],
+        "tags": ["authentication", "login", "device"]
+      },
+      "related_components": ["AccelByteLoginPanel"]
+    },
+    {
+      "id": "matchmaking",
+      "title": "How to Implement Matchmaking with AccelByte",
+      "keywords": ["matchmaking", "find match", "quick play", "session", "multiplayer", "p2p"],
+      "overview": "AccelByte matchmaking (V2) uses party sessions and match pools. Create a party session first, then start matchmaking to find opponents.",
+      "prerequisites": [
+        "OnlineSubsystem module in Build.cs",
+        "Session templates configured in AccelByte Admin Portal",
+        "Match pools configured in session template",
+        "bEnableV2Sessions=true in DefaultEngine.ini"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Configure session templates in Admin Portal",
+          "details": "Go to Multiplayer > Session Template and create party session template with match pool configuration"
+        },
+        {
+          "step": 2,
+          "action": "Create party session",
+          "details": "Use OnlineSession interface to create a party session with SETTING_SESSION_TYPE_PARTY_SESSION"
+        },
+        {
+          "step": 3,
+          "action": "Start matchmaking",
+          "details": "Call StartMatchmaking with match pool settings and search handle"
+        },
+        {
+          "step": 4,
+          "action": "Handle match found",
+          "details": "OnStartMatchmakingComplete callback fires when match is found"
+        },
+        {
+          "step": 5,
+          "action": "Join session",
+          "details": "Call JoinSession with the matched session from search results"
+        }
+      ],
+      "best_practices": [
+        "Always create party session before matchmaking",
+        "Configure session templates in Admin Portal first",
+        "Use V2 sessions (bEnableV2Sessions=true)",
+        "Handle matchmaking cancellation properly",
+        "Add delay before joining to allow P2P host initialization"
+      ],
+      "related_snippets": {
+        "areas": ["matchmaking", "session"],
+        "tags": ["multiplayer", "p2p", "party"]
+      },
+      "related_components": ["AccelByteMatchmakingPanel"],
+      "common_pitfalls": [
+        "Not configuring session templates in Admin Portal first",
+        "Forgetting to create party session before matchmaking",
+        "Joining session immediately without waiting for P2P host setup",
+        "Not handling matchmaking cancellation edge cases"
+      ]
+    },
+    {
+      "id": "achievements",
+      "title": "How to Query and Display Player Achievements",
+      "keywords": ["achievements", "unlock", "progress", "query achievements"],
+      "overview": "Query achievement definitions and user progress using the Achievement API",
+      "prerequisites": [
+        "AccelByteUe4Sdk module",
+        "Achievements configured in Admin Portal",
+        "ApiClient obtained after login"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Get Achievement API",
+          "code_template": "auto AchievementApi = ApiClient->GetApiPtr<AccelByte::Api::Achievement>();"
+        },
+        {
+          "step": 2,
+          "action": "Query achievement definitions",
+          "code_template": "AchievementApi->QueryAchievements(Language, SortBy, OnSuccess, OnError, Offset, Limit);"
+        },
+        {
+          "step": 3,
+          "action": "Query user achievement progress",
+          "code_template": "AchievementApi->QueryUserAchievements(SortBy, OnSuccess, OnError, Offset, Limit, PreferUnlocked);"
+        },
+        {
+          "step": 4,
+          "action": "Download achievement icons",
+          "details": "Use HTTP module to download images from achievement icon URLs"
+        }
+      ],
+      "best_practices": [
+        "Query definitions once and cache them",
+        "Query user achievements when needed to get latest progress",
+        "Download and cache achievement icons",
+        "Use Pin() when accessing weak Achievement API pointer"
+      ],
+      "related_components": ["AccelByteAchievementsPanel"]
+    }
+  ]
+}

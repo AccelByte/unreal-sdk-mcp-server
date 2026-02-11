@@ -575,6 +575,30 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           required: ["symbolIds"],
         },
       },
+      {
+        name: "get_accelbyte_how_to",
+        description: "Get implementation best practices and how-to guides for common AccelByte tasks. Provides step-by-step instructions, code templates, and links to related snippets and example components. Use this when you need guidance on how to properly implement AccelByte features (e.g., 'How to get AccelByte API client', 'How to add new API calls', 'How to authenticate users', etc.).",
+        inputSchema: {
+          type: "object",
+          properties: {
+            topic: {
+              type: "string",
+              description: "The topic or question you need guidance on (e.g., 'get api client', 'add api call', 'authentication', 'matchmaking'). Supports partial matches and keywords.",
+            },
+            include_code_examples: {
+              type: "boolean",
+              description: "Whether to include related code snippets from the snippet index (default: true)",
+              default: true,
+            },
+            include_components: {
+              type: "boolean",
+              description: "Whether to include related example components (default: true)",
+              default: true,
+            },
+          },
+          required: ["topic"],
+        },
+      },
     ],
   };
 });
@@ -1123,6 +1147,202 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
               text: JSON.stringify({
                 files: results,
                 count: results.length,
+                sdkRequirement: SDK_REQUIREMENT_NOTE,
+              }, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "get_accelbyte_how_to": {
+        const { topic, include_code_examples = true, include_components = true } = args || {};
+        
+        if (!topic || typeof topic !== 'string') {
+          throw new Error("topic is required and must be a string");
+        }
+
+        // Load best practices JSON
+        const bestPracticesPath = join(__dirname, "data", "best-practices.json");
+        if (!fs.existsSync(bestPracticesPath)) {
+          throw new Error("Best practices data not found. Please ensure data/best-practices.json exists.");
+        }
+
+        const bestPractices = JSON.parse(fs.readFileSync(bestPracticesPath, "utf8"));
+        
+        if (!bestPractices.guides || !Array.isArray(bestPractices.guides)) {
+          throw new Error("Invalid best practices data structure");
+        }
+
+        // Fuzzy match topic to guides
+        const topicLower = topic.toLowerCase();
+        const scoredGuides = [];
+
+        for (const guide of bestPractices.guides) {
+          let score = 0;
+          let matched = false;
+
+          // Check keywords
+          if (guide.keywords && Array.isArray(guide.keywords)) {
+            for (const keyword of guide.keywords) {
+              if (keyword.toLowerCase().includes(topicLower) || topicLower.includes(keyword.toLowerCase())) {
+                score += 10;
+                matched = true;
+              }
+            }
+          }
+
+          // Check title
+          if (guide.title && guide.title.toLowerCase().includes(topicLower)) {
+            score += 20;
+            matched = true;
+          }
+
+          // Check id
+          if (guide.id && guide.id.toLowerCase().includes(topicLower)) {
+            score += 15;
+            matched = true;
+          }
+
+          if (matched) {
+            scoredGuides.push({ guide, score });
+          }
+        }
+
+        // Sort by score and take best match
+        scoredGuides.sort((a, b) => b.score - a.score);
+        
+        if (scoredGuides.length === 0) {
+          return {
+            content: [
+              {
+                type: "text",
+                text: JSON.stringify({
+                  error: `No best practice guide found for topic: "${topic}"`,
+                  availableTopics: bestPractices.guides.map(g => ({
+                    id: g.id,
+                    title: g.title,
+                    keywords: g.keywords,
+                  })),
+                }, null, 2),
+              },
+            ],
+          };
+        }
+
+        const selectedGuide = scoredGuides[0].guide;
+        const result = {
+          id: selectedGuide.id,
+          title: selectedGuide.title,
+          source_url: selectedGuide.source_url,
+          overview: selectedGuide.overview,
+          methods: selectedGuide.methods,
+          steps: selectedGuide.steps,
+          directories: selectedGuide.directories,
+          file_naming: selectedGuide.file_naming,
+          best_practices: selectedGuide.best_practices,
+          common_pitfalls: selectedGuide.common_pitfalls,
+          related_content: {},
+        };
+
+        // Enhance with code examples from snippet index
+        if (include_code_examples && snippetIndex && selectedGuide.related_snippets) {
+          const relatedSnippets = [];
+
+          // Search by area
+          if (selectedGuide.related_snippets.areas) {
+            for (const [snippetId, snippet] of Object.entries(snippetIndex.snippets)) {
+              if (selectedGuide.related_snippets.areas.includes(snippet.area)) {
+                relatedSnippets.push({
+                  id: snippet.id,
+                  uri: snippet.uri,
+                  name: snippet.name,
+                  function: snippet.function,
+                  area: snippet.area,
+                  file: snippet.file,
+                });
+              }
+            }
+          }
+
+          // Search by tags
+          if (selectedGuide.related_snippets.tags && Array.isArray(selectedGuide.related_snippets.tags)) {
+            for (const [snippetId, snippet] of Object.entries(snippetIndex.snippets)) {
+              if (snippet.tags && Array.isArray(snippet.tags)) {
+                const hasAllTags = selectedGuide.related_snippets.tags.every(tag => 
+                  snippet.tags.some(snippetTag => snippetTag.toLowerCase().includes(tag.toLowerCase()))
+                );
+                if (hasAllTags && !relatedSnippets.find(s => s.id === snippet.id)) {
+                  relatedSnippets.push({
+                    id: snippet.id,
+                    uri: snippet.uri,
+                    name: snippet.name,
+                    function: snippet.function,
+                    area: snippet.area,
+                    file: snippet.file,
+                  });
+                }
+              }
+            }
+          }
+
+          // Search by query string
+          if (selectedGuide.related_snippets.query) {
+            const queryLower = selectedGuide.related_snippets.query.toLowerCase();
+            for (const [snippetId, snippet] of Object.entries(snippetIndex.snippets)) {
+              const matchesQuery = 
+                snippet.name?.toLowerCase().includes(queryLower) ||
+                snippet.function?.toLowerCase().includes(queryLower) ||
+                snippet.content?.toLowerCase().includes(queryLower);
+              
+              if (matchesQuery && !relatedSnippets.find(s => s.id === snippet.id)) {
+                relatedSnippets.push({
+                  id: snippet.id,
+                  uri: snippet.uri,
+                  name: snippet.name,
+                  function: snippet.function,
+                  area: snippet.area,
+                  file: snippet.file,
+                });
+              }
+            }
+          }
+
+          // Limit to 10 snippets
+          result.related_content.snippets = relatedSnippets.slice(0, 10);
+        }
+
+        // Enhance with related example components
+        if (include_components && exampleComponentsIndex && selectedGuide.related_components) {
+          const relatedComponents = [];
+          
+          for (const componentName of selectedGuide.related_components) {
+            // Try to find component by matching name
+            for (const [componentId, component] of Object.entries(exampleComponentsIndex.components)) {
+              if (component.controllerClass?.includes(componentName) || 
+                  component.uiWidgetClass?.includes(componentName) ||
+                  componentId.includes(componentName.toLowerCase())) {
+                relatedComponents.push({
+                  id: component.id,
+                  service: component.service,
+                  description: component.description,
+                  controllerClass: component.controllerClass,
+                  uiWidgetClass: component.uiWidgetClass,
+                  fileResourceUris: component.fileResourceUris,
+                });
+                break;
+              }
+            }
+          }
+
+          result.related_content.components = relatedComponents;
+        }
+
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify({
+                guide: result,
                 sdkRequirement: SDK_REQUIREMENT_NOTE,
               }, null, 2),
             },

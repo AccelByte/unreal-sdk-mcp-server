@@ -100,7 +100,7 @@ If any cache is missing, you'll see warnings instructing you to run `generateCac
 
 ## Tools
 
-The server provides tools for searching and retrieving SDK information and for installing the Unreal SDK. Tools that return or suggest AccelByte code (search_symbols, search_snippets, search_example_components, describe_symbols, describe_example_components) include a top-level `sdkRequirement` field in their response stating that the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) must be installed for the code to work and that `install_unreal_sdk` can be used if needed.
+The server provides tools for searching and retrieving SDK information, getting implementation guidance, and installing the Unreal SDK. Tools that return or suggest AccelByte code (search_symbols, search_snippets, search_example_components, describe_symbols, describe_example_components, get_accelbyte_how_to) include a top-level `sdkRequirement` field in their response stating that the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) must be installed for the code to work and that `install_unreal_sdk` can be used if needed.
 
 ### 1. `search_symbols`
 
@@ -193,7 +193,45 @@ Get detailed information about specific symbols, including their fields, methods
 }
 ```
 
-### 4. `install_unreal_sdk`
+### 4. `get_accelbyte_how_to`
+
+Get implementation best practices and how-to guides for common AccelByte tasks. Provides step-by-step instructions, code templates, and links to related snippets and example components.
+
+**Parameters:**
+- `topic` (required, string): The topic or question you need guidance on (e.g., `"get api client"`, `"add api call"`, `"authentication"`, `"matchmaking"`). Supports partial matches and keywords.
+- `include_code_examples` (optional, boolean): Whether to include related code snippets from the snippet index (default: `true`)
+- `include_components` (optional, boolean): Whether to include related example components (default: `true`)
+
+**Available Topics:**
+- **get-apiclient** - How to Get AccelByte API Client Instance
+- **add-api-call** - How to Add New API Calls to Unreal SDK
+- **authentication** - How to Authenticate Users with AccelByte
+- **matchmaking** - How to Implement Matchmaking with AccelByte
+- **achievements** - How to Query and Display Player Achievements
+
+**Returns:**
+- `guide`: Structured guide with:
+  - `id`, `title`, `source_url`: Basic metadata
+  - `overview`: Description of the topic
+  - `methods`: Different approaches with code templates, prerequisites, and steps
+  - `steps`: Overall implementation steps (for topics with sequential processes)
+  - `best_practices`: Recommended practices
+  - `common_pitfalls`: Things to avoid
+  - `related_content`: Related snippets and example components (if enabled)
+- `sdkRequirement`: SDK installation note
+
+**Example:**
+```json
+{
+  "topic": "get api client",
+  "include_code_examples": true,
+  "include_components": true
+}
+```
+
+See [BEST_PRACTICES.md](BEST_PRACTICES.md) for detailed documentation.
+
+### 5. `install_unreal_sdk`
 
 Download from GitHub and install AccelByte Unreal components into an Unreal project; optionally update `.uproject`, Build files, and DefaultEngine.ini. Supports the **AccelByte Game SDK**, **AccelByte OSS** (Online Subsystem), and **AccelByteNetworkUtilities**. All plugins are installed under `Plugins/Accelbyte/` with full integration (plugin entries, Build.cs, Target.cs, and default config where applicable).
 
@@ -325,6 +363,21 @@ Resource URI: snippet://oss/access/login
 
 Returns the snippet with full code content and metadata.
 
+### Example 6: Get AccelByte How-To Guide for API Client
+
+```json
+{
+  "tool": "get_accelbyte_how_to",
+  "arguments": {
+    "topic": "get api client",
+    "include_code_examples": true,
+    "include_components": true
+  }
+}
+```
+
+Returns a comprehensive guide with multiple methods, code templates, and related snippets/components.
+
 ## Troubleshooting
 
 ### Cache Files Missing
@@ -360,9 +413,13 @@ If you see warnings about missing cache files:
 ├── sourceIndexer.js       # Source code and snippet indexing
 ├── generateCache.js       # Cache generation script
 ├── package.json           # Node.js dependencies and scripts
-├── data/                  # XML documentation files
+├── README.md              # This file
+├── BEST_PRACTICES.md      # Best practices tool documentation
+├── TRANSPORT.md           # Transport modes documentation
+├── data/                  # XML documentation and best practices
 │   ├── unreal-sdk/        # Unreal SDK XML files
-│   └── oss-sdk/           # OSS SDK XML files
+│   ├── oss-sdk/           # OSS SDK XML files
+│   └── best-practices.json # Best practices content
 └── .cache/                # Generated cache files (gitignored)
     ├── unreal-sdk-symbols.json
     ├── oss-sdk-symbols.json
