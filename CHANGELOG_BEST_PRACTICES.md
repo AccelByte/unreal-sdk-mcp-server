@@ -44,18 +44,18 @@ Added a new `get_accelbyte_how_to` tool to the MCP server that provides implemen
    - Image downloading
 
 ### 2. Added Tool Definition
-**File:** `server.js` (lines ~578-601)
+**File:** `server.py`
 
-- Added `get_accelbyte_how_to` to the tools array in `ListToolsRequestSchema` handler
+- Added `get_accelbyte_how_to` to the tools list in `list_tools` handler
 - Input schema with three parameters:
   - `topic` (required): Search query for finding relevant guides
   - `include_code_examples` (optional, default true): Include related snippets
   - `include_components` (optional, default true): Include related example components
 
 ### 3. Implemented Tool Handler
-**File:** `server.js` (lines ~1156-1344)
+**File:** `server.py`
 
-- Added `get_accelbyte_how_to` case to `CallToolRequestSchema` handler
+- Added `get_accelbyte_how_to` case to `call_tool` handler
 - Implements fuzzy matching algorithm to find relevant guides:
   - Keyword matching (+10 points each)
   - Title matching (+20 points)
@@ -79,7 +79,7 @@ Added a new `get_accelbyte_how_to` tool to the MCP server that provides implemen
 
 - Added `get_accelbyte_how_to` tool to the Tools section
 - Added usage example (Example 6)
-- Updated project structure to include `best-practices.json` and `BEST_PRACTICES.md`
+- Updated project structure to include `best-practices.json`, `BEST_PRACTICES.md`, and `sdk_installer.py`
 - Updated tool description to include the new tool in SDK requirement note
 
 ## Technical Details
@@ -140,7 +140,6 @@ Best practices JSON schema:
 ## Testing
 
 Manual verification:
-- ✅ JavaScript syntax check passed (`node --check server.js`)
 - ✅ Tool definition added to tools list
 - ✅ Handler implemented with proper error handling
 - ✅ Best practices JSON created with valid structure
@@ -148,8 +147,7 @@ Manual verification:
 
 ## Usage Example
 
-```javascript
-// Get guidance on obtaining an AccelByte API client
+```json
 {
   "tool": "get_accelbyte_how_to",
   "arguments": {
@@ -158,18 +156,20 @@ Manual verification:
     "include_components": true
   }
 }
+```
 
-// Returns:
+Returns:
+```json
 {
   "guide": {
     "id": "get-apiclient",
     "title": "How to Get AccelByte API Client Instance",
     "overview": "...",
-    "methods": [...],
-    "best_practices": [...],
+    "methods": [],
+    "best_practices": [],
     "related_content": {
-      "snippets": [...],
-      "components": [...]
+      "snippets": [],
+      "components": []
     }
   },
   "sdkRequirement": "..."

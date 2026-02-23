@@ -4,28 +4,20 @@ The `get_accelbyte_how_to` tool provides implementation guidance and how-to inst
 
 ## Usage
 
-```javascript
-// Get guidance on obtaining an AccelByte API client
-get_accelbyte_how_to({
-  topic: "get api client",
-  include_code_examples: true,
-  include_components: true
-})
+```json
+{ "topic": "get api client", "include_code_examples": true, "include_components": true }
+```
 
-// Get guidance on adding new API calls
-get_accelbyte_how_to({
-  topic: "add api call"
-})
+```json
+{ "topic": "add api call" }
+```
 
-// Get guidance on authentication
-get_accelbyte_how_to({
-  topic: "authentication"
-})
+```json
+{ "topic": "authentication" }
+```
 
-// Get guidance on matchmaking
-get_accelbyte_how_to({
-  topic: "matchmaking"
-})
+```json
+{ "topic": "matchmaking" }
 ```
 
 ## Parameters

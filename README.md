@@ -13,8 +13,7 @@ The server uses a cache-based approach for fast startup times. Cache files must 
 
 ## Prerequisites
 
-- **Node.js** (v18 or later)
-- **npm** or **yarn**
+- **Python** 3.10 or later
 - **Git** (for cloning the SDK repository during cache generation)
 - **XML Documentation Files**: Doxygen XML files for both Unreal SDK and OSS SDK should be placed in:
   - `data/unreal-sdk/` - Unreal SDK XML files
@@ -26,7 +25,7 @@ The server uses a cache-based approach for fast startup times. Cache files must 
 2. Install dependencies:
 
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
 ## Cache Generation
@@ -35,16 +34,8 @@ Before running the server, you must generate the cache files. This is a one-time
 
 ### Generate All Caches
 
-Run the cache generation script:
-
 ```bash
-npm run generate-cache
-```
-
-Or directly:
-
-```bash
-node generateCache.js
+python generate_cache.py
 ```
 
 This script will:
@@ -75,19 +66,25 @@ The following cache files are created in the `.cache/` directory:
 Once cache files are generated, start the MCP server:
 
 ```bash
-npm start
+python server.py
 ```
 
-Or directly:
-
-```bash
-node server.js
-```
-
-The server runs using stdio transport, which is required for MCP clients like Cursor. The server will:
+The server defaults to stdio transport, which is required for MCP clients like Claude Code and Cursor. It will:
 - Load all cache files on startup
 - Display warnings if cache files are missing or empty
 - Accept MCP protocol requests via stdin/stdout
+
+### SSE Transport
+
+To run with HTTP/SSE transport instead:
+
+```bash
+python server.py --transport=sse --port=3000
+```
+
+SSE endpoints:
+- `http://localhost:3000/sse` — SSE connection endpoint
+- `http://localhost:3000/messages/` — POST message endpoint
 
 ### Server Startup
 
@@ -96,7 +93,7 @@ On startup, the server will log:
 - Source index statistics (files, classes, methods)
 - Snippet count
 
-If any cache is missing, you'll see warnings instructing you to run `generateCache.js`.
+If any cache is missing, you'll see warnings instructing you to run `generate_cache.py`.
 
 ## Tools
 
@@ -384,7 +381,7 @@ Returns a comprehensive guide with multiple methods, code templates, and related
 
 If you see warnings about missing cache files:
 1. Ensure XML files are in `data/unreal-sdk/` and `data/oss-sdk/`
-2. Run `npm run generate-cache` to regenerate all caches
+2. Run `python generate_cache.py` to regenerate all caches
 
 ### Empty Search Results
 
@@ -394,25 +391,26 @@ If you see warnings about missing cache files:
 
 ### Server Won't Start
 
-- Check Node.js version: `node --version` (should be v18+)
-- Verify dependencies are installed: `npm install`
-- Check for syntax errors in cache files (may need to regenerate)
+- Check Python version: `python --version` (should be 3.10+)
+- Verify dependencies are installed: `pip install -r requirements.txt`
+- Check for errors in cache files (may need to regenerate)
 
 ### Source Index Empty
 
 - Ensure the GitHub repository can be cloned
 - Check network connectivity
-- Verify the repository path in `sourceIndexer.js` is correct
+- Verify the repository path in `source_indexer.py` is correct
 
 ## Project Structure
 
 ```
 .
-├── server.js              # Main MCP server implementation
-├── parser.js              # XML parser for symbol extraction
-├── sourceIndexer.js       # Source code and snippet indexing
-├── generateCache.js       # Cache generation script
-├── package.json           # Node.js dependencies and scripts
+├── server.py              # Main MCP server implementation
+├── parser.py              # XML parser for symbol extraction
+├── source_indexer.py      # Source code and snippet indexing
+├── generate_cache.py      # Cache generation script
+├── sdk_installer.py       # Unreal SDK download and installation
+├── requirements.txt       # Python dependencies
 ├── README.md              # This file
 ├── BEST_PRACTICES.md      # Best practices tool documentation
 ├── TRANSPORT.md           # Transport modes documentation
