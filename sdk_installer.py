@@ -24,14 +24,17 @@ GITHUB_API_BASE = "https://api.github.com/repos"
 SDK_COMPONENTS = {
     "sdk": {
         "repo": "AccelByte/accelbyte-unreal-sdk-plugin",
+        "pluginFolderName": "AccelByteUe4Sdk",
         "addDefaultConfig": True,
     },
     "oss": {
         "repo": "AccelByte/accelbyte-unreal-oss",
+        "pluginFolderName": "OnlineSubsystemAccelByte",
         "addDefaultConfig": False,
     },
     "networkUtilities": {
         "repo": "AccelByte/accelbyte-unreal-network-utilities",
+        "pluginFolderName": "AccelByteNetworkUtilities",
         "addDefaultConfig": False,
     },
 }
@@ -661,21 +664,113 @@ async def _download_and_install_one(
 
 
 # ---------------------------------------------------------------------------
+# Script generation
+# ---------------------------------------------------------------------------
+
+def _generate_install_script(
+    project_root: Path,
+    to_install: list,
+    source: str,
+    version: str | None,
+    setup_project_files: bool,
+) -> dict:
+    """Write a .bat file to project_root that clones and installs the SDK components."""
+    lines = [
+        "@echo off",
+        "setlocal enabledelayedexpansion",
+        "",
+        f'set "PROJECT_DIR={project_root}"',
+        f'set "PLUGINS_DIR=%PROJECT_DIR%\\Plugins\\{PLUGINS_SUBFOLDER}"',
+        "",
+        'echo Installing AccelByte SDK components to %PROJECT_DIR%',
+        "echo.",
+        'if not exist "%PLUGINS_DIR%" mkdir "%PLUGINS_DIR%"',
+        "",
+    ]
+
+    total = len(to_install)
+    for i, component_id in enumerate(to_install, 1):
+        config = SDK_COMPONENTS[component_id]
+        repo = config["repo"]
+        folder = config["pluginFolderName"]
+        dest = f'%PLUGINS_DIR%\\{folder}'
+        repo_url = f"https://github.com/{repo}.git"
+
+        lines.append(f"echo [{i}/{total}] Cloning {folder}...")
+
+        if source == "git":
+            cmd = f'git clone --depth 1'
+            if version:
+                cmd += f' --branch {version}'
+            cmd += f' {repo_url} "{dest}"'
+        else:
+            # No ZIP in recent releases; fall back to git clone
+            cmd = f'git clone --depth 1'
+            if version:
+                cmd += f' --branch {version}'
+            cmd += f' {repo_url} "{dest}"'
+
+        lines.append(cmd)
+        lines.append("if %errorlevel% neq 0 goto :error")
+        lines.append("")
+
+    if setup_project_files:
+        lines += [
+            "echo Updating project files...",
+            f'python -c "import asyncio; from sdk_installer import install_unreal_sdk; '
+            f'r = asyncio.run(install_unreal_sdk({{\'projectPath\': \'%PROJECT_DIR%\', '
+            f'\'components\': {json.dumps(to_install)}, \'setupProjectFiles\': True}})); '
+            f'print(r[\'message\'])"',
+            "if %errorlevel% neq 0 echo WARNING: Project file setup failed. Patch manually.",
+            "",
+        ]
+
+    lines += [
+        'echo.',
+        'echo Installation complete!',
+        'echo Next steps: Configure Config\\DefaultEngine.ini with your AGS credentials.',
+        'echo See: https://docs.accelbyte.io/gaming-services/getting-started/setup-game-sdk/unreal-sdk',
+        "goto :end",
+        "",
+        ":error",
+        'echo.',
+        'echo Installation failed. Check the error above.',
+        "exit /b 1",
+        "",
+        ":end",
+        "pause",
+    ]
+
+    script_content = "\r\n".join(lines) + "\r\n"
+    script_path = project_root / "install_accelbyte_sdk.bat"
+    script_path.write_text(script_content, encoding="utf-8")
+
+    return {
+        "success": True,
+        "scriptPath": str(script_path),
+        "message": (
+            f"Script written to {script_path}. "
+            "Run it from a terminal with Git available. "
+            "It will clone the SDK components and place them under Plugins/Accelbyte/."
+        ),
+    }
+
+
+# ---------------------------------------------------------------------------
 # Main entry point
 # ---------------------------------------------------------------------------
 
 async def install_unreal_sdk(params: dict) -> dict:
     """
-    Download (release or git), install, and optionally setup project files.
+    Generate an install_accelbyte_sdk.bat script in the project root.
+    The user runs the script themselves to clone and install the SDK components.
 
     params:
         projectPath: Required. Unreal project root.
         workspaceRoot: Optional. Workspace root for resolving relative projectPath.
         components: Optional. List of ["sdk", "oss", "networkUtilities"]. Default ["sdk"].
-        source: "release" (default) or "git".
-        version: Optional tag/branch.
-        setupProjectFiles: If True, patch .uproject and Build/Target files.
-        regenerateProjectFiles: If True, run UnrealVersionSelector to regenerate project files.
+        version: Optional tag/branch to clone.
+        setupProjectFiles: If True, include project file patching in the script.
     """
     if not params:
         params = {}
@@ -683,10 +778,8 @@ async def install_unreal_sdk(params: dict) -> dict:
     project_path = params.get("projectPath", "")
     workspace_root = params.get("workspaceRoot")
     requested_components = params.get("components") or ["sdk"]
-    source = params.get("source", "release")
     version = params.get("version")
     setup_project_files = bool(params.get("setupProjectFiles", False))
-    do_regenerate = bool(params.get("regenerateProjectFiles", False))
 
     components = requested_components if (isinstance(requested_components, list) and requested_components) else ["sdk"]
     to_install = [c for c in INSTALL_ORDER if c in components]
@@ -710,81 +803,13 @@ async def install_unreal_sdk(params: dict) -> dict:
         }
 
     try:
-        project_root, uproject_path, _uproject_name = _validate_project_path(
+        project_root, _uproject_path, _uproject_name = _validate_project_path(
             project_path, workspace_root
         )
     except RuntimeError as e:
         return {"success": False, "message": str(e)}
 
-    installed = []
-    for component_id in to_install:
-        config = SDK_COMPONENTS.get(component_id)
-        if not config:
-            continue
-        try:
-            one = await _download_and_install_one(config["repo"], source, version, project_root)
-            installed.append({**one, "addDefaultConfig": config["addDefaultConfig"], "componentId": component_id})
-        except RuntimeError as e:
-            return {"success": False, "message": f"Failed to install {component_id}: {e}"}
-
-    installed_paths = [i["installedPath"] for i in installed]
-    module_names = [i["moduleName"] for i in installed]
-    sdk_item = next((i for i in installed if i.get("addDefaultConfig")), None)
-    add_default_config_module_name = sdk_item["moduleName"] if sdk_item else None
-    ensure_online_subsystem = "oss" in components and "sdk" not in components
-
-    setup_details: list | None = None
-    if setup_project_files:
-        try:
-            setup_details = _patch_project_files(
-                project_root,
-                uproject_path,
-                module_names,
-                add_default_config_module_name=add_default_config_module_name,
-                ensure_online_subsystem=ensure_online_subsystem,
-            )
-        except RuntimeError as e:
-            return {
-                "success": True,
-                "installedPaths": installed_paths,
-                "message": (
-                    f"Plugins installed at {', '.join(installed_paths)}. "
-                    f"Setup failed: {e}. "
-                    "Add plugins and modules manually (see AccelByte Unreal SDK install docs)."
-                ),
-                "setupDetails": [],
-            }
-
-    regenerate_result: dict | None = None
-    if do_regenerate:
-        regenerate_result = _regenerate_project_files(uproject_path)
-        if setup_details is not None and regenerate_result["success"]:
-            setup_details.append(regenerate_result["message"])
-
-    next_steps = (
-        "Configure DefaultEngine.ini with your AGS credentials "
-        "(see https://docs.accelbyte.io/gaming-services/getting-started/setup-game-sdk/unreal-sdk)."
-    )
-    names = ", ".join(i["pluginFolderName"] for i in installed)
-    if setup_project_files:
-        message = f"Installed {names} and updated project files. {next_steps}"
-    else:
-        message = f"Installed {names}. Add the plugins to .uproject and Build.cs/Target.cs, then {next_steps}"
-
-    if do_regenerate and regenerate_result:
-        if regenerate_result["success"]:
-            message += " Project files regenerated."
-        else:
-            message += f" Regenerate: {regenerate_result['message']}"
-
-    result: dict = {
-        "success": True,
-        "installedPaths": installed_paths,
-        "message": message,
-    }
-    if setup_details is not None:
-        result["setupDetails"] = setup_details
-    if regenerate_result is not None:
-        result["regenerateResult"] = regenerate_result
-
-    return result
+    try:
+        return _generate_install_script(project_root, to_install, "git", version, setup_project_files)
+    except Exception as e:
+        return {"success": False, "message": f"Failed to generate script: {e}"}

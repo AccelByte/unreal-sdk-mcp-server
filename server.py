@@ -453,8 +453,9 @@ async def list_tools() -> list[types.Tool]:
         types.Tool(
             name="install_unreal_sdk",
             description=(
-                "Download from GitHub and install the AccelByte Unreal SDK plugin into an Unreal "
-                "project; optionally update .uproject and Build files."
+                "Generate an install_accelbyte_sdk.bat script in the Unreal project root. "
+                "The script clones the requested AccelByte SDK components from GitHub and places "
+                "them under Plugins/Accelbyte/. The user runs the script themselves."
             ),
             inputSchema={
                 "type": "object",
@@ -463,14 +464,14 @@ async def list_tools() -> list[types.Tool]:
                         "type": "string",
                         "description": (
                             "Path to the Unreal project root (directory containing the .uproject file). "
-                            "Absolute path or relative to workspace."
+                            "Absolute path or relative to workspaceRoot."
                         ),
                     },
                     "components": {
                         "type": "array",
                         "items": {"type": "string", "enum": ["sdk", "oss", "networkUtilities"]},
                         "description": (
-                            "Components to install: 'sdk' (AccelByte Game SDK), 'oss' (Online Subsystem), "
+                            "Components to include: 'sdk' (AccelByte Game SDK), 'oss' (Online Subsystem), "
                             "'networkUtilities' (AccelByteNetworkUtilities). Default ['sdk']. "
                             "Install order: networkUtilities, sdk, oss."
                         ),
@@ -482,33 +483,15 @@ async def list_tools() -> list[types.Tool]:
                             "Defaults to current working directory."
                         ),
                     },
-                    "source": {
-                        "type": "string",
-                        "description": (
-                            "How to get the SDK: 'release' (default) = download latest release ZIP "
-                            "from GitHub; 'git' = clone via Git."
-                        ),
-                        "enum": ["release", "git"],
-                    },
                     "version": {
                         "type": "string",
-                        "description": (
-                            "For source 'release': tag name (e.g. 'v1.2.0'). Omit for latest. "
-                            "For source 'git': branch or tag to clone."
-                        ),
+                        "description": "Branch or tag to clone (e.g. 'v28.0.0'). Omit for latest.",
                     },
                     "setupProjectFiles": {
                         "type": "boolean",
                         "description": (
-                            "If true, add plugin to .uproject and add module to Build.cs and Target.cs. "
-                            "Default false (copy only)."
-                        ),
-                    },
-                    "regenerateProjectFiles": {
-                        "type": "boolean",
-                        "description": (
-                            "If true, run UnrealVersionSelector/GenerateProjectFiles to regenerate "
-                            ".sln/.vcxproj after setup. Default false."
+                            "If true, include steps in the script to patch .uproject, Build.cs, "
+                            "and Target.cs. Default false."
                         ),
                     },
                 },
