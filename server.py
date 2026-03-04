@@ -288,7 +288,7 @@ async def read_resource(uri: AnyUrl) -> str:
                 raise ValueError(f"Source file not found: {impl_file}")
             return (
                 f"// Source file: {file_data['path']}\n"
-                f"// Full path: {file_data['fullPath']}\n\n"
+                f"\n"
                 f"{file_data['content']}"
             )
 
@@ -1185,8 +1185,8 @@ async def _start_sse_server(port: int) -> None:
     )
     app = CORSMiddleware(
         starlette_app,
-        allow_origins=["*"],
-        allow_headers=["*"],
+        allow_origins=["http://localhost:*"],
+        allow_headers=["Content-Type"],
         expose_headers=["Content-Type"],
     )
 
@@ -1197,7 +1197,7 @@ async def _start_sse_server(port: int) -> None:
     print(f"SSE endpoint: http://localhost:{port}/sse", file=sys.stderr)
     print(f"Message endpoint: http://localhost:{port}/messages/", file=sys.stderr)
 
-    config = uvicorn.Config(app, host="0.0.0.0", port=port, log_level="warning")
+    config = uvicorn.Config(app, host="127.0.0.1", port=port,  log_level="warning")
     uv_server = uvicorn.Server(config)
     await uv_server.serve()
 

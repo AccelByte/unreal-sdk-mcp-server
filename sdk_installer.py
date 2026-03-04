@@ -185,6 +185,10 @@ async def _download_release_zip(repo: str, version: str | None) -> Path:
 
     temp_dir = Path(tempfile.mkdtemp(prefix="accelbyte-sdk-install-"))
     with zipfile.ZipFile(io.BytesIO(zip_res.content)) as zf:
+        for member in zf.namelist():
+            target = os.path.realpath(os.path.join(temp_dir, member))
+            if not target.startswith(os.path.realpath(str(temp_dir)) + os.sep):
+                raise RuntimeError(f"Unsafe path in ZIP archive: {member}")        
         zf.extractall(temp_dir)
 
     return _find_plugin_folder_in_dir(temp_dir)
