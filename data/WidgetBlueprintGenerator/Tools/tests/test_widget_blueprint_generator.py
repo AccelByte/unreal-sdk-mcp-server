@@ -3,15 +3,26 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from Plugins.WidgetBlueprintGenerator.Tools.widget_blueprint_generator import (
-    build_unreal_command,
-    main,
-    read_crash_error,
-    write_commandlet_request,
-    write_patch_commandlet_request,
-    write_startup_request,
-    write_unreal_runner,
-)
+try:
+    from Plugins.WidgetBlueprintGenerator.Tools.widget_blueprint_generator import (
+        build_unreal_command,
+        main,
+        read_crash_error,
+        write_commandlet_request,
+        write_patch_commandlet_request,
+        write_startup_request,
+        write_unreal_runner,
+    )
+except ModuleNotFoundError:
+    from data.WidgetBlueprintGenerator.Tools.widget_blueprint_generator import (
+        build_unreal_command,
+        main,
+        read_crash_error,
+        write_commandlet_request,
+        write_patch_commandlet_request,
+        write_startup_request,
+        write_unreal_runner,
+    )
 
 
 VALID_SPEC = {
@@ -124,6 +135,19 @@ class WidgetBlueprintGeneratorCliTests(unittest.TestCase):
                 read_crash_error(context_path),
                 "Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0",
             )
+
+    def test_read_crash_error_rejects_xml_entities(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            context_path = Path(temp_dir) / "CrashContext.runtime-xml"
+            context_path.write_text(
+                "<!DOCTYPE FGenericCrashContext [<!ENTITY secret 'expanded entity'>]>"
+                "<FGenericCrashContext><RuntimeProperties>"
+                "<ErrorMessage>&secret;</ErrorMessage>"
+                "</RuntimeProperties></FGenericCrashContext>",
+                encoding="utf-8",
+            )
+
+            self.assertIsNone(read_crash_error(context_path))
 
     def test_write_unreal_runner_embeds_spec_and_force(self):
         with tempfile.TemporaryDirectory() as temp_dir:

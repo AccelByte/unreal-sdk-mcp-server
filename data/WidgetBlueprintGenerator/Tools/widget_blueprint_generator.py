@@ -7,7 +7,8 @@ import subprocess
 import sys
 import tempfile
 import time
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
+from defusedxml.common import DefusedXmlException
 
 try:
     from .widget_spec import ValidationError, load_spec_file
@@ -164,7 +165,7 @@ def latest_crash_context(project: str) -> Path | None:
 def read_crash_error(context_path: Path) -> str | None:
     try:
         root = ET.parse(context_path).getroot()
-    except ET.ParseError:
+    except (ET.ParseError, DefusedXmlException):
         return None
 
     error = root.findtext(".//ErrorMessage")
