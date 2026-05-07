@@ -1,9 +1,15 @@
 import unittest
 
-from Plugins.WidgetBlueprintGenerator.Tools.widget_spec import (
-    ValidationError,
-    load_spec_from_dict,
-)
+try:
+    from Plugins.WidgetBlueprintGenerator.Tools.widget_spec import (
+        ValidationError,
+        load_spec_from_dict,
+    )
+except ModuleNotFoundError:
+    from data.WidgetBlueprintGenerator.Tools.widget_spec import (
+        ValidationError,
+        load_spec_from_dict,
+    )
 
 
 class WidgetSpecTests(unittest.TestCase):
@@ -63,6 +69,27 @@ class WidgetSpecTests(unittest.TestCase):
             )
 
         self.assertEqual(raised.exception.code, "unsupported_widget")
+
+    def test_accepts_class_path_widget_type(self):
+        spec = load_spec_from_dict(
+            {
+                "asset_path": "/Game/ByteWars/UI/Generated/WBP_CustomWidgetHost",
+                "parent_class": "/Script/AccelByteWars.SampleMenuWidget",
+                "root": {
+                    "type": "CanvasPanel",
+                    "name": "RootCanvas",
+                    "children": [
+                        {
+                            "type": "UserWidget",
+                            "class_path": "/Game/ByteWars/UI/W_MenuButton.W_MenuButton_C",
+                            "name": "GeneratedTestButton",
+                        }
+                    ],
+                },
+            }
+        )
+
+        self.assertEqual(spec.widget_count(), 2)
 
     def test_rejects_invalid_names(self):
         with self.assertRaises(ValidationError) as raised:

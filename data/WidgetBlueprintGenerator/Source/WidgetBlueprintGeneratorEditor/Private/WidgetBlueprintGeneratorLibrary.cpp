@@ -23,6 +23,7 @@
 #include "Components/VerticalBox.h"
 #include "Dom/JsonObject.h"
 #include "EditorAssetLibrary.h"
+#include "Layout/Anchors.h"
 #include "Kismet2/KismetEditorUtilities.h"
 #include "Policies/CondensedJsonPrintPolicy.h"
 #include "Serialization/JsonReader.h"
@@ -119,6 +120,22 @@ FVector2D ReadVector2D(const TSharedPtr<FJsonObject>& JsonObject, const FString&
 	return FVector2D(Values[0]->AsNumber(), Values[1]->AsNumber());
 }
 
+FAnchors ReadAnchors(const TSharedPtr<FJsonObject>& JsonObject, const FString& FieldName, const FAnchors& DefaultValue)
+{
+	if (!JsonObject.IsValid() || !JsonObject->HasTypedField<EJson::Array>(FieldName))
+	{
+		return DefaultValue;
+	}
+
+	const TArray<TSharedPtr<FJsonValue>> Values = JsonObject->GetArrayField(FieldName);
+	if (Values.Num() < 4)
+	{
+		return DefaultValue;
+	}
+
+	return FAnchors(Values[0]->AsNumber(), Values[1]->AsNumber(), Values[2]->AsNumber(), Values[3]->AsNumber());
+}
+
 void ApplyWidgetProperties(UWidget* Widget, const TSharedPtr<FJsonObject>& Node)
 {
 	if (!Widget || !Node.IsValid())
@@ -185,13 +202,21 @@ bool AttachWidget(UWidget* Parent, UWidget* Child, const TSharedPtr<FJsonObject>
 		{
 			CanvasSlot->SetPosition(ReadVector2D(*SlotObject, TEXT("position"), FVector2D::ZeroVector));
 			CanvasSlot->SetSize(ReadVector2D(*SlotObject, TEXT("size"), FVector2D(100.0f, 40.0f)));
+			CanvasSlot->SetAnchors(ReadAnchors(*SlotObject, TEXT("anchors"), CanvasSlot->GetAnchors()));
+			CanvasSlot->SetAlignment(ReadVector2D(*SlotObject, TEXT("alignment"), CanvasSlot->GetAlignment()));
 		}
 		return true;
 	}
 
 	if (UPanelWidget* PanelWidget = Cast<UPanelWidget>(Parent))
 	{
-		return PanelWidget->AddChild(Child) != nullptr;
+		if (PanelWidget->AddChild(Child))
+		{
+			return true;
+		}
+
+		OutError = FString::Printf(TEXT("Failed to attach '%s' to panel '%s'."), *Child->GetName(), *Parent->GetName());
+		return false;
 	}
 
 	if (UContentWidget* ContentWidget = Cast<UContentWidget>(Parent))
@@ -396,15 +421,18 @@ bool UWidgetBlueprintGeneratorLibrary::PopulateWidgetBlueprintFromJson(const FSt
 
 	WidgetBlueprint->Modify();
 	WidgetTree->Modify();
+	UWidget* PreviousRootWidget = WidgetTree->RootWidget;
 	WidgetTree->RootWidget = nullptr;
 
 	UWidget* RootWidget = BuildWidgetNode(WidgetTree, *RootNode, OutError);
 	if (!RootWidget)
 	{
+		WidgetTree->RootWidget = PreviousRootWidget;
 		return false;
 	}
 
 	WidgetTree->RootWidget = RootWidget;
+	RegisterWidgetVariables(WidgetBlueprint, RootWidget);
 	FKismetEditorUtilities::CompileBlueprint(WidgetBlueprint);
 	WidgetBlueprint->MarkPackageDirty();
 	OutError.Reset();
@@ -453,7 +481,14 @@ bool UWidgetBlueprintGeneratorLibrary::AddWidgetToWidgetBlueprintFromJson(const 
 	WidgetTree->Modify();
 	ParentWidget->Modify();
 
-	UWidget* ExistingWidget = WidgetTree->FindWidget(FName(*WidgetObject->GetStringField(TEXT("name"))));
+	FString WidgetName;
+	if (!WidgetObject->TryGetStringField(TEXT("name"), WidgetName) || WidgetName.IsEmpty())
+	{
+		OutError = TEXT("Widget JSON is missing required string field: name");
+		return false;
+	}
+
+	UWidget* ExistingWidget = WidgetTree->FindWidget(FName(*WidgetName));
 	if (ExistingWidget)
 	{
 		if (WidgetBlueprint->WidgetVariableNameToGuidMap.Contains(ExistingWidget->GetFName()))

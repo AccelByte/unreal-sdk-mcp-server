@@ -1,7 +1,9 @@
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 try:
     from Plugins.WidgetBlueprintGenerator.Tools.widget_blueprint_generator import (
@@ -68,7 +70,7 @@ class WidgetBlueprintGeneratorCliTests(unittest.TestCase):
             request.write_text("{}", encoding="utf-8")
 
             command = build_unreal_command(
-                editor_exe="E:/EpicGames/UE_5.7/Engine/Binaries/Win64/UnrealEditor-Cmd.exe",
+                editor_exe="C:/UE/UnrealEditor-Cmd.exe",
                 project=str(project),
                 request=request,
             )
@@ -80,6 +82,73 @@ class WidgetBlueprintGeneratorCliTests(unittest.TestCase):
         self.assertIn("-unattended", command)
         self.assertIn("-nop4", command)
         self.assertNotIn("--spec", command)
+
+    def test_generate_requires_editor_exe_when_not_configured(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            spec_path = Path(temp_dir) / "valid.json"
+            spec_path.write_text(json.dumps(VALID_SPEC), encoding="utf-8")
+
+            with mock.patch.dict(os.environ, {}, clear=True):
+                self.assertEqual(main(["generate", str(spec_path), "--project", "AccelByteWars.uproject"]), 1)
+
+    def test_generate_accepts_editor_exe_from_environment_for_dry_run(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            spec_path = Path(temp_dir) / "valid.json"
+            spec_path.write_text(json.dumps(VALID_SPEC), encoding="utf-8")
+
+            with mock.patch.dict(os.environ, {"UNREAL_EDITOR_EXE": "D:/UE/UnrealEditor-Cmd.exe"}, clear=True):
+                self.assertEqual(main(["generate", str(spec_path), "--project", "AccelByteWars.uproject", "--dry-run"]), 0)
+
+    def test_generate_dry_run_cli_argument_overrides_environment_editor_exe(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            spec_path = Path(temp_dir) / "valid.json"
+            spec_path.write_text(json.dumps(VALID_SPEC), encoding="utf-8")
+
+            with mock.patch.dict(os.environ, {"UNREAL_EDITOR_EXE": "D:/UE/UnrealEditor-Cmd.exe"}, clear=True):
+                self.assertEqual(
+                    main(
+                        [
+                            "generate",
+                            str(spec_path),
+                            "--project",
+                            "AccelByteWars.uproject",
+                            "--editor-exe",
+                            "C:/UE/UnrealEditor-Cmd.exe",
+                            "--dry-run",
+                        ]
+                    ),
+                    0,
+                )
+
+    def test_generate_passes_configured_timeout_to_report_wait(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            spec_path = Path(temp_dir) / "valid.json"
+            spec_path.write_text(json.dumps(VALID_SPEC), encoding="utf-8")
+
+            with mock.patch.dict(os.environ, {}, clear=True), mock.patch(
+                "data.WidgetBlueprintGenerator.Tools.widget_blueprint_generator.subprocess.run"
+            ) as run_mock, mock.patch(
+                "data.WidgetBlueprintGenerator.Tools.widget_blueprint_generator.wait_for_report", return_value=False
+            ) as wait_mock:
+                run_mock.return_value.returncode = 0
+
+                self.assertEqual(
+                    main(
+                        [
+                            "generate",
+                            str(spec_path),
+                            "--project",
+                            str(Path(temp_dir) / "AccelByteWars.uproject"),
+                            "--editor-exe",
+                            "C:/UE/UnrealEditor-Cmd.exe",
+                            "--timeout",
+                            "123",
+                        ]
+                    ),
+                    1,
+                )
+
+            self.assertEqual(wait_mock.call_args.args[1], 123)
 
     def test_write_commandlet_request_embeds_spec_and_report_path(self):
         with tempfile.TemporaryDirectory() as temp_dir:

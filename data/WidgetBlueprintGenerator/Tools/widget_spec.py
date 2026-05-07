@@ -88,8 +88,9 @@ def load_spec_from_dict(data: dict[str, Any]) -> WidgetSpec:
 def _parse_node(data: dict[str, Any], path: str) -> WidgetNode:
     widget_type = _required_string(data, "type", path)
     name = _required_string(data, "name", path)
+    has_class_path = bool(_optional_string(data, "class_path", path))
 
-    if widget_type not in SUPPORTED_WIDGETS:
+    if widget_type not in SUPPORTED_WIDGETS and not has_class_path:
         raise ValidationError("unsupported_widget", f"{path}.type '{widget_type}' is not supported.")
     if not VALID_NAME.match(name):
         raise ValidationError("schema_error", f"{path}.name '{name}' is not a valid Unreal object name.")

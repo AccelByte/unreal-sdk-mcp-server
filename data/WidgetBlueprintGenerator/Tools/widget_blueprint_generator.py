@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -16,7 +17,7 @@ except ImportError:
     from widget_spec import ValidationError, load_spec_file
 
 
-DEFAULT_EDITOR_EXE = "E:/EpicGames/UE_5.7/Engine/Binaries/Win64/UnrealEditor-Cmd.exe"
+DEFAULT_TIMEOUT_SECONDS = 300
 
 
 def build_unreal_command(editor_exe: str, project: str, request: str | Path) -> list[str]:
@@ -31,6 +32,20 @@ def build_unreal_command(editor_exe: str, project: str, request: str | Path) -> 
         "-FullStdOutLogOutput",
     ]
     return command
+
+
+def resolve_editor_exe(editor_exe: str | None) -> str | None:
+    return editor_exe or os.environ.get("UNREAL_EDITOR_EXE")
+
+
+def editor_exe_missing_error() -> dict[str, object]:
+    return {
+        "ok": False,
+        "error": {
+            "code": "editor_exe_missing",
+            "message": "Pass --editor-exe or set UNREAL_EDITOR_EXE to the full path of UnrealEditor-Cmd.exe.",
+        },
+    }
 
 
 def write_commandlet_request(project: str, spec: str, force: bool, output_dir: str | Path | None = None) -> Path:
@@ -182,15 +197,17 @@ def main(argv: list[str] | None = None) -> int:
     generate_parser = subparsers.add_parser("generate", help="Validate a spec and launch Unreal headless.")
     generate_parser.add_argument("spec")
     generate_parser.add_argument("--project", default="AccelByteWars.uproject")
-    generate_parser.add_argument("--editor-exe", default=DEFAULT_EDITOR_EXE)
+    generate_parser.add_argument("--editor-exe")
     generate_parser.add_argument("--force", action="store_true")
     generate_parser.add_argument("--dry-run", action="store_true")
+    generate_parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_SECONDS)
 
     patch_parser = subparsers.add_parser("patch", help="Patch an existing Widget Blueprint through the commandlet.")
     patch_parser.add_argument("patch")
     patch_parser.add_argument("--project", default="AccelByteWars.uproject")
-    patch_parser.add_argument("--editor-exe", default=DEFAULT_EDITOR_EXE)
+    patch_parser.add_argument("--editor-exe")
     patch_parser.add_argument("--dry-run", action="store_true")
+    patch_parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_SECONDS)
 
     args = parser.parse_args(argv)
 
@@ -218,7 +235,12 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps({"ok": False, "error": error_body}, indent=2))
             return 1
 
-    command = build_unreal_command(args.editor_exe, args.project, request_path)
+    editor_exe = resolve_editor_exe(args.editor_exe)
+    if not editor_exe:
+        print(json.dumps(editor_exe_missing_error(), indent=2))
+        return 1
+
+    command = build_unreal_command(editor_exe, args.project, request_path)
     if args.dry_run:
         print(json.dumps({"ok": True, "command": command}, indent=2))
         return 0
@@ -233,7 +255,7 @@ def main(argv: list[str] | None = None) -> int:
     if completed.returncode != 0:
         return completed.returncode
 
-    if not wait_for_report(report_path):
+    if not wait_for_report(report_path, args.timeout):
         crash_context_after = latest_crash_context(args.project)
         crash_error = None
         if crash_context_after is not None:

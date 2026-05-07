@@ -286,7 +286,10 @@ def resolve_widget_class(widget_type: str):
         if loaded is None:
             raise RuntimeError("AccelByteWarsButtonBase could not be loaded.")
         return loaded
-    return classes[widget_type]
+    klass = classes.get(widget_type)
+    if klass is None:
+        raise ValueError(f"Unsupported widget type: {widget_type}")
+    return klass
 
 
 def apply_widget_properties(widget, node: dict) -> None:
