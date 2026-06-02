@@ -1,0 +1,220 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_GuildManagementPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "GuildManagement_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "GuildManagement_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "GuildManagement_SuccessState",
+                                "is_variable": true,
+                                "children": [
+                                    {
+                                        "type": "AGSSectionHeader",
+                                        "name": "Guild_Header",
+                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SectionHeader.WBP_AGS_SectionHeader_C",
+                                        "text": "Guild"
+                                    },
+                                    {
+                                        "type": "HorizontalBox",
+                                        "name": "Guild_TabBar",
+                                        "is_variable": true,
+                                        "children": [
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_RosterTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                                                "is_variable": true,
+                                                "text": "Roster",
+                                                "slot": {
+                                                    "padding": [
+                                                        0,
+                                                        8,
+                                                        8,
+                                                        8
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_RequestsTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                                                "is_variable": true,
+                                                "text": "Requests",
+                                                "slot": {
+                                                    "padding": [
+                                                        0,
+                                                        8,
+                                                        8,
+                                                        8
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_RolesTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                                                "is_variable": true,
+                                                "text": "Roles",
+                                                "slot": {
+                                                    "padding": [
+                                                        0,
+                                                        8,
+                                                        8,
+                                                        8
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "HorizontalBox",
+                                        "name": "Guild_ContentSplit",
+                                        "slot": {
+                                            "size": {
+                                                "fill": 1.0
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "ListView",
+                                                "name": "RosterListView",
+                                                "is_variable": true,
+                                                "entry_widget_class": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_PlayerRow.WBP_AGS_PlayerRow_C",
+                                                "selection_mode": "single",
+                                                "preview_entries": [
+                                                    {
+                                                        "name": "Leader"
+                                                    },
+                                                    {
+                                                        "name": "Officer"
+                                                    },
+                                                    {
+                                                        "name": "Member"
+                                                    }
+                                                ],
+                                                "slot": {
+                                                    "size": {
+                                                        "fill": 1.4
+                                                    },
+                                                    "padding": [
+                                                        0,
+                                                        0,
+                                                        12,
+                                                        0
+                                                    ]
+                                                },
+                                                "horizontal_entry_spacing": 4,
+                                                "vertical_entry_spacing": 4
+                                            },
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "Guild_MemberDetailPanel",
+                                                "slot": {
+                                                    "size": {
+                                                        "fill": 1.0
+                                                    }
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "AGSKeyValueRow",
+                                                        "name": "Guild_SelectedMemberRank",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_KeyValueRow.WBP_AGS_KeyValueRow_C"
+                                                    },
+                                                    {
+                                                        "type": "AGSKeyValueRow",
+                                                        "name": "Guild_SelectedMemberActivity",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_KeyValueRow.WBP_AGS_KeyValueRow_C",
+                                                        "slot": {
+                                                            "padding": [
+                                                                0,
+                                                                8,
+                                                                0,
+                                                                8
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "AGSBaseButton",
+                                                        "name": "Guild_InviteButton",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                                                        "is_variable": true,
+                                                        "text": "Invite"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "GuildManagement_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSErrorState",
+                                "name": "GuildManagement_ErrorState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_ErrorState.WBP_AGS_ErrorState_C",
+                                "is_variable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

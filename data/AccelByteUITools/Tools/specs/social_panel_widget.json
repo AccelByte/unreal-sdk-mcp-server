@@ -1,0 +1,163 @@
+{
+  "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_SocialPanel",
+  "parent_class": "/Script/AccelByteWars.SocialPanelWidget",
+  "root": {
+    "type": "Border",
+    "name": "PanelBackground",
+    "style": {
+      "background_color": [1.0, 1.0, 1.0, 1.0],
+      "corner_radius": 8,
+      "border_color": [0.84, 0.87, 0.92, 1.0],
+      "border_width": 1
+    },
+    "children": [
+      {
+        "type": "Overlay",
+        "name": "ContentContainer",
+        "padding": [20, 20, 20, 20],
+        "slot": { "h_align": "fill", "v_align": "fill" },
+        "children": [
+          {
+            "type": "WidgetSwitcher",
+            "name": "StateSwitcher",
+            "is_variable": true,
+            "slot": { "h_align": "fill", "v_align": "fill" },
+            "children": [
+              {
+                "type": "AGSStatusMessage",
+                "name": "IdlePanel",
+                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                "is_variable": true
+              },
+              {
+                "type": "AGSLoadingIndicator",
+                "name": "LoadingPanel",
+                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                "is_variable": true
+              },
+              {
+                "type": "VerticalBox",
+                "name": "SuccessPanel",
+                "is_variable": true,
+                "slot": { "h_align": "fill", "v_align": "fill" },
+                "children": [
+                  {
+                    "type": "HorizontalBox",
+                    "name": "TabBar",
+                    "is_variable": true,
+                    "slot": { "padding": [0, 0, 0, 12], "h_align": "fill" },
+                    "children": [
+                      {
+                        "type": "AGSSecondaryButton",
+                        "name": "Btn_TabFriends",
+                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                        "is_variable": true,
+                        "text": "Friends",
+                        "slot": { "padding": [0, 0, 8, 0] }
+                      },
+                      {
+                        "type": "AGSSecondaryButton",
+                        "name": "Btn_TabBlocked",
+                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                        "is_variable": true,
+                        "text": "Blocked"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "WidgetSwitcher",
+                    "name": "Ws_TabContent",
+                    "is_variable": true,
+                    "slot": { "h_align": "fill", "v_align": "fill" },
+                    "children": [
+                      {
+                        "type": "VerticalBox",
+                        "name": "FriendsPanel",
+                        "is_variable": true,
+                        "slot": { "h_align": "fill", "v_align": "fill" },
+                        "children": [
+                          {
+                            "type": "WidgetSwitcher",
+                            "name": "Ws_FriendsState",
+                            "is_variable": true,
+                            "slot": { "h_align": "fill", "v_align": "fill" },
+                            "children": [
+                              {
+                                "type": "ListView",
+                                "name": "Lv_FriendsList",
+                                "is_variable": true,
+                                "entry_widget_class": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_FriendRow.WBP_AGS_FriendRow_C",
+                                "selection_mode": "none",
+                                "horizontal_entry_spacing": 4,
+                                "vertical_entry_spacing": 4,
+                                "preview_entries": [{"name": "Friend 1"}, {"name": "Friend 2"}],
+                                "slot": { "h_align": "fill", "v_align": "fill" }
+                              },
+                              {
+                                "type": "AGSEmptyState",
+                                "name": "FriendsEmptyPanel",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true,
+                                "slot": { "h_align": "center", "v_align": "center" }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "VerticalBox",
+                        "name": "BlockedPanel",
+                        "is_variable": true,
+                        "slot": { "h_align": "fill", "v_align": "fill" },
+                        "children": [
+                          {
+                            "type": "WidgetSwitcher",
+                            "name": "Ws_BlockedState",
+                            "is_variable": true,
+                            "slot": { "h_align": "fill", "v_align": "fill" },
+                            "children": [
+                              {
+                                "type": "ListView",
+                                "name": "Lv_BlockedList",
+                                "is_variable": true,
+                                "entry_widget_class": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_BlockUserRow.WBP_AGS_BlockUserRow_C",
+                                "selection_mode": "none",
+                                "horizontal_entry_spacing": 4,
+                                "vertical_entry_spacing": 4,
+                                "preview_entries": [{"name": "Blocked 1"}, {"name": "Blocked 2"}],
+                                "slot": { "h_align": "fill", "v_align": "fill" }
+                              },
+                              {
+                                "type": "AGSEmptyState",
+                                "name": "BlockedEmptyPanel",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true,
+                                "slot": { "h_align": "center", "v_align": "center" }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "AGSEmptyState",
+                "name": "EmptyPanel",
+                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                "is_variable": true
+              },
+              {
+                "type": "AGSErrorState",
+                "name": "ErrorPanel",
+                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_ErrorState.WBP_AGS_ErrorState_C",
+                "is_variable": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "style_mode": "agsui",
+    "asset_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_IconButton",
+    "parent_class": "/Script/AccelByteUITools.AGSIconButtonBase",
+    "variant": "Icon",
+    "root": {
+        "type": "SizeBox",
+        "name": "IconButtonFrame",
+        "is_variable": false,
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "IconButtonOverlay",
+                "is_variable": false,
+                "children": [
+                    {
+                        "type": "Button",
+                        "name": "InteractiveButton",
+                        "is_variable": true,
+                        "style": {
+                            "color": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "corner_radius": 6,
+                            "border_color": [
+                                0.84,
+                                0.87,
+                                0.92,
+                                1.0
+                            ],
+                            "border_width": 1,
+                            "hover_color": [
+                                0.96,
+                                0.97,
+                                0.99,
+                                1.0
+                            ],
+                            "pressed_color": [
+                                0.88,
+                                0.9,
+                                0.94,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        }
+                    },
+                    {
+                        "type": "Image",
+                        "name": "ButtonIcon",
+                        "is_variable": true,
+                        "brush": "/AccelByteUITools/AGSUI/Brushes/T_AGS_AccelByteLogo",
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill",
+                            "padding": [
+                                4,
+                                4,
+                                4,
+                                4
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "width": 40,
+        "height": 40
+    }
+}

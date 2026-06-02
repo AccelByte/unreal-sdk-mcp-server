@@ -1,0 +1,35 @@
+{
+    "style_mode": "agsui",
+    "asset_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_CommonIconButton",
+    "parent_class": "/Script/AccelByteUITools.AGSCommonIconButtonBase",
+    "variant": "Icon",
+    "root": {
+        "type": "SizeBox",
+        "name": "IconButtonFrame",
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "IconButtonOverlay",
+                "children": [
+                    {
+                        "type": "Image",
+                        "name": "ButtonIcon",
+                        "is_variable": true,
+                        "brush": "/AccelByteUITools/AGSUI/Brushes/T_AGS_AccelByteLogo",
+                        "slot": { "h_align": "fill", "v_align": "fill", "padding": [4, 4, 4, 4] }
+                    },
+                    {
+                        "type": "CommonTextBlock",
+                        "name": "ButtonText",
+                        "class_path": "/Script/CommonUI.CommonTextBlock",
+                        "is_variable": true,
+                        "text": "",
+                        "slot": { "h_align": "center", "v_align": "center" }
+                    }
+                ]
+            }
+        ],
+        "width": 40,
+        "height": 40
+    }
+}

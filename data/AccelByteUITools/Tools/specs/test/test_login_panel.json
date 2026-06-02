@@ -1,0 +1,120 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_TestLoginPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "Login_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "Login_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "Login_SuccessState",
+                                "is_variable": true,
+                                "children": [
+                                    {
+                                        "type": "AGSTextInput",
+                                        "name": "Login_UsernameInput",
+                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_TextInput.WBP_AGS_TextInput_C",
+                                        "is_variable": true,
+                                        "hint_text": "Username"
+                                    },
+                                    {
+                                        "type": "AGSTextInput",
+                                        "name": "Login_PasswordInput",
+                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_PasswordInput.WBP_AGS_PasswordInput_C",
+                                        "is_variable": true,
+                                        "hint_text": "Password"
+                                    },
+                                    {
+                                        "type": "AGSButton",
+                                        "name": "Login_SubmitButton",
+                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                                        "is_variable": true,
+                                        "text": "Sign in"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "Login_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "Border",
+                                "name": "Login_ErrorState",
+                                "is_variable": true,
+                                "style": {
+                                    "background_color": [
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "border_color": [
+                                        0.89,
+                                        0.14,
+                                        0.2,
+                                        1.0
+                                    ],
+                                    "border_width": 1,
+                                    "corner_radius": 8
+                                },
+                                "children": [
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "Login_ErrorMessage",
+                                        "is_variable": true,
+                                        "text": "Login failed. Please try again."
+                                    }
+                                ]
+                            }
+                        ],
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

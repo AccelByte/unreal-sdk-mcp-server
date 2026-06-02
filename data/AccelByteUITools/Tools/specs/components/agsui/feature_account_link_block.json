@@ -1,0 +1,103 @@
+{
+    "style_mode": "agsui",
+    "asset_path": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_AccountLinkBlock",
+    "parent_class": "/Script/AccelByteUITools.AGSFeatureBlockBase",
+    "root": {
+        "type": "Border",
+        "name": "BlockBackground",
+        "is_variable": true,
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "VerticalBox",
+                "name": "BlockStack",
+                "is_variable": false,
+                "children": [
+                    {
+                        "type": "TextBlock",
+                        "name": "LabelText",
+                        "is_variable": true,
+                        "text": "Account link",
+                        "style": {
+                            "color": [
+                                0.05,
+                                0.06,
+                                0.08,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "size": {
+                                "auto": true
+                            },
+                            "padding": [
+                                0,
+                                0,
+                                0,
+                                12
+                            ]
+                        }
+                    },
+                    {
+                        "type": "TextBlock",
+                        "name": "StatusText",
+                        "is_variable": true,
+                        "text": "Link your account to continue.",
+                        "style": {
+                            "color": [
+                                0.36,
+                                0.4,
+                                0.47,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "size": {
+                                "auto": true
+                            },
+                            "padding": [
+                                0,
+                                0,
+                                0,
+                                12
+                            ]
+                        }
+                    },
+                    {
+                        "type": "AGSButton",
+                        "name": "SubmitButton",
+                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                        "is_variable": true,
+                        "text": "Link account",
+                        "slot": {
+                            "size": {
+                                "auto": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "padding": [
+            16,
+            16,
+            16,
+            16
+        ]
+    }
+}

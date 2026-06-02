@@ -1,0 +1,47 @@
+{
+  "_comment": "Template for project-style loading panel. __style_inject directives are replaced at generation time with project style class_path values from enforced_roles.",
+  "_core_role": "state_loading",
+  "asset_path": "/Game/AGS/UI/Components/WBP_AGS_ProjectLoadingPanel",
+  "parent_class": "/Script/AccelByteUITools.AGSLoadingIndicatorBase",
+  "root": {
+    "type": "Border",
+    "name": "PanelBackground",
+    "style": {
+      "background_color": [0.0, 0.0, 0.0, 0.0]
+    },
+    "children": [
+      {
+        "type": "Overlay",
+        "name": "ContentContainer",
+        "slot": { "h_align": "fill", "v_align": "fill" },
+        "children": [
+          {
+            "type": "VerticalBox",
+            "name": "LoadingContent",
+            "slot": { "h_align": "center", "v_align": "center" },
+            "children": [
+              {
+                "type": "Spacer",
+                "name": "TopSpacer",
+                "slot": { "h_align": "fill", "size": [0, 12] }
+              },
+              {
+                "type": "TextBlock",
+                "name": "Tb_LoadingStatus",
+                "is_variable": true,
+                "text": "Loading…",
+                "__style_inject": "title_text",
+                "slot": { "h_align": "center" }
+              },
+              {
+                "type": "Spacer",
+                "name": "BottomSpacer",
+                "slot": { "h_align": "fill", "size": [0, 12] }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

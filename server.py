@@ -7,6 +7,7 @@ Python translation of server.js.
 """
 
 import asyncio
+import importlib.util
 import json
 import sys
 from pathlib import Path
@@ -21,13 +22,30 @@ from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
 from starlette.routing import Mount, Route
 
+from live_coding_tools import unreal_live_coding_compile
 from parser import load_symbols
 from sdk_installer import install_unreal_sdk
+from unreal_project_tools import (
+    unreal_build_editor,
+    unreal_close_editor,
+    unreal_editor_status,
+    unreal_launch_editor,
+)
 from source_indexer import (
     index_example_components,
     index_snippets,
     index_source_files,
     search_snippets,
+)
+from accelbyte_ui_tools import (
+    generate_project_core_widgets,
+    accelbyte_ui_bridge_health,
+    accelbyte_ui_generate,
+    accelbyte_ui_list_entry_candidates,
+    accelbyte_ui_patch,
+    accelbyte_ui_resolve,
+    accelbyte_ui_validate,
+    accelbyte_ui_verify_backing_class,
 )
 
 # ---------------------------------------------------------------------------
@@ -36,6 +54,8 @@ from source_indexer import (
 
 BASE_DIR = Path(__file__).parent
 SOURCES_DIR = BASE_DIR / "data"
+_TOOLS_DIR = BASE_DIR / "data" / "AccelByteUITools" / "Tools"
+_RECIPES_DIR = _TOOLS_DIR / "specs" / "recipes"
 UNREAL_SDK_XML_DIR = SOURCES_DIR / "unreal-sdk"
 OSS_SDK_DIR = SOURCES_DIR / "oss-sdk"
 
@@ -496,6 +516,498 @@ async def list_tools() -> list[types.Tool]:
                     },
                 },
                 "required": ["projectPath"],
+            },
+        ),
+        types.Tool(
+            name="accelbyte_ui_bridge_health",
+            description="Check the AccelByteUITools editor bridge health endpoint.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "bridgeUrl": {
+                        "type": "string",
+                        "description": "Optional AccelByteUITools bridge base URL.",
+                    },
+                },
+                "required": [],
+            },
+        ),
+        types.Tool(
+            name="accelbyte_ui_validate",
+            description="Validate an AccelByteUITools JSON spec for an Unreal project.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project root or .uproject file.",
+                    },
+                    "specPath": {
+                        "type": "string",
+                        "description": "Path to the widget spec JSON file, absolute or project-relative.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving a relative projectPath.",
+                    },
+                    "writeNormalizedSpecPath": {
+                        "type": "string",
+                        "description": "Optional project-local path where the normalized themed spec should be written.",
+                    },
+                },
+                "required": ["projectPath", "specPath"],
+            },
+        ),
+        types.Tool(
+            name="accelbyte_ui_generate",
+            description=(
+                "Generate a Widget Blueprint from an AccelByteUITools JSON spec using "
+                "the editor bridge or commandlet. mode='verify-only' is a compatibility alias "
+                "for accelbyte_ui_resolve."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project root or .uproject file.",
+                    },
+                    "specPath": {
+                        "type": "string",
+                        "description": "Path to the widget spec JSON file, absolute or project-relative.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving a relative projectPath.",
+                    },
+                    "bridgeUrl": {
+                        "type": "string",
+                        "description": "Optional AccelByteUITools bridge base URL.",
+                    },
+                    "mode": {
+                        "type": "string",
+                        "description": "Execution mode. bridge uses the editor bridge; commandlet uses the CLI; auto falls back to commandlet if the bridge is unavailable; verify-only resolves bindings without creating assets.",
+                        "enum": ["bridge", "commandlet", "auto", "verify-only"],
+                        "default": "bridge",
+                    },
+                    "force": {
+                        "type": "boolean",
+                        "description": "Overwrite an existing generated asset when supported.",
+                        "default": False,
+                    },
+                    "editorExe": {
+                        "type": "string",
+                        "description": "Optional UnrealEditor-Cmd executable path for commandlet mode.",
+                    },
+                    "writeNormalizedSpecPath": {
+                        "type": "string",
+                        "description": "Optional project-local path where the normalized themed spec should be written.",
+                    },
+                    "auto_approve_style": {
+                        "type": "boolean",
+                        "description": "Automatically re-approve the style context fingerprint before generating (default true). Prevents style_context_approval_required errors after Build.bat rebuilds or after previous generate calls.",
+                        "default": True,
+                    },
+                },
+                "required": ["projectPath", "specPath"],
+            },
+        ),
+        types.Tool(
+            name="accelbyte_ui_resolve",
+            description=(
+                "Resolve an AccelByteUITools JSON spec without creating assets. "
+                "Returns the normalized spec, bridge-resolved widget classes, resolved C++ "
+                "binding types, expected collection entry classes, and rebuild advisories. "
+                "Call this before writing script-backed C++ headers."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project root or .uproject file.",
+                    },
+                    "specPath": {
+                        "type": "string",
+                        "description": "Path to the widget spec JSON file, absolute or project-relative.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving a relative projectPath.",
+                    },
+                    "bridgeUrl": {
+                        "type": "string",
+                        "description": "Optional AccelByteUITools bridge base URL.",
+                    },
+                    "writeNormalizedSpecPath": {
+                        "type": "string",
+                        "description": "Optional project-local path where the normalized themed spec should be written.",
+                    },
+                    "auto_approve_style": {
+                        "type": "boolean",
+                        "description": "Automatically re-approve the style context fingerprint before resolving (default true).",
+                        "default": True,
+                    },
+                },
+                "required": ["projectPath", "specPath"],
+            },
+        ),
+        types.Tool(
+            name="accelbyte_ui_list_entry_candidates",
+            description=(
+                "Return project-compatible list row widget candidates for ListView, TileView, and TreeView entry_widget_class. "
+                "Reads the approved style context to find project widgets that implement IUserObjectListEntry. "
+                "Call this before setting entry_widget_class in any spec node for collection widgets."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project root or .uproject file.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving a relative projectPath.",
+                    },
+                },
+                "required": ["projectPath"],
+            },
+        ),
+        types.Tool(
+            name="accelbyte_ui_verify_backing_class",
+            description=(
+                "Verify a script-backed widget C++ header against the validated "
+                "AccelByteUITools bindings. Verify against the final generated C++ parent class "
+                "in the spec; do not temporarily switch to AGS fallback parents. Generated bindings must "
+                "use required BindWidget."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project root or .uproject file.",
+                    },
+                    "specPath": {
+                        "type": "string",
+                        "description": "Path to the widget spec JSON file, absolute or project-relative.",
+                    },
+                    "headerPath": {
+                        "type": "string",
+                        "description": "Path to the script-backed C++ header, absolute or project-relative.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving a relative projectPath.",
+                    },
+                    "autoApproveStyle": {
+                        "type": "boolean",
+                        "description": "Automatically refresh and approve the style context before verifying (default true). This allows newly written generated C++ parent headers to be discovered before compile.",
+                        "default": True,
+                    },
+                },
+                "required": ["projectPath", "specPath", "headerPath"],
+            },
+        ),
+        types.Tool(
+            name="accelbyte_ui_patch",
+            description=(
+                "Patch an existing Widget Blueprint using an AccelByteUITools patch JSON file "
+                "through the editor bridge or commandlet. Supports legacy add-widget patches and "
+                "op='set_widget_properties' patches for existing widgets such as PanelBackground."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project root or .uproject file.",
+                    },
+                    "patchPath": {
+                        "type": "string",
+                        "description": (
+                            "Path to the widget patch JSON file, absolute or project-relative. "
+                            "For property updates use fields: asset_path, op='set_widget_properties', "
+                            "widget_name, and properties."
+                        ),
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving a relative projectPath.",
+                    },
+                    "bridgeUrl": {
+                        "type": "string",
+                        "description": "Optional AccelByteUITools bridge base URL.",
+                    },
+                    "mode": {
+                        "type": "string",
+                        "description": "Execution mode. bridge uses the editor bridge; commandlet uses the CLI; auto falls back to commandlet if the bridge is unavailable.",
+                        "enum": ["bridge", "commandlet", "auto"],
+                        "default": "bridge",
+                    },
+                    "editorExe": {
+                        "type": "string",
+                        "description": "Optional UnrealEditor-Cmd executable path for commandlet mode.",
+                    },
+                },
+                "required": ["projectPath", "patchPath"],
+            },
+        ),
+        types.Tool(
+            name="select_ags_recipe",
+            description=(
+                "Select the best AGS UI recipe and return its full JSON spec for a given feature request. "
+                "Use this as structural reference only; generated project widgets must still compose flat specs "
+                "from the approved project style context instead of copying AGS FeatureBlock class_path values. "
+                "Returns layout name, reason, and the complete recipe_spec JSON for reference."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "request": {
+                        "type": "string",
+                        "description": "Natural-language description of the feature (e.g. 'login with device ID', 'leaderboard', 'player statistics').",
+                    },
+                },
+                "required": ["request"],
+            },
+        ),
+        types.Tool(
+            name="generate_project_core_widgets",
+            description=(
+                "Generate lightweight project-styled Blueprint widgets to replace AGSUI/Core atoms "
+                "(AGSLoadingIndicator, AGSEmptyState, AGSErrorState, AGSStatusMessage, etc.) that have "
+                "no project-owned equivalent. Generated widgets are stored at /Game/AGS/UI/Components/ "
+                "and registered in the project's component registry for reuse in all future generated widgets. "
+                "Requires the Unreal Editor bridge to be running. Defaults to the four state-panel roles "
+                "(state_loading, state_empty, state_error, state_idle) when no roles are specified."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project directory or .uproject file.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving relative paths.",
+                    },
+                    "roles": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "List of core role keys to generate (e.g. ['state_loading', 'state_error']). Omit to use defaults.",
+                    },
+                    "role": {
+                        "type": "string",
+                        "description": "Single core role key to generate. Prefer roles for new callers.",
+                    },
+                    "allRoles": {
+                        "type": "boolean",
+                        "description": "Generate for all core roles that have a template. Overrides `roles`.",
+                        "default": False,
+                    },
+                    "force": {
+                        "type": "boolean",
+                        "description": "Re-generate even if a generated widget already exists in the registry.",
+                        "default": False,
+                    },
+                    "bridgeUrl": {
+                        "type": "string",
+                        "description": "Optional Unreal editor bridge base URL (default http://127.0.0.1:48757).",
+                    },
+                },
+                "required": ["projectPath"],
+            },
+        ),
+        types.Tool(
+            name="unreal_live_coding_compile",
+            description=(
+                "Trigger an Unreal Editor Live Coding compile through the running editor bridge. "
+                "Requires Unreal Editor to be open with the bridge plugin running and Live Coding enabled."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "bridgeUrl": {
+                        "type": "string",
+                        "description": "Optional Unreal editor bridge base URL.",
+                    },
+                    "waitForCompletion": {
+                        "type": "boolean",
+                        "description": "Whether the bridge should wait for compile completion before returning. Default true.",
+                        "default": True,
+                    },
+                    "timeoutSeconds": {
+                        "type": "number",
+                        "description": "Timeout for the bridge request in seconds. Default 120.",
+                        "default": 120,
+                    },
+                },
+                "required": [],
+            },
+        ),
+        types.Tool(
+            name="unreal_editor_status",
+            description=(
+                "Detect whether Unreal Editor is running for a target .uproject. "
+                "Use before a full editor-target rebuild to decide whether the editor must be closed."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project directory or .uproject file.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving relative paths.",
+                    },
+                },
+                "required": ["projectPath"],
+            },
+        ),
+        types.Tool(
+            name="unreal_close_editor",
+            description=(
+                "Close the running Unreal Editor process for a target .uproject. Requires explicit "
+                "user approval. Graceful close is attempted by default; forced termination requires "
+                "passing force: true after separate user approval."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project directory or .uproject file.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving relative paths.",
+                    },
+                    "userApproved": {
+                        "type": "boolean",
+                        "description": "Must be true after the user explicitly approves closing Unreal Editor.",
+                    },
+                    "timeoutSeconds": {
+                        "type": "number",
+                        "description": "How long to wait for the editor to exit after a close request. Default 30.",
+                        "default": 30,
+                    },
+                    "force": {
+                        "type": "boolean",
+                        "description": "Force-kill the editor. Use only after separate explicit user approval.",
+                        "default": False,
+                    },
+                },
+                "required": ["projectPath", "userApproved"],
+            },
+        ),
+        types.Tool(
+            name="unreal_build_editor",
+            description=(
+                "Run a full Unreal editor-target rebuild with Build.bat for a target .uproject. "
+                "Requires explicit user approval. Defaults to <ProjectName>Editor Win64 Development "
+                "with -Project=<uproject> -WaitMutex and returns parsed compile diagnostics."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project directory or .uproject file.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving relative paths.",
+                    },
+                    "userApproved": {
+                        "type": "boolean",
+                        "description": "Must be true after the user explicitly approves rebuilding the editor target.",
+                    },
+                    "engineRoot": {
+                        "type": "string",
+                        "description": "Optional Unreal Engine root; used to find Engine/Build/BatchFiles/Build.bat.",
+                    },
+                    "buildBatPath": {
+                        "type": "string",
+                        "description": "Optional explicit path to Build.bat.",
+                    },
+                    "target": {
+                        "type": "string",
+                        "description": "Optional Unreal target name. Default <ProjectName>Editor.",
+                    },
+                    "platform": {
+                        "type": "string",
+                        "description": "Optional Unreal build platform. Default Win64.",
+                        "default": "Win64",
+                    },
+                    "configuration": {
+                        "type": "string",
+                        "description": "Optional Unreal build configuration. Default Development.",
+                        "default": "Development",
+                    },
+                    "timeoutSeconds": {
+                        "type": "number",
+                        "description": "Build timeout in seconds. Default 1800.",
+                        "default": 1800,
+                    },
+                },
+                "required": ["projectPath", "userApproved"],
+            },
+        ),
+        types.Tool(
+            name="unreal_launch_editor",
+            description=(
+                "Launch Unreal Editor for a target .uproject after a successful full rebuild. "
+                "Requires explicit user approval. "
+                "Pass waitForBridge: true to block until the AccelByteUITools bridge is ready "
+                "(polls every 3 s up to bridgeReadyTimeoutSeconds, default 300)."
+            ),
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "projectPath": {
+                        "type": "string",
+                        "description": "Path to the Unreal project directory or .uproject file.",
+                    },
+                    "workspaceRoot": {
+                        "type": "string",
+                        "description": "Optional workspace root for resolving relative paths.",
+                    },
+                    "userApproved": {
+                        "type": "boolean",
+                        "description": "Must be true after the user explicitly approves launching Unreal Editor.",
+                    },
+                    "engineRoot": {
+                        "type": "string",
+                        "description": "Optional Unreal Engine root; used to find Engine/Binaries/Win64/UnrealEditor.exe.",
+                    },
+                    "editorExe": {
+                        "type": "string",
+                        "description": "Optional explicit path to UnrealEditor.exe.",
+                    },
+                    "extraArgs": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "Optional additional Unreal Editor command-line arguments.",
+                    },
+                    "waitForBridge": {
+                        "type": "boolean",
+                        "description": "If true, poll the AccelByteUITools bridge health endpoint after launch and block until it returns ok:true or the timeout expires. Default false.",
+                    },
+                    "bridgeReadyTimeoutSeconds": {
+                        "type": "integer",
+                        "description": "How long to wait for the bridge when waitForBridge is true. Default 300.",
+                    },
+                    "bridgeUrl": {
+                        "type": "string",
+                        "description": "Optional AccelByteUITools bridge base URL. Defaults to http://127.0.0.1:48757.",
+                    },
+                },
+                "required": ["projectPath", "userApproved"],
             },
         ),
         types.Tool(
@@ -1107,6 +1619,48 @@ def _handle_get_accelbyte_how_to(args: dict) -> dict:
     return {"guide": result, "sdkRequirement": SDK_REQUIREMENT_NOTE}
 
 
+def _handle_select_ags_recipe(args: dict) -> dict:
+    request: str = args.get("request") or ""
+    if not request:
+        raise ValueError("request must be a non-empty string.")
+
+    selector_path = _TOOLS_DIR / "ags_recipe_selector.py"
+    spec = importlib.util.spec_from_file_location("ags_recipe_selector", selector_path)
+    if spec is None or spec.loader is None:
+        raise ValueError(f"Could not load ags_recipe_selector from {selector_path}")
+
+    module = importlib.util.module_from_spec(spec)
+    previous_module = sys.modules.get("ags_recipe_selector")
+    sys.modules["ags_recipe_selector"] = module  # register before exec so @dataclass resolves cls.__module__
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        if previous_module is None:
+            if sys.modules.get("ags_recipe_selector") is module:
+                del sys.modules["ags_recipe_selector"]
+        else:
+            sys.modules["ags_recipe_selector"] = previous_module
+
+    selection = module.select_ags_recipe(request)
+
+    result = {
+        "layout": selection.layout,
+        "reason": selection.reason,
+        "recipe_name": selection.recipe,
+        "component": selection.component,
+        "recipe_spec": None,
+    }
+
+    if selection.recipe:
+        recipe_file = _RECIPES_DIR / selection.recipe
+        if recipe_file.exists():
+            recipe_data = json.loads(recipe_file.read_text(encoding="utf-8"))
+            recipe_data.setdefault("style_mode", "agsui")
+            result["recipe_spec"] = recipe_data
+
+    return result
+
+
 @server.call_tool()
 async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
     try:
@@ -1123,6 +1677,34 @@ async def call_tool(name: str, arguments: dict) -> list[types.TextContent]:
                 result = _handle_describe_symbols(arguments or {})
             case "install_unreal_sdk":
                 result = await install_unreal_sdk(arguments or {})
+            case "accelbyte_ui_bridge_health":
+                result = await accelbyte_ui_bridge_health(arguments or {})
+            case "accelbyte_ui_validate":
+                result = await accelbyte_ui_validate(arguments or {})
+            case "accelbyte_ui_generate":
+                result = await accelbyte_ui_generate(arguments or {})
+            case "accelbyte_ui_resolve":
+                result = await accelbyte_ui_resolve(arguments or {})
+            case "accelbyte_ui_list_entry_candidates":
+                result = await accelbyte_ui_list_entry_candidates(arguments or {})
+            case "accelbyte_ui_verify_backing_class":
+                result = await accelbyte_ui_verify_backing_class(arguments or {})
+            case "accelbyte_ui_patch":
+                result = await accelbyte_ui_patch(arguments or {})
+            case "select_ags_recipe":
+                result = _handle_select_ags_recipe(arguments or {})
+            case "unreal_live_coding_compile":
+                result = await unreal_live_coding_compile(arguments or {})
+            case "unreal_editor_status":
+                result = await asyncio.to_thread(unreal_editor_status, arguments or {})
+            case "unreal_close_editor":
+                result = await asyncio.to_thread(unreal_close_editor, arguments or {})
+            case "unreal_build_editor":
+                result = await asyncio.to_thread(unreal_build_editor, arguments or {})
+            case "unreal_launch_editor":
+                result = await asyncio.to_thread(unreal_launch_editor, arguments or {})
+            case "generate_project_core_widgets":
+                result = await generate_project_core_widgets(arguments or {})
             case "get_accelbyte_how_to":
                 result = _handle_get_accelbyte_how_to(arguments or {})
             case _:
@@ -1168,7 +1750,7 @@ async def _start_sse_server(port: int) -> None:
     )
     app = CORSMiddleware(
         starlette_app,
-        allow_origins=["http://localhost:*"],
+        allow_origin_regex=r"http://(?:localhost|127\.0\.0\.1|\[::1\]):\d+",
         allow_headers=["Content-Type"],
         expose_headers=["Content-Type"],
     )

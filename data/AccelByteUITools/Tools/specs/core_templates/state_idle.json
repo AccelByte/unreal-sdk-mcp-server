@@ -1,0 +1,37 @@
+{
+  "_comment": "Template for project-style idle/status-message panel.",
+  "_core_role": "state_idle",
+  "asset_path": "/Game/AGS/UI/Components/WBP_AGS_ProjectStatusPanel",
+  "parent_class": "/Script/AccelByteUITools.AGSStatusMessageBase",
+  "root": {
+    "type": "Border",
+    "name": "PanelBackground",
+    "style": {
+      "background_color": [0.0, 0.0, 0.0, 0.0]
+    },
+    "children": [
+      {
+        "type": "Overlay",
+        "name": "ContentContainer",
+        "slot": { "h_align": "fill", "v_align": "fill" },
+        "children": [
+          {
+            "type": "VerticalBox",
+            "name": "StatusContent",
+            "slot": { "h_align": "center", "v_align": "center" },
+            "children": [
+              {
+                "type": "TextBlock",
+                "name": "Tb_StatusMessage",
+                "is_variable": true,
+                "text": "Ready.",
+                "__style_inject": "title_text",
+                "slot": { "h_align": "center" }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

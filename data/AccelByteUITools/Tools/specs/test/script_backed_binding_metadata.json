@@ -1,0 +1,42 @@
+{
+  "asset_path": "/Game/ByteWars/UI/Generated/WBP_ScriptBackedBindingMetadata",
+  "parent_class": "/Script/UMG.UserWidget",
+  "root": {
+    "type": "Border",
+    "name": "PanelBackground",
+    "style": {
+      "background_color": [1.0, 1.0, 1.0, 1.0],
+      "corner_radius": 8,
+      "border_color": [0.84, 0.87, 0.92, 1.0],
+      "border_width": 1
+    },
+    "children": [
+      {
+        "type": "Overlay",
+        "name": "ContentContainer",
+        "padding": [20, 20, 20, 20],
+        "slot": { "h_align": "fill", "v_align": "fill" },
+        "children": [
+          {
+            "type": "VerticalBox",
+            "name": "RootBox",
+            "slot": { "h_align": "fill", "v_align": "fill" },
+            "children": [
+              {
+                "type": "TextBlock",
+                "name": "TitleText",
+                "is_variable": true
+              },
+              {
+                "type": "AGSEmptyState",
+                "name": "EmptyPanel",
+                "is_variable": true,
+                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

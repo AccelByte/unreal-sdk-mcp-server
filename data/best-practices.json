@@ -173,12 +173,24 @@
     {
       "id": "authentication",
       "title": "How to Authenticate Users with AccelByte",
-      "keywords": ["login", "authenticate", "sign in", "credentials", "device id", "email password"],
-      "overview": "AccelByte supports multiple authentication methods including device ID (guest), email/password, and platform accounts. Use the OnlineIdentity interface from AccelByte OSS.",
+      "keywords": ["login", "authenticate", "sign in", "credentials", "device id", "email password", "sdk", "pre-login", "api client", "FApiClientPtr", "steam", "platform"],
+      "overview": "AccelByte supports multiple authentication methods including device ID (guest), email/password, and platform accounts (Steam, Epic, etc.). The OSS identity interface is used post-login; for pre-login API calls (e.g. inside a login widget), use FAccelByteInstance::GetApiClient() instead.",
       "methods": [
         {
-          "name": "Device ID Login (Guest Account)",
-          "when_to_use": "For temporary/guest accounts, testing, or allowing users to play without registration",
+          "name": "Get API Client Before Login (Pre-login Access)",
+          "when_to_use": "Any time you need to call AccelByte APIs before login is complete — for example, inside a login widget that calls LoginWithDeviceId or LoginWithOtherPlatform. Works for both SDK and OSS modes. GetApiClient(int32) returns null before login; use this pattern instead.",
+          "code_template": "#include \"Core/AccelByteInstance.h\"\n#include \"OnlineSubsystemAccelByte.h\"\n#include \"Api/AccelByteUserApi.h\"\n\n// GetApiClient(int32) returns null before login — use AccelByteInstance instead.\n// AccelByteInstance auto-creates a default client from SDK settings if one does not exist yet.\nFOnlineSubsystemAccelByte* ABSubsystem = static_cast<FOnlineSubsystemAccelByte*>(\n    IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM));\nif (!ABSubsystem) { return; }\n\nFAccelByteInstancePtr Instance = ABSubsystem->GetAccelByteInstance().Pin();\nif (!Instance.IsValid()) { return; }\n\n// No args = \"default\" key, auto-created from SDK settings\nAccelByte::FApiClientPtr ApiClient = Instance->GetApiClient();\nif (!ApiClient.IsValid()) { return; }\n\n// Device ID login\nApiClient->User.LoginWithDeviceId(\n    FVoidHandler::CreateLambda([]() { /* success */ }),\n    FErrorHandler::CreateLambda([](int32 Code, const FString& Msg) { /* error */ }));\n\n// Platform login (Steam, Epic, etc.)\n// ApiClient->User.LoginWithOtherPlatform(\n//     EAccelBytePlatformType::Steam, SteamAuthTicket,\n//     FVoidHandler::CreateLambda([]() {}),\n//     FErrorHandler::CreateLambda([](int32, const FString&) {}));",
+          "steps": [
+            "1. Cast IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM) to FOnlineSubsystemAccelByte*",
+            "2. Call GetAccelByteInstance().Pin() to get FAccelByteInstancePtr",
+            "3. Call Instance->GetApiClient() with no args — returns the 'default' keyed client, auto-creating it if needed from SDK settings",
+            "4. Validate ApiClient.IsValid() before using",
+            "5. Call ApiClient->User.LoginWithDeviceId(...) or LoginWithOtherPlatform(...)"
+          ]
+        },
+        {
+          "name": "Device ID Login (Guest Account) — OSS style",
+          "when_to_use": "Post-login slot-based access via OSS identity interface. Use only after a player is already registered in an OSS slot.",
           "code_template": "#include \"OnlineSubsystemAccelByte.h\"\n#include \"Interfaces/OnlineIdentityInterface.h\"\n\nauto ABSubsystem = IOnlineSubsystem::Get(ACCELBYTE_SUBSYSTEM);\nIOnlineIdentityPtr Identity = ABSubsystem->GetIdentityInterface();\n\nFOnlineAccountCredentials Credentials;\nCredentials.Type = TEXT(\"AccelByte\");\nCredentials.Id = TEXT(\"\"); // Empty for device ID\nCredentials.Token = TEXT(\"\"); // Empty for device ID\n\nIdentity->Login(LocalUserNum, Credentials);",
           "steps": [
             "1. Get OnlineIdentity interface from OSS",
@@ -206,6 +218,10 @@
         "Store ApiClient after successful login for use by other systems",
         "Use device ID for development/testing, proper auth for production",
         "Implement proper error handling for login failures"
+      ],
+      "common_pitfalls": [
+        "Using ABSubsystem->GetApiClient(0) inside a login widget — this returns null because slot 0 is only populated after a successful OSS login completes. Use GetAccelByteInstance().Pin()->GetApiClient() for pre-login API access.",
+        "Using GetApiClient(int32) anywhere before login — the int32 slot lookup chain (LocalUserNum → UniqueNetId → AccelByteId) is empty until the OSS login task runs RegisterApiClient."
       ],
       "related_snippets": {
         "areas": ["access", "auth"],

@@ -1,0 +1,57 @@
+{
+  "asset_path": "/Game/AGS/UI/Generated/WBP_ValidStatefulPanel",
+  "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+  "root": {
+    "type": "Border",
+    "name": "PanelBackground",
+    "style": {
+      "background_color": [1.0, 1.0, 1.0, 1.0],
+      "corner_radius": 8,
+      "border_color": [0.84, 0.87, 0.92, 1.0],
+      "border_width": 1
+    },
+    "children": [
+      {
+        "type": "Overlay",
+        "name": "ContentContainer",
+        "padding": [20, 20, 20, 20],
+        "slot": { "h_align": "fill", "v_align": "fill" },
+        "children": [
+          {
+            "type": "WidgetSwitcher",
+            "name": "StateSwitcher",
+            "is_variable": true,
+            "slot": { "h_align": "fill", "v_align": "fill" },
+            "children": [
+              {
+                "type": "AGSStatusMessage",
+                "name": "IdlePanel",
+                "is_variable": true
+              },
+              {
+                "type": "AGSLoadingIndicator",
+                "name": "LoadingPanel",
+                "is_variable": true
+              },
+              {
+                "type": "VerticalBox",
+                "name": "SuccessPanel",
+                "is_variable": true
+              },
+              {
+                "type": "AGSEmptyState",
+                "name": "EmptyPanel",
+                "is_variable": true
+              },
+              {
+                "type": "AGSErrorState",
+                "name": "ErrorPanel",
+                "is_variable": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

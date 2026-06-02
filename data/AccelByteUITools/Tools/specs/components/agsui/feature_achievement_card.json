@@ -1,0 +1,110 @@
+{
+    "style_mode": "agsui",
+    "asset_path": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_AchievementCard",
+    "parent_class": "/Script/AccelByteUITools.AGSFeatureBlockBase",
+    "root": {
+        "type": "Border",
+        "name": "CardBackground",
+        "is_variable": true,
+        "style": {
+            "background_color": [
+                0.980392,
+                0.988235,
+                0.996078,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.31,
+                0.36,
+                0.43,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "VerticalBox",
+                "name": "CardStack",
+                "is_variable": false,
+                "children": [
+                    {
+                        "type": "TextBlock",
+                        "name": "LabelText",
+                        "is_variable": true,
+                        "text": "Achievement",
+                        "style": {
+                            "color": [
+                                0.05,
+                                0.06,
+                                0.08,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "size": {
+                                "auto": true
+                            },
+                            "padding": [
+                                0,
+                                0,
+                                0,
+                                4
+                            ]
+                        }
+                    },
+                    {
+                        "type": "TextBlock",
+                        "name": "ValueText",
+                        "is_variable": true,
+                        "text": "Description",
+                        "style": {
+                            "color": [
+                                0.36,
+                                0.4,
+                                0.47,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "size": {
+                                "auto": true
+                            },
+                            "padding": [
+                                0,
+                                0,
+                                0,
+                                8
+                            ]
+                        }
+                    },
+                    {
+                        "type": "TextBlock",
+                        "name": "StatusText",
+                        "is_variable": true,
+                        "text": "Locked",
+                        "style": {
+                            "color": [
+                                0.36,
+                                0.4,
+                                0.47,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "size": {
+                                "auto": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "padding": [
+            12,
+            12,
+            12,
+            12
+        ]
+    }
+}

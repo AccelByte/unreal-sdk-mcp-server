@@ -1,0 +1,130 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_CommonTabbedListPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSCommonActivatableBase",
+    "ui_mode": "common_ui",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [1.0, 1.0, 1.0, 1.0],
+            "corner_radius": 8,
+            "border_color": [0.84, 0.87, 0.92, 1.0],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [20, 20, 20, 20],
+                "slot": { "h_align": "fill", "v_align": "fill" },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "slot": { "h_align": "fill", "v_align": "fill" },
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "IdlePanel",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "LoadingPanel",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "SuccessPanel",
+                                "is_variable": true,
+                                "slot": { "h_align": "fill", "v_align": "fill" },
+                                "children": [
+                                    {
+                                        "type": "HorizontalBox",
+                                        "name": "TabBar",
+                                        "is_variable": true,
+                                        "children": [
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_FriendsTab",
+                                                "is_variable": true,
+                                                "text": "Friends"
+                                            },
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_PartyTab",
+                                                "is_variable": true,
+                                                "text": "Party"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "WidgetSwitcher",
+                                        "name": "TabContent",
+                                        "is_variable": true,
+                                        "slot": { "h_align": "fill", "v_align": "fill" },
+                                        "children": [
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "FriendsTabPanel",
+                                                "is_variable": true,
+                                                "slot": { "h_align": "fill", "v_align": "fill" },
+                                                "children": [
+                                                    {
+                                                        "type": "ListView",
+                                                        "name": "FriendsListView",
+                                                        "is_variable": true,
+                                                        "entry_widget_class": "/Game/UI/WBP_CommonPlayerRow.WBP_CommonPlayerRow_C",
+                                                        "selection_mode": "single",
+                                                        "horizontal_entry_spacing": 4,
+                                                        "vertical_entry_spacing": 4,
+                                                        "preview_entries": [
+                                                            { "name": "Friend 1" },
+                                                            { "name": "Friend 2" }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "PartyTabPanel",
+                                                "is_variable": true,
+                                                "slot": { "h_align": "fill", "v_align": "fill" },
+                                                "children": [
+                                                    {
+                                                        "type": "ListView",
+                                                        "name": "PartyListView",
+                                                        "is_variable": true,
+                                                        "entry_widget_class": "/Game/UI/WBP_CommonPartyMemberRow.WBP_CommonPartyMemberRow_C",
+                                                        "selection_mode": "single",
+                                                        "horizontal_entry_spacing": 4,
+                                                        "vertical_entry_spacing": 4,
+                                                        "preview_entries": [
+                                                            { "name": "Member 1" },
+                                                            { "name": "Member 2" }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "EmptyPanel",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSErrorState",
+                                "name": "ErrorPanel",
+                                "is_variable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

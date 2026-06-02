@@ -1,0 +1,152 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_TestTabbedSocialPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "TabbedSocial_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "TabbedSocial_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "TabbedSocial_SuccessState",
+                                "is_variable": true,
+                                "children": [
+                                    {
+                                        "type": "HorizontalBox",
+                                        "name": "TabbedSocial_TabBar",
+                                        "is_variable": true,
+                                        "children": [
+                                            {
+                                                "type": "AGSButton",
+                                                "name": "TabbedSocial_FriendsTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                                                "is_variable": true,
+                                                "text": "Friends"
+                                            },
+                                            {
+                                                "type": "AGSButton",
+                                                "name": "TabbedSocial_PartyTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                                                "is_variable": true,
+                                                "text": "Party"
+                                            },
+                                            {
+                                                "type": "AGSButton",
+                                                "name": "TabbedSocial_NotificationsTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                                                "is_variable": true,
+                                                "text": "Notifications"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "WidgetSwitcher",
+                                        "name": "TabbedSocial_ContentSwitcher",
+                                        "is_variable": true,
+                                        "children": [
+                                            {
+                                                "type": "AGSFriendsListBlock",
+                                                "name": "TabbedSocial_FriendsPanel",
+                                                "class_path": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_FriendsListBlock.WBP_AGS_FriendsListBlock_C",
+                                                "is_variable": true
+                                            },
+                                            {
+                                                "type": "AGSPartyBlock",
+                                                "name": "TabbedSocial_PartyPanel",
+                                                "class_path": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_PartyBlock.WBP_AGS_PartyBlock_C",
+                                                "is_variable": true
+                                            },
+                                            {
+                                                "type": "AGSNotificationListBlock",
+                                                "name": "TabbedSocial_NotificationsPanel",
+                                                "class_path": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_NotificationListBlock.WBP_AGS_NotificationListBlock_C",
+                                                "is_variable": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "TabbedSocial_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "Border",
+                                "name": "TabbedSocial_ErrorState",
+                                "is_variable": true,
+                                "style": {
+                                    "background_color": [
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "border_color": [
+                                        0.89,
+                                        0.14,
+                                        0.2,
+                                        1.0
+                                    ],
+                                    "border_width": 1,
+                                    "corner_radius": 8
+                                },
+                                "children": [
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "TabbedSocial_ErrorMessage",
+                                        "is_variable": true,
+                                        "text": "Failed to load social data."
+                                    }
+                                ]
+                            }
+                        ],
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

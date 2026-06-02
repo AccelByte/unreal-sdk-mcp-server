@@ -99,6 +99,42 @@ If any cache is missing, you'll see warnings instructing you to run `generate_ca
 
 The server provides tools for searching and retrieving SDK information, getting implementation guidance, and installing the Unreal SDK. Tools that return or suggest AccelByte code (search_symbols, search_snippets, search_example_components, describe_symbols, describe_example_components, get_accelbyte_how_to) include a top-level `sdkRequirement` field in their response stating that the AccelByte Unreal SDK (and OSS/NetworkUtilities if used) must be installed for the code to work and that `install_unreal_sdk` can be used if needed.
 
+### AccelByte UI Tools
+
+The MCP server also exposes tools for project-local UMG Widget Blueprint generation through `Plugins/AccelByteUITools`.
+
+The server repository includes the Unreal editor plugin package at `data/AccelByteUITools`. Starting the MCP server does not install that package into an Unreal project; downstream assistant or project setup flows should copy it into the target project when Widget Blueprint generation is needed. Keep `AccelByteUITools.uplugin`, `Source/`, `Content/`, and `Tools/` together when moving or installing the package.
+
+- `accelbyte_ui_bridge_health`: checks the running Unreal Editor bridge at `http://127.0.0.1:48757` unless `bridgeUrl` is provided.
+- `accelbyte_ui_validate`: validates an AccelByteUITools JSON spec without launching Unreal. Required: `projectPath`, `specPath`.
+- `accelbyte_ui_resolve`: resolves a Widget Blueprint spec without creating assets. Required: `projectPath`, `specPath`. Optional: `bridgeUrl`, `workspaceRoot`, `writeNormalizedSpecPath`, `auto_approve_style`.
+- `accelbyte_ui_generate`: generates a Widget Blueprint from a spec. Required: `projectPath`, `specPath`. Optional: `mode` (`bridge`, `commandlet`, `auto`, `verify-only` compatibility alias for `accelbyte_ui_resolve`), `force`, `bridgeUrl`, `editorExe`, `workspaceRoot`.
+- `accelbyte_ui_patch`: patches an existing Widget Blueprint from a patch JSON file. Required: `projectPath`, `patchPath`. Optional: `mode` (`bridge`, `commandlet`, `auto`), `bridgeUrl`, `editorExe`, `workspaceRoot`.
+- `unreal_live_coding_compile`: triggers a Live Coding compile through the running Unreal Editor bridge. Optional: `bridgeUrl`, `waitForCompletion`, `timeoutSeconds`. Waiting calls cap the bridge request at 105 seconds and then poll only newly appended UnrealBuildTool log output for the remaining timeout budget, returning diagnostic context when available.
+- `unreal_editor_status`: detects whether Unreal Editor is running for the target `.uproject`. Required: `projectPath`.
+- `unreal_close_editor`: closes the running editor for the target `.uproject`. Required: `projectPath`, `userApproved`. Optional: `timeoutSeconds`, `force`.
+- `unreal_build_editor`: runs a full editor-target `Build.bat` rebuild and returns parsed compile diagnostics. Required: `projectPath`, `userApproved`. Optional: `engineRoot`, `buildBatPath`, `target`, `platform`, `configuration`, `timeoutSeconds`.
+- `unreal_launch_editor`: launches Unreal Editor for the target `.uproject`. Required: `projectPath`, `userApproved`. Optional: `engineRoot`, `editorExe`, `extraArgs`.
+
+Use `mode: "bridge"` when Unreal Editor is already running with the plugin loaded. For script-backed widgets, write the C++ class, call `unreal_live_coding_compile` with `waitForCompletion: true`, then validate and generate through bridge mode. Use `mode: "auto"` only for non-script-backed widgets where commandlet fallback is acceptable. `validate` and all file paths are restricted to the resolved project root.
+
+For newly generated script-backed `UCLASS` files, Live Coding cannot register the new reflected type. Agents should ask for explicit user approval, use `unreal_editor_status` / `unreal_close_editor` if the editor blocks a full rebuild, run `unreal_build_editor`, fix only current generated UI files when compile diagnostics point there, and then ask approval to relaunch with `unreal_launch_editor`.
+
+When invoking the bundled `accelbyte_ui_tools.py` CLI directly from PowerShell, capture JSON output before filtering it. Direct pipelines into early-closing consumers such as `Select-Object -First 1` can close stdout while Python is still writing and produce exit code `255` even after a successful operation. Use `$output = & python ... 2>&1`, check `$LASTEXITCODE`, then pipe `$output` to `Select-String` / `Select-Object`.
+
+By default, generated/temp request specs should be written under `Saved/Generated/Spec/` in the target project. Generated project widget assets should use Unreal virtual paths under `/Game/AGS/UI/Generated/`, which correspond to on-disk content under `<project-root>/Content/AGS/UI/Generated/`. These are defaults only; user-specified project-local paths are allowed when they remain valid for Unreal and the project module layout.
+
+Example:
+
+```json
+{
+  "projectPath": "D:/demo/bytewarscore",
+  "specPath": "Saved/Generated/Spec/WBP_AGS_LeaderboardPanel.json",
+  "mode": "auto",
+  "force": true
+}
+```
+
 ### 1. `search_symbols`
 
 Search for symbols (classes, structs, functions, etc.) in the SDK documentation.
@@ -228,7 +264,53 @@ Get implementation best practices and how-to guides for common AccelByte tasks. 
 
 See [BEST_PRACTICES.md](BEST_PRACTICES.md) for detailed documentation.
 
-### 5. `install_unreal_sdk`
+### 5. `search_example_components`
+
+Search for ready-made, drop-in example components, including full Unreal C++/Slate panels and controllers for common AccelByte flows such as achievements, stats, friends, and login queue.
+
+**Parameters:**
+- `intent` (required, string): Natural language description of what the component should do (e.g. `"show my player achievements"`, `"display login queue status"`).
+- `service` (optional, string): Filter by AccelByte service (e.g. `"achievements"`, `"statistics"`, `"friends"`, `"auth"`, `"store"`).
+- `language` (optional, string): Filter by implementation language (e.g. `"unreal-cpp"`).
+- `limit` (optional, number): Maximum number of components to return (default: 5).
+
+**Returns:**
+- Component metadata, including class names, public interfaces, and `fileResourceUris`.
+- `sdkRequirement`: SDK installation note.
+
+Use the returned `fileResourceUris` with `describe_example_components` or the standard MCP resources/read handler to fetch the actual `.h` and `.cpp` files.
+
+**Example:**
+```json
+{
+  "intent": "show player achievements",
+  "service": "achievements",
+  "language": "unreal-cpp",
+  "limit": 3
+}
+```
+
+### 6. `describe_example_components`
+
+Fetch the actual source code content for example component files returned by `search_example_components`.
+
+**Parameters:**
+- `fileResourceUris` (required, array of strings): Resource URIs from `search_example_components` results, such as `example-file://AccelByteAchievementsPanel.h` or `example-file://AccelByteAchievementsPanel.cpp`.
+
+**Returns:**
+- The requested `.h` or `.cpp` file content for the example component.
+
+**Example:**
+```json
+{
+  "fileResourceUris": [
+    "example-file://AccelByteAchievementsPanel.h",
+    "example-file://AccelByteAchievementsPanel.cpp"
+  ]
+}
+```
+
+### 7. `install_unreal_sdk`
 
 Download from GitHub and install AccelByte Unreal components into an Unreal project; optionally update `.uproject`, Build files, and DefaultEngine.ini. Supports the **AccelByte Game SDK**, **AccelByte OSS** (Online Subsystem), and **AccelByteNetworkUtilities**. All plugins are installed under `Plugins/Accelbyte/` with full integration (plugin entries, Build.cs, Target.cs, and default config where applicable).
 

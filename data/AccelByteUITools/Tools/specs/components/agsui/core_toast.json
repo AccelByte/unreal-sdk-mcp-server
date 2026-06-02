@@ -1,0 +1,52 @@
+{
+    "style_mode": "agsui",
+    "asset_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_Toast",
+    "parent_class": "/Script/AccelByteUITools.AGSLabelValueWidgetBase",
+    "root": {
+        "type": "Border",
+        "name": "ToastBackground",
+        "is_variable": true,
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "TextBlock",
+                "name": "LabelText",
+                "is_variable": true,
+                "text": "Toast message",
+                "style": {
+                    "color": [
+                        0.05,
+                        0.06,
+                        0.08,
+                        1.0
+                    ]
+                },
+                "slot": {
+                    "h_align": "center",
+                    "v_align": "center"
+                }
+            }
+        ],
+        "padding": [
+            12,
+            8,
+            12,
+            8
+        ]
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "asset_path": "/Game/ByteWars/UI/Generated/WBP_LoginWidget",
+    "parent_class": "/Script/AccelByteWars.LoginWidget",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "VerticalBox",
+                        "name": "LoginContent",
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "TextBlock",
+                                "name": "Tb_Title",
+                                "is_variable": true,
+                                "text": "Login",
+                                "style": {
+                                    "color": [
+                                        0.92,
+                                        0.92,
+                                        0.92,
+                                        1.0
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "EditableTextBox",
+                                "name": "Et_Username",
+                                "is_variable": true,
+                                "hint_text": "Username"
+                            },
+                            {
+                                "type": "EditableTextBox",
+                                "name": "Et_Password",
+                                "is_variable": true,
+                                "hint_text": "Password",
+                                "is_password": true
+                            },
+                            {
+                                "type": "Button",
+                                "name": "Btn_Login",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "TextBlock",
+                                "name": "Tb_Status",
+                                "is_variable": true,
+                                "text": "",
+                                "style": {
+                                    "color": [
+                                        0.92,
+                                        0.92,
+                                        0.92,
+                                        1.0
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

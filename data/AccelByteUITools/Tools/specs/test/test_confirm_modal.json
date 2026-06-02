@@ -1,0 +1,149 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_TestConfirmModal",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                0.0,
+                0.0,
+                0.0,
+                0.6
+            ]
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "ActionModal_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "ActionModal_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "Border",
+                                "name": "ActionModal_SuccessState",
+                                "is_variable": true,
+                                "style": {
+                                    "background_color": [
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "border_color": [
+                                        0.84,
+                                        0.87,
+                                        0.92,
+                                        1.0
+                                    ],
+                                    "border_width": 1,
+                                    "corner_radius": 8
+                                },
+                                "children": [
+                                    {
+                                        "type": "VerticalBox",
+                                        "name": "Modal_ContentColumn",
+                                        "is_variable": false,
+                                        "children": [
+                                            {
+                                                "type": "TextBlock",
+                                                "name": "Modal_BodyText",
+                                                "is_variable": true,
+                                                "text": "Are you sure?"
+                                            },
+                                            {
+                                                "type": "HorizontalBox",
+                                                "name": "Modal_ActionRow",
+                                                "is_variable": false,
+                                                "children": [
+                                                    {
+                                                        "type": "AGSButton",
+                                                        "name": "Modal_ConfirmButton",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                                                        "is_variable": true,
+                                                        "text": "Confirm"
+                                                    },
+                                                    {
+                                                        "type": "AGSButton",
+                                                        "name": "Modal_CancelButton",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                                                        "is_variable": true,
+                                                        "text": "Cancel"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "ActionModal_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "Border",
+                                "name": "ActionModal_ErrorState",
+                                "is_variable": true,
+                                "style": {
+                                    "background_color": [
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "border_color": [
+                                        0.89,
+                                        0.14,
+                                        0.2,
+                                        1.0
+                                    ],
+                                    "border_width": 1,
+                                    "corner_radius": 8
+                                },
+                                "children": [
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "ActionModal_ErrorMessage",
+                                        "is_variable": true,
+                                        "text": "Action failed. Please retry."
+                                    }
+                                ]
+                            }
+                        ],
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

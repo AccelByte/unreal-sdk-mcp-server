@@ -1,0 +1,83 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_GenericAsyncPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "GenericAsync_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "GenericAsync_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSGenericAsyncActionBlock",
+                                "name": "GenericAsync_SuccessState",
+                                "class_path": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_GenericAsyncActionBlock.WBP_AGS_GenericAsyncActionBlock_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "GenericAsync_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSErrorState",
+                                "name": "GenericAsync_ErrorState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_ErrorState.WBP_AGS_ErrorState_C",
+                                "is_variable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

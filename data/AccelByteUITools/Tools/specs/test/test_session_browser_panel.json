@@ -1,0 +1,109 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_TestSessionBrowserPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "SessionBrowser_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "SessionBrowser_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "ListView",
+                                "name": "SessionBrowser_ListBody",
+                                "is_variable": true,
+                                "entry_widget_class": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_SessionRow.WBP_AGS_SessionRow_C",
+                                "selection_mode": "single",
+                                "horizontal_entry_spacing": 4,
+                                "vertical_entry_spacing": 4,
+                                "preview_entries": [
+                                    {
+                                        "name": "Session 1"
+                                    },
+                                    {
+                                        "name": "Session 2"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "SessionBrowser_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "Border",
+                                "name": "SessionBrowser_ErrorState",
+                                "is_variable": true,
+                                "style": {
+                                    "background_color": [
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "border_color": [
+                                        0.89,
+                                        0.14,
+                                        0.2,
+                                        1.0
+                                    ],
+                                    "border_width": 1,
+                                    "corner_radius": 8
+                                },
+                                "children": [
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "SessionBrowser_ErrorMessage",
+                                        "is_variable": true,
+                                        "text": "Failed to load sessions."
+                                    }
+                                ]
+                            }
+                        ],
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

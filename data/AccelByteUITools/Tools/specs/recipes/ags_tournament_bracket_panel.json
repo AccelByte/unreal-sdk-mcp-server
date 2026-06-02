@@ -1,0 +1,203 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_TournamentBracketPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "TournamentBracket_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "TournamentBracket_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "TournamentBracket_SuccessState",
+                                "is_variable": true,
+                                "children": [
+                                    {
+                                        "type": "AGSSectionHeader",
+                                        "name": "TournamentBracket_Header",
+                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SectionHeader.WBP_AGS_SectionHeader_C",
+                                        "text": "Tournament Bracket"
+                                    },
+                                    {
+                                        "type": "HorizontalBox",
+                                        "name": "BracketRoundColumns",
+                                        "is_variable": true,
+                                        "slot": {
+                                            "size": {
+                                                "fill": 1.0
+                                            },
+                                            "padding": [
+                                                0,
+                                                12,
+                                                0,
+                                                0
+                                            ]
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "Bracket_QuarterFinalsColumn",
+                                                "slot": {
+                                                    "size": {
+                                                        "fill": 1.0
+                                                    },
+                                                    "padding": [
+                                                        0,
+                                                        0,
+                                                        10,
+                                                        0
+                                                    ]
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "AGSListRow",
+                                                        "name": "QuarterFinal_Match_1",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_ListRow.WBP_AGS_ListRow_C",
+                                                        "slot": {
+                                                            "padding": [
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                18
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "AGSListRow",
+                                                        "name": "QuarterFinal_Match_2",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_ListRow.WBP_AGS_ListRow_C",
+                                                        "slot": {
+                                                            "padding": [
+                                                                0,
+                                                                18,
+                                                                0,
+                                                                0
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "Bracket_SemiFinalsColumn",
+                                                "slot": {
+                                                    "size": {
+                                                        "fill": 1.0
+                                                    },
+                                                    "padding": [
+                                                        10,
+                                                        44,
+                                                        10,
+                                                        0
+                                                    ]
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "AGSListRow",
+                                                        "name": "SemiFinal_Match_1",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_ListRow.WBP_AGS_ListRow_C",
+                                                        "slot": {
+                                                            "padding": [
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                48
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "Bracket_FinalsColumn",
+                                                "slot": {
+                                                    "size": {
+                                                        "fill": 1.0
+                                                    },
+                                                    "padding": [
+                                                        10,
+                                                        88,
+                                                        0,
+                                                        0
+                                                    ]
+                                                },
+                                                "children": [
+                                                    {
+                                                        "type": "AGSListRow",
+                                                        "name": "Final_Match_1",
+                                                        "class_path": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_ListRow.WBP_AGS_ListRow_C"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "TournamentBracket_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSErrorState",
+                                "name": "TournamentBracket_ErrorState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_ErrorState.WBP_AGS_ErrorState_C",
+                                "is_variable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

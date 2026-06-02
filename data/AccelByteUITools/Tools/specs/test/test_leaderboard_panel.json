@@ -1,0 +1,112 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_TestLeaderboardPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "Leaderboard_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "Leaderboard_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "ListView",
+                                "name": "Leaderboard_ListBody",
+                                "is_variable": true,
+                                "entry_widget_class": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_LeaderboardRow.WBP_AGS_LeaderboardRow_C",
+                                "selection_mode": "single",
+                                "horizontal_entry_spacing": 4,
+                                "vertical_entry_spacing": 4,
+                                "preview_entries": [
+                                    {
+                                        "rank": 1
+                                    },
+                                    {
+                                        "rank": 2
+                                    },
+                                    {
+                                        "rank": 3
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "Leaderboard_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "Border",
+                                "name": "Leaderboard_ErrorState",
+                                "is_variable": true,
+                                "style": {
+                                    "background_color": [
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "border_color": [
+                                        0.89,
+                                        0.14,
+                                        0.2,
+                                        1.0
+                                    ],
+                                    "border_width": 1,
+                                    "corner_radius": 8
+                                },
+                                "children": [
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "Leaderboard_ErrorMessage",
+                                        "is_variable": true,
+                                        "text": "Failed to load leaderboard."
+                                    }
+                                ]
+                            }
+                        ],
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

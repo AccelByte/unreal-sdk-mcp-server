@@ -1,0 +1,50 @@
+{
+  "_comment": "Template for project-style empty-state panel.",
+  "_core_role": "state_empty",
+  "asset_path": "/Game/AGS/UI/Components/WBP_AGS_ProjectEmptyPanel",
+  "parent_class": "/Script/AccelByteUITools.AGSEmptyStateBase",
+  "root": {
+    "type": "Border",
+    "name": "PanelBackground",
+    "style": {
+      "background_color": [0.0, 0.0, 0.0, 0.0]
+    },
+    "children": [
+      {
+        "type": "Overlay",
+        "name": "ContentContainer",
+        "slot": { "h_align": "fill", "v_align": "fill" },
+        "children": [
+          {
+            "type": "VerticalBox",
+            "name": "EmptyContent",
+            "slot": { "h_align": "center", "v_align": "center" },
+            "children": [
+              {
+                "type": "TextBlock",
+                "name": "Tb_EmptyTitle",
+                "is_variable": true,
+                "text": "Nothing Here",
+                "__style_inject": "title_text",
+                "slot": { "h_align": "center" }
+              },
+              {
+                "type": "Spacer",
+                "name": "TitleBodySpacer",
+                "slot": { "h_align": "fill", "size": [0, 8] }
+              },
+              {
+                "type": "TextBlock",
+                "name": "Tb_EmptyMessage",
+                "is_variable": true,
+                "text": "No items to display.",
+                "__style_inject": "body_text",
+                "slot": { "h_align": "center" }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

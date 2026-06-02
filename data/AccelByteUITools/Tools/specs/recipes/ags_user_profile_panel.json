@@ -1,0 +1,122 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_UserProfilePanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "HorizontalBox",
+                        "name": "ProfileLayout",
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "Image",
+                                "name": "AvatarImage",
+                                "is_variable": true,
+                                "slot": {
+                                    "size": {
+                                        "auto": true
+                                    },
+                                    "padding": [
+                                        0,
+                                        0,
+                                        24,
+                                        0
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "ProfileDetails",
+                                "slot": {
+                                    "size": {
+                                        "fill": 1.0
+                                    },
+                                    "v_align": "center"
+                                },
+                                "children": [
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "DisplayNameText",
+                                        "is_variable": true,
+                                        "text": "Player One",
+                                        "style": {
+                                            "color": [
+                                                0.9,
+                                                0.9,
+                                                0.9,
+                                                1.0
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "UserIdText",
+                                        "is_variable": true,
+                                        "text": "user-0001",
+                                        "style": {
+                                            "color": [
+                                                0.9,
+                                                0.9,
+                                                0.9,
+                                                1.0
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "PresenceText",
+                                        "is_variable": true,
+                                        "text": "Online",
+                                        "style": {
+                                            "color": [
+                                                0.9,
+                                                0.9,
+                                                0.9,
+                                                1.0
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

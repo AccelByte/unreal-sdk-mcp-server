@@ -1,0 +1,280 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_TabbedSocialPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "TabbedSocial_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "TabbedSocial_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "TabbedSocial_SuccessState",
+                                "is_variable": true,
+                                "children": [
+                                    {
+                                        "type": "HorizontalBox",
+                                        "name": "TabbedSocial_TabBar",
+                                        "is_variable": true,
+                                        "children": [
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_FriendsTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                                                "is_variable": true,
+                                                "text": "Friends"
+                                            },
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_PartyTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                                                "is_variable": true,
+                                                "text": "Party"
+                                            },
+                                            {
+                                                "type": "AGSSecondaryButton",
+                                                "name": "Btn_NotificationsTab",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SecondaryButton.WBP_AGS_SecondaryButton_C",
+                                                "is_variable": true,
+                                                "text": "Notifications"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "WidgetSwitcher",
+                                        "name": "TabbedSocial_ContentSwitcher",
+                                        "is_variable": true,
+                                        "children": [
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "TabbedSocial_FriendsPanel",
+                                                "is_variable": true,
+                                                "children": [
+                                                    {
+                                                        "type": "ListView",
+                                                        "name": "Lv_FriendsList",
+                                                        "is_variable": true,
+                                                        "entry_widget_class": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_ListRow.WBP_AGS_ListRow_C",
+                                                        "selection_mode": "single",
+                                                        "slot": {
+                                                            "size": {
+                                                                "fill": 1.0
+                                                            }
+                                                        },
+                                                        "horizontal_entry_spacing": 4,
+                                                        "vertical_entry_spacing": 4
+                                                    },
+                                                    {
+                                                        "type": "Button",
+                                                        "name": "Btn_AddFriend",
+                                                        "is_variable": true,
+                                                        "slot": {
+                                                            "size": {
+                                                                "auto": true
+                                                            },
+                                                            "h_align": "right",
+                                                            "padding": [
+                                                                0,
+                                                                8,
+                                                                0,
+                                                                0
+                                                            ]
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "type": "TextBlock",
+                                                                "name": "Tb_AddFriendLabel",
+                                                                "text": "Add Friend",
+                                                                "style": {
+                                                                    "color": [
+                                                                        0.9,
+                                                                        0.9,
+                                                                        0.9,
+                                                                        1.0
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "TabbedSocial_PartyPanel",
+                                                "is_variable": true,
+                                                "children": [
+                                                    {
+                                                        "type": "ListView",
+                                                        "name": "Lv_PartyMembers",
+                                                        "is_variable": true,
+                                                        "entry_widget_class": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_PlayerRow.WBP_AGS_PlayerRow_C",
+                                                        "selection_mode": "single",
+                                                        "slot": {
+                                                            "size": {
+                                                                "fill": 1.0
+                                                            }
+                                                        },
+                                                        "horizontal_entry_spacing": 4,
+                                                        "vertical_entry_spacing": 4
+                                                    },
+                                                    {
+                                                        "type": "HorizontalBox",
+                                                        "name": "PartyActions",
+                                                        "slot": {
+                                                            "size": {
+                                                                "auto": true
+                                                            },
+                                                            "h_align": "right",
+                                                            "padding": [
+                                                                0,
+                                                                8,
+                                                                0,
+                                                                0
+                                                            ]
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "type": "Button",
+                                                                "name": "Btn_InviteToParty",
+                                                                "is_variable": true,
+                                                                "slot": {
+                                                                    "padding": [
+                                                                        0,
+                                                                        0,
+                                                                        8,
+                                                                        0
+                                                                    ]
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "type": "TextBlock",
+                                                                        "name": "Tb_InviteLabel",
+                                                                        "text": "Invite",
+                                                                        "style": {
+                                                                            "color": [
+                                                                                0.9,
+                                                                                0.9,
+                                                                                0.9,
+                                                                                1.0
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "type": "Button",
+                                                                "name": "Btn_LeaveParty",
+                                                                "is_variable": true,
+                                                                "children": [
+                                                                    {
+                                                                        "type": "TextBlock",
+                                                                        "name": "Tb_LeaveLabel",
+                                                                        "text": "Leave",
+                                                                        "style": {
+                                                                            "color": [
+                                                                                0.9,
+                                                                                0.9,
+                                                                                0.9,
+                                                                                1.0
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "TabbedSocial_NotificationsPanel",
+                                                "is_variable": true,
+                                                "children": [
+                                                    {
+                                                        "type": "ListView",
+                                                        "name": "Lv_NotificationsList",
+                                                        "is_variable": true,
+                                                        "entry_widget_class": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_ListRow.WBP_AGS_ListRow_C",
+                                                        "selection_mode": "none",
+                                                        "slot": {
+                                                            "size": {
+                                                                "fill": 1.0
+                                                            }
+                                                        },
+                                                        "horizontal_entry_spacing": 4,
+                                                        "vertical_entry_spacing": 4
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "TabbedSocial_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSErrorState",
+                                "name": "TabbedSocial_ErrorState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_ErrorState.WBP_AGS_ErrorState_C",
+                                "is_variable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

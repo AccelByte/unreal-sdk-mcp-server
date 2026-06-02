@@ -1,0 +1,234 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_SeasonPassPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "SeasonPass_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "SeasonPass_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "SeasonPass_SuccessState",
+                                "is_variable": true,
+                                "children": [
+                                    {
+                                        "type": "AGSSectionHeader",
+                                        "name": "SeasonPass_Header",
+                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SectionHeader.WBP_AGS_SectionHeader_C",
+                                        "text": "Season Pass"
+                                    },
+                                    {
+                                        "type": "HorizontalBox",
+                                        "name": "SeasonPass_ProgressSummary",
+                                        "children": [
+                                            {
+                                                "type": "AGSKeyValueRow",
+                                                "name": "SeasonPass_LevelValue",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_KeyValueRow.WBP_AGS_KeyValueRow_C",
+                                                "slot": {
+                                                    "size": {
+                                                        "fill": 1.0
+                                                    },
+                                                    "padding": [
+                                                        0,
+                                                        8,
+                                                        8,
+                                                        8
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "type": "AGSBaseButton",
+                                                "name": "SeasonPass_ClaimButton",
+                                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_BaseButton.WBP_AGS_BaseButton_C",
+                                                "is_variable": true,
+                                                "text": "Claim",
+                                                "slot": {
+                                                    "size": {
+                                                        "auto": true
+                                                    },
+                                                    "padding": [
+                                                        8,
+                                                        8,
+                                                        0,
+                                                        8
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "SeasonPass_FreeLaneLabel",
+                                        "text": "Free Rewards",
+                                        "style": {
+                                            "color": [
+                                                0.05,
+                                                0.06,
+                                                0.08,
+                                                1.0
+                                            ]
+                                        },
+                                        "slot": {
+                                            "padding": [
+                                                0,
+                                                8,
+                                                0,
+                                                4
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TileView",
+                                        "name": "FreeRewardTileView",
+                                        "is_variable": true,
+                                        "entry_widget_class": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_StoreItemCard.WBP_AGS_StoreItemCard_C",
+                                        "selection_mode": "single",
+                                        "orientation": "horizontal",
+                                        "entry_width": 256,
+                                        "entry_height": 256,
+                                        "preview_entries": [
+                                            {
+                                                "tier": 1
+                                            },
+                                            {
+                                                "tier": 2
+                                            },
+                                            {
+                                                "tier": 3
+                                            }
+                                        ],
+                                        "slot": {
+                                            "size": {
+                                                "fill": 1.0
+                                            },
+                                            "padding": [
+                                                0,
+                                                0,
+                                                0,
+                                                10
+                                            ]
+                                        },
+                                        "horizontal_entry_spacing": 4,
+                                        "vertical_entry_spacing": 4
+                                    },
+                                    {
+                                        "type": "TextBlock",
+                                        "name": "SeasonPass_PremiumLaneLabel",
+                                        "text": "Premium Rewards",
+                                        "style": {
+                                            "color": [
+                                                0.05,
+                                                0.06,
+                                                0.08,
+                                                1.0
+                                            ]
+                                        },
+                                        "slot": {
+                                            "padding": [
+                                                0,
+                                                8,
+                                                0,
+                                                4
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TileView",
+                                        "name": "PremiumRewardTileView",
+                                        "is_variable": true,
+                                        "entry_widget_class": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_StoreItemCard.WBP_AGS_StoreItemCard_C",
+                                        "selection_mode": "single",
+                                        "orientation": "horizontal",
+                                        "entry_width": 256,
+                                        "entry_height": 256,
+                                        "preview_entries": [
+                                            {
+                                                "tier": 1
+                                            },
+                                            {
+                                                "tier": 2
+                                            },
+                                            {
+                                                "tier": 3
+                                            }
+                                        ],
+                                        "slot": {
+                                            "size": {
+                                                "fill": 1.0
+                                            }
+                                        },
+                                        "horizontal_entry_spacing": 4,
+                                        "vertical_entry_spacing": 4
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "SeasonPass_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSErrorState",
+                                "name": "SeasonPass_ErrorState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_ErrorState.WBP_AGS_ErrorState_C",
+                                "is_variable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

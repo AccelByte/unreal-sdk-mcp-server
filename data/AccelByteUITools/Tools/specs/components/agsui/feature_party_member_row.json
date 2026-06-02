@@ -1,0 +1,79 @@
+{
+    "style_mode": "agsui",
+    "asset_path": "/AccelByteUITools/AGSUI/FeatureBlocks/WBP_AGS_PartyMemberRow",
+    "parent_class": "/Script/AccelByteUITools.AGSFeatureBlockBase",
+    "root": {
+        "type": "Border",
+        "name": "RowBackground",
+        "is_variable": true,
+        "style": {
+            "background_color": [
+                0.980392,
+                0.988235,
+                0.996078,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.31,
+                0.36,
+                0.43,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "HorizontalBox",
+                "name": "PartyMemberRow",
+                "is_variable": false,
+                "children": [
+                    {
+                        "type": "TextBlock",
+                        "name": "LabelText",
+                        "is_variable": true,
+                        "text": "Member",
+                        "style": {
+                            "color": [
+                                0.05,
+                                0.06,
+                                0.08,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "size": {
+                                "fill": 1.0
+                            }
+                        }
+                    },
+                    {
+                        "type": "TextBlock",
+                        "name": "StatusText",
+                        "is_variable": true,
+                        "text": "Ready",
+                        "style": {
+                            "color": [
+                                0.04,
+                                0.51,
+                                0.28,
+                                1.0
+                            ]
+                        },
+                        "slot": {
+                            "size": {
+                                "auto": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "padding": [
+            12,
+            8,
+            12,
+            8
+        ]
+    }
+}

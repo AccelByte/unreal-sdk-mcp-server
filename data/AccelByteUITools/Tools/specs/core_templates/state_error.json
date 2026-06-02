@@ -1,0 +1,50 @@
+{
+  "_comment": "Template for project-style error-state panel with optional retry button.",
+  "_core_role": "state_error",
+  "asset_path": "/Game/AGS/UI/Components/WBP_AGS_ProjectErrorPanel",
+  "parent_class": "/Script/AccelByteUITools.AGSErrorStateBase",
+  "root": {
+    "type": "Border",
+    "name": "PanelBackground",
+    "style": {
+      "background_color": [0.0, 0.0, 0.0, 0.0]
+    },
+    "children": [
+      {
+        "type": "Overlay",
+        "name": "ContentContainer",
+        "slot": { "h_align": "fill", "v_align": "fill" },
+        "children": [
+          {
+            "type": "VerticalBox",
+            "name": "ErrorContent",
+            "slot": { "h_align": "center", "v_align": "center" },
+            "children": [
+              {
+                "type": "TextBlock",
+                "name": "Tb_ErrorMessage",
+                "is_variable": true,
+                "text": "Something went wrong.",
+                "__style_inject": "title_text",
+                "slot": { "h_align": "center" }
+              },
+              {
+                "type": "Spacer",
+                "name": "MessageButtonSpacer",
+                "slot": { "h_align": "fill", "size": [0, 16] }
+              },
+              {
+                "type": "AGSBaseButton",
+                "name": "Btn_Retry",
+                "is_variable": true,
+                "text": "Retry",
+                "__style_inject": "primary_button",
+                "slot": { "h_align": "center" }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

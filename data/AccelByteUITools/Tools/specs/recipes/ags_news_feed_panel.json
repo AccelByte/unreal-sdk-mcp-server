@@ -1,0 +1,192 @@
+{
+    "asset_path": "/Game/AGS/UI/Generated/WBP_AGS_NewsFeedPanel",
+    "parent_class": "/Script/AccelByteUITools.AGSPanelBase",
+    "root": {
+        "type": "Border",
+        "name": "PanelBackground",
+        "style": {
+            "background_color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "corner_radius": 8,
+            "border_color": [
+                0.84,
+                0.87,
+                0.92,
+                1.0
+            ],
+            "border_width": 1
+        },
+        "children": [
+            {
+                "type": "Overlay",
+                "name": "ContentContainer",
+                "padding": [
+                    20,
+                    20,
+                    20,
+                    20
+                ],
+                "slot": {
+                    "h_align": "fill",
+                    "v_align": "fill"
+                },
+                "children": [
+                    {
+                        "type": "WidgetSwitcher",
+                        "name": "StateSwitcher",
+                        "is_variable": true,
+                        "slot": {
+                            "h_align": "fill",
+                            "v_align": "fill"
+                        },
+                        "children": [
+                            {
+                                "type": "AGSStatusMessage",
+                                "name": "NewsFeed_IdleState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_StatusMessage.WBP_AGS_StatusMessage_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSLoadingIndicator",
+                                "name": "NewsFeed_LoadingState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_LoadingIndicator.WBP_AGS_LoadingIndicator_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "VerticalBox",
+                                "name": "NewsFeed_SuccessState",
+                                "is_variable": true,
+                                "children": [
+                                    {
+                                        "type": "AGSSectionHeader",
+                                        "name": "NewsFeed_Header",
+                                        "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_SectionHeader.WBP_AGS_SectionHeader_C",
+                                        "text": "News"
+                                    },
+                                    {
+                                        "type": "Border",
+                                        "name": "NewsFeed_FeaturedStory",
+                                        "padding": [
+                                            16,
+                                            12,
+                                            16,
+                                            12
+                                        ],
+                                        "style": {
+                                            "background_color": [
+                                                1.0,
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ],
+                                            "corner_radius": 8,
+                                            "border_color": [
+                                                0.84,
+                                                0.87,
+                                                0.92,
+                                                1.0
+                                            ],
+                                            "border_width": 1
+                                        },
+                                        "slot": {
+                                            "padding": [
+                                                0,
+                                                8,
+                                                0,
+                                                12
+                                            ]
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "VerticalBox",
+                                                "name": "NewsFeed_FeaturedContent",
+                                                "children": [
+                                                    {
+                                                        "type": "TextBlock",
+                                                        "name": "NewsFeed_FeaturedTitle",
+                                                        "text": "Featured Update",
+                                                        "style": {
+                                                            "color": [
+                                                                0.05,
+                                                                0.06,
+                                                                0.08,
+                                                                1.0
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "TextBlock",
+                                                        "name": "NewsFeed_FeaturedSummary",
+                                                        "text": "Latest event, patch, or community announcement.",
+                                                        "auto_wrap": true,
+                                                        "style": {
+                                                            "color": [
+                                                                0.36,
+                                                                0.4,
+                                                                0.47,
+                                                                1.0
+                                                            ]
+                                                        },
+                                                        "slot": {
+                                                            "padding": [
+                                                                0,
+                                                                6,
+                                                                0,
+                                                                0
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "ListView",
+                                        "name": "NewsListView",
+                                        "is_variable": true,
+                                        "entry_widget_class": "/AccelByteUITools/AGSUI/Lists/WBP_AGS_ListRow.WBP_AGS_ListRow_C",
+                                        "selection_mode": "single",
+                                        "preview_entries": [
+                                            {
+                                                "title": "Patch Notes"
+                                            },
+                                            {
+                                                "title": "Tournament"
+                                            },
+                                            {
+                                                "title": "Store Refresh"
+                                            }
+                                        ],
+                                        "slot": {
+                                            "size": {
+                                                "fill": 1.0
+                                            }
+                                        },
+                                        "horizontal_entry_spacing": 4,
+                                        "vertical_entry_spacing": 4
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "AGSEmptyState",
+                                "name": "NewsFeed_EmptyState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_EmptyState.WBP_AGS_EmptyState_C",
+                                "is_variable": true
+                            },
+                            {
+                                "type": "AGSErrorState",
+                                "name": "NewsFeed_ErrorState",
+                                "class_path": "/AccelByteUITools/AGSUI/Core/WBP_AGS_ErrorState.WBP_AGS_ErrorState_C",
+                                "is_variable": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
